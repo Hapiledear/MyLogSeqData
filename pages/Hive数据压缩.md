@@ -14,6 +14,7 @@
 	- 中间传输数据压缩功能 `set hive.exec.compress.intermediate=true`
 	- map端输出压缩功能 `set mapreduce.map.output.compress=true`
 	- 设置mpa输出数据的压缩方式 `set mapreduce.map.output.compress.codec=org.apache.hadoop.io.compress.SnappyCodec`
-	-
-	- reduce端输出压缩 `set hive.exec.compress.output = true`
+	- 开启最终输出数据压缩`set hive.exec.compress.output = true`
+	- reduce端输出压缩 `set mapreduce.output.fileoutputformat.compress=true`
+	- 设置reduce的
 	-
