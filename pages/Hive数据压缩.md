@@ -11,5 +11,6 @@
 	- Lz4
 	- Snappy
 - 压缩配置
-	- ![image.png](../assets/image_1645948050520_0.png)
+	- 中间传输数据压缩功能 `set hive.exec.compress.intermediate=true`
+	- map端输出压缩功能 `set map`
 -
