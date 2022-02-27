@@ -9,4 +9,5 @@
 - 文件格式-- SequenceFile
 	- kv形式存储的，二进制文件
 	- 是 [[MapReduce]] 的直接输入输出。
+	- 使用` insert into  ... select` 导入
 -
