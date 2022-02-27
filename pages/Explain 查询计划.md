@@ -1,3 +1,6 @@
 - 语法
 	- ![image.png](../assets/image_1645950701373_0.png)
-	-
+		- formated 返回JSON格式的执行计划
+		- extended 提供一些额外的新，如文件的路径信息
+		- dependency
+			-
