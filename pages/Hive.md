@@ -30,4 +30,6 @@ collapsed:: true
 		- ![image.png](../assets/image_1645952240358_0.png)
 	- 自动判断，满足Map Join则执行,不满足则Reduce Join
 	- Bucket Join 适用于大表 join 大表
-		-
+		- clustered by col_name
+		- `set hive.optimize.bucketmapjoin = true`
+		- 分桶字段 = Join字段，桶的格式相等或成倍数
