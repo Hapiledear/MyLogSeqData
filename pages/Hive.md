@@ -38,3 +38,5 @@ collapsed:: true
 - 谓词下推 PPD #查询优化
 	- 将 where 中的表达式，尽可能的提前执行(下推到map端)。减少map到reduce的传输
 	- 默认是开启的
+	- 下推规则
+		- 1. 对于 join ,条件写在on后面还是where后面
