@@ -39,5 +39,5 @@ collapsed:: true
 	- 将 where 中的表达式，尽可能的提前执行(下推到map端)。减少map到reduce的传输
 	- 默认是开启的
 	- 下推规则
-		- 1. 对于a join b ,条件写在on后面，还是where后面，性能上没有区别。如果b表是副表，且是分区表
-		  2.
+		- 1. 对于a join b ,条件写在on后面，还是where后面，性能上没有区别。如果b表是副表，则它的分区条件一定要写在on后面
+		  2. 对于 a left join b , b的条件写在 on 后面， a的条件写在
