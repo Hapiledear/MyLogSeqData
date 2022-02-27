@@ -11,4 +11,5 @@
 	- 是 [[MapReduce]] 的直接输入输出。
 	- 使用` insert into  ... select` 导入
 - 文件格式--Parquet
-	- 列式存储，
+	- 列式存储
+	- 高效的数据编码和压缩
