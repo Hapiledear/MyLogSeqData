@@ -6,3 +6,5 @@
 	  ```
 - ((621b1c68-ca8f-4a9e-8b5b-a618a2030f22))
 - Join问题
+	- Hive是通过MapReduce来实现的，在处理数据之间的join时有两种方式 MapJoin和ReduceJoin
+	-
