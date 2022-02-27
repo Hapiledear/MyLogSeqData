@@ -9,5 +9,5 @@
 	- Hive是通过 [[MapReduce]] 来实现的，在处理数据之间的join时有两种方式 MapJoin和ReduceJoin
 	- 如果两张非常大的表要进行join，底层无法使用MapJoin提高join性能，只能走ReduceJoin
 	- 而ReduceJoin必须经过 [[Shuffle]] 过程，相对性能较差，而且容易产生数据倾斜
-- [[分桶表]]
+- ((621b234c-c98d-4745-b485-bee7d9a2f7ac))
 -
