@@ -6,6 +6,8 @@
 	  ```
 - ((621b1c68-ca8f-4a9e-8b5b-a618a2030f22))
 - Join问题
-	- Hive是通过MapReduce来实现的，在处理数据之间的join时有两种方式 MapJoin和ReduceJoin
+	- Hive是通过 [[MapReduce]] 来实现的，在处理数据之间的join时有两种方式 MapJoin和ReduceJoin
 	- 如果两张非常大的表要进行join，底层无法使用MapJoin提高join性能，只能走ReduceJoin
-	- 而ReduceJoin必须经过Shuffle过程，相对性能较差，而且容易产生数据倾斜
+	- 而ReduceJoin必须经过 [[Shuffle]] 过程，相对性能较差，而且容易产生数据倾斜
+- [[分桶表]]
+-
