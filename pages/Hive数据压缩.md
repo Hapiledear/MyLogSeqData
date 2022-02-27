@@ -16,5 +16,7 @@
 	- 设置mpa输出数据的压缩方式 `set mapreduce.map.output.compress.codec=org.apache.hadoop.io.compress.SnappyCodec`
 	- 开启最终输出数据压缩`set hive.exec.compress.output = true`
 	- reduce端输出压缩 `set mapreduce.output.fileoutputformat.compress=true`
-	- 设置reduce的
+	- 设置reduce的压缩方式
+	- 设置reduce的压缩为压缩块
+-
 	-
