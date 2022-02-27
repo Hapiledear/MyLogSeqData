@@ -2,5 +2,7 @@
 	- ![image.png](../assets/image_1645950701373_0.png)
 		- formated 返回JSON格式的执行计划
 		- extended 提供一些额外的新，如文件的路径信息
-		- dependency
-			-
+		- dependency 返回JSON格式的查询所依赖的表和分区
+		- authorization 列出需要被授权的条目，包括输入\输出
+-
+	-
