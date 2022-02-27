@@ -19,4 +19,5 @@
 		- ![image.png](../assets/image_1645951779310_0.png)
 		-
 - Join 优化 #查询优化
-	-
+	- Map Join 适用于 小表join大表 或 小表join小表
+		-
