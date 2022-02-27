@@ -36,4 +36,5 @@ collapsed:: true
 	- 配置 `set hive.optimize.correlation=true`
 - [[Hive 优化器]] #查询优化
 - 谓词下推 PPD #查询优化
-	- 将 where 中的表达式，尽可能的移动到靠近原数据的地方
+	- 将 where 中的表达式，尽可能的提前执行(下推到map端)。减少map到reduce的传输
+	- 默认是开启的
