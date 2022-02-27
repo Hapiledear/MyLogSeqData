@@ -19,8 +19,10 @@
 		- ![image.png](../assets/image_1645951779310_0.png)
 		-
 - Join 优化 #查询优化
-	- Map Join 适用于 小表join大表 或 小表join小表
+	- Map Join 适用于 小表 join 大表 或 小表 join 小表
 		- 将小的那份完整的数据给每个MapTask的内存都放一份
 		- 这样底层不需要经过shuffle,仅需占用存放小数据文件的内存空间
 		- ![image.png](../assets/image_1645952080865_0.png)
-	-
+	- Reduce Join 适用于 大表 Join 大表
+		- 利用Shuffle
+-
