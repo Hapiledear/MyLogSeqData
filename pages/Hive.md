@@ -33,5 +33,6 @@ collapsed:: true
 - 关联优化 #查询优化
 	- 当程序中的操作彼此间有关联性时，尽量的放在一个MapReduce中实现
 	- eg: `select * from t_user group by id order by id desc`
-	- 配置 `set hive.optimize.correlation=true` 可以
-	-
+	- 配置 `set hive.optimize.correlation=true`
+- [[Hive 优化器]]
+-
