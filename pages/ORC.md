@@ -1,3 +1,5 @@
 - ORC文件索引
 	- Row Group Index 记录每个行组的min\max 值
-	-
+		- 在执行范围查询时有用
+		- ![image.png](../assets/image_1645949116400_0.png)
+		-
