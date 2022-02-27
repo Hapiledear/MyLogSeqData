@@ -1,6 +1,6 @@
 - [[Hive]] 自身不存储数据，而是采用HDFS。同理，自身也不对数据做运算，而是使用[[MapReduce]]框架或[[Spark]]框架。
 - [[Hive查询]]
-- 查询优化
+- 表结构优化
 	- [[分区表]]
 	- [[分桶表]]
 - 表数据优化
@@ -8,6 +8,6 @@
 	- [[Hive数据压缩]]
 	- [[Hive存储优化]]
 - [[Explain 查询计划]] 了解一条HQL在底层的实现过程
-- MapReduce的优化
-	- 本地模式 set hive.exec.mode.local.auto = true
+- [[MapReduce]] 的优化
+	- 本地模式自动切换 `set hive.exec.mode.local.auto = true`
 	-
