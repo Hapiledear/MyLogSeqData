@@ -28,4 +28,6 @@ collapsed:: true
 collapsed:: true
 		- 利用Shuffle阶段的分组对数据按join字段进行合并。
 		- ![image.png](../assets/image_1645952240358_0.png)
-	- 自动判断，
+	- 自动判断，满足Map Join则执行,不满足则Reduce Join
+	- Bucket Join 适用于大表 join 大表
+		-
