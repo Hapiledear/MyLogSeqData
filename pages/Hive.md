@@ -42,4 +42,4 @@ collapsed:: true
 		- 1. 对于a join b ,条件写在on后面，还是where后面，性能上没有区别。如果b表是副表，则它的分区条件一定要写在on后面
 		  2. 对于 a left join b , b的条件写在 on 后面， a的条件写在 where后面
 		  3. 对于 a right join b , a的条件写在on后面，b的条件写在where后面
-- 数据倾斜
+- 数据倾斜优化
