@@ -30,4 +30,5 @@ collapsed:: true
 		- ![image.png](../assets/image_1645952240358_0.png)
 	- 自动判断，满足Map Join则执行,不满足则Reduce Join
 	- ((af068531-83f5-4711-9ab6-619396eda1c6))
--
+- 关联优化
+	- 当程序中的操作彼此间有关联性时
