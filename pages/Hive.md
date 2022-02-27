@@ -32,5 +32,5 @@ collapsed:: true
 	- ((af068531-83f5-4711-9ab6-619396eda1c6))
 - 关联优化 #查询优化
 	- 当程序中的操作彼此间有关联性时，可以放在一个MapReduce中实现
-	- eg: select * from t_user group by id order by id desc
+	- eg: `select * from t_user group by id order by id desc`
 	-
