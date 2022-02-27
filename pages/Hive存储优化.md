@@ -13,6 +13,6 @@
 	  ```
 - 实际使用中，是在 [[Hive SQL]] 后加 `distribute by rand()` 来控制输出文件的个数，进而控制大小。
 - 读取小文件
-	-
-	- [[ORC]]文件索引
+	- 使用CombineHiveInputFormat 将小文件合并后，再进行处理
+- [[ORC文件]]索引
 -
