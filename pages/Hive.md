@@ -29,11 +29,5 @@ collapsed:: true
 		- 利用Shuffle阶段的分组对数据按join字段进行合并。
 		- ![image.png](../assets/image_1645952240358_0.png)
 	- 自动判断，满足Map Join则执行,不满足则Reduce Join
-	- Bucket Join 适用于大表 join 大表
-		- clustered by col_name
-			- `set hive.optimize.bucketmapjoin = true`
-			- 分桶字段 = Join字段，桶的格式相等或成倍数
-		- clustered by col_name sorted by (col_name)
-			- ![image.png](../assets/image_1645952415719_0.png)
-			- 分桶字段 = Join字段 = 排序字段，桶的格式相等或成倍数
+	- ((af068531-83f5-4711-9ab6-619396eda1c6))
 -
