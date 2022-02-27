@@ -11,4 +11,5 @@
 	  -- 平均每个文件的大小，如果小于这个值就会被合并
 	  set hive.merge.smallfiles.avgsize=160000000;
 	  ```
+- 实际使用中，是在Hive SQL后加 `distribute by rand()` 来控制输出文件的个数，进而控制大小。
 -
