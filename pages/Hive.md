@@ -11,4 +11,5 @@
 - [[MapReduce]] 的优化
 	- 本地模式自动切换 `set hive.exec.mode.local.auto = true`
 	- JVM重用
-	-
+		- Hadoop默认为每个Task启动一个JVM来运行，而JVM启动时内存开销大
+		-
