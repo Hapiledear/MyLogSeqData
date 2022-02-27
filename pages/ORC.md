@@ -8,4 +8,5 @@
 	- 矢量化查询
 		- 按每批1024行读取数据，一次性对整个记录正好应用操作，提升了如  where union join group by 等操作的性能
 		- 必须以ORC格式存储数据
+		- ![image.png](../assets/image_1645949327357_0.png)
 		-

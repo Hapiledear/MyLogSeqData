@@ -12,5 +12,7 @@
 	  set hive.merge.smallfiles.avgsize=160000000;
 	  ```
 - 实际使用中，是在 [[Hive SQL]] 后加 `distribute by rand()` 来控制输出文件的个数，进而控制大小。
-- [[ORC]]文件索引
+- 读取小文件
+	-
+	- [[ORC]]文件索引
 -
