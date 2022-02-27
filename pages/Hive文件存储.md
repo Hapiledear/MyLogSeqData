@@ -2,4 +2,6 @@
 	- ```SQL
 	  stored As file_format
 	  ```
--
+- 文件格式-- TextFile
+	- 默认存储格式，按行存储。
+	- 工作和生活中最常见的数据文件格式。
