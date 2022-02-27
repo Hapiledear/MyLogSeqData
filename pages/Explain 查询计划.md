@@ -9,6 +9,6 @@
 	- Stage 的依赖关系
 	- Stage 的内容
 	- ![image.png](../assets/image_1645951048085_0.png){:height 356, :width 705}
-	- Fetch Operation 抓取操作，并没有开启MapReduce
+	- Fetch Operation 抓取操作，并没有开启 [[MapReduce]]
 -
 	-
