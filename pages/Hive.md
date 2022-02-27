@@ -11,6 +11,10 @@
 - [[MapReduce]] 的优化
 	- 本地模式自动切换 `set hive.exec.mode.local.auto = true`
 	- JVM重用
-		- Hadoop默认为每个Task启动一个JVM来运行，而JVM启动时内存开销大
+		- Hadoop默认为每个Task启动一个 [[JVM]] 来运行，而JVM启动时内存开销大
 		- JVM重用指的就是一个JVM实例被多个Job重复使用
 		- 但在3.0已经不再支持 `set mapreduce.job.jvm.numtasks=10`
+	- 并行执行
+		- 多个Stage之间无依赖关系的，可以并行执行
+		- ![image.png](../assets/image_1645951779310_0.png)
+-
