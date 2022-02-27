@@ -10,4 +10,5 @@
 - [[Explain 查询计划]] 了解一条HQL在底层的实现过程
 - [[MapReduce]] 的优化
 	- 本地模式自动切换 `set hive.exec.mode.local.auto = true`
+	- JVM重用
 	-
