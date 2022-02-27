@@ -10,4 +10,6 @@
 	- Lzo
 	- Lz4
 	- Snappy
+- 压缩配置
+	- ![image.png](../assets/image_1645948050520_0.png)
 -
