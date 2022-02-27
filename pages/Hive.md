@@ -8,4 +8,6 @@
 	- [[Hive数据压缩]]
 	- [[Hive存储优化]]
 - [[Explain 查询计划]] 了解一条HQL在底层的实现过程
--
+- MapReduce的优化
+	- 本地模式 set hive.exec.mode.local.auto = true
+	-
