@@ -8,4 +8,6 @@
 	- [[抽象语法树 AST]]
 	- Stage 的依赖关系
 	- Stage 的内容
+- Fetch Operation 抓取操作，并没有开启MapReduce
+-
 	-
