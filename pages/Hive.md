@@ -31,6 +31,7 @@ collapsed:: true
 	- 自动判断，满足Map Join则执行,不满足则Reduce Join
 	- ((af068531-83f5-4711-9ab6-619396eda1c6))
 - 关联优化 #查询优化
-	- 当程序中的操作彼此间有关联性时，可以放在一个MapReduce中实现
+	- 当程序中的操作彼此间有关联性时，尽量的放在一个MapReduce中实现
 	- eg: `select * from t_user group by id order by id desc`
+	- 配置 `set hive.optimize.correlation=true` 可以
 	-
