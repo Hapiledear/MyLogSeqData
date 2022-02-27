@@ -35,4 +35,5 @@ collapsed:: true
 	- eg: `select * from t_user group by id order by id desc`
 	- 配置 `set hive.optimize.correlation=true`
 - [[Hive 优化器]] #查询优化
--
+- 谓词下推 PPD #查询优化
+	- 将 where 中的表达式，尽可能的移动到靠近原数据的地方
