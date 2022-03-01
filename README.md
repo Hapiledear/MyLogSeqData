@@ -1,5 +1,5 @@
 # MyLogSeqData
-
+!! 同步时先pull 后打开软件 !!
 ## 介绍
 使用Logseq来记录的笔记数据
 
