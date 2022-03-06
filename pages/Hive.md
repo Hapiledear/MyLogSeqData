@@ -44,5 +44,6 @@ collapsed:: true
 		  2. 对于 a left join b , b的条件写在 on 后面， a的条件写在 where后面
 		  3. 对于 a right join b , a的条件写在on后面，b的条件写在where后面
 - [[数据倾斜]] 优化 #查询优化
-	-
+- 执行引擎-- [[Tez]]
+- 执行引擎--
 	-
