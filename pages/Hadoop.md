@@ -1,2 +1,6 @@
 - [Hadoop官网](https://hadoop.apache.org/)
--
+- 通常意义上的Hadoop，包含如下4个组件
+	- Common包，组件的公共部分
+	- HDFS 分布式文件系统
+	- YARN 分布式调度系统
+	- MapReduce
