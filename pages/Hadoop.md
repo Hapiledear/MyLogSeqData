@@ -4,4 +4,9 @@
 	- [[HDFS ]] 分布式文件系统
 	- [[YARN]] 分布式调度系统
 	- [[MapReduce]] 分布式任务调度框架
-- 在Apache 基金会中，可以与Hadoop
+- 在Apache 基金会中，可以与Hadoop联动的项目
+	- [[HBase]] 大表存储数据
+	- [[Hive]]
+	- [[Spark]]
+	- [[Tez]]
+-
