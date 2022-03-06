@@ -6,7 +6,8 @@
 	- [[MapReduce]] 分布式任务调度框架
 - 在Apache 基金会中，可以与Hadoop联动的项目
 	- [[HBase]] 大表存储数据
-	- [[Hive]]
-	- [[Spark]]
-	- [[Tez]]
+	- [[Hive]] 数仓+SQL查询
+	- [[Spark]] 执行引擎+SQL查询
+	- [[Tez]] 执行引擎
+	- [[Zookeeper]] 分布式协调服务
 -
