@@ -43,4 +43,5 @@ collapsed:: true
 		  2. 对于 a left join b , b的条件写在 on 后面， a的条件写在 where后面
 		  3. 对于 a right join b , a的条件写在on后面，b的条件写在where后面
 - [[数据倾斜]] 优化
-	- 数据倾斜的现象是：当一个程序运行时，它的大多数task都已经结束了，只有某一个task一直在运行，迟迟不能
+	-
+	-
