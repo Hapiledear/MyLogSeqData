@@ -1,3 +1,6 @@
 - Tez特点
 	- ![image.png](../assets/image_1646551213148_0.png)
+- Tez执行过程
+	- ![image.png](../assets/image_1646551257099_0.png)
+	- ![image.png](../assets/image_1646551264063_0.png)
 -
