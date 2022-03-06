@@ -19,6 +19,7 @@
 		- ![image.png](../assets/image_1645951779310_0.png)
 		-
 - Join 优化 #查询优化
+  id:: 621b3b25-831d-4e0d-b49c-19ab01044211
 	- Map Join 适用于 小表 join 大表 或 小表 join 小表
 collapsed:: true
 		- 将小的那份完整的数据给每个MapTask的内存都放一份
