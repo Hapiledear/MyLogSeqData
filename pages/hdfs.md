@@ -12,9 +12,11 @@
 		- DataNode负责存在文件数据(block-块),并提供block的读写
 		- DataNode与NameNode之间维持心跳链接,并汇报自己持有的block信息
 	- Client 向NameNode交互文件元数据(metadata); 向DataNode交互文件数据(data)
+	- ![image.png](../assets/image_1646968875633_0.png)
 - 角色功能
 	- 角色 = 进程
-	-
+	- [[NameNode]]
+	- [[DataNode]]
 - 元数据\持久化
 - 安全模式
 - 副本放置策略
