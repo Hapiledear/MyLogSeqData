@@ -25,210 +25,231 @@
  {:block/name "2022年03月07日",
   :block/created-at 1646611200000,
   :block/updated-at 1646611200000}
+ {:block/name "2022年03月08日",
+  :block/created-at 1646697600000,
+  :block/updated-at 1646697600000}
+ {:block/name "2022年03月11日",
+  :block/created-at 1646956800000,
+  :block/updated-at 1646956800000}
  {:block/name "a",
-  :block/created-at 1646656984059,
-  :block/updated-at 1646656984059}
+  :block/created-at 1646982315736,
+  :block/updated-at 1646982315736}
  {:block/name "analize 分析器",
-  :block/created-at 1646656984061,
-  :block/updated-at 1646656984061}
+  :block/created-at 1646982315737,
+  :block/updated-at 1646982315737}
  {:block/name "b",
-  :block/created-at 1646656984059,
-  :block/updated-at 1646656984059}
+  :block/created-at 1646982315737,
+  :block/updated-at 1646982315737}
  {:block/name "book_数仓工具箱",
-  :block/created-at 1646656984059,
-  :block/updated-at 1646656984059}
+  :block/created-at 1646982315737,
+  :block/updated-at 1646982315737}
  {:block/name "c",
-  :block/created-at 1646656984060,
-  :block/updated-at 1646656984060}
+  :block/created-at 1646982315737,
+  :block/updated-at 1646982315737}
  {:block/name "card",
-  :block/created-at 1646656984059,
-  :block/updated-at 1646656984059}
+  :block/created-at 1646982315736,
+  :block/updated-at 1646982315736}
  {:block/name "contents",
-  :block/created-at 1646656984061,
-  :block/updated-at 1646656984061}
+  :block/created-at 1646982315737,
+  :block/updated-at 1646982315737}
+ {:block/name "datanode",
+  :block/created-at 1646969260415,
+  :block/updated-at 1646969534827}
  {:block/name "doing",
-  :block/created-at 1646656984059,
-  :block/updated-at 1646656984059}
+  :block/created-at 1646982315736,
+  :block/updated-at 1646982315736}
  {:block/name "done",
-  :block/created-at 1646656984060,
-  :block/updated-at 1646656984060}
+  :block/created-at 1646982315737,
+  :block/updated-at 1646982315737}
  {:block/name "explain 查询计划",
-  :block/created-at 1646656984059,
-  :block/updated-at 1646656984059}
+  :block/created-at 1646982315736,
+  :block/updated-at 1646982315736}
  {:block/name "favorites",
-  :block/created-at 1646656984059,
-  :block/updated-at 1646656984059}
+  :block/created-at 1646982315736,
+  :block/updated-at 1646982315736}
  {:block/name "flink",
-  :block/created-at 1646656984059,
-  :block/updated-at 1646656984059}
+  :block/created-at 1646982315736,
+  :block/updated-at 1646982315736}
  {:block/name "hadoop",
-  :block/created-at 1646656984059,
-  :block/updated-at 1646656984059}
+  :block/created-at 1646982315736,
+  :block/updated-at 1646982315736}
  {:block/name "hadoop压缩算法",
-  :block/created-at 1646656984059,
-  :block/updated-at 1646656984059}
+  :block/created-at 1646982315737,
+  :block/updated-at 1646982315737}
  {:block/name "hbase",
-  :block/created-at 1646656984059,
-  :block/updated-at 1646656984059}
+  :block/created-at 1646982315737,
+  :block/updated-at 1646982315737}
  {:block/name "hdfs",
-  :block/created-at 1646656984059,
-  :block/updated-at 1646656984059}
- {:block/name "hdfs ",
-  :block/created-at 1646656984061,
-  :block/updated-at 1646656984061}
+  :block/created-at 1646967350886,
+  :block/updated-at 1646969749117}
  {:block/name "hive",
-  :block/created-at 1646656984059,
-  :block/updated-at 1646656984059}
+  :block/created-at 1646982315736,
+  :block/updated-at 1646982315736}
  {:block/name "hive sql",
-  :block/created-at 1646656984059,
-  :block/updated-at 1646656984059}
+  :block/created-at 1646982315737,
+  :block/updated-at 1646982315737}
  {:block/name "hive 优化器",
-  :block/created-at 1646656984061,
-  :block/updated-at 1646656984061}
+  :block/created-at 1646982315737,
+  :block/updated-at 1646982315737}
  {:block/name "hive元数据",
-  :block/created-at 1646656984060,
-  :block/updated-at 1646656984060}
+  :block/created-at 1646982315737,
+  :block/updated-at 1646982315737}
  {:block/name "hive存储优化",
-  :block/created-at 1646656984059,
-  :block/updated-at 1646656984059}
+  :block/created-at 1646982315736,
+  :block/updated-at 1646982315736}
  {:block/name "hive数据压缩",
-  :block/created-at 1646656984061,
-  :block/updated-at 1646656984061}
+  :block/created-at 1646982315738,
+  :block/updated-at 1646982315738}
  {:block/name "hive文件存储",
-  :block/created-at 1646656984060,
-  :block/updated-at 1646656984060}
+  :block/created-at 1646982315737,
+  :block/updated-at 1646982315737}
  {:block/name "hive查询",
-  :block/created-at 1646656984059,
-  :block/updated-at 1646656984059}
+  :block/created-at 1646982315736,
+  :block/updated-at 1646982315736}
  {:block/name "in-progress",
-  :block/created-at 1646656984061,
-  :block/updated-at 1646656984061}
+  :block/created-at 1646982315738,
+  :block/updated-at 1646982315738}
  {:block/name "java",
-  :block/created-at 1646656984061,
-  :block/updated-at 1646656984061}
+  :block/created-at 1646982315737,
+  :block/updated-at 1646982315737}
  {:block/name "jvm",
-  :block/created-at 1646656984061,
-  :block/updated-at 1646656984061}
+  :block/created-at 1646982315737,
+  :block/updated-at 1646982315737}
  {:block/name "kafka",
-  :block/created-at 1646656984061,
-  :block/updated-at 1646656984061}
+  :block/created-at 1646982315737,
+  :block/updated-at 1646982315737}
  {:block/name "kv存储",
-  :block/created-at 1646656984059,
-  :block/updated-at 1646656984059}
+  :block/created-at 1646982315736,
+  :block/updated-at 1646982315736}
  {:block/name "later",
-  :block/created-at 1646656984059,
-  :block/updated-at 1646656984059}
+  :block/created-at 1646982315736,
+  :block/updated-at 1646982315736}
  {:block/name "mapreduce",
-  :block/created-at 1646656984061,
-  :block/updated-at 1646656984061}
+  :block/created-at 1646982315738,
+  :block/updated-at 1646982315738}
+ {:block/name "namenode",
+  :block/created-at 1646968932988,
+  :block/updated-at 1646969235981}
  {:block/name "netty",
-  :block/created-at 1646656984061,
-  :block/updated-at 1646656984061}
+  :block/created-at 1646982315737,
+  :block/updated-at 1646982315737}
  {:block/name "nio",
-  :block/created-at 1646656984059,
-  :block/updated-at 1646656984059}
+  :block/created-at 1646982315736,
+  :block/updated-at 1646982315736}
  {:block/name "now",
-  :block/created-at 1646656984061,
-  :block/updated-at 1646656984061}
+  :block/created-at 1646982315738,
+  :block/updated-at 1646982315738}
  {:block/name "orc文件",
-  :block/created-at 1646656984061,
-  :block/updated-at 1646656984061}
+  :block/created-at 1646982315738,
+  :block/updated-at 1646982315738}
  {:block/name "parquet",
-  :block/created-at 1646656984061,
-  :block/updated-at 1646656984061}
+  :block/created-at 1646982315737,
+  :block/updated-at 1646982315737}
  {:block/name "readme",
-  :block/created-at 1646656984059,
-  :block/updated-at 1646656984059}
+  :block/created-at 1646982315737,
+  :block/updated-at 1646982315737}
  {:block/name "rpc",
-  :block/created-at 1646656984061,
-  :block/updated-at 1646656984061}
+  :block/created-at 1646982315738,
+  :block/updated-at 1646982315738}
  {:block/name "sequencefile",
-  :block/created-at 1646656984059,
-  :block/updated-at 1646656984059}
+  :block/created-at 1646982315736,
+  :block/updated-at 1646982315736}
  {:block/name "shuffle",
-  :block/created-at 1646656984059,
-  :block/updated-at 1646656984059}
+  :block/created-at 1646982315736,
+  :block/updated-at 1646982315736}
  {:block/name "spark",
-  :block/created-at 1646656984061,
-  :block/updated-at 1646656984061}
+  :block/created-at 1646982315737,
+  :block/updated-at 1646982315737}
  {:block/name "textfile",
-  :block/created-at 1646656984061,
-  :block/updated-at 1646656984061}
+  :block/created-at 1646982315737,
+  :block/updated-at 1646982315737}
  {:block/name "tez",
-  :block/created-at 1646656984059,
-  :block/updated-at 1646656984059}
+  :block/created-at 1646982315737,
+  :block/updated-at 1646982315737}
  {:block/name "todo",
-  :block/created-at 1646656984059,
-  :block/updated-at 1646656984059}
+  :block/created-at 1646982315737,
+  :block/updated-at 1646982315737}
  {:block/name "wait",
-  :block/created-at 1646656984061,
-  :block/updated-at 1646656984061}
+  :block/created-at 1646982315737,
+  :block/updated-at 1646982315737}
  {:block/name "waiting",
-  :block/created-at 1646656984059,
-  :block/updated-at 1646656984059}
+  :block/created-at 1646982315736,
+  :block/updated-at 1646982315736}
  {:block/name "yarn",
-  :block/created-at 1646656984059,
-  :block/updated-at 1646656984059}
+  :block/created-at 1646982315736,
+  :block/updated-at 1646982315736}
  {:block/name "zookeeper",
-  :block/created-at 1646656984059,
-  :block/updated-at 1646656984059}
+  :block/created-at 1646982315736,
+  :block/updated-at 1646982315736}
  {:block/name "上卷维度",
-  :block/created-at 1646656984059,
-  :block/updated-at 1646656984059}
+  :block/created-at 1646982315736,
+  :block/updated-at 1646982315736}
+ {:block/name "主从结构",
+  :block/created-at 1646982315736,
+  :block/updated-at 1646982315736}
  {:block/name "事务事实表",
-  :block/created-at 1646656984060,
-  :block/updated-at 1646656984060}
+  :block/created-at 1646982315737,
+  :block/updated-at 1646982315737}
  {:block/name "事实表",
   :block/created-at 1646655774257,
   :block/updated-at 1646655864099}
  {:block/name "代理键",
-  :block/created-at 1646656984060,
-  :block/updated-at 1646656984060}
+  :block/created-at 1646982315737,
+  :block/updated-at 1646982315737}
+ {:block/name "元数据",
+  :block/created-at 1646982315736,
+  :block/updated-at 1646982315736}
  {:block/name "分区表",
-  :block/created-at 1646656984061,
-  :block/updated-at 1646656984061}
+  :block/created-at 1646982315737,
+  :block/updated-at 1646982315737}
  {:block/name "分布式",
-  :block/created-at 1646656984061,
-  :block/updated-at 1646656984061}
+  :block/created-at 1646982315738,
+  :block/updated-at 1646982315738}
  {:block/name "分布式系统",
-  :block/created-at 1646656984059,
-  :block/updated-at 1646656984059}
+  :block/created-at 1646982315736,
+  :block/updated-at 1646982315736}
  {:block/name "分桶表",
-  :block/created-at 1646656984061,
-  :block/updated-at 1646656984061}
+  :block/created-at 1646982315737,
+  :block/updated-at 1646982315737}
  {:block/name "列式存储",
-  :block/created-at 1646656984061,
-  :block/updated-at 1646656984061}
+  :block/created-at 1646982315737,
+  :block/updated-at 1646982315737}
+ {:block/name "可靠性",
+  :block/created-at 1646982315737,
+  :block/updated-at 1646982315737}
  {:block/name "合并事实表",
-  :block/created-at 1646656984059,
-  :block/updated-at 1646656984059}
+  :block/created-at 1646982315736,
+  :block/updated-at 1646982315736}
  {:block/name "周期快照表",
-  :block/created-at 1646656984059,
-  :block/updated-at 1646656984059}
+  :block/created-at 1646982315736,
+  :block/updated-at 1646982315736}
  {:block/name "多值维度",
   :block/created-at 1645582480976,
   :block/updated-at 1645582480976}
  {:block/name "大数据成神之路",
-  :block/created-at 1646656984059,
-  :block/updated-at 1646656984059}
+  :block/created-at 1646982315736,
+  :block/updated-at 1646982315736}
  {:block/name "子类事实表",
-  :block/created-at 1646656984059,
-  :block/updated-at 1646656984059}
+  :block/created-at 1646982315736,
+  :block/updated-at 1646982315736}
  {:block/name "客户维度",
-  :block/created-at 1646656984059,
-  :block/updated-at 1646656984059}
+  :block/created-at 1646982315736,
+  :block/updated-at 1646982315736}
  {:block/name "家庭维度",
-  :block/created-at 1646656984059,
-  :block/updated-at 1646656984059}
+  :block/created-at 1646982315736,
+  :block/updated-at 1646982315736}
  {:block/name "容灾",
-  :block/created-at 1646656984061,
-  :block/updated-at 1646656984061}
+  :block/created-at 1646982315738,
+  :block/updated-at 1646982315738}
+ {:block/name "容错性",
+  :block/created-at 1646982315737,
+  :block/updated-at 1646982315737}
  {:block/name "布隆过滤器",
-  :block/created-at 1646656984059,
-  :block/updated-at 1646656984059}
+  :block/created-at 1646982315736,
+  :block/updated-at 1646982315736}
  {:block/name "并发",
-  :block/created-at 1646656984061,
-  :block/updated-at 1646656984061}
+  :block/created-at 1646982315737,
+  :block/updated-at 1646982315737}
  {:block/name "异构产品",
   :block/created-at 1645618432220,
   :block/updated-at 1645618763537}
@@ -236,68 +257,80 @@
   :block/created-at 1645582587719,
   :block/updated-at 1645582587719}
  {:block/name "抽象语法树 ast",
-  :block/created-at 1646656984060,
-  :block/updated-at 1646656984060}
+  :block/created-at 1646982315737,
+  :block/updated-at 1646982315737}
+ {:block/name "持久化技术",
+  :block/created-at 1646969809155,
+  :block/updated-at 1646970544891}
  {:block/name "操作型主键",
-  :block/created-at 1646656984059,
-  :block/updated-at 1646656984059}
+  :block/created-at 1646982315736,
+  :block/updated-at 1646982315736}
  {:block/name "支架表",
-  :block/created-at 1646656984061,
-  :block/updated-at 1646656984061}
+  :block/created-at 1646982315737,
+  :block/updated-at 1646982315737}
+ {:block/name "数据",
+  :block/created-at 1646982315736,
+  :block/updated-at 1646982315736}
  {:block/name "数据仓库",
-  :block/created-at 1646656984061,
-  :block/updated-at 1646656984061}
+  :block/created-at 1646982315737,
+  :block/updated-at 1646982315737}
  {:block/name "数据倾斜",
-  :block/created-at 1646656984061,
-  :block/updated-at 1646656984061}
+  :block/created-at 1646982315737,
+  :block/updated-at 1646982315737}
  {:block/name "数据冗余",
-  :block/created-at 1646656984059,
-  :block/updated-at 1646656984059}
+  :block/created-at 1646982315736,
+  :block/updated-at 1646982315736}
  {:block/name "无事实事实表",
   :block/created-at 1646138142961,
   :block/updated-at 1646655524843}
  {:block/name "日期维度",
-  :block/created-at 1646656984060,
-  :block/updated-at 1646656984060}
+  :block/created-at 1646982315737,
+  :block/updated-at 1646982315737}
  {:block/name "查询优化",
-  :block/created-at 1646656984059,
-  :block/updated-at 1646656984059}
+  :block/created-at 1646982315736,
+  :block/updated-at 1646982315736}
  {:block/name "标识符",
-  :block/created-at 1646656984059,
-  :block/updated-at 1646656984059}
+  :block/created-at 1646982315736,
+  :block/updated-at 1646982315736}
+ {:block/name "校验和",
+  :block/created-at 1646982315736,
+  :block/updated-at 1646982315736}
  {:block/name "桥接表",
   :block/created-at 1646656621391,
   :block/updated-at 1646656861909}
  {:block/name "泛洪操作",
-  :block/created-at 1646656984061,
-  :block/updated-at 1646656984061}
+  :block/created-at 1646982315738,
+  :block/updated-at 1646982315738}
  {:block/name "流水线",
-  :block/created-at 1646656984059,
-  :block/updated-at 1646656984059}
+  :block/created-at 1646982315736,
+  :block/updated-at 1646982315736}
+ {:block/name "溢写",
+  :block/created-at 1646970679841,
+  :block/updated-at 1646970679841}
  {:block/name "笛卡尔积",
-  :block/created-at 1646656984059,
-  :block/updated-at 1646656984059}
+  :block/created-at 1646982315737,
+  :block/updated-at 1646982315737}
  {:block/name "类型1",
-  :block/created-at 1646656984059,
-  :block/updated-at 1646656984059}
+  :block/created-at 1646982315737,
+  :block/updated-at 1646982315737}
  {:block/name "类型2",
-  :block/created-at 1646656984059,
-  :block/updated-at 1646656984059}
+  :block/created-at 1646982315736,
+  :block/updated-at 1646982315736}
  {:block/name "粒度",
-  :block/created-at 1646656984059,
-  :block/updated-at 1646656984059}
+  :block/created-at 1646982315736,
+  :block/updated-at 1646982315736}
  {:block/name "累积快照事实表",
-  :block/created-at 1646656984059,
-  :block/updated-at 1646656984059}
+  :block/created-at 1646982315737,
+  :block/updated-at 1646982315737}
  {:block/name "累积快照表",
   :block/created-at 1646136750395,
   :block/updated-at 1646138041363}
  {:block/name "维度",
-  :block/created-at 1646656984061,
-  :block/updated-at 1646656984061}
+  :block/created-at 1646982315737,
+  :block/updated-at 1646982315737}
  {:block/name "维度模型",
-  :block/created-at 1646656984059,
-  :block/updated-at 1646656984059}
+  :block/created-at 1646982315736,
+  :block/updated-at 1646982315736}
  {:block/name "维度表",
   :block/created-at 1646139015185,
   :block/updated-at 1646655618999}
@@ -314,8 +347,11 @@
   :block/created-at 1645618474706,
   :block/updated-at 1645618484967}
  {:block/name "过程",
-  :block/created-at 1646656984061,
-  :block/updated-at 1646656984061}
+  :block/created-at 1646982315738,
+  :block/updated-at 1646982315738}
  {:block/name "退化维度",
-  :block/created-at 1646656984059, 
-  :block/updated-at 1646656984059}]
+  :block/created-at 1646982315736,
+  :block/updated-at 1646982315736}
+ {:block/name "高并发",
+  :block/created-at 1646982315737, 
+  :block/updated-at 1646982315737}]
