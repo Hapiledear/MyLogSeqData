@@ -7,10 +7,10 @@
 	- 支持修改会怎么样？在修改的地方，所对应的块会变大。在它之后的块的偏移量就不对了。只能将溢出数据逐渐下移到最后一块，造成大量网络传输。这是不必要的。 #泛洪操作
 - 架构设计 #主从结构
 	- 主从(Master/Slaves)架构
-	- 由一个NameNode 和一些DataNode 组成
-	- 包含 文件数据(data) 和文件元数据(metadata)
-	- NameNode负责存储和管理文件元数据,并维护一个文件目录树
-	-
+	- 由一个NameNode(主) 和一些DataNode(从) 组成,包含 文件数据(data) 和文件元数据(metadata)
+		- NameNode负责存储和管理文件元数据,并维护一个文件目录树
+		- DataNode负责存在文件数据(block-块),并提供block的读写
+		- DataNode于NameNode之间维持心跳链接,并汇报自己持有的block信息
 - 角色功能
 - 元数据\持久化
 - 安全模式
