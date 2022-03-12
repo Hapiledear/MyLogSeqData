@@ -18,6 +18,10 @@
 	- [[NameNode]]
 	- [[DataNode]]
 - [[元数据]]\持久化 #持久化技术
+	- EditsLog 日志文件
+		- 体积小，记录少时有优势
+	-
+	- ![image.png](../assets/image_1647071489662_0.png)
 	-
 - 安全模式
 - 副本放置策略
