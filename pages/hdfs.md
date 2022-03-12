@@ -28,7 +28,7 @@
 		- current = 10 FI=9  EL =9 to 10
 	- FsImage的滚动更新方案
 		- 8点溢写，9点溢写 ...
-		- 第一次开启时写溢出FsImage,之后
+		- 第一次开启时写溢出FsImage = 8点,之后使用EitsLog=8 to 9，
 - 安全模式
 - 副本放置策略
 - 读写流程
