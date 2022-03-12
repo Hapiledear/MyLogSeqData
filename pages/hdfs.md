@@ -18,11 +18,15 @@
 	- [[NameNode]]
 	- [[DataNode]]
 - [[元数据]]\持久化 #持久化技术
+  id:: 622c4b81-70b0-4b12-adfc-fc6de273d0d4
 	- EditsLog 日志文件
 		- 体积小，记录少时有优势
-	-
+	- FsImage 快照
+		- 如果有更快的滚动更新时间点(更新间隔短)
 	- ![image.png](../assets/image_1647071489662_0.png)
-	-
+	- 最近时间点的FsImage + 增量EditsLog
+		- current = 10 FI=9  EL =9 to 10
+		-
 - 安全模式
 - 副本放置策略
 - 读写流程
