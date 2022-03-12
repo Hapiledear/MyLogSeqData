@@ -26,7 +26,9 @@
 	- ![image.png](../assets/image_1647071489662_0.png)
 	- 最近时间点的FsImage + 增量EditsLog
 		- current = 10 FI=9  EL =9 to 10
-	-
+	- FsImage的滚动更新方案
+		- 8点溢写，9点溢写 ...
+		- 第一次开启时写溢出FsImage,之后
 - 安全模式
 - 副本放置策略
 - 读写流程
