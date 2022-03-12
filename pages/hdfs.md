@@ -34,9 +34,11 @@
 		- [[NameNode]] 第一次开启时写溢出FsImage = 8点,之后使用EitsLog=8 to 9，将这些记录更新到8点的FI中，就变成了9点 的FI
 			- 但此时NameNode可能会拒绝服务，因此需要寻求另一台机器来做这件事情，就是 [[SeconaryNameNode]]
 - 安全模式 #NameNode
-	- 产生和使用FsImage&EditLog
+	- NameNode启动，产生和使用FsImage&EditLog
 		- ![image.png](../assets/image_1647072259071_0.png)
-	-
+	- 开启安全模式，恢复block信息
+		- ![image.png](../assets/image_1647072738053_0.png)
+		-
 - 副本放置策略
 - 读写流程
 - 安全策略
