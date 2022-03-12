@@ -31,7 +31,7 @@
 		- 由 [[NameNode]] 8点溢写，9点溢写 ...
 		- [[NameNode]] 第一次开启时写溢出FsImage = 8点,之后使用EitsLog=8 to 9，将这些记录更新到8点的FI中，就变成了9点 的FI
 			- 但此时NameNode可能会拒绝服务，因此需要寻求另一台机器来做这件事情，就是 [[SeconaryNameNode]]
-- 安全模式-- 产生和使用持久化
+- 安全模式
 	- 产生和使用FsImage&EditLog
 		- ![image.png](../assets/image_1647072259071_0.png)
 		-
