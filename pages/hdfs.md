@@ -27,8 +27,8 @@
 	- 最近时间点的FsImage + 增量EditsLog
 		- current = 10 FI=9  EL =9 to 10
 	- FsImage的滚动更新方案
-		- 8点溢写，9点溢写 ...
-		- 第一次开启时写溢出FsImage = 8点,之后使用EitsLog=8 to 9，将这些记录更新到8点的FI中，就变成了9点 的FI
+		- 由 [[NameNode]] 8点溢写，9点溢写 ...
+		- [[NameNode]] 第一次开启时写溢出FsImage = 8点,之后使用EitsLog=8 to 9，将这些记录更新到8点的FI中，就变成了9点 的FI
 - 安全模式
 - 副本放置策略
 - 读写流程
