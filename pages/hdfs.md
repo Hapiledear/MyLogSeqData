@@ -20,7 +20,7 @@
 	- [[SeconaryNameNode]]
 - [[元数据]]\持久化 #持久化技术 #NameNode
   id:: 622c4b81-70b0-4b12-adfc-fc6de273d0d4
-	-
+	- 持久化时并不保存block的位置信息
 	- EditsLog 日志文件
 		- 体积小，记录少时有优势
 	- FsImage 快照
@@ -35,7 +35,7 @@
 - 安全模式 #NameNode
 	- 产生和使用FsImage&EditLog
 		- ![image.png](../assets/image_1647072259071_0.png)
-		-
+	-
 - 副本放置策略
 - 读写流程
 - 安全策略
