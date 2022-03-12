@@ -20,6 +20,7 @@
 	- [[SeconaryNameNode]]
 - [[元数据]]\持久化 #持久化技术 #NameNode
   id:: 622c4b81-70b0-4b12-adfc-fc6de273d0d4
+	-
 	- EditsLog 日志文件
 		- 体积小，记录少时有优势
 	- FsImage 快照
