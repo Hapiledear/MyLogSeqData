@@ -47,8 +47,5 @@
 - 读写流程
 	- 写流程
 		- ![image.png](../assets/image_1647075585222_0.png)
-		- 副本数量对于客户端来说是透明的
-		- 如果最后一个DataNode挂掉，无影响。
-		- 如果中间的DataNode挂掉，跳过挂掉的节点，继续传输。
-		- DataNode心跳实时汇报给NameNode的文件存储情况，如果其中一个DataNode挂掉，DataNode则会另起一台DataNode
+		-
 - 安全策略
