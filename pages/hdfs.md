@@ -47,6 +47,7 @@
 - 读写流程
 	- 写流程
 		- ![image.png](../assets/image_1647075585222_0.png)
+		- ![image.png](../assets/image_1647076362687_0.png)
 		-
 		-
 - 安全策略
