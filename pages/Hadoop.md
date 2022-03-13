@@ -47,6 +47,7 @@ collapsed:: true
 			- ![image.png](../assets/image_1647161718149_0.png)
 		- 设置环境变量
 			- ![image.png](../assets/image_1647161740645_0.png)
-		- 配置
+		- 配置Hadoop的角色
+			-
 	- HA（High Available） 完全分布式模式 #高可用
 -
