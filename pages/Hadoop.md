@@ -50,7 +50,7 @@ collapsed:: true
 		- 配置Hadoop的角色
 			- 修改hadoop-env.sh的JAVA_HOME为绝对路径
 				- ![image.png](../assets/image_1647162214627_0.png)
-			- 修改 `etc/hadoop/core-site.xml` -- NameNode角色在那里启动
+			- 修改 `etc/hadoop/core-site.xml` -- [[NameNode]] 角色在那里启动
 				- ```xml
 				  <configuration>
 				      <property>
@@ -68,7 +68,7 @@ collapsed:: true
 				      </property>
 				  </configuration>
 				  ```
-			- 修改 salves -- DataNode角色在哪里启动
+			- 修改 salves -- [[DataNode]] 角色在哪里启动
 				-
 			-
 	- HA（High Available） 完全分布式模式 #高可用
