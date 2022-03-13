@@ -36,5 +36,7 @@
 			- ![image.png](../assets/image_1647160467685_0.png)
 			-
 		- 设置 [[ssh]] 免密钥
+			- `ssh localhost` 自己登录自己 试试是否需要密码
+			-
 	- HA（High Available） 完全分布式模式 #高可用
 -
