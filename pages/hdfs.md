@@ -51,4 +51,6 @@
 	- 读流程
 		- ![image.png](../assets/image_1647076939335_0.png)
 		- ![image.png](../assets/image_1647077442811_0.png)
+- 伪分布式模式
+- HA High Avaliable模式 #高可用
 -
