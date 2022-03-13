@@ -32,6 +32,8 @@
 			- ![image.png](../assets/image_1647159796939_0.png)
 			-
 		- 安装 [[jdk]]
+			- `rpm -i jdk-8ul81-linux-x64.rpm`
+			-
 		- 设置 [[ssh]] 免密钥
 	- HA（High Available） 完全分布式模式 #高可用
 -
