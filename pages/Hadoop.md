@@ -28,7 +28,8 @@
 			-
 		- 设置hosts映射
 			- ![image.png](../assets/image_1647159618037_0.png)
-		- 时间同步
+		- 时间同步 -- 使用ntp服务
+			- ![image.png](../assets/image_1647159796939_0.png)
 			-
 		- 安装 [[jdk]]
 		- 设置 [[ssh]] 免密钥
