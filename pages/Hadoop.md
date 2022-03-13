@@ -48,6 +48,6 @@ collapsed:: true
 		- 设置环境变量
 			- ![image.png](../assets/image_1647161740645_0.png)
 		- 配置Hadoop的角色
-			-
+			- 设置免密登录
 	- HA（High Available） 完全分布式模式 #高可用
 -
