@@ -52,6 +52,11 @@
 		- ![image.png](../assets/image_1647076939335_0.png)
 		- ![image.png](../assets/image_1647077442811_0.png)
 - 部署
+	- 需要的硬件
+		- GNU/Linux Linux机器
+	- 需要的软件
+		- Java 8+
+		-
 	- 伪分布式模式
 	- HA High Available模式 #高可用
 -
