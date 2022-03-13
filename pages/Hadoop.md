@@ -23,7 +23,7 @@
 		- 设置IP `vi /etc/sysconfig/netwwork-scripts/ifcfg-eth0`及 主机名 `vi /etc/sysconfig/network`
 			- ![image.png](../assets/image_1647159484653_0.png)
 			- ![image.png](../assets/image_1647159594584_0.png)
-		- 关闭防火墙 ``&selinux
+		- 关闭防火墙 `service iptables stop` `chkconfig iptables off`& selinux `vi /etc/selinux/config`
 			-
 		- 设置hosts映射
 			- ![image.png](../assets/image_1647159618037_0.png)
