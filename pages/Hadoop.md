@@ -43,6 +43,7 @@ collapsed:: true
 				-
 	- 伪分布式模式
 		- ![image.png](../assets/image_1647161392042_0.png)
-		-
+		- 规划安装路径
+			-
 	- HA（High Available） 完全分布式模式 #高可用
 -
