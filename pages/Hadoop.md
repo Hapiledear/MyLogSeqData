@@ -20,11 +20,11 @@
 			- 远程免密登陆
 			- 远程执行脚本\命令
 	- 伪分布式模式
-		- 1. 设置IP 及主机名
+		- 1. 设置IP `vi /etc/sysconfig/netwwork-scripts/ifcfg-eth0`及 主机名
 		- 2. 关闭防火墙&selinux
 		- 设置hosts映射
 		- 时间同步
-		- 安装jdk
+		- 安装 [[jdk]]
 		- 设置SSH免密钥
 	- HA（High Available） 完全分布式模式 #高可用
 -
