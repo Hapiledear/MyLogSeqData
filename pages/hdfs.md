@@ -56,7 +56,8 @@
 		- GNU/Linux Linux机器
 	- 需要的软件
 		- Java 8+
-		-
+		- 远程机器中需要有 ssh
+			-
 	- 伪分布式模式
 	- HA High Available模式 #高可用
 -
