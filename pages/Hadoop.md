@@ -15,16 +15,17 @@
 	- 需要的硬件
 		- GNU/Linux [[Linux]] 机器
 	- 需要的软件
-		- Java 8+
-		- 运行Hadoop的机器中需要有 ssh
+		- [[Java]] 8+
+		- 运行Hadoop的机器中需要有 [[ssh]]
 			- 远程免密登陆
 			- 远程执行脚本\命令
 	- 伪分布式模式
 		- 1. 设置IP及主机名
-		  2. 关闭防火墙&selinux
-		  3. 设置hosts映射
-		  4. 时间同步
-		  5. 安装jdk
-		  6. 设置SSH免密钥
+		  
+		  3. 关闭防火墙&selinux
+		  4. 设置hosts映射
+		  5. 时间同步
+		  6. 安装jdk
+		  7. 设置SSH免密钥
 	- HA（High Available） 完全分布式模式 #高可用
 -
