@@ -19,26 +19,29 @@
 		- 运行Hadoop的机器中需要有 [[ssh]]
 			- 远程免密登陆
 			- 远程执行脚本\命令
-	- 伪分布式模式
+	- 基础配置
+collapsed:: true
 		- 设置IP `vi /etc/sysconfig/netwwork-scripts/ifcfg-eth0`及 主机名 `vi /etc/sysconfig/network`
 			- ![image.png](../assets/image_1647159484653_0.png)
 			- ![image.png](../assets/image_1647159594584_0.png)
-		- 关闭防火墙 `service iptables stop` `chkconfig iptables off`& selinux `vi /etc/selinux/config`
-			- ![image.png](../assets/image_1647159702386_0.png)
-			-
-		- 设置hosts映射
-			- ![image.png](../assets/image_1647159618037_0.png)
-		- 时间同步 -- 使用ntp服务
-			- ![image.png](../assets/image_1647159796939_0.png)
-			-
-		- 安装 [[jdk]]
-			- `rpm -i jdk-8ul81-linux-x64.rpm`
-			- ![image.png](../assets/image_1647160467685_0.png)
-			-
-		- 设置 [[ssh]] 免密登录
-			- `ssh localhost` 自己登录自己 试试是否需要密码
-				- 被动生成了`/root/.ssh`目录
-			- ![image.png](../assets/image_1647161238548_0.png)
-			-
+			- 关闭防火墙 `service iptables stop` `chkconfig iptables off`& selinux `vi /etc/selinux/config`
+				- ![image.png](../assets/image_1647159702386_0.png)
+				-
+			- 设置hosts映射
+				- ![image.png](../assets/image_1647159618037_0.png)
+			- 时间同步 -- 使用ntp服务
+				- ![image.png](../assets/image_1647159796939_0.png)
+				-
+			- 安装 [[jdk]]
+				- `rpm -i jdk-8ul81-linux-x64.rpm`
+				- ![image.png](../assets/image_1647160467685_0.png)
+				-
+			- 设置 [[ssh]] 免密登录
+				- `ssh localhost` 自己登录自己 试试是否需要密码
+					- 被动生成了`/root/.ssh`目录
+				- ![image.png](../assets/image_1647161238548_0.png)
+				-
+	- 伪分布式模式
+		-
 	- HA（High Available） 完全分布式模式 #高可用
 -
