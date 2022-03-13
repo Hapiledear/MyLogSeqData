@@ -13,7 +13,7 @@
 	- [[Zookeeper]] 分布式协调服务
 - 部署
 	- 需要的硬件
-		- GNU/Linux Linux机器
+		- GNU/Linux [[Linux]] 机器
 	- 需要的软件
 		- Java 8+
 		- 运行Hadoop的机器中需要有 ssh
@@ -22,5 +22,9 @@
 	- 伪分布式模式
 		- 1. 设置IP及主机名
 		  2. 关闭防火墙&selinux
+		  3. 设置hosts映射
+		  4. 时间同步
+		  5. 安装jdk
+		  6. 设置SSH免密钥
 	- HA（High Available） 完全分布式模式 #高可用
 -
