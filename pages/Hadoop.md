@@ -50,6 +50,15 @@ collapsed:: true
 		- 配置Hadoop的角色
 			- 修改hadoop-env.sh的JAVA_HOME为绝对路径
 				- ![image.png](../assets/image_1647162214627_0.png)
-			-
+			- 修改 core-site.xml --
+				- ```
+				  <configuration>
+				      <property>
+				          <name>fs.defaultFS</name>
+				          <value>hdfs://localhost:9000</value>
+				      </property>
+				  </configuration>
+				  ```
+				-
 	- HA（High Available） 完全分布式模式 #高可用
 -
