@@ -38,6 +38,7 @@
 		- 设置 [[ssh]] 免密登录
 			- `ssh localhost` 自己登录自己 试试是否需要密码
 				- 被动生成了`/root/.ssh`目录
+			- ![image.png](../assets/image_1647161138250_0.png)
 			-
 	- HA（High Available） 完全分布式模式 #高可用
 -
