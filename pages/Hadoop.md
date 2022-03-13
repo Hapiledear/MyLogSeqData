@@ -24,10 +24,12 @@
 			- ![image.png](../assets/image_1647159484653_0.png)
 			- ![image.png](../assets/image_1647159594584_0.png)
 		- 关闭防火墙 `service iptables stop` `chkconfig iptables off`& selinux `vi /etc/selinux/config`
+			- ![image.png](../assets/image_1647159702386_0.png)
 			-
 		- 设置hosts映射
 			- ![image.png](../assets/image_1647159618037_0.png)
 		- 时间同步
+			-
 		- 安装 [[jdk]]
 		- 设置 [[ssh]] 免密钥
 	- HA（High Available） 完全分布式模式 #高可用
