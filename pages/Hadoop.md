@@ -60,7 +60,16 @@ collapsed:: true
 				  </configuration>
 				  ```
 			- 修改`etc/hadoop/hdfs-site.xml`
+				- ```xml
+				  <configuration>
+				      <property>
+				          <name>dfs.replication</name>
+				          <value>1</value>
+				      </property>
+				  </configuration>
+				  ```
+			- 修改 salves -- DataNode启动配置
 				-
-				-
+			-
 	- HA（High Available） 完全分布式模式 #高可用
 -
