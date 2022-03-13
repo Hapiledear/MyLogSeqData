@@ -35,8 +35,8 @@
 			- `rpm -i jdk-8ul81-linux-x64.rpm`
 			- ![image.png](../assets/image_1647160467685_0.png)
 			-
-		- 设置 [[ssh]] 免密钥
+		- 设置 [[ssh]] 免密登录
 			- `ssh localhost` 自己登录自己 试试是否需要密码
-			-
+				- 被动生成了``
 	- HA（High Available） 完全分布式模式 #高可用
 -
