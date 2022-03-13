@@ -11,4 +11,14 @@
 		- 相似的还有 [[Flink]]
 	- [[Tez]] 批处理执行引擎
 	- [[Zookeeper]] 分布式协调服务
+- 部署
+	- 需要的硬件
+		- GNU/Linux Linux机器
+	- 需要的软件
+		- Java 8+
+		- 运行Hadoop的机器中需要有 ssh
+			- 远程免密登陆
+			- 远程执行脚本\命令
+	- 伪分布式模式
+	- HA High Available模式 #高可用
 -
