@@ -45,7 +45,8 @@ collapsed:: true
 		- ![image.png](../assets/image_1647161392042_0.png)
 		- 规划安装路径
 			- ![image.png](../assets/image_1647161718149_0.png)
-		- 设置环境变量2
+		- 设置环境变量
+			- ![image.png](../assets/image_1647161740645_0.png)
 		-
 	- HA（High Available） 完全分布式模式 #高可用
 -
