@@ -66,6 +66,16 @@ collapsed:: true
 				          <name>dfs.replication</name>
 				          <value>1</value>
 				      </property>
+				    //NameNode元数据的保存目录
+				    	<property>
+				          <name>dfs.namenode.name.dir</name>
+				          <value>/var/bigdata/hadoop/local/dfs/name</value>
+				      </property>
+				    //DataNode的数据块的保存目录
+				      <property>
+				          <name>dfs.datanode.data.dir</name>
+				          <value>/var/bigdata/hadoop/local/dfs/data</value>
+				      </property>
 				  </configuration>
 				  ```
 			- 修改 salves -- [[DataNode]] 角色在哪里启动
