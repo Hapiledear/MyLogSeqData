@@ -2,7 +2,7 @@
 - 通常意义上的Hadoop，包含如下4个组件
 	- Common包，组件的公共部分
 		- [[Hadoop Configuration]] Hadoop的配置实现
-		-
+		- [[Hadoop IO]] Hadoop的序列化与压缩
 	- [[HDFS ]] 分布式文件存储系统
 	- [[YARN]] 分布式调度系统
 	- [[MapReduce]] 分布式任务调度框架
@@ -46,6 +46,8 @@
 				-
 	- 伪分布式模式
 	  collapsed:: false
+		-
+		-
 		- ![image.png](../assets/image_1647161392042_0.png)
 		- 规划安装路径
 			- ![image.png](../assets/image_1647161718149_0.png)
@@ -98,6 +100,8 @@
 				- 第一次启动时,[[DataNode]]和 [[SecondaryNameNode]] 会创建数据目录
 			- `hdfs dfs -mkdir -p /user/root` 创建存放数据的根目录
 			-
-	- HA（High Available） 完全分布式模式 #高可用
+	- 完全分布式模式
+	- HA（High Available） #高可用
+		- 多个[[NameNode]] 主备切换
 		-
 -
