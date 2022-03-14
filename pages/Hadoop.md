@@ -117,7 +117,7 @@
 						- 如果会话终止(NameNode挂掉了),锁节点会自动删除.
 						- 进而,另其它的ZKFC会得到这个消息.它们开始抢锁,选除主NameNode
 					- 故障转移
-						- 将前一个主NameNode降级
+						- 将前一个主NameNode降级 \ 强行杀死该NameNode,防止假死
 						- 将自己的NameNode升级
 			- 故障转移机制 -- 自动切换
 				- ![image.png](../assets/image_1647249368276_0.png)
