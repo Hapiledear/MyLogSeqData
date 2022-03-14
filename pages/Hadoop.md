@@ -113,7 +113,12 @@
 				- ZKFC = Zoo Keeper FailoverController ,是运行于 NameNode所在主机的进程,主要做三件事情
 					- 监测本机的NameNode的健康状态
 					- ZK的会话管理
-					-
+						- 在主NameNode的 zk中,维持一把znode锁,
+						- 如果会话终止(NameNode挂掉了),锁节点会自动删除.
+						- 进而,另其它的ZKFC会得到这个消息.它们开始抢锁,选除主NameNode
+					- 故障转移
+						- 将前一个主NameNode降级
+						- 将自己的NameNode升级
 			- 故障转移机制 -- 自动切换
 				- ![image.png](../assets/image_1647249368276_0.png)
 				-
