@@ -101,7 +101,15 @@
 			- `hdfs dfs -mkdir -p /user/root` 创建存放数据的根目录
 			-
 	- 完全分布式模式
-	- HA（High Available） #高可用
-		- 多个[[NameNode]] 主备切换
-		- Federation
+	- 两个互斥的解决方案
+		- 单点故障
+			- HA（High Available） #高可用
+			- 多个NameNode,主备切换
+			- ![image.png](../assets/image_1647247372252_0.png)
+			-
+		- 压力过大,内存受限
+			- Federation 联邦机制 -- 元数据分片
+			- 多个NameNode,管理不同的元数据
+	-
+	-
 -
