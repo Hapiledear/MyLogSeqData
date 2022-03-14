@@ -105,6 +105,7 @@
 		- 单点故障
 			- HA（High Available） #高可用
 			- 多个NameNode,主备切换
+			- **没有SNN角色**
 			- ![image.png](../assets/image_1647247737762_0.png)
 				- 为什么NameNode需要向JN写数据?
 					- NameNode的内存数据,如果挂掉了就丢失了.需要找个地方持久化
@@ -119,12 +120,16 @@
 					- 故障转移
 						- 将前一个主NameNode降级 \ 强行杀死该NameNode,防止假死
 						- 将自己的NameNode升级
+				- NN Standby = NameNode从节点.
+					- 滚动写FsImage,
+					- NameNode本地还是会有EditLog
 			- 故障转移机制 -- 自动切换
 				- ![image.png](../assets/image_1647249368276_0.png)
 				-
 		- 压力过大,内存受限
 			- Federation 联邦机制 -- 元数据分片
 			- 多个NameNode,管理不同的元数据
+			-
 	-
 	-
 -
