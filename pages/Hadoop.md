@@ -12,6 +12,7 @@
 	- [[Tez]] 批处理执行引擎
 	- [[Zookeeper]] 分布式协调服务
 - 部署
+  collapsed:: false
 	- 需要的硬件
 		- GNU/Linux [[Linux]] 机器
 	- 需要的软件
@@ -20,7 +21,7 @@
 			- 远程免密登陆
 			- 远程执行脚本\命令
 	- 基础配置
-collapsed:: true
+	  collapsed:: true
 		- 设置IP `vi /etc/sysconfig/netwwork-scripts/ifcfg-eth0`及 主机名 `vi /etc/sysconfig/network`
 			- ![image.png](../assets/image_1647159484653_0.png)
 			- ![image.png](../assets/image_1647159594584_0.png)
@@ -42,6 +43,7 @@ collapsed:: true
 				- ![image.png](../assets/image_1647161238548_0.png)
 				-
 	- 伪分布式模式
+	  collapsed:: false
 		- ![image.png](../assets/image_1647161392042_0.png)
 		- 规划安装路径
 			- ![image.png](../assets/image_1647161718149_0.png)
@@ -79,7 +81,8 @@ collapsed:: true
 				  </configuration>
 				  ```
 			- 修改 salves -- [[DataNode]] 角色在哪里启动
-				-
+		- 初始化和启动
+			-
 			-
 	- HA（High Available） 完全分布式模式 #高可用
 -
