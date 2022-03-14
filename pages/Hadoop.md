@@ -97,4 +97,5 @@
 			- `hdfs dfs -mkdir -p /user/root` 创建存放数据的根目录
 			-
 	- HA（High Available） 完全分布式模式 #高可用
+		-
 -
