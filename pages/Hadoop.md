@@ -103,5 +103,5 @@
 	- 完全分布式模式
 	- HA（High Available） #高可用
 		- 多个[[NameNode]] 主备切换
-		-
+		- Federation
 -
