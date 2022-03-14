@@ -78,6 +78,16 @@
 				          <name>dfs.datanode.data.dir</name>
 				          <value>/var/bigdata/hadoop/local/dfs/data</value>
 				      </property>
+				    //SecondaryNameNode的启动地址
+				       <property>
+				          <name>dfs.namenode.secondary.http.address</name>
+				          <value>node01:50090</value>
+				      </property>
+				    //SecondaryNameNode的数据目录
+				         <property>
+				          <name>dfs.namenode.checkopint.dir</name>
+				          <value>/var/bigdata/hadoop/local/dfs/secondary</value>
+				      </property>
 				  </configuration>
 				  ```
 			- 修改 salves -- [[DataNode]] 角色在哪里启动
