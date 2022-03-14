@@ -92,7 +92,9 @@
 				  ```
 			- 修改 salves -- [[DataNode]] 角色在哪里启动
 		- 初始化和启动
-			-
+			- `start-dfs.sh` 启动所有角色
+				- 第一次启动时,[[DataNode]]和 [[SecondaryNameNode]] 会创建数据目录
+				-
 			-
 	- HA（High Available） 完全分布式模式 #高可用
 -
