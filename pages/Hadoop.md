@@ -105,7 +105,8 @@
 		- 单点故障
 			- HA（High Available） #高可用
 			- 多个NameNode,主备切换
-			- ![image.png](../assets/image_1647247372252_0.png)
+			- ![image.png](../assets/image_1647247737762_0.png)
+			-
 			-
 		- 压力过大,内存受限
 			- Federation 联邦机制 -- 元数据分片
