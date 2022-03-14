@@ -109,7 +109,11 @@
 				- 为什么NameNode需要向JN写数据?
 					- NameNode的内存数据,如果挂掉了就丢失了.需要找个地方持久化
 				- JN = [[Journal Node]] 适用于存数据
-				- ZK = [[Zookeeper]] 适用于
+				- ZK = [[Zookeeper]] 适用于事件触发回调
+				- ZKFC = Zoo Keeper FailoverController ,是运行于 NameNode所在主机的进程,主要做三件事情
+					- 监测本机的NameNode的健康状态
+					- ZK的会话管理
+					-
 			- 故障转移机制 -- 自动切换
 				- ![image.png](../assets/image_1647249368276_0.png)
 				-
