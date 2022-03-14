@@ -129,6 +129,10 @@
 		- 压力过大,内存受限
 			- Federation 联邦机制 -- 元数据分片
 			- 多个NameNode,管理不同的元数据
+			- DataNode 用目录隔离,模拟不同NameNode存储
+				- 访问不同的NN,可以存相同文件名的文件!
+				- 更多的是公司层面做DataNode的资源统一,提高利用率
+			- ![image.png](../assets/image_1647257510005_0.png)
 			-
 	-
 	-
