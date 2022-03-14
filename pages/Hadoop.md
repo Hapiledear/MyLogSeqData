@@ -94,7 +94,7 @@
 		- 初始化和启动
 			- `start-dfs.sh` 启动所有角色
 				- 第一次启动时,[[DataNode]]和 [[SecondaryNameNode]] 会创建数据目录
-				-
+			- `hdfs dfs -mkdir -p /user/root` 创建存放数据的根目录
 			-
 	- HA（High Available） 完全分布式模式 #高可用
 -
