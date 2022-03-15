@@ -11,4 +11,6 @@
 		- 如果该属性是final的,那么在加载后面的相同名称配置时,会打印警告
 		- 合并代码见 `org.apache.hadoop.conf.Configuration#overlay`
 	- 属性扩展 #属性扩展
-		-
+		- 通过形如 `${hadoop.tmp.dir}` 的形式,引用定义好的其它属性
+- 资源加载流程
+	-
