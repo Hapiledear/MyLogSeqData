@@ -2,7 +2,7 @@
 - 通常意义上的Hadoop，包含如下4个组件
 	- Common包，组件的公共部分
 		- [[Hadoop Configuration]] Hadoop的配置实现
-		- [[Hadoop IO]] Hadoop的序列化与压缩
+		- [[Hadoop IO]] Hadoop的序列化与压缩 RPC通信
 	- [[HDFS ]] 分布式文件存储系统
 	- [[YARN]] 分布式调度系统
 	- [[MapReduce]] 分布式任务调度框架

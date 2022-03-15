@@ -49,6 +49,8 @@
 		- 做到了属性的外部可配置
 -
 - 附注
-	- org.apache.hadoop.conf.Configuration
-	- org.apache.hadoop.conf.Configurable
-	-
+	- 关键类
+		- `org.apache.hadoop.conf.Configuration`
+		- `org.apache.hadoop.conf.Configurable`
+		- `org.apache.hadoop.mapreduce.lib.input.SequenceFileInputFilter.RegexFilter`
+		- `org.apache.hadoop.util.ReflectionUtils#newInstance`

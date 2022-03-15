@@ -1,0 +1,3 @@
+- [[Hadoop 序列化]] #序列化
+- [[Hadoop 压缩]] #压缩
+- [[Hadoop RPC]] #RPC #远程过程调用
