@@ -1,0 +1,3 @@
+- 全名 Java API for XML Processing
+- 是一种可靠,稳定的XML处理API,支持[[SAX]](Simple API for XML) 和[[DOM]](Document Object Model) 两种处理方式
+-

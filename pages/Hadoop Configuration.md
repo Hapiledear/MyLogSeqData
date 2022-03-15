@@ -23,5 +23,6 @@
 		- `addResource()` 并不会立即加载资源,通过`reloadConfiguration()`方法清空`properties`和`finalParameters`
 	- 资源加载 #延迟加载
 		- 当外部真正调用`getXXX()`或`getProps()`方法时,如果发现`properties`为空,则触发`loadResources()`开始加载配置资源
-		-
+		- 使用[[JAPX]]处理 [[xml]] 文件,采用的是[[SAX]]方式
+			- 通过`isRestricted`控制配置文件中能否使用 `xi:include` 引用别的xml配置
 	-
