@@ -13,7 +13,7 @@
 	- 属性扩展 #属性扩展
 		- 通过形如 `${hadoop.tmp.dir}` 的形式,引用定义好的其它属性
 - 资源加载流程
-	- 资源读取方式:
+	- 资源读取
 		- `addResource()`有如下4种方式读取资源
 		  collapsed:: true
 			- InputStream in = 一个已经打开的输入流
@@ -21,5 +21,7 @@
 			- String name = [[ClassPath资源]]
 			- URL = http链接
 		- `addResource()` 并不会立即加载资源,通过`reloadConfiguration()`方法清空`properties`和`finalParameters`
+	- 资源加载 #延迟加载
+		- 当外部真正调用`getXXX()`或`getProps()`方法时,如果发现`properties`为空,则触发`loadResources()`开始加载配置资源
 		-
 	-
