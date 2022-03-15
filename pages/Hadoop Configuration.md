@@ -12,12 +12,14 @@
 		- 合并代码见 `org.apache.hadoop.conf.Configuration#overlay`
 	- 属性扩展 #属性扩展
 		- 通过形如 `${hadoop.tmp.dir}` 的形式,引用定义好的其它属性
-- 资源读取方式:
-	- `addResource()`有如下4种方式读取资源
-		- InputStream in = 一个已经打开的输入流
-		- Path file = Hadoop文件路径,即HDFS
-		- String name =ClassPath资源
-		- URL = http链接
-	-
 - 资源加载流程
+	- 资源读取方式:
+		- `addResource()`有如下4种方式读取资源
+		  collapsed:: true
+			- InputStream in = 一个已经打开的输入流
+			- Path file = Hadoop文件路径,即HDFS
+			- String name = [[ClassPath资源]]
+			- URL = http链接
+		- `addResource()` 并不会立即加载资源,通过`reloadConfiguration()`方法清空`properties`和`finalParameters`
+		-
 	-
