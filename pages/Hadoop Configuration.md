@@ -44,4 +44,11 @@
 	- 辅助实例对象的初始化,其作用有点类似于spring中的属性注入.
 	- 实例对象在接口的`void setConf(Configuration conf)` 方法,对一些属性初始化值
 	- 而Hadoop在使用该对象时,会先用自己的`ReflectionUtils.newInstance(Class<T> theClass, Configuration conf)` 利用反射的方式来创建对象
+	- 好处
+		- 做到了风格的统一,只需使用 无参构造函数即可创建对象,再通过conf进行属性初始化
+		- 做到了属性的外部可配置
+-
+- 附注
+	- org.apache.hadoop.conf.Configuration
+	- org.apache.hadoop.conf.Configurable
 	-
