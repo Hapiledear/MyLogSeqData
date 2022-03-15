@@ -1,3 +1,5 @@
 - Hadoop使用了一套自己的Configuration #配置文件
-	-
+	- 配置文件采用[[xml]]格式,由多个`property`节点组成,每个节点包含 `name,value,description和final`属性
+		- 每个name都是String类型,但value可以通过`getXXX()`方法来转换成对应的Java基本类型\File\数组
+		-
 	-
