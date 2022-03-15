@@ -30,4 +30,5 @@
 			- 将解析出来的属性分别保留在变量 `confName;confValue;confInclude; confFinal;confSource` 中,并在标签退出后调用`loadProperty()` 方法,加入`properties`
 		- 注意!加载和解析这一步,并未处理 `${var}`类似的 ((62300a4c-ed2b-42d6-979f-4f30c66133c0))
 	- 资源的get和set
+		- 在get时,会调用`substituteVars()` 处理 `${key}` ,如果`${key}` 被替换为实际值后,仍有属性扩展,这个过程将会继续进行,直到不再出现变量为止,或到达上限,抛出错误
 		-
