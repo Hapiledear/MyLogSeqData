@@ -40,4 +40,8 @@
 			- 将这段替换,继续循环.直到没有属性扩展,或达到20次循环,抛出异常
 		- set方法则比较简单
 			- 将传入的k,v保存在`overlay` 和`properties` 中
--
+- `Configurable` 接口
+	- 辅助实例对象的初始化,其作用有点类似于spring中的属性注入.
+	- 实例对象在接口的`void setConf(Configuration conf)` 方法,对一些属性初始化值
+	- 而Hadoop在使用该对象时,会先用自己的`ReflectionUtils.newInstance(Class<T> theClass, Configuration conf)` 利用反射的方式来创建对象
+	-
