@@ -20,10 +20,17 @@
 		- 如何减少创建对象?
 			- 直接从byte数组中读取成基本类型,然后直接比较
 - RawComparator 接口
-	- 继承自 `java.util.Comparator`接口,可以直接比较一行的数据(byte)
+	- 继承自 `java.util.Comparator`接口,可以直接比较一行的数据(byte数组+位置信息)
+	- 它有一个通用实现 `WritableComparator`,它有两个功能
+		- 提供了raw compare的默认实现
+		- 充当RawComparator实例的工厂方法
+			- ```java
+			  RawComparator<IntWriteable> comparator = WritableComparator.get(IntWriteable.class);
+			  ```
 - 附录 提及的类和方法
 	- org.apache.hadoop.io.Writable
 	- org.apache.hadoop.io.WritableComparable
 	- org.apache.hadoop.io.IntWritable
+	- org.apache.hadoop.io.RawComparator
 	- org.apache.hadoop.io.WritableComparator
 	-
