@@ -15,10 +15,6 @@
 	- 具体的一个实现,可以查看 `org.apache.hadoop.hdfs.protocol.Block` 类
 - WritableComparable 接口
 	- 该接口继承自 Writable  和 Comparable 两个接口,也就是说,给Writable 赋予可比较的功能
-		- 为什么要自己实现比较的功能?
-			- 为了减少创建对象所带来的开销
-		- 如何减少创建对象?
-			- 直接从byte数组中读取成基本类型,然后直接比较
 - RawComparator 接口
 	- 继承自 `java.util.Comparator`接口,可以直接比较一行的数据(byte数组+位置信息)
 	- 它有一个通用实现 `WritableComparator`,它有两个功能
@@ -28,8 +24,11 @@
 			  RawComparator<IntWriteable> comparator = WritableComparator.get(IntWriteable.class);
 			  ```
 - 三者之间的关系
-	- ![image.png](../assets/image_1647401500864_0.png)
-	-
+	- ![Hadoop_IO_writable.png](../assets/Hadoop_IO_writable.png)
+- 为什么要自己实现比较的功能?
+	- 为了减少创建对象所带来的开销
+	- 如何减少创建对象?
+		- 直接从byte数组中读取成基本类型,然后直接比较
 - 附录 提及的类和方法
 	- org.apache.hadoop.io.Writable
 	- org.apache.hadoop.io.WritableComparable
