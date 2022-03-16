@@ -29,6 +29,10 @@
 	- 为了减少创建对象所带来的开销
 	- 如何减少创建对象?
 		- 直接从byte数组中读取成基本类型,然后直接比较
+- WritableUtils 实际读\写
+	- 直接继承Writable接口的基本类型,class name都命名为了 VXxxWritable,如 `VIntWritable`
+		- 这些类中,其write 和readFields方法,都使用的是WritableUtils提供的read\write方法
+	-
 - 附录 提及的类和方法
 	- org.apache.hadoop.io.Writable
 	- org.apache.hadoop.io.WritableComparable
