@@ -32,6 +32,10 @@
 - WritableUtils 实际读\写
 	- 直接继承Writable接口的基本类型,class name都命名为了 VXxxWritable,如 `VIntWritable`
 		- 这些类中,其write 和readFields方法,都使用的是WritableUtils提供的read\write方法
+	- 值得注意的是writeVInt 直接调用了 writeVLong ,因此Int 可以被Long正确读取
+	- 写入格式大都是 第一个byte存长度,之后的byte存储实际数据
+		- 如果存放的int值 > -112 && < 127 则不存长度位,直接存放数据
+		- string类型会先进行utf-8编码
 	-
 - 附录 提及的类和方法
 	- org.apache.hadoop.io.Writable
@@ -39,4 +43,5 @@
 	- org.apache.hadoop.io.IntWritable
 	- org.apache.hadoop.io.RawComparator
 	- org.apache.hadoop.io.WritableComparator
+	- org.apache.hadoop.io.WritableUtils#writeVInt
 	-
