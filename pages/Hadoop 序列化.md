@@ -12,10 +12,13 @@
 		- ` void write(DataOutput out) `
 		- ` void readFields(DataInput in)`
 		- `DataOutupt `和 `DataInput `是`java.io`包中的类,在1.0版本就已经存在
+	- 具体的一个实现,可以查看 `org.apache.hadoop.hdfs.protocol.Block` 类
+- WritableComparable 接口
+	- 该接口继承自 Writable  和 Comparable 两个接口,也就是说,给Writable 赋予可比较的功能
 		-
 - 附录 提及的类和方法
 	- org.apache.hadoop.io.Writable
 	- org.apache.hadoop.io.WritableComparable
 	- org.apache.hadoop.io.IntWritable
 	- org.apache.hadoop.io.WritableComparator
-	- org.apache.hadoop.hdfs.protocol.Block
+	-
