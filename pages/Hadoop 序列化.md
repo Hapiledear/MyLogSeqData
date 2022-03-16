@@ -27,6 +27,9 @@
 			- ```java
 			  RawComparator<IntWriteable> comparator = WritableComparator.get(IntWriteable.class);
 			  ```
+- 三者之间的关系
+	- ![image.png](../assets/image_1647401500864_0.png)
+	-
 - 附录 提及的类和方法
 	- org.apache.hadoop.io.Writable
 	- org.apache.hadoop.io.WritableComparable
