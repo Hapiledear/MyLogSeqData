@@ -172,15 +172,20 @@ collapsed:: true
 			  
 			  <property>
 			    <name>dfs.namenode.http-address.mycluster.nn1</name>
-			    <value>machine1.example.com:9870</value>
+			    <value>node01:9870</value>
 			  </property>
 			  <property>
 			    <name>dfs.namenode.http-address.mycluster.nn2</name>
-			    <value>machine2.example.com:9870</value>
+			    <value>node02:9870</value>
 			  </property>
 			  <property>
 			    <name>dfs.namenode.http-address.mycluster.nn3</name>
-			    <value>machine3.example.com:9870</value>
+			    <value>node03:9870</value>
+			  </property>
+			  
+			  <property>
+			    <name>dfs.namenode.shared.edits.dir</name>
+			    <value>qjournal://node1.example.com:8485;node2.example.com:8485;node3.example.com:8485/mycluster</value>
 			  </property>
 			  ```
 		- client如何找到NameNode集群中的Active那一台？
