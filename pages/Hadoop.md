@@ -140,6 +140,7 @@ collapsed:: true
 	- HA模式
 		- ![image.png](../assets/image_1647675332004_0.png)
 		- 配置
+collapsed:: true
 			- ```core-site.xml
 			  <property>
 			    <name>fs.defaultFs</name>
@@ -198,8 +199,6 @@ collapsed:: true
 			    <value>/var/bigdata/hadoop/ha/dfs/jn</value>
 			  </property>
 			  // 配置免密登录
-			  // 场景1 启动start-dfs.sh 脚本的机器，需要将公钥分发给别的节点
-			  // 场景2 ZKFC会用免密的方式控制自己和其他NN的状态
 			    <property>
 			        <name>dfs.ha.fencing.methods</name>
 			        <value>sshfence</value>
@@ -217,6 +216,10 @@ collapsed:: true
 		- 流程
 			- 基础设施
 				- ssh免密
-					-
+					- 场景1 启动start-dfs.sh 脚本的机器，需要将公钥分发给别的节点
+					- 场景2 ZKFC会用免密的方式控制自己和其他NN的状态
+			- 应用搭建
+				- ZK集群
+				- 修改Hadoop的配置文件，并集群同步
 	-
 -
