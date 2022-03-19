@@ -140,7 +140,13 @@ collapsed:: true
 	- HA模式
 		- ![image.png](../assets/image_1647675332004_0.png)
 		- NameNode配置
-			-
+			- ```hdfs-site.xml
+			  <property>
+			    <name>dfs.nameservices</name>
+			    <value>mycluster</value>
+			  </property>
+			  ```
+		-
 		- client如何找到NameNode集群中的Active那一台？
 		-
 	-
