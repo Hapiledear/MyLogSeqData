@@ -221,5 +221,9 @@ collapsed:: true
 			- 应用搭建
 				- ZK集群
 				- 修改Hadoop的配置文件，并集群同步
+			- 初始化&启动
+				- 先启动JN
+				- 选择一个NN做格式化 `hdfs namenode -format`
+				- 启动这个格式化的NN
 	-
 -
