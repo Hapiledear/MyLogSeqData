@@ -182,15 +182,17 @@ collapsed:: true
 			    <name>dfs.namenode.http-address.mycluster.nn3</name>
 			    <value>node03:9870</value>
 			  </property>
-			  // jurnnal node 在哪些机器
+			  // journal node 在哪些机器
 			  <property>
 			    <name>dfs.namenode.shared.edits.dir</name>
-			    <value>qjournal://node01:8485;node02:8485;node03:8485</value>
+			    <value>qjournal://node01:8485;node02:8485;node03:8485/myclster</value>
 			  </property>
+			  // journal node 保存数据的目录
 			  <property>
 			    <name>dfs.journalnode.edits.dir</name>
 			    <value>/var/bigdata/hadoop/ha/dfs/jn</value>
-			  </property>v
+			  </property>
+			  
 			  ```
 		- client如何找到NameNode集群中的Active那一台？
 		-
