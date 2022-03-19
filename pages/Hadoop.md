@@ -142,11 +142,22 @@ collapsed:: true
 		- NameNode配置
 			- ```core-site.xml
 			  <property>
-			    <name>dfs.nameservices</name>
-			    <value>mycluster</value>
+			    <name>fs.defaultFs</name>
+			    <value>hdfs://mycluster</value>
 			  </property>
 			  ```
 			- ```hdfs-site..xml
+			  <property>
+			    <name>dfs.nameservices</name>
+			    <value>mycluster</value>
+			  </property>
+			  <property>
+			    <name>dfs.ha.namenodes.mycluster</name>
+			    <value>nn1,nn2, nn3</value>
+			  </property><property>
+			    <name>dfs.ha.namenodes.mycluster</name>
+			    <value>nn1,nn2, nn3</value>
+			  </property>
 			  ```
 		- client如何找到NameNode集群中的Active那一台？
 		-
