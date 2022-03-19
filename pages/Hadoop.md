@@ -192,7 +192,16 @@ collapsed:: true
 			    <name>dfs.journalnode.edits.dir</name>
 			    <value>/var/bigdata/hadoop/ha/dfs/jn</value>
 			  </property>
+			  // 配置免密登录
+			    <property>
+			        <name>dfs.ha.fencing.methods</name>
+			        <value>sshfence</value>
+			      </property>
 			  
+			      <property>
+			        <name>dfs.ha.fencing.ssh.private-key-files</name>
+			        <value>/home/exampleuser/.ssh/id_rsa</value>
+			      </property>
 			  ```
 		- client如何找到NameNode集群中的Active那一台？
 		-
