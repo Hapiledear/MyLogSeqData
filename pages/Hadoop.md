@@ -151,12 +151,12 @@ collapsed:: true
 			    <name>dfs.nameservices</name>
 			    <value>mycluster</value>
 			  </property>
-			  
+			  // 集群包含的节点，类似于“桥接表”
 			  <property>
 			    <name>dfs.ha.namenodes.mycluster</name>
 			    <value>node01,node02,node03</value>
 			  </property>
-			  
+			  //各集群的信息
 			  <property>
 			    <name>dfs.namenode.rpc-address.mycluster.nn1</name>
 			    <value>node01:8020</value>
@@ -170,6 +170,18 @@ collapsed:: true
 			    <value>node03:8020</value>
 			  </property>
 			  
+			  <property>
+			    <name>dfs.namenode.http-address.mycluster.nn1</name>
+			    <value>machine1.example.com:9870</value>
+			  </property>
+			  <property>
+			    <name>dfs.namenode.http-address.mycluster.nn2</name>
+			    <value>machine2.example.com:9870</value>
+			  </property>
+			  <property>
+			    <name>dfs.namenode.http-address.mycluster.nn3</name>
+			    <value>machine3.example.com:9870</value>
+			  </property>
 			  ```
 		- client如何找到NameNode集群中的Active那一台？
 		-
