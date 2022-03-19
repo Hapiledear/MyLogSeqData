@@ -185,8 +185,9 @@ collapsed:: true
 			  // jurnnal node 在哪些机器
 			  <property>
 			    <name>dfs.namenode.shared.edits.dir</name>
-			    <value>qjournal://node01:8485;node02:8485;node03:8485/mycluster</value>
+			    <value>qjournal://node01:8485;node02:8485;node03:8485/var/bigdata/hadoop/ha/dfs/jn</value>
 			  </property>
+			  
 			  ```
 		- client如何找到NameNode集群中的Active那一台？
 		-
