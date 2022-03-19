@@ -102,8 +102,8 @@
 			-
 	- 完全分布式模式
 	- 两个互斥的解决方案
-		- 单点故障
 collapsed:: true
+		- 单点故障
 			- HA（High Available） #高可用
 			- 多个NameNode,主备切换
 			- **没有SNN角色**
@@ -137,6 +137,7 @@ collapsed:: true
 				- 更多的是公司层面做DataNode的资源统一,提高利用率
 			- ![image.png](../assets/image_1647257510005_0.png)
 			-
-	-
+	- HA模式
+		-
 	-
 -
