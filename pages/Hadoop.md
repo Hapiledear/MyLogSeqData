@@ -120,7 +120,7 @@
 					- 故障转移
 						- 将前一个主NameNode降级 \ 强行杀死该NameNode,防止假死
 						- 将自己的NameNode升级
-					-
+					- 宁可不可用，也不导致脑裂
 				- NN Standby = NameNode从节点.
 					- 滚动写FsImage,
 					- NameNode本地还是会有EditLog
