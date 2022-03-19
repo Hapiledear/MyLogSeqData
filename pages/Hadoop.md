@@ -103,6 +103,7 @@
 	- 完全分布式模式
 	- 两个互斥的解决方案
 		- 单点故障
+collapsed:: true
 			- HA（High Available） #高可用
 			- 多个NameNode,主备切换
 			- **没有SNN角色**
@@ -128,6 +129,7 @@
 				- ![image.png](../assets/image_1647249368276_0.png)
 				-
 		- 压力过大,内存受限
+collapsed:: true
 			- Federation 联邦机制 -- 元数据分片
 			- 多个NameNode,管理不同的元数据
 			- DataNode 用目录隔离,模拟不同NameNode存储
