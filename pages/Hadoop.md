@@ -151,13 +151,25 @@ collapsed:: true
 			    <name>dfs.nameservices</name>
 			    <value>mycluster</value>
 			  </property>
+			  
 			  <property>
 			    <name>dfs.ha.namenodes.mycluster</name>
-			    <value>nn1,nn2, nn3</value>
-			  </property><property>
-			    <name>dfs.ha.namenodes.mycluster</name>
-			    <value>nn1,nn2, nn3</value>
+			    <value>node01,node02,node03</value>
 			  </property>
+			  
+			  <property>
+			    <name>dfs.namenode.rpc-address.mycluster.nn1</name>
+			    <value>node01:8020</value>
+			  </property>
+			  <property>
+			    <name>dfs.namenode.rpc-address.mycluster.nn2</name>
+			    <value>node02:8020</value>
+			  </property>
+			  <property>
+			    <name>dfs.namenode.rpc-address.mycluster.nn3</name>
+			    <value>node03:8020</value>
+			  </property>
+			  
 			  ```
 		- client如何找到NameNode集群中的Active那一台？
 		-
