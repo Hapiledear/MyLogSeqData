@@ -138,6 +138,8 @@ collapsed:: true
 			- ![image.png](../assets/image_1647257510005_0.png)
 			-
 	- HA模式
+		- NameNode配置
+			-
 		- client如何找到NameNode集群中的Active那一台？
 		-
 	-
