@@ -225,7 +225,9 @@ collapsed:: true
 				- 先启动JN `hadoop-daemon.sh start journalnode`
 				- 选择一个NN做格式化 `hdfs namenode -format`
 				- 启动这个格式化的NN，以备另外一台同步 `hadoop-daemon.sh start namenode`
-				- 在另外一台机器中 `hdfs `
+				- 在另外一台机器中 `hdfs namenode -bootstrapStandby` 同步JN中的数据
+				- ZK格式化 `hdfs zkfc -formatZK`
+				-
 		-
 	-
 -
