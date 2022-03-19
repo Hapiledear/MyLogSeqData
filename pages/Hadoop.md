@@ -139,7 +139,7 @@ collapsed:: true
 			-
 	- HA模式
 		- ![image.png](../assets/image_1647675332004_0.png)
-		- NameNode配置
+		- 配置
 			- ```core-site.xml
 			  <property>
 			    <name>fs.defaultFs</name>
@@ -182,10 +182,10 @@ collapsed:: true
 			    <name>dfs.namenode.http-address.mycluster.nn3</name>
 			    <value>node03:9870</value>
 			  </property>
-			  
+			  // jurnnal node 在哪些机器
 			  <property>
 			    <name>dfs.namenode.shared.edits.dir</name>
-			    <value>qjournal://node1.example.com:8485;node2.example.com:8485;node3.example.com:8485/mycluster</value>
+			    <value>qjournal://node01:8485;node02:8485;node03:8485/mycluster</value>
 			  </property>
 			  ```
 		- client如何找到NameNode集群中的Active那一台？
