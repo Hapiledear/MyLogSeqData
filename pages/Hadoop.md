@@ -213,7 +213,6 @@ collapsed:: true
 			     <value>true</value>
 			   </property>
 			  ```
-		- client如何找到NameNode集群中的Active那一台？
 		-
 	-
 -
