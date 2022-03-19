@@ -215,7 +215,7 @@ collapsed:: true
 			  ```
 		- 流程
 			- 基础设施
-				- ssh免密
+				- ssh免密 node01 node02相互免密
 					- 场景1 启动start-dfs.sh 脚本的机器，需要将公钥分发给别的节点
 					- 场景2 ZKFC会用免密的方式控制自己和其他NN的状态
 			- 应用搭建
