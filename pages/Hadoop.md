@@ -145,6 +145,11 @@ collapsed:: true
 			    <name>fs.defaultFs</name>
 			    <value>hdfs://mycluster</value>
 			  </property>
+			  
+			  <property>
+			     <name>ha.zookeeper.quorum</name>
+			     <value>node02:2181,node03:2181,node04:2181</value>
+			   </property>
 			  ```
 			- ```hdfs-site..xml
 			  <property>
@@ -202,7 +207,11 @@ collapsed:: true
 			        <name>dfs.ha.fencing.ssh.private-key-files</name>
 			        <value>/home/exampleuser/.ssh/id_rsa</value>
 			      </property>
-			  
+			  // 自动故障切换 自动启动ZKFC
+			   <property>
+			     <name>dfs.ha.automatic-failover.enabled</name>
+			     <value>true</value>
+			   </property>
 			  ```
 		- client如何找到NameNode集群中的Active那一台？
 		-
