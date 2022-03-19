@@ -202,10 +202,9 @@ collapsed:: true
 			        <name>dfs.ha.fencing.methods</name>
 			        <value>sshfence</value>
 			      </property>
-			  
 			      <property>
 			        <name>dfs.ha.fencing.ssh.private-key-files</name>
-			        <value>/home/exampleuser/.ssh/id_rsa</value>
+			        <value>/root/.ssh/id_rsa</value>
 			      </property>
 			  // 自动故障切换 自动启动ZKFC
 			   <property>
@@ -213,6 +212,7 @@ collapsed:: true
 			     <value>true</value>
 			   </property>
 			  ```
-		-
+		- 流程
+			-
 	-
 -
