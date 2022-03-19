@@ -202,6 +202,7 @@ collapsed:: true
 			        <name>dfs.ha.fencing.ssh.private-key-files</name>
 			        <value>/home/exampleuser/.ssh/id_rsa</value>
 			      </property>
+			  
 			  ```
 		- client如何找到NameNode集群中的Active那一台？
 		-
