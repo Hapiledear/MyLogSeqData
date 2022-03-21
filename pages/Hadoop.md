@@ -102,6 +102,7 @@
 			-
 	- 完全分布式模式
 	- 两个互斥的解决方案
+collapsed:: true
 		- 单点故障
 			- HA（High Available） #高可用
 			- 多个NameNode,主备切换
@@ -120,6 +121,7 @@
 					- 故障转移
 						- 将前一个主NameNode降级 \ 强行杀死该NameNode,防止假死
 						- 将自己的NameNode升级
+					- 宁可不可用，也不导致脑裂
 				- NN Standby = NameNode从节点.
 					- 滚动写FsImage,
 					- NameNode本地还是会有EditLog
@@ -127,6 +129,7 @@
 				- ![image.png](../assets/image_1647249368276_0.png)
 				-
 		- 压力过大,内存受限
+collapsed:: true
 			- Federation 联邦机制 -- 元数据分片
 			- 多个NameNode,管理不同的元数据
 			- DataNode 用目录隔离,模拟不同NameNode存储
@@ -134,6 +137,98 @@
 				- 更多的是公司层面做DataNode的资源统一,提高利用率
 			- ![image.png](../assets/image_1647257510005_0.png)
 			-
-	-
+	- HA模式
+		- ![image.png](../assets/image_1647675332004_0.png)
+		- 配置
+collapsed:: true
+			- ```core-site.xml
+			  <property>
+			    <name>fs.defaultFs</name>
+			    <value>hdfs://mycluster</value>
+			  </property>
+			  
+			  <property>
+			     <name>ha.zookeeper.quorum</name>
+			     <value>node02:2181,node03:2181,node04:2181</value>
+			   </property>
+			  ```
+			- ```hdfs-site..xml
+			  <property>
+			    <name>dfs.nameservices</name>
+			    <value>mycluster</value>
+			  </property>
+			  // 集群包含的节点，类似于“桥接表”
+			  <property>
+			    <name>dfs.ha.namenodes.mycluster</name>
+			    <value>node01,node02,node03</value>
+			  </property>
+			  //各集群的信息
+			  <property>
+			    <name>dfs.namenode.rpc-address.mycluster.nn1</name>
+			    <value>node01:8020</value>
+			  </property>
+			  <property>
+			    <name>dfs.namenode.rpc-address.mycluster.nn2</name>
+			    <value>node02:8020</value>
+			  </property>
+			  <property>
+			    <name>dfs.namenode.rpc-address.mycluster.nn3</name>
+			    <value>node03:8020</value>
+			  </property>
+			  
+			  <property>
+			    <name>dfs.namenode.http-address.mycluster.nn1</name>
+			    <value>node01:9870</value>
+			  </property>
+			  <property>
+			    <name>dfs.namenode.http-address.mycluster.nn2</name>
+			    <value>node02:9870</value>
+			  </property>
+			  <property>
+			    <name>dfs.namenode.http-address.mycluster.nn3</name>
+			    <value>node03:9870</value>
+			  </property>
+			  // journal node 在哪些机器
+			  <property>
+			    <name>dfs.namenode.shared.edits.dir</name>
+			    <value>qjournal://node01:8485;node02:8485;node03:8485/myclster</value>
+			  </property>
+			  // journal node 保存数据的目录
+			  <property>
+			    <name>dfs.journalnode.edits.dir</name>
+			    <value>/var/bigdata/hadoop/ha/dfs/jn</value>
+			  </property>
+			  // 配置免密登录
+			    <property>
+			        <name>dfs.ha.fencing.methods</name>
+			        <value>sshfence</value>
+			      </property>
+			      <property>
+			        <name>dfs.ha.fencing.ssh.private-key-files</name>
+			        <value>/root/.ssh/id_rsa</value>
+			      </property>
+			  // 自动故障切换 自动启动ZKFC
+			   <property>
+			     <name>dfs.ha.automatic-failover.enabled</name>
+			     <value>true</value>
+			   </property>
+			  ```
+		- 流程
+			- 基础设施
+				- ssh免密 node01 node02相互免密
+					- 场景1 启动start-dfs.sh 脚本的机器，需要将公钥分发给别的节点
+					- 场景2 ZKFC会用免密的方式控制自己和其他NN的状态
+			- 应用搭建
+				- [[Zookeeper]]集群
+				- 修改Hadoop的配置文件，并集群同步
+			- 初始化&启动
+				- 先启动JN `hadoop-daemon.sh start journalnode`
+				- 选择一个NN做格式化 `hdfs namenode -format` 只有第一次搭建做，以后不用做
+				- 启动这个格式化的NN，以备另外一台同步 `hadoop-daemon.sh start namenode`
+				- 在另外一台机器中 `hdfs namenode -bootstrapStandby` 同步JN中的数据
+				- ZK格式化 `hdfs zkfc -formatZK`
+				- `start-dfs.sh`
+			-
+		-
 	-
 -
