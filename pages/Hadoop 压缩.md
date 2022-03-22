@@ -1,2 +1,7 @@
 - 在使用[[压缩]]方面,Hadoop主要考虑的是压缩速度和压缩文件的可分割性.
+- Hadoop支持的压缩格式
+	- DEFLATE
+	- gzip
+	- bzip
+	- Snappy
 -
