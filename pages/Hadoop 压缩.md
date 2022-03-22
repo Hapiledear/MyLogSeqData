@@ -15,6 +15,39 @@
 	- `CompressionCodecFactory` 类
 		- 通过文件路扩展获取相应的处理类
 			- 使用一个有序Map保存处理类 codecs
+				- key是后缀的翻转,value是处理它的类
+				- ```
+				  {
+				      2zb. : org.apache.hadoop.io.compress.BZip2Codec,
+				      etalfed. : org.apache.hadoop.io.compress.DeflateCodec,
+				      yppans. : org.apache.hadoop.io.compres.SnappyCodec,
+				      yzg. : my.self.Codec,
+				      zg. : org.apache.hadoop.io.compress.GzipCodec
+				  }
+				  ```
+			- ` getCodec(Path file)`方法,获取具体的处理类
+				- 翻转fileName
+				- 使用 headMap() 获取到离后缀最接近的map集合
+				  collapsed:: true
+					- 假如翻转后的文件名是`2zb.txt.EMDAER` 则返回结果是
+					  collapsed:: true
+						- ```
+						  {
+						  	2zb. : org.apache.hadoop.io.compress.BZip2Codec
+						  }
+						  ```
+					- 假如翻转后的文件名是 `zg.txt.EMDAER` 则返回的结果是
+					  collapsed:: true
+						- ```
+						  {
+						      2zb. : org.apache.hadoop.io.compress.BZip2Codec,
+						      etalfed. : org.apache.hadoop.io.compress.DeflateCodec,
+						      yppans. : org.apache.hadoop.io.compres.SnappyCodec,
+						      yzg. : my.self.Codec,
+						      zg. : org.apache.hadoop.io.compress.GzipCodec
+						  }
+						  ```
+				- 获取subMap最后一个元素,就得到了文件对应的编码\解码器
 			-
 - 涉及到的类
 	- org.apache.hadoop.io.compress.CompressionCodec
