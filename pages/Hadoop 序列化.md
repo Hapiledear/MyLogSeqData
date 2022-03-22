@@ -36,7 +36,7 @@
 	- 写入格式大都是 第一个byte存长度,之后的byte存储实际数据
 		- 如果存放的int值 > -112 && < 127 则不存长度位,直接存放数据
 		- string类型会先进行utf-8编码
-	-
+- ObjectWritable
 - 附录 提及的类和方法
 	- org.apache.hadoop.io.Writable
 	- org.apache.hadoop.io.WritableComparable
@@ -44,4 +44,5 @@
 	- org.apache.hadoop.io.RawComparator
 	- org.apache.hadoop.io.WritableComparator
 	- org.apache.hadoop.io.WritableUtils#writeVInt
+	- org.apache.hadoop.io.ObjectWritable
 	-
