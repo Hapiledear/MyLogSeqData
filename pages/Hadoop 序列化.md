@@ -45,6 +45,9 @@
 		- 枚举
 		- Writable及其子类
 		- Message及其子类
+	- 主要用于2个地方
+		- Hadoop的RPC中
+		- 序列化不同类型的对象到某一字段中 (泛型)
 - 附录 提及的类和方法
 	- org.apache.hadoop.io.Writable
 	- org.apache.hadoop.io.WritableComparable
