@@ -12,6 +12,8 @@
 		- `createDecompressor()` 创建对应的解压缩器
 		- `createInputStream()` 创建对应的解压缩流
 		- `getDefaultExtension()` 获取文件的扩展名
+	- `CompressionCodecFactory` 类
+		-
 - 涉及到的类
 	- org.apache.hadoop.io.compress.CompressionCodec
 	- org.apache.hadoop.io.compress.CompressionCodecFactory
