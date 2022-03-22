@@ -14,6 +14,7 @@
 		- `getDefaultExtension()` 获取文件的扩展名
 	- `CompressionCodecFactory` 类
 		- 通过文件路扩展获取相应的处理类
+		  collapsed:: true
 			- 使用一个有序Map保存处理类 codecs
 				- key是后缀的翻转,value是处理它的类
 				- ```
@@ -48,7 +49,15 @@
 						  }
 						  ```
 				- 获取subMap最后一个元素,就得到了文件对应的编码\解码器
-			-
+			- 问题1: 为什么要倒转文件名?
+				- 快速获取文件后缀,相比于 find方法和正则方法来说,更高效
+			- 问题2:为什么要用有序Map?
+				- 防止自己扩展时,保证匹配到正确的编码\解码器
+					- .gzy 和 .gz 
+					  collapsed:: true
+						- 如果输入的是.gz, 那么匹配出来的最后一个一定是zg.
+						- 如果输入的是.gzy,那么匹配出来的最后一个一定是 yzg.
+		- 压缩器和解压器
 - 涉及到的类
 	- org.apache.hadoop.io.compress.CompressionCodec
 	- org.apache.hadoop.io.compress.CompressionCodecFactory
