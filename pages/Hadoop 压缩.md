@@ -15,6 +15,7 @@
 	- `CompressionCodecFactory` 类
 		- 通过文件路扩展获取相应的处理类
 		  collapsed:: true
+		  id:: 62397ffd-1251-43f5-946f-cc3240c20b51
 			- 使用一个有序Map保存处理类 codecs
 				- key是后缀的翻转,value是处理它的类
 				- ```
