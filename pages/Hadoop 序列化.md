@@ -48,6 +48,10 @@
 	- 主要用于2个地方
 		- Hadoop的RPC中
 		- 序列化不同类型的对象到某一字段中 (泛型)
+	- 序列化成3部分
+		- 对象类名 `instance.getClass().getName()` 获取到的
+		- 对象实际类名 `instance`字段
+		- 对象值的序列化结果
 - 附录 提及的类和方法
 	- org.apache.hadoop.io.Writable
 	- org.apache.hadoop.io.WritableComparable
