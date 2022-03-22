@@ -13,7 +13,9 @@
 		- `createInputStream()` 创建对应的解压缩流
 		- `getDefaultExtension()` 获取文件的扩展名
 	- `CompressionCodecFactory` 类
-		-
+		- 通过文件路扩展获取相应的处理类
+			- 使用一个有序Map保存处理类 codecs
+			-
 - 涉及到的类
 	- org.apache.hadoop.io.compress.CompressionCodec
 	- org.apache.hadoop.io.compress.CompressionCodecFactory
