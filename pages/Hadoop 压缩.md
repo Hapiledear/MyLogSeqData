@@ -5,7 +5,13 @@
 	- bzip
 	- Snappy
 - 编码\解码器
-	-
+	- `CompressionCodec`接口
+		- 使用 [[抽象工厂]] 模式,用于创建一系列相关或相互依赖的对象.
+		- `createOutputStream()` 创建对应压缩算法的**压缩流**
+		- `createCompressor()` 创建对应的**压缩器**
+		- `createDecompressor()` 创建对应的解压缩器
+		- `createInputStream()` 创建对应的解压缩流
+		- `getDefaultExtension()` 获取文件的扩展名
 - 涉及到的类
 	- org.apache.hadoop.io.compress.CompressionCodec
 	- org.apache.hadoop.io.compress.CompressionCodecFactory
