@@ -37,6 +37,14 @@
 		- 如果存放的int值 > -112 && < 127 则不存长度位,直接存放数据
 		- string类型会先进行utf-8编码
 - ObjectWritable
+	- 提供了对如下 7类型的序列化\反序列化 的封装
+		- 空值
+		- 数组
+		- 字符串
+		- 基本类型
+		- 枚举
+		- Writable及其子类
+		- Message及其子类
 - 附录 提及的类和方法
 	- org.apache.hadoop.io.Writable
 	- org.apache.hadoop.io.WritableComparable
