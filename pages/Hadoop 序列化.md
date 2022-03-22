@@ -52,6 +52,11 @@
 		- 对象类名 `instance.getClass().getName()` 获取到的
 		- 对象实际类名 `instance`字段
 		- 对象值的序列化结果
+- 支持的其它序列化框架
+	- 通过 `org.apache.hadoop.io.serializer.Serializer` 接口进行Hook
+	- Hadoop [[Avro]]
+	- Apache [[Thrift]]
+	- Google [[Protocol Buffer]]
 - 附录 提及的类和方法
 	- org.apache.hadoop.io.Writable
 	- org.apache.hadoop.io.WritableComparable
