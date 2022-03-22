@@ -4,4 +4,8 @@
 	- gzip
 	- bzip
 	- Snappy
--
+- 编码\解码器
+	-
+- 涉及到的类
+	- org.apache.hadoop.io.compress.CompressionCodec
+	- org.apache.hadoop.io.compress.CompressionCodecFactory
