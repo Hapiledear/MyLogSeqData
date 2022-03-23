@@ -75,6 +75,9 @@
 	  id:: 623a8c88-9463-4bfd-9c41-44882a680876
 	  collapsed:: true
 		- ![Hadoop_IO-压缩流程.png](../assets/Hadoop_IO-压缩流程_1647940736319_0.png){:height 688, :width 590}
+	- 类关系图
+		- A
+- 使用[[java 本地方法]]的压缩库来加速
 	-
 - 涉及到的类
 	- org.apache.hadoop.io.compress.CompressionCodec
