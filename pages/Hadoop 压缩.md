@@ -58,7 +58,7 @@
 					  collapsed:: true
 						- 如果输入的是.gz, 那么匹配出来的最后一个一定是zg.
 						- 如果输入的是.gzy,那么匹配出来的最后一个一定是 yzg.
-		- 压缩器Compressor 和 解压器Decompressor
+		- 压缩器 Compressor
 		  collapsed:: true
 			- `setInput(byte[] b, int off, int len)` 接收数据到内部缓冲区
 			- `boolean needsInput()` 判断缓冲区是否已满
@@ -66,7 +66,7 @@
 			- `void finish()` 告诉压缩器,数据全部输入完毕
 			- `boolean finished()` 判断压缩器中是否还有未读的压缩数据
 			- ![Hadoop_IO-压缩流程.png](../assets/Hadoop_IO-压缩流程_1647940736319_0.png){:height 688, :width 590}
-		- 压缩流CompressionOutputStream 和 解压缩流 CompressionInputStream
+		- 压缩流 CompressionOutputStream
 			- CompressorStream
 - 涉及到的类
 	- org.apache.hadoop.io.compress.CompressionCodec
