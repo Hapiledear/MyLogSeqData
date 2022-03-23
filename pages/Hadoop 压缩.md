@@ -12,7 +12,7 @@
 		- `createDecompressor()` 创建对应的解压缩器
 		- `createInputStream()` 创建对应的解压缩流
 		- `getDefaultExtension()` 获取文件的扩展名
-	- `CompressionCodecFactory` 类
+	- `CompressionCodecFactory`
 		- 通过文件路扩展获取相应的处理类
 		  collapsed:: true
 		  id:: 62397ffd-1251-43f5-946f-cc3240c20b51
@@ -58,8 +58,10 @@
 					  collapsed:: true
 						- 如果输入的是.gz, 那么匹配出来的最后一个一定是zg.
 						- 如果输入的是.gzy,那么匹配出来的最后一个一定是 yzg.
+		- 通过[[java SPI]]机制加载自定义Codec 类
 	- 压缩器 Compressor
 	  collapsed:: false
+	  id:: 62398b72-3697-4569-87a4-370443440650
 		- `setInput(byte[] b, int off, int len)` 接收数据到内部缓冲区
 		- `boolean needsInput()` 判断缓冲区是否已满
 		- `int compress(byte[] b, int off, int len)` 获取压缩数据,释放缓冲区
