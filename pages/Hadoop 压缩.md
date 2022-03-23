@@ -14,7 +14,7 @@
 		- `getDefaultExtension()` 获取文件的扩展名
 	- `CompressionCodecFactory` 类
 		- 通过文件路扩展获取相应的处理类
-		  collapsed:: true
+		  collapsed:: false
 		  id:: 62397ffd-1251-43f5-946f-cc3240c20b51
 			- 使用一个有序Map保存处理类 codecs
 				- key是后缀的翻转,value是处理它的类
@@ -67,7 +67,7 @@
 			- `boolean finished()` 判断压缩器中是否还有未读的压缩数据
 			- ![Hadoop_IO-压缩流程.png](../assets/Hadoop_IO-压缩流程_1647940736319_0.png){:height 688, :width 590}
 		- 压缩流CompressionOutputStream 和 解压缩流 CompressionInputStream
-		-
+			- CompressorStream
 - 涉及到的类
 	- org.apache.hadoop.io.compress.CompressionCodec
 	- org.apache.hadoop.io.compress.CompressionCodecFactory
