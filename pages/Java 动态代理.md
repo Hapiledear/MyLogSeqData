@@ -1,4 +1,7 @@
 - 关键类
 	- `java.lang.reflect.Proxy`
 	- `java.lang.reflect.InvocationHandler`
--
+- Proxy 静态工厂
+- 主要作用是使用 ``
+- 主要是针对接口做代理
+- 针对类做代理,可以用[[CgLib]]
