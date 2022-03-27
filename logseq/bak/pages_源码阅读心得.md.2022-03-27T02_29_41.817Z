@@ -1,0 +1,83 @@
+- 如何阅读源码
+	- 阅读时尽量选择较低版本的源码
+		- 版本越低,代码越简单,体积也越小
+	- 了解分为哪几个模块
+		- 先从基础模块开始,也就是common包
+			- 配置模块开始
+				- 配置是如何读取和使用的
+				- 有哪些关键配置
+			- 通信模块
+				- 序列化与压缩
+				- [[RPC]]
+		- 再阅读其它主要模块
+- 心得-用static map 实现工厂 #[[Hadoop 序列化]]
+  collapsed:: true
+	- 使用一个类作为工厂,这里就假设名字为`AFactory`
+		- 并不需要一个专门的类,任何类都可以,只要你想它具有工厂的功能
+		- 定义一个字段`private static final ConcurrentHashMap<Class,V> map = new ConcurrentHashMap<>()`
+		- 定义一个向该字段中注入内容的方法
+			- ```java
+			  public static void define(Class c, V comparator) {
+			      comparators.put(c, comparator);
+			    }
+			  ```
+		- 定义一个具体类的get方法
+			- ```java
+			   public static V get(Class c, Configuration conf) {
+			      V comparator = comparators.get(c);
+			      if (comparator == null) {
+			        // 强制initlize 对应的类
+			        forceInit(c);
+			        // 再查看是否正常注册进来了
+			        comparator = comparators.get(c);
+			        // 如果没有,则换用new方法
+			        if (comparator == null) {
+			          comparator = new V(c, conf, true);
+			        }
+			      }
+			      // 注入它的相关属性,可选
+			      // ReflectionUtils.setConf(comparator, conf);
+			      return comparator;
+			    }
+			  ```
+	- 具体的实现类
+		- ```java
+		  public static class AComparator extends AFactory{
+		    // 属性
+		    // setConf方法
+		    // 重要的是这里,使用class类加载机制,自动注入到 map上下文中
+		    static{
+		      AFactory.define(AComparator.class,new AComparator());
+		    }
+		  }
+		  ```
+- 心得-使用反射+Configuration的方式统一初始化对象 #[[Hadoop Configuration]]
+  collapsed:: true
+	- 定义一个Configurable接口,其中只有两个方法
+		- setConf(Configuration conf)
+		- getConf()
+	- 具体的类实现Configurable接口的这两个方法
+		- setConf -- 将配置文件的相关属性注入到自己的对象中
+		- getConf -- 返回自己收到的Configuration 即可
+	- ReflectionUtils 中使用它们
+		- ```java
+		  public static <T> T newInstance(Class<T> theClass, Configuration conf) {
+		      T result;
+		      try {
+		        // 缓存加速
+		        Constructor<T> meth = (Constructor<T>) CONSTRUCTOR_CACHE.get(theClass);
+		        if (meth == null) {
+		          meth = theClass.getDeclaredConstructor(EMPTY_ARRAY);
+		          meth.setAccessible(true);
+		          CONSTRUCTOR_CACHE.put(theClass, meth);
+		        }
+		        // 使用class的无参构造函数,new出对象
+		        result = meth.newInstance();
+		      } catch (Exception e) {
+		        throw new RuntimeException(e);
+		      }
+		    // 属性注入
+		      setConf(result, conf);
+		      return result;
+		    }
+		  ```
