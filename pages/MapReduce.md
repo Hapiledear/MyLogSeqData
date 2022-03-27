@@ -14,5 +14,8 @@
 		- 与物理块解耦，可以控制输入数据单元的大小
 		- 可以控制并行度
 		- 物理层的Block块会把一行数据切割开，它们将在切片中复原
-- ![image.png](../assets/image_1648367835052_0.png)
--
+- MapReduce过程
+	- ![image.png](../assets/image_1648367835052_0.png)
+- Map Task
+	- ![image.png](../assets/image_1648367900422_0.png)
+	-
