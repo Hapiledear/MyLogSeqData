@@ -18,4 +18,6 @@
 	- ![image.png](../assets/image_1648367835052_0.png)
 - Map Task
 	- ![image.png](../assets/image_1648367900422_0.png)
+	- 对记录进行格式化，
+- Reduce Task
 	-
