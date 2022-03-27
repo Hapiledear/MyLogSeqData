@@ -18,6 +18,7 @@
 	- ![image.png](../assets/image_1648367835052_0.png)
 - Map Task
 	- ![image.png](../assets/image_1648367900422_0.png)
-	- 对记录进行格式化，
+	- 对记录进行格式化，以记录为单位调用map方法
+	- 将记录映射成k,v kv会参与分区计算，通过key计算出分区p 最终结构其实是 k,v,p
 - Reduce Task
 	-
