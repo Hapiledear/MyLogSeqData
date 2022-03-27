@@ -16,10 +16,10 @@
 		- 物理层的Block块会把一行数据切割开，它们将在切片中复原
 - MapReduce过程
 	- ![image.png](../assets/image_1648367835052_0.png)
-- Map Task
+- Map and Reduce Task
 	- ![image.png](../assets/image_1648367900422_0.png)
 	- 对记录进行格式化，以记录为单位调用map方法
 	- 将记录映射成k,v kv会参与分区计算，通过key计算出分区p 最终结构其实是 k,v,p
 	- 输出的中间数据，以一个文件的形式，存放在本地的系统中
-- Reduce Task
+-
 	-
