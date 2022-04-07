@@ -21,12 +21,12 @@
 - Join 优化 #查询优化
   id:: 621b3b25-831d-4e0d-b49c-19ab01044211
 	- Map Join 适用于 小表 join 大表 或 小表 join 小表
-collapsed:: true
+	  collapsed:: true
 		- 将小的那份完整的数据给每个MapTask的内存都放一份
 		- 这样底层不需要经过shuffle,仅需占用存放小数据文件的内存空间
 		- ![image.png](../assets/image_1645952080865_0.png)
 	- Reduce Join 适用于 大表 Join 大表
-collapsed:: true
+	  collapsed:: true
 		- 利用Shuffle阶段的分组对数据按join字段进行合并。
 		- ![image.png](../assets/image_1645952240358_0.png)
 	- 自动判断，满足Map Join则执行,不满足则Reduce Join
@@ -43,7 +43,7 @@ collapsed:: true
 		- 1. 对于a join b ,条件写在on后面，还是where后面，性能上没有区别。如果b表是副表，则它的分区条件一定要写在on后面
 		  2. 对于 a left join b , b的条件写在 on 后面， a的条件写在 where后面
 		  3. 对于 a right join b , a的条件写在on后面，b的条件写在where后面
-- [[数据倾斜]] 优化 #查询优化
+- [[数据倾斜]] 优化 #查询优化 #面试题
 - 执行引擎-- [[Tez]]
 - 执行引擎-- [[Spark]]
 	-

@@ -18,8 +18,15 @@
 	- ![image.png](../assets/image_1648367835052_0.png)
 - Map and Reduce Task
 	- ![image.png](../assets/image_1648367900422_0.png)
-	- [[Map Task]]
-	- [[Reduce Task]]
+	- Map Task
+	  id:: 624e99ec-7cd9-4511-8995-ae6e8ff3a27c
+		- 对记录进行格式化，以记录为单位调用map方法
+		- 将记录映射成k,v kv会参与分区计算，通过key计算出分区p 最终结构其实是 k,v,p
+		- 输出的中间数据，以一个文件的形式，存放在本地的系统中
+		- 内存缓冲区 [[溢写]] 磁盘时，做一个 [[二次排序]] 。达到分区有序，且分区内key有序
+			- 未来,相同的一组key会相邻在一起
+	- Reduce Task
+	  id:: 624e99ec-4fdb-4f08-93bf-94aae0682b18
 		- 首先进行 [[归并排序]] ，排序结果可以直接接入Reduce方法
 			- 通过 [[迭代器模式]] 的支持
 		-
