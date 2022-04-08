@@ -1,0 +1,7 @@
+- 全称 `New Input/Output`
+- `java.nio` 包下,包含如下关键类
+	- `Buffers` 缓冲区
+	- `Channels` 通道
+	- `Selectors` 选择器
+	- `Multiplexed, non-blocking I/O` 多路复用的,非阻塞IO
+-
