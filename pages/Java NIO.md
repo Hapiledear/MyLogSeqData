@@ -59,17 +59,21 @@
 		- ![image.png](../assets/image_1649407302652_0.png)
 	- 使用缓冲区
 		- 分配缓冲区
+		  collapsed:: true
 			- ```java
 			  //分配一个大小为28字节的缓冲区
 			  ByteBuffer buf = ByteBuffer.allocate(28);
 			  
 			  ```
 		- 从缓冲区中读取数据
+		  collapsed:: true
 			- `byte aByte = buf.get()`
 		- 将数据写入缓冲区
+		  collapsed:: true
 			- ```java
 			  FileChannel fcin = fin.getChannel(); 
 			  ByteBuffer buffer = ByteBuffer.allocateDirect( 1024 );  
 			  int r = fcin.read( buffer );  
 			  ```
--
+	- 直接缓冲区 `ByteBuffer.allocateDirect(1024 * 1024)`
+		-
