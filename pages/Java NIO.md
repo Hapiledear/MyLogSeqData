@@ -4,4 +4,5 @@
 	- `Channels` 通道
 	- `Selectors` 选择器
 	- `Multiplexed, non-blocking I/O` 多路复用的,非阻塞IO
--
+- `Channels` 通道
+	- 通道是用于在实体和字节缓冲区之间有效传输数据的介质。它从一个实体读取数据，并将其放在缓冲区块中以供消费。
