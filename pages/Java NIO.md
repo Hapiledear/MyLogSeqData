@@ -15,6 +15,7 @@
 		- DatagramChannel : 通过 UDP 读写网络中的数据通道。
 		- SocketChannel ： 通过 TCP 读写网络中的数据。
 		- ServerSocketChannel ： 可以监听新进来的 TCP 连接，对每一个新来进来的连接都会创建一个 SocketChannel。
+	-
 	- 使用示例
 	  collapsed:: true
 		- ```java
@@ -104,6 +105,13 @@
 			  ```
 - `Selectors` 选择器
 - IO的发展历程
+	- 第一阶段：由CPU直接处理和管理IO接口并进行数据传输
+	- 第二阶段：引入寄存器[[DMA]]（流的概念引入），在需要使用IO操作的时候，由寄存器DMA向CPU申请，然后再由寄存器统一管理IO接口，实现数据传输。
+	- 第三阶段：寄存器DMA换成通道Channel，通道独立开来不由CPU管，也不需要申请权限，只有由其对IO接口进行处理和管理，然后实现数据传输。
 - 参考资料
 	- [深入思考NIO](https://juejin.cn/post/7044920986445021198#heading-10)
+	- [深入思考NIO_2](https://juejin.cn/post/7045672219866988551)
+	- [java NIO教学](https://www.yiibai.com/java_nio/java-nio-buffers.html)
+	- [Java NIO教学](https://edu.csdn.net/skill/java/java-ee223c3171384d6295cbf7d95e8dba61?category=475)
 	-
+-
