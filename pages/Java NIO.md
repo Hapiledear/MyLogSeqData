@@ -54,6 +54,7 @@
 		  
 		  ```
 - `Buffers` 缓冲区
+  collapsed:: true
 	- 用于与NIO通道进行交互。这是写入数据的内存块，以便在稍后再次进行读取。 内存块用NIO缓冲对象包装，这样可以提供更简单的方法来处理内存块.
 	- 常用的Buffer实现
 		- ![image.png](../assets/image_1649407302652_0.png)
@@ -79,4 +80,30 @@
 		- 在JVM的内存之外,申请一块缓冲区,减少了一次用户态到用户态的数据拷贝过程
 		- ![image.png](../assets/image_1649409615300_0.png)
 	- 内存映射IO `MappedByteBuffer `
-		- 是一种读和写文件数据的方法,通过 将文件 实际读写的部分直接映射到内存中
+		- 是一种读和写文件数据的方法,通过 将文件 实际读写的部分直接映射到内存中,并且直接操作位数据
+		  collapsed:: true
+			- ![image.png](../assets/image_1649410303074_0.png)
+			- ```java
+			  public class Program {  
+			      static private final int start = 0;<span style="font-family:FangSong_GB2312;font-size:13px;">  
+			      static private final int size = 1024;  
+			        
+			      static public void main( String args[] ) throws Exception {  
+			          RandomAccessFile raf = new RandomAccessFile( "c:\\test.txt", "rw" );  
+			          FileChannel fc = raf.getChannel();  
+			            
+			          MappedByteBuffer mbb = fc.map( FileChannel.MapMode.READ_WRITE,  
+			            start, size );  
+			            
+			          mbb.put( 0, (byte)97 );  
+			          mbb.put( 1023, (byte)122 );  
+			            
+			          raf.close();  
+			      }  
+			  }
+			  ```
+- `Selectors` 选择器
+- IO的发展历程
+- 参考资料
+	- [深入思考NIO](https://juejin.cn/post/7044920986445021198#heading-10)
+	-
