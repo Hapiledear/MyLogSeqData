@@ -10,4 +10,47 @@
 		- 通道可以是双向的,但流是单项的
 		- 通道可以异步读写
 		- 通道不能直接访问数据,需要和Buffer进行交互
-	-
+	- 常用的Channel实现
+		- FileChannel : 用于读取、写入、映射和操作文件的通道
+		- DatagramChannel : 通过 UDP 读写网络中的数据通道。
+		- SocketChannel ： 通过 TCP 读写网络中的数据。
+		- ServerSocketChannel ： 可以监听新进来的 TCP 连接，对每一个新来进来的连接都会创建一个 SocketChannel。
+	- 使用示例
+	  collapsed:: true
+		- ```java
+		  import java.io.FileInputStream;
+		  import java.io.FileOutputStream;
+		  import java.io.IOException;
+		  import java.nio.ByteBuffer;
+		  import java.nio.channels.ReadableByteChannel;
+		  import java.nio.channels.WritableByteChannel;
+		  
+		  public class ChannelDemo {
+		      public static void main(String args[]) throws IOException {
+		          String relativelyPath = System.getProperty("user.dir");
+		          FileInputStream input = new FileInputStream(relativelyPath + "/testin.txt");
+		          ReadableByteChannel source = input.getChannel();
+		          FileOutputStream output = new FileOutputStream(relativelyPath + "/testout.txt");
+		          WritableByteChannel destination = output.getChannel();
+		          copyData(source, destination);
+		          source.close();
+		          destination.close();
+		          System.out.println("Copy Data finished.");
+		      }
+		  
+		      private static void copyData(ReadableByteChannel src, WritableByteChannel dest) throws IOException {
+		          ByteBuffer buffer = ByteBuffer.allocateDirect(20 * 1024);
+		          while (src.read(buffer) != -1) {
+		              // The buffer is used to drained
+		              buffer.flip();
+		              // keep sure that buffer was fully drained
+		              while (buffer.hasRemaining()) {
+		                  dest.write(buffer);
+		              }
+		              buffer.clear(); // Now the buffer is empty, ready for the filling
+		          }
+		      }
+		  }//原文出自【易百教程】，商业转载请联系作者获得授权，非商业请保留原文链接：https://www.yiibai.com/java_nio/java-nio-channels.html
+		  
+		  ```
+-
