@@ -76,4 +76,7 @@
 			  int r = fcin.read( buffer );  
 			  ```
 	- 直接缓冲区 `ByteBuffer.allocateDirect(1024 * 1024)`
-		-
+		- 在JVM的内存之外,申请一块缓冲区,减少了一次用户态到用户态的数据拷贝过程
+		- ![image.png](../assets/image_1649409615300_0.png)
+	- 内存映射IO `MappedByteBuffer `
+		- 是一种读和写文件数据的方法,通过 将文件 实际读写的部分直接映射到内存中
