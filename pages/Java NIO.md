@@ -58,4 +58,18 @@
 	- 常用的Buffer实现
 		- ![image.png](../assets/image_1649407302652_0.png)
 	- 使用缓冲区
-		-
+		- 分配缓冲区
+			- ```java
+			  //分配一个大小为28字节的缓冲区
+			  ByteBuffer buf = ByteBuffer.allocate(28);
+			  
+			  ```
+		- 从缓冲区中读取数据
+			- `byte aByte = buf.get()`
+		- 将数据写入缓冲区
+			- ```java
+			  FileChannel fcin = fin.getChannel(); 
+			  ByteBuffer buffer = ByteBuffer.allocateDirect( 1024 );  
+			  int r = fcin.read( buffer );  
+			  ```
+-
