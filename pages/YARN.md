@@ -28,7 +28,6 @@
 		- 造成资源争抢。因为各自实现资源管理，但是都部署在一起，加之相互隔离，不能感知对方的使用
 - hadoop2.x时代 yarn 资源管理
 	- ![image.png](../assets/image_1649556837881_0.png)
-collapsed:: true
 		- Client 还是 切片清单 配置文件 上传hdfs。通知Resouce Manager
 		- Resouce Manager挑一个不忙的节点，启动App Master
 		- App Master 当计算发生时，出现它。相当于没有资源管理的JobTracker
@@ -36,5 +35,4 @@ collapsed:: true
 		- Resouce Manager 向Node Manger通知，要跑哪个任务(启动一批Container)
 		- Container 任务进程，代表着消耗的资源
 			- 注册到App Master
-	- 组成角色
-		-
+-
