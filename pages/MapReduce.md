@@ -15,8 +15,10 @@
 		- 可以控制并行度
 		- 物理层的Block块会把一行数据切割开，它们将在切片中复原
 - MapReduce过程
+collapsed:: true
 	- ![image.png](../assets/image_1648367835052_0.png)
 - Map and Reduce Task
+collapsed:: true
 	- ![image.png](../assets/image_1648367900422_0.png)
 	- Map Task
 	  id:: 624e99ec-7cd9-4511-8995-ae6e8ff3a27c
