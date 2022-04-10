@@ -31,8 +31,8 @@
 		- Client 还是 切片清单 配置文件 上传hdfs。通知Resouce Manager
 		- Resouce Manager挑一个不忙的节点，启动App Master
 		- App Master 当计算发生时，出现它。相当于没有资源管理的JobTracker
-			- 询问Resouce Manager 哪些Map去哪个Node
-		- Resouce Manager 向Node Manger通知，要跑哪个任务
+			- 询问Resouce Manager 哪些Map去哪个Node(申请Container)
+		- Resouce Manager 向Node Manger通知，要跑哪个任务(启动一批Container)
 		- Container 任务进程，代表着消耗的资源
 			- 注册到App Master
 -
