@@ -30,4 +30,5 @@
 	- ![image.png](../assets/image_1649556837881_0.png)
 		- App Master 当计算发生时，出现它。相当于没有资源管理的JobTracker
 			- 询问Resouce Manager 哪些Map去哪个Node
-		-
+		- Resouce Manager 向Node Manger通知，要跑哪个任务
+		- Container
