@@ -7,4 +7,6 @@
 	- TaskTracker
 		- 任务管理
 		- 资源汇报
+	- 客户端
+		- 根据每次的计算数据，咨询NameNode
 -
