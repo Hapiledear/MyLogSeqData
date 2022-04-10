@@ -12,7 +12,9 @@
 	- JobTracker
 		- 资源管理
 		- 任务调度
-		- 1. 从hdfs中取回split清单
+		- 1. 从 [[HDFS]] 中取回split清单
+		  2. 根据自己收到的汇报的资源，最终确定每一个MapTask去哪一个节点的确切的清单
+		  3.
 	- TaskTracker
 		- 任务管理
 		- 资源汇报
