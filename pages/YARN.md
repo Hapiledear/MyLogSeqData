@@ -35,4 +35,4 @@
 		- Resouce Manager 向Node Manger通知，要跑哪个任务(启动一批Container)
 		- Container 任务进程，代表着消耗的资源
 			- 注册到App Master
--
+	- r
