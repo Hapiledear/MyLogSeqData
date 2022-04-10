@@ -35,4 +35,6 @@
 		- Resouce Manager 向Node Manger通知，要跑哪个任务(启动一批Container)
 		- Container 任务进程，代表着消耗的资源
 			- 注册到App Master
-	- r
+	- 如何解决1.x中的问题的
+		- 单点故障： 每一个app都有一个自己的app master调度，且app master失败会重试
+		-
