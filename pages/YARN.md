@@ -9,5 +9,6 @@
 		- 资源汇报
 	- 客户端
 		- 根据每次的计算数据，咨询 [[NameNode]] 元数据（block) ，用以计算切片(split)，得到一个切片的**清单**(MapTask的数量)
+			- split是逻辑的，block是物理的，block身上有
 		-
 -
