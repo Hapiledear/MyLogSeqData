@@ -18,5 +18,7 @@
 	- TaskTracker
 		- 任务管理
 		- 资源汇报
-		- 1. 在心跳取回了任务后：
+		- 1. 心跳取回任务
+		  2. 从hdfs中下载 jar xml 到本机
+		  3. 启动任务描述中的MapTask\ReduceTask
 -
