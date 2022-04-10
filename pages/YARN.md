@@ -37,4 +37,5 @@
 			- 注册到App Master
 	- 如何解决1.x中的问题的
 		- 单点故障： 每一个app都有一个自己的app master调度，且app master失败会重试
+		- 压力过大：app master只负责自己的计算程序调度。 app masters是在不同的节点中启动的
 		-
