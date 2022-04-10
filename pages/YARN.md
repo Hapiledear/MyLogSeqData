@@ -10,15 +10,13 @@
 			- 上传的数据的副本数默认是10
 		- 4. 通知JobTracker准备启动任务,并告知文件都放在了HDFS的哪些地方
 	- JobTracker
-		- 资源管理
-		- 任务调度
+		- 资源管理 和 任务调度
 		- 1. 从 [[HDFS]] 中取回split清单
 		  2. 根据自己收到的TaskTracker汇报的资源，最终确定每一个MapTask去哪一个节点的确切的清单
 		  3. 未来，TaskTracker在心跳的时候，取回自己的任务信息
 	- TaskTracker
-		- 任务管理
-		- 资源汇报
+		- 任务管理 和 资源汇报
 		- 1. 心跳取回任务
-		  2. 从hdfs中下载 jar xml 到本机
+		  2. 从 [[HDFS]] 中下载 jar xml 到本机
 		  3. 启动任务描述中的MapTask\ReduceTask
 -
