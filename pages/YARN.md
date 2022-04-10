@@ -2,16 +2,17 @@
 	- 资源管理 和 任务调度
 - 组成角色
 	- 客户端
-		- 根据每次的计算数据，咨询 [[NameNode]] 元数据（block) ，用以计算切片(split)，得到一个切片的**清单**(MapTask的数量)
+		- 1. 根据每次的计算数据，咨询 [[NameNode]] 元数据（block) ，用以计算切片(split)，得到一个切片的**清单**(MapTask的数量)
 			- split是逻辑的，block是物理的，block身上有 offset,locations ,split和block是有映射关系
 			- 因此，输出的结果split中包含偏移量 以及告诉对应的MapTask应该移动到哪些节点 locations
-		- 生成计算程序未来运行时的相关配置文件 `xxx.xml`
-		- 将 jar包 split清单 配置[ [[xml]] ]文件 上传到[[HDFS]]中
+		- 2. 生成计算程序未来运行时的相关配置文件 `xxx.xml`
+		- 3. 将 jar包 split清单 配置[ [[xml]] ]文件 上传到[[HDFS]]中
 			- 上传的数据的副本数默认是10
-		- 通知JobTracker准备启动任务,并告知文件都放在了HDFS的哪些地方
+		- 4. 通知JobTracker准备启动任务,并告知文件都放在了HDFS的哪些地方
 	- JobTracker
 		- 资源管理
 		- 任务调度
+		- 1. 从hdfs中取回split清单
 	- TaskTracker
 		- 任务管理
 		- 资源汇报
