@@ -1,6 +1,6 @@
 - 全称 `New Input/Output`
 - `java.nio` 包下,包含如下关键类
-  collapsed:: true
+  collapsed:: false
 	- `Buffers` 缓冲区
 	- `Channels` 通道
 	- `Selectors` 选择器
@@ -106,7 +106,7 @@
 			  }
 			  ```
 - `Selectors` 选择器
-  collapsed:: true
+  collapsed:: false
 	- 用于使用单个线程处理多个通道.程之间的切换对于操作系统来说是昂贵的。 因此，使用它可以提高系统效率
 	- 使用过程
 		- ```java
@@ -142,9 +142,9 @@
 	- 第三阶段：寄存器DMA换成通道Channel，通道独立开来不由CPU管，也不需要申请权限，只有由其对IO接口进行处理和管理，然后实现数据传输。
 		- ![image.png](../assets/image_1649411090068_0.png)
 - 参考资料
-	- [深入思考NIO](https://juejin.cn/post/7044920986445021198#heading-10)
-	- [深入思考NIO_2](https://juejin.cn/post/7045672219866988551)
-	- [java NIO教学](https://www.yiibai.com/java_nio/java-nio-buffers.html)
-	- [Java NIO教学](https://edu.csdn.net/skill/java/java-ee223c3171384d6295cbf7d95e8dba61?category=475)
+	- [深入思考NIO_掘金](https://juejin.cn/post/7044920986445021198#heading-10)
+	- [深入思考NIO_2_掘金](https://juejin.cn/post/7045672219866988551)
+	- [java NIO教学_易百教程](https://www.yiibai.com/java_nio/java-nio-buffers.html)
+	- [Java NIO教学_CSDN](https://edu.csdn.net/skill/java/java-ee223c3171384d6295cbf7d95e8dba61?category=475)
 	-
 -
