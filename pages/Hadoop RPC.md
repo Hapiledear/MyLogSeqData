@@ -13,7 +13,8 @@
 			- 当服务器地址(address) 用户信息(ticket) 和 协议类型(protocol) 三者一致时,表示可以复用这条连接.
 			- 否则,新建Connection 和 ConnectionId
 		- Client.Call
-			- 客户端调用服务器方法时的代码抽象
+			- 客户端调用服务器方法时的代码抽象,具体的创建流程如下
+			-
 			-
 	- Server
 		- 包含的主要类 
