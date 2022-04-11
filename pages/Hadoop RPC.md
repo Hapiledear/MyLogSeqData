@@ -17,8 +17,11 @@
 				- 所有的RPC方法都被`java.lang.reflect.InvocationHandler` 捕获,并调用具体的`Invoker` 的`invoke()`方法,有两类
 					- org.apache.hadoop.ipc.WritableRpcEngine.Invoker
 					- org.apache.hadoop.ipc.ProtobufRpcEngine.Invoker
-				- invoke方法中会调用 Client.Call.call(),主要做了如下事情
-			-
+				- invoke方法中会调用 Client.call(),主要做了如下事情
+					- Client.createCall() 创建了一个Call对象
+					- Client.getConnection() 获取到一个Connection
+					- ` connection.sendRpcRequest(call)` 发送报文
+					-
 	- Server
 		- 包含的主要类 
 		  collapsed:: true
