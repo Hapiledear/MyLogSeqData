@@ -3,9 +3,15 @@
 - 都用在了什么地方?
 - 主要角色和架构是什么样的?
 	- Client
-		- 包含的主要类 
+		- 包含的主要类
 		  collapsed:: true
 			- ![image.png](../assets/image_1649667679834_0.png)
+		- Client.Connection
+			- 表示客户端向服务器建立的一条连接
+		- Client.Connection.ConnectionId
+			- 目的是为了复用客户端的连接
+			- 当服务器地址(address) 用户信息(ticket) 和 协议类型(protocol) 三者一致时,表示可以复用这条连接.
+			- 否则,新建Connection 和 ConnectionId
 		-
 	- Server
 		- 包含的主要类 
@@ -13,10 +19,11 @@
 			- ![image.png](../assets/image_1649667716473_0.png)
 			-
 	- RPC
-		- 包含的主要类 
+		- 包含的主要类
 		  collapsed:: true
 			- ![image.png](../assets/image_1649667735794_0.png)
 			-
+-
 - RPC流程是什么样的?
 -
 - 相关类定位
