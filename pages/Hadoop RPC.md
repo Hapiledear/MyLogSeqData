@@ -14,8 +14,10 @@
 			- 否则,新建Connection 和 ConnectionId
 		- Client.Call
 			- 客户端调用服务器方法时的代码抽象,具体的创建流程如下
-				- 1. 所有的RPC方法都被`java.lang.reflect.InvocationHandler` 捕获,并调用具体的`Invoker` 的`invoke()`方法
-				  2.
+				- 所有的RPC方法都被`java.lang.reflect.InvocationHandler` 捕获,并调用具体的`Invoker` 的`invoke()`方法,有两类
+					- org.apache.hadoop.ipc.WritableRpcEngine.Invoker
+					- org.apache.hadoop.ipc.ProtobufRpcEngine.Invoker
+				- invoke方法中会调用 Client.Call.call(),主要做了如下事情
 			-
 	- Server
 		- 包含的主要类 
