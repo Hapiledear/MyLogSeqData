@@ -21,7 +21,8 @@
 					- Client.createCall() 创建了一个Call对象
 					- Client.getConnection() 获取到一个Connection
 					- ` connection.sendRpcRequest(call)` 发送报文
-					-
+					- 异步等待结果返回
+			-
 	- Server
 		- 包含的主要类 
 		  collapsed:: true
