@@ -78,6 +78,7 @@
 			-
 - ICP连接的建立过程
 	- Client创建Connection `org.apache.hadoop.ipc.Client#getConnection`
+		- 该代码是一段while循环,退出条件是 `connection.addCall(call)` 成功后
 		-
 - RPC流程是什么样的?
 -
