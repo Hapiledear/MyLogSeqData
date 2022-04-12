@@ -9,14 +9,16 @@
 		- Client.Connection
 			- 表示客户端向服务器建立的一条连接
 			- 关键成员变量如下
-				- `private InetSocketAddress server; // 要连接的服务器的 ip:port`
-				- `private final ConnectionId remoteId;//连接标识`
-				- `private Socket socket = null; // 建立连接后的Socket`
-				- `private Hashtable<Integer, Call> calls = new Hashtable<Integer, Call>() // 当前正在处理的远程调用`
-				- `private AtomicLong lastActivity = new AtomicLong(); // 最后一次通信时间`
-				- `private AtomicBoolean shouldCloseConnection = new AtomicBoolean();  //连接关闭标记`
-				- `private IOException closeException; // 导致连接关闭的异常`
-				- `private IpcStreams ipcStreams; // DataInputStream 和 DataOutputStream`
+				- ```java
+				  private InetSocketAddress server; // 要连接的服务器的 ip:port
+				  private final ConnectionId remoteId;//连接标识
+				  private Socket socket = null; // 建立连接后的Socket
+				  private Hashtable<Integer, Call> calls = new Hashtable<Integer, Call>() // 当前正在处理的远程调用
+				  private AtomicLong lastActivity = new AtomicLong(); // 最后一次通信时间
+				  private AtomicBoolean shouldCloseConnection = new AtomicBoolean();  //连接关闭标记
+				  private IOException closeException; // 导致连接关闭的异常
+				  private IpcStreams ipcStreams; // DataInputStream 和 DataOutputStream
+				  ```
 				-
 		- Client.Connection.ConnectionId
 			- 目的是为了复用客户端的连接
@@ -49,7 +51,13 @@
 				  private ByteBuffer data;
 				  private final ByteBuffer dataLengthBuffer;
 				  private LinkedList<RpcCall> responseQueue;
-				  private AtomicInteger rpcCount = new AtomicInteger();// 当前正在处理的RPC请求数
+				  private AtomicInteger rpcCount = new AtomicInteger(); // 当前正在处理的RPC请求
+				  private long lastContact;
+				  private int dataLength;
+				  private Socket socket;
+				  // 客户端的 ip+ port 保存它的目的是为了留下痕迹,方便查询
+				  private String hostAddress; 
+				  private int remotePort; 
 				  
 				  ```
 		- Server.Call
