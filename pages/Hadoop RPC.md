@@ -31,6 +31,12 @@
 		- Server.Connection 和 Server.ConnectionManager
 			- Manager负责管理和建立Connection[register()] ,由Server.Listener.doAccept()唤起
 			- Connection 是客户端向服务器建立的一条连接
+		- Server.Call
+		- Server.Listener
+			- 监听客户端发来的连接请求 和 连接建立后的数据请求
+			- 调用服务端的相关方法,将放入一个阻塞队列中,由Handler处理
+		- Server.Handler
+			- 根据Call中的数据,调用对应的接口实现类
 	- RPC
 		- 包含的主要类
 		  collapsed:: true
