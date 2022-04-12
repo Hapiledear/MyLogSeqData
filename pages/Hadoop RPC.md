@@ -41,6 +41,17 @@
 		- Server.Connection 和 Server.ConnectionManager
 			- Manager负责管理和建立Connection[register()] ,由Server.Listener.doAccept()唤起
 			- Connection 是客户端向服务器建立的一条连接
+			- 关键成员变量如下
+				- ```java
+				  private boolean connectionHeaderRead = false; // 是否已经读入了ConnectionHeader 读的是版本号
+				  private boolean connectionContextRead = false; 
+				  private SocketChannel channel;
+				  private ByteBuffer data;
+				  private final ByteBuffer dataLengthBuffer;
+				  private LinkedList<RpcCall> responseQueue;
+				  private AtomicInteger rpcCount = new AtomicInteger();// 当前正在处理的RPC请求数
+				  
+				  ```
 		- Server.Call
 		- Server.Listener
 			- 监听客户端发来的连接请求 和 连接建立后的数据请求
