@@ -24,10 +24,13 @@
 					- 异步等待结果返回
 			-
 	- Server
-		- 包含的主要类 
+		- 包含的主要类
 		  collapsed:: true
 			- ![image.png](../assets/image_1649667716473_0.png)
 			-
+		- Server.Connection 和 Server.ConnectionManager
+			- Manager负责管理和建立Connection[register()] ,由Server.Listener.doAccept()唤起
+			- Connection 是客户端向服务器建立的一条连接
 	- RPC
 		- 包含的主要类
 		  collapsed:: true
