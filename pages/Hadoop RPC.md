@@ -94,7 +94,8 @@
 			- 最后,调用`Thread.start()`启动connection线程,接收返回结果
 	- 在Server端,主要负责连接的是 `Server.Listener` 和 `Server.Connection `
 		- 在hadoop程序启动时,会调用`Server.start()`方法,进而执行`Server.Listener#run()`方法
-			- 在run方法中,使用的是java.nio的selector和Channel 对socket进行处理,
+			- 在run方法中,使用的是java.nio的selector和Channel 对socket进行处理,`Server.Listener#doRead()`方法处理OP_READ ,`Server.Listener#doAccept()`方法处理OP_ACCEPT
+		-
 		-
 		-
 - RPC流程是什么样的?
