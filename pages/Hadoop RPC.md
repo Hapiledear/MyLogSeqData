@@ -87,8 +87,9 @@
 			- 接着,调用`writeConnectionHeader()`与服务端进行握手,发送的报文如下
 				- 魔术 "hrpc" 4字节
 				- 客户端版本号 1字节
-				-
-				-
+				- service class 1字节 ??
+				- 鉴权手段 1字节
+			-
 			-
 - RPC流程是什么样的?
 -
