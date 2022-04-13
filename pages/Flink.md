@@ -17,7 +17,14 @@
 	- Apache Flink 是一个**框架**和**分布式**处理引擎,用于对 **无界和有界的数据流**进行**状态**计算
 - Flink 基本概念
 	- Streams 流
+		- 流是一个带有方向性的数据集,数据作为流的一部分自然而然的被创建.但是在数据分析时,必须使用{{embed ((6256985b-def1-4f4a-a62e-19c509c79bbf))}} 和{{embed ((6256987c-62b3-4c8d-944c-2dc1e0d8dcda))}}
 		- ![image.png](../assets/image_1649841584752_0.png)
+		- 有界流 bounded stream
+		  id:: 6256985b-def1-4f4a-a62e-19c509c79bbf
+			- 具有明确的开始和结束节点
+		- 无界流 unbounded stream
+		  id:: 6256987c-62b3-4c8d-944c-2dc1e0d8dcda
+			- 只有开始节点,没有结束节点
 		-
 - Flink的基本架构
 	-
