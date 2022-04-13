@@ -84,7 +84,11 @@
 			- 循环回到开头,将会新建一个connection
 		- 拿到了一个可用的connection,开始调用`org.apache.hadoop.ipc.Client.Connection#setupIOstreams` 方法
 			- 首先,使用Java的Socket与服务端建立连接
-			- 接着,调用`writeConnectionHeader()`与服务端进行握手
+			- 接着,调用`writeConnectionHeader()`与服务端进行握手,发送的报文如下
+				- 魔术 "hrpc" 4字节
+				- 客户端版本号 1字节
+				-
+				-
 			-
 - RPC流程是什么样的?
 -
