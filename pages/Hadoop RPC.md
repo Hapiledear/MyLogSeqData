@@ -83,7 +83,9 @@
 			- 之后,清理掉要关闭的connection
 			- 循环回到开头,将会新建一个connection
 		- 拿到了一个可用的connection,开始调用`org.apache.hadoop.ipc.Client.Connection#setupIOstreams` 方法
-		-
+			- 首先,使用Java的Socket与服务端建立连接
+			- 接着,调用`writeConnectionHeader()`与服务端进行握手
+			-
 - RPC流程是什么样的?
 -
 - 相关类定位
