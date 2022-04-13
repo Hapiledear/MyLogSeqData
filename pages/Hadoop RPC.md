@@ -79,6 +79,10 @@
 - ICP连接的建立过程
 	- Client创建Connection `org.apache.hadoop.ipc.Client#getConnection`
 		- 该代码是一段while循环,退出条件是 `connection.addCall(call)` 成功后
+			- addCall 方法,是将一个Call加入到connection中.如果该Connection要被关闭了,则暂不加入,返回false
+			- 之后,清理掉要关闭的connection
+			- 循环回到开头,将会新建一个connection
+		- 拿到了一个可用的connection,开始调用`org.apache.hadoop.ipc.Client.Connection#setupIOstreams` 方法
 		-
 - RPC流程是什么样的?
 -
