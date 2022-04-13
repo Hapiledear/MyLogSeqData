@@ -89,8 +89,9 @@
 				- 客户端版本号 1字节
 				- service class 1字节 ??
 				- 鉴权手段 1字节
-			-
-			-
+			- 第三步,调用`writeConnectionContext()` 发送真正的请求
+			- 第4步,调用`touch()` 记录返最后一次I\O发生时间
+			- 最后,调用`Thread.start()`启动connection线程,接收返回结果
 - RPC流程是什么样的?
 -
 - 相关类定位
