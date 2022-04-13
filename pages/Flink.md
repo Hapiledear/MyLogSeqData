@@ -25,7 +25,7 @@
 		- 无界流 unbounded stream
 		  id:: 6256987c-62b3-4c8d-944c-2dc1e0d8dcda
 			- 只有开始节点,没有结束节点
-		-
+	- State
 - Flink的基本架构
 	-
 - 与Spark Stream 的区别
