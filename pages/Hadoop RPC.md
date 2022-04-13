@@ -92,6 +92,9 @@
 			- 第三步,调用`writeConnectionContext()` 发送真正的请求
 			- 第4步,调用`touch()` 记录返最后一次I\O发生时间
 			- 最后,调用`Thread.start()`启动connection线程,接收返回结果
+	- 在Server端,主要负责连接的是 `Server.Listener` 和 `Server.Connection `
+		-
+		-
 - RPC流程是什么样的?
 -
 - 相关类定位
