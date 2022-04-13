@@ -1,6 +1,5 @@
-- Flink是什么
-	- Apache Flink 是一个**框架**和**分布式**处理引擎,用于对 **无界和有界的数据流**进行**状态**计算
 - 数据处理的发展和演变
+  collapsed:: true
 	- 事务处理 OLTP
 		- 操作->xx系统->关系型数据库->响应
 	- 分析处理 OLAP
@@ -14,7 +13,14 @@
 		- 两表合并->应用展示
 	- akka架构 三代
 		-
-- Flink的主要特点
+- Flink是什么
+	- Apache Flink 是一个**框架**和**分布式**处理引擎,用于对 **无界和有界的数据流**进行**状态**计算
+- Flink 基本概念
+	- Streams 流
+		- ![image.png](../assets/image_1649841584752_0.png)
+		-
+- Flink的基本架构
+	-
 - 与Spark Stream 的区别
 -
 -
