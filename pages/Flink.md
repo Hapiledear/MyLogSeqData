@@ -22,10 +22,15 @@
 		- 有界流 bounded stream
 		  id:: 6256985b-def1-4f4a-a62e-19c509c79bbf
 			- 具有明确的开始和结束节点
+			- 数据会随时间的推演而持续增加,计算持续进行且不存在结束的状态
 		- 无界流 unbounded stream
 		  id:: 6256987c-62b3-4c8d-944c-2dc1e0d8dcda
 			- 只有开始节点,没有结束节点
-	- State
+			- 数据大小固定，计算最终会完成并处于结束的状态。
+	- State 状态
+		- State是Flink中的顶级概念.计算过程中的数据具有state
+			- eg. 需要keep之前的数据,算最近一个小时内的总PV,这些数据就是stateful(有状态的),它所对应的计算就是有状态计算
+		-
 - Flink的基本架构
 	-
 - 与Spark Stream 的区别
