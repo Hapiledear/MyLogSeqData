@@ -43,8 +43,21 @@
 		- DataStream API (streams,windows)
 		- ProcessFunction (events,state,time)
 		- ProcessFunction 层API 的表达能力非常强，可以进行多种灵活方便的操作，但抽象能力也相对越小。
-- Flink的基本架构
-	- 具备一套框架处理两种数据集合
+- Flink的特点
+	- 具备一套框架处理有界和无界两种数据流的能力
+	- 部署灵活
+	- 极高的可伸缩性
+	- 极致的流式处理性能
+		- 将状态语义完全抽象到框架中，支持本地状态读取，避免了大量网络IO，可以极大提升状态存取的性能。
+- 使用场景
+	- Data Pipeline 数据搬运\同步
+		- ![image.png](../assets/image_1649925119504_0.png){:height 348, :width 716}
+		- 实时数仓
+			-
+		- 实时搜索引擎的index的build
+			- 以淘宝为例，当卖家上线新商品时，后台会实时产生消息流，该消息流经过Flink 系统时会进行数据的处理、扩展。然后将处理及扩展后的数据生成实时索引，写入到搜索引擎中。这样当淘宝卖家上线新商品时，能在秒级或者分钟级实现搜索引擎的搜索。
+	- Data Analytics
+		-
 - 与Spark Stream 的区别
 -
 -
