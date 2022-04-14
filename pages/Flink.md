@@ -53,11 +53,19 @@
 	- Data Pipeline 数据搬运\同步
 		- ![image.png](../assets/image_1649925119504_0.png){:height 348, :width 716}
 		- 实时数仓
-			-
+		  collapsed:: true
+			- 进行实时清洗或扩展数据，清洗完成后写入到下游的实时数仓的整个链路中，可保证数据查询的时效性，形成实时数据采集、实时数据处理以及下游的实时Query。
 		- 实时搜索引擎的index的build
+		  collapsed:: true
 			- 以淘宝为例，当卖家上线新商品时，后台会实时产生消息流，该消息流经过Flink 系统时会进行数据的处理、扩展。然后将处理及扩展后的数据生成实时索引，写入到搜索引擎中。这样当淘宝卖家上线新商品时，能在秒级或者分钟级实现搜索引擎的搜索。
-	- Data Analytics
-		-
+	- Data Analytics 数据分析
+		- ![image.png](../assets/image_1649925300142_0.png)
+		- 实时大屏
+		- 实时报表
+	- Data Driven 数据驱动\事件处理
+		- ![image.png](../assets/image_1649925356430_0.png)
+		- 实时风控
+			- 装载规则到Flink -> 数据处理->触发规则告警->通知下游程序
 - 与Spark Stream 的区别
 -
 -
