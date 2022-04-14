@@ -17,6 +17,7 @@
 	- Apache Flink 是一个**框架**和**分布式**处理引擎,用于对 **无界和有界的数据流**进行**状态**计算
 - Flink 基本概念
 	- Streams 流
+	  collapsed:: true
 		- 流是一个带有方向性的数据集,数据作为流的一部分自然而然的被创建.但是在数据分析时,必须使用{{embed ((6256985b-def1-4f4a-a62e-19c509c79bbf))}} 和{{embed ((6256987c-62b3-4c8d-944c-2dc1e0d8dcda))}}
 		- ![image.png](../assets/image_1649841584752_0.png)
 		- 有界流 bounded stream
@@ -28,16 +29,19 @@
 			- 只有开始节点,没有结束节点
 			- 数据大小固定，计算最终会完成并处于结束的状态。
 	- State 状态
+	  collapsed:: true
 		- State是Flink中的顶级概念.计算过程中的数据具有state
 			- eg. 需要keep之前的数据,算最近一个小时内的总PV,这些数据就是stateful(有状态的),它所对应的计算就是有状态计算
 		- 流计算在本质上是Incremental Processing，因此需要不断查询保持状态
 		- 持久化存储带状态的数据,能够保证在整个分布式系统运行失败或者挂掉的情况下做到Exactly- once
 	- Time 时间
+	  collapsed:: true
 		- 时间是在流计算中度量业务计算是否滞后，数据处理是否及时的重要依据。
 		- Event time 数据产生的时间
 		- Ingestion time 数据进入Flink的时间
 		- Processing time 数据被Flink处理的时间
 	- API
+	  collapsed:: true
 		- 越接近SQL 层，表达能力会逐步减弱，抽象能力会增强,
 		- SQL \Table API (dynamic tables)
 		- DataStream API (streams,windows)
@@ -50,6 +54,7 @@
 	- 极致的流式处理性能
 		- 将状态语义完全抽象到框架中，支持本地状态读取，避免了大量网络IO，可以极大提升状态存取的性能。
 - 使用场景
+  collapsed:: true
 	- Data Pipeline 数据搬运\同步
 		- ![image.png](../assets/image_1649925119504_0.png){:height 348, :width 716}
 		- 实时数仓
@@ -66,6 +71,7 @@
 		- ![image.png](../assets/image_1649925356430_0.png)
 		- 实时风控
 			- 装载规则到Flink -> 数据处理->触发规则告警->通知下游程序
+-
 - 与Spark Stream 的区别
 -
 -
