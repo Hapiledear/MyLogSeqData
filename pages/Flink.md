@@ -30,9 +30,21 @@
 	- State 状态
 		- State是Flink中的顶级概念.计算过程中的数据具有state
 			- eg. 需要keep之前的数据,算最近一个小时内的总PV,这些数据就是stateful(有状态的),它所对应的计算就是有状态计算
-		-
+		- 流计算在本质上是Incremental Processing，因此需要不断查询保持状态
+		- 持久化存储带状态的数据,能够保证在整个分布式系统运行失败或者挂掉的情况下做到Exactly- once
+	- Time 时间
+		- 时间是在流计算中度量业务计算是否滞后，数据处理是否及时的重要依据。
+		- Event time 数据产生的时间
+		- Ingestion time 数据进入Flink的时间
+		- Processing time 数据被Flink处理的时间
+	- API
+		- 越接近SQL 层，表达能力会逐步减弱，抽象能力会增强,
+		- SQL \Table API (dynamic tables)
+		- DataStream API (streams,windows)
+		- ProcessFunction (events,state,time)
+		- ProcessFunction 层API 的表达能力非常强，可以进行多种灵活方便的操作，但抽象能力也相对越小。
 - Flink的基本架构
-	-
+	- 具备一套框架处理两种数据集合
 - 与Spark Stream 的区别
 -
 -
