@@ -79,7 +79,12 @@
 			- 会将 中介运算结果(intermediate result)带到下一个批次运算
 				- 其实就是 `看到了事件A`这一状态
 		- 如果先收到了B,后收到了A呢?
-			-
+	- 理想的处理方式
+		- ![image.png](../assets/image_1649929048965_0.png)
+	- 分散式流试处理
+		- ![image.png](../assets/image_1649929235379_0.png)
+	- 有状态分散式流式处理
+		-
 		-
 - 与Spark Stream 的区别
 -
