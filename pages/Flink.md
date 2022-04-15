@@ -142,5 +142,5 @@
 - DataStream API
 - Table API
 - Flink SQL
--
+- Flink Connector
 -
