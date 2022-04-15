@@ -93,11 +93,19 @@
 		-
 - Flink的优势
 	- 精确一次(Exactly-once)的容错保证
+	  collapsed:: true
 		- 在不中断程序的情况下,产生全域一致的快照(Global consistent snapshot)
 		- ![image.png](../assets/image_1649992209684_0.png)
 		- s
 		- ![image.png](../assets/image_1649992228436_0.png)
-		- 快照方法
+		- 快照方法-- 流中插入checkpoint barrier
+			- ![image.png](../assets/image_1649992474290_0.png)
+			- ![image.png](../assets/image_1649992486131_0.png){:height 371, :width 679}
+		-
+		-
+	- 状态维护
+		- 状态维护即用一段代码在本地维护状态值，当状态值非常大时需要本地的状态后端来支持.它分为两种
+		- JVM Heap状态后端 -- 仅在内存中的
 		-
 		-
 - 与Spark Stream 的区别
