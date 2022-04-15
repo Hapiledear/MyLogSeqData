@@ -72,6 +72,7 @@
 		- 实时风控
 			- 装载规则到Flink -> 数据处理->触发规则告警->通知下游程序
 - 有状态流式处理
+  collapsed:: true
 	- 传统的批处理方式
 		- ![image.png](../assets/image_1649928588997_0.png)
 		- 现在有需求,计算事件A->B的转换次数,已小时为单位
@@ -89,6 +90,15 @@
 		- 状态会跟Key一同参与partition,同一key的不同状态一定会累积到一个处理程序中
 		- 本地状态过多,需要有一个专门的服务去维护它
 	-
+		-
+- Flink的优势
+	- 精确一次(Exactly-once)的容错保证
+		- 在不中断程序的情况下,产生全域一致的快照(Global consistent snapshot)
+		- ![image.png](../assets/image_1649992209684_0.png)
+		- s
+		- ![image.png](../assets/image_1649992228436_0.png)
+		- 快照方法
+		-
 		-
 - 与Spark Stream 的区别
 -
