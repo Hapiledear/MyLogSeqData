@@ -16,6 +16,7 @@
 - Flink是什么
 	- Apache Flink 是一个**框架**和**分布式**处理引擎,用于对 **无界和有界的数据流**进行**状态**计算
 - Flink 基本概念
+  collapsed:: false
 	- Streams 流
 	  collapsed:: true
 		- 流是一个带有方向性的数据集,数据作为流的一部分自然而然的被创建.但是在数据分析时,必须使用{{embed ((6256985b-def1-4f4a-a62e-19c509c79bbf))}} 和{{embed ((6256987c-62b3-4c8d-944c-2dc1e0d8dcda))}}
@@ -35,7 +36,7 @@
 		- 流计算在本质上是Incremental Processing，因此需要不断查询保持状态
 		- 持久化存储带状态的数据,能够保证在整个分布式系统运行失败或者挂掉的情况下做到Exactly- once
 	- Time 时间
-	  collapsed:: false
+	  collapsed:: true
 		- 时间是在流计算中度量业务计算是否滞后，数据处理是否及时的重要依据。
 		- ![image.png](../assets/image_1649993113298_0.png)
 		- Event time 数据产生的时间
@@ -43,6 +44,7 @@
 		- Processing time 数据被Flink处理的时间
 	- API
 	  collapsed:: true
+		- ![image.png](../assets/image_1650008063943_0.png)
 		- 越接近SQL 层，表达能力会逐步减弱，抽象能力会增强,
 		- SQL \Table API (dynamic tables)
 		- DataStream API (streams,windows)
@@ -137,6 +139,8 @@
 	- Task Slot
 		- 是一个 TaskManager 中的最小资源分配单位,有多少个 Task Slot 就意味着能支持多少并发的 Task 处理
 	- ![image.png](../assets/image_1650006050676_0.png)
-	-
+- DataStream API
+- Table API
+- Flink SQL
 -
 -
