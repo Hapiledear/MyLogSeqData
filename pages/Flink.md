@@ -35,8 +35,9 @@
 		- 流计算在本质上是Incremental Processing，因此需要不断查询保持状态
 		- 持久化存储带状态的数据,能够保证在整个分布式系统运行失败或者挂掉的情况下做到Exactly- once
 	- Time 时间
-	  collapsed:: true
+	  collapsed:: false
 		- 时间是在流计算中度量业务计算是否滞后，数据处理是否及时的重要依据。
+		- ![image.png](../assets/image_1649993113298_0.png)
 		- Event time 数据产生的时间
 		- Ingestion time 数据进入Flink的时间
 		- Processing time 数据被Flink处理的时间
@@ -104,9 +105,15 @@
 		-
 		-
 	- 状态维护
+	  collapsed:: true
 		- 状态维护即用一段代码在本地维护状态值，当状态值非常大时需要本地的状态后端来支持.它分为两种
+			- ![image.png](../assets/image_1649992994771_0.png)
 		- JVM Heap状态后端 -- 仅在内存中的
+			- ![image.png](../assets/image_1649993021636_0.png)
+		- RocksDB状态后端 -- 可序列化保存在磁盘的
+			- ![image.png](../assets/image_1649993040626_0.png)
 		-
+	- Event Time处理
 		-
 - 与Spark Stream 的区别
 -
