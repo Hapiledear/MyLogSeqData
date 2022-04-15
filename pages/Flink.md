@@ -99,7 +99,7 @@
 		- ![image.png](../assets/image_1649992209684_0.png)
 		- s
 		- ![image.png](../assets/image_1649992228436_0.png)
-		- 快照方法-- 流中插入checkpoint barrier
+		- 快照方法-- 流中插入checkpoint barrier #flink特殊事件
 			- ![image.png](../assets/image_1649992474290_0.png)
 			- ![image.png](../assets/image_1649992486131_0.png){:height 371, :width 679}
 		-
@@ -114,7 +114,15 @@
 			- ![image.png](../assets/image_1649993040626_0.png)
 		-
 	- Event Time处理
-		-
+	  collapsed:: true
+		- 利用时间来识别-该收的数据都已经收到了
+		- ![image.png](../assets/image_1649993549377_0.png)
+		- Watermarks #flink特殊事件
+			- ![image.png](../assets/image_1649993666082_0.png)
+	- 状态保存与迁移
+		- ![image.png](../assets/image_1649993949095_0.png)
+		- Savepoint产生的原理是在Checkpoint barrier 流动到所有的Pipeline 中手动插入从而产生分布式快照，这些分布式快照点即Savepoint
+		- 主要用于 变更底层代码逻辑、修bug 或是升级Flink 版本，重新定义应用、计算的平行化程度等
 - 与Spark Stream 的区别
 -
 -
