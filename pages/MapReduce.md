@@ -54,5 +54,6 @@ collapsed:: true
 						- 比较器comparator = getOutputKeyComparator(),
 							- 获取用户自定义比较器
 							- 没有则默认获取 key自身的排序比较器
+						- combiner
 					-
 	-
