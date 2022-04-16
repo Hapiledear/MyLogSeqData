@@ -39,7 +39,7 @@ collapsed:: true
 		- try方法块中
 			- input.initialize
 				- LineRecordReader中处理被切割开的单词的方式
-					- 每个切片都让出第一行，从第二行开始读取
+					- 每个切片(除了第一个切片)都让出第一行，从第二行开始读取
 					- 相应的，每个切片的结束都需要多读一行
 			- mapper.run(mapperContext)
 				- nextKeyValue()方法 最终调用的是LineRecordReader.nextKeyValue()
