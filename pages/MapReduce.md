@@ -50,6 +50,7 @@ collapsed:: true
 					- init方法中
 						- 溢写(spilper)的大小为0.8
 						- sort大小为100m
-						-
+						- 排序器sorter [map.sort.class,QuickSort]
+						- 比较器
 					-
 	-
