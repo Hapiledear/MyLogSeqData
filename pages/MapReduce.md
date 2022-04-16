@@ -35,6 +35,6 @@ collapsed:: true
 - MapTask 源码
 	- run方法中
 		- if 没有reduce方法，map占1 else map占 0.666 sort 占0.333
-	- 通过客户端传过来的Job和其中的config 来创建 jobContext,mapper,input[inputFormat,splkit],output
+	- 通过客户端传过来的Job和其中的config 来创建 jobContext,mapper,input[inputFormat,split],output
 	-
 	-
