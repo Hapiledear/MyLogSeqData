@@ -58,5 +58,6 @@ collapsed:: true
 							- 在map端进行的一个小的reduce，默认是不开启的
 						- 溢写线程 spilThread
 							- run方法中调用 sortAndSpil()
-								- 排序
+								- 排序，执行combiner,写入磁盘
+						-
 	-
