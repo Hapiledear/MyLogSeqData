@@ -32,5 +32,7 @@ collapsed:: true
 		- 首先进行 [[归并排序]] ，排序结果可以直接接入Reduce方法
 			- 通过 [[迭代器模式]] 的支持
 		-
--
+- MapTask 源码
+	- run方法中
+		- if 没有reduce方法，
 	-
