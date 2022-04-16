@@ -38,5 +38,6 @@ collapsed:: true
 		- 通过客户端传过来的Job和其中的config 来创建 jobContext,mapper,input[inputFormat,split],output
 		- try方法块中
 			- input.initialize
+				- LineRecordReader中处理被切割开的
 			-
 	-
