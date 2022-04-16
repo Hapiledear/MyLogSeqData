@@ -56,6 +56,7 @@ collapsed:: true
 							- 没有则默认获取 key自身的排序比较器
 						- 组合器 combiner
 							- 在map端进行的一个小的reduce，默认是不开启的
-						- 溢写线程 spliThread
-							-
+						- 溢写线程 spilThread
+							- run方法中调用 sortAndSpil()
+								- 排序
 	-
