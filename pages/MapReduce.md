@@ -47,5 +47,9 @@ collapsed:: true
 				- NewOutputColector中
 					- 有多少个reduce task 就有多少个分区
 				- 最终输出到MapOutputBuffer中
+					- init方法中
+						- 溢写(spilper)的大小为0.8
+						- sort大小为100m
+						-
 					-
 	-
