@@ -50,11 +50,12 @@ collapsed:: true
 					- init方法中
 						- 溢写(spilper)的大小为0.8
 						- sort大小为100m
-						- 排序器sorter [map.sort.class,QuickSort]
-						- 比较器comparator = getOutputKeyComparator(),
+						- 排序器 sorter [map.sort.class,QuickSort]
+						- 比较器 comparator = getOutputKeyComparator(),
 							- 获取用户自定义比较器
 							- 没有则默认获取 key自身的排序比较器
-						- 组合器combiner
+						- 组合器 combiner
 							- 在map端进行的一个小的reduce，默认是不开启的
-					-
+						- 溢写线程 spliThread
+							-
 	-
