@@ -46,4 +46,6 @@ collapsed:: true
 			- output.write
 				- NewOutputColector中
 					- 有多少个reduce task 就有多少个分区
+				- 最终输出到MapOutputBuffer中
+					-
 	-
