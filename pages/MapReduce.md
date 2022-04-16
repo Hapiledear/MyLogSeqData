@@ -34,5 +34,6 @@ collapsed:: true
 		-
 - MapTask 源码
 	- run方法中
-		- if 没有reduce方法，
+		- if 没有reduce方法，map占1 else map占 0.666 sort 占0.333
+		-
 	-
