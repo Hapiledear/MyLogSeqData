@@ -52,5 +52,7 @@ collapsed:: true
 						- sort大小为100m
 						- 排序器sorter [map.sort.class,QuickSort]
 						- 比较器comparator = getOutputKeyComparator(),
+							- 获取用户自定义比较器
+							- 没有则默认获取
 					-
 	-
