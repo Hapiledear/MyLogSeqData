@@ -35,13 +35,13 @@ collapsed:: true
 - MapTask 源码
 	- run方法中
 		- if 没有reduce方法，map占1 else map占 0.666 sort 占0.333
-		- 通过客户端传过来的Job和其中的config 来创建 jobContext,mapper,input[inputFormat,split],output,mapperContext[cconfig,]
+		- 通过客户端传过来的Job和其中的config 来创建 jobContext,mapper,input[inputFormat,split],output,mapperContext[cconfig,reader,writer,split]
 		- try方法块中
 			- input.initialize
-				- LineRecordReader中处理被切割开的单词的方式
+				- cz中处理被切割开的单词的方式
 					- 每个切片都让出第一行，从第二行开始读取
 					- 相应的，每个切片的结束都需要多读一行
-			- mapper.run
-			-
+			- mapper.run(mapperContext)
+				- nextKeyalue()方法 最终调用的是
 			-
 	-
