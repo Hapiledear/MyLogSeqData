@@ -43,5 +43,6 @@ collapsed:: true
 					- 相应的，每个切片的结束都需要多读一行
 			- mapper.run(mapperContext)
 				- nextKeyValue()方法 最终调用的是LineRecordReader.nextKeyValue()
-			-
+			- output.write
+				- NewOutputColector中
 	-
