@@ -45,4 +45,5 @@ collapsed:: true
 				- nextKeyValue()方法 最终调用的是LineRecordReader.nextKeyValue()
 			- output.write
 				- NewOutputColector中
+					- 有多少个reduce task 就有多少个分区
 	-
