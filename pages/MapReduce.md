@@ -86,8 +86,9 @@ collapsed:: true
 		- shuffer: 洗牌(相同key拉取到一个分区)，拉取数据
 		- sort:  对map输出的已排序好的文件做归并排序
 		- reduce
+collapsed:: true
 			- 迭代器 rIter = shuffle... //reduce拉取回自己的数据，并包装成迭代器
 			- 分组比较器 comparator = getOutputValueGroupingComparator()
 				- 1. 取用户设置的分组比较器
 				  2. 保底，取key这个类自身的比较器
-			-
+	-
