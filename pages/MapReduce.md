@@ -87,3 +87,4 @@ collapsed:: true
 		- sort:  对map输出的已排序好的文件做归并排序
 		- reduce
 			- rIter = shuffle... //reduce拉取回自己的数据，并包装成迭代器
+			- comparator = getOutputVValueGrouping
