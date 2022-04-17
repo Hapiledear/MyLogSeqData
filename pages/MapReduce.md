@@ -82,4 +82,6 @@ collapsed:: true
 							- 发生在最终map输出结束，产生了n个小文件，对文件进行合并时，触发combiner
 						-
 - ReduceTask 源码
-	-
+	- reduce执行过程
+		- shuffer: 洗牌(相同key拉取到一个分区)，拉取数据
+		- sort:
