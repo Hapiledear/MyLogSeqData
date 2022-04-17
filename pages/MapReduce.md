@@ -91,4 +91,4 @@ collapsed:: true
 			- 分组比较器 comparator = getOutputValueGroupingComparator()
 				- 1. 取用户设置的分组比较器
 				  2. 保底，取key这个类自身的比较器
-	-
+	- reduceTask
