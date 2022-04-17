@@ -91,8 +91,11 @@ collapsed:: true
 			- 分组比较器 comparator = getOutputValueGroupingComparator()
 				- 1. 取用户设置的分组比较器
 				  2. 保底，取key这个类自身的比较器
-	- reduceTask拉取回答数据被包装成一个迭代器
-	- reduce方法被调用的时候，并没有把一组数据真的加载到内存里，而是传递了一个迭代器=values
-	- 在reduce方法中使用这个迭代器的时候
-		- hasNext方法判断nextKeyIsSame(下一条是不是还是一组)
-		- next方法负责调取nextKeyValue方法，从reduceTask级别的
+	- reduce拉取和处理数据过程
+		- reduceTask拉取回答数据被包装成一个迭代器
+		- reduce方法被调用的时候，并没有把一组数据真的加载到内存里，而是传递了一个迭代器=values
+		- 在reduce方法中使用这个迭代器的时候
+			- hasNext方法判断nextKeyIsSame(下一条是不是还是一组)
+			- next方法负责调取nextKeyValue方法，从reduceTask级别的迭代器中取记录，并同时更新nextKeyIsSame
+	- 优点
+		- 充分利用了迭代器模式，
