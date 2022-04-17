@@ -91,4 +91,7 @@ collapsed:: true
 			- 分组比较器 comparator = getOutputValueGroupingComparator()
 				- 1. 取用户设置的分组比较器
 				  2. 保底，取key这个类自身的比较器
-	- reduceTask
+	- reduceTask拉取回答数据被包装成一个迭代器
+	- reduce方法被调用的时候，并没有把一组数据真的加载到内存里，而是传递了一个迭代器=values
+	- 在reduce方法中使用这个迭代器的时候
+		- hasnext
