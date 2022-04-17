@@ -84,4 +84,5 @@ collapsed:: true
 - ReduceTask 源码
 	- reduce执行过程
 		- shuffer: 洗牌(相同key拉取到一个分区)，拉取数据
-		- sort:
+		- sort:  对map输出的已排序好的文件做归并排序
+		-
