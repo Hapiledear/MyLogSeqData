@@ -59,5 +59,6 @@ collapsed:: true
 						- 溢写线程 spilThread
 							- run方法中调用 sortAndSpil()
 								- 排序，执行combiner,写入磁盘
+					- 溢写模型 -- 环形缓冲区
 						-
 	-
