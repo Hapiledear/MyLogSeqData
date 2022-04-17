@@ -33,6 +33,7 @@ collapsed:: true
 		-
 - MapTask 源码
 	- run方法中
+collapsed:: true
 		- if 没有reduce方法，map占1 else map占 0.666 sort 占0.333
 		- 通过客户端传过来的Job和其中的config 来创建 jobContext,mapper,input[inputFormat,split],output,mapperContext[cconfig,reader,writer,split]
 		- try方法块中
@@ -80,4 +81,5 @@ collapsed:: true
 								- 好处是 溢写的IO变少
 							- 发生在最终map输出结束，产生了n个小文件，对文件进行合并时，触发combiner
 						-
+- ReduceTask 源码
 	-
