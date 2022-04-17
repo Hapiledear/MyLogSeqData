@@ -18,7 +18,6 @@
 collapsed:: true
 	- ![image.png](../assets/image_1648367835052_0.png)
 - Map and Reduce Task
-collapsed:: true
 	- ![image.png](../assets/image_1648367900422_0.png)
 	- Map Task
 	  id:: 624e99ec-7cd9-4511-8995-ae6e8ff3a27c
@@ -61,7 +60,7 @@ collapsed:: true
 							- run方法中调用 sortAndSpil()
 								- 排序，执行combiner,写入磁盘
 					- 溢写模型 -- 环形缓冲区
-						-
+						- ![image.png](../assets/MR_环形缓冲区.png)
 						- 赤道向两端写数据。当溢写发生时，在未使用的部分新建一条赤道。
 						- 溢写时会在内存中排序，排序只排索引。然后根据索引顺序写数据到磁盘文件
 	-
