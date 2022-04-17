@@ -94,4 +94,5 @@ collapsed:: true
 	- reduceTask拉取回答数据被包装成一个迭代器
 	- reduce方法被调用的时候，并没有把一组数据真的加载到内存里，而是传递了一个迭代器=values
 	- 在reduce方法中使用这个迭代器的时候
-		- hasnext
+		- hasNext方法判断nextKeyIsSame(下一条是不是还是一组)
+		- next方法负责调取nextKeyValue方法，从reduceTask级别的
