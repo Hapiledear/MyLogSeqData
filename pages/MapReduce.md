@@ -97,5 +97,6 @@ collapsed:: true
 		- 在reduce方法中使用这个迭代器的时候
 			- hasNext方法判断nextKeyIsSame(下一条是不是还是一组)
 			- next方法负责调取nextKeyValue方法，从reduceTask级别的迭代器中取记录，并同时更新nextKeyIsSame
-	- 优点
-		- 充分利用了迭代器模式，
+		- 优点
+			- 充分利用了迭代器模式，规避了OOM问题
+			-
