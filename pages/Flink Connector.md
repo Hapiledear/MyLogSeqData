@@ -2,5 +2,5 @@
 	- 基于文件的
 	- 基于Socket
 	- 基于Collections\\Iterators \\Print
-- Bundled Connectors
+- Bundled Connectors (Flink项目的一部分,但是独立发包)
 -
