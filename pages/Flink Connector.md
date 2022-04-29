@@ -2,7 +2,7 @@
 	- 基于文件的
 	- 基于Socket
 	- 基于Collections\\Iterators \\Print
-- Bundled Connectors (Flink项目的一部分,但是独立发包)
+- [Bundled Connectors](https://nightlies.apache.org/flink/flink-docs-release-1.14/docs/connectors/datastream/overview/) (Flink项目的一部分,但是独立发包)
 	- Apache [[Kafka]] (source/sink)
 	- Apache Cassandra (sink)
 	- Amazon Kinesis Streams (source/sink)
@@ -17,3 +17,4 @@
 	- Flume
 	- Redis
 	- Netty
+-
