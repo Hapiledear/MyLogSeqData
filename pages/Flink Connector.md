@@ -24,9 +24,9 @@
 	- |*Name*|*Version*|*Source*|*Sink*|
 	  |Filesystem||Bounded and Unbounded Scan, Lookup|	Streaming Sink, Batch Sink|
 	  |Elasticsearch|6.x & 7.x|	Not supported|Streaming Sink, Batch Sink|
-	  |Apache Kafka|0.10+|2|台|
-	  |JDBC||
-	  |Apache HBase|	1.4.x & 2.2.x|
-	  |Apache Hive||
+	  |Apache Kafka|0.10+|Unbounded Scan|	Streaming Sink, Batch Sink|
+	  |JDBC||Bounded Scan, Lookup|Streaming Sink, Batch Sink|
+	  |Apache HBase|	1.4.x & 2.2.x|Bounded Scan, Lookup|Streaming Sink, Batch Sink|
+	  |Apache Hive||Unbounded Scan, Bounded Scan, Lookup|Streaming Sink, Batch Sink|
 	-
 	-
