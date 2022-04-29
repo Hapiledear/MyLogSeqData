@@ -3,8 +3,12 @@
 	- 基于Socket
 	- 基于Collections\\Iterators \\Print
 - Bundled Connectors (Flink项目的一部分,但是独立发包)
-	- Apache Kafka (source/sink)
+	- Apache [[Kafka]] (source/sink)
 	- Apache Cassandra (sink)
 	- Amazon Kinesis Streams (source/sink)
-	- Elasticsearch (sink)
-	-
+	- [[Elasticsearch ]] (sink)
+	- [[Hadoop]] FileSystem (sink)
+	- RabbitMQ (source/sink)
+	- Apache NiFi (source/sink)
+	- Twitter Streaming API (source)
+-
