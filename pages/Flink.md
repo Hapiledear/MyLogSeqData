@@ -126,6 +126,7 @@
 		- Savepoint产生的原理是在Checkpoint barrier 流动到所有的Pipeline 中手动插入从而产生分布式快照，这些分布式快照点即Savepoint
 		- 主要用于 变更底层代码逻辑、修bug 或是升级Flink 版本，重新定义应用、计算的平行化程度等
 - Flink运行时的角色
+collapsed:: true
 	- Operator
 		- DataStream API 所定义的对数据的操作
 		- 多个Operator可能被一起执行,运行在同一个Task中. 如果不能一起执行,则会分到不同的Task中
@@ -143,4 +144,4 @@
 - Table API
 - Flink SQL
 - Flink Connector
--
+- [[Flink CDC]]
