@@ -28,4 +28,5 @@
 	  |Apache [[HBase]] |	1.4.x & 2.2.x|Bounded Scan, Lookup|Streaming Sink, Batch Sink|
 	  |Apache [[Hive]] ||Unbounded Scan, Bounded Scan, Lookup|Streaming Sink, Batch Sink|
 - [[Flink Kafka Connector]]
-	-
+- 与 [[Flink CDC]] Connector 的区别
+	- CDC Connector 是读取datasource的日志文件,进而得到增删改信息
