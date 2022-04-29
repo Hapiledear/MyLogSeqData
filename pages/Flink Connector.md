@@ -32,3 +32,4 @@
 	- CDC Connector 是读取datasource的日志文件,进而得到增删改信息,发送到Flink
 	- 而普通的Connector只是读取或扫描datasource,将原数据发送到Flink
 -
+-
