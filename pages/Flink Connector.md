@@ -11,5 +11,6 @@
 	- RabbitMQ (source/sink)
 	- Apache NiFi (source/sink)
 	- Twitter Streaming API (source)
-- Apache Bahir中的连接器(Bahir是)
--
+- [Apache Bahir](https://bahir.apache.org/) 中的连接器(Bahir 扩展了Flink的Connector 和 Spark的DStream)
+	-
+	-
