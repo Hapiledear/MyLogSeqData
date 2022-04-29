@@ -1,8 +1,9 @@
-- CDC Change Data Capture 变更数据捕获
+- [[CDC ]] Change Data Capture 变更数据捕获
 - 通过引入CDC 做到数据库的解耦,向多种数据存储终端同步数据
 	- ![image.png](../assets/image_1651198610972_0.png)
 - 分类
 	- 基于查询的CDC
 		- 批处理,全表扫描,前后对比
 	- 基于日志的CDC
+		- 例如,读MySql的 Binlog
 		-
