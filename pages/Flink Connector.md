@@ -18,5 +18,5 @@
 	- Redis
 	- Netty
 - Async I\O
-	- 异步IO,向数据库交换数据
-	-
+	- 异步IO,通过数据连接,向数据库交换数据
+- Table & SQL 级别支持的Connector
