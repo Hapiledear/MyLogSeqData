@@ -1,6 +1,6 @@
 - [[CDC]]
-- ![image.png](../assets/image_1651202006076_0.png)
 - Flink如何集成CDC
 	- ![image.png](../assets/image_1651201675180_0.png)
-- 需要依赖 [flink-cdc-connectors](https://github.com/ververica/flink-cdc-connectors)
+- flink自身采集CDC 需要依赖 [flink-cdc-connectors](https://github.com/ververica/flink-cdc-connectors)
+	- ![image.png](../assets/image_1651202006076_0.png)
 -
