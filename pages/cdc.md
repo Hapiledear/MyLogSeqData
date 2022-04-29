@@ -7,4 +7,6 @@
 	- 基于日志的CDC
 		- 例如,读MySql的 Binlog
 		- 流式处理
--
+	- 比较
+		- ![image.png](../assets/image_1651198944408_0.png)
+	-
