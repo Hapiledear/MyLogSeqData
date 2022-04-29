@@ -22,7 +22,11 @@
 - [Table & SQL 级别支持的Connecto](https://nightlies.apache.org/flink/flink-docs-release-1.14/docs/connectors/table/overview/)
 	- ![image.png](../assets/image_1651214270857_0.png)
 	- |*Name*|*Version*|*Source*|*Sink*|
-	  |Filesystem|M40|1|台|
-	  |Elasticsearch|M30|3|台|
-	  |Apache Kafka|P40|2|台|
+	  |Filesystem||1|台|
+	  |Elasticsearch|6.x & 7.x|3|台|
+	  |Apache Kafka|0.10+|2|台|
+	  |JDBC||
+	  |Apache HBase|	1.4.x & 2.2.x|
+	  |Apache Hive||
+	-
 	-
