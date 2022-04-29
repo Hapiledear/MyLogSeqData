@@ -27,5 +27,5 @@
 	  |JDBC||Bounded Scan, Lookup|Streaming Sink, Batch Sink|
 	  |Apache [[HBase]] |	1.4.x & 2.2.x|Bounded Scan, Lookup|Streaming Sink, Batch Sink|
 	  |Apache [[Hive]] ||Unbounded Scan, Bounded Scan, Lookup|Streaming Sink, Batch Sink|
-	-
+- [[Flink Kafka Connector]]
 	-
