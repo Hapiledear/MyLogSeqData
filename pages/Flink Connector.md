@@ -12,5 +12,8 @@
 	- Apache NiFi (source/sink)
 	- Twitter Streaming API (source)
 - [Apache Bahir](https://bahir.apache.org/) 中的连接器(Bahir 扩展了Flink的Connector 和 Spark的DStream)
-	-
-	-
+	- ActiveMQ
+	- Akka
+	- Flume
+	- Redis
+	- Netty
