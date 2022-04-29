@@ -1,4 +1,5 @@
 - CDC Change Data Capture 变更数据捕获
 - 通过引入CDC 做到数据库的解耦,向多种数据存储终端同步数据
 	- ![image.png](../assets/image_1651198610972_0.png)
--
+- 分类
+	-
