@@ -1,2 +1,5 @@
 - 预定义的Source和Sink
-	-
+	- 基于文件的
+	- 基于Socket
+	- 基于Collections\Iterators
+-
