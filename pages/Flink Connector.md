@@ -17,4 +17,6 @@
 	- Flume
 	- Redis
 	- Netty
--
+- Async I\O
+	- 异步IO,向数据库交换数据
+	-
