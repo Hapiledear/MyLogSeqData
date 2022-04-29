@@ -143,5 +143,5 @@ collapsed:: true
 - DataStream API
 - Table API
 - Flink SQL
-- Flink Connector
+- [[Flink Connector]]
 - [[Flink CDC]]
