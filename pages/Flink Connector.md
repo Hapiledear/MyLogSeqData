@@ -11,4 +11,5 @@
 	- RabbitMQ (source/sink)
 	- Apache NiFi (source/sink)
 	- Twitter Streaming API (source)
+- Apache Bahir中的连接器(Bahir是第三方项目)
 -
