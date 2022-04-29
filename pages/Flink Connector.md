@@ -22,8 +22,8 @@
 - [Table & SQL 级别支持的Connecto](https://nightlies.apache.org/flink/flink-docs-release-1.14/docs/connectors/table/overview/)
 	- ![image.png](../assets/image_1651214270857_0.png)
 	- |*Name*|*Version*|*Source*|*Sink*|
-	  |Filesystem||1|台|
-	  |Elasticsearch|6.x & 7.x|3|台|
+	  |Filesystem||Bounded and Unbounded Scan, Lookup|	Streaming Sink, Batch Sink|
+	  |Elasticsearch|6.x & 7.x|	Not supported|Streaming Sink, Batch Sink|
 	  |Apache Kafka|0.10+|2|台|
 	  |JDBC||
 	  |Apache HBase|	1.4.x & 2.2.x|
