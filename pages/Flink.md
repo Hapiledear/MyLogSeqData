@@ -57,8 +57,9 @@
 	- 极致的流式处理性能
 		- 将状态语义完全抽象到框架中，支持本地状态读取，避免了大量网络IO，可以极大提升状态存取的性能。
 - 使用场景
-  collapsed:: true
+  collapsed:: false
 	- Data Pipeline 数据搬运\同步
+	  collapsed:: true
 		- ![image.png](../assets/image_1649925119504_0.png){:height 348, :width 716}
 		- 实时数仓
 		  collapsed:: true
@@ -67,10 +68,12 @@
 		  collapsed:: true
 			- 以淘宝为例，当卖家上线新商品时，后台会实时产生消息流，该消息流经过Flink 系统时会进行数据的处理、扩展。然后将处理及扩展后的数据生成实时索引，写入到搜索引擎中。这样当淘宝卖家上线新商品时，能在秒级或者分钟级实现搜索引擎的搜索。
 	- Data Analytics 数据分析
+	  collapsed:: true
 		- ![image.png](../assets/image_1649925300142_0.png)
 		- 实时大屏
 		- 实时报表
 	- Data Driven 数据驱动\事件处理
+	  collapsed:: true
 		- ![image.png](../assets/image_1649925356430_0.png)
 		- 实时风控
 			- 装载规则到Flink -> 数据处理->触发规则告警->通知下游程序
@@ -126,7 +129,6 @@
 		- Savepoint产生的原理是在Checkpoint barrier 流动到所有的Pipeline 中手动插入从而产生分布式快照，这些分布式快照点即Savepoint
 		- 主要用于 变更底层代码逻辑、修bug 或是升级Flink 版本，重新定义应用、计算的平行化程度等
 - Flink运行时的角色
-collapsed:: true
 	- Operator
 		- DataStream API 所定义的对数据的操作
 		- 多个Operator可能被一起执行,运行在同一个Task中. 如果不能一起执行,则会分到不同的Task中
@@ -144,4 +146,4 @@ collapsed:: true
 - Table API
 - Flink SQL
 - [[Flink Connector]]
-- [[Flink CDC]]
+-
