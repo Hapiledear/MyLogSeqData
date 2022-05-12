@@ -11,5 +11,6 @@
 	- 通过表元数据对查询进行高效过滤
 - 存储结构
 	- ![image.png](../assets/image_1652345384585_0.png)
-	- 每进行一次提交,生成一个date file\  元数据信息\
+	- 每进行一次提交,生成一个date file\  元数据信息\ Manifest file \Snapshot
+	-
 	-
