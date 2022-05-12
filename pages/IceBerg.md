@@ -20,8 +20,10 @@
 - 就地表演化  in-place table evolution
 	- 指的是当你改变表结构或改变分区时,不会使用 新建表并重新写入数据这一方式.(不会挪动数据)
 - 模式演化 Schema evolution
-	- Add - 向表结构中增加列
-	- Drop - 从表结构中移除列
-	- Rename - 重命名表中的列
-	- Update - 将复杂结构(Struct Map )中的级别类型扩展类型长度. 如 从tinyint 升级到 int
-	- Recorder -
+	- 支持的操作
+		- Add - 向表结构中增加列
+		- Drop - 从表结构中移除列
+		- Rename - 重命名表中的列
+		- Update - 将复杂结构(Struct Map )中的级别类型扩展类型长度. 如 从tinyint 升级到 int
+		- Recorder - 改变列的顺序
+	- 只是改变元数据,不会
