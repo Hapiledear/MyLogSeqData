@@ -19,3 +19,4 @@
 		- 每一行描述了每个数据文件(date files)的详细信息,包括 文件状态\路径,分区信息,列级别的统计信息(每列的max_value min_value) ,文件的大小及数据行 等.
 - 表演化 Table Evolution
 	-
+	-
