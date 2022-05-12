@@ -14,5 +14,5 @@
 	- 数据文件(Date files )
 		- 真实存储数据的文件,存于`/tb_name/data/partition=xxx/` 目录下.
 	- 表快照(Snapshot)
-		- 表示某一时刻的状态.存储的是该时刻所有
+		- 表示某一时刻的状态.存储的是该时刻所有 清单文件(manifest files) 构成的一个 清单列表(manifest list),
 	-
