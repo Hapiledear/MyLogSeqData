@@ -26,4 +26,6 @@
 		- Rename - 重命名表中的列
 		- Update - 将复杂结构(Struct Map )中的级别类型扩展类型长度. 如 从tinyint 升级到 int
 		- Recorder - 改变列的顺序
-	- 只是改变元数据,不会
+	- 只是改变元数据,不会重写原数据(旧数据)
+- 分区演化 Partition evolution
+	-
