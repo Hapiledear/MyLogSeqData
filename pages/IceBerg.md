@@ -22,4 +22,6 @@
 - 模式演化 Schema evolution
 	- Add - 向表结构中增加列
 	- Drop - 从表结构中移除列
-	- Rename - 重命名或
+	- Rename - 重命名表中的列
+	- Update - 将复杂结构(Struct Map )中的级别类型扩展类型长度. 如 从tinyint 升级到 int
+	- Recorder -
