@@ -12,5 +12,7 @@
 	- ![image.png](../assets/image_1652345384585_0.png)
 	- 每进行一次提交,生成一个date file\  元数据信息\ Manifest file \Snapshot
 	- 数据文件(Date files )
-		- 真实存储数据的文件,存于`/tb_name/data/partition=xxx/` 目录下
+		- 真实存储数据的文件,存于`/tb_name/data/partition=xxx/` 目录下.
+	- 表快照(Snapshot)
+		- 表示某一时刻的状态.
 	-
