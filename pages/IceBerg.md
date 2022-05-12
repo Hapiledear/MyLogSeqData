@@ -28,4 +28,5 @@
 		- Recorder - 改变列的顺序
 	- 只是改变元数据,不会重写原数据(旧数据)
 - 分区演化 Partition evolution
+	- ![image.png](../assets/image_1652347815634_0.png)
 	-
