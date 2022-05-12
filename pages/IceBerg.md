@@ -17,6 +17,6 @@
 		- 表示某一时刻的状态.存储的是该时刻所有 清单文件(manifest files) 构成的一个 清单列表(manifest list),进而能找到所有的数据文件(date files)
 	- 清单文件(manifest files)
 		- 每一行描述了每个数据文件(date files)的详细信息,包括 文件状态\路径,分区信息,列级别的统计信息(每列的max_value min_value) ,文件的大小及数据行 等.
-- 表演化 Table Evolution
-	- 就地表演化  in-place table evolution. 指的是你改变表结构或改变分区时,不会使用 新建表并重新写入数据这一方式.
+- 就地表演化  in-place table evolution
+	- .指的是当你改变表结构或改变分区时,不会使用 新建表并重新写入数据这一方式.
 	-
