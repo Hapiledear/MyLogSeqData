@@ -1,5 +1,11 @@
 - Flink是什么
 	- Apache Flink 是一个**框架**和**分布式**处理引擎,用于对 **无界和有界的数据流**进行**状态**计算
+- Flink的特点
+	- 流批一体
+	- 可靠的容错能力
+	- 高吞吐低延迟
+	- 大规模复杂计算
+	- 多平台部署
 - 数据处理的发展和演变
   collapsed:: true
 	- 事务处理 OLTP
@@ -16,7 +22,7 @@
 	- akka架构 三代
 		-
 - Flink 基本概念
-  collapsed:: false
+  collapsed:: true
 	- Streams 流
 	  collapsed:: true
 		- 流是一个带有方向性的数据集,数据作为流的一部分自然而然的被创建.但是在数据分析时,必须使用{{embed ((6256985b-def1-4f4a-a62e-19c509c79bbf))}} 和{{embed ((6256987c-62b3-4c8d-944c-2dc1e0d8dcda))}}
@@ -50,14 +56,8 @@
 		- DataStream API (streams,windows)
 		- ProcessFunction (events,state,time)
 		- ProcessFunction 层API 的表达能力非常强，可以进行多种灵活方便的操作，但抽象能力也相对越小。
-- Flink的特点
-	- 具备一套框架处理有界和无界两种数据流的能力
-	- 部署灵活
-	- 极高的可伸缩性
-	- 极致的流式处理性能
-		- 将状态语义完全抽象到框架中，支持本地状态读取，避免了大量网络IO，可以极大提升状态存取的性能。
 - 使用场景
-  collapsed:: false
+  collapsed:: true
 	- Data Pipeline 数据搬运\同步
 	  collapsed:: true
 		- ![image.png](../assets/image_1649925119504_0.png){:height 348, :width 716}
