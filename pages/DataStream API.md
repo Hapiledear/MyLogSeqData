@@ -9,4 +9,11 @@
 	- 自定义连接器
 - 数据处理
 - 数据写出
-- 旁路输出
+	- 写到Console
+	- 写到Socket
+	- 自定义Sink
+- 旁路输出 SideOutput
+	- 将一个DataStream按条件切分为多个子数据流,分别交给下游处理
+	- ![image.png](../assets/image_1654758043272_0.png)
+	- 条件=OutputTag
+	- 只有在特定操作时,才能使用旁路输出
