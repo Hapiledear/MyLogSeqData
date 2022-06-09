@@ -31,7 +31,8 @@
 		- [[DataStream API]] (streams,windows)
 		- ((62a1b3f4-fd37-4114-a087-916d41e71a0c))
 		- ProcessFunction 层API 的表达能力非常强，可以进行多种灵活方便的操作，但抽象能力也相对越小。
-- Flink
+- Flink 核心抽象
+	-
 - 数据处理的发展和演变
   collapsed:: true
 	- 事务处理 OLTP
