@@ -10,7 +10,7 @@
 	- [[Flink Connector]] Flink连接器
 	- 应用层, 如 [[Flink CEP]] [[Blink Table&SQL]]
 	- API层,如 [[DataStream API]] [[DataSet API]]
-	- 运行时层 [[Flink运行时的角色]]
+	- 运行时层 [[Flink运行时的角色]] [[Flink 应用的基本组成]]
 	- 部署层, 本地单机模式 和 集群模式
 -
 - 数据处理的发展和演变
@@ -57,6 +57,7 @@
 		- Processing time 数据被Flink处理的时间
 	- API
 	  collapsed:: true
+	  id:: 6257d95b-f739-43aa-b382-42535459e2eb
 		- ![image.png](../assets/image_1650008063943_0.png)
 		- 越接近SQL 层，表达能力会逐步减弱，抽象能力会增强,
 		- SQL \Table API (dynamic tables)
