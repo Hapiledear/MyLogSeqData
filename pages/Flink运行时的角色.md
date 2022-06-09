@@ -1,5 +1,5 @@
 - ![image.png](../assets/image_1650006050676_0.png)
-- Transformation Operator 数据操作
+- Operator 操作 算子
 	- [[DataStream API]] 所定义的对数据的操作
 	- 多个Operator可能被一起执行,运行在同一个Task中. 如果不能一起执行,则会分到不同的Task中
 - Task
@@ -11,3 +11,4 @@
 	- 执行 Dataflow 中的 Tasks，包括内存 Buffer 的分配、Data Stream 的传递等。
 - Task Slot
 	- 是一个 TaskManager 中的最小资源分配单位,有多少个 Task Slot 就意味着能支持多少并发的 Task 处理
+-

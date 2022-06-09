@@ -1,0 +1,2 @@
+- transformation是处理行为的抽象,包含了数据的读取\计算\写出. 在job执行之前,[[DataStream API]] 组成的pipeline 将会转换为 transformation pipeline
+-
