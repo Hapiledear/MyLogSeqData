@@ -8,5 +8,15 @@
 	  念，只需要关注业务逻辑即可
 	- RichFunction: 可以管理Function的生命周期;能够获取到执行时作业级别的参数信
 	  息;有了状态的访问能力
-	- ProcessFunction:
+		- 基本类型函数,如 RichMapFunction
+		- 广播函数
+		- 异步函数
+		- 数据源函数
+		- 输出函数
+		- 检查点函数
+	- ProcessFunction: 可以访问流应用程序所有（非循
+	  环）基本构建块
+		- 事件 event
+		- 状态 state
+		- 定时器 timer
 -
