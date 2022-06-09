@@ -1,5 +1,5 @@
 - ![image.png](../assets/image_1650006050676_0.png)
-- Operator 操作 算子
+- [[Flink算子]] Operator
 	- [[DataStream API]] 所定义的对数据的操作
 	- 多个Operator可能被一起执行,运行在同一个Task中. 如果不能一起执行,则会分到不同的Task中
 - Task
