@@ -27,8 +27,8 @@
 	  id:: 6257d95b-f739-43aa-b382-42535459e2eb
 		- ![image.png](../assets/image_1650008063943_0.png)
 		- 越接近SQL 层，表达能力会逐步减弱，抽象能力会增强,
-		- SQL \Table API (dynamic tables)
-		- DataStream API (streams,windows)
+		- [[Blink Table&SQL]] (dynamic tables)
+		- [[DataStream API]] (streams,windows)
 		- ProcessFunction (events,state,time)
 		- ProcessFunction 层API 的表达能力非常强，可以进行多种灵活方便的操作，但抽象能力也相对越小。
 	-

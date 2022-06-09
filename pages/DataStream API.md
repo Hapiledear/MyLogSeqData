@@ -9,6 +9,9 @@
 	- 自定义连接器
 - 数据处理
 	- https://nightlies.apache.org/flink/flink-docs-master/docs/dev/datastream/operators/overview/
+	- 基本算子
+	- 聚合算子
+	- window算子 [[Flink Windows]]
 - 数据写出
 	- 写到Console
 	- 写到Socket
