@@ -10,9 +10,28 @@
 	- [[Flink Connector]] Flink连接器
 	- 应用层, 如 [[Flink CEP]] [[Blink Table&SQL]]
 	- API层,如 [[DataStream API]] [[DataSet API]]
-	- 运行时层 [[Flink运行时的角色]] [[Flink 应用的基本组成]]
+	- 运行时层 [[Flink运行时的角色]]
 	- 部署层, 本地单机模式 和 集群模式
--
+- Flink Job Demo
+	- 基本代码构成
+	  collapsed:: false
+		- 从配置文件或命令行中获取参数(可选)
+		- 初始化Stream 执行环境
+		- 配置参数
+		- 读取外部数据
+		- 处理数据
+		- 将结果写入外部
+		- 触发执行
+	- API
+	  collapsed:: false
+	  id:: 6257d95b-f739-43aa-b382-42535459e2eb
+		- ![image.png](../assets/image_1650008063943_0.png)
+		- 越接近SQL 层，表达能力会逐步减弱，抽象能力会增强,
+		- SQL \Table API (dynamic tables)
+		- DataStream API (streams,windows)
+		- ProcessFunction (events,state,time)
+		- ProcessFunction 层API 的表达能力非常强，可以进行多种灵活方便的操作，但抽象能力也相对越小。
+	-
 - 数据处理的发展和演变
   collapsed:: true
 	- 事务处理 OLTP
@@ -55,15 +74,6 @@
 		- Event time 数据产生的时间
 		- Ingestion time 数据进入Flink的时间
 		- Processing time 数据被Flink处理的时间
-	- API
-	  collapsed:: true
-	  id:: 6257d95b-f739-43aa-b382-42535459e2eb
-		- ![image.png](../assets/image_1650008063943_0.png)
-		- 越接近SQL 层，表达能力会逐步减弱，抽象能力会增强,
-		- SQL \Table API (dynamic tables)
-		- DataStream API (streams,windows)
-		- ProcessFunction (events,state,time)
-		- ProcessFunction 层API 的表达能力非常强，可以进行多种灵活方便的操作，但抽象能力也相对越小。
 - 使用场景
   collapsed:: true
 	- Data Pipeline 数据搬运\同步
