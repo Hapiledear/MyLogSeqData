@@ -43,31 +43,12 @@
 		- Flink作业、资源管理、作业管理器、资源管理器、TaskManger等都有各自的身份标识实现
 - Flink 基本概念
   collapsed:: false
-	- Streams 流
-	  collapsed:: true
-		- 流是一个带有方向性的数据集,数据作为流的一部分自然而然的被创建.但是在数据分析时,必须使用{{embed ((6256985b-def1-4f4a-a62e-19c509c79bbf))}} 和{{embed ((6256987c-62b3-4c8d-944c-2dc1e0d8dcda))}}
-		- ![image.png](../assets/image_1649841584752_0.png)
-		- 有界流 bounded stream
-		  id:: 6256985b-def1-4f4a-a62e-19c509c79bbf
-			- 具有明确的开始和结束节点
-			- 数据会随时间的推演而持续增加,计算持续进行且不存在结束的状态
-		- 无界流 unbounded stream
-		  id:: 6256987c-62b3-4c8d-944c-2dc1e0d8dcda
-			- 只有开始节点,没有结束节点
-			- 数据大小固定，计算最终会完成并处于结束的状态。
-	- State 状态
-	  collapsed:: true
-		- State是Flink中的顶级概念.计算过程中的数据具有state
-			- eg. 需要keep之前的数据,算最近一个小时内的总PV,这些数据就是stateful(有状态的),它所对应的计算就是有状态计算
-		- 流计算在本质上是Incremental Processing，因此需要不断查询保持状态
-		- 持久化存储带状态的数据,能够保证在整个分布式系统运行失败或者挂掉的情况下做到Exactly- once
-	- Time 时间
-	  collapsed:: true
-		- 时间是在流计算中度量业务计算是否滞后，数据处理是否及时的重要依据。
-		- ![image.png](../assets/image_1649993113298_0.png)
-		- Event time 数据产生的时间
-		- Ingestion time 数据进入Flink的时间
-		- Processing time 数据被Flink处理的时间
+	- [[Flink Stream 流]]
+	- [[Flink State 状态]]
+	  collapsed:: false
+	- [[Flink Time 时间]]
+	  collapsed:: false
+	- [[Flink Windows 窗口]]
 - 数据处理的发展和演变
   collapsed:: true
 	- 事务处理 OLTP

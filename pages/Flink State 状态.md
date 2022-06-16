@@ -1,0 +1,4 @@
+- State是Flink中的顶级概念.计算过程中的数据具有state
+	- eg. 需要keep之前的数据,算最近一个小时内的总PV,这些数据就是stateful(有状态的),它所对应的计算就是有状态计算
+- 流计算在本质上是Incremental Processing，因此需要不断查询保持状态
+- 持久化存储带状态的数据,能够保证在整个分布式系统运行失败或者挂掉的情况下做到Exactly- once
