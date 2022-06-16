@@ -1,1 +1,8 @@
+- 依据 [[Flink Time 时间]] 对流数据进行切分,称为窗口.
+- 按切分规则的不同分为了3类窗口
+	- ![image.png](../assets/image_1655382103735_0.png){:height 639, :width 650}
+	- Count Window 计数窗口
+	- Time Window 时间窗口
+	- Session Window 会话窗口
+-
 -

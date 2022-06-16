@@ -1,5 +1,6 @@
 - 时间是在流计算中度量业务计算是否滞后，数据处理是否及时的重要依据。
 - ![image.png](../assets/image_1649993113298_0.png){:height 331, :width 620}
-- Event time 数据产生的时间
-- Ingestion time 数据进入Flink的时间
-- Processing time 数据被Flink处理的时间
+	- Event time 事件时间
+	- Ingestion time 摄取时间
+	- Processing time 处理时间
+-
