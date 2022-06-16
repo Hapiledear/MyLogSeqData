@@ -15,13 +15,7 @@
 - Flink Job Demo
 	- 基本代码构成
 	  collapsed:: false
-		- 从配置文件或命令行中获取参数(可选)
-		- 初始化Stream 执行环境
-		- 配置参数
-		- 读取外部数据
-		- 处理数据
-		- 将结果写入外部
-		- 触发执行
+		- [WorldCountLocal.java](../assets/WorldCountLocal_1655370026893_0.java)
 	- API
 	  collapsed:: false
 	  id:: 6257d95b-f739-43aa-b382-42535459e2eb
@@ -32,7 +26,8 @@
 		- ((62a1b3f4-fd37-4114-a087-916d41e71a0c))
 		- ProcessFunction 层API 的表达能力非常强，可以进行多种灵活方便的操作，但抽象能力也相对越小。
 - Flink 核心抽象
-	-
+	- 环境对象
+	- 执行环境
 - 数据处理的发展和演变
   collapsed:: true
 	- 事务处理 OLTP
