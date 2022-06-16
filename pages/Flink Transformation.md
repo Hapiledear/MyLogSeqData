@@ -12,6 +12,7 @@
 	- SplitTransformation 条件切分
 	- SelectTransformation 选择过滤
 	- PartitionTransformation 分区/Shuffle
+		- 不包含StreamOperator 而是包含 [[Flink Partitioner]]
 	- UnionTransformation 多个TS 合并
 	- FeedbackTransformation&CoFeedbackTransformation 反馈
 		- 把符合条件的数据重新发回上游Transformation处理
