@@ -11,7 +11,7 @@
 	- Socket接入数据
 	- 自定义连接器
 - 数据处理
-	- [[Flink Operator]]
+	- [[Flink StreamOperator]]
 - 数据写出
 	- 写到Console
 	- 写到Socket

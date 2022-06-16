@@ -1,7 +1,9 @@
 - transformation是处理行为的抽象,包含了数据的读取\计算\写出. 在job执行之前,[[DataStream API]] 组成的pipeline 将会转换为 transformation pipeline
 - Transformation 有两大类 继承了PhysicalTransformation的称为**物理TS**,其他称为**虚拟TS**
-- Transformation 与[[ Flink算子]] [[Flink UDF]] 的关系
+- Transformation 与 [[Flink StreamOperator]] [[Flink UDF]] 的关系
 	- ![image.png](../assets/image_1654763384213_0.png)
+- 如何通过阅读源码,找到并画出这个图? 以`dataStream.flatMap()`为例
+	-
 - 物理Transformation一共有如下4种
 	- SourceTransformation
 	- SinkTransformation
