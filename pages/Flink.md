@@ -27,6 +27,7 @@
 		- ProcessFunction 层API 的表达能力非常强，可以进行多种灵活方便的操作，但抽象能力也相对越小。
 - Flink 核心抽象
 	- 环境对象
+	  collapsed:: true
 		- ![image.png](../assets/image_1655370537977_0.png)
 		- 执行环境 StreamExecutionEnvironment
 		- 运行时环境 Environment
@@ -36,21 +37,10 @@
 	- [[Flink算子]]
 	- [[Flink UDF]]
 	- [[Flink Partitioner]]
-- 数据处理的发展和演变
-  collapsed:: true
-	- 事务处理 OLTP
-		- 操作->xx系统->关系型数据库->响应
-	- 分析处理 OLAP
-		- xx系统->ETL-> DW->统计查询
-	- 有状态的流处理 一代
-		- 操作->xx应用->本地状态(内存)->响应
-		- 本地状态(内存) -> 定期持久化到远程存储
-	- lambda架构 二代
-		- 数据流->批处理器->批处理表
-		- 数据流->流处理器->流处理表
-		- 两表合并->应用展示
-	- akka架构 三代
-		-
+	- [[Flink Connector]]
+	- 分布式ID `AbstractID` 
+	  collapsed:: true
+		- Flink作业、资源管理、作业管理器、资源管理器、TaskManger等都有各自的身份标识实现
 - Flink 基本概念
   collapsed:: false
 	- Streams 流
@@ -78,6 +68,21 @@
 		- Event time 数据产生的时间
 		- Ingestion time 数据进入Flink的时间
 		- Processing time 数据被Flink处理的时间
+- 数据处理的发展和演变
+  collapsed:: true
+	- 事务处理 OLTP
+		- 操作->xx系统->关系型数据库->响应
+	- 分析处理 OLAP
+		- xx系统->ETL-> DW->统计查询
+	- 有状态的流处理 一代
+		- 操作->xx应用->本地状态(内存)->响应
+		- 本地状态(内存) -> 定期持久化到远程存储
+	- lambda架构 二代
+		- 数据流->批处理器->批处理表
+		- 数据流->流处理器->流处理表
+		- 两表合并->应用展示
+	- akka架构 三代
+		-
 - 使用场景
   collapsed:: true
 	- Data Pipeline 数据搬运\同步

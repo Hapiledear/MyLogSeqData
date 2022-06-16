@@ -14,4 +14,6 @@
 		- 将该记录广播给所有分区，即有N个分区，就把数据复制N份，每个分区1份
 	- KeyGroupStreamPartitioner
 		- 根据KeyGroup索引编号进行分区.用户无法使用
+-
+- [[负载均衡]]
 - [[Flink DAG]]
