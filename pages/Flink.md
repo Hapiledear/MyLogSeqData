@@ -44,11 +44,11 @@
 - Flink 基本概念
   collapsed:: false
 	- [[Flink Stream 流]]
-	- [[Flink State 状态]]
-	  collapsed:: false
+	- [[Flink Windows 窗口]]
 	- [[Flink Time 时间]]
 	  collapsed:: false
-	- [[Flink Windows 窗口]]
+	- [[Flink State 状态]]
+	  collapsed:: false
 - 数据处理的发展和演变
   collapsed:: true
 	- 事务处理 OLTP
