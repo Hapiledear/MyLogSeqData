@@ -1,5 +1,17 @@
 - transformation是处理行为的抽象,包含了数据的读取\计算\写出. 在job执行之前,[[DataStream API]] 组成的pipeline 将会转换为 transformation pipeline
-- Transformation 有两大类 继承了PhysicalTransformation的称为物理TS,其他称为虚拟TS
+- Transformation 有两大类 继承了PhysicalTransformation的称为**物理TS**,其他称为**虚拟TS**
 - Transformation 与[[ Flink算子]] [[Flink UDF]] 的关系
 	- ![image.png](../assets/image_1654763384213_0.png)
--
+- 物理Transformation一共有如下4种
+	- SourceTransformation
+	- SinkTransformation
+	- OneInputTransformation 单流输入
+	- TwoInputTransformation 双流输入
+- 虚拟Transformation
+	- SideOutputTransformation 旁路输出
+	- SplitTransformation 条件切分
+	- SelectTransformation 选择过滤
+	- PartitionTransformation 分区/Shuffle
+	- UnionTransformation 多个TS 合并
+	- FeedbackTransformation&CoFeedbackTransformation 反馈
+		- 把符合条件的数据重新发回上游Transformation处理
