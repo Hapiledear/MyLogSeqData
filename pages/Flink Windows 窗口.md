@@ -4,5 +4,7 @@
 	- Count Window 计数窗口
 	- Time Window 时间窗口
 	- Session Window 会话窗口
--
+- 窗口原理
+	- WindowAssigner
+		- 决定某个元素被分配到哪个/哪些窗口中去
 -
