@@ -3,6 +3,7 @@
 - Transformation 与 [[Flink StreamOperator]] [[Flink UDF]] 的关系
 	- ![image.png](../assets/image_1654763384213_0.png)
 - 如何通过阅读[[DataStream API]]源码,找到并画出这个图? 以`dataStream.flatMap()`为例
+  id:: 62ab28d3-639a-4f38-a7da-8d0c0688a24f
 	- 通过代码,跟进flatMap方法,主要看return对象是如何构造出来的
 	- 直到 `doTransform` 方法,可以看到对应的Transfromation是 `OneInputTransformation`
 	- 然后关注 [[Flink StreamOperator]] 是如何构造出来的,需要向外回溯,可以看到对应 `StreamFlatMap` 方法
