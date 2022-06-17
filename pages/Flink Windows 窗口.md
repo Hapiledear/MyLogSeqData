@@ -5,6 +5,12 @@
 	- Time Window 时间窗口
 	- Session Window 会话窗口
 - 窗口原理
-	- WindowAssigner
-		- 决定某个元素被分配到哪个/哪些窗口中去
+	- WindowAssigner 决定某个元素被分配到哪个/哪些窗口中去
+	- WindowTrigger 决定了一个窗口何时能够被计算或清除，每一个窗口都拥有一个属于自己的Trigger.
+		- Trigger的触发结果分为4类
+			- Continue
+			- Fire
+			- Purge
+			- Fire + Purge
+	-
 -
