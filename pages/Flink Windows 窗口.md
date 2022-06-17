@@ -4,13 +4,22 @@
 	- Count Window 计数窗口
 	- Time Window 时间窗口
 	- Session Window 会话窗口
-- 窗口原理
+- 窗口构成
+	- ![image.png](../assets/image_1655437248763_0.png)
 	- WindowAssigner 决定某个元素被分配到哪个/哪些窗口中去
 	- WindowTrigger 决定了一个窗口何时能够被计算或清除，每一个窗口都拥有一个属于自己的Trigger.
 		- Trigger的触发结果分为4类
+		  collapsed:: true
 			- Continue
 			- Fire
 			- Purge
 			- Fire + Purge
+	- WindowEvictor 过滤窗口元素
+		- CountEvictor: 计数过滤器 .保留指定数量的元素,从并从窗口头部开始丢弃其余元素 (FIFO)
+		- DeltaEvictor:阈值过滤器. 计算窗口中每个数据记录，然后与一个事先定义好的阈值做比较，丢弃超过阈值的数据记录
+		- TimeEvictor: 时间过滤器。保留Window中最近一段时间内的元素，并丢弃其余元素
+			- [[Flink Time 时间]]
+	- WindowFunction 计算函数
+- 分析WorldCount demo中的`window()`操作
+	- {{embed ((62aaf121-6b99-4b1e-a659-7852a75bc772))}}
 	-
--

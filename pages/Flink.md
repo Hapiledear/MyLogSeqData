@@ -16,6 +16,7 @@
 	- 基本代码构成
 	  collapsed:: false
 		- [WorldCountLocal.java](../assets/WorldCountLocal_1655370026893_0.java)
+		  id:: 62aaf121-6b99-4b1e-a659-7852a75bc772
 	- API
 	  collapsed:: false
 	  id:: 6257d95b-f739-43aa-b382-42535459e2eb
