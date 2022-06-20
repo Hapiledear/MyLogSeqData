@@ -23,3 +23,5 @@
 - 分析WorldCount demo中的`window()`操作
 	- {{embed ((62aaf121-6b99-4b1e-a659-7852a75bc772))}}
 	- ![Flink_window构成.png](../assets/Flink_window构成_1655459372385_0.png)
+	- 固定时间窗口,到期或填满元素会生成一个新窗口,因此没有WindowEvictor 操作
+-
