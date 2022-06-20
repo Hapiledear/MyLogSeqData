@@ -14,7 +14,7 @@
 			- Fire
 			- Purge
 			- Fire + Purge
-	- WindowEvictor 在Window Function执行前或后，从Window中过滤元素 非必须项.
+	- WindowEvictor 在Window Function执行前或后，从Window中过滤元素 **非必须项**.
 		- CountEvictor: 计数过滤器 .保留指定数量的元素,从并从窗口头部开始丢弃其余元素 (FIFO)
 		- DeltaEvictor:阈值过滤器. 计算窗口中每个数据记录，然后与一个事先定义好的阈值做比较，丢弃超过阈值的数据记录
 		- TimeEvictor: 时间过滤器。保留Window中最近一段时间内的元素，并丢弃其余元素
@@ -35,3 +35,6 @@
 - 滑动窗口
 	- `SlidingEventTimeWindows`和`SlidingProcessingTimeWindows`创建的滚动时间窗口分别对应 `Event Time`和`Processing Time`
 -
+- WindowTrigger  和
+- 聚合优化
+	-
