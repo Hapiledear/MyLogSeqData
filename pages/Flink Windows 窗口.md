@@ -35,6 +35,21 @@
 - 滑动窗口
 	- `SlidingEventTimeWindows`和`SlidingProcessingTimeWindows`创建的滚动时间窗口分别对应 `Event Time`和`Processing Time`
 -
-- WindowTrigger  和
+- WindowTrigger  和 WindowEvictor 的关系
+	- ```java
+	    			TriggerResult triggerResult = triggerContext.onElement(element);
+	  
+	                  if (triggerResult.isFire()) {
+	                      ACC contents = windowState.get();
+	                      if (contents == null) {
+	                          continue;
+	                      }
+	                      emitWindowContents(window, contents);
+	                  }
+	  
+	                  if (triggerResult.isPurge()) {
+	                      windowState.clear();
+	                  }
+	  ```
 - 聚合优化
 	-
