@@ -32,4 +32,6 @@
 - 滚动窗口
 	- `TumblingEventTimeWindows`和`TumblingProcessingTimeWindows`创建的滚动时间窗口分别对应 `Event Time`和`Processing Time`
 	- ((62abf89c-d6c8-4278-8445-76fa64af63ae))
+- 滑动窗口
+	- `SlidingEventTimeWindows`和`SlidingProcessingTimeWindows`创建的滚动时间窗口分别对应 `Event Time`和`Processing Time`
 -
