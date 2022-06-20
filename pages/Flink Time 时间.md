@@ -4,4 +4,7 @@
 	- Ingestion time 摄取时间
 	- Processing time 处理时间
 - 在何处用到?
-	-
+	- WindowAssigner 决定元素该去哪个window
+	- WindowEvictor 决定窗口中的元素是否该删除
+	- WindowTrigger 使用 time 回调并触发WindowFunction ,处理窗口中的数据或清除它们
+-
