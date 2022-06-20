@@ -37,19 +37,20 @@
 -
 - WindowTrigger  和 WindowEvictor 的关系
 	- ```java
-	    			TriggerResult triggerResult = triggerContext.onElement(element);
+	          TriggerResult triggerResult = triggerContext.onEventTime(timer.getTimestamp());
 	  
-	                  if (triggerResult.isFire()) {
-	                      ACC contents = windowState.get();
-	                      if (contents == null) {
-	                          continue;
-	                      }
-	                      emitWindowContents(window, contents);
-	                  }
+	          if (triggerResult.isFire()) {
+	              Iterable<StreamRecord<IN>> contents = evictingWindowState.get();
+	              if (contents != null) {
+	                // 这里调用了 evictBefore();userFunction.process()和 evictAfter();
+	                // 如果没有配置Evictor 则直接调用userFunction.process()
+	                  emitWindowContents(triggerContext.window, contents, evictingWindowState);
+	              }
+	          }
 	  
-	                  if (triggerResult.isPurge()) {
-	                      windowState.clear();
-	                  }
+	          if (triggerResult.isPurge()) {
+	              evictingWindowState.clear();
+	          }
 	  ```
 - 聚合优化
 	-
