@@ -34,7 +34,9 @@
 	- ((62abf89c-d6c8-4278-8445-76fa64af63ae))
 - 滑动窗口
 	- `SlidingEventTimeWindows`和`SlidingProcessingTimeWindows`创建的滚动时间窗口分别对应 `Event Time`和`Processing Time`
--
+	- ![Flink-SlidingEventTimeWindows.png](../assets/Flink-SlidingEventTimeWindows_1655712459524_0.png)
+- 会话窗口
+	- `EventTimeSessionWindows`和`ProcessingTimeSessionWindows`创建的滚动时间窗口分别对应 `Event Time`和`Processing Time`
 - WindowTrigger  和 WindowEvictor 的关系
 	- ```java
 	          TriggerResult triggerResult = triggerContext.onEventTime(timer.getTimestamp());
