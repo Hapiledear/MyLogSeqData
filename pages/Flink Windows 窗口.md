@@ -7,7 +7,7 @@
 - 窗口构成
 	- ![image.png](../assets/image_1655437248763_0.png)
 	- WindowAssigner 决定某个元素被分配到哪个/哪些窗口中去
-	- WindowTrigger 决定了一个窗口何时能够被计算或清除，每一个窗口都拥有一个属于自己的Trigger.
+	- WindowTrigger 决定了一个窗口何时能够被计算或清除
 		- Trigger的触发结果分为4类
 		  collapsed:: true
 			- Continue
@@ -20,8 +20,16 @@
 		- TimeEvictor: 时间过滤器。保留Window中最近一段时间内的元素，并丢弃其余元素
 			- [[Flink Time 时间]]
 	- WindowFunction 计算函数
+		- ReduceFunction `reduce()`
+		- AggregateFunction 不同于`reduce()`的地方在于,增加了中间类型`ACC`
+			- 例如求平均值时,acc保存了总和及个数.因为平均值无法累加在相除.
+		- ProcessWindowFunction 是Window的最底层UDF,能够访问一些更加底层的数据 , [[Flink UDF]]
 - 分析WorldCount demo中的`window()`操作
 	- {{embed ((62aaf121-6b99-4b1e-a659-7852a75bc772))}}
 	- ![Flink_window构成.png](../assets/Flink_window构成_1655459372385_0.png)
+	  id:: 62abf89c-d6c8-4278-8445-76fa64af63ae
 	- 固定时间窗口,到期或填满元素会生成一个新窗口,因此没有WindowEvictor 操作
+- 滚动窗口
+	- `TumblingEventTimeWindows`和`TumblingProcessingTimeWindows`创建的滚动时间窗口分别对应 `Event Time`和`Processing Time`
+	- ((62abf89c-d6c8-4278-8445-76fa64af63ae))
 -
