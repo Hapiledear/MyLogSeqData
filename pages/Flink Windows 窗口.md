@@ -7,7 +7,7 @@
 - 窗口构成
 	- ![image.png](../assets/image_1655437248763_0.png)
 	- WindowAssigner 决定某个元素被分配到哪个/哪些窗口中去
-	- WindowTrigger 决定了一个窗口何时能够被计算或清除
+	- WindowTrigger 决定了一个窗口何时能够被计算或清除 可以用于 **提前计算**
 		- Trigger的触发结果分为4类
 		  collapsed:: true
 			- Continue
@@ -25,19 +25,24 @@
 			- 例如求平均值时,acc保存了总和及个数.因为平均值无法累加在相除.
 		- ProcessWindowFunction 是Window的最底层UDF,能够访问一些更加底层的数据 , [[Flink UDF]]
 - 分析WorldCount demo中的`window()`操作
+  collapsed:: true
 	- {{embed ((62aaf121-6b99-4b1e-a659-7852a75bc772))}}
 	- ![Flink_window构成.png](../assets/Flink_window构成_1655459372385_0.png)
 	  id:: 62abf89c-d6c8-4278-8445-76fa64af63ae
 	- 固定时间窗口,到期或填满元素会生成一个新窗口,因此没有WindowEvictor 操作
 - 滚动窗口
+  collapsed:: true
 	- `TumblingEventTimeWindows`和`TumblingProcessingTimeWindows`创建的滚动时间窗口分别对应 `Event Time`和`Processing Time`
 	- ((62abf89c-d6c8-4278-8445-76fa64af63ae))
 - 滑动窗口
+  collapsed:: true
 	- `SlidingEventTimeWindows`和`SlidingProcessingTimeWindows`创建的滚动时间窗口分别对应 `Event Time`和`Processing Time`
 	- ![Flink-SlidingEventTimeWindows.png](../assets/Flink-SlidingEventTimeWindows_1655712459524_0.png)
 - 会话窗口
+  collapsed:: true
 	- `EventTimeSessionWindows`和`ProcessingTimeSessionWindows`创建的滚动时间窗口分别对应 `Event Time`和`Processing Time`
 - WindowTrigger  和 WindowEvictor 的关系
+  collapsed:: true
 	- ```java
 	          TriggerResult triggerResult = triggerContext.onEventTime(timer.getTimestamp());
 	  
@@ -55,4 +60,7 @@
 	          }
 	  ```
 - 聚合优化
-	-
+	- 每个进入窗口的元素都会执行一次聚合函数并修改result值，这样可以大大降低内存的消耗并提升性能
+	- 但是如果用户定义了Evictor ， 则不会启用对聚合窗口的优化
+- [[Flink Watermark 水印]] 来保证流中的乱序数据,在特定的时间后一定会触发窗口计算.
+-
