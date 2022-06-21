@@ -3,9 +3,9 @@
 	- Event time 事件时间
 	- Ingestion time 摄取时间
 	- Processing time 处理时间
-- 时间服务
+- 定时器服务
+	- 调用`TimerService.registerEventTimeTimer()` 注册一个定时器`Timer`,当满足事件时间条件时,触发`Timer.onTimer()`方法的回调.
 	- 在何处用到?
 		- Table API 中的 `KeyedProcessFunction` RichFunction的一种 [[Flink UDF]]
 		- `intervalJoin()` 延迟Join
-		-
 -
