@@ -5,9 +5,7 @@
 	- Processing time 处理时间
 - 时间服务
 	- 在何处用到?
-		- Table API 中的 `KeyedProcessFunction`
-		- [[Flink Windows 窗口]]
-			- WindowAssigner 决定元素该去哪个window
-			- WindowEvictor 决定窗口中的元素是否该删除
-			- WindowTrigger 使用 time 回调并触发WindowFunction ,处理窗口中的数据或清除它们
+		- Table API 中的 `KeyedProcessFunction` RichFunction的一种 [[Flink UDF]]
+		- `intervalJoin()` 延迟Join
+		-
 -
