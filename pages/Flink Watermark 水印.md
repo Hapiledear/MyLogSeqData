@@ -1,6 +1,7 @@
 - 在Watermark 之前的数据,虽然不能保证顺序,但一定能保证它们一个都不少.
 	- Watermark 本质是时间戳，与业务数据一样无差别地传递下去，目的是衡量事件时间的进度
 	- Watermark(T) 表示目前系统的时间事件是 T，即系统后续没有 T'<T 的事件即 Event(T'<T)
+-
 - Watermark的类型关系
 - Watermark的产生
 - Watermark的传递
