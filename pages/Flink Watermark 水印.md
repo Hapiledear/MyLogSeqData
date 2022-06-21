@@ -15,10 +15,11 @@
 	- 发送watermark在 `Output.emitWatermark()`中,发送给下游
 		- 问题: input和output是如何关联起来的?这里应该指向flink的作业调度页面 #问题
 	- 下游window接收并\处理\传递watermark,在`AbstractStreamOperator.processWatermark()`中
--
-- Watermark类
-	-
+- 多流Watermark处理
+	- 取两个流中较小的Watermark 并向下传递
+	- ![image.png](../assets/image_1655798996971_0.png)
 -
 - 相关链接
 	- [[Flink Time 时间]]
+	- [[Flink Windows 窗口]]
 -
