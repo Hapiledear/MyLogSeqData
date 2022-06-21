@@ -8,7 +8,7 @@
 	- [[Flink State 状态]]与[[Flink 应用容错]]
 		- 负责状态管理: 存储,触发[[Flink Checkpoint]] ,异步保存;失败恢复
 	- 数据处理
-		- 除了处理数据记录外,还会处理 [[Flink Watermark]] 和 [[Flink LatencyMarker]]
+		- 除了处理数据记录外,还会处理 [[Flink Watermark 水印]] 和 [[Flink LatencyMarker]]
 - 基本算子
 - 聚合算子
 - window算子 [[Flink Windows 窗口]]
