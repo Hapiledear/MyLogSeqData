@@ -4,11 +4,17 @@
 	- ![image.png](../assets/image_1654763384213_0.png)
 - 如何通过阅读[[DataStream API]]源码,找到并画出这个图? 以`dataStream.flatMap()`为例
   id:: 62ab28d3-639a-4f38-a7da-8d0c0688a24f
-	- 通过代码,跟进flatMap方法,主要看return对象是如何构造出来的
-	- 直到 `doTransform` 方法,可以看到对应的Transfromation是 `OneInputTransformation`
-	- 然后关注 [[Flink StreamOperator]] 是如何构造出来的,需要向外回溯,可以看到对应 `StreamFlatMap` 方法
-	- 最后关注 [[Flink UDF]] 找到了`FlatMapFunction`
-	- ![image.png](../assets/image_1655385109315_0.png)
+	- 方法一
+		- 通过代码,跟进flatMap方法,主要看return对象是如何构造出来的
+		- 直到 `doTransform` 方法,可以看到对应的Transfromation是 `OneInputTransformation`
+		- 然后关注 [[Flink StreamOperator]] 是如何构造出来的,需要向外回溯,可以看到对应 `StreamFlatMap` 方法
+		- 最后关注 [[Flink UDF]] 找到了`FlatMapFunction`
+		- ![image.png](../assets/image_1655385109315_0.png)
+	- 方法二
+		- 通过代码跟进,可以找到`DataStream `和 `Transformation`
+		- 然后通过 `TransformationTranslator `找到 `StreamOperator `和 `Function`
+		- ![Flink-Watermark.png](../assets/Flink-Watermark_1655796237385_0.png)
+		  id:: 62b171e7-cc34-45b9-9fdd-4340c6281eaf
 - 物理Transformation一共有如下4种
 	- SourceTransformation
 	- SinkTransformation
