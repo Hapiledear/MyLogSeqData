@@ -9,6 +9,9 @@
 - Watermark的类型关系
 	- ((62b171e7-cc34-45b9-9fdd-4340c6281eaf))
 - Watermark的产生&传递&消费
+	- 产生相关代码在 `TimestampsAndWatermarksOperator.onProcessingTime()`中,最终调用的是`WatermarkGenerator.onPeriodicEmit()` 并发送出去
+	- 消费相关代码在`TimestampsAndWatermarksOperator.processElement()`中,最终调用的是`WatermarkGeneratoronEvent()` 将ts置为`Math.max(maxTimestamp, eventTimestamp)`
+	- 阻断上游watermark 在`TimestampsAndWatermarksOperator.processWatermark()` ,将时间置为 `Long.MAX_VALUE)`
 	-
 -
 - 相关链接
