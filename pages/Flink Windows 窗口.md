@@ -25,7 +25,7 @@
 			- 例如求平均值时,acc保存了总和及个数.因为平均值无法累加在相除.
 		- ProcessWindowFunction 是Window的最底层UDF,能够访问一些更加底层的数据 , [[Flink UDF]]
 - 分析WorldCount demo中的`window()`操作
-  collapsed:: true
+  collapsed:: false
 	- {{embed ((62aaf121-6b99-4b1e-a659-7852a75bc772))}}
 	- ![Flink_window构成.png](../assets/Flink_window构成_1655459372385_0.png)
 	  id:: 62abf89c-d6c8-4278-8445-76fa64af63ae
@@ -42,7 +42,7 @@
   collapsed:: true
 	- `EventTimeSessionWindows`和`ProcessingTimeSessionWindows`创建的滚动时间窗口分别对应 `Event Time`和`Processing Time`
 - WindowTrigger  和 WindowEvictor 的关系
-  collapsed:: true
+  collapsed:: false
 	- ```java
 	          TriggerResult triggerResult = triggerContext.onEventTime(timer.getTimestamp());
 	  
