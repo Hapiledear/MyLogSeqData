@@ -19,6 +19,7 @@
 	- 取两个流中较小的Watermark 并向下传递
 	- ![image.png](../assets/image_1655798996971_0.png)
 - 一个例子
+	- [WindowAndWatermark.java](../assets/WindowAndWatermark_1655899350676_0.java)
 - 相关链接
 	- [[Flink Time 时间]]
 	- [[Flink Windows 窗口]]
