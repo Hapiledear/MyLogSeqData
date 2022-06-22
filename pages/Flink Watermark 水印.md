@@ -18,7 +18,7 @@
 - 多流Watermark处理
 	- 取两个流中较小的Watermark 并向下传递
 	- ![image.png](../assets/image_1655798996971_0.png)
--
+- 一个例子
 - 相关链接
 	- [[Flink Time 时间]]
 	- [[Flink Windows 窗口]]
