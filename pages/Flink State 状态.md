@@ -12,11 +12,17 @@
 		- 处理事件的规则，被叫作模式（Pattern）
 - 状态类型
 	- keyed state
-		- value state 单个值
-		- list state 一组值
-		- map state k-v对
+		- valueState 单个值
+		- listState一组值
+		- mapState k-v对
 		- reducing \ aggregating state 聚合操作,最终保存单个值
-- 状态访问和广播
+	- non-keyed state
+		- listState
+		- broadcastState 广播状态
+			- 来自一个流的数据需要被广播到所有下游任务.eg 规则下发
+- 状态访问
+	- 只能访问上述State,而无法访问内部State(InternalXxxState)
+	- 通过`OperatorStateStore` 和`KeyedStateStore`访问存储的数据,其本质是包装了一层`StateBackend`
 - 状态存储
 - 状态重分布
 - 状态过期清理
