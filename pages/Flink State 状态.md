@@ -1,4 +1,4 @@
-- State是Flink中的顶级概念.用于保存中间计算结果或者缓存数据
+- State是Flink中的顶级概念.用于**保存中间计算结果**或者**缓存数据**
 	- eg. 需要keep之前的数据,算最近一个小时内的总PV,这些数据就是stateful(有状态的),它所对应的计算就是有状态计算
 - 如果计算需要依赖于之前或者后续的事件，则是有状态计算.
 	- 每个算子 [[Flink StreamOperator]] 都有自己的State,对于同一Task是共享的,不同Task不共享.
@@ -14,7 +14,7 @@
 - 状态类型
 	- keyed state
 		- valueState 单个值
-		- listState一组值
+		- listState \UnionListState 一组值
 		- mapState k-v对
 		- reducing \ aggregating state 聚合操作,最终保存单个值
 	- non-keyed state
