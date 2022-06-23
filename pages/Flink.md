@@ -62,7 +62,7 @@
 	- 数据传递
 	- SQL
 - Flink 运维
-	- 应用容错
+	- [[Flink 应用容错]]
 	- 监控
 - 数据处理的发展和演变
   collapsed:: true
