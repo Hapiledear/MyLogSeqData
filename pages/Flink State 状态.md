@@ -36,7 +36,10 @@
 		- 只适用于RocksDB
 - 状态重分布
 - 状态过期清理
-	- 通过配置过期时间进行清理`StateTtlConfig`
+	- 通过配置过期时间进行清理`StateTtlConfig`,可设置内容如下
+		- 过期时间: 超过多长时间未访问，视为State过期
+		- 更新策略:创建和写时更新、读取和写时更新
+		- 过期可见性: 未清理可用，超期则不可用
 	- ```scala
 	  // 设置ttl的配置
 	  val ttlConfig = StateTtlConfig
