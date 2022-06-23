@@ -17,7 +17,7 @@
 		- listState \UnionListState 一组值
 		- mapState k-v对
 		- reducing \ aggregating state 聚合操作,最终保存单个值
-	- non-keyed state
+	- Operator State
 		- listState
 		- broadcastState 广播状态
 			- 来自一个流的数据需要被广播到所有下游任务.eg 规则下发
