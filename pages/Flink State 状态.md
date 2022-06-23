@@ -4,7 +4,7 @@
 - State是实现有状态计算下的Exactly-Once的基础 [[Flink 应用容错]]
 - 如何使用状态?
 	- 需要自定义RichFunction 或 ProcessFunction [[Flink UDF]]
-	- code demo
+	- code demo https://blog.csdn.net/shufangreal/article/details/104686064
 - 使用场景
 	- Sum 求和
 	- 去重
@@ -24,5 +24,9 @@
 	- 只能访问上述State,而无法访问内部State(InternalXxxState)
 	- 通过`OperatorStateStore` 和`KeyedStateStore`访问存储的数据,其本质是包装了一层`StateBackend`
 - 状态存储
+	- State 的存储在Flink 中叫作`StateBackend`,内置了3种`StateBackend`
+		- `MemoryStateBackend` 纯内存|适用于验证\测试
+		- `FsStateBackend` 内存+文件|适用于长周期大规模数据
+		- `RocksDBStateBackend`  [[RocksDB]]| 适用于长周期大规模数据
 - 状态重分布
 - 状态过期清理

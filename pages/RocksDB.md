@@ -1,0 +1,3 @@
+- RocksDB是**嵌入式**持久化存储系统，它是一个**单点**高性能的存储DB
+- https://github.com/0voice/newsql_nosql_library#nav_sec3_chapter1_02
+-
