@@ -2,14 +2,20 @@
 	- eg. 需要keep之前的数据,算最近一个小时内的总PV,这些数据就是stateful(有状态的),它所对应的计算就是有状态计算
 - 如果计算需要依赖于之前或者后续的事件，则是有状态计算
 - State是实现有状态计算下的Exactly-Once的基础 [[Flink 应用容错]]
--
+- 如何使用状态?
+	- 需要自定义RichFunction 或 ProcessFunction [[Flink UDF]]
+	- code demo
 - 使用场景
 	- Sum 求和
 	- 去重
 	- [[Flink CEP]]中的模式检测
 		- 处理事件的规则，被叫作模式（Pattern）
 - 状态类型
-	-
+	- keyed state
+		- value state 单个值
+		- list state 一组值
+		- map state k-v对
+		- reducing \ aggregating state 聚合操作,最终保存单个值
 - 状态访问和广播
 - 状态存储
 - 状态重分布
