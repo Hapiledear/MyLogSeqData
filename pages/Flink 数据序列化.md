@@ -1,0 +1,5 @@
+- 使用逻辑类型的 TypeInformation 生成序列化器,对数据进行序列化\反序列化
+	- ![image.png](../assets/image_1659346937937_0.png)
+	- 对于嵌套类型的数据结构，从最内层的原子字段开始进行序列化，外层的TypeSerializer负责将内层的序列化结果组装到一起。
+	- ![image.png](../assets/image_1659346999782_0.png)
+	-
