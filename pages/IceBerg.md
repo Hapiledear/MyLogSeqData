@@ -9,7 +9,7 @@
 	- 支持快照数据重复查询,具备版本回滚功能. 可以查到历史数据
 	- 超快速的记录扫描.通过表元数据对查询进行高效过滤
 - 存储结构\表格式(Table Format)
-	- ![image.png](../assets/image_1652345384585_0.png)
+	- ![image.png](../assets/image_1652345384585_0.png){:height 338, :width 746}
 	- 每进行一次提交,生成一个date file\  元数据信息\ Manifest file \Snapshot
 	- 数据文件(Date files )
 		- 真实存储数据的文件,存于`/tb_name/data/partition=xxx/` 目录下.
