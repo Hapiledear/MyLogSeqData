@@ -7,5 +7,7 @@
 	- 是Flink 内存分配的最小单元,是一段固定长度的内存(32KB),
 	- 保存在[[Java 堆内存]]上,结构是byte数组,也可以保存在[[Java 堆外内存]]上,结构是基于 [[Netty]] 的DirectByteBuffer
 	- 对于基本数据类型,可以直接操作二进制数,对其进行读取和写入,省去了序列化\反序列化过程
-	-
+- DataInputView\ DataOutputView 内存页
+	- 持有MemorySegment[] 数组,将它视为一个内存页(Page)
+- NetworkBuffer
 	-
