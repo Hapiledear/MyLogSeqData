@@ -9,5 +9,8 @@
 	- 对于基本数据类型,可以直接操作二进制数,对其进行读取和写入,省去了序列化\反序列化过程
 - DataInputView\ DataOutputView 内存页
 	- 持有MemorySegment[] 数组,将它视为一个内存页(Page)
-- NetworkBuffer
+- MemoryManager 内存管理器
+	- 除了管理堆外内存,还负责管理RocksDB的内存使用
+- NetworkBuffer 网络缓冲器
+	- 将处理完的Task结果,由内存输出至网络传输.由一个NetworkBufferPool 管理
 	-
