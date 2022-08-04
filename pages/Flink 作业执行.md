@@ -4,5 +4,15 @@
 	- ![image.png](../assets/image_1659612659290_0.png)
 	- 该图并非Flink的数据结构.而是根据物理上各个Task关系生成的拓扑图.
 - 核心对象
-	- StreamInputProcessor 输入处理器
-		-
+	- `StreamInputProcessor `输入处理器
+		- 是对StreamTask中读取数据行为的抽象，在其实现中要完成数据的读取、处理、输出给下游的过程。
+	- `StreamTaskNetworkInput `任务数据输入
+	- `StreamTaskNetworkOutput `任务结果输出
+	- `ResultPartition `结果分区
+	- `ResultSubPartition`结果子分区
+	- `BoundedData` 有限数据集
+	- `InputGate` 输入网关
+		- 和JobGraph中的JobEdge一一对应,承接上游ResultParition的数据
+	- `InputChannel` 输入通道
+		- 每个InputGate会包含一个以上的InputChannel，和ExecutionEdge一一对应，也和结果子分区一对一相连，即一个InputChannel接收一个结果子分区的输出。
+-
