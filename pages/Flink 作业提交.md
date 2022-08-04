@@ -5,7 +5,7 @@
 	- 4. 资源分配完成后,由ApplicationMaster 通知启动 ((62eb8ac2-c51e-4a0e-ba0e-fe262530923b))
 	- 5. TaskManager拉取Jar包和配置,启动. 之后向JobManager发送心跳包,等待分配任务.
 - 代码执行过程
-	- DataStream API -> Transform -> ((62eb6b03-24ff-48f7-80fb-10f23e1060d0))-> ((62eb6d5c-1c3d-40e9-b4b9-e7ad1e4dfd11))-> ExecutionGraph -> TaskGraph
+	- DataStream API -> Transform -> ((62eb6b03-24ff-48f7-80fb-10f23e1060d0))-> ((62eb6d5c-1c3d-40e9-b4b9-e7ad1e4dfd11))-> ((62ebadaa-bc5f-4544-9b0e-e42f0977a8da))-> TaskGraph
 - StreamGraph 流图
   id:: 62eb6b03-24ff-48f7-80fb-10f23e1060d0
 	- Flink Client 触发 用户代码的main方法,用户编写的业务逻辑组装成 Transformation, 最后会触发 构建 StreamGraph
