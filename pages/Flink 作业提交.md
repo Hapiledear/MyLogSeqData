@@ -33,7 +33,7 @@
 			- 1、下游节点只有一个输入
 			  2、下游节点的操作符不为null
 			  3、上游节点的操作符不为null
-			  4、上下游节点在一个槽位共享组内
+			  4、上下游节点在一个槽位共享组(slotSharingGroup)内 [[Flink Slot share]]
 			  5、下游节点的连接策略是 ALWAYS
 			  6、上游节点的连接策略是 HEAD 或者 ALWAYS
 			  7、edge 的分区函数是 ForwardPartitioner 的实例
