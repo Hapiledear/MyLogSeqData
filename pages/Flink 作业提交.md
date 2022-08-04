@@ -5,7 +5,15 @@
 	- 4. 资源分配完成后,由ApplicationMaster 通知启动 TaskManager
 	- 5. TaskManager拉取Jar包和配置,启动. 之后向JobManager发送心跳包,等待分配任务.
 - 代码执行过程
-	- DataStream API -> Transform -> StreamGraph -> JobGraph -> ExecutionGraph -> TaskGraph
+	- DataStream API -> Transform -> ((62eb6b03-24ff-48f7-80fb-10f23e1060d0))-> JobGraph -> ExecutionGraph -> TaskGraph
 - StreamGraph 流图
+  id:: 62eb6b03-24ff-48f7-80fb-10f23e1060d0
 	- Flink Client 触发 用户代码的main方法,用户编写的业务逻辑组装成 Transformation, 最后会触发 构建 StreamGraph
+	- StreamNode 节点
+		- 一个StreamNode从一个Transformation转换而来.
+		- 也存在实体和虚拟之分.实体会变成物理算子,虚拟会附着在StreamEdge上
+	- StreamEdge 边
+		- 连接两个StreamNode.一个Node可以有多个出\入边.
+		- 包含旁路数仓\分区器\字段筛选输出(select *)等信息
+- JobGraph 作业图
 	-
