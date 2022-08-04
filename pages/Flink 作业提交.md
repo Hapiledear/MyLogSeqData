@@ -1,2 +1,6 @@
 - ![image.png](../assets/image_1659584989472_0.png)
+	- 1. Client 向HDFS上传 Jar包和配置
+	- 2. 之后Client向Yarn ResourceManager 提交任务; ResourceManager 分配Container, 并选举出Master节点 ApplicationMaster
+	- 3. ApplicationMaster拉取Jar包和配置,启动自身的JobManager,JobManager向Yarn 申请 TaskManger资源.
+	- 4. 资源分配完成后,由ApplicationMaster 通知启动 TaskManager
 	-
