@@ -6,4 +6,8 @@
 	  id:: 62eb7b86-ded1-4eb9-8637-415924d11a0f
 - 生命周期维护
 	- 作业生命周期
+		- ![image.png](../assets/image_1659603028949_0.png)
+		-
 	- 任务生命周期
+		- ![image.png](../assets/image_1659603050206_0.png)
+		-
