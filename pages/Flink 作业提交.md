@@ -1,8 +1,8 @@
 - ![image.png](../assets/image_1659584989472_0.png)
 	- 1. Client 向HDFS上传 Jar包和配置
 	- 2. 之后Client向Yarn ResourceManager 提交任务; ResourceManager 分配Container, 并选举出Master节点 ApplicationMaster
-	- 3. ApplicationMaster拉取Jar包和配置,启动自身的JobManager,JobManager向Yarn 申请 TaskManger资源.
-	- 4. 资源分配完成后,由ApplicationMaster 通知启动 TaskManager
+	- 3. ApplicationMaster拉取Jar包和配置,启动自身的 ((62eb89a8-e7e1-4045-8f1e-efc523db2f96)) ,JobManager向Yarn 申请 TaskManger资源.
+	- 4. 资源分配完成后,由ApplicationMaster 通知启动 ((62eb8ac2-c51e-4a0e-ba0e-fe262530923b))
 	- 5. TaskManager拉取Jar包和配置,启动. 之后向JobManager发送心跳包,等待分配任务.
 - 代码执行过程
 	- DataStream API -> Transform -> ((62eb6b03-24ff-48f7-80fb-10f23e1060d0))-> ((62eb6d5c-1c3d-40e9-b4b9-e7ad1e4dfd11))-> ExecutionGraph -> TaskGraph
