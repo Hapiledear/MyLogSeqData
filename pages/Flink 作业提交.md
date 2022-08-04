@@ -21,10 +21,21 @@
 	- ![image.png](../assets/image_1659596594405_0.png)
 	- JobVertex 顶点
 		- 一个JobVertex包含一个或多个算子, 它的输入是JobEdge,输出是IntermediateDataSet
+		- 它已经可以视为一个 Task, 在执行时被插入TaskSlot
 	- JobEdge 边
 		- 连接IntermediateDataSet  和 JobVertex 的边,表示一个数据流转通道.
 		- 它的数据分发模式会直接影响执行时Task直接的数据连接关系
 	- IntermediateDataSet 中间数据集
 		- 是一种逻辑结构,用来表示JobVertex的输出.
 		- 决定了在执行时 数据交换的模式 (见10.3 )
-	-
+	- 算子融合
+		- 一共需要9个条件
+			- 1、下游节点只有一个输入
+			  2、下游节点的操作符不为null
+			  3、上游节点的操作符不为null
+			  4、上下游节点在一个槽位共享组内
+			  5、下游节点的连接策略是 ALWAYS
+			  6、上游节点的连接策略是 HEAD 或者 ALWAYS
+			  7、edge 的分区函数是 ForwardPartitioner 的实例
+			  8、上下游节点的并行度相等
+			  9、可以进行节点连接操作
