@@ -7,4 +7,4 @@
 	- 算子的默认group为default，所有任务可以共享同一个slot
 	- 如果下游算子没有设置分组，它继承上游算子的分组
 	- 用户可以通过编码,强制指定 SlotSharingGroup `someStream.filter(...).slotSharingGroup("group1")`
--
+- https://blog.csdn.net/qq_21383435/article/details/118461679
