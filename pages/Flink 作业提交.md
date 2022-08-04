@@ -20,5 +20,11 @@
 	- 在StreamGraph的基础上进行一些优化,如 通过OperatorChain机制将算子合并; 尽量调度在同一个Task线程上,避免跨线程跨网络传输.
 	- ![image.png](../assets/image_1659596594405_0.png)
 	- JobVertex 顶点
+		- 一个JobVertex包含一个或多个算子, 它的输入是JobEdge,输出是IntermediateDataSet
 	- JobEdge 边
+		- 连接IntermediateDataSet  和 JobVertex 的边,表示一个数据流转通道.
+		- 它的数据分发模式会直接影响执行时Task直接的数据连接关系
 	- IntermediateDataSet 中间数据集
+		- 是一种逻辑结构,用来表示JobVertex的输出.
+		- 决定了在执行时 数据交换的模式 (见10.3 )
+	-
