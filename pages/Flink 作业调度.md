@@ -26,4 +26,5 @@
 		- 心跳管理
 	- TaskManager 
 	  id:: 62eb8ac2-c51e-4a0e-ba0e-fe262530923b
-		-
+		- 是计算资源的基本单位,管理 Slot
+		- 是检查点的执行者
