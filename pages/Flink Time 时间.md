@@ -1,0 +1,12 @@
+- 时间是在流计算中度量业务计算是否滞后，数据处理是否及时的重要依据。
+- ![image.png](../assets/image_1649993113298_0.png){:height 331, :width 620}
+	- Event time 事件时间
+	- Ingestion time 摄取时间
+	- Processing time 处理时间
+- 定时器服务
+	- 调用`TimerService.registerEventTimeTimer()` 注册一个定时器`Timer`,当满足事件时间条件时,触发`Timer.onTimer()`方法的回调.
+	- 在何处用到?
+		- Table API 中的 `KeyedProcessFunction` RichFunction的一种 [[Flink UDF]]
+		- `intervalJoin()` 延迟Join
+	- demo
+		-

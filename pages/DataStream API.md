@@ -1,0 +1,23 @@
+- 每一个DataStream中,都对应一个[[Flink Transformation]]
+	- ![image.png](../assets/image_1655383874742_0.png)
+- 类关系图
+  collapsed:: false
+	- ![image.png](../assets/image_1654757070356_0.png)
+	- ![image.png](../assets/image_1654757099293_0.png)
+-
+- 数据读取
+	- 从内测读取数据
+	- 从文件读取数据
+	- Socket接入数据
+	- 自定义连接器
+- 数据处理
+	- [[Flink StreamOperator]]
+- 数据写出
+	- 写到Console
+	- 写到Socket
+	- 自定义Sink
+- 旁路输出 SideOutput
+	- 将一个DataStream按条件切分为多个子数据流,分别交给下游处理
+	- ![image.png](../assets/image_1654758043272_0.png)
+	- 条件=OutputTag
+	- 只有在特定操作时,才能使用旁路输出

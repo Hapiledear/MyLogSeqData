@@ -1,0 +1,19 @@
+- 数据分区器.主要任务是 **将数据切分，交给位于不同物理节点上的Task计算**
+- 所有的数据分区器都实现了`ChannelSelector`接口, 会根据**下游通道数量**,选择 **负载均衡算法** 向下游分发数据.
+- 可选的分区器
+	- 自定义分区 `dataStream.partitionCustom(partitioner,"key1")`
+	- ForwardPartitioner ``
+		- 用于在同一个OperatorChain中上下游算子之间的数据转发，实际上数据是直接传递给下游的
+	- ShufflePartitioner `dataStream.shuffle()`
+		- 随机将元素进行分区，可以确保下游的Task能够均匀地获得数据
+	- ReblancePartitioner `dataStream.rebalance()`
+		- 以轮循的方式为每个元素分配分区，确保下游的Task可以均匀地获得数据，避免数据倾斜
+	- RescalingPartitioner `dataStream.rescale()`
+		- 根据上下游Task的数量进行分区。使用轮循算法选择下游的一个Task进行数据分区，如上游有2个Source，下游有6个Map，那么每个Source会分配3个固定的下游Map，不会向未分配给自己的分区写入数据。
+	- BroadcastPartitioner
+		- 将该记录广播给所有分区，即有N个分区，就把数据复制N份，每个分区1份
+	- KeyGroupStreamPartitioner
+		- 根据KeyGroup索引编号进行分区.用户无法使用
+-
+- [[负载均衡]]
+- [[Flink DAG]]

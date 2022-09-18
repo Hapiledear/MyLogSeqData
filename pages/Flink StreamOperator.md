@@ -1,0 +1,16 @@
+- [Flink 支持的操作](https://nightlies.apache.org/flink/flink-docs-master/docs/dev/datastream/operators/overview/)
+- 算子中除了包含使用的 [[Flink UDF]]函数外,还包含如下3个主要功能
+	- 生命周期管理
+		- setup: 环境初始化阶段
+		- open: 算子自身初始化,完成之后执行自身的Function
+		- close: 所有的数据处理完毕后关闭算子
+		- dispose: 释放算子占用的资源
+	- [[Flink State 状态]]与[[Flink 应用容错]]
+		- 负责状态管理: 存储,触发[[Flink Checkpoint]] ,异步保存;失败恢复
+	- 数据处理
+		- 除了处理数据记录外,还会处理 [[Flink Watermark 水印]] 和 [[Flink LatencyMarker]] .通过继承`public interface Input<IN> `
+- 基本算子
+- 聚合算子
+- window算子 [[Flink Windows 窗口]]
+- Watermark算子 [[Flink Watermark 水印]]
+-

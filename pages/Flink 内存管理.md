@@ -1,0 +1,16 @@
+- JVM内存管理的不足 4点
+	- 有效数据密度低 : 为了对齐达到8的倍数会对内容进行填充
+	- 垃圾回收: 在PB级场景下会创建大量对象,消耗大量内存.一旦出现Full GC，GC会达到秒级甚至分钟级
+	- OOM问题影响稳定性: 一旦触发OOM,就会导致JVM崩溃，分布式框架的健壮性和性能都会受到影响。
+	- 缓存未命中问题:  CUP缓存数据时带有时间和空间的局部性,而java对象在内存中不是连续存储的
+- MemorySegment 内存段
+	- 是Flink 内存分配的最小单元,是一段固定长度的内存(32KB),
+	- 保存在[[Java 堆内存]]上,结构是byte数组,也可以保存在[[Java 堆外内存]]上,结构是基于 [[Netty]] 的DirectByteBuffer
+	- 对于基本数据类型,可以直接操作二进制数,对其进行读取和写入,省去了序列化\反序列化过程
+- DataInputView\ DataOutputView 内存页
+	- 持有MemorySegment[] 数组,将它视为一个内存页(Page)
+- MemoryManager 内存管理器
+	- 除了管理堆外内存,还负责管理RocksDB的内存使用
+- NetworkBuffer 网络缓冲器
+	- 将处理完的Task结果,由内存输出至网络传输.由一个NetworkBufferPool 管理
+	-
