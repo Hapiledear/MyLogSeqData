@@ -1,2 +1,17 @@
--
+- [[并行]]与[[并发]]
+- [[Java 线程]] 实现并发编程的手段
+- 并发编程三大问题
+	- 原子性问题
+		- [[Java CAS]]
+		- [[Java 对象锁]] [[synchroize 关键字]]
+		- [[Java 显式锁]]
+	- 可见性问题
+		- [[CPU 物理缓存结构]]
+		- [[JMM Java内存模型]]
+	- 有序性问题
+		- [[CPU 内存屏障]]
+		- [[CPU As-if-Serial 规则]]
+		- [[JMM 内存屏障]]
+		- [[JMM Happens-Before 规则]]
+- [[volatile 关键字]]
 -
