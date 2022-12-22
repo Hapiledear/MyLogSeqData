@@ -1,0 +1,26 @@
+- Lock接口
+- 可重入锁 ReentrantLock
+	- [[synchroize 关键字]] 的等价替代
+- Condition接口
+	- ((63a16838-ac45-4452-a867-56c2be05554f)) 的等价替代
+	-
+- 工具类 LockSupport
+- 分类
+	- 是否上锁
+		- 悲观锁
+		- 乐观锁
+			- [[Java CAS]]
+			- [[Java CLH锁]]
+	- 公平性
+		- 非公平锁
+		- 公平锁
+	- 抢锁过程可中断
+		- 不可中断锁
+		- 可中断锁
+	- 同一时刻能被多个线程持有
+		- 独占锁
+		- 共享锁
+			- [[Java Semaphore]]
+			- [[Java CountDownLatch]]
+	- 读写锁
+		- [[Java ReentrantReadWriteLock]]
