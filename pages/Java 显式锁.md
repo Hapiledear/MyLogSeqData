@@ -24,3 +24,5 @@
 			- [[Java CountDownLatch]]
 	- 读写锁
 		- [[Java ReentrantReadWriteLock]]
+- 锁与队列的关系
+	- [[AQS 抽象同步器]]
