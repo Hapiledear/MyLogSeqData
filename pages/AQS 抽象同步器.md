@@ -1,3 +1,10 @@
 - 是[[Java CLH锁]]的一个变种
 - AQS中的核心变量
+	- 状态标志位 state
+	- 队列节点 Node
+		- 持有head和tail，构成FIFO的双向队列
+- AQS与JUC之间的关系
+	- ![image.png](../assets/image_1672020273260_0.png)
+- 如何自定义一把锁
+	- `public class SimpleMockLock implements Lock` 实现Lock接口
 	-
