@@ -7,4 +7,7 @@
 	- ![image.png](../assets/image_1672020273260_0.png)
 - 如何自定义一把锁
 	- `public class SimpleMockLock implements Lock` 实现Lock接口
+		- `lock()`与`unlock`方法则委托给`sync`对应的方法
+	- `private static class Sync extends AbstractQueuedSynchronizer` 继承QAS的内部类Sync
+		- 并实现 `tryAcquire()` 和`tryRelease()`方法
 	-
