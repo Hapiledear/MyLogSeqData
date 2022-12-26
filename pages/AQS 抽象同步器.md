@@ -22,6 +22,7 @@
 - AQS抢锁流程
 	- ![image.png](../assets/image_1672022433477_0.png)
 	- 钩子实现：tryAcquire(arg)
+	  id:: 63a909a2-d497-4118-8d71-7dc9450db6fa
 		- `compareAndSetState(0, 1)` CAS更新 ((63a3d2e8-2cb5-4e3c-9089-94547ab24970)) 为1
 			- 更新成功，表示成功占用，返回true
 			- 失败，则进入 ((63a90dce-30f0-47bd-bd5b-245672491108))  方法
@@ -34,4 +35,15 @@
 	- 自旋入队：enq
 	  id:: 63a90f60-d9ef-4cbf-8659-f39ab07b59b1
 		- 这是一个无条件的for循环
-		-
+		- if 队列为空，初始化尾节点和头节点（CAS操作）
+		- else 队列不为空，将新节点插入队列尾部(CAS操作)
+	- 自旋抢占：acquireQueued()
+		- 这是一个无条件的for循环
+		- if 自己的prev 是head && 调用 ((63a909a2-d497-4118-8d71-7dc9450db6fa)) 抢锁成功
+			- 将当前节点设置为头节点，移除之前的头节点
+		- if ((63a91217-5443-4b1d-bb42-fab408fa3269)) && ((63a91222-b070-45c0-9a6d-11424e16975a))
+		- finally
+	- 挂起预判：shouldParkAfterFailedAcquire()
+	  id:: 63a91217-5443-4b1d-bb42-fab408fa3269
+	- 线程挂起：parkAndCheckInterrupt()
+	  id:: 63a91222-b070-45c0-9a6d-11424e16975a
