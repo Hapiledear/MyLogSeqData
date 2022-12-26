@@ -1,6 +1,10 @@
 - 是[[Java CLH锁]]的一个变种
 - AQS中的核心变量
 	- 状态标志位 state
+	  id:: 63a3d2e8-2cb5-4e3c-9089-94547ab24970
+		- `private volatile int state;` 使用volatile保证可见性
+		- 使用CAS操作修改其值，保证 原子性
+		- 0-未锁定 1-锁定 >1 - 重入锁定
 	- 队列节点 Node
 		- 持有head和tail，构成FIFO的双向队列
 - AQS与JUC之间的关系
@@ -10,4 +14,8 @@
 		- `lock()`与`unlock`方法则委托给`sync`对应的方法
 	- `private static class Sync extends AbstractQueuedSynchronizer` 继承QAS的内部类Sync
 		- 并实现 `tryAcquire()` 和`tryRelease()`方法
-	-
+- AQS抢锁流程
+	- ![image.png](../assets/image_1672022433477_0.png)
+	- 钩子实现：tryAcquire(arg)
+		- `compareAndSetState(0, 1)` CAS更新 ((63a3d2e8-2cb5-4e3c-9089-94547ab24970)) 为1
+		-
