@@ -37,16 +37,15 @@
 		- 尝试通过CAS操作修改队尾 `compareAndSetTail(pred, node)`
 		- 修改成功，则返回
 		- 修改失败，则进入 ((63a90f60-d9ef-4cbf-8659-f39ab07b59b1))
-	- 自旋入队：enq
+	- **自旋入队：enq**
 	  id:: 63a90f60-d9ef-4cbf-8659-f39ab07b59b1
-	  collapsed:: true
 		- 这是一个无条件的for循环
 		- if 队列为空，初始化尾节点和头节点（CAS操作）
 		- else 队列不为空，将新节点插入队列尾部(CAS操作)
-	- 自旋抢占：acquireQueued()
-		- 这是一个无条件的for循环,操作的是自己的prev节点
-		- if 自己的prev 是head && 调用 ((63a909a2-d497-4118-8d71-7dc9450db6fa)) 抢锁成功
-			- 将当前节点设置为头节点，移除之前的头节点
+	- **自旋抢占：acquireQueued()**
+		- 这是一个无条件的for循环,操作的是自己的**prev节点**
+		- if 自己的prev 是head && 当前线程 ((63a909a2-d497-4118-8d71-7dc9450db6fa)) 抢锁成功
+			- 将当前节点设置为头节点，移除旧的头节点
 			- 退出循环
 		- if ((63a91217-5443-4b1d-bb42-fab408fa3269)) && ((63a91222-b070-45c0-9a6d-11424e16975a))
 		- finally (timeout\被中断了) 将当前节点从队列中移除
@@ -63,7 +62,10 @@
 					- 节点的前驱节点为head
 	- 线程挂起：parkAndCheckInterrupt()
 	  id:: 63a91222-b070-45c0-9a6d-11424e16975a
+	  collapsed:: true
 		- `LockSupport.park(this);` 挂起自己，进入 waiting状态
 		- `return Thread.interrupted();` 被唤醒后，检查自己是否被中断
 		- 何时唤醒？头节点释放锁，`LockSupport.unpark(postThread)` 唤醒后继节点
--
+- AQS释放锁流程
+	- ![image.png](../assets/image_1672026115902_0.png)
+	-
