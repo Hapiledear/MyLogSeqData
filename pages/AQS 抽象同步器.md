@@ -6,7 +6,12 @@
 		- 使用CAS操作修改其值，保证 原子性
 		- 0-未锁定 1-锁定 >1 - 重入锁定
 	- 队列节点 Node
-		- 持有head和tail，构成FIFO的双向队列
+		- 节点状态值 wairStatus
+			- 1 Cancelled 取消状态
+			- -1 Singal 后继线程处于等待状态
+			- -2 Condition 当前线程正在进行条件等待
+			- -3 Propagate 共享锁操作需要无条件传播
+	- 持有head和tail，构成FIFO的双向队列
 - AQS与JUC之间的关系
 	- ![image.png](../assets/image_1672020273260_0.png)
 - 如何自定义一把锁
@@ -18,4 +23,15 @@
 	- ![image.png](../assets/image_1672022433477_0.png)
 	- 钩子实现：tryAcquire(arg)
 		- `compareAndSetState(0, 1)` CAS更新 ((63a3d2e8-2cb5-4e3c-9089-94547ab24970)) 为1
-			- 成功
+			- 更新成功，表示成功占用，返回true
+			- 失败，则进入 ((63a90dce-30f0-47bd-bd5b-245672491108))  方法
+	- 直接入队：addWaiter
+	  id:: 63a90dce-30f0-47bd-bd5b-245672491108
+		- 创建新节点 `Node node = new Node(Thread.currentThread(), mode);`
+		- 尝试通过CAS操作修改队尾 `compareAndSetTail(pred, node)`
+		- 修改成功，则返回
+		- 修改失败，则进入 ((63a90f60-d9ef-4cbf-8659-f39ab07b59b1))
+	- 自旋入队：enq
+	  id:: 63a90f60-d9ef-4cbf-8659-f39ab07b59b1
+		- 这是一个无条件的for循环
+		-
