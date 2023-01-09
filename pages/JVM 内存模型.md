@@ -6,6 +6,13 @@
 		- 操作数栈
 		- 动态连接
 		- 方法返回地址
+	- 可能抛出两种异常
+		- StackOverFlowError 栈溢出
+			- 产生原因
+				- 无限递归
+				- 执行了大量方法
+				-
+		- OutOfMemoryError OOM内存溢出
 - 本地方法栈
 - PC计数器
 - 堆
