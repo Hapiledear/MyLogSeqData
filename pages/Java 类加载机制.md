@@ -1,0 +1,8 @@
+- ## 对象的创建\触发类加载的方式
+	- new关键字
+	- Class的newInstance方法
+	- Constructor类的newInstance方法
+	- clone方法
+	- 反序列化
+- ## 加载过程
+-
