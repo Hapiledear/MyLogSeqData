@@ -29,9 +29,10 @@
 		- 清空
 			- 清空Eden,Servivor From 中的对象
 		- 互换
-			-
-	- Full GC
+			- Servivor To 和 Servivor From 互换。交互成为下一次GC的目标
+	- Full GC/Major GC
 	  id:: 63bd458f-4ddf-4a39-ba1d-4b7d2b7baeae
+		-
 - ## 垃圾收集算法
 	- 复制算法
 	  id:: 63be6a31-b5b0-4ffb-8c95-72fc10fc453a
