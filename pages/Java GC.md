@@ -97,5 +97,12 @@
 		- 基于 ((63be9cd8-0bf5-43f4-85b4-58fd0fbdeed2))
 		- ((63be78c1-12d7-4a42-a1fe-d3fd630c63bf)) 和 ((63be78c7-2334-4ee7-9399-7bc275ed6c9d)) 并行收集
 		- ![image.png](../assets/image_1673437789554_0.png)
-		-
+		- 将堆内存划分为大小固定的几个独立区域，可自由命名。
+			- Eden区&Survivor区
+				- 仍会 stop the world ，将存活对象copy到Old或Survivor空间
+			- Old区
+				- 从一个区域复制到另一个区域
+			- Humongous区
+				- 一个对象占用的空间超过分区容量50%以上，且生命周期短的对象
+				- 如果一个H区装不下，那么会寻找连续空间
 	-
