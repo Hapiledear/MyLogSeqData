@@ -45,10 +45,12 @@
 	- 弱引用
 		- `WeakReference<Car> weakCar = new WeakReference,<Car>(Car);`
 		- 每次GC时都会回收
-		- a. ThreadLocalMap防止内存泄漏 
+		- a. [[Java ThreadLocalMap]]防止内存泄漏 
 		  b. 监控对象是否将要被回收
 	- 虚引用
 		- 必须和`ReferenceQueue` 引用队列联合使用
+			- GC收集器准备回收该对象->放入相应的引用队列
+			- 程序监测到引用队列中有元素了，在释放之前采取一些行动
 		- 任何时候都可能被垃圾回收
-		-
+		- [[Java NIO]] 中的`ByteBuffer`对象，靠此机制来释放堆外内存
 	-
