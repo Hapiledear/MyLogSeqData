@@ -9,9 +9,27 @@
 		- 从GC Roots开始向下搜索，搜索的路径称为**引用链**。 当一个对象到GC Roots没有任何引用链路时，证明此对象不可达。
 		- 至少会经过两次标记过程，才面临回收
 - ## JVM内存分代
+	- ![image.png](../assets/image_1673427295443_0.png)
+	- 新生代
+		- Eden区
+			- 新对象的出生地。当Eden区内存不足时，会触发 ((63be6b6a-8bc6-477a-830f-13fcb1a8a633))
+		- Servivor From 区
+			- 上一次GC的幸存者，作为本次GC的被扫描者
+		- Servivor To 区
+			- 保留了一次 ((63be6b6a-8bc6-477a-830f-13fcb1a8a633)) 过程中的幸存者
+	- 老年代
+		-
+	- [[Java 永久代]] 不属于 [[Java 堆内存]]
 - ## 一次完整的GC过程
 	- Minor GC
 	  id:: 63be6b6a-8bc6-477a-830f-13fcb1a8a633
+		- 复制
+			- eden,Servivor From ,复制到 Servivor To .年龄+1
+			- 如果有对象的年龄达到了放入老年代的标准，则复制到老年代区
+		- 清空
+			- 清空Eden,Servivor From 中的对象
+		- 互换
+			-
 	- Full GC
 	  id:: 63bd458f-4ddf-4a39-ba1d-4b7d2b7baeae
 - ## 垃圾收集算法
