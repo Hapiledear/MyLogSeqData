@@ -29,7 +29,26 @@
 		- 即使在内存不足的情况下，JVM宁愿抛出 [[OOM 内存溢出]] 也不会回收这种对象
 	- 软引用
 		- `SoftReference<String> softRef=new SoftReference<>(str);`
-		- 内存空间足够则不回收，
+		- 内存空间足够则不回收，不足时(内存将要溢出 or GC空间不足)才回收
+		- 在内存足够的情况下进行缓存，提升速度，内存不足时JVM自动回收
+			- ```java
+			    A a = new A();
+			    SoftReference<A> sr = new SoftReference<A>(a);
+			    a = null;
+			    if(sr!=null){
+			    	a = sr.get();
+			    }else{
+			      a = new A();
+			      sr = new SoftReference<A>(a);
+			    }
+			  ```
 	- 弱引用
+		- `WeakReference<Car> weakCar = new WeakReference,<Car>(Car);`
+		- 每次GC时都会回收
+		- a. ThreadLocalMap防止内存泄漏 
+		  b. 监控对象是否将要被回收
 	- 虚引用
+		- 必须和`ReferenceQueue` 引用队列联合使用
+		- 任何时候都可能被垃圾回收
+		-
 	-
