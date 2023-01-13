@@ -1,3 +1,15 @@
+- [[Java 元空间]] 会产生内存溢出吗？#card
+  card-last-interval:: -1
+  card-repeats:: 1
+  card-ease-factor:: 2.5
+  card-next-schedule:: 2023-01-13T16:00:00.000Z
+  card-last-reviewed:: 2023-01-13T01:33:24.413Z
+  card-last-score:: 1
+	- 元空间的由来。 {{cloze 从java8+开始，用 元空间 替代了 永久代/方法区}}
+	- 元空间的内存 {{cloze 并不使用虚拟机的内存，而是直接使用机器内存}}
+	- 出现OOM的原因 {{cloze 加载到内存中的class文件数量太多or体积太大}}
+	-
+-
 - {{embed ((63bd4534-d85b-468e-8f13-22c240b38693))}}
 - {{embed ((63bd460a-e462-4cab-90c5-e495141648ad))}}
 - ## [[Java 堆内存]] 与[[Java 虚拟机栈]] 的区别
@@ -23,3 +35,4 @@
 	- 使用`jstat`查看GC情况，特别注意Full GC
 	- 使用`visualvm`分析大内存占用，如 短时间内产生的大量小对象，长期的大对象以及长期得不到回收的对象
 -
+- xxx
