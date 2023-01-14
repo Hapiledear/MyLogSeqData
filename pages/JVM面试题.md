@@ -39,7 +39,9 @@
 	- {{cloze  年轻代又分 eden区 s1和s2区 比例为 8:1:1}} 3区
 	- {{cloze 通常 年轻代采用的GC算法是 复制算法，老年代采用的是标记-整理算法 }} GC算法
 - 非堆内存有哪些 #card
-	- {{cloze Di}}
+	- {{cloze DirectByteBuffer 所申请的直接内存}} NIO
+	- {{cloze 方法区的具体实现 元空间}}
+-
 -
 -
 - {{embed ((63bd4534-d85b-468e-8f13-22c240b38693))}}
