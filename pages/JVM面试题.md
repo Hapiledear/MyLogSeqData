@@ -164,6 +164,7 @@
 	- {{cloze -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath}} OOM时自动Dump Dump下的日志路径
 	- {{cloze -xss1m}} 设置单个线程栈大小
 	- {{cloze -xx:maxMetaspaceSize=2g}} 设置元空间的最大值
-- 对象一定都是在堆上分配吗？ #card
+- 对象一定都是在堆上分配吗？ 逃逸分析 #card
 	- 如果对象不会逃逸出方法外部，则会在栈上分配
-	- 如果符合标量替换条件(不逃逸&)，则会将对象分解成若干个方法内从成员变量
+	- 如果符合标量替换条件(不逃逸&不会被本线程外的线程访问)，则会将对象分解成若干个方法内从成员变量
+-
