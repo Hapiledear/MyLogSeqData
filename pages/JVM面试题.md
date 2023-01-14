@@ -210,6 +210,12 @@
 	- 使用 {{cloze `jstat`}} 查看GC情况，特别注意Full GC
 	- 使用 {{cloze `visualvm`}} 分析大内存占用，如 短时间内产生的大量小对象，长期的大对象以及长期得不到回收的对象
 - JVM参数 调优经验 #card
+  card-last-interval:: 4
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-18T11:16:17.548Z
+  card-last-reviewed:: 2023-01-14T11:16:17.548Z
+  card-last-score:: 3
 	- {{cloze -Xms -Xmm }} 初始堆内存，最大堆内存
 	- {{cloze -Xmn -XX: SuvivorRation -XX:NewRation}} 新生代大小 e,s1,s2的比例 新生代:老年代
 	- {{cloze -xx:maxTenuringThreshOld=0}} 进入老年代的门槛年龄
