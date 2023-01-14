@@ -122,6 +122,12 @@
 		- 年龄 = 相同年龄对象大小之和 > S 区的一半
 	- 老年代满了则触发 Full GC
 - JVM中的垃圾回收器有哪些,及其工作原理 #card
+  card-last-interval:: -1
+  card-repeats:: 1
+  card-ease-factor:: 2.5
+  card-next-schedule:: 2023-01-14T16:00:00.000Z
+  card-last-reviewed:: 2023-01-14T10:38:54.132Z
+  card-last-score:: 1
 	- Serial
 		- 串行收集
 	- Parral
