@@ -145,6 +145,12 @@
 	- 初始化
 	- <init>方法
 - 对象如何访问 #card
+  card-last-interval:: 4
+  card-repeats:: 1
+  card-ease-factor:: 2.6
+  card-next-schedule:: 2023-01-18T11:27:43.755Z
+  card-last-reviewed:: 2023-01-14T11:27:43.756Z
+  card-last-score:: 5
 	- 句柄
 		- {{cloze 栈中对象的引用 ->堆中句柄池中的句柄 -> 堆中的实例 和 方法区的类型信息}} 栈-> 堆->堆和方法区
 		- {{cloze 由于GC频繁导致对象的地址变更，这样做可以不用修改引用}} 为什么这么做
