@@ -150,12 +150,24 @@
 	- clone方法
 	- 反序列化
 - 类加载过程 #card
+  card-last-interval:: 4
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-18T11:52:10.723Z
+  card-last-reviewed:: 2023-01-14T11:52:10.723Z
+  card-last-score:: 3
 	- 加载 {{cloze 导入class文件}}
 	- 验证 {{cloze 检测class文件的正确性}}
 	- 准备 {{cloze 给静态变量分配内存空间}}
 	- 解析 {{cloze 将常量池中的符号引用替换成直接引用}}
 	- 初始化 {{cloze 对静态变量和代码块执行初始化工作}}
 - 类加载器分类和双亲委派模型 #card
+  card-last-interval:: 4
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-18T11:51:45.147Z
+  card-last-reviewed:: 2023-01-14T11:51:45.148Z
+  card-last-score:: 3
 	- 启动类加载器
 	- 扩展类加载器
 	- 应用程序类加载器
