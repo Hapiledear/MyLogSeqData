@@ -145,7 +145,13 @@
 	- 初始化
 	- <init>方法
 - 触发类加载的时机 #card
-	-
+	- x
+- 类加载过程 #card
+	- 加载 导入class文件
+	- 验证 检测class文件的正确性
+	- 准备
+	- 解析
+	- 初始化
 - 对象如何访问 #card
   card-last-interval:: 4
   card-repeats:: 1
