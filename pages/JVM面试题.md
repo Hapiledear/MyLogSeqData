@@ -160,6 +160,6 @@
 	- {{cloze -Xmn -XX: SuvivorRation -XX:NewRation}} 新生代大小 e,s1,s2的比例 新生代:老年代
 	- {{cloze -XX:+PrintGC}}打印GC过程信息
 	- {{cloze -XX:+UseG1GC -XX:MaxGCPauseMillis=50 -XX:ParallelGCThreads}} 指定GC算法 最大停顿时间 并行线程数
-	-
+	- {{cloze -XX:+HeapDumpOnOutOfMemoryError }} OOM时自动Dump
 	-
 - xxx
