@@ -41,6 +41,12 @@
 		- {{cloze 基于NIO的 DirectByteBuffer 而产生的堆外内存}} NIO
 		- {{cloze 通过DirectByteBuffer对象的虚引用实现堆外内存的释放}} 如何回收
 - 堆内存的组成 #card
+  card-last-interval:: 4
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-18T11:27:12.411Z
+  card-last-reviewed:: 2023-01-14T11:27:12.411Z
+  card-last-score:: 3
 	- {{cloze 1/3的年轻代 1/2的老年代}} 2代
 	- {{cloze  年轻代又分 eden区 s1和s2区 比例为 8:1:1}} 3区
 	- {{cloze 通常 年轻代采用的GC算法是 复制算法，老年代采用的是标记-整理算法 }} GC算法
