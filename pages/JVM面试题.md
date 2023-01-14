@@ -46,12 +46,12 @@
 	- 开发中会有大量字符串被创建，回收效率低导致永久代内存不足
 	- 放在堆中，可以及时回收内存
 - ## 几种变量存放在哪里？ #card
-  card-last-interval:: -1
-  card-repeats:: 0
-  card-ease-factor:: 2.5
-  card-last-reviewed:: nil
-  card-next-schedule:: nil
-  card-last-score:: nil
+  card-last-interval:: 4
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-last-reviewed:: 2023-01-14T11:08:39.510Z
+  card-next-schedule:: 2023-01-18T11:08:39.509Z
+  card-last-score:: 3
 	- ``` java
 	  	  public class StaticObjTest {
 	  	      static class Test{
@@ -157,6 +157,12 @@
 		- 类及其所有对象都被回收
 		- 常量池中的常量无任何引用
 - ## 如何排查JVM问题 #card
+  card-last-interval:: 4
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-18T11:09:11.483Z
+  card-last-reviewed:: 2023-01-14T11:09:11.483Z
+  card-last-score:: 3
 	- 使用 {{cloze `jmap`}} 查看各区域的使用情况
 	- 使用 {{cloze `jstack`}} 查看线程的运行情况，关注阻塞的线程、是否出现了死锁
 	- 使用 {{cloze `jstat`}} 查看GC情况，特别注意Full GC
