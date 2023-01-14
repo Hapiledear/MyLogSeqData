@@ -164,5 +164,5 @@
 	- {{cloze -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath}} OOM时自动Dump Dump下的日志路径
 	- {{cloze -xss1m}} 设置单个线程栈大小
 	- {{cloze -xx:maxMetaspaceSize=2g}} 设置元空间的最大值
+- 对象一定都是在堆上分配吗？ #card
 	-
-- xxx
