@@ -144,8 +144,11 @@
 		- 两种方式 {{cloze CAS+失败重试,本地线程分配缓冲}}
 	- 初始化
 	- <init>方法
-- 触发类加载的时机 #card
-	- x
+- 触发类加载的时机 4 #card
+	- new关键字
+	- Class or Constructor的newInstance方法
+	- clone方法
+	- 反序列化
 - 类加载过程 #card
 	- 加载 导入class文件
 	- 验证 检测class文件的正确性
