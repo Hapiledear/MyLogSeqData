@@ -158,6 +158,7 @@
 - JVM参数 调优经验 #card
 	- {{cloze -Xms -Xmm }} 初始堆内存，最大堆内存
 	- {{cloze -Xmn -XX: SuvivorRation -XX:NewRation}} 新生代大小 e,s1,s2的比例 新生代:老年代
-	- {{cloze -XX:+Print}
+	- {{cloze -XX:+PrintGC}}打印GC过程信息
+	-
 	-
 - xxx
