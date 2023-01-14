@@ -145,6 +145,12 @@
 	- 初始化
 	- <init>方法
 - 触发类加载的时机 4 #card
+  card-last-interval:: 4
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-18T12:07:54.875Z
+  card-last-reviewed:: 2023-01-14T12:07:54.876Z
+  card-last-score:: 3
 	- new关键字
 	- Class or Constructor的newInstance方法
 	- clone方法
