@@ -43,7 +43,42 @@
 	- {{cloze 方法区的具体实现 元空间}}
 -
 - {{embed ((63bd4534-d85b-468e-8f13-22c240b38693))}}
-- {{embed ((63bd460a-e462-4cab-90c5-e495141648ad))}}
+-
+- ## 几种变量存放在哪里？ #card
+	- ``` java
+	  	  public class StaticObjTest {
+	  	      static class Test{
+	  	            // 静态变量&类变量
+	  	            // 一个java.lang.Class类型的对象实例引用了此变量
+	  	            static ObjectHolder staticObj = new ObjectHolder();
+	  	            // 实例变量&成员变量
+	  	            ObjectHolder instanceObj = new ObjectHolder();
+	  	            void foo() {
+	  	                // 局部变量
+	  	                ObjectHolder localObj = new ObjectHolder()();
+	  	                System.out.println("done");
+	  	                }
+	  	          }
+	  	          private static class ObjectHolder{
+	  	          }
+	  	          public static void main(String[] args) {
+	  	            Test test = new StaticObjTest.Test();
+	  	            test.foo();
+	  	      	}
+	  	  }
+	  	  
+	  ```
+	- 静态变量&类变量 /close
+		- `static`所修饰的，定义在方法外的变量
+		- 1.8-随着Test类信息存放于 [[Java 方法区]] ，1.8+存放于[[Java 堆内存]]中
+	- 实例变量&成员变量
+		- 没有`static`修饰的，定义在类中
+		- 在[[Java 对象创建过程]] 时，从 运行时常量池 Runtime Constant pool #常量池 取出直接引用或值，随着Test对象实例存放于[[Java 堆内存]]中
+	- 局部变量
+		- 定义在类的方法中
+		- 方法被调用时放入[[Java 虚拟机栈]]的栈帧中，方法结束后从栈中弹出
+	- 变量的引用对应的对象实体
+		- 存放在[[Java 堆内存]]
 -
 -
 - ## [[Java 堆内存]] 与[[Java 虚拟机栈]] 的区别
