@@ -45,6 +45,12 @@
 - {{embed ((63bd4534-d85b-468e-8f13-22c240b38693))}}
 -
 - ## 几种变量存放在哪里？ #card
+  card-last-interval:: -1
+  card-repeats:: 0
+  card-ease-factor:: 2.5
+  card-last-reviewed:: nil
+  card-next-schedule:: nil
+  card-last-score:: nil
 	- ``` java
 	  	  public class StaticObjTest {
 	  	      static class Test{
@@ -68,9 +74,9 @@
 	  	  }
 	  	  
 	  ```
-	- 静态变量&类变量 /close
+	- 静态变量&类变量
 		- `static`所修饰的，定义在方法外的变量
-		- 1.8-随着Test类信息存放于 [[Java 方法区]] ，1.8+存放于[[Java 堆内存]]中
+		- {{cloze }}
 	- 实例变量&成员变量
 		- 没有`static`修饰的，定义在类中
 		- 在[[Java 对象创建过程]] 时，从 运行时常量池 Runtime Constant pool #常量池 取出直接引用或值，随着Test对象实例存放于[[Java 堆内存]]中
