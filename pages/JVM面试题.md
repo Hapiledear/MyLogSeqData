@@ -161,5 +161,6 @@
 	- {{cloze -XX:+PrintGC -xloggc:gc.log}}打印GC过程信息 指定GC日志
 	- {{cloze -XX:+UseG1GC -XX:MaxGCPauseMillis=50 -XX:ParallelGCThreads}} 指定GC算法 最大停顿时间 并行线程数
 	- {{cloze -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath}} OOM时自动Dump Dump下的日志路径
-	-
+	- {{cloze -xss1m}} 设置单个线程栈大小
+	- {{cloze -xx:maxMetaspaceSize=2g}}
 - xxx
