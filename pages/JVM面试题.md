@@ -32,8 +32,8 @@
 		- {{cloze 存储被虚拟机加载的类信息、常量、静态变量，即时编译后的代码缓存}} 4个部分
 		- {{cloze 1.8-叫永久代，1.8+改名为元空间，使用机器内存}}
 	- 直接内存
-		- {{cloze 基于NIO的 DirectByteBuffer 而产生的堆外内存}}
-		-
+		- {{cloze 基于NIO的 DirectByteBuffer 而产生的堆外内存}} NIO
+		- {{cloze 通过DirectByteBuffer对象的虚引用实现堆外内存的释放}} 如何回收
 	-
 -
 -
