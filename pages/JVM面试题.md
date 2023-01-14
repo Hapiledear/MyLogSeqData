@@ -157,7 +157,7 @@
 	- 使用 {{cloze `visualvm`}} 分析大内存占用，如 短时间内产生的大量小对象，长期的大对象以及长期得不到回收的对象
 - JVM参数 调优经验 #card
 	- {{cloze -Xms -Xmm }} 初始堆内存，最大堆内存
-	- {{cloze -Xmn}} 新生代大小 e,s1,s2的比例
-	- {{cloze -XX: SuvvivorRation}}
+	- {{cloze -Xmn -XX: SuvivorRation -XX:NewRation}} 新生代大小 e,s1,s2的比例 新生代:老年代
+	- {{cloze -XX:+Print}
 	-
 - xxx
