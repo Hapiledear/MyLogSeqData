@@ -113,6 +113,12 @@
 		- 堆对于整个应用程序都是共享的、可见的
 		- 栈是线程私有的
 - 对象创建过程 #card
+  card-last-interval:: 4
+  card-repeats:: 1
+  card-ease-factor:: 2.6
+  card-next-schedule:: 2023-01-18T11:11:55.813Z
+  card-last-reviewed:: 2023-01-14T11:11:55.813Z
+  card-last-score:: 5
 	- 类加载
 	- 分配内存
 		- 两种方式 {{cloze 指针碰撞，空闲列表}}
