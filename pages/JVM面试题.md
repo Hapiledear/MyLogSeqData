@@ -144,7 +144,8 @@
 		- 两种方式 {{cloze CAS+失败重试,本地线程分配缓冲}}
 	- 初始化
 	- <init>方法
--
+- 触发类加载的时机 #card
+	-
 - 对象如何访问 #card
   card-last-interval:: 4
   card-repeats:: 1
