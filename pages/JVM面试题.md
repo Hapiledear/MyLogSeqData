@@ -158,8 +158,8 @@
 - JVM参数 调优经验 #card
 	- {{cloze -Xms -Xmm }} 初始堆内存，最大堆内存
 	- {{cloze -Xmn -XX: SuvivorRation -XX:NewRation}} 新生代大小 e,s1,s2的比例 新生代:老年代
-	- {{cloze -XX:+PrintGC}}打印GC过程信息
+	- {{cloze -XX:+PrintGC -xloggc:gc.log}}打印GC过程信息 指定GC日志
 	- {{cloze -XX:+UseG1GC -XX:MaxGCPauseMillis=50 -XX:ParallelGCThreads}} 指定GC算法 最大停顿时间 并行线程数
-	- {{cloze -XX:+HeapDumpOnOutOfMemoryError }} OOM时自动Dump
+	- {{cloze -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath}} OOM时自动Dump Dump下的日志路径
 	-
 - xxx
