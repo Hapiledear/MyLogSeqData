@@ -9,7 +9,6 @@
 - [[Java 直接内存]]
 - ## 几种变量存放在哪里？
   id:: 63bd460a-e462-4cab-90c5-e495141648ad
-  collapsed:: true
 	- ```java
 	  public class StaticObjTest {
 	      static class Test{
