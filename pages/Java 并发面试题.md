@@ -125,7 +125,8 @@
 	- 模板接口
 		- 独占方式获取和释放资源 {{cloze tryAcquire/tryRelease}}
 		- 共享方式 {{cloze tryAquireShared/treReleaseShared}}
-- ConcurrentHashMap的原理
+- ConcurrentHashMap的原理 #card #Java并发
+	-
 - synchronize与ConcurrentHashMap的区别
 - CopyOnWriteArrayList是什么，实践场景
 - 阻塞队列BlockingQueue的实现原理
