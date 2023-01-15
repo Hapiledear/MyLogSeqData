@@ -61,8 +61,9 @@
 	- 中断机制
 		- {{cloze lock可以在等待锁的时候响应中断}}
 	- 锁的使用范围
-		- {{cloze Lock可以在不同范围、不同的顺序获取和释放锁}} {{cloze synch只能在}}
-- 可重入锁的实现原理
+		- {{cloze Lock可以在不同范围、不同的顺序获取和释放锁}} {{cloze synch只能在进临界区获取和释放}}
+- 可重入锁的实现原理  #card #Java并发
+	-
 - AQS是什么，抢锁过程
 - ConcurrentHashMap的原理
 - synchronize与ConcurrentHashMap的区别
