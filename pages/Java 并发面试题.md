@@ -138,8 +138,9 @@
 - CopyOnWriteArrayList是什么，实践场景 #card #Java并发
 	- 字如其名 {{cloze 它的写入操作将copy出一份副本 ，再在这个副本上进行更改}}
 	- 缺点 {{cloze copy数字代价高昂，消耗内存}}
+	- 适用场景 {{cloze 读多写少}}
+- 阻塞队列BlockingQueue的实现原理 #card #Java并发
 	-
-- 阻塞队列BlockingQueue的实现原理
 - 什么是原子操作
 - java中有哪些原子类
 - atomic的原理
