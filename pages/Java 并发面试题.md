@@ -148,8 +148,8 @@
 	- 定义 {{cloze 一连串操作，要么都执行完，要么都不执行}}
 	- 如何保证原子性 {{cloze CAS指令}} {{cloze 并发包下的原子类}}
 - java中有哪些原子类
-	- 基本类型 {{cloze automicBoolean}} {{cloze automicInteger}} {{cloze }}
-	- 数组
+	- 基本类型 {{cloze AtomicBoolean}} {{cloze AtomicInteger}} {{cloze AtomicReference}}
+	- 数组 {{cloze AtomicIntegerArray}} {{cloze AtomicLongArray}} {{cloze AtomicReferenceArray}}
 	- 属性
 	- 带版本号的
 - atomic的原理
