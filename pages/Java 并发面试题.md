@@ -59,7 +59,8 @@
 	- 公平性
 		- {{cloze Lock有公平和非公平两种}} {{cloze synch是非公平的}}
 	- 等待通知机制
-		- {{cloze }}
+		- {{cloze synch通过wait/notify 实现}} {{cloze Lock通过 实现}}
+	-
 - 可重入锁的实现原理
 - AQS是什么，抢锁过程
 - ConcurrentHashMap的原理
