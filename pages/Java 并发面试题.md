@@ -28,12 +28,12 @@
 		- 竞争加剧 {{cloze 膨胀为轻量级锁}}
 	- 轻量级锁
 		- 栈和锁对象的结构 {{cloze 栈中增加 LockRecord 指向锁对象}} {{cloze 对象头的一部分保存 LockRecord指针}}
-		- CAS 自适应自旋 {{cloze 根据上次获得锁的时间与结果自动调整 次数和等待时长}}
+		- CAS 自适应自旋 {{cloze 根据上次获得锁的时间与结果自动调整 次数和等待时长}} {{cloze 进行空转，并未放弃时间片}}
 	- 重量级锁 监视器(Monitor)机制
 		- 同步功能
 			- {{cloze 抢锁线程->竞争队列->等待队列->队头线程参与竞争->持有锁->被阻塞，进入waitSet->被唤醒，进入等待队列}}
 		- 协作机制
-			- 持有
+			- 持有许可的线程可以 {{cloze 主动放弃许可进入阻塞}} {{cloze 发送信号，唤起阻塞线程}}
 - synchronized和volatie的区别  #card #Java并发
 	- 修饰的地方 {{cloze volatile是变量修饰,synchronized可以修饰类、方法、变量}}
 	- 解决的问题 {{cloze volatile 保证的是有序性和可进行，不能保证原子性，synch 保证的是可见性(Happends-before)和原子性}}
