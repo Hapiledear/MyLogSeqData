@@ -153,7 +153,8 @@
 	- 属性 {{cloze AtomicxxxFiledUpdater}}
 	- 带版本号的 {{cloze AtomicMarkableReference}} {{cloze AtomicStampedReferece}}
 - atomic的原理  #card #Java并发
-	- {{cloze CAS+volatile}}
+	- {{cloze CAS+volatile方式保证原子性}} 避免synch的高开销
+-
 - final类 不可变对象 描述
 - ThreadLocal原理
 - 线程池调度流程&各项参数
