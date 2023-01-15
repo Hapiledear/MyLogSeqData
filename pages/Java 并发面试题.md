@@ -4,8 +4,10 @@
 		- {{cloze CAS , synchroize，显示锁}}
 	- 有序性
 		- {{cloze }}
-		- {{cloze }}
+		- {{cloze CPU的内存屏障 As-if-Serial规则，JMM的内存屏障、Happens-Before规则}}
 	- 可见性
+		- {{cloze CUP 的物理缓存结构}}
+		-
 - volatile关键字的原理及其实战 #card #Java并发
 - synchronized的原理 #card #Java并发
 - synchronized的锁升级机制 #card #Java并发
