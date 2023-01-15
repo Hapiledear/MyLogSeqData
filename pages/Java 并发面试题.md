@@ -1,4 +1,6 @@
 - volatile关键字的原理及其实战 #card #Java并发
+- synchronized的原理 #card #Java并发
+- synchronized的锁升级机制 #card #Java并发
 - synchronized和volatie的区别  #card #Java并发
 - 什么是CAS #card
 - CAS会产生什么问题 #card
@@ -6,4 +8,5 @@
 - 可重入锁的实现原理
 - AQS是什么，抢锁过程
 - ConcurrentHashMap的原理
+- synchronize与ConcurrentHashMap的区别
 -
