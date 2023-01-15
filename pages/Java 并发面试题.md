@@ -84,6 +84,12 @@
 	- 只能保证一个共享变量的原子操作
 		- {{cloze 将两个变量放入一个对象中}} {{cloze 上锁}}
 - Lock与synchronize的区别 #card #Java并发
+  card-last-interval:: 4
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-19T04:54:58.146Z
+  card-last-reviewed:: 2023-01-15T04:54:58.147Z
+  card-last-score:: 3
 	- 实现方式
 		- {{cloze Lock基于Java类实现，易于扩展，功能丰富}} {{cloze synch基于对象头实现，无法自定义}}
 	- 公平性
