@@ -42,8 +42,10 @@
 	- 实际开发中 {{cloze synch比volatile用得多一点，volatile需要搭配automit类使用}}
 - 什么是CAS #card
 	- compare and swap 比较并交换
-	- 实现,是否加锁 {{cloze 内存位置v 预期原值A和新值B ，如果内存值=A 那么将内存值改为B}} {{cloze 不加锁，但会自旋一点次数}}
+	- 实现,是否加锁 {{cloze 内存位置v 预期原值A和新值B ，如果内存值=A 那么将内存值改为B}} {{cloze 不加锁，但会自旋一定次数}}
+	- 实现 {{cloze atomic下的类大多是使用CAS操作来实现的}}
 - CAS会产生什么问题 #card
+	- ABA问题 {{cloze 用链表的例子}}
 - Lock与synchronize的区别
 - 可重入锁的实现原理
 - AQS是什么，抢锁过程
