@@ -7,7 +7,7 @@
 		- {{cloze CPU的内存屏障 As-if-Serial规则，JMM的内存屏障、Happens-Before规则}}
 	- 可见性
 		- {{cloze CUP 的物理缓存结构,JMM内存模型也有缓存}}
-		-
+		- {{cloze CUP层级的MESI协议，JMM的八种操作规范}}
 - volatile关键字的原理及其实战 #card #Java并发
 - synchronized的原理 #card #Java并发
 - synchronized的锁升级机制 #card #Java并发
