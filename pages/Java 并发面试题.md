@@ -68,7 +68,8 @@
 		- {{cloze 获取n次锁，需要释放n次才算完全释放成功}}
 		- 实现原理 {{cloze AQS头节点中的threadId ,Lock类自身的次数记录}}
 	- 公平性
-		- 非公平 {{cloze }}
+		- 非公平 {{cloze AQS 任何节点都可以抢锁}}
+		- 公平 {{cloze AQS只允许头节点抢锁}}
 - AQS是什么，抢锁过程
 - ConcurrentHashMap的原理
 - synchronize与ConcurrentHashMap的区别
