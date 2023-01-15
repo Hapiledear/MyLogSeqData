@@ -64,6 +64,9 @@
 		- {{cloze Lock可以在不同范围、不同的顺序获取和释放锁}} {{cloze synch只能在进临界区获取和释放}}
 - 可重入锁的实现原理  #card #Java并发
 	- 重入性
+		- {{cloze 已获得锁的线程可以再次获取}}
+		- {{cloze 获取n次锁，需要释放n次才算完全释放成功}}
+		- 实现 {{cloze }}
 	- 公平性
 - AQS是什么，抢锁过程
 - ConcurrentHashMap的原理
