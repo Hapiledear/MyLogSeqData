@@ -21,8 +21,7 @@
 	- 解决的问题 {{cloze volatile 保证的是有序性和可进行，不能保证原子性，synch 保证的是可见性和原子性}}
 	- 线程是否阻塞 {{cloze volatie不会造成阻塞 synch 可能造成阻塞}}
 	- 是否被编译优化 {{cloze volatile不会被编译优化，synch可以被优化}}
-	-
-	-
+	- 实际开发中 {{cloze synch比volatile用得多一点，volatile需要搭配automit类使用}}
 - 什么是CAS #card
 - CAS会产生什么问题 #card
 - Lock与synchronize的区别
