@@ -3,7 +3,7 @@
 		- {{cloze }}
 		- {{cloze CAS , synchroize，显示锁}}
 	- 有序性
-		- {{cloze }}
+		- {{cloze CUP指令重排序，JVM编译重排序}}
 		- {{cloze CPU的内存屏障 As-if-Serial规则，JMM的内存屏障、Happens-Before规则}}
 	- 可见性
 		- {{cloze CUP 的物理缓存结构,JMM内存模型也有缓存}}
