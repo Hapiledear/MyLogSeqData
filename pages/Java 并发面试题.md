@@ -19,6 +19,7 @@
 	- 遵循happends-before规则，写在读之前，保证可见性
 	- 上锁过程 在对象头中，记录锁的类型 和 持有锁的指针
 - synchronized的锁升级机制 #card #Java并发
+	-
 - synchronized和volatie的区别  #card #Java并发
 	- 修饰的地方 {{cloze volatile是变量修饰,synchronized可以修饰类、方法、变量}}
 	- 解决的问题 {{cloze volatile 保证的是有序性和可进行，不能保证原子性，synch 保证的是可见性(Happends-before)和原子性}}
