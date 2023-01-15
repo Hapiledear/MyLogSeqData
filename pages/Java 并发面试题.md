@@ -123,7 +123,8 @@
 		- 共享
 			- 多个线程可同时执行
 	- 模板接口
-		- 独占方式获取和释放资源 {{cloze tryAcquire/}}
+		- 独占方式获取和释放资源 {{cloze tryAcquire/tryRelease}}
+		- 共享方式 {{cloze tryAquireShared/treReleaseShared}}
 - ConcurrentHashMap的原理
 - synchronize与ConcurrentHashMap的区别
 - CopyOnWriteArrayList是什么，实践场景
