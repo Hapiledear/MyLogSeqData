@@ -1,6 +1,6 @@
 - 并发中的三大问题是如何产生的，都是如何解决的? #card #Java并发 /cloze
 	- 原子性
-		- {{cloze }}
+		- {{cloze `i++` 一行代码被编译为机器指令时可能是}}
 		- {{cloze CAS , synchroize，显示锁}}
 	- 有序性
 		- {{cloze CUP指令重排序，JVM编译重排序}}
