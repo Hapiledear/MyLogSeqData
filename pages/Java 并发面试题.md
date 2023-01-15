@@ -17,7 +17,8 @@
 - synchronized的原理 #card #Java并发
 - synchronized的锁升级机制 #card #Java并发
 - synchronized和volatie的区别  #card #Java并发
-	-
+	- 修饰的地方 {{cloze volatile是变量修饰,synchronized可以修饰类、方法、变量}}
+	- 解决的问题 {{cloze }}
 - 什么是CAS #card
 - CAS会产生什么问题 #card
 - Lock与synchronize的区别
