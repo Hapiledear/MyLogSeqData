@@ -12,7 +12,8 @@
 	- 解决了两大问题 {{cloze 可见性和禁止指令重排}} 通常搭配atomic类来实现 {{cloze 原子性}}
 	- 实践 单例模式中 {{cloze volatile修饰instance. 保证其写操作发生在读之前}}
 - volatile能将非原子操作变成原子操作吗 #card #Java并发
-	- 在32位的机器上，long和double分为了两部分 高位和低位。
+	- 在32位的机器上，long和double分为了两部分 高位和低位。因此建议用volatile修饰
+	- 但更建议JVM实现时将这种操作视为原子性的
 - synchronized的原理 #card #Java并发
 - synchronized的锁升级机制 #card #Java并发
 - synchronized和volatie的区别  #card #Java并发
