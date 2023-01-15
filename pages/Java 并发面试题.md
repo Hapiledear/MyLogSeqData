@@ -136,7 +136,7 @@
 		- {{cloze synchMap 一次锁住一整张表}}
 		- {{cloze ConcurMap一次只锁一个分段}}
 - CopyOnWriteArrayList是什么，实践场景 #card #Java并发
-	-
+	- 字如其名 {{cloze 它的写入操作将copy出一份副本  }}
 - 阻塞队列BlockingQueue的实现原理
 - 什么是原子操作
 - java中有哪些原子类
