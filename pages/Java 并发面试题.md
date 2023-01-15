@@ -41,6 +41,7 @@
 	- 是否被编译优化 {{cloze volatile不会被编译优化，synch可以被优化}}
 	- 实际开发中 {{cloze synch比volatile用得多一点，volatile需要搭配automit类使用}}
 - 什么是CAS #card
+	- compare and swap 比较并交换
 	-
 - CAS会产生什么问题 #card
 - Lock与synchronize的区别
