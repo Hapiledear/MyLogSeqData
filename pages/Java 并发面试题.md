@@ -20,7 +20,8 @@
 	- 上锁过程 {{cloze 在对象头中，记录锁的类型 和 持有锁的指针}}
 	- 如果没有获取到锁，则会 {{cloze 让线程自旋等待，并不放弃CPU的执行时间}}
 - synchronized的锁升级机制 #card #Java并发
-	- 锁消除
+	- 锁消除 无锁
+		- {{cloze 在编译时}}
 - synchronized和volatie的区别  #card #Java并发
 	- 修饰的地方 {{cloze volatile是变量修饰,synchronized可以修饰类、方法、变量}}
 	- 解决的问题 {{cloze volatile 保证的是有序性和可进行，不能保证原子性，synch 保证的是可见性(Happends-before)和原子性}}
