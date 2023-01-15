@@ -1,6 +1,6 @@
 - 并发中的三大问题是如何产生的，都是如何解决的? #card #Java并发 /cloze
 	- 原子性
-		- {{cloze `i++` 一行代码被编译为机器指令时可能是}}
+		- {{cloze `i++` 一行代码被编译为机器指令时可能是多步操作}}
 		- {{cloze CAS , synchroize，显示锁}}
 	- 有序性
 		- {{cloze CUP指令重排序，JVM编译重排序}}
@@ -9,6 +9,7 @@
 		- {{cloze CUP 的物理缓存结构,JMM内存模型也有缓存}}
 		- {{cloze CUP层级的MESI协议，JMM的八种操作规范}}
 - volatile关键字的原理及其实战 #card #Java并发
+	- 用于保证可见性及有序性()
 - synchronized的原理 #card #Java并发
 - synchronized的锁升级机制 #card #Java并发
 - synchronized和volatie的区别  #card #Java并发
