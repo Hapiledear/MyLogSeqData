@@ -25,7 +25,7 @@
 - java中有哪些原子类
 - atomic的原理
 - final类 不可变对象 描述
-- final修饰的字段
+- final修饰的字段 多线程下的读写排序
 - ThreadLocal原理
 - 线程池调度流程&各项参数
 - 线程池调优策略
