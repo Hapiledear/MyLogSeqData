@@ -1,5 +1,7 @@
-- 并发中的三大问题，都是如何解决的? #card #Java并发 {{}}
-	-
+- 并发中的三大问题，都是如何解决的? #card #Java并发 /cloze
+	- 原子性
+	- 有序性
+	- 可见性
 - volatile关键字的原理及其实战 #card #Java并发
 - synchronized的原理 #card #Java并发
 - synchronized的锁升级机制 #card #Java并发
