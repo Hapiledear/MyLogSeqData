@@ -147,12 +147,13 @@
 - 什么是原子操作 #card #Java并发
 	- 定义 {{cloze 一连串操作，要么都执行完，要么都不执行}}
 	- 如何保证原子性 {{cloze CAS指令}} {{cloze 并发包下的原子类}}
-- java中有哪些原子类
+- java中有哪些原子类  #card #Java并发
 	- 基本类型 {{cloze AtomicBoolean}} {{cloze AtomicInteger}} {{cloze AtomicReference}}
 	- 数组 {{cloze AtomicXXXArray}}
 	- 属性 {{cloze AtomicxxxFiledUpdater}}
 	- 带版本号的 {{cloze AtomicMarkableReference}} {{cloze AtomicStampedReferece}}
-- atomic的原理
+- atomic的原理  #card #Java并发
+	- {{cloze CAS+volatile}}
 - final类 不可变对象 描述
 - ThreadLocal原理
 - 线程池调度流程&各项参数
