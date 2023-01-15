@@ -11,4 +11,6 @@
 - synchronize与ConcurrentHashMap的区别
 - CopyOnWriteArrayList是什么，实践场景
 - 阻塞队列BlockingQueue的实现原理
--
+- 什么是原子操作
+- java中有哪些原子类
+- atomic的原理
