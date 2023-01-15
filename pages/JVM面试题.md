@@ -1,4 +1,4 @@
-- [[Java 元空间]] 会产生内存溢出吗？#card
+- [[Java 元空间]] 会产生内存溢出吗？#card #JVM
   card-last-interval:: -1
   card-repeats:: 0
   card-ease-factor:: 2.5
