@@ -70,7 +70,8 @@
 	- 公平性
 		- 非公平 {{cloze AQS 任何节点都可以抢锁}}
 		- 公平 {{cloze AQS只允许头节点抢锁}}
-- AQS是什么，抢锁过程
+- AQS是什么，抢锁过程 #card #Java并发
+	-
 - ConcurrentHashMap的原理
 - synchronize与ConcurrentHashMap的区别
 - CopyOnWriteArrayList是什么，实践场景
