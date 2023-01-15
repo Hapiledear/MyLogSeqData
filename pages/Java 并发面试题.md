@@ -146,8 +146,9 @@
 	- 阻塞队列的经典应用场景是 {{cloze socket客户端的数据读取和解析}}
 - 什么是原子操作 #card #Java并发
 	- 定义 {{cloze 一连串操作，要么都执行完，要么都不执行}}
-	-
+	- 如何保证原子性 {{cloze CAS指令}} {{cloze 并发包下的原子类}}
 - java中有哪些原子类
+	-
 - atomic的原理
 - final类 不可变对象 描述
 - ThreadLocal原理
