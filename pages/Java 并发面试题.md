@@ -9,8 +9,8 @@
 		- {{cloze CUP 的物理缓存结构,JMM内存模型也有缓存}}
 		- {{cloze CUP层级的MESI协议，JMM的八种操作规范}}
 - volatile关键字的原理及其实战 #card #Java并发
-	- 用于保证可见性及有序性(禁止指令重排)，可是不能保证原子性。需搭配atomic类
-	- 解决了两大问题 {{cloze 可见性}}
+	- 解决了两大问题 {{cloze 可见性和禁止指令重排}} 通常搭配atomic类来实现 {{cloze 原子性}}
+	-
 - synchronized的原理 #card #Java并发
 - synchronized的锁升级机制 #card #Java并发
 - synchronized和volatie的区别  #card #Java并发
