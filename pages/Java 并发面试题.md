@@ -47,6 +47,12 @@
 		- 协作机制
 			- 持有许可的线程可以 {{cloze 主动放弃许可进入阻塞}} {{cloze 发送信号，唤起阻塞线程}}
 - synchronized和volatie的区别  #card #Java并发
+  card-last-interval:: 4
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-19T04:52:19.690Z
+  card-last-reviewed:: 2023-01-15T04:52:19.690Z
+  card-last-score:: 3
 	- 修饰的地方 {{cloze volatile是变量修饰,synchronized可以修饰类、方法、变量}}
 	- 解决的问题 {{cloze volatile 保证的是有序性和可进行，不能保证原子性，synch 保证的是可见性(Happends-before)和原子性}}
 	- 线程是否阻塞 {{cloze volatie不会造成阻塞 synch 可能造成阻塞}}
