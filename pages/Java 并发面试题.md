@@ -17,7 +17,7 @@
 - synchronized的原理 #card #Java并发
 	- 通过`monitorEnter` 和`monitorExit`指令，进行加锁和释放锁。是可重入的
 	- 遵循happends-before规则，写在读之前，保证可见性
-	- 上锁过程
+	- 上锁过程 在对象头中，记录锁的类型 和 持有锁的指针
 - synchronized的锁升级机制 #card #Java并发
 - synchronized和volatie的区别  #card #Java并发
 	- 修饰的地方 {{cloze volatile是变量修饰,synchronized可以修饰类、方法、变量}}
