@@ -9,4 +9,6 @@
 - AQS是什么，抢锁过程
 - ConcurrentHashMap的原理
 - synchronize与ConcurrentHashMap的区别
-- 阻塞队列BlockingQueue
+- CopyOnWriteArrayList是什么，实践场景
+- 阻塞队列BlockingQueue的实现原理
+-
