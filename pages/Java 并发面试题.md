@@ -121,7 +121,9 @@
 			- 公平锁 {{cloze 严格按照队列顺序获取锁}}
 			- 非公平锁 {{cloze 无视队列直接抢锁}}
 		- 共享
-			-
+			- 多个线程可同时执行
+	- 模板接口
+		- 独占方式获取和释放资源 {{cloze tryAcquire/}}
 - ConcurrentHashMap的原理
 - synchronize与ConcurrentHashMap的区别
 - CopyOnWriteArrayList是什么，实践场景
