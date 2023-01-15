@@ -66,8 +66,9 @@
 	- 重入性
 		- {{cloze 已获得锁的线程可以再次获取}}
 		- {{cloze 获取n次锁，需要释放n次才算完全释放成功}}
-		- 实现 {{cloze }}
+		- 实现原理 {{cloze AQS头节点中的threadId ,Lock类自身的次数记录}}
 	- 公平性
+		- 非公平 {{cloze }}
 - AQS是什么，抢锁过程
 - ConcurrentHashMap的原理
 - synchronize与ConcurrentHashMap的区别
