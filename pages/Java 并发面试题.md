@@ -130,7 +130,7 @@
 	- 1.8+ {{cloze 弃用了分段，而是改用了CAS操作}}
 	- 与HashMap的相同点
 		- 存储结构 {{cloze 数组+链表->红黑树}}
-		-
+		- 扩容 {{cloze 默认大小为 16 加载因子0.}}
 - synchronize与ConcurrentHashMap的区别
 - CopyOnWriteArrayList是什么，实践场景
 - 阻塞队列BlockingQueue的实现原理
