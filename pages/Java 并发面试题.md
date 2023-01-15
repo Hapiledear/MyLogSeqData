@@ -18,6 +18,7 @@
 	- 通过`monitorEnter` 和`monitorExit`指令，进行加锁和释放锁。是可重入的
 	- 遵循happends-before规则，写在读之前，保证可见性
 	- 上锁过程 在对象头中，记录锁的类型 和 持有锁的指针
+	- 如果没有获取到锁，则会让线程自旋等待，并不放弃CPU的执行时间
 - synchronized的锁升级机制 #card #Java并发
 	-
 - synchronized和volatie的区别  #card #Java并发
