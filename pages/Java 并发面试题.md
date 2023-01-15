@@ -164,6 +164,8 @@
 - ThreadLocal原理 #card #Java并发
 	- 每一个thread持有一个threadLocalMap {{cloze key是被修饰的threadLocal对象}} {{cloze value是对象值}}
 	- 使用场景
-		- {{cloze }}
-- 线程池调度流程&各项参数
+		- {{cloze 线程隔离}}
+		- {{cloze 跨函数传递数据}}
+- 线程池调度流程&各项参数 #card #Java并发
+	-
 - 线程池调优策略
