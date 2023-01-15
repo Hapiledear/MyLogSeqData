@@ -40,15 +40,16 @@
 	- 线程是否阻塞 {{cloze volatie不会造成阻塞 synch 可能造成阻塞}}
 	- 是否被编译优化 {{cloze volatile不会被编译优化，synch可以被优化}}
 	- 实际开发中 {{cloze synch比volatile用得多一点，volatile需要搭配automit类使用}}
-- 什么是CAS #card
+- 什么是CAS #card #Java并发
 	- compare and swap 比较并交换
 	- 实现,是否加锁 {{cloze 内存位置v 预期原值A和新值B ，如果内存值=A 那么将内存值改为B}} {{cloze 不加锁，但会自旋一定次数}}
 	- 实现 {{cloze atomic下的类大多是使用CAS操作来实现的}}
-- CAS会产生什么问题 #card
+- CAS会产生什么问题 #card #Java并发
 	- ABA问题 {{cloze 用链表的例子更直观}}
 	- 开销大 {{cloze 竞争激烈的情况下，自旋概率大，从而浪费更多CPU资源}}
-	- 只能保证一个共享变量的原子操作 {{cloze }}
-- Lock与synchronize的区别
+	- 只能保证一个共享变量的原子操作 {{cloze 要想操作多个变量，还是需要锁机制}}
+- Lock与synchronize的区别 #card #Java并发
+	-
 - 可重入锁的实现原理
 - AQS是什么，抢锁过程
 - ConcurrentHashMap的原理
