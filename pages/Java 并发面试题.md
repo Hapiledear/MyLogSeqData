@@ -149,9 +149,9 @@
 	- 如何保证原子性 {{cloze CAS指令}} {{cloze 并发包下的原子类}}
 - java中有哪些原子类
 	- 基本类型 {{cloze AtomicBoolean}} {{cloze AtomicInteger}} {{cloze AtomicReference}}
-	- 数组 {{cloze AtomicIntegerArray}} {{cloze AtomicLongArray}} {{cloze AtomicReferenceArray}}
-	- 属性
-	- 带版本号的
+	- 数组 {{cloze AtomicXXXArray}}
+	- 属性 {{cloze AtomicxxxFiledUpdater}}
+	- 带版本号的 {{cloze AtomicMarkableReference}} {{cloze AtomicStampedReferece}}
 - atomic的原理
 - final类 不可变对象 描述
 - ThreadLocal原理
