@@ -25,7 +25,8 @@
 	- 偏向锁
 		- 2个条件 {{cloze 无竞争情况下}} {{cloze 对象头的threadId空间可用}}
 		- 如何设置 {{cloze CAS操作 threadId=this}}
-		-
+		- 竞争加剧 {{cloze 膨胀为轻量级锁}}
+	-
 - synchronized和volatie的区别  #card #Java并发
 	- 修饰的地方 {{cloze volatile是变量修饰,synchronized可以修饰类、方法、变量}}
 	- 解决的问题 {{cloze volatile 保证的是有序性和可进行，不能保证原子性，synch 保证的是可见性(Happends-before)和原子性}}
