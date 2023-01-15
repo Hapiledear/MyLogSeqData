@@ -24,3 +24,5 @@
 - 什么是原子操作
 - java中有哪些原子类
 - atomic的原理
+- ThreadLocal原理
+- 线程池
