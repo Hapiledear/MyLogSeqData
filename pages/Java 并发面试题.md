@@ -59,8 +59,9 @@
 	- 公平性
 		- {{cloze Lock有公平和非公平两种}} {{cloze synch是非公平的}}
 	- 中断机制
-		- {{cloze lock可以在等待一段时间后，}}
-	-
+		- {{cloze lock可以在等待锁的时候响应中断}}
+	- 锁的使用范围
+		- {{cloze }}
 - 可重入锁的实现原理
 - AQS是什么，抢锁过程
 - ConcurrentHashMap的原理
