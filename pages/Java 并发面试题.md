@@ -1,1 +1,2 @@
-- volatile关键字的原理及其实战
+- volatile关键字的原理及其实战 #card #Java并发
+- synchronized和volatie的区别
