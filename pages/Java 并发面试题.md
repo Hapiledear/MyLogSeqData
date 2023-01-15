@@ -14,7 +14,7 @@
 - volatile能将非原子操作变成原子操作吗 #card #Java并发
 	- 在32位的机器上，long和double分为了两部分 高位和低位。因此建议用volatile修饰
 	- 但更建议JVM实现时将这种操作视为原子性的
-- synchronized的原理 #card #Java并发
+- synchronized (简称 同步)的原理 #card #Java并发
 	- 通过 {{cloze `monitorEnter` 和`monitorExit`}} 指令，进行加锁和释放锁。是可重入的
 	- {{cloze 遵循happends-before规则，写在读之前}} ，保证可见性
 	- 上锁过程 {{cloze 在对象头中，记录锁的类型 和 指向栈中的锁记录指针}}
@@ -54,7 +54,8 @@
 	- 只能保证一个共享变量的原子操作
 		- {{cloze 将两个变量放入一个对象中}} {{cloze 上锁}}
 - Lock与synchronize的区别 #card #Java并发
-	-
+	- 实现方式
+		- {{cloze }}
 - 可重入锁的实现原理
 - AQS是什么，抢锁过程
 - ConcurrentHashMap的原理
