@@ -132,7 +132,9 @@
 		- 存储结构 {{cloze 数组+链表->红黑树}}
 		- 扩容 {{cloze 默认大小为 16 加载因子0.75 阈值=大小*因子}}
 - synchronizeMap与ConcurrentHashMap的区别 #card #Java并发
-	-
+	- 锁住数据的粒度
+		- {{cloze synchMap 一次锁住一整张表}}
+		- {{cloze ConcurMap一次只锁一个分段}}
 - CopyOnWriteArrayList是什么，实践场景
 - 阻塞队列BlockingQueue的实现原理
 - 什么是原子操作
