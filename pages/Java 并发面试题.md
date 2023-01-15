@@ -1,2 +1,5 @@
 - volatile关键字的原理及其实战 #card #Java并发
-- synchronized和volatie的区别
+- synchronized和volatie的区别  #card #Java并发
+- 什么是CAS #card
+- CAS会产生什么问题 #card
+-
