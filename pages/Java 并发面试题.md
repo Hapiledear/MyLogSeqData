@@ -15,10 +15,11 @@
 	- 在32位的机器上，long和double分为了两部分 高位和低位。因此建议用volatile修饰
 	- 但更建议JVM实现时将这种操作视为原子性的
 - synchronized的原理 #card #Java并发
+	-
 - synchronized的锁升级机制 #card #Java并发
 - synchronized和volatie的区别  #card #Java并发
 	- 修饰的地方 {{cloze volatile是变量修饰,synchronized可以修饰类、方法、变量}}
-	- 解决的问题 {{cloze volatile 保证的是有序性和可进行，不能保证原子性，synch 保证的是可见性和原子性}}
+	- 解决的问题 {{cloze volatile 保证的是有序性和可进行，不能保证原子性，synch 保证的是可见性(Happends-before)和原子性}}
 	- 线程是否阻塞 {{cloze volatie不会造成阻塞 synch 可能造成阻塞}}
 	- 是否被编译优化 {{cloze volatile不会被编译优化，synch可以被优化}}
 	- 实际开发中 {{cloze synch比volatile用得多一点，volatile需要搭配automit类使用}}
