@@ -118,8 +118,10 @@
 	- 状态 {{cloze 每个节点有一个int state 标识同步状态，使用CAS操作进行修改}}
 	- 对资源的处理方式
 		- 独占
-			-
+			- 公平锁 {{cloze 严格按照队列顺序获取锁}}
+			- 非公平锁 {{cloze 无视队列直接抢锁}}
 		- 共享
+			-
 - ConcurrentHashMap的原理
 - synchronize与ConcurrentHashMap的区别
 - CopyOnWriteArrayList是什么，实践场景
