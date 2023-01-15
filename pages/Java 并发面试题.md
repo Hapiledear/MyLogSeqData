@@ -114,7 +114,9 @@
 		- 公平 {{cloze AQS只允许头节点抢锁}}
 - AQS是什么，抢锁过程 #card #Java并发
 	- AQS是一个用来构建锁和同步器的框架
-	- 队列 {{cloze 有一个CLH 由}}
+	- 队列 {{cloze 有一个CLH 的双向链表组成的队列}}
+	- 状态 {{cloze 每个节点有一个int state 标识同步状态，使用CAS操作进行修改}}
+	-
 - ConcurrentHashMap的原理
 - synchronize与ConcurrentHashMap的区别
 - CopyOnWriteArrayList是什么，实践场景
