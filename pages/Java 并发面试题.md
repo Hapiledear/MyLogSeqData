@@ -154,7 +154,8 @@
 	- 带版本号的 {{cloze AtomicMarkableReference}} {{cloze AtomicStampedReferece}}
 - atomic的原理  #card #Java并发
 	- {{cloze CAS+volatile方式保证原子性}} 避免synch的高开销
--
+- CountdownLatch和CycleBarrar的区别 #card #Java并发
+	- 线程等待和执行方式 CD {{cloze 某个线程A等待若干线程执行完后}}
 - final类 不可变对象 描述
 - ThreadLocal原理
 - 线程池调度流程&各项参数
