@@ -55,7 +55,8 @@
 		- {{cloze 将两个变量放入一个对象中}} {{cloze 上锁}}
 - Lock与synchronize的区别 #card #Java并发
 	- 实现方式
-		- {{cloze }}
+		- {{cloze Lock基于Java类实现，易于扩展，功能丰富}} {{cloze synch基于对象头实现，无法自定义}}
+		-
 - 可重入锁的实现原理
 - AQS是什么，抢锁过程
 - ConcurrentHashMap的原理
