@@ -157,8 +157,9 @@
 - CountdownLatch和CycleBarrar的区别 #card #Java并发
 	- 线程等待和执行方式 CD {{cloze 某个线程A等待若干线程执行完后才执行}} CB {{cloze 一组线程在某个状态等待，然后再同时执行}}
 	- 当前线程是否阻塞 CD {{cloze 调用countDown方法后，当前线程不会阻塞}} CB {{cloze 调用 await方法后，会阻塞当前线程}}
-	-
+	- 复用 CD {{cloze 不能复用}} CB {{cloze 可以复用}}
 - final类 不可变对象 描述
+	-
 - ThreadLocal原理
 - 线程池调度流程&各项参数
 - 线程池调优策略
