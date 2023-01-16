@@ -24,9 +24,18 @@
 	- zset
 		- {{cloze 自定义score排序，比如排行榜机制}}
 		- {{cloze 跳跃表，节点按分值大小排序，再按对象大小排序}}
-- Redis的过期策略有哪些 #card
+- Redis的过期策略有哪些?数据明明过期了，怎么还占用着内存 #card
 	- 定期删除
 		- {{cloze 每隔一段时间，删除过期key}} {{cloze 采用随机抽取策略}}
-		- 为什么单个key不能道歉删除? {{cloze 需要用监视器来负责监视key，}}
+		- 为什么单个key不能到期删除? {{cloze 需要用监视器来负责监视key，虽然内存及时释放，但占用了宝贵的CPU资源}}
 	- 惰性删除
 		- {{cloze 当我们查询key的时候才对key进行检测}}
+	- 内存淘汰机制
+		- {{cloze noevivtion}} 直接拒绝
+		- {{cloze allkeys-lru}} 所有key中 lru
+		- {{cloze allkeys-random}} 所有key中 随机移除
+		- {{cloze volatile-lru}} 有过期时间的key中 lru
+		- {{cloze volatile-random}} 有过期时间的key中 随机移除
+		- {{cloze volatile-ttl}} 有过期时间的key中 移除最早过期时间的key
+- 了解Redis的事务机制吗？#card
+	-
