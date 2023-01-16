@@ -63,6 +63,8 @@
 	- {{cloze scan命令可以提取指定模式的key列表}}
 - Redis的持久化机制 #card
 	- bgsave 全量持久化
+		- 缺点 {{cloze 耗时较长，会导致停止服务}}
+		- 过程 {{cloze 生成子进程和当前内存快照，子进程进行持久化}}
 	- aof 增量持久化
 - Redis的集群同步机制#card
 -
