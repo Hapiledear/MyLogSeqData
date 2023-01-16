@@ -1,21 +1,22 @@
-- [[Java 元空间]] 会产生内存溢出吗？#card #JVM
-  card-last-interval:: 4
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-20T06:41:48.486Z
-  card-last-reviewed:: 2023-01-16T06:41:48.487Z
+- {{cards [[JVM面试题]] }}
+- [[Java 元空间]] 会产生内存溢出吗？#card
   card-last-score:: 3
+  card-repeats:: 1
+  card-next-schedule:: 2023-01-20T06:41:48.486Z
+  card-last-interval:: 4
+  card-ease-factor:: 2.36
+  card-last-reviewed:: 2023-01-16T06:41:48.487Z
 	- 元空间的由来。 {{cloze 从java8+开始，用 元空间 替代了 永久代/方法区}}
 	- 元空间的内存 {{cloze 并不使用虚拟机的内存，而是直接使用机器内存}}
 	- 出现OOM的原因 {{cloze 加载到内存中的class文件数量太多or体积太大}}
 	- 解决办法 {{cloze 增加元空间的大小 `-XX:MaxMetaspaceSize=512m`}}
 - 说一下 JVM 的主要组成部分及其作用 #card
-  card-last-interval:: 4
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-18T11:14:08.491Z
-  card-last-reviewed:: 2023-01-14T11:14:08.491Z
   card-last-score:: 3
+  card-repeats:: 1
+  card-next-schedule:: 2023-01-18T11:14:08.491Z
+  card-last-interval:: 4
+  card-ease-factor:: 2.36
+  card-last-reviewed:: 2023-01-14T11:14:08.491Z
 	- 类加载系统 {{cloze 根据给定的全限定类名，使用双亲委派模型，由类加载器加载class文件到 方法区}}
 	- 运行时数据区 JVM内存模型 {{cloze 分为线程公有的堆、方法区，和线程私有的 虚拟机栈、本地方法栈、程序计数器}}
 	- 执行引擎 {{cloze 执行字节码指令。分为 即时编译执行和解释执行。此外，**垃圾收集器** 也在其中}}
