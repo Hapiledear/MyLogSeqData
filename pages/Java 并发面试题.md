@@ -27,6 +27,12 @@
 	- 在32位的机器上，long和double分为了两部分 高位和低位。因此建议用volatile修饰
 	- 但更建议JVM实现时将这种操作视为原子性的
 - synchronized (简称 同步)的原理 #card #Java并发
+  card-last-interval:: 4
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-20T06:28:34.694Z
+  card-last-reviewed:: 2023-01-16T06:28:34.695Z
+  card-last-score:: 3
 	- 通过 {{cloze `monitorEnter` 和`monitorExit`}} 指令，进行加锁和释放锁。是可重入的
 	- {{cloze 遵循happends-before规则，写在读之前}} ，保证可见性
 	- 上锁过程 {{cloze 在对象头中，记录锁的类型 和 指向栈中的锁记录指针}}
