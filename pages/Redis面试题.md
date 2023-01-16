@@ -60,11 +60,19 @@
 - Redis的分布式锁如何实现 #card
 	- {{cloze setnx来争抢锁，再用expire加上过期时间}}
 - 如何把固定前缀开通的key全部找出来#card
+  card-last-interval:: 4
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-20T09:23:44.820Z
+  card-last-reviewed:: 2023-01-16T09:23:44.821Z
+  card-last-score:: 3
 	- {{cloze scan命令可以提取指定模式的key列表}}
 - Redis的持久化机制 #card
 	- bgsave 全量持久化
-		- 缺点 {{cloze 耗时较长，会导致停止服务}}
 		- 过程 {{cloze 生成子进程和当前内存快照，子进程进行持久化}}
+		- 缺点 {{cloze 非子进程的方式耗时较长，会导致停止服务}} {{cloze 如果不停机，可能丢失最后一部分数据}}
 	- aof 增量持久化
-- Redis的集群同步机制#card
+		- 过程 {{cloze 以日志的形式记录每个写操作}}
+		- 缺点 {{cloze AOF文件大，恢复速度慢}}
+- Redis的集群同步机制
 -
