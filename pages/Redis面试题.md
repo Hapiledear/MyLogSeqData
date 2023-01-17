@@ -54,6 +54,12 @@
 		- {{cloze 自定义score排序，比如排行榜机制}}
 		- {{cloze 跳跃表，节点按分值大小排序，再按对象大小排序}}
 - Redis的过期策略有哪些?数据明明过期了，怎么还占用着内存 #card
+  card-last-interval:: 3.59
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-20T18:33:08.111Z
+  card-last-reviewed:: 2023-01-17T04:33:08.111Z
+  card-last-score:: 3
 	- 定期删除
 		- {{cloze 每隔一段时间，删除过期key}} {{cloze 采用随机抽取策略}}
 		- 为什么单个key不能到期删除? {{cloze 需要用监视器来负责监视key，虽然内存及时释放，但占用了宝贵的CPU资源}}
@@ -119,6 +125,12 @@
   card-last-score:: 3
 	- {{cloze scan命令可以提取指定模式的key列表}}
 - Redis的持久化机制 #card
+  card-last-interval:: 3.59
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-20T18:31:08.811Z
+  card-last-reviewed:: 2023-01-17T04:31:08.812Z
+  card-last-score:: 3
 	- bgsave 全量持久化
 		- 过程 {{cloze 生成子进程和当前内存快照，子进程进行持久化}}
 		- 缺点 {{cloze 非子进程的方式耗时较长，会导致停止服务}} {{cloze 如果不停机，可能丢失最后一部分数据}}
@@ -130,6 +142,12 @@
 		- {{cloze 将过期的、不再使用的、重复的以及可优化的命令进行优化，重新生成AOF文件}}
 		- 流程 {{cloze fork一个子进程}} {{cloze 重写期间，主线程的写命令被保存在缓冲区中}}
 - RDB和AOF各自的优缺点#card
+  card-last-interval:: 3.59
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-20T18:28:55.528Z
+  card-last-reviewed:: 2023-01-17T04:28:55.528Z
+  card-last-score:: 3
 	- RDB优点
 		- 生成的文件 {{cloze 只有一个紧凑的二进制文件，非常适合备份、全量复制场景}}
 		- {{cloze 文件随意拷贝，容灾性好}}
@@ -142,6 +160,12 @@
 	- AOF的缺点
 		- 生成的文件 {{cloze 比RDB大}} {{cloze 恢复速度慢}}
 - Redis的主从复制过程#card
+  card-last-interval:: 3.59
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-20T18:32:24.841Z
+  card-last-reviewed:: 2023-01-17T04:32:24.842Z
+  card-last-score:: 3
 	- 从服务器首次连接 {{cloze 全量复制}} {{cloze rdb or aof文件}}
 	- 复制后数据先 {{cloze 保存到本地磁盘}} 后 {{cloze 从磁盘读取到内存}}
 	- 重新连接 {{cloze 部分数据复制}} {{cloze offset偏移量 repl-backlog-buffer 复制积压缓冲区}}
