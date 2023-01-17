@@ -214,8 +214,10 @@
 		- 数据倾斜
 		- 过期删除时 {{cloze 可能导致阻塞}}
 	- 如何找到大key
-		- bigkeys命令
-		- rdb-tools rdb文件分析工具
+		- 命令 {{cloze bigkeys}}
+		- 文件分析工具 {{cloze rdb-tools}}
 	- 如何处理大key
-		- 扫描并惰性删除
-		-
+		- 删除 {{cloze 扫描并惰性删除}}
+		- 压缩 {{cloze 压缩算法进行压缩}}
+		- 拆分 {{cloze 按长度截取拆分，使用multiget读取}}
+-
