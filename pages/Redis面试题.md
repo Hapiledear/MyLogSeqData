@@ -169,6 +169,9 @@
 - Redis的集群模式#card
 	- 集群基本作用 {{cloze 自动将数据分片，每个master上放一部分}} {{cloze 部分master不可用时，还是可以继续工作}}
 	- 2个端口 {{cloze 6379 16379}}
-	- 数据如何均匀分片
-		- {{cloze 一致性Hash算法}} {{cloze hash slot}}
+- 数据如何分散在机器上 #card
+	- {{cloze 一致性Hash算法}}
+		- 哈希环，顺时针，虚拟节点
+	- {{cloze hash slot 哈希槽}}
+		-
 - Redis数据如何预热
