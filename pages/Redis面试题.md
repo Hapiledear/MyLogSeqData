@@ -1,7 +1,4 @@
 - {{cards [[Redis面试题]]}}
-	- Summary: 10 items, 1 review counts [[2023年01月16日]]
-		- Remembered:   1 (100%)
-		- Forgotten :   0 (0%)
 - 项目中缓存是如何使用的，为什么要用 #card
   card-last-interval:: 4
   card-repeats:: 2
@@ -169,4 +166,9 @@
 	- 从服务器首次连接 {{cloze 全量复制}} {{cloze rdb or aof文件}}
 	- 复制后数据先 {{cloze 保存到本地磁盘}} 后 {{cloze 从磁盘读取到内存}}
 	- 重新连接 {{cloze 部分数据复制}} {{cloze offset偏移量 repl-backlog-buffer 复制积压缓冲区}}
+- Redis的集群模式#card
+	- 集群基本作用 {{cloze 自动将数据分片，每个master上放一部分}} {{cloze 部分master不可用时，还是可以继续工作}}
+	- 2个端口 {{cloze 6379 16379}}
+	- 数据如何均匀分片
+		- {{cloze 一致性Hash算法}} {{cloze hash slot}}
 - Redis数据如何预热
