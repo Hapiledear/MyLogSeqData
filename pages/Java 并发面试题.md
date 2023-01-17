@@ -173,6 +173,12 @@
 		- {{cloze synchMap 一次锁住一整张表}}
 		- {{cloze ConcurMap一次只锁一个分段}}
 - CopyOnWriteArrayList是什么，实践场景 #card #Java并发
+  card-last-interval:: 4
+  card-repeats:: 1
+  card-ease-factor:: 2.6
+  card-next-schedule:: 2023-01-21T04:30:45.007Z
+  card-last-reviewed:: 2023-01-17T04:30:45.007Z
+  card-last-score:: 5
 	- 字如其名 {{cloze 它的写入操作将copy出一份副本 ，再在这个副本上进行更改}}
 	- 缺点 {{cloze copy数字代价高昂，消耗内存}}
 	- 适用场景 {{cloze 读多写少}}
@@ -188,14 +194,32 @@
 		- {{cloze 在队列满时，存储元素的线程会等待队列可用}}
 	- 阻塞队列的经典应用场景是 {{cloze socket客户端的数据读取和解析}}
 - 什么是原子操作 #card #Java并发
+  card-last-interval:: 3.59
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-20T18:31:24.281Z
+  card-last-reviewed:: 2023-01-17T04:31:24.282Z
+  card-last-score:: 3
 	- 定义 {{cloze 一连串操作，要么都执行完，要么都不执行}}
 	- 如何保证原子性 {{cloze CAS指令}} {{cloze 并发包下的原子类}}
 - java中有哪些原子类  #card #Java并发
+  card-last-interval:: 3.59
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-20T18:32:31.899Z
+  card-last-reviewed:: 2023-01-17T04:32:31.899Z
+  card-last-score:: 3
 	- 基本类型 {{cloze AtomicBoolean}} {{cloze AtomicInteger}} {{cloze AtomicReference}}
 	- 数组 {{cloze AtomicXXXArray}}
 	- 属性 {{cloze AtomicxxxFiledUpdater}}
 	- 带版本号的 {{cloze AtomicMarkableReference}} {{cloze AtomicStampedReferece}}
 - atomic的原理  #card #Java并发
+  card-last-interval:: 4
+  card-repeats:: 1
+  card-ease-factor:: 2.6
+  card-next-schedule:: 2023-01-21T04:31:15.122Z
+  card-last-reviewed:: 2023-01-17T04:31:15.122Z
+  card-last-score:: 5
 	- {{cloze CAS+volatile方式保证原子性}} 避免synch的高开销
 - CountdownLatch和CycleBarrar的区别 #card #Java并发
   card-last-interval:: 4
@@ -217,11 +241,23 @@
 	- 对象一旦被创建，它的属性值就不能改变 ，可以通过反射方式进行破坏
 	- 保证了内存的可见性，不需要额外的同步手段，提升代码执行效率
 - ThreadLocal原理 #card #Java并发
+  card-last-interval:: 3.59
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-20T18:29:13.361Z
+  card-last-reviewed:: 2023-01-17T04:29:13.361Z
+  card-last-score:: 3
 	- 每一个thread持有一个threadLocalMap {{cloze key是被修饰的threadLocal对象}} {{cloze value是对象值}}
 	- 使用场景
 		- {{cloze 线程隔离}}
 		- {{cloze 跨函数传递数据}}
 - 线程池调度流程&各项参数 #card #Java并发
+  card-last-interval:: 3.59
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-20T18:29:08.891Z
+  card-last-reviewed:: 2023-01-17T04:29:08.891Z
+  card-last-score:: 3
 	- 任务优先占用 {{cloze 核心线程数}}
 	- 核心线程满 {{cloze 进入等待队列}}
 	- 等待队列满 {{cloze 占用最大线程，立即执行}}
@@ -229,6 +265,12 @@
 	- 如何创建线程 {{cloze 通过线程工厂 ThreadFactory}}
 	- 何时缩容到核心线程数 {{cloze 线程最大空闲时长}}
 - 线程池调优策略  #card #Java并发
+  card-last-interval:: 4
+  card-repeats:: 1
+  card-ease-factor:: 2.6
+  card-next-schedule:: 2023-01-21T04:33:12.504Z
+  card-last-reviewed:: 2023-01-17T04:33:12.504Z
+  card-last-score:: 5
 	- 通用规则2条
 		- {{cloze 最大线程数=核心线程数 优先创建线程而不是入队等待}}
 		- {{cloze 使用有界阻塞队列}}
