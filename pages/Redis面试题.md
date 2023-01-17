@@ -75,12 +75,12 @@
 		- {{cloze volatile-random}} 有过期时间的key中 随机移除
 		- {{cloze volatile-ttl}} 有过期时间的key中 移除最早过期时间的key
 - 了解Redis的事务机制吗？#card
-  card-last-interval:: -1
-  card-repeats:: 0
-  card-ease-factor:: 2.5
-  card-next-schedule:: nil
-  card-last-reviewed:: nil
-  card-last-score:: nil
+  card-last-interval:: 3.46
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-20T20:47:11.747Z
+  card-last-reviewed:: 2023-01-17T09:47:11.748Z
+  card-last-score:: 3
 	- 事务以 {{cloze MUTLI}}命令开始
 	- 客户端接收一系列操作，放入队列中
 	- 收到 {{cloze EXEC}}命令后，开始顺序执行操作。
@@ -88,6 +88,12 @@
 	- 执行时不会被其他客户端发送来的命令请求打断
 	- 不支持回滚，要么都执行，要么都不执行
 - 如何处理多个客户端并发写一个key?#card
+  card-last-interval:: 3.46
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-20T20:46:39.590Z
+  card-last-reviewed:: 2023-01-17T09:46:39.590Z
+  card-last-score:: 3
 	- 使用事务 实现CAS
 		- {{cloze 事务具有watch机制,一旦被监测的key发生更改，本次提交就失效了}}
 - Redis为什么快？#card
@@ -176,6 +182,12 @@
 	- 复制后数据先 {{cloze 保存到本地磁盘}} 后 {{cloze 从磁盘读取到内存}}
 	- 重新连接 {{cloze 部分数据复制}} {{cloze offset偏移量 repl-backlog-buffer 复制积压缓冲区}}
 - Redis的集群模式的好处#card
+  card-last-interval:: 3.46
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-20T20:45:06.968Z
+  card-last-reviewed:: 2023-01-17T09:45:06.968Z
+  card-last-score:: 3
 	- 数据分片 {{cloze 自动将数据分片，每个master上放一部分}}
 	- 主从复制和自动故障转移 {{cloze 部分master不可用时，还是可以继续工作}}
 	- 2个端口 {{cloze 6379 16379}}
@@ -208,11 +220,23 @@
 	- 从节点选举
 		- {{cloze 投票选举，超过半数者升级}}
 - Redis优化策略#card
+  card-last-interval:: 3.46
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-20T20:45:21.024Z
+  card-last-reviewed:: 2023-01-17T09:45:21.024Z
+  card-last-score:: 3
 	- 在见名知意的情况下，使用短key
 	- 不要存过大的数据,存之前先把数据压缩
 	- 设置key的合理有效期,选择合适的回收策略
 	- 使用连接池，减少不必要的连接
 - 如何解决本地缓存与分布式缓存的数据不一致#card
+  card-last-interval:: 3.46
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-20T20:46:34.480Z
+  card-last-reviewed:: 2023-01-17T09:46:34.480Z
+  card-last-score:: 3
 	- Redis自身有 {{cloze 订阅/分发}} 机制
 	- 引入 {{cloze 消息队列}}
 	- 本地缓存的过期时间 {{cloze 设置相对短一些}}
@@ -227,6 +251,12 @@
 	- 数据量不大时，项目启动时自动加载
 	- 定时任务刷新加载
 - 热key处理#card
+  card-last-interval:: 3.46
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-20T20:46:02.842Z
+  card-last-reviewed:: 2023-01-17T09:46:02.842Z
+  card-last-score:: 3
 	- 监测
 		- 客户端 {{cloze 设置全局字典 key和调用次数}}
 		- 数据仓库 {{cloze 客户端发送mq,数据仓库实时统计}}
@@ -235,6 +265,12 @@
 		- 打散 {{cloze 把热key打散到不同的服务器上，降低压力}}
 		- 二级缓存 {{cloze 加入本地的内存缓存}}
 - 大key处理#card
+  card-last-interval:: 3.46
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-20T20:44:49.009Z
+  card-last-reviewed:: 2023-01-17T09:44:49.010Z
+  card-last-score:: 3
 	- 大key造成的问题
 		- 进行IO操作时 {{cloze 占用带宽和CPU}}
 		- 数据倾斜
