@@ -177,6 +177,12 @@
 	- 主从复制和自动故障转移 {{cloze 部分master不可用时，还是可以继续工作}}
 	- 2个端口 {{cloze 6379 16379}}
 - 数据如何分散在机器上 #card
+  card-last-interval:: 3.59
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-20T22:57:24.607Z
+  card-last-reviewed:: 2023-01-17T08:57:24.607Z
+  card-last-score:: 3
 	- {{cloze 一致性Hash算法}}
 		- 哈希环，顺时针，虚拟节点
 	- {{cloze hash slot 哈希槽}}
@@ -184,6 +190,12 @@
 		- 机器的增减 {{cloze master的增减只是移动部分槽位}}
 		- 好处 {{cloze 无论在数据量大 or 小时，数据分配都很均匀}}
 - 节点宕机时的主备切换#card
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-01-21T08:57:31.088Z
+  card-last-reviewed:: 2023-01-17T08:57:31.088Z
+  card-last-score:: 3
 	- 判断节点宕机
 		- 主观宕机 {{cloze 某一节点发现另一节点一段时间内无心跳返回了}}
 		- 故障广播 {{cloze 该节点下线的消息开始在集群中传播}}
@@ -202,6 +214,12 @@
 	- 引入 {{cloze 消息队列}}
 	- 本地缓存的过期时间 {{cloze 设置相对短一些}}
 - Redis数据如何预热#card
+  card-last-interval:: 4
+  card-repeats:: 1
+  card-ease-factor:: 2.6
+  card-next-schedule:: 2023-01-21T08:57:07.108Z
+  card-last-reviewed:: 2023-01-17T08:57:07.108Z
+  card-last-score:: 5
 	- 暴露内网接口，手动操作
 	- 数据量不大时，项目启动时自动加载
 	- 定时任务刷新加载
