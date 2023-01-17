@@ -75,12 +75,12 @@
 		- {{cloze volatile-random}} 有过期时间的key中 随机移除
 		- {{cloze volatile-ttl}} 有过期时间的key中 移除最早过期时间的key
 - 了解Redis的事务机制吗？#card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-01-20T09:28:18.588Z
-  card-last-reviewed:: 2023-01-16T09:28:18.588Z
-  card-last-score:: 3
+  card-last-interval:: -1
+  card-repeats:: 0
+  card-ease-factor:: 2.5
+  card-next-schedule:: nil
+  card-last-reviewed:: nil
+  card-last-score:: nil
 	- 事务以 {{cloze MUTLI}}命令开始
 	- 客户端接收一系列操作，放入队列中
 	- 收到 {{cloze EXEC}}命令后，开始顺序执行操作。
