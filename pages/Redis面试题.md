@@ -74,6 +74,12 @@
 	- 执行时不会被其他客户端发送来的命令请求打断
 	- 不支持回滚，要么都执行，要么都不执行
 - Redis为什么快？#card
+  card-last-interval:: 3.59
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-20T16:11:05.620Z
+  card-last-reviewed:: 2023-01-17T02:11:05.622Z
+  card-last-score:: 3
 	- 基于内存操作
 	- 使用单线程， {{cloze 避免线程切换和竞争产生的消耗}}
 	- 基于 {{cloze IO多路复用模型}} IO模型 {{cloze 让单个线程高效处理多个连接请求}}
