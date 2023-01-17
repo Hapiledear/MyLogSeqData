@@ -113,6 +113,7 @@
   card-last-reviewed:: 2023-01-16T09:25:23.600Z
   card-last-score:: 3
 	- {{cloze setnx来争抢锁，再用expire加上过期时间}}
+	- 高可用分布式锁 {{cloze RedLock}} 但可能导致性能下降，建议使用 {{cloze zk实现分布式锁}}
 - 如何把固定前缀开通的key全部找出来#card
   card-last-interval:: 4
   card-repeats:: 2
@@ -187,10 +188,8 @@
 		- {{cloze 投票选举，超过半数者升级}}
 - Redis优化策略#card
 	- 在见名知意的情况下，使用短key
-	- 不要存过大的数据
-	- 存之前先把数据压缩
-	- 设置key的有效期
-	- 选择合适的回收策略
+	- 不要存过大的数据,存之前先把数据压缩
+	- 设置key的合理有效期,选择合适的回收策略
 	- 使用连接池，减少不必要的连接
 - 如何解决本地缓存与分布式缓存的数据不一致#card
 	- Redis自身有 {{cloze 订阅/分发}} 机制
