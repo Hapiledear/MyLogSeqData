@@ -7,7 +7,8 @@
 	- SQL优化 {{cloze 优化器}} 生成 执行计划
 	- 委托给存储引擎 {{cloze 执行器}}
 - 查询语句的各部分执行顺序 9 #card
-	- {{cloze from -> join t2 on xxx }}
+	- {{cloze from -> join t2 on xxx  -> where yyy -> group by aaa -> having -> bbb -> select aaa,bbb,ccc -> distinct aaa ->order by bbb -> limit m,n}}
+-
 -
 -
 - InnoDb与MyISAM的比对
