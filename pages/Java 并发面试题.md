@@ -89,10 +89,10 @@
 	- 实现 {{cloze atomic下的类大多是使用CAS操作来实现的}}
 - CAS会产生什么问题以及解决办法 #card #Java并发
   card-last-interval:: 4
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-19T04:52:50.617Z
-  card-last-reviewed:: 2023-01-15T04:52:50.618Z
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-01-23T09:39:48.982Z
+  card-last-reviewed:: 2023-01-19T09:39:48.983Z
   card-last-score:: 3
 	- ABA问题
 		- {{cloze 用链表的例子更直观}}
