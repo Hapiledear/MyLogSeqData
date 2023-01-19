@@ -15,6 +15,12 @@
 	- InnoDb
 		- {{cloze 支持事物，行锁和外键约束}}
 - 事物的四大特性，分别是如何解决的 #card
+  card-last-interval:: 4
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-23T09:35:33.884Z
+  card-last-reviewed:: 2023-01-19T09:35:33.885Z
+  card-last-score:: 3
 	- 原子性
 		- {{cloze 在事物中的一组操作，要么全部成功提交，要么全部失败回滚}}
 		- {{cloze Undo Log}}
@@ -27,7 +33,7 @@
 	- 隔离性
 		- 多个事物同时进行时，会出现3种问题.为解决这三个问题，进而提出了4种隔离级别
 			- 3个问题 {{cloze 脏读}} {{cloze 不可重复读}} {{cloze 幻读}}
-			- 4种隔离级别 {{cloze }}
+			- 4种隔离级别 {{cloze 读未提交}} {{cloze 读已提交}} {{cloze 可重复读读}} {{cloze 串行化}}
 		- {{cloze 锁机制 和 MVVC机制}}
 - Undo Log 和Redo Log #card
 	- Undo Log
