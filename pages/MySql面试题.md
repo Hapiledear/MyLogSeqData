@@ -9,7 +9,9 @@
 - 查询语句的各部分执行顺序 9 #card
 	- {{cloze from -> join t2 on xxx  -> where yyy -> group by aaa -> having -> bbb -> select aaa,bbb,ccc -> distinct aaa ->order by bbb -> limit m,n}}
 - 存储引擎InnoDb和MyISAM的区别 #card
--
+	- MyISAM
+		- {{cloze 读快更新慢，因为上了全表锁}}
+		- {{cloze 不支持事物，不支持行锁和外键}}
 -
 -
 - InnoDb与MyISAM的比对
