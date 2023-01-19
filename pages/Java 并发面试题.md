@@ -46,10 +46,10 @@
 	- 如果没有获取到锁，则会 {{cloze 让线程自旋等待，并不放弃CPU的执行时间}}
 - synchronized的锁升级机制 #card #Java并发
   card-last-interval:: 4
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-19T04:51:11.602Z
-  card-last-reviewed:: 2023-01-15T04:51:11.602Z
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-01-23T09:38:43.811Z
+  card-last-reviewed:: 2023-01-19T09:38:43.811Z
   card-last-score:: 3
 	- 锁消除 无锁
 		- {{cloze 在编译时明显检测到不会被其他线程访问到}}
@@ -104,10 +104,10 @@
 		- {{cloze 将两个变量放入一个对象中}} {{cloze 上锁}}
 - Lock与synchronize的区别 #card #Java并发
   card-last-interval:: 4
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-19T04:54:58.146Z
-  card-last-reviewed:: 2023-01-15T04:54:58.147Z
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-01-23T09:38:34.095Z
+  card-last-reviewed:: 2023-01-19T09:38:34.095Z
   card-last-score:: 3
 	- 实现方式
 		- {{cloze Lock基于Java类实现，易于扩展，功能丰富}} {{cloze synch基于对象头实现，无法自定义}}
@@ -119,10 +119,10 @@
 		- {{cloze Lock可以在不同范围、不同的顺序获取和释放锁}} {{cloze synch只能在进临界区获取和释放}}
 - 可重入锁的实现原理  #card #Java并发
   card-last-interval:: 4
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-19T04:54:10.529Z
-  card-last-reviewed:: 2023-01-15T04:54:10.529Z
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-01-23T09:37:47.874Z
+  card-last-reviewed:: 2023-01-19T09:37:47.874Z
   card-last-score:: 3
 	- 重入性
 		- {{cloze 已获得锁的线程可以再次获取}}
