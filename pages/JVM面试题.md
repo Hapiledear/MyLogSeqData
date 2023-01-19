@@ -59,11 +59,11 @@
 	- {{cloze 通常 年轻代采用的GC算法是 复制算法，老年代采用的是标记-整理算法 }} GC算法
 - 非堆内存有哪些 #card
   card-last-interval:: 4
-  card-repeats:: 1
-  card-ease-factor:: 2.6
-  card-next-schedule:: 2023-01-18T11:10:24.012Z
-  card-last-reviewed:: 2023-01-14T11:10:24.012Z
-  card-last-score:: 5
+  card-repeats:: 2
+  card-ease-factor:: 2.46
+  card-next-schedule:: 2023-01-23T04:42:20.507Z
+  card-last-reviewed:: 2023-01-19T04:42:20.507Z
+  card-last-score:: 3
 	- {{cloze DirectByteBuffer 所申请的直接内存}} NIO
 	- {{cloze 方法区的具体实现 元空间}}
 - ## 为什么 字符串常量池 #常量池 被移动到了堆中？ #card
@@ -139,11 +139,11 @@
 		- 栈是线程私有的
 - 对象创建过程 #card
   card-last-interval:: 4
-  card-repeats:: 1
-  card-ease-factor:: 2.6
-  card-next-schedule:: 2023-01-18T11:11:55.813Z
-  card-last-reviewed:: 2023-01-14T11:11:55.813Z
-  card-last-score:: 5
+  card-repeats:: 2
+  card-ease-factor:: 2.46
+  card-next-schedule:: 2023-01-23T04:42:15.678Z
+  card-last-reviewed:: 2023-01-19T04:42:15.678Z
+  card-last-score:: 3
 	- 类加载
 	- 分配内存
 		- 两种方式 {{cloze 指针碰撞，空闲列表}}
