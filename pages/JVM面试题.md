@@ -250,10 +250,10 @@
 		- 利用回收时的通知机制来管理堆外内存
 - 永久代会发生垃圾回收吗 #card
   card-last-interval:: 4
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-18T11:12:45.628Z
-  card-last-reviewed:: 2023-01-14T11:12:45.628Z
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-01-23T04:35:55.386Z
+  card-last-reviewed:: 2023-01-19T04:35:55.387Z
   card-last-score:: 3
 	- 会，但是回收的条件比较苛刻
 		- 类及其所有对象都被回收
