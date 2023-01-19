@@ -3,6 +3,8 @@
 - SQL查询过程 #card
 	- 建立连接 {{cloze 连接器}}
 	- 缓存命中 {{cloze 查询缓存}}
+	- SQL分析 {{cloze 分析器}}
+	- SQL优化 {{cloze 优化器}} 生成 执行计划
 	-
 -
 - InnoDb与MyISAM的比对
