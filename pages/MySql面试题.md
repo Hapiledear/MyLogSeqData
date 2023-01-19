@@ -1,6 +1,8 @@
 - {{cards [[MySql面试题]] }}
 - 如无特殊说明，题中出现的存储引擎均为 [[InnoDb]]
 - SQL查询过程 #card
+	- 建立连接 {{cloze 连接器}}
+	- 缓存命中 {{cloze 查询缓存}}
 	-
 -
 - InnoDb与MyISAM的比对
