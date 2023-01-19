@@ -8,6 +8,7 @@
 	- 委托给存储引擎 {{cloze 执行器}}
 - 查询语句的各部分执行顺序 9 #card
 	- {{cloze from -> join t2 on xxx  -> where yyy -> group by aaa -> having -> bbb -> select aaa,bbb,ccc -> distinct aaa ->order by bbb -> limit m,n}}
+- 存储引擎InnoDb和MyISAM的区别 #card
 -
 -
 -
