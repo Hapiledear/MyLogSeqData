@@ -1,7 +1,7 @@
 - {{cards [[MySql面试题]] }}
 - 如无特殊说明，题中出现的存储引擎均为 [[InnoDb]]
 - SQL查询过程 #card
--
+	-
 -
 - InnoDb与MyISAM的比对
 - 元数据和基本数据类型及其使用
