@@ -1,10 +1,10 @@
 - {{cards [[Java 并发面试题]]}}
 - 并发中的三大问题是如何产生的，都是如何解决的? #card #Java并发 /cloze
   card-last-interval:: 4
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-19T04:50:11.746Z
-  card-last-reviewed:: 2023-01-15T04:50:11.748Z
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-01-23T09:40:49.963Z
+  card-last-reviewed:: 2023-01-19T09:40:49.963Z
   card-last-score:: 3
 	- 原子性
 		- {{cloze `i++` 一行代码被编译为机器指令时可能是多步操作}}

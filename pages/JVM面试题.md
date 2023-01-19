@@ -78,10 +78,10 @@
 	- 放在堆中，可以及时回收内存
 - ## 几种变量存放在哪里？ #card
   card-last-interval:: 4
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-last-reviewed:: 2023-01-14T11:08:39.510Z
-  card-next-schedule:: 2023-01-18T11:08:39.509Z
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-last-reviewed:: 2023-01-19T09:41:39.774Z
+  card-next-schedule:: 2023-01-23T09:41:39.773Z
   card-last-score:: 3
 	- ``` java
 	  	  public class StaticObjTest {
