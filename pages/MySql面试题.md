@@ -48,6 +48,12 @@
 			- 4种隔离级别 {{cloze 读未提交}} {{cloze 读已提交}} {{cloze 可重复读读}} {{cloze 串行化}}
 		- {{cloze 锁机制 和 MVVC机制}}
 - Undo Log 和Redo Log #card
+  card-last-interval:: 3.11
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-22T11:42:25.997Z
+  card-last-reviewed:: 2023-01-19T09:42:25.997Z
+  card-last-score:: 3
 	- Undo Log
 		- 存储的是 {{cloze 旧数据的版本链集合}}
 		- 原子性的体现 {{cloze 如果出错，可以用它来回滚数据}}
