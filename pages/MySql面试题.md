@@ -43,12 +43,18 @@
 		- 存储的是 {{cloze 最新版本的数据}}
 		- 持久性的体现 {{cloze 如果系统崩溃，可以用它来进行恢复}}
 - 描述一下事物产生的三个问题 #card
+  card-last-interval:: 3.86
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-23T05:37:36.741Z
+  card-last-reviewed:: 2023-01-19T09:37:36.741Z
+  card-last-score:: 3
 	- 脏读
 		- {{cloze 事物A读取到了事物B 未提交的数据}}
-	- 幻读
-		- 范围查询 {{cloze 事物A在进行范围查询时，两次读取的**记录数**不一致}}
 	- 不可重复读
 		- {{cloze 事物A在读取数据时，两次读取的**数据结果**不一致}}
+	- 幻读
+		- 范围查询 {{cloze 事物A在进行范围查询时，两次读取的**记录数**不一致}}
 - 事物的4种隔离级别 #card
 	- 读未提交
 		- {{cloze 允许读取到还没有提交的数据}}
@@ -59,6 +65,12 @@
 	- 串行化
 		- {{cloze 所有事物被串行执行}}
 - 什么是幻读？如何防止？ #card
+  card-last-interval:: 3.86
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-23T05:37:06.603Z
+  card-last-reviewed:: 2023-01-19T09:37:06.604Z
+  card-last-score:: 3
 	-
 - InnoDb与MyISAM的比对
 - 元数据和基本数据类型及其使用
