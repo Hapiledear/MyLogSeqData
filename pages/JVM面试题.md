@@ -164,11 +164,11 @@
 	- 反序列化
 - 类加载过程 #card
   card-last-interval:: 4
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-18T11:52:10.723Z
-  card-last-reviewed:: 2023-01-14T11:52:10.723Z
-  card-last-score:: 3
+  card-repeats:: 2
+  card-ease-factor:: 2.46
+  card-next-schedule:: 2023-01-23T00:54:29.925Z
+  card-last-reviewed:: 2023-01-19T00:54:29.926Z
+  card-last-score:: 5
 	- 加载 {{cloze 导入class文件}}
 	- 验证 {{cloze 检测class文件的正确性}}
 	- 准备 {{cloze 给静态变量分配内存空间}}
