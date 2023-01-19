@@ -31,7 +31,10 @@
 		- {{cloze 锁机制 和 MVVC机制}}
 - Undo Log 和Redo Log #card
 	- Undo Log
+		- 存储的是 {{cloze 旧数据的版本链集合}}
 		-
+	- Redo Log
+		- 存储的是 {{cloze 最新版本的数据}}
 -
 - InnoDb与MyISAM的比对
 - 元数据和基本数据类型及其使用
