@@ -120,10 +120,10 @@
 -
 - ## [[Java 堆内存]] 与[[Java 虚拟机栈]] 的区别 #card
   card-last-interval:: 4
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-18T11:11:07.763Z
-  card-last-reviewed:: 2023-01-14T11:11:07.763Z
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-01-23T04:39:36.268Z
+  card-last-reviewed:: 2023-01-19T04:39:36.268Z
   card-last-score:: 3
 	- 物理地址
 		- 堆的物理地址分配是不连续的。所以GC时有各种算法
