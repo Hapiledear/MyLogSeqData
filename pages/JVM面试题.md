@@ -201,11 +201,11 @@
 		- {{cloze 节省了一次指针定位的时间}} 好处
 - 对象分配策略 #card
   card-last-interval:: 4
-  card-repeats:: 1
-  card-ease-factor:: 2.6
-  card-next-schedule:: 2023-01-18T11:24:57.554Z
-  card-last-reviewed:: 2023-01-14T11:24:57.555Z
-  card-last-score:: 5
+  card-repeats:: 2
+  card-ease-factor:: 2.46
+  card-next-schedule:: 2023-01-23T00:57:12.677Z
+  card-last-reviewed:: 2023-01-19T00:57:12.677Z
+  card-last-score:: 3
 	- 新对象分配在eden区，大对象直接进入老年代
 	- 经历过一次Minor GC ,复制到surviro区，年龄+1
 	- 经历了多次Minor GC 且年龄超过一定限制，复制到老年代
@@ -260,10 +260,10 @@
 		- 常量池中的常量无任何引用
 - ## 如何排查JVM问题 #card
   card-last-interval:: 4
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-18T11:09:11.483Z
-  card-last-reviewed:: 2023-01-14T11:09:11.483Z
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-01-23T00:57:19.021Z
+  card-last-reviewed:: 2023-01-19T00:57:19.021Z
   card-last-score:: 3
 	- 使用 {{cloze `jmap`}} 查看各区域的使用情况
 	- 使用 {{cloze `jstack`}} 查看线程的运行情况，关注阻塞的线程、是否出现了死锁
@@ -271,10 +271,10 @@
 	- 使用 {{cloze `visualvm`}} 分析大内存占用，如 短时间内产生的大量小对象，长期的大对象以及长期得不到回收的对象
 - JVM参数 调优经验 #card
   card-last-interval:: 4
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-18T11:16:17.548Z
-  card-last-reviewed:: 2023-01-14T11:16:17.548Z
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-01-23T00:56:53.510Z
+  card-last-reviewed:: 2023-01-19T00:56:53.510Z
   card-last-score:: 3
 	- {{cloze -Xms -Xmm }} 初始堆内存，最大堆内存
 	- {{cloze -Xmn -XX: SuvivorRation -XX:NewRation}} 新生代大小 e,s1,s2的比例 新生代:老年代
