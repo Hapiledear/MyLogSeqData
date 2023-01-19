@@ -32,9 +32,10 @@
 - Undo Log 和Redo Log #card
 	- Undo Log
 		- 存储的是 {{cloze 旧数据的版本链集合}}
-		-
+		- 原子性的体现 {{cloze 如果出错，可以用它来回滚数据}}
 	- Redo Log
 		- 存储的是 {{cloze 最新版本的数据}}
+		- 持久性的体现 {{cloze 如果系统崩溃，可以用它来进行恢复}}
 -
 - InnoDb与MyISAM的比对
 - 元数据和基本数据类型及其使用
