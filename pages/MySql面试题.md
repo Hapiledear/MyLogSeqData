@@ -23,12 +23,15 @@
 		- {{cloze Undo Log}}
 	- 持久性
 		- {{cloze 事物一旦提交，发生的改变就是永久的}}
+		- {{cloze Redo Log}}
 	- 隔离性
 		- 多个事物同时进行时，会出现3种问题.为解决这三个问题，进而提出了4种隔离级别
 			- 3个问题 {{cloze 脏读}} {{cloze 不可重复读}} {{cloze 幻读}}
 			- 4种隔离级别 {{cloze }}
 		- {{cloze 锁机制 和 MVVC机制}}
--
+- Undo Log 和Redo Log #card
+	- Undo Log
+		-
 -
 - InnoDb与MyISAM的比对
 - 元数据和基本数据类型及其使用
