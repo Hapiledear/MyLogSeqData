@@ -12,6 +12,8 @@
 	- MyISAM
 		- {{cloze 读快更新慢，因为上了全表锁}}
 		- {{cloze 不支持事物，不支持行锁和外键}}
+	- InnoDb
+		- {{cloze 支持事物，行锁}}
 -
 -
 - InnoDb与MyISAM的比对
