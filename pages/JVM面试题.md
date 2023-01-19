@@ -176,10 +176,10 @@
 	- 初始化 {{cloze 对静态变量和代码块执行初始化工作}}
 - 类加载器分类和双亲委派模型 #card
   card-last-interval:: 4
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-18T11:51:45.147Z
-  card-last-reviewed:: 2023-01-14T11:51:45.148Z
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-01-23T00:57:32.099Z
+  card-last-reviewed:: 2023-01-19T00:57:32.099Z
   card-last-score:: 3
 	- 启动类加载器
 	- 扩展类加载器
