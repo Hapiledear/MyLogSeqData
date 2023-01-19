@@ -68,10 +68,10 @@
 	- {{cloze 方法区的具体实现 元空间}}
 - ## 为什么 字符串常量池 #常量池 被移动到了堆中？ #card
   card-last-interval:: 4
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-18T11:14:35.131Z
-  card-last-reviewed:: 2023-01-14T11:14:35.131Z
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-01-23T00:59:06.660Z
+  card-last-reviewed:: 2023-01-19T00:59:06.660Z
   card-last-score:: 3
 	- [[Java 永久代]]在 Full GC/Major GC  时才会触发，条件苛刻
 	- 开发中会有大量字符串被创建，回收效率低导致永久代内存不足
@@ -153,10 +153,10 @@
 	- <init>方法
 - 触发类加载的时机 4 #card
   card-last-interval:: 4
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-18T12:07:54.875Z
-  card-last-reviewed:: 2023-01-14T12:07:54.876Z
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-01-23T00:59:13.680Z
+  card-last-reviewed:: 2023-01-19T00:59:13.680Z
   card-last-score:: 3
 	- new关键字
 	- Class or Constructor的newInstance方法
@@ -286,19 +286,19 @@
 	- {{cloze -xx:maxMetaspaceSize=2g}} 设置元空间的最大值
 - 对象一定都是在堆上分配吗？ 逃逸分析 #card
   card-last-interval:: 4
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-18T11:09:27.666Z
-  card-last-reviewed:: 2023-01-14T11:09:27.666Z
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-01-23T00:58:58.109Z
+  card-last-reviewed:: 2023-01-19T00:58:58.109Z
   card-last-score:: 3
 	- 如果对象不会逃逸出方法外部，则会在栈上分配
 	- 如果符合标量替换条件(不逃逸&不会被本线程外的线程访问)，则会将对象分解成若干个方法内从成员变量
 - HotSpot JVM 为什么叫这个名字 #card
   card-last-interval:: 4
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-18T11:12:16.596Z
-  card-last-reviewed:: 2023-01-14T11:12:16.596Z
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-01-23T00:58:50.082Z
+  card-last-reviewed:: 2023-01-19T00:58:50.083Z
   card-last-score:: 3
 	- 即时编译功能
 		- 寻找热点代码，将热点代码编译成机器码并缓存起来
