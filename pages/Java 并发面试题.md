@@ -26,10 +26,10 @@
 	- 实践 单例模式中 {{cloze volatile修饰instance. 保证其写操作发生在读之前}}
 - volatile能将非原子操作变成原子操作吗 #card #Java并发
   card-last-interval:: 4
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-19T04:53:07.113Z
-  card-last-reviewed:: 2023-01-15T04:53:07.113Z
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-01-23T09:43:11.325Z
+  card-last-reviewed:: 2023-01-19T09:43:11.325Z
   card-last-score:: 3
 	- 在32位的机器上，long和double分为了两部分 高位和低位。因此建议用volatile修饰
 	- 但更建议JVM实现时将这种操作视为原子性的
