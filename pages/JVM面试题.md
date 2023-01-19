@@ -229,10 +229,10 @@
 		- 只针对新生代的Young GC 和 新生代&老年代的Mix GC
 - 4种引用及应用场景 #card
   card-last-interval:: 4
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-18T11:10:07.154Z
-  card-last-reviewed:: 2023-01-14T11:10:07.154Z
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-01-23T04:43:34.767Z
+  card-last-reviewed:: 2023-01-19T04:43:34.767Z
   card-last-score:: 3
 	- 强引用
 		- new关键字触发
