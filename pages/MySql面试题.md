@@ -7,6 +7,12 @@
 	- SQL优化 {{cloze 优化器}} 生成 执行计划
 	- 委托给存储引擎 {{cloze 执行器}}
 - 查询语句的各部分执行顺序 9 #card
+  card-last-interval:: 3.46
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-22T20:39:05.942Z
+  card-last-reviewed:: 2023-01-19T09:39:05.943Z
+  card-last-score:: 3
 	- {{cloze from -> join t2 on xxx  -> where yyy -> group by aaa -> having -> bbb -> select aaa,bbb,ccc -> distinct aaa ->order by bbb -> limit m,n}}
 - 存储引擎InnoDb和MyISAM的区别 #card
 	- MyISAM
