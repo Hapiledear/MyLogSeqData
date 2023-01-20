@@ -99,7 +99,10 @@
 	- 防止方式 {{cloze 间隙锁}}
 - 读取数据的两种方式 #card
 	- mvcc {{cloze 快照读}}
+		- 简单的select操作
 	- 最新记录 {{cloze 当前读}}
+		- 加锁的select操作
+		- 插入、
 -
 -
 - InnoDb与MyISAM的比对
