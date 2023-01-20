@@ -99,8 +99,11 @@
 	- 防止方式 {{cloze 间隙锁}} + {{cloze 行锁}} 的组合方式
 		- 记录锁 & 行锁
 			- {{cloze 锁住索引记录}}
+			- 上锁时机
+				- {{cloze select ... for update}}
+				- {{cloze }}
 		- 间隙所
-			- {{cloze 锁住}}
+			- {{cloze 锁住索引记录之间的间隙}}
 - 读取数据的两种方式 #card
 	- mvcc {{cloze 快照读}}
 		- 简单的select操作
