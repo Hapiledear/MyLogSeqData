@@ -1,6 +1,12 @@
 - {{cards [[MySql面试题]] }}
 - 如无特殊说明，题中出现的存储引擎均为 [[InnoDb]]
 - SQL查询过程 #card
+  card-last-interval:: 4
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-24T00:44:43.921Z
+  card-last-reviewed:: 2023-01-20T00:44:43.922Z
+  card-last-score:: 3
 	- 建立连接 {{cloze 连接器}}
 	- 执行计划の缓存 {{cloze 查询缓存}}
 	- SQL分析 {{cloze 分析器}}
