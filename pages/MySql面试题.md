@@ -95,7 +95,9 @@
   card-next-schedule:: 2023-01-23T05:37:06.603Z
   card-last-reviewed:: 2023-01-19T09:37:06.604Z
   card-last-score:: 3
-	-
+	- 范围查询 {{cloze 事物A的两次查询之间，被事物B插入or删除了记录，产生结果集的不一致}}
+	- 防止方式 {{cloze 间隙锁}}
+		-
 - InnoDb与MyISAM的比对
 - 元数据和基本数据类型及其使用
 	- 日期类型
