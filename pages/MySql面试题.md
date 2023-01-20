@@ -101,7 +101,7 @@
 			- {{cloze 锁住索引记录}}
 			- 上锁时机
 				- {{cloze select ... for update}}
-				- {{cloze }}
+				- {{cloze 通过 主键索引与唯一索引 对数据进行update操作}}
 		- 间隙所
 			- {{cloze 锁住索引记录之间的间隙}}
 - 读取数据的两种方式 #card
