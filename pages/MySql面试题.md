@@ -97,6 +97,7 @@
   card-last-score:: 3
 	- 范围查询 {{cloze 事物A的两次查询之间，被事物B插入or删除了记录，产生结果集的不一致}}
 	- 防止方式 {{cloze 间隙锁}}
+		-
 - 读取数据的两种方式 #card
 	- mvcc {{cloze 快照读}}
 		- 简单的select操作
