@@ -101,8 +101,8 @@
 	- mvcc {{cloze 快照读}}
 		- 简单的select操作
 	- 最新记录 {{cloze 当前读}}
-		- 加锁的select操作
-		- 插入、
+		- 加锁的select操作 {{cloze lock in share mode}} {{cloze for update}}
+		- 插入、更新、删除操作
 -
 -
 - InnoDb与MyISAM的比对
