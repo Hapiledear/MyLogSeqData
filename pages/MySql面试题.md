@@ -35,6 +35,8 @@
 		- {{cloze 支持}} I
 	- 表锁差异
 		- {{cloze 只支持表级锁}} M
+		- {{cloze 支持事务和行级锁}} I
+	- 索引结构
 		- {{cloze }}
 - 事物的四大特性，分别是如何解决的 #card
   card-last-interval:: 4
