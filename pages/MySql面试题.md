@@ -134,8 +134,9 @@
 		- 意向共享型
 		- 意向排它型
 	- 行锁 or 记录锁
+		- 作用 {{cloze 锁住该条记录，防止其它事务}}
 		- 共享型 读
-			- 手动加
+			- 手动加s锁 {{cloze select ... lock in share mode}}
 		- 排它型 写
 			- 自动加x锁 {{cloze update\delete\insert 自动加x锁}}
 			- 手动加x锁 {{cloze select ... for update }}
