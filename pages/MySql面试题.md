@@ -244,9 +244,13 @@
 - MRR优化 #card
 	- 从随机读变为顺序读 {{cloze 通过对索引值排序，把无序回表IO变成有序回表IO}}
 - Explain 查询计划 #card
-	- x
+	- id 执行顺序
+		- {{cloze id不同，值越大越先执行}}
+		- {{cloze id相同，从上到下的顺序}}
+	- select_type 查询类型
+		-
 - 工作中你是如何优化慢查询的 #card
-	- id
+	-
 - InnoDb与MyISAM的比对
 - 元数据和基本数据类型及其使用
 	- 日期类型
