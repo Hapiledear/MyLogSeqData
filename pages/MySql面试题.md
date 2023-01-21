@@ -130,6 +130,12 @@
 		- 可重复读的实现
 			- {{cloze 只在第一次执行查询语句时生成 Read View}
 - MySql中的锁有哪些 #card
+  card-last-interval:: 3.86
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-24T22:37:20.627Z
+  card-last-reviewed:: 2023-01-21T02:37:20.628Z
+  card-last-score:: 3
 	- 表锁
 		- 意向锁
 			- 作用 {{cloze 让表锁和行锁的共存更高效，大概的记录一下表中是否存在 行锁}}
