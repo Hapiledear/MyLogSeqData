@@ -125,18 +125,19 @@
   card-last-reviewed:: 2023-01-19T09:37:06.604Z
   card-last-score:: 3
 	- 范围查询 {{cloze 事物A的两次查询之间，被事物B插入or删除了记录，产生结果集的不一致}}
-	- 防止方式 {{cloze 间隙锁}} + {{cloze 行锁}} 的组合方式 解决 读
-		- 记录锁 & 行锁
-			- {{cloze 锁住索引记录}}
-			- 上锁时机
-				- {{cloze select ... for update}}
-				- {{cloze 通过 主键索引与唯一索引 对数据进行update操作}}
-		- 间隙所
-			- {{cloze 锁住索引记录之间的间隙}}
-		- 临键锁 next-key lock
-			- {{cloze 加在某条记录以及这条记录前面的间隙(左开右闭) 上锁}}
-			- {{cloze 只与 非唯一索引列 有关}}
-			-
+	- 防止方式
+		- {{cloze 间隙锁}} + {{cloze 行锁}} 的组合方式 解决 读最新数据下的幻读
+			- 记录锁 & 行锁
+				- {{cloze 锁住索引记录}}
+				- 上锁时机
+					- {{cloze select ... for update}}
+					- {{cloze 通过 主键索引与唯一索引 对数据进行update操作}}
+			- 间隙锁
+				- {{cloze 锁住索引记录之间的间隙}}
+			- 临键锁 next-key lock
+				- {{cloze 加在某条记录以及这条记录前面的间隙(左开右闭) 上锁}}
+				- {{cloze 只与 非唯一索引列 有关}}
+		- MVCC + Read View 的组合方式 解决 快照读下的幻读
 - 读取数据的两种方式 #card
   card-last-interval:: 2.8
   card-repeats:: 1
