@@ -35,11 +35,11 @@
 		- 问题描述 {{cloze 某一热点key突然过期，导致所有请求打到数据库上}}
 		- 解决方案 {{cloze 热点key过期时间加长，永不过期}} {{cloze 实时监控热点数据，实时调整过期时间}} 代码层面 {{cloze 使用synch 或 ReentryLock 加锁更新，这样后续的请求就又会走缓存}}
 - 在日常项目中用到了哪些Redis数据类型,底层结构是什么样的 #card
-  card-last-interval:: 3.86
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-20T05:28:12.944Z
-  card-last-reviewed:: 2023-01-16T09:28:12.944Z
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-01-25T02:44:26.176Z
+  card-last-reviewed:: 2023-01-21T02:44:26.177Z
   card-last-score:: 3
 	- string
 		- {{cloze 普通的kv存储，常用}}

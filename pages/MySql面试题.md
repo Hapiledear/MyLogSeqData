@@ -80,6 +80,12 @@
 	- 幻读
 		- 范围查询 {{cloze 事物A在进行范围查询时，两次读取的**记录数**不一致}}
 - 事物的4种隔离级别 #card
+  card-last-interval:: 3.22
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-24T07:45:10.042Z
+  card-last-reviewed:: 2023-01-21T02:45:10.042Z
+  card-last-score:: 3
 	- 读未提交
 		- {{cloze 允许读取到还没有提交的数据}}
 	- 读已提交

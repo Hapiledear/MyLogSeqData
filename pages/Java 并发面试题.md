@@ -241,22 +241,22 @@
 	- 对象一旦被创建，它的属性值就不能改变 ，可以通过反射方式进行破坏
 	- 保证了内存的可见性，不需要额外的同步手段，提升代码执行效率
 - ThreadLocal原理 #card #Java并发
-  card-last-interval:: 3.59
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-20T18:29:13.361Z
-  card-last-reviewed:: 2023-01-17T04:29:13.361Z
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-01-25T02:44:41.832Z
+  card-last-reviewed:: 2023-01-21T02:44:41.832Z
   card-last-score:: 3
 	- 每一个thread持有一个threadLocalMap {{cloze key是被修饰的threadLocal对象}} {{cloze value是对象值}}
 	- 使用场景
 		- {{cloze 线程隔离}}
 		- {{cloze 跨函数传递数据}}
 - 线程池调度流程&各项参数 #card #Java并发
-  card-last-interval:: 3.59
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-20T18:29:08.891Z
-  card-last-reviewed:: 2023-01-17T04:29:08.891Z
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-01-25T02:44:36.385Z
+  card-last-reviewed:: 2023-01-21T02:44:36.385Z
   card-last-score:: 3
 	- 任务优先占用 {{cloze 核心线程数}}
 	- 核心线程满 {{cloze 进入等待队列}}
