@@ -236,6 +236,8 @@
 	- `<>` `!=`
 	- `is not null`
 	- `not in ` `not exists`
+	- 非主键的`order by ` 但需要具体情况具体验证
+	- 表数据较少时，走全表扫描比走索引效率更高
 	-
 - InnoDb与MyISAM的比对
 - 元数据和基本数据类型及其使用
