@@ -142,10 +142,11 @@
 			- 自动加x锁 {{cloze update\delete\insert 自动加x锁}}
 			- 手动加x锁 {{cloze select ... for update }}
 	- 间隙锁
-		- 作用 {{cloze 在 RR 级别下解决 直接读的 幻读 问题}}
+		- 作用 {{cloze 在 RR 级别下解决 直接读的 幻读 问题}} {{cloze 锁住 一段 开区间}}
+		- 限制条件 {{cloze 非唯一索引}}
 	- next-key lock 临界锁
 		- 限制条件 {{cloze 非唯一索引}}
-		- 作用 {{cloze 锁住一段 左开右闭的 区间}}
+		- 作用 {{cloze 锁住一段 左开右闭的 区间}} 相当于 行锁+间隙锁
 - InnoDb与MyISAM的比对
 - 元数据和基本数据类型及其使用
 	- 日期类型
