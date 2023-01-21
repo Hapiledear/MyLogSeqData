@@ -248,7 +248,9 @@
 		- {{cloze id不同，值越大越先执行}}
 		- {{cloze id相同，从上到下的顺序}}
 	- select_type 查询类型
-		-
+	- table 当前执行的表
+	- type 使用了哪张索引
+		- {{cloze system > index > range > ref > eq_ref >}}
 - 工作中你是如何优化慢查询的 #card
 	-
 - InnoDb与MyISAM的比对
