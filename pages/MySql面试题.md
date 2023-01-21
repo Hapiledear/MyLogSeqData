@@ -118,7 +118,7 @@
 	- 多版本并发控制
 	- 只工作在两种事物隔离级别下
 		- {{cloze 读已提交}} {{cloze 可重复读}}
-	- 具体实现依靠 {{cloze undo log}} 关键词 copyOnWrite 版本号-> 版本链
+	- 具体实现依靠 {{cloze undo log}} 形成  关键词 copyOnWrite 版本号-> 版本链
 		-
 -
 - InnoDb与MyISAM的比对
