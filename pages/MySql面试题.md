@@ -271,7 +271,11 @@
 	- 优化查询语句 explant
 		- {{cloze 是否加载了不必要的字段}}
 		- {{cloze 是否命中索引}}
-		- 降低SQL查询逻辑
+		- 降低SQL语句的复杂度
+- bin log 和 redo log的区别 #card
+	- bin log
+		- 是MySql层的日志系统 ，记录的是 {{cloze }}
+	- redo log
 - InnoDb与MyISAM的比对
 - 元数据和基本数据类型及其使用
 	- 日期类型
