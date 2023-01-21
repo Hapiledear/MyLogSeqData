@@ -246,7 +246,7 @@
 - Explain 查询计划 #card
 	- x
 - 工作中你是如何优化慢查询的 #card
-	-
+	- id
 - InnoDb与MyISAM的比对
 - 元数据和基本数据类型及其使用
 	- 日期类型
