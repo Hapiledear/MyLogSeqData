@@ -131,9 +131,11 @@
 			- {{cloze 只在第一次执行查询语句时生成 Read View}
 - MySql中的锁有哪些 #card
 	- 表锁
-	- 行锁
-		- 共享锁
-		- 排它锁
+		- 意向共享型
+		- 意向排它型
+	- 行锁 or 记录锁
+		- 共享型
+		- 排它型
 	- 间隙锁
 	- next-key lock
 - InnoDb与MyISAM的比对
