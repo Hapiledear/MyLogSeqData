@@ -37,7 +37,8 @@
 		- {{cloze 只支持表级锁}} M
 		- {{cloze 支持事务和行级锁}} I
 	- 索引结构
-		- {{cloze 索引文件和数据文件是分离的，B+树}}
+		- {{cloze 索引文件和数据文件是分离的，B+树的叶子节点存放的是 数据记录地址 }} M
+		- {{cloze }}
 - 事物的四大特性，分别是如何解决的 #card
   card-last-interval:: 4
   card-repeats:: 1
