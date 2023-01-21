@@ -142,7 +142,7 @@
 			- 自动加x锁 {{cloze update\delete\insert 自动加x锁}}
 			- 手动加x锁 {{cloze select ... for update }}
 	- 间隙锁
-		- 作用 {{cloze 在 RR 级别下解决 幻读 问题}}
+		- 作用 {{cloze 在 RR 级别下解决 直接读的 幻读 问题}}
 	- next-key lock 临界锁
 - InnoDb与MyISAM的比对
 - 元数据和基本数据类型及其使用
