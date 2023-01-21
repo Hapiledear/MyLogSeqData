@@ -235,6 +235,7 @@
 	- 两列做比较
 	- `<>` `!=`
 	- `is not null`
+	- `not in ` `not exists`
 	-
 - InnoDb与MyISAM的比对
 - 元数据和基本数据类型及其使用
