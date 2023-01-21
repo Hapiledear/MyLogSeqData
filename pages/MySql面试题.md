@@ -30,7 +30,7 @@
   card-next-schedule:: 2023-01-22T14:41:24.338Z
   card-last-reviewed:: 2023-01-19T09:41:24.338Z
   card-last-score:: 3
-	- MyISAM
+	- 事务支持
 		- {{cloze 读快更新慢，因为上了全表锁}}
 		- {{cloze 不支持事物，不支持行锁和外键}}
 	- InnoDb
