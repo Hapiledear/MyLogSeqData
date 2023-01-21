@@ -31,10 +31,11 @@
   card-last-reviewed:: 2023-01-19T09:41:24.338Z
   card-last-score:: 3
 	- 事务支持
-		- {{cloze 读快更新慢，因为上了全表锁}}
-		- {{cloze 不支持事物，不支持行锁和外键}}
-	- InnoDb
-		- {{cloze 支持事物，行锁和外键约束}}
+		- {{cloze 不支持}} M
+		- {{cloze 支持}} I
+	- 表锁差异
+		- {{cloze 只支持表级锁}} M
+		- {{cloze }}
 - 事物的四大特性，分别是如何解决的 #card
   card-last-interval:: 4
   card-repeats:: 1
