@@ -135,13 +135,14 @@
 		- 意向排它型
 	- 行锁 or 记录锁
 		- 作用 {{cloze 锁住该条记录，防止其它事务的插入、更新、删除}}
+		- 限制条件 {{cloze 必须要有 唯一索引 和 主键索引做条件 (查出一条记录) 否则退化成 临界锁}}
 		- 共享型 读
 			- 手动加s锁 {{cloze select ... lock in share mode}}
 		- 排它型 写
 			- 自动加x锁 {{cloze update\delete\insert 自动加x锁}}
 			- 手动加x锁 {{cloze select ... for update }}
 	- 间隙锁
-	- next-key lock
+	- next-key lock 临界锁
 - InnoDb与MyISAM的比对
 - 元数据和基本数据类型及其使用
 	- 日期类型
