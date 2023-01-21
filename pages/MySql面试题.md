@@ -274,8 +274,9 @@
 		- 降低SQL语句的复杂度
 - bin log 和 redo log的区别 #card
 	- bin log
-		- 是MySql层的日志系统 ，记录的是 {{cloze }}
+		- 是MySql层的日志系统 ，记录的是 {{cloze SQL语句的原始逻辑}}
 	- redo log
+		- 是存储引擎 InnoDb的日志 ，记录的是 {{cloze 某个数据做了什么修改}}
 - InnoDb与MyISAM的比对
 - 元数据和基本数据类型及其使用
 	- 日期类型
