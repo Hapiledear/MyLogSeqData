@@ -122,7 +122,8 @@
 		- Undo Log 存储旧的数据，并构成版本链
 		- Read View 读视图 用以判断事务的可见性
 			- {{cloze 当前事务ID}} {{cloze 未提交的事务列表}} {{cloze 最小事务ID和最大事务ID}}
-		-
+		- 读已提交的实现
+			- {{cloze 每次读之前都生成一个Read View}}
 -
 - InnoDb与MyISAM的比对
 - 元数据和基本数据类型及其使用
