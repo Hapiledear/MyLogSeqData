@@ -114,7 +114,8 @@
 	- 最新记录 {{cloze 当前读}}
 		- 加锁的select操作 {{cloze lock in share mode}} {{cloze for update}}
 		- 插入、更新、删除操作
--
+- 什么是MVCC #card
+	-
 -
 - InnoDb与MyISAM的比对
 - 元数据和基本数据类型及其使用
