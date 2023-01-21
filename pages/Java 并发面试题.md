@@ -223,10 +223,10 @@
 	- {{cloze CAS+volatile方式保证原子性}} 避免synch的高开销
 - CountdownLatch和CycleBarrar的区别 #card #Java并发
   card-last-interval:: 4
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-20T06:38:22.057Z
-  card-last-reviewed:: 2023-01-16T06:38:22.057Z
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-01-25T02:39:20.728Z
+  card-last-reviewed:: 2023-01-21T02:39:20.728Z
   card-last-score:: 3
 	- 线程等待和执行方式 CD {{cloze 某个线程A等待若干线程执行完后才执行}} CB {{cloze 一组线程在某个状态等待，然后再同时执行}}
 	- 当前线程是否阻塞 CD {{cloze 调用countDown方法后，当前线程不会阻塞}} CB {{cloze 调用 await方法后，会阻塞当前线程}}

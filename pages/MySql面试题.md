@@ -118,6 +118,12 @@
 		- 插入、更新、删除操作
 		- 如何解决幻读 {{cloze next-key Lock 行锁与间隙锁的组合}}
 - 什么是MVCC #card
+  card-last-interval:: 3.72
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-24T19:40:15.125Z
+  card-last-reviewed:: 2023-01-21T02:40:15.125Z
+  card-last-score:: 3
 	- 多版本并发控制
 	- 只工作在两种事物隔离级别下
 		- {{cloze 读已提交}} {{cloze 可重复读}}
