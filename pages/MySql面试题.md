@@ -120,7 +120,8 @@
 		- {{cloze 读已提交}} {{cloze 可重复读}}
 	- 具体实现依靠 {{cloze undo log}} 形成 {{cloze 读视图}} 机制 关键词 copyOnWrite 版本号-> 版本链
 		- Undo Log 存储旧的数据，并构成版本链
-		-
+		- Read View 读视图 用以判断事务的可见性
+			- {{cloze 当前事务ID}}
 -
 - InnoDb与MyISAM的比对
 - 元数据和基本数据类型及其使用
