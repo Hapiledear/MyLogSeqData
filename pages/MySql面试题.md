@@ -128,9 +128,11 @@
 		- 读已提交的实现
 			- {{cloze 每次读之前都生成一个Read View}}
 		- 可重复读的实现
-			- {{cloze 只在第一次执行查询语句时生成 Read View}}
-		-
--
+			- {{cloze 只在第一次执行查询语句时生成 Read View}
+- MySql中的锁有哪些 #card
+	- 表锁
+	- 行锁
+	-
 - InnoDb与MyISAM的比对
 - 元数据和基本数据类型及其使用
 	- 日期类型
