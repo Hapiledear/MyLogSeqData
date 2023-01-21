@@ -17,7 +17,10 @@
 	- 委托给存储引擎 {{cloze 执行器}}
 - SQL update过程 #card
 	- 查询出原数据
-	- 将修改的数据刷入内存
+	- 将修改的数据刷入内存 Buffer pool
+	- 记录 Undo Log 和 Redo Log
+	- 记录 bin log
+	- 事务提交 ，等待被工作线程刷入磁盘
 - 查询语句的各部分执行顺序 9 #card
   card-last-interval:: 3.46
   card-repeats:: 1
