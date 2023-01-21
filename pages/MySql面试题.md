@@ -1,4 +1,7 @@
 - {{cards [[MySql面试题]] }}
+	- Summary: 1 items, 1 review counts [[2023年01月21日]]
+		- Remembered:   0 (0%)
+		- Forgotten :   0 (0%)
 - 如无特殊说明，题中出现的存储引擎均为 [[InnoDb]]
 - SQL查询过程 #card
   card-last-interval:: 4
@@ -116,6 +119,12 @@
 			- {{cloze 只与 非唯一索引列 有关}}
 			-
 - 读取数据的两种方式 #card
+  card-last-interval:: 2.8
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-23T21:49:55.630Z
+  card-last-reviewed:: 2023-01-21T02:49:55.631Z
+  card-last-score:: 3
 	- mvcc {{cloze 快照读}}
 		- 简单的select操作
 		- 如何解决幻读 {{cloze MVCC + Read View}}
