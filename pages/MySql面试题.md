@@ -124,6 +124,9 @@
 			- {{cloze 当前事务ID}} {{cloze 未提交的事务列表}} {{cloze 最小事务ID和最大事务ID}}
 		- 读已提交的实现
 			- {{cloze 每次读之前都生成一个Read View}}
+		- 可重复读的实现
+			- {{cloze 只在第一次执行查询语句时生成 Read View}}
+		-
 -
 - InnoDb与MyISAM的比对
 - 元数据和基本数据类型及其使用
