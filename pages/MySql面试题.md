@@ -249,8 +249,9 @@
 		- {{cloze id相同，从上到下的顺序}}
 	- select_type 查询类型
 	- table 当前执行的表
-	- type 使用了哪钟索引
-		- {{cloze system > index > range > ref > eq_ref > const>null}}
+	- type 使用了哪种类型的查询
+		- {{cloze system > index > range > ref > eq_ref > index > all}}
+	- possible_keys 和 key 可能使用的索引
 	-
 - 工作中你是如何优化慢查询的 #card
 	-
