@@ -257,7 +257,8 @@
 	- extra 额外信息
 		- Using filesort 使用了非索引列排序
 		- Using temporary 使用了临时表
-		-
+		- Using index 使用了覆盖索引
+		- Using where 该索引还用来执行查找操作
 - 工作中你是如何优化慢查询的 #card
 	-
 - InnoDb与MyISAM的比对
