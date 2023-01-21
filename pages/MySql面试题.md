@@ -115,6 +115,9 @@
 		- 加锁的select操作 {{cloze lock in share mode}} {{cloze for update}}
 		- 插入、更新、删除操作
 - 什么是MVCC #card
+	- 多版本并发控制
+	- 只工作在两种事物隔离级别下
+		- {{cloze 读已提交}} {{cloze 可重复读}}
 	-
 -
 - InnoDb与MyISAM的比对
