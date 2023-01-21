@@ -135,9 +135,10 @@
 		- 意向排它型
 	- 行锁 or 记录锁
 		- 共享型 读
+			- 手动加
 		- 排它型 写
-			- {{cloze update\delete\insert 自动加x锁}}
-			- {{cloze }}
+			- 自动加x锁 {{cloze update\delete\insert 自动加x锁}}
+			- 手动加x锁 {{cloze select ... for update }}
 	- 间隙锁
 	- next-key lock
 - InnoDb与MyISAM的比对
