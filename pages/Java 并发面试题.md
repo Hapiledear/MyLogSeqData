@@ -164,10 +164,10 @@
 		- 扩容 {{cloze 默认大小为 16 加载因子0.75 阈值=大小*因子}}
 - synchronizeMap与ConcurrentHashMap的区别 #card #Java并发
   card-last-interval:: 4
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-20T06:39:34.950Z
-  card-last-reviewed:: 2023-01-16T06:39:34.950Z
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-01-25T02:40:21.768Z
+  card-last-reviewed:: 2023-01-21T02:40:21.769Z
   card-last-score:: 3
 	- 锁住数据的粒度
 		- {{cloze synchMap 一次锁住一整张表}}
