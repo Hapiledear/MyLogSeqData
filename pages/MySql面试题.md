@@ -252,7 +252,10 @@
 	- type 使用了哪种类型的查询
 		- {{cloze system > index > range > ref > eq_ref > index > all}}
 	- possible_keys 和 key 可能使用的索引
-	-
+	- ref 索引的哪一列被使用了
+	- rows 预计扫描行数
+	- extra 额外信息
+		-
 - 工作中你是如何优化慢查询的 #card
 	-
 - InnoDb与MyISAM的比对
