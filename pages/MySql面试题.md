@@ -255,6 +255,8 @@
 	- ref 索引的哪一列被使用了
 	- rows 预计扫描行数
 	- extra 额外信息
+		- Using filesort 使用了非索引列排序
+		- Using temporary 使用了临时表
 		-
 - 工作中你是如何优化慢查询的 #card
 	-
