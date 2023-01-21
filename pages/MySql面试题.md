@@ -277,7 +277,9 @@
 		- 是MySql层的日志系统 ，记录的是 {{cloze SQL语句的原始逻辑}}
 	- redo log
 		- 是存储引擎 InnoDb的日志 ，记录的是 {{cloze 某个数据做了什么修改}}
--
+- MySql的主从复制 #card
+	- Master开启 bin log ,对数据的更新操作会按顺序写入 bin log
+	- Slave连接Master后，Slave的一个`IO线程`
 - InnoDb与MyISAM的比对
 - 元数据和基本数据类型及其使用
 	- 日期类型
