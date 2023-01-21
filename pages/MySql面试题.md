@@ -112,9 +112,11 @@
 - 读取数据的两种方式 #card
 	- mvcc {{cloze 快照读}}
 		- 简单的select操作
+		- 如何解决幻读 {{cloze MVCC + Read View}}
 	- 最新记录 {{cloze 当前读}}
 		- 加锁的select操作 {{cloze lock in share mode}} {{cloze for update}}
 		- 插入、更新、删除操作
+		- 如何解决幻读 {{cloze next-key Lock 行锁与间隙锁的组合}}
 - 什么是MVCC #card
 	- 多版本并发控制
 	- 只工作在两种事物隔离级别下
