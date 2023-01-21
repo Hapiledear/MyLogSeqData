@@ -283,7 +283,8 @@
 	- Master开启 `IO线程` 开始传输bin log
 	- Slave 启动线程  `SQL线程` ，实时监控 中继日志是否有更新，解析SQL语句，在S库中执行
 - 分库分表策略 及 数据分片规则 #card
-	-
+	- 水平拆分
+		- {{cloze 将一张表中的数据，按照一定策略(Hash取模、range)}}
 - 分库分表会带来哪些问题，如何解决 #card
 	-
 - InnoDb与MyISAM的比对
