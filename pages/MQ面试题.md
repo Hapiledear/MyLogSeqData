@@ -14,7 +14,7 @@
 - Rabbit MQ 如何保证消息下顺序性? #card
 	- 拆分多个queue,每个queue对应一个consumer。
 - Rabbit MQ 消息基于什么传输? #card
-	- 建立TCP连接后，基于信道的方式传输数据
+	- 建立TCP连接后，基于信道channel的方式传输数据
 -
 - 项目中如何使用MQ 架构是怎样的
 - MQ有哪些常见问题，是如何解决的
