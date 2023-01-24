@@ -65,6 +65,12 @@
 		- {{cloze 数据发送时，会自动同步到所有机器上}}
 		- 缺点 {{cloze 同步开销大，占用网络带宽}}
 - 消息队列满了怎么处理？几百万消息积压几个小时。 #card
+  card-last-interval:: 3.34
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-27T10:46:38.162Z
+  card-last-reviewed:: 2023-01-24T02:46:38.162Z
+  card-last-score:: 3
 	- 消费者. {{cloze 快速定位问题，修复consumer}} {{cloze 停止线上的consumer消费}}
 	- 机器扩容 {{cloze 上线一个分发consumer，分发到新建立的topic，partition是原来的10倍}} {{cloze 消费consumer上线，也是原来的10倍}}
 	- 历史数据补回 {{cloze 找寻冗余字段 或 日志信息，尽可能的补回那些因本次事故过期\未正常处理的数据}}
