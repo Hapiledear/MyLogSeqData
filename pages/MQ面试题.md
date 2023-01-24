@@ -16,7 +16,7 @@
 - Rabbit MQ 消息基于什么传输? #card
 	- 建立TCP连接后，基于信道channel的方式传输数据
 	- channel是建立在TCP连接上的虚拟连接，没有数量限制。达到复用TCP连接的目的
-- Rabbit MQ  如何保证不重复消费 #card
+- Rabbit MQ  如何保证不重复消费? 幂等性  #card
 	- 缓存 {{cloze 使用缓存记录唯一ID，设置一个过期时间}}
 	- 数据库 {{cloze 使用一张表记录已消费的数据，发生主键冲突则证明已消费}}
 - Rabbit MQ  如何保证消息的不丢失？ #card
