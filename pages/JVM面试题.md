@@ -22,11 +22,11 @@
 	- 执行引擎 {{cloze 执行字节码指令。分为 即时编译执行和解释执行。此外，**垃圾收集器** 也在其中}}
 	- 本地接口 {{cloze 调用本地方法}}
 - 说一下JVM内存模型 #card
-  card-last-interval:: 3.59
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-20T18:30:35.937Z
-  card-last-reviewed:: 2023-01-17T04:30:35.937Z
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-01-28T02:53:03.954Z
+  card-last-reviewed:: 2023-01-24T02:53:03.955Z
   card-last-score:: 3
 	- 画一下JVM内存模型图，并描述每个模块的定义，作用，以及可能会存在的问题
 	- 虚拟机栈
@@ -228,11 +228,11 @@
 		- 将堆内存分块，每个块都看作Eden s1 s2 Huge old
 		- 只针对新生代的Young GC 和 新生代&老年代的Mix GC
 - 4种引用及应用场景 #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-01-23T04:43:34.767Z
-  card-last-reviewed:: 2023-01-19T04:43:34.767Z
+  card-last-interval:: 8.32
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-02-01T09:53:15.168Z
+  card-last-reviewed:: 2023-01-24T02:53:15.168Z
   card-last-score:: 3
 	- 强引用
 		- new关键字触发
