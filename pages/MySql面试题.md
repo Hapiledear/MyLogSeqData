@@ -30,11 +30,11 @@
   card-last-score:: 3
 	- {{cloze from -> join t2 on xxx  -> where yyy -> group by aaa -> having -> bbb -> select aaa,bbb,ccc -> distinct aaa ->order by bbb -> limit m,n}}
 - 存储引擎InnoDb和MyISAM的区别 #card
-  card-last-interval:: 3.22
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-22T14:41:24.338Z
-  card-last-reviewed:: 2023-01-19T09:41:24.338Z
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-01-28T02:44:12.239Z
+  card-last-reviewed:: 2023-01-24T02:44:12.239Z
   card-last-score:: 3
 	- 事务支持
 		- {{cloze 不支持}} M
@@ -209,6 +209,12 @@
 	- 数据记录 {{cloze 都存放在叶子节点中}} {{cloze 非叶节点只存储键值信息}}
 	- {{cloze 所有叶子节点之间都有一个链指针}}
 - 索引的优缺点 #card
+  card-last-interval:: 3.59
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-27T16:44:38.664Z
+  card-last-reviewed:: 2023-01-24T02:44:38.664Z
+  card-last-score:: 3
 	- 优点
 		- {{cloze 提高数据检索效率，降低IO}}
 		- {{cloze 索引本身有一定顺序，降低排序成本}}
