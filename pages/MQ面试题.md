@@ -1,7 +1,7 @@
 - {{cards [[MQ面试题]] }}
 - 项目中是如何使用MQ的？5  #card
 	- {{cloze 异步处理}} 注销用户
-	- {{cloze 应用解耦}}
+	- {{cloze 应用解耦}} 用户成长值加分
 	- {{cloze 流量削峰}} cps任务
 	- {{cloze 日志处理}} op_log
 	- {{cloze 消息通讯}}
