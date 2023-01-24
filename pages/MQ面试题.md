@@ -23,7 +23,7 @@
 		- {{cloze 降低系统可用性}} MQ本身不能挂
 		- {{cloze 系统复杂度提高}} 幂等性、可靠性
 		- {{cloze 一致性问题}}  BCD三个系统都消费同一条MQ BD成功而C失败
-- Rabbit MQ 如何保证消息下顺序性? #card
+- Rabbit MQ 如何保证消息的顺序性? #card
   card-last-interval:: 4
   card-repeats:: 1
   card-ease-factor:: 2.36
@@ -31,6 +31,7 @@
   card-last-reviewed:: 2023-01-24T02:36:12.044Z
   card-last-score:: 3
 	- 拆分多个queue,每个queue对应一个consumer。
+	- {{cloze 发送时，根据ID路由}}
 - Rabbit MQ 消息基于什么传输? #card
   card-last-interval:: 2.8
   card-repeats:: 1
