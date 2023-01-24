@@ -56,10 +56,10 @@
 		- {{cloze 只能遍历}}
 - 事物的四大特性，分别是如何解决的 #card
   card-last-interval:: 4
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-23T09:35:33.884Z
-  card-last-reviewed:: 2023-01-19T09:35:33.885Z
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-01-28T02:43:10.523Z
+  card-last-reviewed:: 2023-01-24T02:43:10.523Z
   card-last-score:: 3
 	- 原子性
 		- {{cloze 在事物中的一组操作，要么全部成功提交，要么全部失败回滚}}
