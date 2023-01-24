@@ -180,11 +180,11 @@
 	- 主从复制和自动故障转移 {{cloze 部分master不可用时，还是可以继续工作}}
 	- 2个端口 {{cloze 6379 16379}}
 - 数据如何分散在机器上 #card
-  card-last-interval:: 3.59
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-20T22:57:24.607Z
-  card-last-reviewed:: 2023-01-17T08:57:24.607Z
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-01-28T02:50:10.341Z
+  card-last-reviewed:: 2023-01-24T02:50:10.342Z
   card-last-score:: 3
 	- {{cloze 一致性Hash算法}}
 		- 哈希环，顺时针，虚拟节点

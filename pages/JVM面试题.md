@@ -48,11 +48,11 @@
 		- {{cloze 基于NIO的 DirectByteBuffer 而产生的堆外内存}} NIO
 		- {{cloze 通过DirectByteBuffer对象的虚引用实现堆外内存的释放}} 如何回收
 - 堆内存的组成 #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-01-23T09:43:06.151Z
-  card-last-reviewed:: 2023-01-19T09:43:06.152Z
+  card-last-interval:: 8.32
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-02-01T09:50:01.748Z
+  card-last-reviewed:: 2023-01-24T02:50:01.749Z
   card-last-score:: 3
 	- {{cloze 1/3的年轻代 1/2的老年代}} 2代
 	- {{cloze  年轻代又分 eden区 s1和s2区 比例为 8:1:1}} 3区
@@ -67,11 +67,11 @@
 	- {{cloze DirectByteBuffer 所申请的直接内存}} NIO
 	- {{cloze 方法区的具体实现 元空间}}
 - ## 为什么 字符串常量池 #常量池 被移动到了堆中？ #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-01-23T00:59:06.660Z
-  card-last-reviewed:: 2023-01-19T00:59:06.660Z
+  card-last-interval:: 8.32
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-02-01T09:49:51.165Z
+  card-last-reviewed:: 2023-01-24T02:49:51.166Z
   card-last-score:: 3
 	- [[Java 永久代]]在 Full GC/Major GC  时才会触发，条件苛刻
 	- 开发中会有大量字符串被创建，回收效率低导致永久代内存不足

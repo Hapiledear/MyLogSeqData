@@ -255,6 +255,12 @@
 	- 不存在索引下推时 {{cloze 先根据索引查记录，再根据where条件过滤}}
 	- 使用索引下推后 {{cloze 先根据 where条件过滤记录，再进行索引查询}}
 - MRR优化 #card
+  card-last-interval:: 2.8
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-26T21:50:30.309Z
+  card-last-reviewed:: 2023-01-24T02:50:30.309Z
+  card-last-score:: 3
 	- 从随机读变为顺序读 {{cloze 通过对索引值排序，把无序回表IO变成有序回表IO}}
 - Explain 查询计划 #card
   card-last-interval:: 4
