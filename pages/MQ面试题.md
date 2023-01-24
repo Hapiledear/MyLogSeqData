@@ -31,7 +31,7 @@
   card-last-reviewed:: 2023-01-24T02:36:12.044Z
   card-last-score:: 3
 	- 拆分多个queue,每个queue对应一个consumer。
-	- {{cloze 发送时，根据ID路由}}
+	- {{cloze 发送时，根据key ID路由，保证同一个ID的消息发到同一个queue}}
 - Rabbit MQ 消息基于什么传输? #card
   card-last-interval:: 2.8
   card-repeats:: 1
