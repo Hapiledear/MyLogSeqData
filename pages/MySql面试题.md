@@ -335,6 +335,12 @@
 	- 各种看板和统计报表
 		- {{cloze 数据工厂，离线计算。 直接接入ES}}
 - 大批量数据的插入 #card
+  card-last-interval:: 3.11
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-27T04:47:50.899Z
+  card-last-reviewed:: 2023-01-24T02:47:50.899Z
+  card-last-score:: 3
 	- 开启事务
 	- 合并插入：一条语句插入多条数据
 	- 顺序插入：数据按主键ID排序好

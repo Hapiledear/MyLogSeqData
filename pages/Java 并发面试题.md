@@ -103,11 +103,11 @@
 	- 只能保证一个共享变量的原子操作
 		- {{cloze 将两个变量放入一个对象中}} {{cloze 上锁}}
 - Lock与synchronize的区别 #card #Java并发
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-01-23T09:38:34.095Z
-  card-last-reviewed:: 2023-01-19T09:38:34.095Z
+  card-last-interval:: 8.32
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-02-01T09:48:28.301Z
+  card-last-reviewed:: 2023-01-24T02:48:28.302Z
   card-last-score:: 3
 	- 实现方式
 		- {{cloze Lock基于Java类实现，易于扩展，功能丰富}} {{cloze synch基于对象头实现，无法自定义}}
@@ -118,11 +118,11 @@
 	- 锁的使用范围
 		- {{cloze Lock可以在不同范围、不同的顺序获取和释放锁}} {{cloze synch只能在进临界区获取和释放}}
 - 可重入锁的实现原理  #card #Java并发
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-01-23T09:37:47.874Z
-  card-last-reviewed:: 2023-01-19T09:37:47.874Z
+  card-last-interval:: 8.32
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-02-01T09:48:13.356Z
+  card-last-reviewed:: 2023-01-24T02:48:13.356Z
   card-last-score:: 3
 	- 重入性
 		- {{cloze 已获得锁的线程可以再次获取}}

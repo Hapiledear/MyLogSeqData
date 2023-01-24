@@ -114,11 +114,11 @@
 		- 多线程切换会带来开销，且代码复杂性上升。最终选择了IO多路复用
 	- 在6.0+，针对 {{cloze 网络请求}}改成了多线程
 - Redis的分布式锁如何实现 #card
-  card-last-interval:: 3.86
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-20T05:25:23.600Z
-  card-last-reviewed:: 2023-01-16T09:25:23.600Z
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-01-28T02:48:42.497Z
+  card-last-reviewed:: 2023-01-24T02:48:42.497Z
   card-last-score:: 3
 	- {{cloze setnx来争抢锁，再用expire加上过期时间}}
 	- 高可用分布式锁 {{cloze RedLock}} 但可能导致性能下降，建议使用 {{cloze zk实现分布式锁}}
