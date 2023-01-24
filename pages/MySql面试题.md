@@ -203,6 +203,12 @@
 		- 作用 {{cloze 在RR事务级别下，解决并发插入问题}}
 		- 原理 {{cloze 区间相同但插入记录本身不同的情况下 互不排斥}}
 - 主键的选择，使用自增ID 还是 UUID #card
+  card-last-interval:: 2.8
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-26T21:51:43.302Z
+  card-last-reviewed:: 2023-01-24T02:51:43.302Z
+  card-last-score:: 3
 	- 自增型ID {{cloze 符合主键索引的顺序排布，插入快速，产生碎片较少}}
 	- UUID {{cloze 全局唯一，跨系统存取方便}}
 - B+树与B树的对比 #card
