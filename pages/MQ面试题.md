@@ -12,10 +12,16 @@
 	- {{cloze 日志处理}} op_log
 	- {{cloze 消息通讯}} 数仓数据写入mq,业务读取
 - 消息队列有什么优缺点 #card
+  card-last-interval:: 4
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-28T02:42:31.921Z
+  card-last-reviewed:: 2023-01-24T02:42:31.921Z
+  card-last-score:: 3
 	- 优点3 {{cloze 解耦、异步、削峰}}
 	- 缺点3
 		- {{cloze 降低系统可用性}} MQ本身不能挂
-		- {{cloze 系统复杂度提高}} 重复消费、可靠性传输
+		- {{cloze 系统复杂度提高}} 幂等性、可靠性
 		- {{cloze 一致性问题}}  BCD三个系统都消费同一条MQ BD成功而C失败
 - Rabbit MQ 如何保证消息下顺序性? #card
   card-last-interval:: 4
