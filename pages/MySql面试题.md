@@ -267,6 +267,12 @@
 		- Using index 使用了覆盖索引
 		- Using where 该索引还用来执行查找操作
 - 工作中你是如何优化慢查询的 #card
+  card-last-interval:: 4
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-28T02:41:10.309Z
+  card-last-reviewed:: 2023-01-24T02:41:10.310Z
+  card-last-score:: 3
 	- 添加合适的索引
 		- {{cloze 频繁查询的条件 和 排序字段 建立索引}}
 		- {{cloze 考虑建立组合索引的顺序}}
