@@ -18,6 +18,12 @@
 		- {{cloze 系统复杂度提高}} 重复消费、可靠性传输
 		- {{cloze 一致性问题}}  BCD三个系统都消费同一条MQ BD成功而C失败
 - Rabbit MQ 如何保证消息下顺序性? #card
+  card-last-interval:: 4
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-28T02:36:12.044Z
+  card-last-reviewed:: 2023-01-24T02:36:12.044Z
+  card-last-score:: 3
 	- 拆分多个queue,每个queue对应一个consumer。
 - Rabbit MQ 消息基于什么传输? #card
 	- 建立TCP连接后，基于信道channel的方式传输数据
