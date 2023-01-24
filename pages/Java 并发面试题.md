@@ -174,11 +174,11 @@
 		- {{cloze ConcurMap一次只锁一个分段}}
 - CopyOnWriteArrayList是什么，实践场景 #card #Java并发
   card-last-interval:: 4
-  card-repeats:: 1
-  card-ease-factor:: 2.6
-  card-next-schedule:: 2023-01-21T04:30:45.007Z
-  card-last-reviewed:: 2023-01-17T04:30:45.007Z
-  card-last-score:: 5
+  card-repeats:: 2
+  card-ease-factor:: 2.46
+  card-next-schedule:: 2023-01-28T02:45:33.536Z
+  card-last-reviewed:: 2023-01-24T02:45:33.536Z
+  card-last-score:: 3
 	- 字如其名 {{cloze 它的写入操作将copy出一份副本 ，再在这个副本上进行更改}}
 	- 缺点 {{cloze copy数字代价高昂，消耗内存}}
 	- 适用场景 {{cloze 读多写少}}
