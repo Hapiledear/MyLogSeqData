@@ -89,11 +89,11 @@
 		- 存储的是 {{cloze 最新版本的数据}}
 		- 持久性的体现 {{cloze 如果系统崩溃，可以用它来进行恢复}}
 - 描述一下事物产生的三个问题 #card
-  card-last-interval:: 3.86
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-23T05:37:36.741Z
-  card-last-reviewed:: 2023-01-19T09:37:36.741Z
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-01-28T02:47:40.285Z
+  card-last-reviewed:: 2023-01-24T02:47:40.286Z
   card-last-score:: 3
 	- 脏读
 		- {{cloze 事物A读取到了事物B 未提交的数据}}
@@ -139,11 +139,11 @@
 				- {{cloze 只与 非唯一索引列 有关}}
 		- MVCC + Read View 的组合方式 解决 快照读下的幻读
 - 读取数据的两种方式 #card
-  card-last-interval:: 2.8
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-23T21:49:55.630Z
-  card-last-reviewed:: 2023-01-21T02:49:55.631Z
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-01-28T02:46:59.383Z
+  card-last-reviewed:: 2023-01-24T02:46:59.383Z
   card-last-score:: 3
 	- mvcc {{cloze 快照读}}
 		- 简单的select操作
@@ -246,6 +246,12 @@
 	- 非主键的`order by ` 但需要具体情况具体验证
 	- 表数据较少时，走全表扫描比走索引效率更高 (内置优化策略)
 - 索引下推 #card
+  card-last-interval:: 3.22
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-27T07:47:30.944Z
+  card-last-reviewed:: 2023-01-24T02:47:30.944Z
+  card-last-score:: 3
 	- 不存在索引下推时 {{cloze 先根据索引查记录，再根据where条件过滤}}
 	- 使用索引下推后 {{cloze 先根据 where条件过滤记录，再进行索引查询}}
 - MRR优化 #card

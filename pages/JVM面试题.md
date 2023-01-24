@@ -175,11 +175,11 @@
 	- 解析 {{cloze 将常量池中的符号引用替换成直接引用}}
 	- 初始化 {{cloze 对静态变量和代码块执行初始化工作}}
 - 类加载器分类和双亲委派模型 #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-01-23T00:57:32.099Z
-  card-last-reviewed:: 2023-01-19T00:57:32.099Z
+  card-last-interval:: 8.32
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-02-01T09:46:46.155Z
+  card-last-reviewed:: 2023-01-24T02:46:46.155Z
   card-last-score:: 3
 	- 启动类加载器
 	- 扩展类加载器
