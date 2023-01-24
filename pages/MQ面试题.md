@@ -1,5 +1,11 @@
 - {{cards [[MQ面试题]] }}
 - 项目中是如何使用MQ的？5  #card
+  card-last-interval:: 4
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-28T02:35:28.590Z
+  card-last-reviewed:: 2023-01-24T02:35:28.591Z
+  card-last-score:: 3
 	- {{cloze 异步处理}} 注销用户
 	- {{cloze 应用解耦}} 用户成长值加分
 	- {{cloze 流量削峰}} cps任务
