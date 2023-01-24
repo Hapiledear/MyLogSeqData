@@ -36,7 +36,8 @@
 		- 缺点 {{cloze 同步开销大，占用网络带宽}}
 - 消息队列满了怎么处理？几百万消息积压几个小时。#card
 	- 首先，消费者肯定有问题了. {{cloze 快速定位问题，修复consumer}} 停止线上的consumer消费
-	- 机器扩容 {{cloze 上线一个consumer只用于分发，分发到新建立的topic，partition是原来的10倍}} {{cloze 消费consumer上线，也是原来的}}
+	- 机器扩容 {{cloze 上线一个分发consumer，分发到新建立的topic，partition是原来的10倍}} {{cloze 消费consumer上线，也是原来的10倍}}
+	- 历史数据补回 {{cloze 找寻冗余字段 或 日志信息}}
 - 项目中如何使用MQ 架构是怎样的
 - MQ有哪些常见问题，是如何解决的
 - Rabbit MQ 的工作原理 如何保证 顺序性，幂等性
