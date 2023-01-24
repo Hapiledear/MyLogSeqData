@@ -245,6 +245,12 @@
 - MRR优化 #card
 	- 从随机读变为顺序读 {{cloze 通过对索引值排序，把无序回表IO变成有序回表IO}}
 - Explain 查询计划 #card
+  card-last-interval:: 4
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-28T02:40:20.350Z
+  card-last-reviewed:: 2023-01-24T02:40:20.351Z
+  card-last-score:: 3
 	- id 执行顺序
 		- {{cloze id不同，值越大越先执行}}
 		- {{cloze id相同，从上到下的顺序}}
