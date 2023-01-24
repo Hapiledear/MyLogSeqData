@@ -13,6 +13,7 @@
 		- {{cloze 一致性问题}}  BCD三个系统都消费同一条MQ BD成功而C失败
 - Rabbit MQ 如何保证消息下顺序性? #card
 	- 拆分多个queue,每个queue对应一个consumer。
+- Rabbit MQ 消息基于什么传输
 - 项目中如何使用MQ 架构是怎样的
 - MQ有哪些常见问题，是如何解决的
 - Rabbit MQ 的工作原理 如何保证 顺序性，幂等性
