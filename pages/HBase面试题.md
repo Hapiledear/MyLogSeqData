@@ -7,4 +7,6 @@
 	- userId倒序取模
 	- userId + Long.Max - currentTimeStamp 便于scan查询，最近的记录在前
 - 简述HBase的读和写流程 #card
-	-
+	- 读流程
+		- {{cloze zk}} 获取 {{cloze Meta信息和RegionServer}}
+		-
