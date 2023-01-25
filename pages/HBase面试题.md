@@ -13,3 +13,5 @@
 	- 写流程
 		- {{cloze zk}} 获取 {{cloze meta信息 和 RegionServer}}
 		- 双写 {{cloze 同时写入HLog 和 MemStore}}
+			- {{cloze HLog用于宕机恢复和故障转移}}
+		- flush {{cloze }}
