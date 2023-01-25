@@ -9,7 +9,7 @@
 - 简述HBase的读和写流程 #card
 	- 读流程
 		- {{cloze zk}} 获取 {{cloze Meta信息和RegionServer}}
-		- 连接 {{cloze RegionServer}}  {{cloze MemStore}} 查询，在从 {{cloze StoreFile}} 中查询
+		- 连接 {{cloze RegionServer}} {{cloze BlockCache}} -> {{cloze MemStore}} -> {{cloze StoreFile}} 中查询
 	- 写流程
 		- {{cloze zk}} 获取 {{cloze meta信息 和 RegionServer}}
 		- 双写 {{cloze 同时写入HLog 和 MemStore}}
