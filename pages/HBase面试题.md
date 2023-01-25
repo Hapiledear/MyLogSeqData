@@ -16,4 +16,4 @@
 			- {{cloze HLog用于宕机恢复和故障转移}}
 		- flush {{cloze 当MemStore写入数据到达一个阈值时，写入磁盘文件 StoreFile}}
 			- 小文件合并 {{cloze 多个小的storefile进行合并操作，同时进行版本合并和数据删除}}
-			- 大文件拆分 {{cloze storeFile达到一定阈值会进行拆分。原Region下线，新的2个Region会被分配到}}
+			- 大文件拆分 {{cloze storeFile达到一定阈值会进行拆分。原Region下线，新的2个Region会被分配到不同的RegionServer}}
