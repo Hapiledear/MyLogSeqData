@@ -9,4 +9,6 @@
 - 简述HBase的读和写流程 #card
 	- 读流程
 		- {{cloze zk}} 获取 {{cloze Meta信息和RegionServer}}
-		- 连接 {{cloze RegionServer}} 先从 {{cloze Mem}}
+		- 连接 {{cloze RegionServer}} 先从 {{cloze MemStore}} 查询，在从 {{cloze StoreFile}} 中查询
+	- 写流程
+		-
