@@ -15,5 +15,5 @@
 		- 双写 {{cloze 同时写入HLog 和 MemStore}}
 			- {{cloze HLog用于宕机恢复和故障转移}}
 		- flush {{cloze 当MemStore写入数据到达一个阈值时，写入磁盘文件 StoreFile}}
-			- 小文件合并
+			- 小文件合并 {{cloze 多个小的storefile进行合并操作}}
 			- 大文件拆分
