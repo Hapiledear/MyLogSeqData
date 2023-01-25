@@ -12,7 +12,7 @@
 		- 连接 {{cloze RegionServer}} {{cloze BlockCache}} -> {{cloze MemStore}} -> {{cloze StoreFile}} 中查询
 	- 写流程
 		- {{cloze zk}} 获取 {{cloze meta信息 和 RegionServer}}
-		- 双写 {{cloze 先写入HLog，再写 MemStore}}
+		- 双写 {{cloze 先写入HLog (write ahead log)，再写 MemStore}}
 			- {{cloze HLog用于宕机恢复和故障转移}}
 		- flush {{cloze 当MemStore写入数据到达一个阈值时，写入磁盘文件 StoreFile}}
 			- 小文件合并 {{cloze 多个小的storefile进行合并操作，同时进行版本合并和数据删除}}
