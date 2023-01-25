@@ -267,7 +267,7 @@
   card-next-schedule:: 2023-01-26T21:50:30.309Z
   card-last-reviewed:: 2023-01-24T02:50:30.309Z
   card-last-score:: 3
-	- 从随机读变为顺序读 {{cloze 通过对索引值排序，把无序回表IO变成有序回表IO}}
+	- 当使用从随机读变为顺序读 {{cloze 通过对索引值排序，把无序回表IO变成有序回表IO}}
 - Explain 查询计划 #card
   card-last-interval:: 4
   card-repeats:: 1
