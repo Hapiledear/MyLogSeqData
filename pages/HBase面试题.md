@@ -4,7 +4,6 @@
 	- 超过亿级的表数据
 	- 帖子和评论 -- 无固定且需要扩展的列
 - 项目中的rowkey是如何设计的 #card
-	- 核心是
 	- userId倒序取模
 	- userId + Long.Max - currentTimeStamp 便于scan查询，最近的记录在前
 - 简述HBase的读和写流程 #card
