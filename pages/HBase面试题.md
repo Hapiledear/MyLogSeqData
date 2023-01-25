@@ -6,3 +6,5 @@
 - 项目中的rowkey是如何设计的 #card
 	- userId倒序取模
 	- userId + Long.Max - currentTimeStamp 便于scan查询，最近的记录在前
+- 简述HBase的读和写流程 #card
+	-
