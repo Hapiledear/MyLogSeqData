@@ -201,7 +201,7 @@
   card-last-reviewed:: 2023-01-26T03:02:53.826Z
   card-last-score:: 3
 	- 定义 {{cloze 一连串操作，要么都执行完，要么都不执行}}
-	- 如何保证原子性 {{cloze CAS指令}} {{cloze 并发包下的原子类}}
+	- 如何保证原子性 {{cloze CAS指令}} {{cloze Lock和synchroize}}
 - java中有哪些原子类  #card #Java并发
   card-last-interval:: 3.59
   card-repeats:: 1
