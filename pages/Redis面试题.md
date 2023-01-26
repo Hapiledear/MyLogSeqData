@@ -74,7 +74,7 @@
 		- {{cloze volatile-lru}} 有过期时间的key中 lru
 		- {{cloze volatile-random}} 有过期时间的key中 随机移除
 		- {{cloze volatile-ttl}} 有过期时间的key中 移除最早过期时间的key
-- 了解Redis的事务机制吗？#card
+- 了解Redis的事务机制吗？ #card
   card-last-interval:: -1
   card-repeats:: 0
   card-ease-factor:: 2.5
@@ -87,10 +87,10 @@
 	- 监视watch整个事务相关的key是否早已被修改，如果是则拒绝执行这个事务
 	- 执行时不会被其他客户端发送来的命令请求打断
 	- 不支持回滚，要么都执行，要么都不执行
-- 如何处理多个客户端并发写一个key?#card
+- 如何处理多个客户端并发写一个key? #card
 	- 使用事务 实现CAS
 		- {{cloze 事务具有watch机制,一旦被监测的key发生更改，本次提交就失效了}}
-- Redis为什么快？#card
+- Redis为什么快？ #card
   card-last-interval:: 3.59
   card-repeats:: 1
   card-ease-factor:: 2.36
@@ -101,7 +101,7 @@
 	- 使用单线程， {{cloze 避免线程切换和竞争产生的消耗}}
 	- 基于 {{cloze IO多路复用模型}} IO模型 {{cloze 让单个线程高效处理多个连接请求}}
 	- {{cloze C语言实现，更加优化的基础数据结构}} 语言、底层数据结构
-- Redis是单线程的吗？#card
+- Redis是单线程的吗？ #card
   card-last-interval:: 3.59
   card-repeats:: 1
   card-ease-factor:: 2.36
@@ -122,7 +122,7 @@
   card-last-score:: 3
 	- {{cloze setnx来争抢锁，再用expire加上过期时间}}
 	- 高可用分布式锁 {{cloze RedLock}} 但可能导致性能下降，建议使用 {{cloze zk实现分布式锁}}
-- 如何把固定前缀开通的key全部找出来#card
+- 如何把固定前缀开通的key全部找出来 #card
   card-last-interval:: 4
   card-repeats:: 2
   card-ease-factor:: 2.22
@@ -147,7 +147,7 @@
 		- 目的 {{cloze 解决AOF 文件过大的问题}}
 		- {{cloze 将过期的、不再使用的、重复的以及可优化的命令进行优化，重新生成AOF文件}}
 		- 流程 {{cloze fork一个子进程}} {{cloze 重写期间，主线程的写命令被保存在缓冲区中}}
-- RDB和AOF各自的优缺点#card
+- RDB和AOF各自的优缺点 #card
   card-last-interval:: 3.59
   card-repeats:: 1
   card-ease-factor:: 2.36
