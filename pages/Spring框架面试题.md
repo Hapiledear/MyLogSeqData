@@ -5,4 +5,5 @@
 	- AOP {{cloze 代理模式}}
 	- RestTemplate {{cloze 模板方法}}
 	- ApplicationListener {{cloze 观察者模式}}
--
+- 什么是Spring的IOC(控制反转) #card
+	-
