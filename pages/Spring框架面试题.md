@@ -4,4 +4,5 @@
 	- Bean {{cloze 单例模式}}
 	- AOP {{cloze 代理模式}}
 	- RestTemplate {{cloze 模板方法}}
-	- ApplicationListener {{cloze }}
+	- ApplicationListener {{cloze 观察者模式}}
+-
