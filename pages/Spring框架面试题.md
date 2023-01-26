@@ -6,4 +6,4 @@
 	- RestTemplate {{cloze 模板方法}}
 	- ApplicationListener {{cloze 观察者模式}}
 - 什么是Spring的IOC(控制反转) #card
-	-
+	- {{cloze 原本由代码控制对象的生命周期，交由程序}}
