@@ -22,7 +22,7 @@
 	- 如果是有状态的Bean，可以使用更高一级的 {{cloze prototype}}
 		- 有状态指的是有书籍存储功能
 	- 或者是该数据字段使用 {{cloze ThreadLocal}} 修饰
-- Spring Bean的生命周期，描述一下 核心4- #card
+- Spring Bean的生命周期，描述一下 核心4-全面8 #card
 	- 实例化
 	- 属性赋值
 	- 初始化
@@ -34,3 +34,4 @@
 	- 销毁回调
 		- DisposableBean接口的destory方法
 		- destory-method方法
+-
