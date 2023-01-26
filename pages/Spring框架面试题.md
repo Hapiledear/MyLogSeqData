@@ -47,6 +47,12 @@
 		- DisposableBean接口的destory方法
 		- destory-method方法
 - BeanFactory 和 FactoryBean的区别 #card
+  card-last-interval:: 3.72
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-29T20:16:02.664Z
+  card-last-reviewed:: 2023-01-26T03:16:02.664Z
+  card-last-score:: 3
 	- BF {{cloze 是框架用来管理和装配普通bean的容器}}
 	- FB {{cloze 是用以生产对象和装饰对象的工厂接口}}
 - 如何解决Bean注入时的循环依赖问题  #card
