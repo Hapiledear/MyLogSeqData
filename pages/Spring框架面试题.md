@@ -26,7 +26,7 @@
 	- 实例化
 	- 属性赋值
 	- 初始化
-	- 扩展
+	- 初始化sround
 		- xxxAware接口，用以获取spring容器的资源和属性
 		- BeanPostProcessor接口
 		- init-method方法
