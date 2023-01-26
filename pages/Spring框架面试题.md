@@ -22,4 +22,5 @@
 	- 如果是有状态的Bean，可以使用更高一级的 {{cloze prototype}}
 		- 有状态指的是有书籍存储功能
 	- 或者是该数据字段使用 {{cloze ThreadLocal}} 修饰
--
+- Spring Bean的生命周期，描述一下 #card
+	-
