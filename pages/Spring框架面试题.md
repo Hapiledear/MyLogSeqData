@@ -9,7 +9,7 @@
 	- {{cloze 原本由代码控制对象的生命周期，交由spring框架管理}}
 	- 实现 {{cloze 工厂模式+反射机制}}
 - BeanFactory 和 ApplicationContext的区别 #card
-	- BF 可以理解为 “低级容器”
+	- BF 可以理解为 “低级容器”，只是简单的 k-v结构
 	- 依赖关系 {{cloze ApplicationContext是BeanFactory的子接口,扩展了BeanFactory的功能}}
 	- 装载Bean的方式
 		- {{cloze 采用延迟加载的形式来注入Bean}} BF
