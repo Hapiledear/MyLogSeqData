@@ -18,4 +18,5 @@
 		- {{cloze 手动注册}} BF
 		- {{cloze 自动注册}} AC
 - Spring中的Bean是线程安全的吗？如何处理线程并发问题 #card
-	-
+	- 默认Bean的作用域 {{cloze singleton}}不是线程安全的
+	- 如果是有状态的Bean，可以使用更高一级的 {{cloze proto}}
