@@ -58,11 +58,11 @@
 	- {{cloze  年轻代又分 eden区 s1和s2区 比例为 8:1:1}} 3区
 	- {{cloze 通常 年轻代采用的GC算法是 复制算法，老年代采用的是标记-整理算法 }} GC算法
 - 非堆内存有哪些 #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.46
-  card-next-schedule:: 2023-01-23T04:42:20.507Z
-  card-last-reviewed:: 2023-01-19T04:42:20.507Z
+  card-last-interval:: 9.28
+  card-repeats:: 3
+  card-ease-factor:: 2.32
+  card-next-schedule:: 2023-02-04T09:02:41.933Z
+  card-last-reviewed:: 2023-01-26T03:02:41.933Z
   card-last-score:: 3
 	- {{cloze DirectByteBuffer 所申请的直接内存}} NIO
 	- {{cloze 方法区的具体实现 元空间}}
@@ -285,11 +285,11 @@
 	- {{cloze -xss1m}} 设置单个线程栈大小
 	- {{cloze -xx:maxMetaspaceSize=2g}} 设置元空间的最大值
 - 对象一定都是在堆上分配吗？ 逃逸分析 #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-01-23T00:58:58.109Z
-  card-last-reviewed:: 2023-01-19T00:58:58.109Z
+  card-last-interval:: 8.32
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-02-03T10:03:05.539Z
+  card-last-reviewed:: 2023-01-26T03:03:05.540Z
   card-last-score:: 3
 	- 如果对象不会逃逸出方法外部，则会在栈上分配
 	- 如果符合标量替换条件(不逃逸&不会被本线程外的线程访问)，则会将对象分解成若干个方法内从成员变量
