@@ -37,10 +37,12 @@
 - BeanFactory 和 FactoryBean的区别 #card
 	- BF {{cloze 是框架用来管理和装配普通bean的容器}}
 	- FB {{cloze 是用以生产对象和装饰对象的工厂接口}}
-- 如何解决Bean注入时的循环依赖问题 三级缓存 #card
-	- 成品 -- 一级缓存 singletonObjects
-		- 完整的Bean，也即完成了属性填充，彻底完成初始化
-	- 半成品--二级缓存
-		- 通过 getObject() 从三级缓存中取出一次bean
-	- 原材料工厂 --三级缓存 singletonFactories
-		- Bean被创建，还没有属性填充和初始化
+- 如何解决Bean注入时的循环依赖问题  #card
+	- 三级缓存
+		- 成品 -- 一级缓存 singletonObjects
+			- {{cloze 完整的Bean，也即完成了属性填充，彻底完成初始化}}
+		- 半成品--二级缓存
+			- {{cloze 通过 getObject() 从三级缓存中取出一次bean}}
+		- 原材料工厂 --三级缓存 singletonFactories
+			- {{cloze Bean被创建，还没有属性填充和初始化}}
+	-
