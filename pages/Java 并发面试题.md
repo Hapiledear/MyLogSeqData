@@ -16,20 +16,20 @@
 		- {{cloze CUP 的物理缓存结构,JMM内存模型也有缓存}}
 		- {{cloze CUP层级的MESI协议，JMM的八种操作规范}}
 - volatile关键字的原理及其实战 #card #Java并发
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-01-25T02:49:09.661Z
-  card-last-reviewed:: 2023-01-21T02:49:09.661Z
+  card-last-interval:: 8.32
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-02-03T10:04:02.179Z
+  card-last-reviewed:: 2023-01-26T03:04:02.179Z
   card-last-score:: 3
 	- 解决了两大问题 {{cloze 可见性和禁止指令重排}} 通常搭配atomic类来实现 {{cloze 原子性}}
 	- 实践 单例模式中 {{cloze volatile修饰instance. 保证其写操作发生在读之前}}
 - volatile能将非原子操作变成原子操作吗 #card #Java并发
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-01-23T09:43:11.325Z
-  card-last-reviewed:: 2023-01-19T09:43:11.325Z
+  card-last-interval:: 8.32
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-02-03T10:04:11.084Z
+  card-last-reviewed:: 2023-01-26T03:04:11.084Z
   card-last-score:: 3
 	- 在32位的机器上，long和double分为了两部分 高位和低位。因此建议用volatile修饰
 	- 但更建议JVM实现时将这种操作视为原子性的
@@ -66,11 +66,11 @@
 		- 协作机制
 			- 持有许可的线程可以 {{cloze 主动放弃许可进入阻塞}} {{cloze 发送信号，唤起阻塞线程}}
 - synchronized和volatie的区别  #card #Java并发
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-01-24T00:45:06.883Z
-  card-last-reviewed:: 2023-01-20T00:45:06.883Z
+  card-last-interval:: 8.32
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-02-03T10:03:53.218Z
+  card-last-reviewed:: 2023-01-26T03:03:53.218Z
   card-last-score:: 3
 	- 修饰的地方 {{cloze volatile是变量修饰,synchronized可以修饰类、方法、变量}}
 	- 解决的问题 {{cloze volatile 保证的是有序性和可进行，不能保证原子性，synch 保证的是可见性(Happends-before)和原子性}}
@@ -151,11 +151,11 @@
 		- 独占方式获取和释放资源 {{cloze tryAcquire/tryRelease}}
 		- 共享方式 {{cloze tryAquireShared/treReleaseShared}}
 - ConcurrentHashMap的原理 #card #Java并发
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-01-25T02:48:52.323Z
-  card-last-reviewed:: 2023-01-21T02:48:52.323Z
+  card-last-interval:: 8.32
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-02-03T10:04:21.984Z
+  card-last-reviewed:: 2023-01-26T03:04:21.984Z
   card-last-score:: 3
 	- 1.8- {{cloze 将map分段为segment，对每一段分别加锁}}
 	- 1.8+ {{cloze 弃用了分段，而是改用了CAS操作}}
