@@ -22,7 +22,7 @@
   card-next-schedule:: 2023-02-03T10:04:02.179Z
   card-last-reviewed:: 2023-01-26T03:04:02.179Z
   card-last-score:: 3
-	- 解决了两大问题 {{cloze 可见性和禁止指令重排}} 通常搭配atomic类来实现 {{cloze 原子性}}
+	- 解决了两大问题 {{cloze 保证变量对所有线程的可见性和禁止指令重排}} 通常搭配atomic类来实现 {{cloze 原子性}}
 	- 实践 单例模式中 {{cloze volatile修饰instance. 保证其写操作发生在读之前}}
 - volatile能将非原子操作变成原子操作吗 #card #Java并发
   card-last-interval:: 8.32
