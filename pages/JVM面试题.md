@@ -138,11 +138,11 @@
 		- 堆对于整个应用程序都是共享的、可见的
 		- 栈是线程私有的
 - 对象创建过程 #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.46
-  card-next-schedule:: 2023-01-23T04:42:15.678Z
-  card-last-reviewed:: 2023-01-19T04:42:15.678Z
+  card-last-interval:: 9.28
+  card-repeats:: 3
+  card-ease-factor:: 2.32
+  card-next-schedule:: 2023-02-04T09:11:04.118Z
+  card-last-reviewed:: 2023-01-26T03:11:04.119Z
   card-last-score:: 3
 	- 类加载
 	- 分配内存
