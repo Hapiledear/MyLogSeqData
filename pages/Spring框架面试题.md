@@ -34,4 +34,5 @@
 	- 销毁扩展
 		- DisposableBean接口的destory方法
 		- destory-method方法
--
+- BeanFactory 和 FactoryBean的区别
+	- BF {{cloze }}
