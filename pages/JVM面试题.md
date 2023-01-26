@@ -294,11 +294,11 @@
 	- 如果对象不会逃逸出方法外部，则会在栈上分配
 	- 如果符合标量替换条件(不逃逸&不会被本线程外的线程访问)，则会将对象分解成若干个方法内从成员变量
 - HotSpot JVM 为什么叫这个名字 #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-01-23T00:58:50.082Z
-  card-last-reviewed:: 2023-01-19T00:58:50.083Z
+  card-last-interval:: 8.32
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-02-03T10:07:37.470Z
+  card-last-reviewed:: 2023-01-26T03:07:37.470Z
   card-last-score:: 3
 	- 即时编译功能
 		- 寻找热点代码，将热点代码编译成机器码并缓存起来
