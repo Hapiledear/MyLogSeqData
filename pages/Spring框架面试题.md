@@ -36,3 +36,4 @@
 		- destory-method方法
 - BeanFactory 和 FactoryBean的区别
 	- BF {{cloze 是框架用来管理和装配普通bean的容器}}
+	- FB {{cloze 是用以生产对象和装饰对象的工厂Bean}}
