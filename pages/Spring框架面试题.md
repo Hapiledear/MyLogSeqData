@@ -49,4 +49,6 @@
 			- {{cloze 通过 getObject() 从三级缓存中取出一次bean}}
 		- 原材料工厂 --三级缓存 singletonFactories
 			- {{cloze 用于保存Bean创建工厂}}
-	-
+	- 查询过程
+		- {{cloze 一级缓存 -> 二级缓存 -> 三级缓存 }}
+		-
