@@ -29,6 +29,12 @@
 		- 有状态指的是有书籍存储功能
 	- 或者是该数据字段使用 {{cloze ThreadLocal}} 修饰
 - Spring Bean的生命周期，描述一下 4阶段-2扩展点 #card
+  card-last-interval:: 3.72
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-29T20:14:24.210Z
+  card-last-reviewed:: 2023-01-26T03:14:24.210Z
+  card-last-score:: 3
 	- 实例化
 	- 属性填充
 	- 初始化
