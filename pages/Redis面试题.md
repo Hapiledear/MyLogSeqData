@@ -131,11 +131,11 @@
   card-last-score:: 3
 	- {{cloze scan命令可以提取指定模式的key列表}}
 - Redis的持久化机制 #card
-  card-last-interval:: 3.59
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-20T18:31:08.811Z
-  card-last-reviewed:: 2023-01-17T04:31:08.812Z
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-01-30T03:12:09.382Z
+  card-last-reviewed:: 2023-01-26T03:12:09.383Z
   card-last-score:: 3
 	- bgsave 全量持久化
 		- 过程 {{cloze 生成子进程和当前内存快照，子进程进行持久化}}

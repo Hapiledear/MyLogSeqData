@@ -310,6 +310,12 @@
 		- {{cloze 是否命中索引}}
 		- 降低SQL语句的复杂度
 - bin log 和 redo log的区别 #card
+  card-last-interval:: 3.86
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-29T23:11:29.619Z
+  card-last-reviewed:: 2023-01-26T03:11:29.619Z
+  card-last-score:: 3
 	- bin log
 		- 是MySql层的日志系统 ，记录的是 {{cloze SQL语句的原始逻辑}}
 	- redo log
