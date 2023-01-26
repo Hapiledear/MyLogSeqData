@@ -1,5 +1,5 @@
 - {{cards [[JVM面试题]] }}
-- [[Java 元空间]] 会产生内存溢出吗？#card
+- [[Java 元空间]] 会产生内存溢出吗？ #card
   card-last-score:: 3
   card-repeats:: 1
   card-next-schedule:: 2023-01-20T06:41:48.486Z

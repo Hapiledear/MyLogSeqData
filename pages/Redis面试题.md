@@ -165,7 +165,7 @@
 		- 实时性 {{cloze 高，没进行一次写操作就记录到aof文件中}}
 	- AOF的缺点
 		- 生成的文件 {{cloze 比RDB大}} {{cloze 恢复速度慢}}
-- Redis的主从复制过程#card
+- Redis的主从复制过程 #card
   card-last-interval:: 3.59
   card-repeats:: 1
   card-ease-factor:: 2.36
@@ -175,7 +175,7 @@
 	- 从服务器首次连接 {{cloze 全量复制}} {{cloze rdb or aof文件}}
 	- 复制后数据先 {{cloze 保存到本地磁盘}} 后 {{cloze 从磁盘读取到内存}}
 	- 重新连接 {{cloze 部分数据复制}} {{cloze offset偏移量 repl-backlog-buffer 复制积压缓冲区}}
-- Redis的集群模式的好处#card
+- Redis的集群模式的好处 #card
 	- 数据分片 {{cloze 自动将数据分片，每个master上放一部分}}
 	- 主从复制和自动故障转移 {{cloze 部分master不可用时，还是可以继续工作}}
 	- 2个端口 {{cloze 6379 16379}}
@@ -192,7 +192,7 @@
 		- 槽位分配 {{cloze 整个集群有固定的16384 个槽位，每个master分配了固定槽位范围}}
 		- 机器的增减 {{cloze master的增减只是移动部分槽位}}
 		- 好处 {{cloze 无论在数据量大 or 小时，数据分配都很均匀}}
-- 节点宕机时的主备切换#card
+- 节点宕机时的主备切换 #card
   card-last-interval:: 4
   card-repeats:: 2
   card-ease-factor:: 2.22
@@ -207,16 +207,16 @@
 		- {{cloze 如果从节点与主节点断开时间过长，则没有资格参与选举}}
 	- 从节点选举
 		- {{cloze 投票选举，超过半数者升级}}
-- Redis优化策略#card
+- Redis优化策略 #card
 	- 在见名知意的情况下，使用短key
 	- 不要存过大的数据,存之前先把数据压缩
 	- 设置key的合理有效期,选择合适的回收策略
 	- 使用连接池，减少不必要的连接
-- 如何解决本地缓存与分布式缓存的数据不一致#card
+- 如何解决本地缓存与分布式缓存的数据不一致 #card
 	- Redis自身有 {{cloze 订阅/分发}} 机制
 	- 引入 {{cloze 消息队列}}
 	- 本地缓存的过期时间 {{cloze 设置相对短一些}}
-- Redis数据如何预热#card
+- Redis数据如何预热 #card
   card-last-interval:: 4
   card-repeats:: 1
   card-ease-factor:: 2.6
@@ -226,7 +226,7 @@
 	- 暴露内网接口，手动操作
 	- 数据量不大时，项目启动时自动加载
 	- 定时任务刷新加载
-- 热key处理#card
+- 热key处理 #card
 	- 监测
 		- 客户端 {{cloze 设置全局字典 key和调用次数}}
 		- 数据仓库 {{cloze 客户端发送mq,数据仓库实时统计}}
@@ -234,7 +234,7 @@
 	- 处理
 		- 打散 {{cloze 把热key打散到不同的服务器上，降低压力}}
 		- 二级缓存 {{cloze 加入本地的内存缓存}}
-- 大key处理#card
+- 大key处理 #card
 	- 大key造成的问题
 		- 进行IO操作时 {{cloze 占用带宽和CPU}}
 		- 数据倾斜
