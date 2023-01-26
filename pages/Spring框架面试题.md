@@ -58,4 +58,7 @@
 - 什么是Spring 的AOP,项目中是如何使用的 #card
 	- AOP 面向切面编程，核心是使用 {{cloze 代理模式}}，对目标方法执行前后进行处理
 	- 应用场景 {{cloze 日志记录}} {{cloze 接口签名校验}}
--
+- 为什么要用SpringBoot #card
+	- {{cloze 独立运行spring项目}}
+	- {{cloze 内嵌servlet容器}}
+	- {{cloze 简化maven配置，使用 starter 扩展}}
