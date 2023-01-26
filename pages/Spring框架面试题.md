@@ -28,3 +28,9 @@
 	- 初始化
 	- 扩展
 		- xxxAware接口
+		- BeanPostProcessor接口
+		- init-method方法
+	- 销毁
+	- 销毁回调
+		- DisposableBean接口的destory方法
+		-
