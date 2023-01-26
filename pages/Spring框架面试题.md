@@ -42,7 +42,8 @@
 		- 成品 -- 一级缓存 singletonObjects
 			- {{cloze 完整的Bean，也即完成了属性填充，彻底完成初始化}}
 		- 半成品--二级缓存
+			- {{cloze 用以保存 实例化完成的Bean}}
 			- {{cloze 通过 getObject() 从三级缓存中取出一次bean}}
 		- 原材料工厂 --三级缓存 singletonFactories
-			- {{cloze Bean被创建，还没有属性填充和初始化}}
+			- {{cloze 用于保存Bean创建工厂}}
 	-
