@@ -8,4 +8,6 @@
 - 什么是Spring的IOC(控制反转) #card
 	- {{cloze 原本由代码控制对象的生命周期，交由spring框架管理}}
 	- 实现 {{cloze 工厂模式+反射机制}}
-- BeanFactory 和 ApplicationContext的区别
+- BeanFactory 和 ApplicationContext的区别 #card
+	- 依赖关系 {{cloze ApplicationContext是BeanFactory的子接口,扩展了BeanFactory的功能}}
+	-
