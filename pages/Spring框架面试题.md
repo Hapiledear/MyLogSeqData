@@ -12,4 +12,5 @@
 	- 依赖关系 {{cloze ApplicationContext是BeanFactory的子接口,扩展了BeanFactory的功能}}
 	- 装载Bean的方式
 		- {{cloze 采用延迟加载的形式来注入Bean}} BF
-		- {{cloze 在容器启动时，一次性创建了所有的Bean}}
+		- {{cloze 在容器启动时，一次性创建了所有的Bean}} AC
+	-
