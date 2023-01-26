@@ -17,4 +17,5 @@
 	- 注册Bean的方式
 		- {{cloze 手动注册}} BF
 		- {{cloze 自动注册}} AC
--
+- Spring中的Bean是线程安全的吗？如何处理线程并发问题 #card
+	-
