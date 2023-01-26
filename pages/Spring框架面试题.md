@@ -1,3 +1,7 @@
 - {{cards [[Spring框架面试题]] }}
 - Spring中用了哪些设计模式? #card
-	-
+	- BeanFactory {{cloze 工厂模式}}
+	- Bean {{cloze 单例模式}}
+	- AOP {{cloze 代理模式}}
+	- RestTemplate {{cloze 模板方法}}
+	- ApplicationListener {{cloze }}
