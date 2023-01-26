@@ -163,12 +163,12 @@
 	- clone方法
 	- 反序列化
 - 类加载过程 #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.46
-  card-next-schedule:: 2023-01-23T00:54:29.925Z
-  card-last-reviewed:: 2023-01-19T00:54:29.926Z
-  card-last-score:: 5
+  card-last-interval:: 9.28
+  card-repeats:: 3
+  card-ease-factor:: 2.32
+  card-next-schedule:: 2023-02-04T09:00:08.235Z
+  card-last-reviewed:: 2023-01-26T03:00:08.235Z
+  card-last-score:: 3
 	- 加载 {{cloze 导入class文件}}
 	- 验证 {{cloze 检测class文件的正确性}}
 	- 准备 {{cloze 给静态变量分配内存空间}}
@@ -249,11 +249,11 @@
 		- 每次GC时回收
 		- 利用回收时的通知机制来管理堆外内存
 - 永久代会发生垃圾回收吗 #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-01-23T04:35:55.386Z
-  card-last-reviewed:: 2023-01-19T04:35:55.387Z
+  card-last-interval:: 8.32
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-02-03T09:59:38.017Z
+  card-last-reviewed:: 2023-01-26T02:59:38.019Z
   card-last-score:: 3
 	- 会，但是回收的条件比较苛刻
 		- 类及其所有对象都被回收
