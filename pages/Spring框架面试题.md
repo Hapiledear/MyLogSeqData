@@ -26,12 +26,12 @@
 	- 实例化
 	- 属性赋值
 	- 初始化
-	- 初始化 surond
+	- 初始化扩展
 		- xxxAware接口，用以获取spring容器的资源和属性
 		- BeanPostProcessor接口
 		- init-method方法
 	- 销毁
-	- 销毁 surond
+	- 销毁扩展
 		- DisposableBean接口的destory方法
 		- destory-method方法
 -
