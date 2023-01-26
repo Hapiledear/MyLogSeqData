@@ -1,6 +1,6 @@
 - {{cards [[Java项目介绍面试题]] }}
 - 介绍一下项目的架构，请求如何进入我们项目的 #card
-	- 接入层 {{cloze LSV}} + {{cloze Nginx}}
+	- 接入层 {{cloze LVS Linux虚拟服务器}} + {{cloze Nginx}}
 	-
 - 从高并发的角度介绍项目 10 #card
 	- 拆分为微服务
