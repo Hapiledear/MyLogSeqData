@@ -1,2 +1,3 @@
 - {{cards [[Spring框架面试题]] }}
--
+- Spring中用了哪些设计模式? #card
+	-
