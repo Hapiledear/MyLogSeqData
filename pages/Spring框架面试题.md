@@ -44,6 +44,12 @@
 	- BF {{cloze 是框架用来管理和装配普通bean的容器}}
 	- FB {{cloze 是用以生产对象和装饰对象的工厂接口}}
 - 如何解决Bean注入时的循环依赖问题  #card
+  card-last-interval:: 4
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-30T03:06:02.353Z
+  card-last-reviewed:: 2023-01-26T03:06:02.353Z
+  card-last-score:: 3
 	- 循环依赖能自动解决的前提条件
 		- {{cloze 不是全属性构造器}}
 		- {{cloze 单例}}
