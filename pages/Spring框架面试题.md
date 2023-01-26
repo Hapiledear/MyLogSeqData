@@ -26,7 +26,7 @@
 - Spring中的Bean是线程安全的吗？如何处理线程并发问题 #card
 	- 默认Bean的作用域 {{cloze singleton}}不是线程安全的
 	- 如果是有状态的Bean，可以使用更高一级的 {{cloze prototype}}
-		- 有状态指的是有书籍存储功能
+		- 有状态指的是有数据的存储功能
 	- 或者是该数据字段使用 {{cloze ThreadLocal}} 修饰
 - Spring Bean的生命周期，描述一下 4阶段-2扩展点 #card
   card-last-interval:: 3.72
