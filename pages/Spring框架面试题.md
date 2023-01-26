@@ -40,4 +40,5 @@
 - 如何解决Bean注入时的循环依赖问题 #card
 	- 成品
 	- 半成品
-	-
+	- 原材料工厂 --三级缓存 singletonFactories
+		-
