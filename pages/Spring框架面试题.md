@@ -38,7 +38,8 @@
 	- BF {{cloze 是框架用来管理和装配普通bean的容器}}
 	- FB {{cloze 是用以生产对象和装饰对象的工厂接口}}
 - 如何解决Bean注入时的循环依赖问题 #card
-	- 成品
+	- 成品 -- 一级缓存 single
 	- 半成品--二级缓存
+		- 通过 getObject() 从三级缓存中取出一次bean
 	- 原材料工厂 --三级缓存 singletonFactories
 		- Bean被创建，还没有属性填充和初始化
