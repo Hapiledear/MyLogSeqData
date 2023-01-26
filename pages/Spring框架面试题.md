@@ -39,8 +39,8 @@
 	- FB {{cloze 是用以生产对象和装饰对象的工厂接口}}
 - 如何解决Bean注入时的循环依赖问题  #card
 	- 循环依赖能自动解决的前提条件
-		-
-	- 只有Bean在 singleton 级别才能自动解决
+		- {{cloze 不是全属性构造器}}
+		- {{cloze 单例}}
 	- 三级缓存
 		- 成品 -- 一级缓存 singletonObjects
 			- {{cloze 完整的Bean，也即完成了属性填充，彻底完成初始化}}
