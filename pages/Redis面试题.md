@@ -255,4 +255,7 @@
 		- {{cloze 增加len字段表示当前字符串长度}}
 		- {{cloze 自动扩展空间，扩容时成倍分配，缩容时先留着并不正式归还}}
 		- {{cloze 二进制安全，写入什么就读取什么，不做任何限制}}
--
+- Redis的字典，渐进式Rehash过程 #card
+	- 两个table, 采用 {{cloze 数组+链表的链地址法}} 解决哈希冲突 哈希算法为 {{cloze hashcode & sizemask}} sizemask = realsize - 1
+	- 扩容时
+		- {{cloze 把t0的值rehash到t1,过程是渐进式的()}}
