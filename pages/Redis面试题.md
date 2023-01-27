@@ -258,4 +258,11 @@
 - Redis的字典，渐进式Rehash过程 #card
 	- 两个table, 采用 {{cloze 数组+链表的链地址法}} 解决哈希冲突 哈希算法为 {{cloze hashcode & sizemask}} sizemask = realsize - 1
 	- 扩容时
-		- {{cloze 把t0的值rehash到t1,过程是渐进式的()}}
+		- {{cloze 把t0的值rehash到t1,过程是渐进式的(分多次地完成)}}
+		- {{cloze 此时有数据插入，则直接加入t1表}}
+		- {{cloze 扩容因子为 used / size = 1 时}}
+- Redis的跳跃表skipList是如何实现的 #card
+	- 层级
+		- 插入时按几率分配层级
+	- 反向查找
+		- 先在最高层找到 第一个>目标值的元素，再降落到底层，反向查找
