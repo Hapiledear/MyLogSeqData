@@ -1,11 +1,11 @@
 - {{cards [[JVM面试题]] }}
 - [[Java 元空间]] 会产生内存溢出吗？ #card
   card-last-score:: 3
-  card-repeats:: 1
-  card-next-schedule:: 2023-01-20T06:41:48.486Z
+  card-repeats:: 2
+  card-next-schedule:: 2023-01-31T12:41:33.938Z
   card-last-interval:: 4
-  card-ease-factor:: 2.36
-  card-last-reviewed:: 2023-01-16T06:41:48.487Z
+  card-ease-factor:: 2.22
+  card-last-reviewed:: 2023-01-27T12:41:33.939Z
 	- 元空间的由来。 {{cloze 从java8+开始，用 元空间 替代了 永久代/方法区}}
 	- 元空间的内存 {{cloze 并不使用虚拟机的内存，而是直接使用机器内存}}
 	- 出现OOM的原因 {{cloze 加载到内存中的class文件数量太多or体积太大}}
@@ -119,11 +119,11 @@
 		- {{cloze 存放在[[Java 堆内存]]}}
 -
 - ## [[Java 堆内存]] 与[[Java 虚拟机栈]] 的区别 #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-01-23T04:39:36.268Z
-  card-last-reviewed:: 2023-01-19T04:39:36.268Z
+  card-last-interval:: 8.32
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-02-04T19:42:26.039Z
+  card-last-reviewed:: 2023-01-27T12:42:26.040Z
   card-last-score:: 3
 	- 物理地址
 		- 堆的物理地址分配是不连续的。所以GC时有各种算法
@@ -152,11 +152,11 @@
 	- 初始化
 	- <init>方法
 - 触发类加载的时机 4 #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-01-23T00:59:13.680Z
-  card-last-reviewed:: 2023-01-19T00:59:13.680Z
+  card-last-interval:: 8.32
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-02-04T19:35:42.671Z
+  card-last-reviewed:: 2023-01-27T12:35:42.671Z
   card-last-score:: 3
 	- new关键字
 	- Class or Constructor的newInstance方法

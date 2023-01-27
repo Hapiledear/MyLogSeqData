@@ -1,5 +1,11 @@
 - {{cards [[Spring框架面试题]] }}
 - Spring中用了哪些设计模式? #card
+  card-last-interval:: 2.34
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-29T20:35:49.424Z
+  card-last-reviewed:: 2023-01-27T12:35:49.424Z
+  card-last-score:: 3
 	- BeanFactory {{cloze 工厂模式}}
 	- Bean {{cloze 单例模式}}
 	- AOP {{cloze 代理模式}}

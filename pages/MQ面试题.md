@@ -42,6 +42,12 @@
 	- 建立TCP连接后，基于信道channel的方式传输数据
 	- channel是建立在TCP连接上的虚拟连接，没有数量限制。达到复用TCP连接的目的
 - Rabbit MQ  如何保证不重复消费? 幂等性  #card
+  card-last-interval:: 2.34
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-29T20:35:37.713Z
+  card-last-reviewed:: 2023-01-27T12:35:37.713Z
+  card-last-score:: 3
 	- 缓存 {{cloze 使用缓存记录唯一ID，设置一个过期时间}}
 	- 数据库 {{cloze 使用一张表记录已消费的数据，发生主键冲突则证明已消费}}
 - Rabbit MQ  如何保证消息的不丢失？ #card
@@ -72,11 +78,11 @@
 		- {{cloze 数据发送时，会自动同步到所有机器上}}
 		- 缺点 {{cloze 同步开销大，占用网络带宽}}
 - 消息队列满了怎么处理？几百万消息积压几个小时。 #card
-  card-last-interval:: 3.34
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-27T10:46:38.162Z
-  card-last-reviewed:: 2023-01-24T02:46:38.162Z
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-01-31T12:34:59.360Z
+  card-last-reviewed:: 2023-01-27T12:34:59.360Z
   card-last-score:: 3
 	- 消费者. {{cloze 快速定位问题，修复consumer}} {{cloze 停止线上的consumer消费}}
 	- 机器扩容 {{cloze 上线一个分发consumer，分发到新建立的topic，partition是原来的10倍}} {{cloze 消费consumer上线，也是原来的10倍}}

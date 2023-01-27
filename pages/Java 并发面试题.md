@@ -161,7 +161,7 @@
 	- 1.8+ {{cloze 弃用了分段，而是改用了CAS操作}}
 	- 与HashMap的相同点
 		- 存储结构 {{cloze 数组+链表->红黑树}}
-		- 扩容 {{cloze 默认大小为 16 加载因子0.75 阈值=大小*因子}}
+		- 扩容 {{cloze 默认大小为 16 加载因子0.75 阈值=大小*因子}} {{cloze 扩容后大小为2^n次方，不需要rehash}}
 - synchronizeMap与ConcurrentHashMap的区别 #card #Java并发
   card-last-interval:: 8.32
   card-repeats:: 3
@@ -184,10 +184,10 @@
 	- 适用场景 {{cloze 读多写少}}
 - 阻塞队列BlockingQueue的实现原理 #card #Java并发
   card-last-interval:: 4
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-20T06:36:19.699Z
-  card-last-reviewed:: 2023-01-16T06:36:19.699Z
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-01-31T12:35:15.748Z
+  card-last-reviewed:: 2023-01-27T12:35:15.748Z
   card-last-score:: 3
 	- 拯救了生产者-消费者模型的控制逻辑
 		- {{cloze 在队列为空时，获取元素的线程会等待队列变为非空}}

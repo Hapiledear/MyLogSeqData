@@ -22,11 +22,11 @@
 	- 记录 bin log
 	- 事务提交 ，等待被工作线程刷入磁盘
 - 查询语句的各部分执行顺序 9 #card
-  card-last-interval:: 3.46
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-22T20:39:05.942Z
-  card-last-reviewed:: 2023-01-19T09:39:05.943Z
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-01-31T12:41:53.872Z
+  card-last-reviewed:: 2023-01-27T12:41:53.872Z
   card-last-score:: 3
 	- {{cloze from -> join t2 on xxx  -> where yyy -> group by aaa -> having -> bbb -> select aaa,bbb,ccc -> distinct aaa ->order by bbb -> limit m,n}}
 - 存储引擎InnoDb和MyISAM的区别 #card
@@ -153,11 +153,11 @@
 		- 插入、更新、删除操作
 		- 如何解决幻读 {{cloze next-key Lock 行锁与间隙锁的组合}}
 - 什么是MVCC #card
-  card-last-interval:: 3.72
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-24T19:40:15.125Z
-  card-last-reviewed:: 2023-01-21T02:40:15.125Z
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-01-31T12:34:14.736Z
+  card-last-reviewed:: 2023-01-27T12:34:14.736Z
   card-last-score:: 3
 	- 多版本并发控制
 	- 只工作在两种事物隔离级别下
@@ -234,6 +234,12 @@
 		- {{cloze 需要占用物理空间}}
 		- {{cloze 每次增改数据，都需要动态维护索引，导致增改时间变长}}
 - 聚集索引和非聚集索引 #card
+  card-last-interval:: 2.52
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-30T00:34:44.055Z
+  card-last-reviewed:: 2023-01-27T12:34:44.055Z
+  card-last-score:: 3
 	- 聚簇索引
 		- {{cloze b+树的叶子节点中存放了表中一行的全部数据}}
 		- {{cloze 查询时，只需扫描一次B+树，就能找到记录}}
@@ -241,6 +247,12 @@
 		- {{cloze 除聚簇索引以外的索引}}
 		- 回表 {{cloze 第一次定位到聚簇索引，第二次通过聚簇索引定位到查找记录}}
 - 索引优化策略 #card
+  card-last-interval:: 2.52
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-30T00:34:38.377Z
+  card-last-reviewed:: 2023-01-27T12:34:38.377Z
+  card-last-score:: 3
 	- 索引覆盖 {{cloze select字段 存在索引中}}
 	- 最左匹配原则 {{cloze 利用最左匹配，减少索引的建立}}
 - 索引失效的13种场景 #card
@@ -264,11 +276,11 @@
 	- 非主键的`order by ` 但需要具体情况具体验证
 	- 表数据较少时，走全表扫描比走索引效率更高 (内置优化策略)
 - 索引下推 #card
-  card-last-interval:: 3.22
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-27T07:47:30.944Z
-  card-last-reviewed:: 2023-01-24T02:47:30.944Z
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-01-31T12:41:49.553Z
+  card-last-reviewed:: 2023-01-27T12:41:49.553Z
   card-last-score:: 3
 	- 不存在索引下推时 {{cloze 先根据索引查记录，再根据where条件过滤}}
 	- 使用索引下推后 {{cloze 先根据 where条件过滤记录，再进行索引查询}}
@@ -344,11 +356,11 @@
 	- Master开启 `IO线程` 开始传输bin log
 	- Slave 启动线程  `SQL线程` ，实时监控 中继日志是否有更新，解析SQL语句，在S库中执行
 - 分库分表策略 及 数据分片规则 #card
-  card-last-interval:: 3
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-27T02:49:02.714Z
-  card-last-reviewed:: 2023-01-24T02:49:02.714Z
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-01-31T12:34:31.514Z
+  card-last-reviewed:: 2023-01-27T12:34:31.514Z
   card-last-score:: 3
 	- 水平拆分
 		- {{cloze 将一张表中的数据，按照一定策略(Hash取模、range) ，拆分到多个库/表中}}

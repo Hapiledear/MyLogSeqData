@@ -154,11 +154,11 @@
 		- {{cloze 将过期的、不再使用的、重复的以及可优化的命令进行优化，重新生成AOF文件}}
 		- 流程 {{cloze fork一个子进程}} {{cloze 重写期间，主线程的写命令被保存在缓冲区中}}
 - RDB和AOF各自的优缺点 #card
-  card-last-interval:: 3.59
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-20T18:28:55.528Z
-  card-last-reviewed:: 2023-01-17T04:28:55.528Z
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-01-31T12:33:39.181Z
+  card-last-reviewed:: 2023-01-27T12:33:39.182Z
   card-last-score:: 3
 	- RDB优点
 		- 生成的文件 {{cloze 只有一个紧凑的二进制文件，非常适合备份、全量复制场景}}
@@ -172,11 +172,11 @@
 	- AOF的缺点
 		- 生成的文件 {{cloze 比RDB大}} {{cloze 恢复速度慢}}
 - Redis的主从复制过程 #card
-  card-last-interval:: 3.59
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-20T18:32:24.841Z
-  card-last-reviewed:: 2023-01-17T04:32:24.842Z
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-01-31T12:42:17.954Z
+  card-last-reviewed:: 2023-01-27T12:42:17.954Z
   card-last-score:: 3
 	- 从服务器首次连接 {{cloze 全量复制}} {{cloze rdb or aof文件}}
 	- 复制后数据先 {{cloze 保存到本地磁盘}} 后 {{cloze 从磁盘读取到内存}}
@@ -259,6 +259,12 @@
 		- 打散 {{cloze 把热key打散到不同的服务器上，降低压力}}
 		- 二级缓存 {{cloze 加入本地的内存缓存}}
 - 大key处理 #card
+  card-last-interval:: 2.34
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-29T20:41:23.303Z
+  card-last-reviewed:: 2023-01-27T12:41:23.304Z
+  card-last-score:: 3
 	- 大key造成的问题
 		- 进行IO操作时 {{cloze 占用带宽和CPU}}
 		- 数据倾斜
@@ -286,12 +292,24 @@
 		- {{cloze 自动扩展空间，扩容时成倍分配，缩容时先留着并不正式归还}}
 		- {{cloze 二进制安全，写入什么就读取什么，不做任何限制}}
 - Redis的字典，渐进式Rehash过程 #card
+  card-last-interval:: 2.43
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-29T22:35:11.630Z
+  card-last-reviewed:: 2023-01-27T12:35:11.631Z
+  card-last-score:: 3
 	- 两个table, 采用 {{cloze 数组+链表的链地址法}} 解决哈希冲突 哈希算法为 {{cloze hashcode & sizemask}} sizemask = realsize - 1
 	- 扩容时
 		- {{cloze 把t0的值rehash到t1,过程是渐进式的(分多次地完成)}}
 		- {{cloze 此时有数据插入，则直接加入t1表}}
 		- {{cloze 扩容因子为 used / size = 1 时}}
 - Redis的跳跃表skipList是如何实现的 #card
+  card-last-interval:: 2.26
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-29T18:41:41.779Z
+  card-last-reviewed:: 2023-01-27T12:41:41.779Z
+  card-last-score:: 3
 	- 层级
 		- 插入时按几率分配层级
 	- 查找过程
