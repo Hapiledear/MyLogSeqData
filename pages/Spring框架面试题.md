@@ -15,6 +15,12 @@
 	- {{cloze 原本由代码控制对象的生命周期，交由spring框架管理}}
 	- 实现 {{cloze 工厂模式+反射机制}}
 - BeanFactory 和 ApplicationContext的区别 #card
+  card-last-interval:: 3
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-30T12:26:07.711Z
+  card-last-reviewed:: 2023-01-27T12:26:07.711Z
+  card-last-score:: 3
 	- BF 可以理解为 “低级容器”，只是简单的 k-v结构
 	- 依赖关系 {{cloze ApplicationContext是BeanFactory的子接口,扩展了BeanFactory的功能}}
 	- 装载Bean的方式
@@ -24,6 +30,12 @@
 		- {{cloze 手动注册}} BF
 		- {{cloze 自动注册}} AC
 - Spring中的Bean是线程安全的吗？如何处理线程并发问题 #card
+  card-last-interval:: 3.11
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-30T14:24:43.947Z
+  card-last-reviewed:: 2023-01-27T12:24:43.949Z
+  card-last-score:: 3
 	- 默认Bean的作用域 {{cloze singleton}}不是线程安全的
 	- 如果是有状态的Bean，可以使用更高一级的 {{cloze prototype}}
 		- 有状态指的是有数据的存储功能

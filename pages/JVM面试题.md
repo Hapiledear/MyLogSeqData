@@ -77,11 +77,11 @@
 	- 开发中会有大量字符串被创建，回收效率低导致永久代内存不足
 	- 放在堆中，可以及时回收内存
 - ## 几种变量存放在哪里？ #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-last-reviewed:: 2023-01-19T09:41:39.774Z
-  card-next-schedule:: 2023-01-23T09:41:39.773Z
+  card-last-interval:: 8.32
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-last-reviewed:: 2023-01-27T12:27:49.101Z
+  card-next-schedule:: 2023-02-04T19:27:49.098Z
   card-last-score:: 3
 	- ``` java
 	  	  public class StaticObjTest {

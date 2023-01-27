@@ -76,11 +76,11 @@
 			- 4种隔离级别 {{cloze 读未提交}} {{cloze 读已提交}} {{cloze 可重复读读}} {{cloze 串行化}}
 		- {{cloze 锁机制 和 MVVC机制}}
 - Undo Log 和Redo Log #card
-  card-last-interval:: 3.11
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-22T11:42:25.997Z
-  card-last-reviewed:: 2023-01-19T09:42:25.997Z
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-01-31T12:23:54.976Z
+  card-last-reviewed:: 2023-01-27T12:23:54.977Z
   card-last-score:: 3
 	- Undo Log
 		- 存储的是 {{cloze 旧数据的版本链集合}}
@@ -244,6 +244,12 @@
 	- 索引覆盖 {{cloze select字段 存在索引中}}
 	- 最左匹配原则 {{cloze 利用最左匹配，减少索引的建立}}
 - 索引失效的13种场景 #card
+  card-last-interval:: 2.8
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-30T07:33:22.603Z
+  card-last-reviewed:: 2023-01-27T12:33:22.603Z
+  card-last-score:: 3
 	- 联合索引不满足最左匹配原则
 	- 使用了 `select * ` 肯定不会走 覆盖索引
 	- 索引列 参与了运算
@@ -327,11 +333,11 @@
 	- redo log
 		- 是存储引擎 InnoDb的日志 ，记录的是 {{cloze 某个数据做了什么修改}}
 - MySql的主从复制 3线程 #card
-  card-last-interval:: 2.9
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-26T23:49:40.410Z
-  card-last-reviewed:: 2023-01-24T02:49:40.410Z
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-01-31T12:31:02.595Z
+  card-last-reviewed:: 2023-01-27T12:31:02.595Z
   card-last-score:: 3
 	- Master开启 bin log ,对数据的更新操作会按顺序写入 bin log
 	- Slave连接Master后，Slave的一个`IO线程` 请求 bin log dump
@@ -349,6 +355,12 @@
 	- 垂直拆分
 		- {{cloze 按照 业务归属不同 or 字段查询频率不同 ，拆分到不同表/库中}}
 - 分库分表会带来哪些问题，如何解决 #card
+  card-last-interval:: 2.9
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-30T09:29:53.938Z
+  card-last-reviewed:: 2023-01-27T12:29:53.939Z
+  card-last-score:: 3
 	- 分布式事务问题
 		- {{cloze 使用相关中间件}}
 	- 跨节点join问题
@@ -364,6 +376,12 @@
 			- {{cloze 所有的旧代码，都对新库进行增删改}}
 			- {{cloze 不断从老库抽数据，往新库写。边写边比对数据是不是最新的}}
 - 业务中影响MySQL性能的场景 #card
+  card-last-interval:: 2.9
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-30T09:29:35.570Z
+  card-last-reviewed:: 2023-01-27T12:29:35.570Z
+  card-last-score:: 3
 	- 大规模数据导出功能
 		- {{cloze 建议`limit m,n` 替换成id的范围查询}}
 	- ERP系统的 join \分组\排序
@@ -371,11 +389,11 @@
 	- 各种看板和统计报表
 		- {{cloze 数据工厂，离线计算。 直接接入ES}}
 - 大批量数据的插入 #card
-  card-last-interval:: 3.11
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-27T04:47:50.899Z
-  card-last-reviewed:: 2023-01-24T02:47:50.899Z
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-01-31T12:23:36.428Z
+  card-last-reviewed:: 2023-01-27T12:23:36.430Z
   card-last-score:: 3
 	- 开启事务
 	- 合并插入：一条语句插入多条数据
