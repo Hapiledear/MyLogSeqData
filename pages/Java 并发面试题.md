@@ -35,10 +35,10 @@
 	- 但更建议JVM实现时将这种操作视为原子性的
 - synchronized (简称 同步)的原理 #card #Java并发
   card-last-interval:: 4
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-20T06:28:34.694Z
-  card-last-reviewed:: 2023-01-16T06:28:34.695Z
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-01-31T12:19:24.076Z
+  card-last-reviewed:: 2023-01-27T12:19:24.077Z
   card-last-score:: 3
 	- 通过 {{cloze `monitorEnter` 和`monitorExit`}} 指令，进行加锁和释放锁。是可重入的
 	- {{cloze 遵循happends-before规则，被synch修饰的对象的写在读之前，读一定是从直接内存中读取}} ，保证可见性
@@ -215,11 +215,11 @@
 	- 带版本号的 {{cloze AtomicMarkableReference}} {{cloze AtomicStampedReferece}}
 - atomic的原理  #card #Java并发
   card-last-interval:: 4
-  card-repeats:: 1
-  card-ease-factor:: 2.6
-  card-next-schedule:: 2023-01-21T04:31:15.122Z
-  card-last-reviewed:: 2023-01-17T04:31:15.122Z
-  card-last-score:: 5
+  card-repeats:: 2
+  card-ease-factor:: 2.46
+  card-next-schedule:: 2023-01-31T12:17:12.395Z
+  card-last-reviewed:: 2023-01-27T12:17:12.395Z
+  card-last-score:: 3
 	- {{cloze CAS+volatile方式保证原子性}} 避免synch的高开销
 - CountdownLatch和CycleBarrar的区别 #card #Java并发
   card-last-interval:: 8.32

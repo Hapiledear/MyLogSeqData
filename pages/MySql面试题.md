@@ -171,11 +171,11 @@
 		- 可重复读的实现
 			- {{cloze 只在第一次执行查询语句时生成 Read View}}
 - MySql中的锁有哪些 #card
-  card-last-interval:: 3.86
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-24T22:37:20.627Z
-  card-last-reviewed:: 2023-01-21T02:37:20.628Z
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-01-31T12:17:55.452Z
+  card-last-reviewed:: 2023-01-27T12:17:55.453Z
   card-last-score:: 3
 	- 表锁
 		- 意向锁
@@ -203,15 +203,21 @@
 		- 作用 {{cloze 在RR事务级别下，解决并发插入问题}}
 		- 原理 {{cloze 区间相同但插入记录本身不同的情况下 互不排斥}}
 - 主键的选择，使用自增ID 还是 UUID #card
-  card-last-interval:: 2.8
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-26T21:51:43.302Z
-  card-last-reviewed:: 2023-01-24T02:51:43.302Z
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-01-31T12:17:17.061Z
+  card-last-reviewed:: 2023-01-27T12:17:17.061Z
   card-last-score:: 3
 	- 自增型ID {{cloze 符合主键索引的顺序排布，插入快速，产生碎片较少}}
 	- UUID {{cloze 全局唯一，跨系统存取方便}}
 - B+树与B树的对比 #card
+  card-last-interval:: 3.34
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-30T20:20:17.099Z
+  card-last-reviewed:: 2023-01-27T12:20:17.099Z
+  card-last-score:: 3
 	- 数据记录 {{cloze 都存放在叶子节点中}} {{cloze 非叶节点只存储键值信息}}
 	- {{cloze 所有叶子节点之间都有一个链指针}}
 - 索引的优缺点 #card
@@ -261,11 +267,11 @@
 	- 不存在索引下推时 {{cloze 先根据索引查记录，再根据where条件过滤}}
 	- 使用索引下推后 {{cloze 先根据 where条件过滤记录，再进行索引查询}}
 - MRR优化 #card
-  card-last-interval:: 2.8
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-26T21:50:30.309Z
-  card-last-reviewed:: 2023-01-24T02:50:30.309Z
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-01-31T12:15:25.968Z
+  card-last-reviewed:: 2023-01-27T12:15:25.969Z
   card-last-score:: 3
 	- 当使用二级索引进行范围查询时，从随机读变为顺序读 {{cloze 通过对索引值排序，把无序回表IO变成有序回表IO}}
 - Explain 查询计划 #card

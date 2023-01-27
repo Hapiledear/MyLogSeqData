@@ -102,11 +102,11 @@
 	- 基于 {{cloze IO多路复用模型}} IO模型 {{cloze 让单个线程高效处理多个连接请求}}
 	- {{cloze C语言实现，更加优化的基础数据结构}} 语言、底层数据结构
 - Redis是单线程的吗？ #card
-  card-last-interval:: 3.59
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-19T23:30:09.059Z
-  card-last-reviewed:: 2023-01-16T09:30:09.060Z
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-01-31T12:20:01.549Z
+  card-last-reviewed:: 2023-01-27T12:20:01.550Z
   card-last-score:: 3
 	- 只有 {{cloze 网络请求模块}} 和 {{cloze 数据操作模块}} 是单线程的 其他的如 持久化模块、集群模块是多线程的
 	- 多线程的好处 {{cloze 使用多线程可以提升 IO利用率和CPU利用率}}
@@ -218,15 +218,21 @@
 	- 本地缓存的过期时间 {{cloze 设置相对短一些}}
 - Redis数据如何预热 #card
   card-last-interval:: 4
-  card-repeats:: 1
-  card-ease-factor:: 2.6
-  card-next-schedule:: 2023-01-21T08:57:07.108Z
-  card-last-reviewed:: 2023-01-17T08:57:07.108Z
-  card-last-score:: 5
+  card-repeats:: 2
+  card-ease-factor:: 2.46
+  card-next-schedule:: 2023-01-31T12:21:39.348Z
+  card-last-reviewed:: 2023-01-27T12:21:39.348Z
+  card-last-score:: 3
 	- 暴露内网接口，手动操作
 	- 数据量不大时，项目启动时自动加载
 	- 定时任务刷新加载
 - 热key处理 #card
+  card-last-interval:: 3.86
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-31T08:17:07.034Z
+  card-last-reviewed:: 2023-01-27T12:17:07.034Z
+  card-last-score:: 3
 	- 监测
 		- 客户端 {{cloze 设置全局字典 key和调用次数}}
 		- 数据仓库 {{cloze 客户端发送mq,数据仓库实时统计}}
@@ -247,6 +253,12 @@
 		- 压缩 {{cloze 压缩算法进行压缩}}
 		- 拆分 {{cloze 按长度截取拆分，使用multiget读取}}
 - Redis的SDS与C语言的字符串比较 #card
+  card-last-interval:: 3.34
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-30T20:22:48.361Z
+  card-last-reviewed:: 2023-01-27T12:22:48.361Z
+  card-last-score:: 3
 	- c语言字符串的缺点
 		- {{cloze 获取字符串长度 需要O(n)}}
 		- {{cloze 有 缓冲区溢出 问题}}
