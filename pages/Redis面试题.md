@@ -238,7 +238,7 @@
   card-last-reviewed:: 2023-01-31T02:45:00.926Z
   card-last-score:: 3
 	- Redis自身有 {{cloze 订阅/分发}} 机制
-	- 引入 {{cloze 消息队列}}
+	- 引入 {{cloze 消息队列 使用广播模式}}
 	- 本地缓存的过期时间 {{cloze 设置相对短一些}}
 - Redis数据如何预热 #card
   card-last-interval:: 4
