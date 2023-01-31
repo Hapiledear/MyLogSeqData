@@ -22,11 +22,11 @@
 	- 执行引擎 {{cloze 执行字节码指令。分为 即时编译执行和解释执行。此外，**垃圾收集器** 也在其中}}
 	- 本地接口 {{cloze 调用本地方法}}
 - 说一下JVM内存模型 #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-01-28T02:53:03.954Z
-  card-last-reviewed:: 2023-01-24T02:53:03.955Z
+  card-last-interval:: 8.32
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-02-08T09:30:44.491Z
+  card-last-reviewed:: 2023-01-31T02:30:44.491Z
   card-last-score:: 3
 	- 画一下JVM内存模型图，并描述每个模块的定义，作用，以及可能会存在的问题
 	- 虚拟机栈
@@ -212,11 +212,11 @@
 		- 年龄 = 相同年龄对象大小之和 > S 区的一半
 	- 老年代满了则触发 Full GC
 - JVM中的垃圾回收器有哪些,及其工作原理 #card
-  card-last-interval:: 8.88
-  card-repeats:: 3
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-01-29T23:43:20.650Z
-  card-last-reviewed:: 2023-01-21T02:43:20.650Z
+  card-last-interval:: 16.72
+  card-repeats:: 4
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-02-16T19:38:32.686Z
+  card-last-reviewed:: 2023-01-31T02:38:32.686Z
   card-last-score:: 3
 	- Serial
 		- 串行收集
