@@ -97,11 +97,11 @@
 	- 使用事务 实现CAS
 		- {{cloze 事务具有watch机制,一旦被监测的key发生更改，本次提交就失效了}}
 - Redis为什么快？ #card
-  card-last-interval:: 3.59
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-20T16:11:05.620Z
-  card-last-reviewed:: 2023-01-17T02:11:05.622Z
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-02-04T02:12:43.320Z
+  card-last-reviewed:: 2023-01-31T02:12:43.321Z
   card-last-score:: 3
 	- 基于内存操作
 	- 使用单线程， {{cloze 避免线程切换和竞争产生的消耗}}

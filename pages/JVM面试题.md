@@ -200,11 +200,11 @@
 		- {{cloze 栈中的对象引用 -> 堆中的对象实例 -> 方法区中对应的类型信息}} 栈->堆->方法区
 		- {{cloze 节省了一次指针定位的时间}} 好处
 - 对象分配策略 #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.46
-  card-next-schedule:: 2023-01-23T00:57:12.677Z
-  card-last-reviewed:: 2023-01-19T00:57:12.677Z
+  card-last-interval:: 9.28
+  card-repeats:: 3
+  card-ease-factor:: 2.32
+  card-next-schedule:: 2023-02-09T08:13:13.467Z
+  card-last-reviewed:: 2023-01-31T02:13:13.467Z
   card-last-score:: 3
 	- 新对象分配在eden区，大对象直接进入老年代
 	- 经历过一次Minor GC ,复制到surviro区，年龄+1
