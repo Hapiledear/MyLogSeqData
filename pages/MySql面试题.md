@@ -16,6 +16,12 @@
 	- SQL优化 {{cloze 优化器}} 生成 执行计划
 	- 委托给存储引擎 {{cloze 执行器}}
 - SQL update过程 #card
+  card-last-interval:: 2.34
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-02-02T09:18:34.122Z
+  card-last-reviewed:: 2023-01-31T01:18:34.122Z
+  card-last-score:: 3
 	- 查询出原数据
 	- 将修改的数据刷入内存 Buffer pool
 	- 记录 Undo Log 和 Redo Log

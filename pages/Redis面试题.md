@@ -129,11 +129,11 @@
 	- {{cloze setnx来争抢锁，再用expire加上过期时间}}
 	- 高可用分布式锁 {{cloze RedLock}} 但可能导致性能下降，建议使用 {{cloze zk实现分布式锁}}
 - 如何把固定前缀开通的key全部找出来 #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-01-20T09:25:15.232Z
-  card-last-reviewed:: 2023-01-16T09:25:15.232Z
+  card-last-interval:: 8.32
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-02-08T08:19:32.396Z
+  card-last-reviewed:: 2023-01-31T01:19:32.396Z
   card-last-score:: 3
 	- {{cloze scan命令可以提取指定模式的key列表}}
 - Redis的持久化机制 #card
@@ -220,6 +220,12 @@
 	- 从节点选举
 		- {{cloze 投票选举，超过半数者升级}}
 - Redis优化策略 #card
+  card-last-interval:: 2.34
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-02-02T09:19:26.145Z
+  card-last-reviewed:: 2023-01-31T01:19:26.146Z
+  card-last-score:: 3
 	- 在见名知意的情况下，使用短key
 	- 不要存过大的数据,存之前先把数据压缩
 	- 设置key的合理有效期,选择合适的回收策略

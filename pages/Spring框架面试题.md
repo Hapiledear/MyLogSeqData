@@ -107,6 +107,12 @@
 	- AOP 面向切面编程，核心是使用 {{cloze 代理模式}}，对目标方法执行前后进行处理
 	- 应用场景 {{cloze 日志记录}} {{cloze 接口签名校验}}
 - 为什么要用SpringBoot #card
+  card-last-interval:: 2.34
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-02-02T09:17:38.646Z
+  card-last-reviewed:: 2023-01-31T01:17:38.647Z
+  card-last-score:: 3
 	- {{cloze 独立运行spring项目}}
 	- {{cloze 内嵌servlet容器}}
 	- {{cloze 简化maven配置，使用 starter 扩展}}
