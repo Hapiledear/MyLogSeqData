@@ -218,11 +218,11 @@
 	- 自增型ID {{cloze 符合主键索引的顺序排布，插入快速，产生碎片较少}}
 	- UUID {{cloze 全局唯一，跨系统存取方便}}
 - B+树与B树的对比 #card
-  card-last-interval:: 3.34
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-30T20:20:17.099Z
-  card-last-reviewed:: 2023-01-27T12:20:17.099Z
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-02-04T02:50:46.857Z
+  card-last-reviewed:: 2023-01-31T02:50:46.857Z
   card-last-score:: 3
 	- 数据记录 {{cloze 都存放在叶子节点中}} {{cloze 非叶节点只存储键值信息}}
 	- {{cloze 所有叶子节点之间都有一个链指针}}
@@ -373,11 +373,11 @@
 	- 垂直拆分
 		- {{cloze 按照 业务归属不同 or 字段查询频率不同 ，拆分到不同表/库中}}
 - 分库分表会带来哪些问题，如何解决 #card
-  card-last-interval:: 2.9
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-30T09:29:53.938Z
-  card-last-reviewed:: 2023-01-27T12:29:53.939Z
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-02-04T02:48:45.388Z
+  card-last-reviewed:: 2023-01-31T02:48:45.389Z
   card-last-score:: 3
 	- 分布式事务问题
 		- {{cloze 使用相关中间件}}

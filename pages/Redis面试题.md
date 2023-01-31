@@ -75,12 +75,12 @@
 		- {{cloze volatile-random}} 有过期时间的key中 随机移除
 		- {{cloze volatile-ttl}} 有过期时间的key中 移除最早过期时间的key
 - 了解Redis的事务机制吗？ #card
-  card-last-interval:: -1
-  card-repeats:: 0
-  card-ease-factor:: 2.5
-  card-next-schedule:: nil
-  card-last-reviewed:: nil
-  card-last-score:: nil
+  card-last-interval:: 0.57
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-01-31T15:51:51.815Z
+  card-last-reviewed:: 2023-01-31T02:51:51.815Z
+  card-last-score:: 3
 	- 事务以 {{cloze MUTLI}}命令开始
 	- 客户端接收一系列操作，放入队列中
 	- 收到 {{cloze EXEC}}命令后，开始顺序执行操作。
@@ -182,11 +182,11 @@
 	- 复制后数据先 {{cloze 保存到本地磁盘}} 后 {{cloze 从磁盘读取到内存}}
 	- 重新连接 {{cloze 部分数据复制}} {{cloze offset偏移量 repl-backlog-buffer 复制积压缓冲区}}
 - Redis的集群模式的好处 #card
-  card-last-interval:: 2.9
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-30T09:30:13.209Z
-  card-last-reviewed:: 2023-01-27T12:30:13.210Z
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-02-04T02:48:58.348Z
+  card-last-reviewed:: 2023-01-31T02:48:58.348Z
   card-last-score:: 3
 	- 数据分片 {{cloze 自动将数据分片，每个master上放一部分}}
 	- 主从复制和自动故障转移 {{cloze 部分master不可用时，还是可以继续工作}}
@@ -283,11 +283,11 @@
 		- 压缩 {{cloze 压缩算法进行压缩}}
 		- 拆分 {{cloze 按长度截取拆分，使用multiget读取}}
 - Redis的SDS与C语言的字符串比较 #card
-  card-last-interval:: 3.34
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-30T20:22:48.361Z
-  card-last-reviewed:: 2023-01-27T12:22:48.361Z
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-02-04T02:51:14.826Z
+  card-last-reviewed:: 2023-01-31T02:51:14.826Z
   card-last-score:: 3
 	- c语言字符串的缺点
 		- {{cloze 获取字符串长度 需要O(n)}}
@@ -324,11 +324,11 @@
 		- 遍历每一层的节点，直到遇见NULL 或 >目标值
 		- 向下一层，继续遍历该层
 - Redis的压缩列表zipList和quickList #card
-  card-last-interval:: 3.11
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-30T14:24:26.279Z
-  card-last-reviewed:: 2023-01-27T12:24:26.280Z
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-02-04T02:50:28.288Z
+  card-last-reviewed:: 2023-01-31T02:50:28.288Z
   card-last-score:: 3
 	- 压缩体现在哪里?
 		- 普通的数组结构， {{cloze 每一个单元的长度由最大字符串长度决定的}}
