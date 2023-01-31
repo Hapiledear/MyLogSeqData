@@ -13,10 +13,10 @@
 	- ApplicationListener {{cloze 观察者模式}}
 - 什么是Spring的IOC(控制反转) #card
   card-last-interval:: 4
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-30T03:03:26.568Z
-  card-last-reviewed:: 2023-01-26T03:03:26.568Z
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-02-04T02:41:52.878Z
+  card-last-reviewed:: 2023-01-31T02:41:52.878Z
   card-last-score:: 3
 	- {{cloze 原本由代码控制对象的生命周期，交由spring框架管理}}
 	- 实现 {{cloze 工厂模式+反射机制}}
@@ -75,10 +75,10 @@
 	- FB {{cloze 是用以生产对象和装饰对象的工厂接口}}
 - 如何解决Bean注入时的循环依赖问题  #card
   card-last-interval:: 4
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-30T03:06:02.353Z
-  card-last-reviewed:: 2023-01-26T03:06:02.353Z
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-02-04T02:42:19.402Z
+  card-last-reviewed:: 2023-01-31T02:42:19.402Z
   card-last-score:: 3
 	- 循环依赖能自动解决的前提条件
 		- {{cloze 不是全属性构造器}}

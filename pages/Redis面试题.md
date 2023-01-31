@@ -88,11 +88,11 @@
 	- 执行时不会被其他客户端发送来的命令请求打断
 	- 不支持回滚，要么都执行，要么都不执行
 - 如何处理多个客户端并发写一个key? #card
-  card-last-interval:: 2.9
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-30T09:28:51.301Z
-  card-last-reviewed:: 2023-01-27T12:28:51.301Z
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-02-04T02:46:54.819Z
+  card-last-reviewed:: 2023-01-31T02:46:54.820Z
   card-last-score:: 3
 	- 使用事务 实现CAS
 		- {{cloze 事务具有watch机制,一旦被监测的key发生更改，本次提交就失效了}}
@@ -137,11 +137,11 @@
   card-last-score:: 3
 	- {{cloze scan命令可以提取指定模式的key列表}}
 - Redis的持久化机制 #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-01-30T03:12:09.382Z
-  card-last-reviewed:: 2023-01-26T03:12:09.383Z
+  card-last-interval:: 8.32
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-02-08T09:43:33.472Z
+  card-last-reviewed:: 2023-01-31T02:43:33.472Z
   card-last-score:: 3
 	- bgsave 全量持久化
 		- 过程 {{cloze 生成子进程和当前内存快照，子进程进行持久化}}
@@ -231,11 +231,11 @@
 	- 设置key的合理有效期,选择合适的回收策略
 	- 使用连接池，减少不必要的连接
 - 如何解决本地缓存与分布式缓存的数据不一致 #card
-  card-last-interval:: 2.8
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-30T07:32:35.551Z
-  card-last-reviewed:: 2023-01-27T12:32:35.552Z
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-02-04T02:45:00.926Z
+  card-last-reviewed:: 2023-01-31T02:45:00.926Z
   card-last-score:: 3
 	- Redis自身有 {{cloze 订阅/分发}} 机制
 	- 引入 {{cloze 消息队列}}

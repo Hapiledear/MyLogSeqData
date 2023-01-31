@@ -1,10 +1,10 @@
 - {{cards [[HBase面试题]] }}
 - 项目中有哪些场景下使用了HBase #card
-  card-last-interval:: 2.9
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-30T09:28:45.316Z
-  card-last-reviewed:: 2023-01-27T12:28:45.316Z
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-02-04T02:46:02.610Z
+  card-last-reviewed:: 2023-01-31T02:46:02.610Z
   card-last-score:: 3
 	- 日志记录
 	- 超过亿级的表数据
@@ -19,12 +19,12 @@
 	- userId倒序取模
 	- userId + Long.Max - currentTimeStamp 便于scan查询，最近的记录在前
 - 简述HBase的读和写流程 #card
-  card-last-interval:: 4
+  card-last-interval:: -1
   card-repeats:: 1
   card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-30T03:02:15.341Z
-  card-last-reviewed:: 2023-01-26T03:02:15.342Z
-  card-last-score:: 3
+  card-next-schedule:: 2023-01-31T16:00:00.000Z
+  card-last-reviewed:: 2023-01-31T02:41:34.165Z
+  card-last-score:: 1
 	- 读流程
 		- {{cloze zk}} 获取 {{cloze Meta信息和RegionServer}}
 		- 连接 {{cloze RegionServer}} {{cloze BlockCache}} -> {{cloze MemStore}} -> {{cloze StoreFile}} 中查询
