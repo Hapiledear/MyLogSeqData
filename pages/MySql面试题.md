@@ -4,11 +4,11 @@
 		- Forgotten :   0 (0%)
 - 如无特殊说明，题中出现的存储引擎均为 [[InnoDb]]
 - SQL查询过程 #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-01-28T02:45:27.867Z
-  card-last-reviewed:: 2023-01-24T02:45:27.867Z
+  card-last-interval:: 8.32
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-02-08T09:27:22.398Z
+  card-last-reviewed:: 2023-01-31T02:27:22.398Z
   card-last-score:: 3
 	- 建立连接 {{cloze 连接器}}
 	- 执行计划の缓存 {{cloze 查询缓存}}
@@ -36,11 +36,11 @@
   card-last-score:: 3
 	- {{cloze from -> join t2 on xxx  -> where yyy -> group by aaa -> having -> bbb -> select aaa,bbb,ccc -> distinct aaa ->order by bbb -> limit m,n}}
 - 存储引擎InnoDb和MyISAM的区别 #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-01-28T02:44:12.239Z
-  card-last-reviewed:: 2023-01-24T02:44:12.239Z
+  card-last-interval:: 8.32
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-02-08T09:23:41.722Z
+  card-last-reviewed:: 2023-01-31T02:23:41.723Z
   card-last-score:: 3
 	- 事务支持
 		- {{cloze 不支持}} M
@@ -61,11 +61,11 @@
 		- {{cloze 直接取出该值}}
 		- {{cloze 只能遍历}}
 - 事物的四大特性，分别是如何解决的 #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-01-28T02:43:10.523Z
-  card-last-reviewed:: 2023-01-24T02:43:10.523Z
+  card-last-interval:: 8.32
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-02-08T09:23:08.457Z
+  card-last-reviewed:: 2023-01-31T02:23:08.457Z
   card-last-score:: 3
 	- 原子性
 		- {{cloze 在事物中的一组操作，要么全部成功提交，要么全部失败回滚}}
@@ -95,11 +95,11 @@
 		- 存储的是 {{cloze 最新版本的数据}}
 		- 持久性的体现 {{cloze 如果系统崩溃，可以用它来进行恢复}}
 - 描述一下事物产生的三个问题 #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-01-28T02:47:40.285Z
-  card-last-reviewed:: 2023-01-24T02:47:40.286Z
+  card-last-interval:: 8.32
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-02-08T09:27:48.643Z
+  card-last-reviewed:: 2023-01-31T02:27:48.643Z
   card-last-score:: 3
 	- 脏读
 		- {{cloze 事物A读取到了事物B 未提交的数据}}
@@ -124,11 +124,11 @@
 	- 串行化
 		- {{cloze 所有事物被串行执行}}
 - 什么是幻读？如何防止？ #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-01-28T02:46:02.827Z
-  card-last-reviewed:: 2023-01-24T02:46:02.827Z
+  card-last-interval:: 8.32
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-02-08T09:27:34.210Z
+  card-last-reviewed:: 2023-01-31T02:27:34.210Z
   card-last-score:: 3
 	- 范围查询 {{cloze 事物A的两次查询之间，被事物B插入or删除了记录，产生结果集的不一致}}
 	- 防止方式
@@ -145,11 +145,11 @@
 				- {{cloze 只与 非唯一索引列 有关}}
 		- MVCC + Read View 的组合方式 解决 快照读下的幻读
 - 读取数据的两种方式 #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-01-28T02:46:59.383Z
-  card-last-reviewed:: 2023-01-24T02:46:59.383Z
+  card-last-interval:: 8.32
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-02-08T09:27:45.173Z
+  card-last-reviewed:: 2023-01-31T02:27:45.173Z
   card-last-score:: 3
 	- mvcc {{cloze 快照读}}
 		- 简单的select操作
@@ -300,10 +300,10 @@
 	- 当使用二级索引进行范围查询时，从随机读变为顺序读 {{cloze 通过对索引值排序，把无序回表IO变成有序回表IO}}
 - Explain 查询计划 #card
   card-last-interval:: 4
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-28T02:40:20.350Z
-  card-last-reviewed:: 2023-01-24T02:40:20.351Z
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-02-04T02:20:43.204Z
+  card-last-reviewed:: 2023-01-31T02:20:43.205Z
   card-last-score:: 3
 	- id 执行顺序
 		- {{cloze id不同，值越大越先执行}}
@@ -322,10 +322,10 @@
 		- Using where 该索引还用来执行查找操作
 - 工作中你是如何优化慢查询的 #card
   card-last-interval:: 4
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-28T02:41:10.309Z
-  card-last-reviewed:: 2023-01-24T02:41:10.310Z
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-02-04T02:21:52.808Z
+  card-last-reviewed:: 2023-01-31T02:21:52.809Z
   card-last-score:: 3
 	- 添加合适的索引
 		- {{cloze 频繁查询的条件 和 排序字段 建立索引}}

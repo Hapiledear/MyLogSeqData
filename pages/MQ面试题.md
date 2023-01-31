@@ -13,10 +13,10 @@
 	- {{cloze 消息通讯}} 数仓数据写入mq,业务读取
 - 消息队列有什么优缺点 #card
   card-last-interval:: 4
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-28T02:42:31.921Z
-  card-last-reviewed:: 2023-01-24T02:42:31.921Z
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-02-04T02:22:55.371Z
+  card-last-reviewed:: 2023-01-31T02:22:55.372Z
   card-last-score:: 3
 	- 优点3 {{cloze 解耦、异步、削峰}}
 	- 缺点3
