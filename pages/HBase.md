@@ -2,4 +2,11 @@
 - 数据模型
 	- ![image.png](../assets/image_1675244232658_0.png)
 	-
+- 架构模型
+	- ![image.png](../assets/image_1675244649687_0.png)
+	- HMaster
+		- 负责分配Region到具体的RegionServer,执行各种管理操作(如 小文件合并、大文件拆分，table的创建、修改)
 	-
+- 增删改查的真面目
+- 写入操作
+- 读取操作
