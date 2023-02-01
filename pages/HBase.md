@@ -1,3 +1,5 @@
 - [[HBase面试题]]
 - 数据模型
+	- ![image.png](../assets/image_1675244232658_0.png)
+	-
 	-
