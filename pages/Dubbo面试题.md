@@ -1,0 +1,12 @@
+- Dubbo调用原理 #card
+	- Provider暴露接口，写入注册中心
+	- Consumer向注册中心询问接口，并拉取一份本地保存
+	- Consumer使用轮询策略，使用Provider暴露出的jar包接口，直接与Provider的机器进行通信
+- Dubbo的轮询策略 #card
+	- 随机轮询
+	- 最小调用次数
+	- 一致性hash
+	- 轮询和加权轮询
+- Dubbo的失败策略 #card
+	- 快速失败，直接返回错误
+	-
