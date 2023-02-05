@@ -117,3 +117,12 @@
 	- {{cloze 内嵌servlet容器}}
 	- {{cloze 简化maven配置，使用 starter 扩展}}
 	- {{cloze 引入相关 starter后，自动装配相关bean}}
+- SpringBoot启动流程 #card
+	- 运行main方法，SpringBootApplication
+	- 初始化阶段
+		- 通过类加载器，读取classpath下的 {{cloze spring.factories}} 配置文件 和 {{cloze application.yml}} 资源文件
+		- 创建 ApplicationContext，创建BeanFactory
+	- 刷新上下文
+		- @CompontScan 扫描包下的bean，开始初始化
+		-
+		-
