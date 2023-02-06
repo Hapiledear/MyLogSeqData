@@ -228,11 +228,11 @@
 		- 将堆内存分块，每个块都看作Eden s1 s2 Huge old
 		- 只针对新生代的Young GC 和 新生代&老年代的Mix GC
 - 4种引用及应用场景 #card
-  card-last-interval:: 8.32
-  card-repeats:: 3
-  card-ease-factor:: 2.08
-  card-next-schedule:: 2023-02-01T09:53:15.168Z
-  card-last-reviewed:: 2023-01-24T02:53:15.168Z
+  card-last-interval:: 15.05
+  card-repeats:: 4
+  card-ease-factor:: 1.94
+  card-next-schedule:: 2023-02-21T12:33:04.185Z
+  card-last-reviewed:: 2023-02-06T11:33:04.185Z
   card-last-score:: 3
 	- 强引用
 		- new关键字触发
@@ -309,6 +309,12 @@
 		- 循环优化-无关代码外提、循环展开(次数减少，重复相同逻辑x次)
 		-
 - Java程序 CPU突然飙升 该如何处理？#card
+  card-last-interval:: 0.51
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-02-06T23:32:54.881Z
+  card-last-reviewed:: 2023-02-06T11:32:54.881Z
+  card-last-score:: 3
 	- 问题定位
 		- {{cloze top 命令}} 查看CPU占用情况，找到进程id
 		- {{cloze top -Hp}} 查看进程中的线程，找到占用最高的线程ID

@@ -252,11 +252,11 @@
 		- {{cloze 线程隔离}}
 		- {{cloze 跨函数传递数据}}
 - 线程池调度流程&各项参数 #card #Java并发
-  card-last-interval:: 8.32
-  card-repeats:: 3
-  card-ease-factor:: 2.08
-  card-next-schedule:: 2023-02-03T10:02:32.894Z
-  card-last-reviewed:: 2023-01-26T03:02:32.894Z
+  card-last-interval:: 15.05
+  card-repeats:: 4
+  card-ease-factor:: 1.94
+  card-next-schedule:: 2023-02-21T12:32:26.201Z
+  card-last-reviewed:: 2023-02-06T11:32:26.202Z
   card-last-score:: 3
 	- 任务优先占用 {{cloze 核心线程数}}
 	- 核心线程满 {{cloze 进入等待队列}}

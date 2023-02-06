@@ -240,11 +240,11 @@
 		- {{cloze 需要占用物理空间}}
 		- {{cloze 每次增改数据，都需要动态维护索引，导致增改时间变长}}
 - 聚集索引和非聚集索引 #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-02-04T02:39:28.252Z
-  card-last-reviewed:: 2023-01-31T02:39:28.253Z
+  card-last-interval:: 8.32
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-02-14T18:32:37.747Z
+  card-last-reviewed:: 2023-02-06T11:32:37.747Z
   card-last-score:: 3
 	- 聚簇索引
 		- {{cloze b+树的叶子节点中存放了表中一行的全部数据}}
@@ -321,11 +321,11 @@
 		- Using index 使用了覆盖索引
 		- Using where 该索引还用来执行查找操作
 - 工作中你是如何优化慢查询的 #card
-  card-last-interval:: 8.32
-  card-repeats:: 3
-  card-ease-factor:: 2.08
-  card-next-schedule:: 2023-02-14T18:25:06.843Z
-  card-last-reviewed:: 2023-02-06T11:25:06.843Z
+  card-last-interval:: 15.05
+  card-repeats:: 4
+  card-ease-factor:: 1.94
+  card-next-schedule:: 2023-02-21T12:32:31.610Z
+  card-last-reviewed:: 2023-02-06T11:32:31.610Z
   card-last-score:: 3
 	- 添加合适的索引
 		- {{cloze 频繁查询的条件 和 排序字段 建立索引}}
