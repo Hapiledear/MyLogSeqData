@@ -75,11 +75,11 @@
 		- {{cloze volatile-random}} 有过期时间的key中 随机移除
 		- {{cloze volatile-ttl}} 有过期时间的key中 移除最早过期时间的key
 - 了解Redis的事务机制吗？ #card
-  card-last-interval:: 0.57
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-01-31T15:51:51.815Z
-  card-last-reviewed:: 2023-01-31T02:51:51.815Z
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-02-10T11:30:51.635Z
+  card-last-reviewed:: 2023-02-06T11:30:51.636Z
   card-last-score:: 3
 	- 事务以 {{cloze MUTLI}}命令开始
 	- 客户端接收一系列操作，放入队列中
@@ -172,21 +172,21 @@
 	- AOF的缺点
 		- 生成的文件 {{cloze 比RDB大}} {{cloze 恢复速度慢}}
 - Redis的主从复制过程 #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-01-31T12:42:17.954Z
-  card-last-reviewed:: 2023-01-27T12:42:17.954Z
+  card-last-interval:: 8.32
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-02-14T18:28:16.290Z
+  card-last-reviewed:: 2023-02-06T11:28:16.290Z
   card-last-score:: 3
 	- 从服务器首次连接 {{cloze 全量复制}} {{cloze rdb or aof文件}}
 	- 复制后数据先 {{cloze 保存到本地磁盘}} 后 {{cloze 从磁盘读取到内存}}
 	- 重新连接 {{cloze 部分数据复制}} {{cloze offset偏移量 repl-backlog-buffer 复制积压缓冲区}}
 - Redis的集群模式的好处 #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-02-04T02:48:58.348Z
-  card-last-reviewed:: 2023-01-31T02:48:58.348Z
+  card-last-interval:: 8.32
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-02-14T18:22:24.946Z
+  card-last-reviewed:: 2023-02-06T11:22:24.946Z
   card-last-score:: 3
 	- 数据分片 {{cloze 自动将数据分片，每个master上放一部分}}
 	- 主从复制和自动故障转移 {{cloze 部分master不可用时，还是可以继续工作}}

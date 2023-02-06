@@ -16,11 +16,11 @@
 	- SQL优化 {{cloze 优化器}} 生成 执行计划
 	- 委托给存储引擎 {{cloze 执行器}}
 - SQL update过程 #card
-  card-last-interval:: 2.34
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-02-02T09:18:34.122Z
-  card-last-reviewed:: 2023-01-31T01:18:34.122Z
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-02-10T11:30:08.428Z
+  card-last-reviewed:: 2023-02-06T11:30:08.428Z
   card-last-score:: 3
 	- 查询出原数据
 	- 将修改的数据刷入内存 Buffer pool
@@ -28,11 +28,11 @@
 	- 记录 bin log
 	- 事务提交 ，等待被工作线程刷入磁盘
 - 查询语句的各部分执行顺序 9 #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-01-31T12:41:53.872Z
-  card-last-reviewed:: 2023-01-27T12:41:53.872Z
+  card-last-interval:: 8.32
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-02-14T18:29:11.593Z
+  card-last-reviewed:: 2023-02-06T11:29:11.593Z
   card-last-score:: 3
 	- {{cloze from -> join t2 on xxx  -> where yyy -> group by aaa -> having -> bbb -> select aaa,bbb,ccc -> distinct aaa ->order by bbb -> limit m,n}}
 - 存储引擎InnoDb和MyISAM的区别 #card
@@ -177,11 +177,11 @@
 		- 可重复读的实现
 			- {{cloze 只在第一次执行查询语句时生成 Read View}}
 - MySql中的锁有哪些 #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-01-31T12:17:55.452Z
-  card-last-reviewed:: 2023-01-27T12:17:55.453Z
+  card-last-interval:: 8.32
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-02-14T18:31:05.895Z
+  card-last-reviewed:: 2023-02-06T11:31:05.895Z
   card-last-score:: 3
 	- 表锁
 		- 意向锁
@@ -253,11 +253,11 @@
 		- {{cloze 除聚簇索引以外的索引}}
 		- 回表 {{cloze 第一次定位到聚簇索引，第二次通过聚簇索引定位到查找记录}}
 - 索引优化策略 #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-02-04T02:39:19.379Z
-  card-last-reviewed:: 2023-01-31T02:39:19.379Z
+  card-last-interval:: 8.32
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-02-14T18:22:41.335Z
+  card-last-reviewed:: 2023-02-06T11:22:41.335Z
   card-last-score:: 3
 	- 索引覆盖 {{cloze select字段 存在索引中}}
 	- 最左匹配原则 {{cloze 利用最左匹配，减少索引的建立}}
@@ -282,11 +282,11 @@
 	- 非主键的`order by ` 但需要具体情况具体验证
 	- 表数据较少时，走全表扫描比走索引效率更高 (内置优化策略)
 - 索引下推 #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-01-31T12:41:49.553Z
-  card-last-reviewed:: 2023-01-27T12:41:49.553Z
+  card-last-interval:: 8.32
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-02-14T18:24:43.160Z
+  card-last-reviewed:: 2023-02-06T11:24:43.161Z
   card-last-score:: 3
 	- 不存在索引下推时 {{cloze 先根据索引查记录，再根据where条件过滤}}
 	- 使用索引下推后 {{cloze 先根据 where条件过滤记录，再进行索引查询}}
@@ -321,11 +321,11 @@
 		- Using index 使用了覆盖索引
 		- Using where 该索引还用来执行查找操作
 - 工作中你是如何优化慢查询的 #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-02-04T02:21:52.808Z
-  card-last-reviewed:: 2023-01-31T02:21:52.809Z
+  card-last-interval:: 8.32
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-02-14T18:25:06.843Z
+  card-last-reviewed:: 2023-02-06T11:25:06.843Z
   card-last-score:: 3
 	- 添加合适的索引
 		- {{cloze 频繁查询的条件 和 排序字段 建立索引}}
@@ -397,11 +397,11 @@
 			- {{cloze 所有的旧代码，都对新库进行增删改}}
 			- {{cloze 不断从老库抽数据，往新库写。边写边比对数据是不是最新的}}
 - 业务中影响MySQL性能的场景 #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-02-04T02:48:29.004Z
-  card-last-reviewed:: 2023-01-31T02:48:29.005Z
+  card-last-interval:: 8.32
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-02-14T18:26:41.119Z
+  card-last-reviewed:: 2023-02-06T11:26:41.120Z
   card-last-score:: 3
 	- 大规模数据导出功能
 		- {{cloze 建议`limit m,n` 替换成id的范围查询}}

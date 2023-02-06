@@ -58,11 +58,11 @@
 	- {{cloze  年轻代又分 eden区 s1和s2区 比例为 8:1:1}} 3区
 	- {{cloze 通常 年轻代采用的GC算法是 复制算法，老年代采用的是标记-整理算法 }} GC算法
 - 非堆内存有哪些 #card
-  card-last-interval:: 9.28
-  card-repeats:: 3
-  card-ease-factor:: 2.32
-  card-next-schedule:: 2023-02-04T09:02:41.933Z
-  card-last-reviewed:: 2023-01-26T03:02:41.933Z
+  card-last-interval:: 19.01
+  card-repeats:: 4
+  card-ease-factor:: 2.18
+  card-next-schedule:: 2023-02-25T11:24:55.260Z
+  card-last-reviewed:: 2023-02-06T11:24:55.260Z
   card-last-score:: 3
 	- {{cloze DirectByteBuffer 所申请的直接内存}} NIO
 	- {{cloze 方法区的具体实现 元空间}}
@@ -77,11 +77,11 @@
 	- 开发中会有大量字符串被创建，回收效率低导致永久代内存不足
 	- 放在堆中，可以及时回收内存
 - ## 几种变量存放在哪里？ #card
-  card-last-interval:: 8.32
-  card-repeats:: 3
-  card-ease-factor:: 2.08
-  card-last-reviewed:: 2023-01-27T12:27:49.101Z
-  card-next-schedule:: 2023-02-04T19:27:49.098Z
+  card-last-interval:: 15.05
+  card-repeats:: 4
+  card-ease-factor:: 1.94
+  card-last-reviewed:: 2023-02-06T11:27:54.293Z
+  card-next-schedule:: 2023-02-21T12:27:54.292Z
   card-last-score:: 3
 	- ``` java
 	  	  public class StaticObjTest {
@@ -175,11 +175,11 @@
 	- 解析 {{cloze 将常量池中的符号引用替换成直接引用}}
 	- 初始化 {{cloze 对静态变量和代码块执行初始化工作}}
 - 类加载器分类和双亲委派模型 #card
-  card-last-interval:: 8.32
-  card-repeats:: 3
-  card-ease-factor:: 2.08
-  card-next-schedule:: 2023-02-01T09:46:46.155Z
-  card-last-reviewed:: 2023-01-24T02:46:46.155Z
+  card-last-interval:: 15.05
+  card-repeats:: 4
+  card-ease-factor:: 1.94
+  card-next-schedule:: 2023-02-21T12:22:34.370Z
+  card-last-reviewed:: 2023-02-06T11:22:34.371Z
   card-last-score:: 3
 	- 启动类加载器
 	- 扩展类加载器
