@@ -20,6 +20,7 @@
 	- 当MemStore的大小达到一定阈值，或者到了刷写的时间间隔，存储的内容就被刷到磁盘的HFile上。
 - 读取操作
 	- Region定位
-		-
+		- ![image.png](../assets/image_1675756415027_0.png)
+		- Client询问ZK，hbase:meta表在哪台机器上
 	- 数据扫描
 -
