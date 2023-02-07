@@ -64,7 +64,9 @@
 		-
 	- HFile合并
 		- Minor Compaction
+			- 可以删除达到TTL的数据 `当前时间 now() - cell 的 timestamp > TTL`
 		- Major Compaction
+			- 真正的删除DELETE类型数据,因为DELETE标记可能会和原始记录分隔到不同HFile里
 		- 合并算法
 			- RatioBasedCompactionPolicy
 				- 理想情况下，文件越新越小。`当前文件大小 < 比他更新的所有文件总和 * rate` ,就需要合并
@@ -75,4 +77,7 @@
 				- 严格来说，这是在删除过期块中的数据
 			- DateTieredCompactionPolicy
 				- 新旧文件分开处理
+			- StripeCompactionPolicy
+				- 新增L0区，作为合并缓冲
+				- key必须分布均匀，这样向下分发数据时(写入HFile)不会发生数据倾斜
 -
