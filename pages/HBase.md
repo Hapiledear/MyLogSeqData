@@ -34,10 +34,14 @@
 		- 选取合适的GC策略 -> Parallel + CMS 组合 or G1
 		- MemStore内存管理：MemStore 分配缓冲(类似于JVM中的线程分配缓冲)
 	- Region拆分
-		- 按照固定大小自动拆分
+		- 自动拆分
+			- 按固定大小
 			- 文件大小不断增长，直到到达max
 			- 相同rowkey前缀 按长度匹配
 			- 相同rowkey前缀 按分隔符分割
+			- 热点Region
+			- 永不自动拆分
+		- 预拆分
 		-
 	- Region合并
 	- WAL
