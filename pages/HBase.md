@@ -21,6 +21,11 @@
 - 读取操作
 	- Region定位
 		- ![image.png](../assets/image_1675756415027_0.png)
-		- Client询问ZK，hbase:meta表在哪台机器上
+		- Client询问ZK，hbase:meta表在哪台机器上。hbase:meta表存储了所有Region的rowkey信息
+		- 查询rowkey属于哪个region
+		- 直联regionServer,获取row data
+		- Client缓存本次meta信息，下次操作就不用再加载meta了
 	- 数据扫描
+		- BlockCache -> MemStore -> HFile
+		-
 -
