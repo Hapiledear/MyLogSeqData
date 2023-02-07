@@ -42,8 +42,12 @@
 			- 热点Region
 			- 永不自动拆分
 		- 预拆分
-		-
+			- HexStringSplit ASCII码等分
+			- UniformSplit btye[] 等分
+			- 手动指定拆分点
+		- 强制拆分-- 使用shell命令
 	- Region合并
+	-
 	- WAL
 	- BlockCache
 	- MemStore
