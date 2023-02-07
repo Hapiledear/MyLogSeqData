@@ -277,6 +277,7 @@
   card-last-reviewed:: 2023-01-26T03:10:08.609Z
   card-last-score:: 3
 	- {{cloze -Xms -Xmm }} 初始堆内存，最大堆内存
+	- {{cloze -Xmx}} 设置你的应用程序(不是JVM)能够使用的最大内存数
 	- {{cloze -Xmn -XX: SuvivorRation -XX:NewRation}} 新生代大小 e,s1,s2的比例 新生代:老年代
 	- {{cloze -xx:maxTenuringThreshOld=0}} 进入老年代的门槛年龄
 	- {{cloze -XX:+PrintGC -xloggc:gc.log}}打印GC过程信息 指定GC日志
