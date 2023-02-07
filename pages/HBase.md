@@ -27,5 +27,9 @@
 		- Client缓存本次meta信息，下次操作就不用再加载meta了
 	- 数据扫描
 		- BlockCache -> MemStore -> HFile
-		-
+		- 扫描一个rowkey时(多条不同版本的记录)，由于不知道是否被删除，会直到被扫描数据**大于给定限定条件**终止
+- 优化策略
+	- 调大RegionServer的内存-> 增大MemStore内存->写数据不容易阻塞
+	- 选取合适的GC策略 -> Parallel + CMS 组合 or G1
+	-
 -
