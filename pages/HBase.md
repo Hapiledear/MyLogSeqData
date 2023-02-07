@@ -29,7 +29,18 @@
 		- BlockCache -> MemStore -> HFile
 		- 扫描一个rowkey时(多条不同版本的记录)，由于不知道是否被删除，会直到被扫描数据**大于给定限定条件**终止
 - 优化策略
-	- 调大RegionServer的内存-> 增大MemStore内存->写数据不容易阻塞
-	- 选取合适的GC策略 -> Parallel + CMS 组合 or G1
+	- RegionServe
+		- 调大RegionServer的内存-> 增大MemStore内存->写数据不容易阻塞
+		- 选取合适的GC策略 -> Parallel + CMS 组合 or G1
+		- MemStore内存管理：MemStore 分配缓冲(类似于JVM中的线程分配缓冲)
+	- Region拆分
+		- 按照固定大小自动拆分
+			- 文件大小不断增长，直到到达max
+			- 相同rowkey前缀 按长度匹配
+			- 相同rowkey前缀 按分隔符分割
+		-
+	- Region合并
+	- WAL
+	- BlockCache
+	- MemStore
 	-
--
