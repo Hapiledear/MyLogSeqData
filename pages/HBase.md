@@ -62,4 +62,6 @@
 		- 在刷写(flush)MemStore时会阻塞所有写入该Store的写请求。
 		- 一定要控制好内存占用参数 `-xmx`
 		-
-	-
+	- HFile合并
+		- Minor Compaction
+		- Major Compaction
