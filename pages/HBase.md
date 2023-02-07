@@ -65,3 +65,14 @@
 	- HFile合并
 		- Minor Compaction
 		- Major Compaction
+		- 合并算法
+			- RatioBasedCompactionPolicy
+				- 理想情况下，文件越新越小。`当前文件大小 < 比他更新的所有文件总和 * rate` ,就需要合并
+			- ExploringCompactionPolicy
+				- `当前文件 < (所有文件大小总和 - 当前文件大小) * rate`
+				- 采用贪心规则(哪个组合中包含的文件更多)，挑选文件组合合并
+			- FIFOCompactionPolicy
+				- 严格来说，这是在删除过期块中的数据
+			- DateTieredCompactionPolicy
+				- 新旧文件分开处理
+-
