@@ -49,6 +49,13 @@
 	- Region合并
 	-
 	- WAL
+		- 设置最大文件数，超过这个数值后WAL开始滚动.新版本中改由HBase自动计算，设置无效。
 	- BlockCache
+		- LRU BlockCache
+			- 完全基于内存的，会带来Full GC
+		- SlabCache
+			- 基于堆外内存，分配的是固定大小。利用率不高，已被废弃
+		- Bucket Cache
+		-
 	- MemStore
 	-
