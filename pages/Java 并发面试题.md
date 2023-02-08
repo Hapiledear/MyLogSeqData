@@ -34,11 +34,11 @@
 	- 在32位的机器上，long和double分为了两部分 高位和低位。因此建议用volatile修饰
 	- 但更建议JVM实现时将这种操作视为原子性的
 - synchronized (简称 同步)的原理 #card #Java并发
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-01-31T12:19:24.076Z
-  card-last-reviewed:: 2023-01-27T12:19:24.077Z
+  card-last-interval:: 8.32
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-02-16T16:44:59.091Z
+  card-last-reviewed:: 2023-02-08T09:44:59.091Z
   card-last-score:: 3
 	- 通过 {{cloze `monitorEnter` 和`monitorExit`}} 指令，进行加锁和释放锁。是可重入的
 	- {{cloze 遵循happends-before规则，被synch修饰的对象的写在读之前，读一定是从直接内存中读取}} ，保证可见性
@@ -214,11 +214,11 @@
 	- 属性 {{cloze AtomicxxxFiledUpdater}}
 	- 带版本号的 {{cloze AtomicMarkableReference}} {{cloze AtomicStampedReferece}}
 - atomic的原理  #card #Java并发
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.46
-  card-next-schedule:: 2023-01-31T12:17:12.395Z
-  card-last-reviewed:: 2023-01-27T12:17:12.395Z
+  card-last-interval:: 9.28
+  card-repeats:: 3
+  card-ease-factor:: 2.32
+  card-next-schedule:: 2023-02-17T15:44:52.427Z
+  card-last-reviewed:: 2023-02-08T09:44:52.428Z
   card-last-score:: 3
 	- {{cloze CAS+volatile方式保证原子性}} 避免synch的高开销
 - CountdownLatch和CycleBarrar的区别 #card #Java并发

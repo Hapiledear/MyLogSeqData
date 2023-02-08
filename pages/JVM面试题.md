@@ -324,6 +324,12 @@
 		- 空循环，或者空自旋 {{cloze 使用Thread.sleep或者加锁，让线程适当的阻塞}}
 		- 在循环的代码逻辑中，创建大量的新对象 {{cloze 减少对象的创建数量 or 使用对象池}}
 - JVM的内存分配为什么是1:1:8 #card
+  card-last-interval:: 0.57
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-02-08T22:41:22.688Z
+  card-last-reviewed:: 2023-02-08T09:41:22.689Z
+  card-last-score:: 3
 	- 为什么要有Eden和servivor区
 		- {{cloze 减少被送入老年代的对象，进而减少Full GC次数}}
 	- 为什么要有2个servivor区

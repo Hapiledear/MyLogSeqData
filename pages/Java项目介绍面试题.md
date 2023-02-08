@@ -37,6 +37,12 @@
 		- {{cloze ES + HBase}}
 - 抽奖模块设计要略 #card
   id:: 63d86c04-4b9e-4b39-adb5-66cc686129ff
+  card-last-interval:: 0.57
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-02-08T22:44:29.762Z
+  card-last-reviewed:: 2023-02-08T09:44:29.762Z
+  card-last-score:: 3
 	- 步骤拆分
 		- 抽奖准入->产生奖品->扣减库存 -> 记录日志
 	- 用户的抽奖次数扣减，高并发下如何保证不超扣
