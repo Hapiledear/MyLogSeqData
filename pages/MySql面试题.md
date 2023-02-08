@@ -351,11 +351,11 @@
 	- redo log
 		- 是存储引擎 InnoDb的日志 ，记录的是 {{cloze 某个数据做了什么修改}}
 - MySql的主从复制 3线程 #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-01-31T12:31:02.595Z
-  card-last-reviewed:: 2023-01-27T12:31:02.595Z
+  card-last-interval:: 8.32
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-02-16T17:42:47.065Z
+  card-last-reviewed:: 2023-02-08T10:42:47.066Z
   card-last-score:: 3
 	- Master开启 bin log ,对数据的更新操作会按顺序写入 bin log
 	- Slave连接Master后，Slave的一个`IO线程` 请求 bin log dump
@@ -410,11 +410,11 @@
 	- 各种看板和统计报表
 		- {{cloze 数据工厂，离线计算。 直接接入ES}}
 - 大批量数据的插入 #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-01-31T12:23:36.428Z
-  card-last-reviewed:: 2023-01-27T12:23:36.430Z
+  card-last-interval:: 8.32
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-02-16T17:41:38.858Z
+  card-last-reviewed:: 2023-02-08T10:41:38.859Z
   card-last-score:: 3
 	- 开启事务
 	- 合并插入：一条语句插入多条数据

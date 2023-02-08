@@ -203,11 +203,11 @@
 	- 定义 {{cloze 一连串操作，要么都执行完，要么都不执行}}
 	- 如何保证原子性 {{cloze CAS指令}} {{cloze Lock和synchroize}}
 - java中有哪些原子类  #card #Java并发
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-01-31T12:27:56.304Z
-  card-last-reviewed:: 2023-01-27T12:27:56.304Z
+  card-last-interval:: 8.32
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-02-16T17:41:53.639Z
+  card-last-reviewed:: 2023-02-08T10:41:53.639Z
   card-last-score:: 3
 	- 基本类型 {{cloze AtomicBoolean}} {{cloze AtomicInteger}} {{cloze AtomicReference}}
 	- 数组 {{cloze AtomicXXXArray}}
