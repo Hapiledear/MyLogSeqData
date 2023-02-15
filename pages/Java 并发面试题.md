@@ -1,11 +1,11 @@
 - {{cards [[Java 并发面试题]]}}
 - 并发中的三大问题是如何产生的，都是如何解决的? #card #Java并发 /cloze
-  card-last-interval:: 8.32
-  card-repeats:: 3
+  card-last-interval:: -1
+  card-repeats:: 1
   card-ease-factor:: 2.08
-  card-next-schedule:: 2023-02-03T10:08:53.803Z
-  card-last-reviewed:: 2023-01-26T03:08:53.804Z
-  card-last-score:: 3
+  card-next-schedule:: 2023-02-15T16:00:00.000Z
+  card-last-reviewed:: 2023-02-15T06:09:37.844Z
+  card-last-score:: 1
 	- 原子性
 		- {{cloze `i++` 一行代码被编译为机器指令时可能是多步操作}}
 		- {{cloze CAS , synchroize，显示锁}}
@@ -25,12 +25,12 @@
 	- 解决了两大问题 {{cloze 保证变量对所有线程的可见性和禁止指令重排}} 通常搭配atomic类来实现 {{cloze 原子性}}
 	- 实践 单例模式中 {{cloze volatile修饰instance. 保证其写操作发生在读之前}}
 - volatile能将非原子操作变成原子操作吗 #card #Java并发
-  card-last-interval:: 8.32
-  card-repeats:: 3
+  card-last-interval:: -1
+  card-repeats:: 1
   card-ease-factor:: 2.08
-  card-next-schedule:: 2023-02-03T10:04:11.084Z
-  card-last-reviewed:: 2023-01-26T03:04:11.084Z
-  card-last-score:: 3
+  card-next-schedule:: 2023-02-15T16:00:00.000Z
+  card-last-reviewed:: 2023-02-15T06:07:26.733Z
+  card-last-score:: 1
 	- 在32位的机器上，long和double分为了两部分 高位和低位。因此建议用volatile修饰
 	- 但更建议JVM实现时将这种操作视为原子性的
 - synchronized (简称 同步)的原理 #card #Java并发
@@ -151,11 +151,11 @@
 		- 独占方式获取和释放资源 {{cloze tryAcquire/tryRelease}}
 		- 共享方式 {{cloze tryAquireShared/treReleaseShared}}
 - ConcurrentHashMap的原理 #card #Java并发
-  card-last-interval:: 8.32
-  card-repeats:: 3
-  card-ease-factor:: 2.08
-  card-next-schedule:: 2023-02-03T10:04:21.984Z
-  card-last-reviewed:: 2023-01-26T03:04:21.984Z
+  card-last-interval:: 15.05
+  card-repeats:: 4
+  card-ease-factor:: 1.94
+  card-next-schedule:: 2023-03-02T07:07:39.391Z
+  card-last-reviewed:: 2023-02-15T06:07:39.392Z
   card-last-score:: 3
 	- 1.8- {{cloze 将map分段为segment，对每一段分别加锁}}
 	- 1.8+ {{cloze 弃用了分段，而是改用了CAS操作}}
@@ -163,11 +163,11 @@
 		- 存储结构 {{cloze 数组+链表->红黑树}}
 		- 扩容 {{cloze 默认大小为 16 加载因子0.75 阈值=大小*因子}} {{cloze 扩容后大小为2^n次方，不需要rehash}}
 - synchronizeMap与ConcurrentHashMap的区别 #card #Java并发
-  card-last-interval:: 8.32
-  card-repeats:: 3
-  card-ease-factor:: 2.08
-  card-next-schedule:: 2023-02-03T10:14:35.777Z
-  card-last-reviewed:: 2023-01-26T03:14:35.777Z
+  card-last-interval:: 15.05
+  card-repeats:: 4
+  card-ease-factor:: 1.94
+  card-next-schedule:: 2023-03-02T07:13:34.521Z
+  card-last-reviewed:: 2023-02-15T06:13:34.521Z
   card-last-score:: 3
 	- 锁住数据的粒度
 		- {{cloze synchMap 一次锁住一整张表}}

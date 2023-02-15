@@ -227,11 +227,11 @@
 	- 数据记录 {{cloze 都存放在叶子节点中}} {{cloze 非叶节点只存储键值信息}}
 	- {{cloze 所有叶子节点之间都有一个链指针}}
 - 索引的优缺点 #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-02-04T02:13:49.597Z
-  card-last-reviewed:: 2023-01-31T02:13:49.597Z
+  card-last-interval:: 8.32
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-02-23T13:14:02.667Z
+  card-last-reviewed:: 2023-02-15T06:14:02.667Z
   card-last-score:: 3
 	- 优点
 		- {{cloze 提高数据检索效率，降低IO}}
@@ -299,11 +299,11 @@
   card-last-score:: 3
 	- 当使用二级索引进行范围查询时，从随机读变为顺序读 {{cloze 通过对索引值排序，把无序回表IO变成有序回表IO}}
 - Explain 查询计划 #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-02-04T02:20:43.204Z
-  card-last-reviewed:: 2023-01-31T02:20:43.205Z
+  card-last-interval:: 8.32
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-02-23T13:17:02.109Z
+  card-last-reviewed:: 2023-02-15T06:17:02.110Z
   card-last-score:: 3
 	- id 执行顺序
 		- {{cloze id不同，值越大越先执行}}
