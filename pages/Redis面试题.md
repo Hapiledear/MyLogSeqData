@@ -35,11 +35,11 @@
 		- 问题描述 {{cloze 某一热点key突然过期，导致所有请求打到数据库上}}
 		- 解决方案 {{cloze 热点key过期时间加长，永不过期}} {{cloze 实时监控热点数据，实时调整过期时间}} 代码层面 {{cloze 使用synch 或 ReentryLock 加锁更新，这样后续的请求就又会走缓存}}
 - 在日常项目中用到了哪些Redis数据类型,底层结构是什么样的 #card
-  card-last-interval:: 8.32
-  card-repeats:: 3
-  card-ease-factor:: 2.08
-  card-next-schedule:: 2023-02-04T19:25:28.108Z
-  card-last-reviewed:: 2023-01-27T12:25:28.108Z
+  card-last-interval:: 15.05
+  card-repeats:: 4
+  card-ease-factor:: 1.94
+  card-next-schedule:: 2023-03-02T07:45:00.043Z
+  card-last-reviewed:: 2023-02-15T06:45:00.043Z
   card-last-score:: 3
 	- string
 		- {{cloze 普通的kv存储，常用}}
@@ -205,11 +205,11 @@
 		- 机器的增减 {{cloze master的增减只是移动部分槽位}}
 		- 好处 {{cloze 无论在数据量大 or 小时，数据分配都很均匀}}
 - 节点宕机时的主备切换 #card
-  card-last-interval:: 8.32
-  card-repeats:: 3
-  card-ease-factor:: 2.08
-  card-next-schedule:: 2023-02-04T19:30:45.715Z
-  card-last-reviewed:: 2023-01-27T12:30:45.716Z
+  card-last-interval:: 15.05
+  card-repeats:: 4
+  card-ease-factor:: 1.94
+  card-next-schedule:: 2023-03-02T07:46:49.480Z
+  card-last-reviewed:: 2023-02-15T06:46:49.480Z
   card-last-score:: 3
 	- 判断节点宕机
 		- 主观宕机 {{cloze 某一节点发现另一节点一段时间内无心跳返回了}}
@@ -283,11 +283,11 @@
 		- 压缩 {{cloze 压缩算法进行压缩}}
 		- 拆分 {{cloze 按长度截取拆分，使用multiget读取}}
 - Redis的SDS与C语言的字符串比较 #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-02-04T02:51:14.826Z
-  card-last-reviewed:: 2023-01-31T02:51:14.826Z
+  card-last-interval:: 8.32
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-02-23T13:39:48.432Z
+  card-last-reviewed:: 2023-02-15T06:39:48.432Z
   card-last-score:: 3
 	- c语言字符串的缺点
 		- {{cloze 获取字符串长度 需要O(n)}}

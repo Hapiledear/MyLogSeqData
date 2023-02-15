@@ -138,11 +138,11 @@
 		- 堆对于整个应用程序都是共享的、可见的
 		- 栈是线程私有的
 - 对象创建过程 #card
-  card-last-interval:: 9.28
-  card-repeats:: 3
-  card-ease-factor:: 2.32
-  card-next-schedule:: 2023-02-04T09:11:04.118Z
-  card-last-reviewed:: 2023-01-26T03:11:04.119Z
+  card-last-interval:: 19.01
+  card-repeats:: 4
+  card-ease-factor:: 2.18
+  card-next-schedule:: 2023-03-06T06:44:41.428Z
+  card-last-reviewed:: 2023-02-15T06:44:41.428Z
   card-last-score:: 3
 	- 类加载
 	- 分配内存
@@ -152,22 +152,22 @@
 	- 初始化
 	- <init>方法
 - 触发类加载的时机 4 #card
-  card-last-interval:: 8.32
-  card-repeats:: 3
-  card-ease-factor:: 2.08
-  card-next-schedule:: 2023-02-04T19:35:42.671Z
-  card-last-reviewed:: 2023-01-27T12:35:42.671Z
+  card-last-interval:: 15.05
+  card-repeats:: 4
+  card-ease-factor:: 1.94
+  card-next-schedule:: 2023-03-02T07:46:54.568Z
+  card-last-reviewed:: 2023-02-15T06:46:54.568Z
   card-last-score:: 3
 	- new关键字
 	- Class or Constructor的newInstance方法
 	- clone方法
 	- 反序列化
 - 类加载过程 #card
-  card-last-interval:: 9.28
-  card-repeats:: 3
-  card-ease-factor:: 2.32
-  card-next-schedule:: 2023-02-04T09:00:08.235Z
-  card-last-reviewed:: 2023-01-26T03:00:08.235Z
+  card-last-interval:: 19.01
+  card-repeats:: 4
+  card-ease-factor:: 2.18
+  card-next-schedule:: 2023-03-06T06:43:31.782Z
+  card-last-reviewed:: 2023-02-15T06:43:31.782Z
   card-last-score:: 3
 	- 加载 {{cloze 导入class文件}}
 	- 验证 {{cloze 检测class文件的正确性}}

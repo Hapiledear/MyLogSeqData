@@ -10,11 +10,11 @@
 	- 超过亿级的表数据
 	- 帖子和评论 -- 无固定且需要扩展的列
 - 项目中的rowkey是如何设计的 #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-02-04T02:50:50.360Z
-  card-last-reviewed:: 2023-01-31T02:50:50.360Z
+  card-last-interval:: 8.32
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-02-23T13:39:10.530Z
+  card-last-reviewed:: 2023-02-15T06:39:10.530Z
   card-last-score:: 3
 	- userId倒序取模
 	- userId + Long.Max - currentTimeStamp 便于scan查询，最近的记录在前
