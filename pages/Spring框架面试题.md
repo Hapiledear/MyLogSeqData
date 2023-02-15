@@ -12,20 +12,20 @@
 	- RestTemplate {{cloze 模板方法}}
 	- ApplicationListener {{cloze 观察者模式}}
 - 什么是Spring的IOC(控制反转) #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-02-04T02:41:52.878Z
-  card-last-reviewed:: 2023-01-31T02:41:52.878Z
+  card-last-interval:: 8.32
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-02-23T13:29:08.827Z
+  card-last-reviewed:: 2023-02-15T06:29:08.827Z
   card-last-score:: 3
 	- {{cloze 原本由代码控制对象的生命周期，交由spring框架管理}}
 	- 实现 {{cloze 工厂模式+反射机制}}
 - BeanFactory 和 ApplicationContext的区别 #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-02-04T02:49:14.854Z
-  card-last-reviewed:: 2023-01-31T02:49:14.854Z
+  card-last-interval:: 8.32
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-02-23T13:34:44.256Z
+  card-last-reviewed:: 2023-02-15T06:34:44.256Z
   card-last-score:: 3
 	- BF 可以理解为 “低级容器”，只是简单的 k-v结构
 	- 依赖关系 {{cloze ApplicationContext是BeanFactory的子接口,扩展了BeanFactory的功能}}
@@ -74,11 +74,11 @@
 	- BF {{cloze 是框架用来管理和装配普通bean的容器}}
 	- FB {{cloze 是用以生产对象和装饰对象的工厂接口}}
 - 如何解决Bean注入时的循环依赖问题  #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-02-04T02:42:19.402Z
-  card-last-reviewed:: 2023-01-31T02:42:19.402Z
+  card-last-interval:: 8.32
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-02-23T13:30:13.177Z
+  card-last-reviewed:: 2023-02-15T06:30:13.178Z
   card-last-score:: 3
 	- 循环依赖能自动解决的前提条件
 		- {{cloze 不是全属性构造器}}

@@ -340,11 +340,11 @@
 		- {{cloze 是否命中索引}}
 		- 降低SQL语句的复杂度
 - bin log 和 redo log的区别 #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-02-04T02:38:25.546Z
-  card-last-reviewed:: 2023-01-31T02:38:25.546Z
+  card-last-interval:: 8.32
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-02-23T13:29:04.843Z
+  card-last-reviewed:: 2023-02-15T06:29:04.844Z
   card-last-score:: 3
 	- bin log
 		- 是MySql层的日志系统 ，记录的是 {{cloze SQL语句的原始逻辑}}
@@ -376,11 +376,11 @@
 		- 连接数不够，产生 资源报警
 		- 慢查询增多，占用了大量的IO和网络带宽
 - 分库分表会带来哪些问题，如何解决 #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-02-04T02:48:45.388Z
-  card-last-reviewed:: 2023-01-31T02:48:45.389Z
+  card-last-interval:: 8.32
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-02-23T13:33:29.360Z
+  card-last-reviewed:: 2023-02-15T06:33:29.360Z
   card-last-score:: 3
 	- 分布式事务问题
 		- {{cloze 使用相关中间件}}
