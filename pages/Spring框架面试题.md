@@ -1,10 +1,10 @@
 - {{cards [[Spring框架面试题]] }}
 - Spring中用了哪些设计模式? #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-02-04T02:36:42.519Z
-  card-last-reviewed:: 2023-01-31T02:36:42.519Z
+  card-last-interval:: 8.32
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-02-23T13:22:24.244Z
+  card-last-reviewed:: 2023-02-15T06:22:24.244Z
   card-last-score:: 3
 	- BeanFactory {{cloze 工厂模式}}
 	- Bean {{cloze 单例模式}}
@@ -47,12 +47,12 @@
 		- 有状态指的是有数据的存储功能
 	- 或者是该数据字段使用 {{cloze ThreadLocal}} 修饰
 - Spring Bean的生命周期，描述一下 4阶段-2扩展点 #card
-  card-last-interval:: 4
-  card-repeats:: 2
+  card-last-interval:: -1
+  card-repeats:: 1
   card-ease-factor:: 2.22
-  card-next-schedule:: 2023-02-04T02:36:16.030Z
-  card-last-reviewed:: 2023-01-31T02:36:16.030Z
-  card-last-score:: 3
+  card-next-schedule:: 2023-02-15T16:00:00.000Z
+  card-last-reviewed:: 2023-02-15T06:22:02.933Z
+  card-last-score:: 1
 	- 实例化
 	- 属性填充
 	- 初始化
@@ -65,11 +65,11 @@
 		- DisposableBean接口的destory方法
 		- destory-method方法
 - BeanFactory 和 FactoryBean的区别 #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-02-04T02:36:26.690Z
-  card-last-reviewed:: 2023-01-31T02:36:26.690Z
+  card-last-interval:: 8.32
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-02-23T13:22:09.157Z
+  card-last-reviewed:: 2023-02-15T06:22:09.157Z
   card-last-score:: 3
 	- BF {{cloze 是框架用来管理和装配普通bean的容器}}
 	- FB {{cloze 是用以生产对象和装饰对象的工厂接口}}
