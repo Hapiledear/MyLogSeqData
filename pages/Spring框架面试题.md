@@ -50,8 +50,8 @@
   card-last-interval:: -1
   card-repeats:: 1
   card-ease-factor:: 2.22
-  card-next-schedule:: 2023-02-15T16:00:00.000Z
-  card-last-reviewed:: 2023-02-15T06:22:02.933Z
+  card-next-schedule:: 2023-03-06T16:00:00.000Z
+  card-last-reviewed:: 2023-03-06T12:23:26.770Z
   card-last-score:: 1
 	- 实例化
 	- 属性填充
@@ -107,11 +107,11 @@
 	- AOP 面向切面编程，核心是使用 {{cloze 代理模式}}，对目标方法执行前后进行处理
 	- 应用场景 {{cloze 日志记录}} {{cloze 接口签名校验}}
 - 为什么要用SpringBoot #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-02-12T10:48:16.301Z
-  card-last-reviewed:: 2023-02-08T10:48:16.301Z
+  card-last-interval:: 8.32
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-03-14T19:16:33.222Z
+  card-last-reviewed:: 2023-03-06T12:16:33.222Z
   card-last-score:: 3
 	- {{cloze 独立运行spring项目}}
 	- {{cloze 内嵌servlet容器}}

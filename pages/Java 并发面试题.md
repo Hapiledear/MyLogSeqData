@@ -1,11 +1,11 @@
 - {{cards [[Java 并发面试题]]}}
 - 并发中的三大问题是如何产生的，都是如何解决的? #card #Java并发 /cloze
-  card-last-interval:: -1
-  card-repeats:: 1
-  card-ease-factor:: 2.08
-  card-next-schedule:: 2023-02-15T16:00:00.000Z
-  card-last-reviewed:: 2023-02-15T06:09:37.844Z
-  card-last-score:: 1
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 1.94
+  card-next-schedule:: 2023-03-10T12:23:38.716Z
+  card-last-reviewed:: 2023-03-06T12:23:38.716Z
+  card-last-score:: 3
 	- 原子性
 		- {{cloze `i++` 一行代码被编译为机器指令时可能是多步操作}}
 		- {{cloze CAS , synchroize，显示锁}}
@@ -25,20 +25,20 @@
 	- 解决了两大问题 {{cloze 保证变量对所有线程的可见性和禁止指令重排}} 通常搭配atomic类来实现 {{cloze 原子性}}
 	- 实践 单例模式中 {{cloze volatile修饰instance. 保证其写操作发生在读之前}}
 - volatile能将非原子操作变成原子操作吗 #card #Java并发
-  card-last-interval:: -1
-  card-repeats:: 1
-  card-ease-factor:: 2.08
-  card-next-schedule:: 2023-02-15T16:00:00.000Z
-  card-last-reviewed:: 2023-02-15T06:07:26.733Z
-  card-last-score:: 1
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 1.94
+  card-next-schedule:: 2023-03-10T12:23:44.947Z
+  card-last-reviewed:: 2023-03-06T12:23:44.947Z
+  card-last-score:: 3
 	- 在32位的机器上，long和double分为了两部分 高位和低位。因此建议用volatile修饰
 	- 但更建议JVM实现时将这种操作视为原子性的
 - synchronized (简称 同步)的原理 #card #Java并发
-  card-last-interval:: 8.32
-  card-repeats:: 3
-  card-ease-factor:: 2.08
-  card-next-schedule:: 2023-02-16T16:44:59.091Z
-  card-last-reviewed:: 2023-02-08T09:44:59.091Z
+  card-last-interval:: 15.05
+  card-repeats:: 4
+  card-ease-factor:: 1.94
+  card-next-schedule:: 2023-03-21T13:24:27.755Z
+  card-last-reviewed:: 2023-03-06T12:24:27.756Z
   card-last-score:: 3
 	- 通过 {{cloze `monitorEnter` 和`monitorExit`}} 指令，进行加锁和释放锁。是可重入的
 	- {{cloze 遵循happends-before规则，被synch修饰的对象的写在读之前，读一定是从直接内存中读取}} ，保证可见性
