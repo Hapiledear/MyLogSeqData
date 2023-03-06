@@ -15,7 +15,7 @@
 		- 可以控制并行度
 		- 物理层的Block块会把一行数据切割开，它们将在切片中复原
 - MapReduce过程
-collapsed:: true
+  collapsed:: true
 	- ![image.png](../assets/image_1648367835052_0.png)
 - Map and Reduce Task
 	- ![image.png](../assets/image_1648367900422_0.png)
@@ -33,7 +33,6 @@ collapsed:: true
 		-
 - MapTask 源码
 	- run方法中
-collapsed:: true
 		- if 没有reduce方法，map占1 else map占 0.666 sort 占0.333
 		- 通过客户端传过来的Job和其中的config 来创建 jobContext,mapper,input[inputFormat,split],output,mapperContext[cconfig,reader,writer,split]
 		- try方法块中
@@ -48,7 +47,7 @@ collapsed:: true
 					- 有多少个reduce task 就有多少个分区
 				- 最终输出到MapOutputBuffer中
 					- init方法中
-collapsed:: true
+					  collapsed:: true
 						- 溢写(spilper)的大小为0.8
 						- sort大小为100m
 						- 排序器 sorter [map.sort.class,QuickSort]
@@ -65,7 +64,7 @@ collapsed:: true
 						- map阶段的输出结果是(k,v,p)三元组
 						- 赤道向一端存放k,v 另一端存放索引
 						- 索引结构
-collapsed:: true
+						  collapsed:: true
 							- 固定宽度16bit = 4 int
 							- p
 							- key start
@@ -86,7 +85,7 @@ collapsed:: true
 		- shuffer: 洗牌(相同key拉取到一个分区)，拉取数据
 		- sort:  对map输出的已排序好的文件做归并排序
 		- reduce
-collapsed:: true
+		  collapsed:: true
 			- 迭代器 rIter = shuffle... //reduce拉取回自己的数据，并包装成迭代器
 			- 分组比较器 comparator = getOutputValueGroupingComparator()
 				- 1. 取用户设置的分组比较器
