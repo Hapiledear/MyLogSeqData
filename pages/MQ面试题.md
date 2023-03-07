@@ -33,11 +33,11 @@
 	- 拆分多个queue,每个queue对应一个consumer。
 	- {{cloze 发送时，根据key ID路由，保证同一个ID的消息发到同一个queue}}
 - Rabbit MQ 消息基于什么传输? #card
-  card-last-interval:: 8.32
-  card-repeats:: 3
-  card-ease-factor:: 2.08
-  card-next-schedule:: 2023-02-16T17:41:45.418Z
-  card-last-reviewed:: 2023-02-08T10:41:45.419Z
+  card-last-interval:: 15.05
+  card-repeats:: 4
+  card-ease-factor:: 1.94
+  card-next-schedule:: 2023-03-21T13:24:52.412Z
+  card-last-reviewed:: 2023-03-06T12:24:52.413Z
   card-last-score:: 3
 	- 建立TCP连接后，基于信道channel的方式传输数据
 	- channel是建立在TCP连接上的虚拟连接，没有数量限制。达到复用TCP连接的目的
