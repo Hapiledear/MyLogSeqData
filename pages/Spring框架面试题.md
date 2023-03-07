@@ -1,10 +1,10 @@
 - {{cards [[Spring框架面试题]] }}
 - Spring中用了哪些设计模式? #card
-  card-last-interval:: 8.32
-  card-repeats:: 3
-  card-ease-factor:: 2.08
-  card-next-schedule:: 2023-02-23T13:22:24.244Z
-  card-last-reviewed:: 2023-02-15T06:22:24.244Z
+  card-last-interval:: 15.05
+  card-repeats:: 4
+  card-ease-factor:: 1.94
+  card-next-schedule:: 2023-03-22T02:47:45.319Z
+  card-last-reviewed:: 2023-03-07T01:47:45.319Z
   card-last-score:: 3
 	- BeanFactory {{cloze 工厂模式}}
 	- Bean {{cloze 单例模式}}
@@ -65,11 +65,11 @@
 		- DisposableBean接口的destory方法
 		- destory-method方法
 - BeanFactory 和 FactoryBean的区别 #card
-  card-last-interval:: 8.32
-  card-repeats:: 3
-  card-ease-factor:: 2.08
-  card-next-schedule:: 2023-02-23T13:22:09.157Z
-  card-last-reviewed:: 2023-02-15T06:22:09.157Z
+  card-last-interval:: 15.05
+  card-repeats:: 4
+  card-ease-factor:: 1.94
+  card-next-schedule:: 2023-03-22T02:47:05.238Z
+  card-last-reviewed:: 2023-03-07T01:47:05.239Z
   card-last-score:: 3
 	- BF {{cloze 是框架用来管理和装配普通bean的容器}}
 	- FB {{cloze 是用以生产对象和装饰对象的工厂接口}}

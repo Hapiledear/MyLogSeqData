@@ -97,11 +97,11 @@
 	- 使用事务 实现CAS
 		- {{cloze 事务具有watch机制,一旦被监测的key发生更改，本次提交就失效了}}
 - Redis为什么快？ #card
-  card-last-interval:: 8.32
-  card-repeats:: 3
-  card-ease-factor:: 2.08
-  card-next-schedule:: 2023-02-23T13:13:49.690Z
-  card-last-reviewed:: 2023-02-15T06:13:49.691Z
+  card-last-interval:: 15.05
+  card-repeats:: 4
+  card-ease-factor:: 1.94
+  card-next-schedule:: 2023-03-22T02:39:16.468Z
+  card-last-reviewed:: 2023-03-07T01:39:16.468Z
   card-last-score:: 3
 	- 基于内存操作
 	- 使用单线程， {{cloze 避免线程切换和竞争产生的消耗}}
@@ -265,11 +265,11 @@
 		- 打散 {{cloze 把热key打散到不同的服务器上，降低压力}}
 		- 二级缓存 {{cloze 加入本地的内存缓存}}
 - 大key处理 #card
-  card-last-interval:: 8.32
-  card-repeats:: 3
-  card-ease-factor:: 2.08
-  card-next-schedule:: 2023-02-23T13:22:47.687Z
-  card-last-reviewed:: 2023-02-15T06:22:47.688Z
+  card-last-interval:: 15.05
+  card-repeats:: 4
+  card-ease-factor:: 1.94
+  card-next-schedule:: 2023-03-22T02:48:25.367Z
+  card-last-reviewed:: 2023-03-07T01:48:25.368Z
   card-last-score:: 3
 	- 大key造成的问题
 		- 进行IO操作时 {{cloze 占用带宽和CPU}}
@@ -298,11 +298,11 @@
 		- {{cloze 自动扩展空间，扩容时成倍分配，缩容时先留着并不正式归还}}
 		- {{cloze 二进制安全，写入什么就读取什么，不做任何限制}}
 - Redis的字典，渐进式Rehash过程 #card
-  card-last-interval:: 8.32
-  card-repeats:: 3
-  card-ease-factor:: 2.08
-  card-next-schedule:: 2023-02-23T13:23:53.074Z
-  card-last-reviewed:: 2023-02-15T06:23:53.074Z
+  card-last-interval:: 15.05
+  card-repeats:: 4
+  card-ease-factor:: 1.94
+  card-next-schedule:: 2023-03-22T02:48:38.448Z
+  card-last-reviewed:: 2023-03-07T01:48:38.449Z
   card-last-score:: 3
 	- 两个table, 采用 {{cloze 数组+链表的链地址法}} 解决哈希冲突 哈希算法为 {{cloze hashcode & sizemask}} sizemask = realsize - 1
 	- 扩容时
@@ -310,11 +310,11 @@
 		- {{cloze 此时有数据插入，则直接加入t1表}}
 		- {{cloze 扩容因子为 used / size = 1 时}}
 - Redis的跳跃表skipList是如何实现的 #card
-  card-last-interval:: 8.32
-  card-repeats:: 3
-  card-ease-factor:: 2.08
-  card-next-schedule:: 2023-02-23T13:19:04.594Z
-  card-last-reviewed:: 2023-02-15T06:19:04.594Z
+  card-last-interval:: 15.05
+  card-repeats:: 4
+  card-ease-factor:: 1.94
+  card-next-schedule:: 2023-03-22T02:46:57.383Z
+  card-last-reviewed:: 2023-03-07T01:46:57.383Z
   card-last-score:: 3
 	- 层级
 		- 插入时按几率分配层级

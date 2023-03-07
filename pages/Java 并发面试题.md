@@ -16,11 +16,11 @@
 		- {{cloze CUP 的物理缓存结构,JMM内存模型也有缓存}}
 		- {{cloze CUP层级的MESI协议，JMM的八种操作规范}}
 - volatile关键字的原理及其实战 #card #Java并发
-  card-last-interval:: 15.05
-  card-repeats:: 4
-  card-ease-factor:: 1.94
-  card-next-schedule:: 2023-02-23T11:50:15.079Z
-  card-last-reviewed:: 2023-02-08T10:50:15.079Z
+  card-last-interval:: 23.33
+  card-repeats:: 5
+  card-ease-factor:: 1.8
+  card-next-schedule:: 2023-03-30T08:39:07.476Z
+  card-last-reviewed:: 2023-03-07T01:39:07.477Z
   card-last-score:: 3
 	- 解决了两大问题 {{cloze 保证变量对所有线程的可见性和禁止指令重排}} 通常搭配atomic类来实现 {{cloze 原子性}}
 	- 实践 单例模式中 {{cloze volatile修饰instance. 保证其写操作发生在读之前}}
