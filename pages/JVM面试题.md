@@ -1,11 +1,11 @@
 - {{cards [[JVM面试题]] }}
 - [[Java 元空间]] 会产生内存溢出吗？ #card
   card-last-score:: 3
-  card-repeats:: 3
-  card-next-schedule:: 2023-02-16T17:45:48.008Z
-  card-last-interval:: 8.32
-  card-ease-factor:: 2.08
-  card-last-reviewed:: 2023-02-08T10:45:48.008Z
+  card-repeats:: 4
+  card-next-schedule:: 2023-03-22T02:13:17.211Z
+  card-last-interval:: 15.05
+  card-ease-factor:: 1.94
+  card-last-reviewed:: 2023-03-07T01:13:17.212Z
 	- 元空间的由来。 {{cloze 从java8+开始，用 元空间 替代了 永久代/方法区}}
 	- 元空间的内存 {{cloze 并不使用虚拟机的内存，而是直接使用机器内存}}
 	- 出现OOM的原因 {{cloze 加载到内存中的class文件数量太多or体积太大}}
@@ -212,11 +212,11 @@
 		- 年龄 = 相同年龄对象大小之和 > S 区的一半
 	- 老年代满了则触发 Full GC
 - JVM中的垃圾回收器有哪些,及其工作原理 #card
-  card-last-interval:: 16.72
-  card-repeats:: 4
-  card-ease-factor:: 2.08
-  card-next-schedule:: 2023-02-16T19:38:32.686Z
-  card-last-reviewed:: 2023-01-31T02:38:32.686Z
+  card-last-interval:: 29.21
+  card-repeats:: 5
+  card-ease-factor:: 1.94
+  card-next-schedule:: 2023-04-05T06:13:51.699Z
+  card-last-reviewed:: 2023-03-07T01:13:51.699Z
   card-last-score:: 3
 	- Serial
 		- 串行收集
@@ -309,11 +309,11 @@
 		- 循环优化-无关代码外提、循环展开(次数减少，重复相同逻辑x次)
 		-
 - Java程序 CPU突然飙升 该如何处理？#card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-02-19T06:48:20.018Z
-  card-last-reviewed:: 2023-02-15T06:48:20.019Z
+  card-last-interval:: 8.32
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-03-15T08:15:54.368Z
+  card-last-reviewed:: 2023-03-07T01:15:54.368Z
   card-last-score:: 3
 	- 问题定位
 		- {{cloze top 命令}} 查看CPU占用情况，找到进程id
@@ -324,11 +324,11 @@
 		- 空循环，或者空自旋 {{cloze 使用Thread.sleep或者加锁，让线程适当的阻塞}}
 		- 在循环的代码逻辑中，创建大量的新对象 {{cloze 减少对象的创建数量 or 使用对象池}}
 - JVM的内存分配为什么是1:1:8 #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-02-19T06:53:03.220Z
-  card-last-reviewed:: 2023-02-15T06:53:03.220Z
+  card-last-interval:: 8.32
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-03-15T08:17:24.270Z
+  card-last-reviewed:: 2023-03-07T01:17:24.270Z
   card-last-score:: 3
 	- 为什么要有Eden和servivor区
 		- {{cloze 减少被送入老年代的对象，进而减少Full GC次数}}

@@ -154,11 +154,11 @@
 		- {{cloze 将过期的、不再使用的、重复的以及可优化的命令进行优化，重新生成AOF文件}}
 		- 流程 {{cloze fork一个子进程}} {{cloze 重写期间，主线程的写命令被保存在缓冲区中}}
 - RDB和AOF各自的优缺点 #card
-  card-last-interval:: 8.32
-  card-repeats:: 3
-  card-ease-factor:: 2.08
-  card-next-schedule:: 2023-02-16T17:43:45.027Z
-  card-last-reviewed:: 2023-02-08T10:43:45.028Z
+  card-last-interval:: 15.05
+  card-repeats:: 4
+  card-ease-factor:: 1.94
+  card-next-schedule:: 2023-03-22T02:09:58.008Z
+  card-last-reviewed:: 2023-03-07T01:09:58.008Z
   card-last-score:: 3
 	- RDB优点
 		- 生成的文件 {{cloze 只有一个紧凑的二进制文件，非常适合备份、全量复制场景}}
@@ -241,11 +241,11 @@
 	- 引入 {{cloze 消息队列 使用广播模式}}
 	- 本地缓存的过期时间 {{cloze 设置相对短一些}}
 - Redis数据如何预热 #card
-  card-last-interval:: 9.28
-  card-repeats:: 3
-  card-ease-factor:: 2.32
-  card-next-schedule:: 2023-02-17T15:45:19.658Z
-  card-last-reviewed:: 2023-02-08T09:45:19.659Z
+  card-last-interval:: 19.01
+  card-repeats:: 4
+  card-ease-factor:: 2.18
+  card-next-schedule:: 2023-03-26T01:14:04.529Z
+  card-last-reviewed:: 2023-03-07T01:14:04.529Z
   card-last-score:: 3
 	- 暴露内网接口，手动操作
 	- 数据量不大时，项目启动时自动加载

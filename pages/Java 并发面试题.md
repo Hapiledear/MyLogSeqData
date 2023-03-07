@@ -183,11 +183,11 @@
 	- 缺点 {{cloze copy数字代价高昂，消耗内存}}
 	- 适用场景 {{cloze 读多写少}}
 - 阻塞队列BlockingQueue的实现原理 #card #Java并发
-  card-last-interval:: 8.32
-  card-repeats:: 3
-  card-ease-factor:: 2.08
-  card-next-schedule:: 2023-02-16T17:44:42.965Z
-  card-last-reviewed:: 2023-02-08T10:44:42.965Z
+  card-last-interval:: 15.05
+  card-repeats:: 4
+  card-ease-factor:: 1.94
+  card-next-schedule:: 2023-03-22T02:12:44.296Z
+  card-last-reviewed:: 2023-03-07T01:12:44.296Z
   card-last-score:: 3
 	- 拯救了生产者-消费者模型的控制逻辑
 		- {{cloze 在队列为空时，获取元素的线程会等待队列变为非空}}
@@ -203,22 +203,22 @@
 	- 定义 {{cloze 一连串操作，要么都执行完，要么都不执行}}
 	- 如何保证原子性 {{cloze CAS指令}} {{cloze Lock和synchroize}}
 - java中有哪些原子类  #card #Java并发
-  card-last-interval:: 8.32
-  card-repeats:: 3
-  card-ease-factor:: 2.08
-  card-next-schedule:: 2023-02-16T17:41:53.639Z
-  card-last-reviewed:: 2023-02-08T10:41:53.639Z
+  card-last-interval:: 15.05
+  card-repeats:: 4
+  card-ease-factor:: 1.94
+  card-next-schedule:: 2023-03-22T02:09:03.187Z
+  card-last-reviewed:: 2023-03-07T01:09:03.188Z
   card-last-score:: 3
 	- 基本类型 {{cloze AtomicBoolean}} {{cloze AtomicInteger}} {{cloze AtomicReference}}
 	- 数组 {{cloze AtomicXXXArray}}
 	- 属性 {{cloze AtomicxxxFiledUpdater}}
 	- 带版本号的 {{cloze AtomicMarkableReference}} {{cloze AtomicStampedReferece}}
 - atomic的原理  #card #Java并发
-  card-last-interval:: 9.28
-  card-repeats:: 3
-  card-ease-factor:: 2.32
-  card-next-schedule:: 2023-02-17T15:44:52.427Z
-  card-last-reviewed:: 2023-02-08T09:44:52.428Z
+  card-last-interval:: 19.01
+  card-repeats:: 4
+  card-ease-factor:: 2.18
+  card-next-schedule:: 2023-03-26T01:13:57.120Z
+  card-last-reviewed:: 2023-03-07T01:13:57.120Z
   card-last-score:: 3
 	- {{cloze CAS+volatile方式保证原子性}} 避免synch的高开销
 - CountdownLatch和CycleBarrar的区别 #card #Java并发
