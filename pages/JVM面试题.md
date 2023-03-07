@@ -77,11 +77,11 @@
 	- 开发中会有大量字符串被创建，回收效率低导致永久代内存不足
 	- 放在堆中，可以及时回收内存
 - ## 几种变量存放在哪里？ #card
-  card-last-interval:: 15.05
-  card-repeats:: 4
-  card-ease-factor:: 1.94
-  card-last-reviewed:: 2023-02-06T11:27:54.293Z
-  card-next-schedule:: 2023-02-21T12:27:54.292Z
+  card-last-interval:: 23.33
+  card-repeats:: 5
+  card-ease-factor:: 1.8
+  card-last-reviewed:: 2023-03-07T01:22:16.858Z
+  card-next-schedule:: 2023-03-30T08:22:16.858Z
   card-last-score:: 3
 	- ``` java
 	  	  public class StaticObjTest {
@@ -175,11 +175,11 @@
 	- 解析 {{cloze 将常量池中的符号引用替换成直接引用}}
 	- 初始化 {{cloze 对静态变量和代码块执行初始化工作}}
 - 类加载器分类和双亲委派模型 #card
-  card-last-interval:: 15.05
-  card-repeats:: 4
-  card-ease-factor:: 1.94
-  card-next-schedule:: 2023-02-21T12:22:34.370Z
-  card-last-reviewed:: 2023-02-06T11:22:34.371Z
+  card-last-interval:: 23.33
+  card-repeats:: 5
+  card-ease-factor:: 1.8
+  card-next-schedule:: 2023-03-30T08:19:32.276Z
+  card-last-reviewed:: 2023-03-07T01:19:32.276Z
   card-last-score:: 3
 	- 启动类加载器
 	- 扩展类加载器

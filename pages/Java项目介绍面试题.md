@@ -9,11 +9,11 @@
 	- 接入层 {{cloze LVS Linux虚拟服务器}} + {{cloze Nginx}}
 	- 服务层 {{cloze Spring 网关}} + {{cloze 本地缓存}} + {{cloze Redis集群}} + {{cloze 数据库 兜底}}
 - 从高并发的角度介绍项目 10 #card
-  card-last-interval:: 15.05
-  card-repeats:: 4
-  card-ease-factor:: 1.94
-  card-next-schedule:: 2023-02-21T12:26:29.865Z
-  card-last-reviewed:: 2023-02-06T11:26:29.865Z
+  card-last-interval:: 23.33
+  card-repeats:: 5
+  card-ease-factor:: 1.8
+  card-next-schedule:: 2023-03-30T08:20:18.789Z
+  card-last-reviewed:: 2023-03-07T01:20:18.789Z
   card-last-score:: 3
 	- 拆分为微服务
 		- {{cloze 方便重要业务的水平扩展，如基础模块，用户模块}}
@@ -37,11 +37,11 @@
 		- {{cloze ES + HBase}}
 - 抽奖模块设计要略 #card
   id:: 63d86c04-4b9e-4b39-adb5-66cc686129ff
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-02-19T06:54:21.488Z
-  card-last-reviewed:: 2023-02-15T06:54:21.488Z
+  card-last-interval:: 8.32
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-03-15T08:19:13.395Z
+  card-last-reviewed:: 2023-03-07T01:19:13.395Z
   card-last-score:: 3
 	- 步骤拆分
 		- 抽奖准入->产生奖品->扣减库存 -> 记录日志
