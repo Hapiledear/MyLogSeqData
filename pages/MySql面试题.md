@@ -218,11 +218,11 @@
 	- 自增型ID {{cloze 符合主键索引的顺序排布，插入快速，产生碎片较少}}
 	- UUID {{cloze 全局唯一，跨系统存取方便}}
 - B+树与B树的对比 #card
-  card-last-interval:: 8.32
-  card-repeats:: 3
-  card-ease-factor:: 2.08
-  card-next-schedule:: 2023-02-23T13:38:45.690Z
-  card-last-reviewed:: 2023-02-15T06:38:45.690Z
+  card-last-interval:: 15.05
+  card-repeats:: 4
+  card-ease-factor:: 1.94
+  card-next-schedule:: 2023-03-22T02:55:38.107Z
+  card-last-reviewed:: 2023-03-07T01:55:38.107Z
   card-last-score:: 3
 	- 数据记录 {{cloze 都存放在叶子节点中}} {{cloze 非叶节点只存储键值信息}}
 	- {{cloze 所有叶子节点之间都有一个链指针}}
@@ -340,11 +340,11 @@
 		- {{cloze 是否命中索引}}
 		- 降低SQL语句的复杂度
 - bin log 和 redo log的区别 #card
-  card-last-interval:: 8.32
-  card-repeats:: 3
-  card-ease-factor:: 2.08
-  card-next-schedule:: 2023-02-23T13:29:04.843Z
-  card-last-reviewed:: 2023-02-15T06:29:04.844Z
+  card-last-interval:: 15.05
+  card-repeats:: 4
+  card-ease-factor:: 1.94
+  card-next-schedule:: 2023-03-22T02:48:44.408Z
+  card-last-reviewed:: 2023-03-07T01:48:44.409Z
   card-last-score:: 3
 	- bin log
 		- 是MySql层的日志系统 ，记录的是 {{cloze SQL语句的原始逻辑}}
@@ -376,11 +376,11 @@
 		- 连接数不够，产生 资源报警
 		- 慢查询增多，占用了大量的IO和网络带宽
 - 分库分表会带来哪些问题，如何解决 #card
-  card-last-interval:: 8.32
-  card-repeats:: 3
-  card-ease-factor:: 2.08
-  card-next-schedule:: 2023-02-23T13:33:29.360Z
-  card-last-reviewed:: 2023-02-15T06:33:29.360Z
+  card-last-interval:: 15.05
+  card-repeats:: 4
+  card-ease-factor:: 1.94
+  card-next-schedule:: 2023-03-22T02:50:52.409Z
+  card-last-reviewed:: 2023-03-07T01:50:52.409Z
   card-last-score:: 3
 	- 分布式事务问题
 		- {{cloze 使用相关中间件}}

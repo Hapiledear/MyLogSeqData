@@ -88,11 +88,11 @@
 	- 执行时不会被其他客户端发送来的命令请求打断
 	- 不支持回滚，要么都执行，要么都不执行
 - 如何处理多个客户端并发写一个key? #card
-  card-last-interval:: 8.32
-  card-repeats:: 3
-  card-ease-factor:: 2.08
-  card-next-schedule:: 2023-02-23T13:30:54.648Z
-  card-last-reviewed:: 2023-02-15T06:30:54.648Z
+  card-last-interval:: 15.05
+  card-repeats:: 4
+  card-ease-factor:: 1.94
+  card-next-schedule:: 2023-03-22T02:50:40.124Z
+  card-last-reviewed:: 2023-03-07T01:50:40.124Z
   card-last-score:: 3
 	- 使用事务 实现CAS
 		- {{cloze 事务具有watch机制,一旦被监测的key发生更改，本次提交就失效了}}
@@ -231,11 +231,11 @@
 	- 设置key的合理有效期,选择合适的回收策略
 	- 使用连接池，减少不必要的连接
 - 如何解决本地缓存与分布式缓存的数据不一致 #card
-  card-last-interval:: 8.32
-  card-repeats:: 3
-  card-ease-factor:: 2.08
-  card-next-schedule:: 2023-02-23T13:30:35.590Z
-  card-last-reviewed:: 2023-02-15T06:30:35.590Z
+  card-last-interval:: 15.05
+  card-repeats:: 4
+  card-ease-factor:: 1.94
+  card-next-schedule:: 2023-03-22T02:50:22.922Z
+  card-last-reviewed:: 2023-03-07T01:50:22.923Z
   card-last-score:: 3
 	- Redis自身有 {{cloze 订阅/分发}} 机制
 	- 引入 {{cloze 消息队列 使用广播模式}}
@@ -324,11 +324,11 @@
 		- 遍历每一层的节点，直到遇见NULL 或 >目标值
 		- 向下一层，继续遍历该层
 - Redis的压缩列表zipList和quickList #card
-  card-last-interval:: 8.32
-  card-repeats:: 3
-  card-ease-factor:: 2.08
-  card-next-schedule:: 2023-02-23T13:36:00.026Z
-  card-last-reviewed:: 2023-02-15T06:36:00.026Z
+  card-last-interval:: 15.05
+  card-repeats:: 4
+  card-ease-factor:: 1.94
+  card-next-schedule:: 2023-03-22T02:51:17.726Z
+  card-last-reviewed:: 2023-03-07T01:51:17.727Z
   card-last-score:: 3
 	- 压缩体现在哪里?
 		- 普通的数组结构， {{cloze 每一个单元的长度由最大字符串长度决定的}}
