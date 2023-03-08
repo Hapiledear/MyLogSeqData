@@ -163,11 +163,11 @@
 		- 存储结构 {{cloze 数组+链表->红黑树}}
 		- 扩容 {{cloze 默认大小为 16 加载因子0.75 阈值=大小*因子}} {{cloze 扩容后大小为2^n次方，不需要rehash}}
 - synchronizeMap与ConcurrentHashMap的区别 #card #Java并发
-  card-last-interval:: 15.05
-  card-repeats:: 4
-  card-ease-factor:: 1.94
-  card-next-schedule:: 2023-03-02T07:13:34.521Z
-  card-last-reviewed:: 2023-02-15T06:13:34.521Z
+  card-last-interval:: 23.33
+  card-repeats:: 5
+  card-ease-factor:: 1.8
+  card-next-schedule:: 2023-03-31T10:09:22.626Z
+  card-last-reviewed:: 2023-03-08T03:09:22.626Z
   card-last-score:: 3
 	- 锁住数据的粒度
 		- {{cloze synchMap 一次锁住一整张表}}
