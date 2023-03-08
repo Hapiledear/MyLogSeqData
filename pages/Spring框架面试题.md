@@ -98,11 +98,11 @@
 		- {{cloze 保证不管什么时候获取到的都是同一对象}}
 		- spring有 普通对象 和 代理对象,在未执行完 BeanPostProcessor时不知道使用哪一个
 - 什么是Spring 的AOP,项目中是如何使用的 #card
-  card-last-interval:: 8.32
-  card-repeats:: 3
-  card-ease-factor:: 2.08
-  card-next-schedule:: 2023-02-23T13:43:11.126Z
-  card-last-reviewed:: 2023-02-15T06:43:11.126Z
+  card-last-interval:: 15.05
+  card-repeats:: 4
+  card-ease-factor:: 1.94
+  card-next-schedule:: 2023-03-22T02:59:07.893Z
+  card-last-reviewed:: 2023-03-07T01:59:07.893Z
   card-last-score:: 3
 	- AOP 面向切面编程，核心是使用 {{cloze 代理模式}}，对目标方法执行前后进行处理
 	- 应用场景 {{cloze 日志记录}} {{cloze 接口签名校验}}

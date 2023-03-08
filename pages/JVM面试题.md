@@ -12,11 +12,11 @@
 	- 解决办法 {{cloze 增加元空间的大小 `-XX:MaxMetaspaceSize=512m`}}
 - 说一下 JVM 的主要组成部分及其作用 #card
   card-last-score:: 3
-  card-repeats:: 4
-  card-next-schedule:: 2023-03-02T07:07:56.474Z
-  card-last-interval:: 15.05
-  card-ease-factor:: 1.94
-  card-last-reviewed:: 2023-02-15T06:07:56.474Z
+  card-repeats:: 5
+  card-next-schedule:: 2023-03-30T09:00:46.620Z
+  card-last-interval:: 23.33
+  card-ease-factor:: 1.8
+  card-last-reviewed:: 2023-03-07T02:00:46.620Z
 	- 类加载系统 {{cloze 根据给定的全限定类名，使用双亲委派模型，由类加载器加载class文件到 方法区}}
 	- 运行时数据区 JVM内存模型 {{cloze 分为线程公有的堆、方法区，和线程私有的 虚拟机栈、本地方法栈、程序计数器}}
 	- 执行引擎 {{cloze 执行字节码指令。分为 即时编译执行和解释执行。此外，**垃圾收集器** 也在其中}}
@@ -58,11 +58,11 @@
 	- {{cloze  年轻代又分 eden区 s1和s2区 比例为 8:1:1}} 3区
 	- {{cloze 通常 年轻代采用的GC算法是 复制算法，老年代采用的是标记-整理算法 }} GC算法
 - 非堆内存有哪些 #card
-  card-last-interval:: 19.01
-  card-repeats:: 4
-  card-ease-factor:: 2.18
-  card-next-schedule:: 2023-02-25T11:24:55.260Z
-  card-last-reviewed:: 2023-02-06T11:24:55.260Z
+  card-last-interval:: 33.96
+  card-repeats:: 5
+  card-ease-factor:: 2.04
+  card-next-schedule:: 2023-04-10T00:59:12.107Z
+  card-last-reviewed:: 2023-03-07T01:59:12.107Z
   card-last-score:: 3
 	- {{cloze DirectByteBuffer 所申请的直接内存}} NIO
 	- {{cloze 方法区的具体实现 元空间}}
@@ -259,12 +259,12 @@
 		- 类及其所有对象都被回收
 		- 常量池中的常量无任何引用
 - ## 如何排查JVM问题 #card
-  card-last-interval:: 23.33
-  card-repeats:: 5
+  card-last-interval:: -1
+  card-repeats:: 1
   card-ease-factor:: 1.8
-  card-next-schedule:: 2023-03-01T18:46:43.625Z
-  card-last-reviewed:: 2023-02-06T11:46:43.626Z
-  card-last-score:: 3
+  card-next-schedule:: 2023-03-07T16:00:00.000Z
+  card-last-reviewed:: 2023-03-07T01:59:41.111Z
+  card-last-score:: 1
 	- 使用 {{cloze `jmap`}} 查看各区域的使用情况
 	- 使用 {{cloze `jstack`}} 查看线程的运行情况，关注阻塞的线程、是否出现了死锁
 	- 使用 {{cloze `jstat`}} 查看GC情况，特别注意Full GC
@@ -294,11 +294,11 @@
 	- 如果对象不会逃逸出方法外部，则会在栈上分配
 	- 如果符合标量替换条件(不逃逸&不会被本线程外的线程访问)，则会将对象分解成若干个方法内从成员变量
 - HotSpot JVM 为什么叫这个名字 #card
-  card-last-interval:: 15.05
-  card-repeats:: 4
-  card-ease-factor:: 1.94
-  card-next-schedule:: 2023-03-02T07:08:17.756Z
-  card-last-reviewed:: 2023-02-15T06:08:17.756Z
+  card-last-interval:: 23.33
+  card-repeats:: 5
+  card-ease-factor:: 1.8
+  card-next-schedule:: 2023-03-30T09:00:54.613Z
+  card-last-reviewed:: 2023-03-07T02:00:54.614Z
   card-last-score:: 3
 	- 即时编译功能
 		- 寻找热点代码，将热点代码编译成机器码并缓存起来
