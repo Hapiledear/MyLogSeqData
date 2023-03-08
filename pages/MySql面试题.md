@@ -4,11 +4,11 @@
 		- Forgotten :   0 (0%)
 - 如无特殊说明，题中出现的存储引擎均为 [[InnoDb]]
 - SQL查询过程 #card
-  card-last-interval:: 15.05
-  card-repeats:: 4
-  card-ease-factor:: 1.94
-  card-next-schedule:: 2023-03-02T07:49:45.027Z
-  card-last-reviewed:: 2023-02-15T06:49:45.028Z
+  card-last-interval:: 23.33
+  card-repeats:: 5
+  card-ease-factor:: 1.8
+  card-next-schedule:: 2023-03-31T10:15:01.299Z
+  card-last-reviewed:: 2023-03-08T03:15:01.299Z
   card-last-score:: 3
 	- 建立连接 {{cloze 连接器}}
 	- 执行计划の缓存 {{cloze 查询缓存}}
@@ -36,11 +36,11 @@
   card-last-score:: 3
 	- {{cloze from -> join t2 on xxx  -> where yyy -> group by aaa -> having -> bbb -> select aaa,bbb,ccc -> distinct aaa ->order by bbb -> limit m,n}}
 - 存储引擎InnoDb和MyISAM的区别 #card
-  card-last-interval:: 15.05
-  card-repeats:: 4
-  card-ease-factor:: 1.94
-  card-next-schedule:: 2023-03-02T07:49:21.342Z
-  card-last-reviewed:: 2023-02-15T06:49:21.342Z
+  card-last-interval:: 23.33
+  card-repeats:: 5
+  card-ease-factor:: 1.8
+  card-next-schedule:: 2023-03-31T10:14:33.179Z
+  card-last-reviewed:: 2023-03-08T03:14:33.180Z
   card-last-score:: 3
 	- 事务支持
 		- {{cloze 不支持}} M
@@ -61,11 +61,11 @@
 		- {{cloze 直接取出该值}}
 		- {{cloze 只能遍历}}
 - 事物的四大特性，分别是如何解决的 #card
-  card-last-interval:: 15.05
-  card-repeats:: 4
-  card-ease-factor:: 1.94
-  card-next-schedule:: 2023-03-02T07:49:07.953Z
-  card-last-reviewed:: 2023-02-15T06:49:07.953Z
+  card-last-interval:: 23.33
+  card-repeats:: 5
+  card-ease-factor:: 1.8
+  card-next-schedule:: 2023-03-31T10:14:17.345Z
+  card-last-reviewed:: 2023-03-08T03:14:17.345Z
   card-last-score:: 3
 	- 原子性
 		- {{cloze 在事物中的一组操作，要么全部成功提交，要么全部失败回滚}}
@@ -95,11 +95,11 @@
 		- 存储的是 {{cloze 最新版本的数据}}
 		- 持久性的体现 {{cloze 如果系统崩溃，可以用它来进行恢复}}
 - 描述一下事物产生的三个问题 #card
-  card-last-interval:: 15.05
-  card-repeats:: 4
-  card-ease-factor:: 1.94
-  card-next-schedule:: 2023-03-02T07:50:21.319Z
-  card-last-reviewed:: 2023-02-15T06:50:21.319Z
+  card-last-interval:: 23.33
+  card-repeats:: 5
+  card-ease-factor:: 1.8
+  card-next-schedule:: 2023-03-31T10:15:38.209Z
+  card-last-reviewed:: 2023-03-08T03:15:38.209Z
   card-last-score:: 3
 	- 脏读
 		- {{cloze 事物A读取到了事物B 未提交的数据}}
@@ -108,11 +108,11 @@
 	- 幻读
 		- 范围查询 {{cloze 事物A在进行范围查询时，两次读取的**记录数**不一致}}
 - 事物的4种隔离级别 #card
-  card-last-interval:: 15.05
-  card-repeats:: 4
-  card-ease-factor:: 1.94
-  card-next-schedule:: 2023-03-02T07:51:53.160Z
-  card-last-reviewed:: 2023-02-15T06:51:53.160Z
+  card-last-interval:: 23.33
+  card-repeats:: 5
+  card-ease-factor:: 1.8
+  card-next-schedule:: 2023-03-31T10:17:31.217Z
+  card-last-reviewed:: 2023-03-08T03:17:31.217Z
   card-last-score:: 3
 	- 读未提交
 		- {{cloze 允许读取到还没有提交的数据}}
@@ -124,11 +124,11 @@
 	- 串行化
 		- {{cloze 所有事物被串行执行}}
 - 什么是幻读？如何防止？ #card
-  card-last-interval:: 15.05
-  card-repeats:: 4
-  card-ease-factor:: 1.94
-  card-next-schedule:: 2023-03-02T07:49:57.460Z
-  card-last-reviewed:: 2023-02-15T06:49:57.460Z
+  card-last-interval:: 23.33
+  card-repeats:: 5
+  card-ease-factor:: 1.8
+  card-next-schedule:: 2023-03-31T10:15:28.440Z
+  card-last-reviewed:: 2023-03-08T03:15:28.440Z
   card-last-score:: 3
 	- 范围查询 {{cloze 事物A的两次查询之间，被事物B插入or删除了记录，产生结果集的不一致}}
 	- 防止方式
@@ -145,11 +145,11 @@
 				- {{cloze 只与 非唯一索引列 有关}}
 		- MVCC + Read View 的组合方式 解决 快照读下的幻读
 - 读取数据的两种方式 #card
-  card-last-interval:: 15.05
-  card-repeats:: 4
-  card-ease-factor:: 1.94
-  card-next-schedule:: 2023-03-02T07:50:17.470Z
-  card-last-reviewed:: 2023-02-15T06:50:17.470Z
+  card-last-interval:: 23.33
+  card-repeats:: 5
+  card-ease-factor:: 1.8
+  card-next-schedule:: 2023-03-31T10:15:34.932Z
+  card-last-reviewed:: 2023-03-08T03:15:34.932Z
   card-last-score:: 3
 	- mvcc {{cloze 快照读}}
 		- 简单的select操作

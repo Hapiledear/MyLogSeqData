@@ -35,11 +35,11 @@
 		- 问题描述 {{cloze 某一热点key突然过期，导致所有请求打到数据库上}}
 		- 解决方案 {{cloze 热点key过期时间加长，永不过期}} {{cloze 实时监控热点数据，实时调整过期时间}} 代码层面 {{cloze 使用synch 或 ReentryLock 加锁更新，这样后续的请求就又会走缓存}}
 - 在日常项目中用到了哪些Redis数据类型,底层结构是什么样的 #card
-  card-last-interval:: 15.05
-  card-repeats:: 4
-  card-ease-factor:: 1.94
-  card-next-schedule:: 2023-03-02T07:45:00.043Z
-  card-last-reviewed:: 2023-02-15T06:45:00.043Z
+  card-last-interval:: 23.33
+  card-repeats:: 5
+  card-ease-factor:: 1.8
+  card-next-schedule:: 2023-03-31T10:10:58.386Z
+  card-last-reviewed:: 2023-03-08T03:10:58.386Z
   card-last-score:: 3
 	- string
 		- {{cloze 普通的kv存储，常用}}
@@ -56,11 +56,11 @@
 		- {{cloze 自定义score排序，比如排行榜机制}}
 		- {{cloze 跳跃表，节点按分值大小排序，再按对象大小排序}}
 - Redis的过期策略有哪些?数据明明过期了，怎么还占用着内存 #card
-  card-last-interval:: 15.05
-  card-repeats:: 4
-  card-ease-factor:: 1.94
-  card-next-schedule:: 2023-03-02T07:50:49.987Z
-  card-last-reviewed:: 2023-02-15T06:50:49.987Z
+  card-last-interval:: 23.33
+  card-repeats:: 5
+  card-ease-factor:: 1.8
+  card-next-schedule:: 2023-03-31T10:16:28.478Z
+  card-last-reviewed:: 2023-03-08T03:16:28.478Z
   card-last-score:: 3
 	- 定期删除
 		- {{cloze 每隔一段时间，删除过期key}} {{cloze 采用随机抽取策略}}
@@ -120,28 +120,28 @@
 		- 多线程切换会带来开销，且代码复杂性上升。最终选择了IO多路复用
 	- 在6.0+，针对 {{cloze 网络请求}}改成了多线程
 - Redis的分布式锁如何实现 #card
-  card-last-interval:: 15.05
-  card-repeats:: 4
-  card-ease-factor:: 1.94
-  card-next-schedule:: 2023-03-02T07:50:25.594Z
-  card-last-reviewed:: 2023-02-15T06:50:25.594Z
+  card-last-interval:: 23.33
+  card-repeats:: 5
+  card-ease-factor:: 1.8
+  card-next-schedule:: 2023-03-31T10:16:08.012Z
+  card-last-reviewed:: 2023-03-08T03:16:08.012Z
   card-last-score:: 3
 	- {{cloze setnx来争抢锁，再用expire加上过期时间}}
 	- 高可用分布式锁 {{cloze RedLock}} 但可能导致性能下降，建议使用 {{cloze zk实现分布式锁}}
 - 如何把固定前缀开通的key全部找出来 #card
-  card-last-interval:: 15.05
-  card-repeats:: 4
-  card-ease-factor:: 1.94
-  card-next-schedule:: 2023-03-02T07:48:36.655Z
-  card-last-reviewed:: 2023-02-15T06:48:36.655Z
+  card-last-interval:: 23.33
+  card-repeats:: 5
+  card-ease-factor:: 1.8
+  card-next-schedule:: 2023-03-31T10:14:07.949Z
+  card-last-reviewed:: 2023-03-08T03:14:07.950Z
   card-last-score:: 3
 	- {{cloze scan命令可以提取指定模式的key列表}}
 - Redis的持久化机制 #card
-  card-last-interval:: 15.05
-  card-repeats:: 4
-  card-ease-factor:: 1.94
-  card-next-schedule:: 2023-03-02T07:52:09.494Z
-  card-last-reviewed:: 2023-02-15T06:52:09.494Z
+  card-last-interval:: 23.33
+  card-repeats:: 5
+  card-ease-factor:: 1.8
+  card-next-schedule:: 2023-03-31T10:17:50.276Z
+  card-last-reviewed:: 2023-03-08T03:17:50.277Z
   card-last-score:: 3
 	- bgsave 全量持久化
 		- 过程 {{cloze 生成子进程和当前内存快照，子进程进行持久化}}
@@ -192,11 +192,11 @@
 	- 主从复制和自动故障转移 {{cloze 部分master不可用时，还是可以继续工作}}
 	- 2个端口 {{cloze 6379 16379}}
 - 数据如何分散在机器上 #card
-  card-last-interval:: 15.05
-  card-repeats:: 4
-  card-ease-factor:: 1.94
-  card-next-schedule:: 2023-03-02T07:50:59.188Z
-  card-last-reviewed:: 2023-02-15T06:50:59.188Z
+  card-last-interval:: 23.33
+  card-repeats:: 5
+  card-ease-factor:: 1.8
+  card-next-schedule:: 2023-03-31T10:16:31.964Z
+  card-last-reviewed:: 2023-03-08T03:16:31.965Z
   card-last-score:: 3
 	- {{cloze 一致性Hash算法}}
 		- 哈希环，顺时针，虚拟节点
@@ -205,11 +205,11 @@
 		- 机器的增减 {{cloze master的增减只是移动部分槽位}}
 		- 好处 {{cloze 无论在数据量大 or 小时，数据分配都很均匀}}
 - 节点宕机时的主备切换 #card
-  card-last-interval:: 15.05
-  card-repeats:: 4
-  card-ease-factor:: 1.94
-  card-next-schedule:: 2023-03-02T07:46:49.480Z
-  card-last-reviewed:: 2023-02-15T06:46:49.480Z
+  card-last-interval:: 23.33
+  card-repeats:: 5
+  card-ease-factor:: 1.8
+  card-next-schedule:: 2023-03-31T10:13:37.188Z
+  card-last-reviewed:: 2023-03-08T03:13:37.189Z
   card-last-score:: 3
 	- 判断节点宕机
 		- 主观宕机 {{cloze 某一节点发现另一节点一段时间内无心跳返回了}}

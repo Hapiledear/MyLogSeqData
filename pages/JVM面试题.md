@@ -22,11 +22,11 @@
 	- 执行引擎 {{cloze 执行字节码指令。分为 即时编译执行和解释执行。此外，**垃圾收集器** 也在其中}}
 	- 本地接口 {{cloze 调用本地方法}}
 - 说一下JVM内存模型 #card
-  card-last-interval:: 15.05
-  card-repeats:: 4
-  card-ease-factor:: 1.94
-  card-next-schedule:: 2023-03-02T07:51:33.278Z
-  card-last-reviewed:: 2023-02-15T06:51:33.279Z
+  card-last-interval:: 23.33
+  card-repeats:: 5
+  card-ease-factor:: 1.8
+  card-next-schedule:: 2023-03-31T10:17:10.305Z
+  card-last-reviewed:: 2023-03-08T03:17:10.305Z
   card-last-score:: 3
 	- 画一下JVM内存模型图，并描述每个模块的定义，作用，以及可能会存在的问题
 	- 虚拟机栈
@@ -119,11 +119,11 @@
 		- {{cloze 存放在[[Java 堆内存]]}}
 -
 - ## [[Java 堆内存]] 与[[Java 虚拟机栈]] 的区别 #card
-  card-last-interval:: 15.05
-  card-repeats:: 4
-  card-ease-factor:: 1.94
-  card-next-schedule:: 2023-03-02T07:47:35.231Z
-  card-last-reviewed:: 2023-02-15T06:47:35.231Z
+  card-last-interval:: 23.33
+  card-repeats:: 5
+  card-ease-factor:: 1.8
+  card-next-schedule:: 2023-03-31T10:14:05.746Z
+  card-last-reviewed:: 2023-03-08T03:14:05.747Z
   card-last-score:: 3
 	- 物理地址
 		- 堆的物理地址分配是不连续的。所以GC时有各种算法
@@ -138,11 +138,11 @@
 		- 堆对于整个应用程序都是共享的、可见的
 		- 栈是线程私有的
 - 对象创建过程 #card
-  card-last-interval:: 19.01
-  card-repeats:: 4
-  card-ease-factor:: 2.18
-  card-next-schedule:: 2023-03-06T06:44:41.428Z
-  card-last-reviewed:: 2023-02-15T06:44:41.428Z
+  card-last-interval:: 33.96
+  card-repeats:: 5
+  card-ease-factor:: 2.04
+  card-next-schedule:: 2023-04-11T02:18:24.614Z
+  card-last-reviewed:: 2023-03-08T03:18:24.614Z
   card-last-score:: 3
 	- 类加载
 	- 分配内存
@@ -152,22 +152,22 @@
 	- 初始化
 	- <init>方法
 - 触发类加载的时机 4 #card
-  card-last-interval:: 15.05
-  card-repeats:: 4
-  card-ease-factor:: 1.94
-  card-next-schedule:: 2023-03-02T07:46:54.568Z
-  card-last-reviewed:: 2023-02-15T06:46:54.568Z
+  card-last-interval:: 23.33
+  card-repeats:: 5
+  card-ease-factor:: 1.8
+  card-next-schedule:: 2023-03-31T10:13:43.284Z
+  card-last-reviewed:: 2023-03-08T03:13:43.284Z
   card-last-score:: 3
 	- new关键字
 	- Class or Constructor的newInstance方法
 	- clone方法
 	- 反序列化
 - 类加载过程 #card
-  card-last-interval:: 19.01
-  card-repeats:: 4
-  card-ease-factor:: 2.18
-  card-next-schedule:: 2023-03-06T06:43:31.782Z
-  card-last-reviewed:: 2023-02-15T06:43:31.782Z
+  card-last-interval:: 33.96
+  card-repeats:: 5
+  card-ease-factor:: 2.04
+  card-next-schedule:: 2023-04-11T02:18:09.704Z
+  card-last-reviewed:: 2023-03-08T03:18:09.704Z
   card-last-score:: 3
 	- 加载 {{cloze 导入class文件}}
 	- 验证 {{cloze 检测class文件的正确性}}
@@ -187,11 +187,11 @@
 	- 自定义类加载器
 	- 双亲委派： {{cloze 先将其委派给父类，如果父类不能加载，再自己来}}
 - 对象如何访问 #card
-  card-last-interval:: 19.01
-  card-repeats:: 4
-  card-ease-factor:: 2.18
-  card-next-schedule:: 2023-03-06T06:54:29.743Z
-  card-last-reviewed:: 2023-02-15T06:54:29.744Z
+  card-last-interval:: 33.96
+  card-repeats:: 5
+  card-ease-factor:: 2.04
+  card-next-schedule:: 2023-04-11T02:18:55.962Z
+  card-last-reviewed:: 2023-03-08T03:18:55.962Z
   card-last-score:: 3
 	- 句柄
 		- {{cloze 栈中对象的引用 ->堆中句柄池中的句柄 -> 堆中的实例 和 方法区的类型信息}} 栈-> 堆->堆和方法区
@@ -200,11 +200,11 @@
 		- {{cloze 栈中的对象引用 -> 堆中的对象实例 -> 方法区中对应的类型信息}} 栈->堆->方法区
 		- {{cloze 节省了一次指针定位的时间}} 好处
 - 对象分配策略 #card
-  card-last-interval:: 19.01
-  card-repeats:: 4
-  card-ease-factor:: 2.18
-  card-next-schedule:: 2023-03-06T06:54:24.621Z
-  card-last-reviewed:: 2023-02-15T06:54:24.622Z
+  card-last-interval:: 33.96
+  card-repeats:: 5
+  card-ease-factor:: 2.04
+  card-next-schedule:: 2023-04-11T02:18:28.228Z
+  card-last-reviewed:: 2023-03-08T03:18:28.229Z
   card-last-score:: 3
 	- 新对象分配在eden区，大对象直接进入老年代
 	- 经历过一次Minor GC ,复制到surviro区，年龄+1
