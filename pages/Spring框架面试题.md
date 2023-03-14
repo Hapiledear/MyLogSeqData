@@ -47,11 +47,11 @@
 		- 有状态指的是有数据的存储功能
 	- 或者是该数据字段使用 {{cloze ThreadLocal}} 修饰
 - Spring Bean的生命周期，描述一下 4阶段-2扩展点 #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.08
-  card-next-schedule:: 2023-03-12T03:19:13.119Z
-  card-last-reviewed:: 2023-03-08T03:19:13.119Z
+  card-last-interval:: 7.76
+  card-repeats:: 3
+  card-ease-factor:: 1.94
+  card-next-schedule:: 2023-03-22T04:42:12.073Z
+  card-last-reviewed:: 2023-03-14T10:42:12.073Z
   card-last-score:: 3
 	- 实例化
 	- 属性填充
