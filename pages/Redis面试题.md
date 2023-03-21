@@ -75,11 +75,11 @@
 		- {{cloze volatile-random}} 有过期时间的key中 随机移除
 		- {{cloze volatile-ttl}} 有过期时间的key中 移除最早过期时间的key
 - 了解Redis的事务机制吗？ #card
-  card-last-interval:: 8.32
-  card-repeats:: 3
-  card-ease-factor:: 2.08
-  card-next-schedule:: 2023-03-14T19:15:55.894Z
-  card-last-reviewed:: 2023-03-06T12:15:55.895Z
+  card-last-interval:: 15.05
+  card-repeats:: 4
+  card-ease-factor:: 1.94
+  card-next-schedule:: 2023-04-05T02:55:50.243Z
+  card-last-reviewed:: 2023-03-21T01:55:50.244Z
   card-last-score:: 3
 	- 事务以 {{cloze MUTLI}}命令开始
 	- 客户端接收一系列操作，放入队列中
@@ -220,11 +220,11 @@
 	- 从节点选举
 		- {{cloze 投票选举，超过半数者升级}}
 - Redis优化策略 #card
-  card-last-interval:: 8.32
-  card-repeats:: 3
-  card-ease-factor:: 2.08
-  card-next-schedule:: 2023-03-14T19:16:42.364Z
-  card-last-reviewed:: 2023-03-06T12:16:42.364Z
+  card-last-interval:: 15.05
+  card-repeats:: 4
+  card-ease-factor:: 1.94
+  card-next-schedule:: 2023-04-05T02:57:08.000Z
+  card-last-reviewed:: 2023-03-21T01:57:08.000Z
   card-last-score:: 3
 	- 在见名知意的情况下，使用短key
 	- 不要存过大的数据,存之前先把数据压缩
@@ -251,11 +251,11 @@
 	- 数据量不大时，项目启动时自动加载
 	- 定时任务刷新加载
 - 热key处理 #card
-  card-last-interval:: 8.32
-  card-repeats:: 3
-  card-ease-factor:: 2.08
-  card-next-schedule:: 2023-03-14T19:16:28.376Z
-  card-last-reviewed:: 2023-03-06T12:16:28.376Z
+  card-last-interval:: 15.05
+  card-repeats:: 4
+  card-ease-factor:: 1.94
+  card-next-schedule:: 2023-04-05T02:56:36.549Z
+  card-last-reviewed:: 2023-03-21T01:56:36.549Z
   card-last-score:: 3
 	- 监测
 		- 客户端 {{cloze 设置全局字典 key和调用次数}}
