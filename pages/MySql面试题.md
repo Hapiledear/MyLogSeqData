@@ -82,11 +82,11 @@
 			- 4种隔离级别 {{cloze 读未提交}} {{cloze 读已提交}} {{cloze 可重复读读}} {{cloze 串行化}}
 		- {{cloze 锁机制 和 MVVC机制}}
 - Undo Log 和Redo Log #card
-  card-last-interval:: 15.05
-  card-repeats:: 4
-  card-ease-factor:: 1.94
-  card-next-schedule:: 2023-03-21T13:20:27.368Z
-  card-last-reviewed:: 2023-03-06T12:20:27.369Z
+  card-last-interval:: 21.01
+  card-repeats:: 5
+  card-ease-factor:: 1.8
+  card-next-schedule:: 2023-05-09T09:26:19.568Z
+  card-last-reviewed:: 2023-04-18T09:26:19.569Z
   card-last-score:: 3
 	- Undo Log
 		- 存储的是 {{cloze 旧数据的版本链集合}}
@@ -159,11 +159,11 @@
 		- 插入、更新、删除操作
 		- 如何解决幻读 {{cloze next-key Lock 行锁与间隙锁的组合}}
 - 什么是MVCC #card
-  card-last-interval:: 15.05
-  card-repeats:: 4
-  card-ease-factor:: 1.94
-  card-next-schedule:: 2023-03-22T02:11:47.838Z
-  card-last-reviewed:: 2023-03-07T01:11:47.839Z
+  card-last-interval:: 21.01
+  card-repeats:: 5
+  card-ease-factor:: 1.8
+  card-next-schedule:: 2023-05-09T09:30:45.841Z
+  card-last-reviewed:: 2023-04-18T09:30:45.841Z
   card-last-score:: 3
 	- 多版本并发控制
 	- 只工作在两种事物隔离级别下
@@ -209,11 +209,11 @@
 		- 作用 {{cloze 在RR事务级别下，解决并发插入问题}}
 		- 原理 {{cloze 区间相同但插入记录本身不同的情况下 互不排斥}}
 - 主键的选择，使用自增ID 还是 UUID #card
-  card-last-interval:: 15.05
-  card-repeats:: 4
-  card-ease-factor:: 1.94
-  card-next-schedule:: 2023-03-21T13:23:59.050Z
-  card-last-reviewed:: 2023-03-06T12:23:59.050Z
+  card-last-interval:: 21.01
+  card-repeats:: 5
+  card-ease-factor:: 1.8
+  card-next-schedule:: 2023-05-09T09:27:44.656Z
+  card-last-reviewed:: 2023-04-18T09:27:44.657Z
   card-last-score:: 3
 	- 自增型ID {{cloze 符合主键索引的顺序排布，插入快速，产生碎片较少}}
 	- UUID {{cloze 全局唯一，跨系统存取方便}}
@@ -262,11 +262,11 @@
 	- 索引覆盖 {{cloze select字段 存在索引中}}
 	- 最左匹配原则 {{cloze 利用最左匹配，减少索引的建立}}
 - 索引失效的13种场景 #card
-  card-last-interval:: 15.05
-  card-repeats:: 4
-  card-ease-factor:: 1.94
-  card-next-schedule:: 2023-03-21T13:20:46.734Z
-  card-last-reviewed:: 2023-03-06T12:20:46.735Z
+  card-last-interval:: 21.01
+  card-repeats:: 5
+  card-ease-factor:: 1.8
+  card-next-schedule:: 2023-05-09T09:26:43.161Z
+  card-last-reviewed:: 2023-04-18T09:26:43.161Z
   card-last-score:: 3
 	- 联合索引不满足最左匹配原则
 	- 使用了 `select * ` 肯定不会走 覆盖索引
@@ -291,11 +291,11 @@
 	- 不存在索引下推时 {{cloze 先根据索引查记录，再根据where条件过滤}}
 	- 使用索引下推后 {{cloze 先根据 where条件过滤记录，再进行索引查询}}
 - MRR优化 #card
-  card-last-interval:: 15.05
-  card-repeats:: 4
-  card-ease-factor:: 1.94
-  card-next-schedule:: 2023-03-21T13:23:51.704Z
-  card-last-reviewed:: 2023-03-06T12:23:51.705Z
+  card-last-interval:: 21.01
+  card-repeats:: 5
+  card-ease-factor:: 1.8
+  card-next-schedule:: 2023-05-09T09:27:38.500Z
+  card-last-reviewed:: 2023-04-18T09:27:38.501Z
   card-last-score:: 3
 	- 当使用二级索引进行范围查询时，从随机读变为顺序读 {{cloze 通过对索引值排序，把无序回表IO变成有序回表IO}}
 - Explain 查询计划 #card
@@ -351,22 +351,22 @@
 	- redo log
 		- 是存储引擎 InnoDb的日志 ，记录的是 {{cloze 某个数据做了什么修改}}
 - MySql的主从复制 3线程 #card
-  card-last-interval:: 15.05
-  card-repeats:: 4
-  card-ease-factor:: 1.94
-  card-next-schedule:: 2023-03-22T02:09:08.310Z
-  card-last-reviewed:: 2023-03-07T01:09:08.311Z
+  card-last-interval:: 21.01
+  card-repeats:: 5
+  card-ease-factor:: 1.8
+  card-next-schedule:: 2023-05-09T09:30:18.618Z
+  card-last-reviewed:: 2023-04-18T09:30:18.619Z
   card-last-score:: 3
 	- Master开启 bin log ,对数据的更新操作会按顺序写入 bin log
 	- Slave连接Master后，Slave的一个`IO线程` 请求 bin log dump
 	- Master开启 `IO线程` 开始传输bin log
 	- Slave 启动线程  `SQL线程` ，实时监控 中继日志是否有更新，解析SQL语句，在S库中执行
 - 分库分表策略 及 数据分片规则 #card
-  card-last-interval:: 15.05
-  card-repeats:: 4
-  card-ease-factor:: 1.94
-  card-next-schedule:: 2023-03-22T02:12:34.821Z
-  card-last-reviewed:: 2023-03-07T01:12:34.821Z
+  card-last-interval:: 21.01
+  card-repeats:: 5
+  card-ease-factor:: 1.8
+  card-next-schedule:: 2023-05-09T09:34:47.332Z
+  card-last-reviewed:: 2023-04-18T09:34:47.332Z
   card-last-score:: 3
 	- 水平拆分
 		- {{cloze 将一张表中的数据，按照一定策略(Hash取模、range) ，拆分到多个库/表中}}
@@ -410,11 +410,11 @@
 	- 各种看板和统计报表
 		- {{cloze 数据工厂，离线计算。 直接接入ES}}
 - 大批量数据的插入 #card
-  card-last-interval:: 15.05
-  card-repeats:: 4
-  card-ease-factor:: 1.94
-  card-next-schedule:: 2023-03-21T13:24:40.896Z
-  card-last-reviewed:: 2023-03-06T12:24:40.896Z
+  card-last-interval:: 21.01
+  card-repeats:: 5
+  card-ease-factor:: 1.8
+  card-next-schedule:: 2023-05-09T09:28:55.015Z
+  card-last-reviewed:: 2023-04-18T09:28:55.015Z
   card-last-score:: 3
 	- 开启事务
 	- 合并插入：一条语句插入多条数据

@@ -108,11 +108,11 @@
 	- 基于 {{cloze IO多路复用模型}} IO模型 {{cloze 让单个线程高效处理多个连接请求}}
 	- {{cloze C语言实现，更加优化的基础数据结构}} 语言、底层数据结构
 - Redis是单线程的吗？ #card
-  card-last-interval:: 15.05
-  card-repeats:: 4
-  card-ease-factor:: 1.94
-  card-next-schedule:: 2023-03-21T13:24:34.812Z
-  card-last-reviewed:: 2023-03-06T12:24:34.813Z
+  card-last-interval:: 21.01
+  card-repeats:: 5
+  card-ease-factor:: 1.8
+  card-next-schedule:: 2023-05-09T09:28:48.766Z
+  card-last-reviewed:: 2023-04-18T09:28:48.766Z
   card-last-score:: 3
 	- 只有 {{cloze 网络请求模块}} 和 {{cloze 数据操作模块}} 是单线程的 其他的如 持久化模块、集群模块是多线程的
 	- 多线程的好处 {{cloze 使用多线程可以提升 IO利用率和CPU利用率}}
@@ -154,11 +154,11 @@
 		- {{cloze 将过期的、不再使用的、重复的以及可优化的命令进行优化，重新生成AOF文件}}
 		- 流程 {{cloze fork一个子进程}} {{cloze 重写期间，主线程的写命令被保存在缓冲区中}}
 - RDB和AOF各自的优缺点 #card
-  card-last-interval:: 15.05
-  card-repeats:: 4
-  card-ease-factor:: 1.94
-  card-next-schedule:: 2023-03-22T02:09:58.008Z
-  card-last-reviewed:: 2023-03-07T01:09:58.008Z
+  card-last-interval:: 21.01
+  card-repeats:: 5
+  card-ease-factor:: 1.8
+  card-next-schedule:: 2023-05-09T09:30:27.978Z
+  card-last-reviewed:: 2023-04-18T09:30:27.978Z
   card-last-score:: 3
 	- RDB优点
 		- 生成的文件 {{cloze 只有一个紧凑的二进制文件，非常适合备份、全量复制场景}}

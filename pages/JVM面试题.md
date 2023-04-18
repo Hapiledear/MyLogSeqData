@@ -259,12 +259,12 @@
 		- 类及其所有对象都被回收
 		- 常量池中的常量无任何引用
 - ## 如何排查JVM问题 #card
-  card-last-interval:: -1
-  card-repeats:: 1
-  card-ease-factor:: 1.52
-  card-next-schedule:: 2023-03-21T16:00:00.000Z
-  card-last-reviewed:: 2023-03-21T02:04:26.428Z
-  card-last-score:: 1
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 1.38
+  card-next-schedule:: 2023-04-22T09:30:10.760Z
+  card-last-reviewed:: 2023-04-18T09:30:10.761Z
+  card-last-score:: 3
 	- 使用 {{cloze `jmap`}} 查看各区域的使用情况
 	- 使用 {{cloze `jstack`}} 查看线程的运行情况，关注阻塞的线程、是否出现了死锁
 	- 使用 {{cloze `jstat`}} 查看GC情况，特别注意Full GC
