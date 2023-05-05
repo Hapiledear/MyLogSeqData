@@ -1,10 +1,10 @@
 - {{cards [[MQ面试题]] }}
 - 项目中是如何使用MQ的？5  #card
-  card-last-interval:: 15.05
-  card-repeats:: 4
-  card-ease-factor:: 1.94
-  card-next-schedule:: 2023-03-22T02:40:25.600Z
-  card-last-reviewed:: 2023-03-07T01:40:25.600Z
+  card-last-interval:: 22.51
+  card-repeats:: 5
+  card-ease-factor:: 1.8
+  card-next-schedule:: 2023-05-27T18:43:36.009Z
+  card-last-reviewed:: 2023-05-05T06:43:36.010Z
   card-last-score:: 3
 	- {{cloze 异步处理}} 注销用户
 	- {{cloze 应用解耦}} 用户成长值加分
@@ -51,11 +51,11 @@
 	- 缓存 {{cloze 使用缓存记录唯一ID，设置一个过期时间}}
 	- 数据库 {{cloze 使用一张表记录已消费的数据，发生主键冲突则证明已消费}}
 - Rabbit MQ  如何保证消息的不丢失？ #card
-  card-last-interval:: 15.05
-  card-repeats:: 4
-  card-ease-factor:: 1.94
-  card-next-schedule:: 2023-03-22T02:45:25.453Z
-  card-last-reviewed:: 2023-03-07T01:45:25.453Z
+  card-last-interval:: 22.51
+  card-repeats:: 5
+  card-ease-factor:: 1.8
+  card-next-schedule:: 2023-05-27T18:44:04.537Z
+  card-last-reviewed:: 2023-05-05T06:44:04.537Z
   card-last-score:: 3
 	- 发送方确认
 		- {{cloze 消息会生成一个唯一ID}} id
@@ -67,11 +67,11 @@
 	- 消费方确认
 		- 手动确认机制 {{cloze 自己在代码里处理完业务逻辑之后，手动确认}}
 - Rabbit MQ 如何保证高可用 #card
-  card-last-interval:: 15.05
-  card-repeats:: 4
-  card-ease-factor:: 1.94
-  card-next-schedule:: 2023-03-22T02:44:59.772Z
-  card-last-reviewed:: 2023-03-07T01:44:59.772Z
+  card-last-interval:: 22.51
+  card-repeats:: 5
+  card-ease-factor:: 1.8
+  card-next-schedule:: 2023-05-27T18:43:45.695Z
+  card-last-reviewed:: 2023-05-05T06:43:45.696Z
   card-last-score:: 3
 	- 镜像集群模式
 		- {{cloze 每个mq节点都有一个一模一样的queue}}
