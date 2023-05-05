@@ -310,11 +310,11 @@
 		- {{cloze 此时有数据插入，则直接加入t1表}}
 		- {{cloze 扩容因子为 used / size = 1 时}}
 - Redis的跳跃表skipList是如何实现的 #card
-  card-last-interval:: 15.05
-  card-repeats:: 4
-  card-ease-factor:: 1.94
-  card-next-schedule:: 2023-03-22T02:46:57.383Z
-  card-last-reviewed:: 2023-03-07T01:46:57.383Z
+  card-last-interval:: 22.51
+  card-repeats:: 5
+  card-ease-factor:: 1.8
+  card-next-schedule:: 2023-05-27T19:08:17.927Z
+  card-last-reviewed:: 2023-05-05T07:08:17.927Z
   card-last-score:: 3
 	- 层级
 		- 插入时按几率分配层级
