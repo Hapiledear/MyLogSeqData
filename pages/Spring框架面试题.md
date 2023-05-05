@@ -1,10 +1,10 @@
 - {{cards [[Spring框架面试题]] }}
 - Spring中用了哪些设计模式? #card
-  card-last-interval:: 15.05
-  card-repeats:: 4
-  card-ease-factor:: 1.94
-  card-next-schedule:: 2023-03-22T02:47:45.319Z
-  card-last-reviewed:: 2023-03-07T01:47:45.319Z
+  card-last-interval:: 22.51
+  card-repeats:: 5
+  card-ease-factor:: 1.8
+  card-next-schedule:: 2023-05-27T19:24:17.531Z
+  card-last-reviewed:: 2023-05-05T07:24:17.531Z
   card-last-score:: 3
 	- BeanFactory {{cloze 工厂模式}}
 	- Bean {{cloze 单例模式}}
@@ -12,20 +12,20 @@
 	- RestTemplate {{cloze 模板方法}}
 	- ApplicationListener {{cloze 观察者模式}}
 - 什么是Spring的IOC(控制反转) #card
-  card-last-interval:: 15.05
-  card-repeats:: 4
-  card-ease-factor:: 1.94
-  card-next-schedule:: 2023-03-22T02:48:47.168Z
-  card-last-reviewed:: 2023-03-07T01:48:47.169Z
+  card-last-interval:: 22.51
+  card-repeats:: 5
+  card-ease-factor:: 1.8
+  card-next-schedule:: 2023-05-27T19:25:33.083Z
+  card-last-reviewed:: 2023-05-05T07:25:33.083Z
   card-last-score:: 3
 	- {{cloze 原本由代码控制对象的生命周期，交由spring框架管理}}
 	- 实现 {{cloze 工厂模式+反射机制}}
 - BeanFactory 和 ApplicationContext的区别 #card
-  card-last-interval:: 15.05
-  card-repeats:: 4
-  card-ease-factor:: 1.94
-  card-next-schedule:: 2023-03-22T02:50:56.143Z
-  card-last-reviewed:: 2023-03-07T01:50:56.143Z
+  card-last-interval:: 22.51
+  card-repeats:: 5
+  card-ease-factor:: 1.8
+  card-next-schedule:: 2023-05-27T19:26:59.739Z
+  card-last-reviewed:: 2023-05-05T07:26:59.740Z
   card-last-score:: 3
 	- BF 可以理解为 “低级容器”，只是简单的 k-v结构
 	- 依赖关系 {{cloze ApplicationContext是BeanFactory的子接口,扩展了BeanFactory的功能}}
@@ -36,11 +36,11 @@
 		- {{cloze 手动注册}} BF
 		- {{cloze 自动注册}} AC
 - Spring中的Bean是线程安全的吗？如何处理线程并发问题 #card
-  card-last-interval:: 15.05
-  card-repeats:: 4
-  card-ease-factor:: 1.94
-  card-next-schedule:: 2023-03-22T02:55:28.406Z
-  card-last-reviewed:: 2023-03-07T01:55:28.407Z
+  card-last-interval:: 22.51
+  card-repeats:: 5
+  card-ease-factor:: 1.8
+  card-next-schedule:: 2023-05-27T19:28:25.258Z
+  card-last-reviewed:: 2023-05-05T07:28:25.258Z
   card-last-score:: 3
 	- 默认Bean的作用域 {{cloze singleton}}不是线程安全的
 	- 如果是有状态的Bean，可以使用更高一级的 {{cloze prototype}}
@@ -74,11 +74,11 @@
 	- BF {{cloze 是框架用来管理和装配普通bean的容器}}
 	- FB {{cloze 是用以生产对象和装饰对象的工厂接口}}
 - 如何解决Bean注入时的循环依赖问题  #card
-  card-last-interval:: 15.05
-  card-repeats:: 4
-  card-ease-factor:: 1.94
-  card-next-schedule:: 2023-03-22T02:49:20.967Z
-  card-last-reviewed:: 2023-03-07T01:49:20.967Z
+  card-last-interval:: 22.51
+  card-repeats:: 5
+  card-ease-factor:: 1.8
+  card-next-schedule:: 2023-05-27T19:26:11.611Z
+  card-last-reviewed:: 2023-05-05T07:26:11.611Z
   card-last-score:: 3
 	- 循环依赖能自动解决的前提条件
 		- {{cloze 不是全属性构造器}}
