@@ -321,11 +321,11 @@
 		- Using index 使用了覆盖索引
 		- Using where 该索引还用来执行查找操作
 - 工作中你是如何优化慢查询的 #card
-  card-last-interval:: 23.33
-  card-repeats:: 5
-  card-ease-factor:: 1.8
-  card-next-schedule:: 2023-03-30T08:27:53.687Z
-  card-last-reviewed:: 2023-03-07T01:27:53.688Z
+  card-last-interval:: 30.37
+  card-repeats:: 6
+  card-ease-factor:: 1.66
+  card-next-schedule:: 2023-06-04T15:34:30.349Z
+  card-last-reviewed:: 2023-05-05T07:34:30.349Z
   card-last-score:: 3
 	- 添加合适的索引
 		- {{cloze 频繁查询的条件 和 排序字段 建立索引}}

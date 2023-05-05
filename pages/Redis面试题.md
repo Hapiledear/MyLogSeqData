@@ -1,21 +1,21 @@
 - {{cards [[Redis面试题]]}}
 - 项目中缓存是如何使用的，为什么要用 #card
-  card-last-interval:: 23.33
-  card-repeats:: 5
-  card-ease-factor:: 1.8
-  card-next-schedule:: 2023-03-29T19:21:46.062Z
-  card-last-reviewed:: 2023-03-06T12:21:46.062Z
+  card-last-interval:: 30.37
+  card-repeats:: 6
+  card-ease-factor:: 1.66
+  card-next-schedule:: 2023-06-04T15:31:07.051Z
+  card-last-reviewed:: 2023-05-05T07:31:07.051Z
   card-last-score:: 3
 	- 提高接口性能 {{cloze 缓存查询结果}} 用得最多的是 {{cloze 用户信息查询}} 接口
 	- 降低数据库压力 {{cloze 热点数据缓存}}
 	- 限流&幂等&分布式锁
 	- 一级页面熔断降级 {{cloze 缓存数据，降级后直接取用}}
 - 缓存使用不当会带来哪些后果，解决办法 #card
-  card-last-interval:: 23.33
-  card-repeats:: 5
-  card-ease-factor:: 1.8
-  card-next-schedule:: 2023-03-30T08:34:22.646Z
-  card-last-reviewed:: 2023-03-07T01:34:22.646Z
+  card-last-interval:: 30.37
+  card-repeats:: 6
+  card-ease-factor:: 1.66
+  card-next-schedule:: 2023-06-04T15:35:28.575Z
+  card-last-reviewed:: 2023-05-05T07:35:28.575Z
   card-last-score:: 3
 	- 缓存与数据库的双写不一致
 		- 读的时候 {{cloze 先读缓存，再读数据库，最后把读取的数据放入缓存}}
@@ -241,11 +241,11 @@
 	- 引入 {{cloze 消息队列 使用广播模式}}
 	- 本地缓存的过期时间 {{cloze 设置相对短一些}}
 - Redis数据如何预热 #card
-  card-last-interval:: 19.01
-  card-repeats:: 4
-  card-ease-factor:: 2.18
-  card-next-schedule:: 2023-03-26T01:14:04.529Z
-  card-last-reviewed:: 2023-03-07T01:14:04.529Z
+  card-last-interval:: 33.96
+  card-repeats:: 5
+  card-ease-factor:: 2.04
+  card-next-schedule:: 2023-06-08T06:30:58.154Z
+  card-last-reviewed:: 2023-05-05T07:30:58.155Z
   card-last-score:: 3
 	- 暴露内网接口，手动操作
 	- 数据量不大时，项目启动时自动加载
@@ -283,11 +283,11 @@
 		- 压缩 {{cloze 压缩算法进行压缩}}
 		- 拆分 {{cloze 按长度截取拆分，使用multiget读取}}
 - Redis的SDS与C语言的字符串比较 #card
-  card-last-interval:: 15.05
-  card-repeats:: 4
-  card-ease-factor:: 1.94
-  card-next-schedule:: 2023-03-22T02:58:59.294Z
-  card-last-reviewed:: 2023-03-07T01:58:59.294Z
+  card-last-interval:: 22.51
+  card-repeats:: 5
+  card-ease-factor:: 1.8
+  card-next-schedule:: 2023-05-27T19:29:18.875Z
+  card-last-reviewed:: 2023-05-05T07:29:18.875Z
   card-last-score:: 3
 	- c语言字符串的缺点
 		- {{cloze 获取字符串长度 需要O(n)}}

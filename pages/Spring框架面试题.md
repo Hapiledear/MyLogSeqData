@@ -47,11 +47,11 @@
 		- 有状态指的是有数据的存储功能
 	- 或者是该数据字段使用 {{cloze ThreadLocal}} 修饰
 - Spring Bean的生命周期，描述一下 4阶段-2扩展点 #card
-  card-last-interval:: 7.76
-  card-repeats:: 3
-  card-ease-factor:: 1.94
-  card-next-schedule:: 2023-03-22T04:42:12.073Z
-  card-last-reviewed:: 2023-03-14T10:42:12.073Z
+  card-last-interval:: 12.51
+  card-repeats:: 4
+  card-ease-factor:: 1.8
+  card-next-schedule:: 2023-05-17T19:30:09.492Z
+  card-last-reviewed:: 2023-05-05T07:30:09.492Z
   card-last-score:: 3
 	- 实例化
 	- 属性填充
@@ -98,11 +98,11 @@
 		- {{cloze 保证不管什么时候获取到的都是同一对象}}
 		- spring有 普通对象 和 代理对象,在未执行完 BeanPostProcessor时不知道使用哪一个
 - 什么是Spring 的AOP,项目中是如何使用的 #card
-  card-last-interval:: 15.05
-  card-repeats:: 4
-  card-ease-factor:: 1.94
-  card-next-schedule:: 2023-03-22T02:59:07.893Z
-  card-last-reviewed:: 2023-03-07T01:59:07.893Z
+  card-last-interval:: 22.51
+  card-repeats:: 5
+  card-ease-factor:: 1.8
+  card-next-schedule:: 2023-05-27T19:29:25.067Z
+  card-last-reviewed:: 2023-05-05T07:29:25.068Z
   card-last-score:: 3
 	- AOP 面向切面编程，核心是使用 {{cloze 代理模式}}，对目标方法执行前后进行处理
 	- 应用场景 {{cloze 日志记录}} {{cloze 接口签名校验}}

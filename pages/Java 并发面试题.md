@@ -16,11 +16,11 @@
 		- {{cloze CUP 的物理缓存结构,JMM内存模型也有缓存}}
 		- {{cloze CUP层级的MESI协议，JMM的八种操作规范}}
 - volatile关键字的原理及其实战 #card #Java并发
-  card-last-interval:: 23.33
-  card-repeats:: 5
-  card-ease-factor:: 1.8
-  card-next-schedule:: 2023-03-30T08:39:07.476Z
-  card-last-reviewed:: 2023-03-07T01:39:07.477Z
+  card-last-interval:: 30.37
+  card-repeats:: 6
+  card-ease-factor:: 1.66
+  card-next-schedule:: 2023-06-04T15:38:12.343Z
+  card-last-reviewed:: 2023-05-05T07:38:12.343Z
   card-last-score:: 3
 	- 解决了两大问题 {{cloze 保证变量对所有线程的可见性和禁止指令重排}} 通常搭配atomic类来实现 {{cloze 原子性}}
 	- 实践 单例模式中 {{cloze volatile修饰instance. 保证其写操作发生在读之前}}
@@ -45,11 +45,11 @@
 	- 上锁过程 {{cloze 在对象头中，记录锁的类型 和 指向栈中的锁记录指针}}
 	- 如果没有获取到锁，则会 {{cloze 让线程自旋等待，并不放弃CPU的执行时间}}
 - synchronized的锁升级机制 #card #Java并发
-  card-last-interval:: 23.33
-  card-repeats:: 5
-  card-ease-factor:: 1.8
-  card-next-schedule:: 2023-03-30T08:24:23.899Z
-  card-last-reviewed:: 2023-03-07T01:24:23.899Z
+  card-last-interval:: 30.37
+  card-repeats:: 6
+  card-ease-factor:: 1.66
+  card-next-schedule:: 2023-06-04T15:33:09.100Z
+  card-last-reviewed:: 2023-05-05T07:33:09.100Z
   card-last-score:: 3
 	- 锁消除 无锁
 		- {{cloze 在编译时明显检测到不会被其他线程访问到}}
@@ -66,11 +66,11 @@
 		- 协作机制
 			- 持有许可的线程可以 {{cloze 主动放弃许可进入阻塞}} {{cloze 发送信号，唤起阻塞线程}}
 - synchronized和volatie的区别  #card #Java并发
-  card-last-interval:: 23.33
-  card-repeats:: 5
-  card-ease-factor:: 1.8
-  card-next-schedule:: 2023-03-30T08:38:38.678Z
-  card-last-reviewed:: 2023-03-07T01:38:38.678Z
+  card-last-interval:: 30.37
+  card-repeats:: 6
+  card-ease-factor:: 1.66
+  card-next-schedule:: 2023-06-04T15:38:02.148Z
+  card-last-reviewed:: 2023-05-05T07:38:02.149Z
   card-last-score:: 3
 	- 修饰的地方 {{cloze volatile是变量修饰,synchronized可以修饰类、方法、变量}}
 	- 解决的问题 {{cloze volatile 保证的是有序性和可进行，不能保证原子性，synch 保证的是可见性(Happends-before)和原子性}}
@@ -88,11 +88,11 @@
 	- 实现,是否加锁 {{cloze 内存位置v 预期原值A和新值B ，如果内存值=A 那么将内存值改为B}} {{cloze 不加锁，但会自旋一定次数}}
 	- 实现 {{cloze atomic下的类大多是使用CAS操作来实现的}}
 - CAS会产生什么问题以及解决办法 #card #Java并发
-  card-last-interval:: 23.33
-  card-repeats:: 5
-  card-ease-factor:: 1.8
-  card-next-schedule:: 2023-03-30T08:37:40.658Z
-  card-last-reviewed:: 2023-03-07T01:37:40.658Z
+  card-last-interval:: 30.37
+  card-repeats:: 6
+  card-ease-factor:: 1.66
+  card-next-schedule:: 2023-06-04T15:37:17.220Z
+  card-last-reviewed:: 2023-05-05T07:37:17.220Z
   card-last-score:: 3
 	- ABA问题
 		- {{cloze 用链表的例子更直观}}
@@ -103,11 +103,11 @@
 	- 只能保证一个共享变量的原子操作
 		- {{cloze 将两个变量放入一个对象中}} {{cloze 上锁}}
 - Lock与synchronize的区别 #card #Java并发
-  card-last-interval:: 23.33
-  card-repeats:: 5
-  card-ease-factor:: 1.8
-  card-next-schedule:: 2023-03-30T08:35:59.640Z
-  card-last-reviewed:: 2023-03-07T01:35:59.641Z
+  card-last-interval:: 30.37
+  card-repeats:: 6
+  card-ease-factor:: 1.66
+  card-next-schedule:: 2023-06-04T15:35:54.521Z
+  card-last-reviewed:: 2023-05-05T07:35:54.521Z
   card-last-score:: 3
 	- 实现方式
 		- {{cloze Lock基于Java类实现，易于扩展，功能丰富}} {{cloze synch基于对象头实现，无法自定义}}
@@ -118,11 +118,11 @@
 	- 锁的使用范围
 		- {{cloze Lock可以在不同范围、不同的顺序获取和释放锁}} {{cloze synch只能在进临界区获取和释放}}
 - 可重入锁的实现原理  #card #Java并发
-  card-last-interval:: 23.33
-  card-repeats:: 5
-  card-ease-factor:: 1.8
-  card-next-schedule:: 2023-03-30T08:20:10.147Z
-  card-last-reviewed:: 2023-03-07T01:20:10.147Z
+  card-last-interval:: 30.37
+  card-repeats:: 6
+  card-ease-factor:: 1.66
+  card-next-schedule:: 2023-06-04T15:31:50.857Z
+  card-last-reviewed:: 2023-05-05T07:31:50.858Z
   card-last-score:: 3
 	- 重入性
 		- {{cloze 已获得锁的线程可以再次获取}}
@@ -151,11 +151,11 @@
 		- 独占方式获取和释放资源 {{cloze tryAcquire/tryRelease}}
 		- 共享方式 {{cloze tryAquireShared/treReleaseShared}}
 - ConcurrentHashMap的原理 #card #Java并发
-  card-last-interval:: 23.33
-  card-repeats:: 5
-  card-ease-factor:: 1.8
-  card-next-schedule:: 2023-03-30T09:00:36.229Z
-  card-last-reviewed:: 2023-03-07T02:00:36.229Z
+  card-last-interval:: 30.37
+  card-repeats:: 6
+  card-ease-factor:: 1.66
+  card-next-schedule:: 2023-06-04T15:38:51.082Z
+  card-last-reviewed:: 2023-05-05T07:38:51.083Z
   card-last-score:: 3
 	- 1.8- {{cloze 将map分段为segment，对每一段分别加锁}}
 	- 1.8+ {{cloze 弃用了分段，而是改用了CAS操作}}
@@ -194,11 +194,11 @@
 		- {{cloze 在队列满时，存储元素的线程会等待队列可用}}
 	- 阻塞队列的经典应用场景是 {{cloze socket客户端的数据读取和解析}}
 - 什么是原子操作 #card #Java并发
-  card-last-interval:: 23.33
-  card-repeats:: 5
-  card-ease-factor:: 1.8
-  card-next-schedule:: 2023-03-30T08:37:52.513Z
-  card-last-reviewed:: 2023-03-07T01:37:52.513Z
+  card-last-interval:: 30.37
+  card-repeats:: 6
+  card-ease-factor:: 1.66
+  card-next-schedule:: 2023-06-04T15:37:29.105Z
+  card-last-reviewed:: 2023-05-05T07:37:29.105Z
   card-last-score:: 3
 	- 定义 {{cloze 一连串操作，要么都执行完，要么都不执行}}
 	- 如何保证原子性 {{cloze CAS指令}} {{cloze Lock和synchroize}}
@@ -214,19 +214,19 @@
 	- 属性 {{cloze AtomicxxxFiledUpdater}}
 	- 带版本号的 {{cloze AtomicMarkableReference}} {{cloze AtomicStampedReferece}}
 - atomic的原理  #card #Java并发
-  card-last-interval:: 19.01
-  card-repeats:: 4
-  card-ease-factor:: 2.18
-  card-next-schedule:: 2023-03-26T01:13:57.120Z
-  card-last-reviewed:: 2023-03-07T01:13:57.120Z
+  card-last-interval:: 33.96
+  card-repeats:: 5
+  card-ease-factor:: 2.04
+  card-next-schedule:: 2023-06-08T06:30:45.114Z
+  card-last-reviewed:: 2023-05-05T07:30:45.114Z
   card-last-score:: 3
 	- {{cloze CAS+volatile方式保证原子性}} 避免synch的高开销
 - CountdownLatch和CycleBarrar的区别 #card #Java并发
-  card-last-interval:: 23.33
-  card-repeats:: 5
-  card-ease-factor:: 1.8
-  card-next-schedule:: 2023-03-30T08:21:44.819Z
-  card-last-reviewed:: 2023-03-07T01:21:44.820Z
+  card-last-interval:: 30.37
+  card-repeats:: 6
+  card-ease-factor:: 1.66
+  card-next-schedule:: 2023-06-04T15:32:05.306Z
+  card-last-reviewed:: 2023-05-05T07:32:05.306Z
   card-last-score:: 3
 	- 线程等待和执行方式 CD {{cloze 某个线程A等待若干线程执行完后才执行}} CB {{cloze 一组线程在某个状态等待，然后再同时执行}}
 	- 当前线程是否阻塞 CD {{cloze 调用countDown方法后，当前线程不会阻塞}} CB {{cloze 调用 await方法后，会阻塞当前线程}}
@@ -252,11 +252,11 @@
 		- {{cloze 线程隔离}}
 		- {{cloze 跨函数传递数据}}
 - 线程池调度流程&各项参数 #card #Java并发
-  card-last-interval:: 23.33
-  card-repeats:: 5
-  card-ease-factor:: 1.8
-  card-next-schedule:: 2023-03-30T08:24:35.846Z
-  card-last-reviewed:: 2023-03-07T01:24:35.846Z
+  card-last-interval:: 30.37
+  card-repeats:: 6
+  card-ease-factor:: 1.66
+  card-next-schedule:: 2023-06-04T15:33:52.165Z
+  card-last-reviewed:: 2023-05-05T07:33:52.165Z
   card-last-score:: 3
 	- 任务优先占用 {{cloze 核心线程数}}
 	- 核心线程满 {{cloze 进入等待队列}}
