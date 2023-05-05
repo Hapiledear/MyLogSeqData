@@ -58,11 +58,11 @@
 	- {{cloze  年轻代又分 eden区 s1和s2区 比例为 8:1:1}} 3区
 	- {{cloze 通常 年轻代采用的GC算法是 复制算法，老年代采用的是标记-整理算法 }} GC算法
 - 非堆内存有哪些 #card
-  card-last-interval:: 33.96
-  card-repeats:: 5
-  card-ease-factor:: 2.04
-  card-next-schedule:: 2023-04-10T00:59:12.107Z
-  card-last-reviewed:: 2023-03-07T01:59:12.107Z
+  card-last-interval:: 52.13
+  card-repeats:: 6
+  card-ease-factor:: 1.9
+  card-next-schedule:: 2023-06-26T10:50:41.593Z
+  card-last-reviewed:: 2023-05-05T07:50:41.593Z
   card-last-score:: 3
 	- {{cloze DirectByteBuffer 所申请的直接内存}} NIO
 	- {{cloze 方法区的具体实现 元空间}}
@@ -138,11 +138,11 @@
 		- 堆对于整个应用程序都是共享的、可见的
 		- 栈是线程私有的
 - 对象创建过程 #card
-  card-last-interval:: 33.96
-  card-repeats:: 5
-  card-ease-factor:: 2.04
-  card-next-schedule:: 2023-04-11T02:18:24.614Z
-  card-last-reviewed:: 2023-03-08T03:18:24.614Z
+  card-last-interval:: 52.13
+  card-repeats:: 6
+  card-ease-factor:: 1.9
+  card-next-schedule:: 2023-06-26T10:50:56.836Z
+  card-last-reviewed:: 2023-05-05T07:50:56.836Z
   card-last-score:: 3
 	- 类加载
 	- 分配内存
@@ -163,11 +163,11 @@
 	- clone方法
 	- 反序列化
 - 类加载过程 #card
-  card-last-interval:: 33.96
-  card-repeats:: 5
-  card-ease-factor:: 2.04
-  card-next-schedule:: 2023-04-11T02:18:09.704Z
-  card-last-reviewed:: 2023-03-08T03:18:09.704Z
+  card-last-interval:: 52.13
+  card-repeats:: 6
+  card-ease-factor:: 1.9
+  card-next-schedule:: 2023-06-26T10:50:48.055Z
+  card-last-reviewed:: 2023-05-05T07:50:48.055Z
   card-last-score:: 3
 	- 加载 {{cloze 导入class文件}}
 	- 验证 {{cloze 检测class文件的正确性}}
@@ -187,11 +187,11 @@
 	- 自定义类加载器
 	- 双亲委派： {{cloze 先将其委派给父类，如果父类不能加载，再自己来}}
 - 对象如何访问 #card
-  card-last-interval:: 33.96
-  card-repeats:: 5
-  card-ease-factor:: 2.04
-  card-next-schedule:: 2023-04-11T02:18:55.962Z
-  card-last-reviewed:: 2023-03-08T03:18:55.962Z
+  card-last-interval:: 52.13
+  card-repeats:: 6
+  card-ease-factor:: 1.9
+  card-next-schedule:: 2023-06-26T10:51:38.471Z
+  card-last-reviewed:: 2023-05-05T07:51:38.472Z
   card-last-score:: 3
 	- 句柄
 		- {{cloze 栈中对象的引用 ->堆中句柄池中的句柄 -> 堆中的实例 和 方法区的类型信息}} 栈-> 堆->堆和方法区
@@ -200,11 +200,11 @@
 		- {{cloze 栈中的对象引用 -> 堆中的对象实例 -> 方法区中对应的类型信息}} 栈->堆->方法区
 		- {{cloze 节省了一次指针定位的时间}} 好处
 - 对象分配策略 #card
-  card-last-interval:: 33.96
-  card-repeats:: 5
-  card-ease-factor:: 2.04
-  card-next-schedule:: 2023-04-11T02:18:28.228Z
-  card-last-reviewed:: 2023-03-08T03:18:28.229Z
+  card-last-interval:: 52.13
+  card-repeats:: 6
+  card-ease-factor:: 1.9
+  card-next-schedule:: 2023-06-26T10:51:16.353Z
+  card-last-reviewed:: 2023-05-05T07:51:16.353Z
   card-last-score:: 3
 	- 新对象分配在eden区，大对象直接进入老年代
 	- 经历过一次Minor GC ,复制到surviro区，年龄+1
@@ -212,11 +212,11 @@
 		- 年龄 = 相同年龄对象大小之和 > S 区的一半
 	- 老年代满了则触发 Full GC
 - JVM中的垃圾回收器有哪些,及其工作原理 #card
-  card-last-interval:: 29.21
-  card-repeats:: 5
-  card-ease-factor:: 1.94
-  card-next-schedule:: 2023-04-05T06:13:51.699Z
-  card-last-reviewed:: 2023-03-07T01:13:51.699Z
+  card-last-interval:: 8.1
+  card-repeats:: 6
+  card-ease-factor:: 1.8
+  card-next-schedule:: 2023-05-13T09:50:37.795Z
+  card-last-reviewed:: 2023-05-05T07:50:37.795Z
   card-last-score:: 3
 	- Serial
 		- 串行收集
@@ -259,11 +259,11 @@
 		- 类及其所有对象都被回收
 		- 常量池中的常量无任何引用
 - ## 如何排查JVM问题 #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 1.38
-  card-next-schedule:: 2023-04-22T09:30:10.760Z
-  card-last-reviewed:: 2023-04-18T09:30:10.761Z
+  card-last-interval:: 5.2
+  card-repeats:: 3
+  card-ease-factor:: 1.3
+  card-next-schedule:: 2023-05-10T11:51:53.983Z
+  card-last-reviewed:: 2023-05-05T07:51:53.983Z
   card-last-score:: 3
 	- 使用 {{cloze `jmap`}} 查看各区域的使用情况
 	- 使用 {{cloze `jstack`}} 查看线程的运行情况，关注阻塞的线程、是否出现了死锁
@@ -324,11 +324,11 @@
 		- 空循环，或者空自旋 {{cloze 使用Thread.sleep或者加锁，让线程适当的阻塞}}
 		- 在循环的代码逻辑中，创建大量的新对象 {{cloze 减少对象的创建数量 or 使用对象池}}
 - JVM的内存分配为什么是1:1:8 #card
-  card-last-interval:: 15.05
-  card-repeats:: 4
-  card-ease-factor:: 1.94
-  card-next-schedule:: 2023-04-05T02:58:29.243Z
-  card-last-reviewed:: 2023-03-21T01:58:29.244Z
+  card-last-interval:: 22.51
+  card-repeats:: 5
+  card-ease-factor:: 1.8
+  card-next-schedule:: 2023-05-27T19:49:17.629Z
+  card-last-reviewed:: 2023-05-05T07:49:17.629Z
   card-last-score:: 3
 	- 为什么要有Eden和servivor区
 		- {{cloze 减少被送入老年代的对象，进而减少Full GC次数}}

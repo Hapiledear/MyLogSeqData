@@ -1,10 +1,10 @@
 - {{cards [[Java 并发面试题]]}}
 - 并发中的三大问题是如何产生的，都是如何解决的? #card #Java并发 /cloze
-  card-last-interval:: 11.02
-  card-repeats:: 4
-  card-ease-factor:: 1.66
-  card-next-schedule:: 2023-04-29T09:16:47.822Z
-  card-last-reviewed:: 2023-04-18T09:16:47.822Z
+  card-last-interval:: 12.57
+  card-repeats:: 5
+  card-ease-factor:: 1.52
+  card-next-schedule:: 2023-05-17T20:52:02.653Z
+  card-last-reviewed:: 2023-05-05T07:52:02.653Z
   card-last-score:: 3
 	- 原子性
 		- {{cloze `i++` 一行代码被编译为机器指令时可能是多步操作}}
@@ -25,11 +25,11 @@
 	- 解决了两大问题 {{cloze 保证变量对所有线程的可见性和禁止指令重排}} 通常搭配atomic类来实现 {{cloze 原子性}}
 	- 实践 单例模式中 {{cloze volatile修饰instance. 保证其写操作发生在读之前}}
 - volatile能将非原子操作变成原子操作吗 #card #Java并发
-  card-last-interval:: 11.02
-  card-repeats:: 4
-  card-ease-factor:: 1.66
-  card-next-schedule:: 2023-04-29T09:16:50.321Z
-  card-last-reviewed:: 2023-04-18T09:16:50.322Z
+  card-last-interval:: 12.57
+  card-repeats:: 5
+  card-ease-factor:: 1.52
+  card-next-schedule:: 2023-05-17T20:52:04.976Z
+  card-last-reviewed:: 2023-05-05T07:52:04.976Z
   card-last-score:: 3
 	- 在32位的机器上，long和double分为了两部分 高位和低位。因此建议用volatile修饰
 	- 但更建议JVM实现时将这种操作视为原子性的
@@ -173,11 +173,11 @@
 		- {{cloze synchMap 一次锁住一整张表}}
 		- {{cloze ConcurMap一次只锁一个分段}}
 - CopyOnWriteArrayList是什么，实践场景 #card #Java并发
-  card-last-interval:: 33.96
-  card-repeats:: 5
-  card-ease-factor:: 2.04
-  card-next-schedule:: 2023-04-11T02:18:47.789Z
-  card-last-reviewed:: 2023-03-08T03:18:47.789Z
+  card-last-interval:: 52.13
+  card-repeats:: 6
+  card-ease-factor:: 1.9
+  card-next-schedule:: 2023-06-26T10:51:30.575Z
+  card-last-reviewed:: 2023-05-05T07:51:30.575Z
   card-last-score:: 3
 	- 字如其名 {{cloze 它的写入操作将copy出一份副本 ，再在这个副本上进行更改}}
 	- 缺点 {{cloze copy数字代价高昂，消耗内存}}
@@ -265,11 +265,11 @@
 	- 如何创建线程 {{cloze 通过线程工厂 ThreadFactory}}
 	- 何时缩容到核心线程数 {{cloze 线程最大空闲时长}}
 - 线程池调优策略  #card #Java并发
-  card-last-interval:: 33.96
-  card-repeats:: 5
-  card-ease-factor:: 2.04
-  card-next-schedule:: 2023-04-11T02:18:59.801Z
-  card-last-reviewed:: 2023-03-08T03:18:59.801Z
+  card-last-interval:: 52.13
+  card-repeats:: 6
+  card-ease-factor:: 1.9
+  card-next-schedule:: 2023-06-26T10:51:44.311Z
+  card-last-reviewed:: 2023-05-05T07:51:44.312Z
   card-last-score:: 3
 	- 通用规则2条
 		- {{cloze 最大线程数=核心线程数 优先创建线程而不是入队等待}}
