@@ -78,11 +78,11 @@
 	- 是否被编译优化 {{cloze volatile不会被编译优化，synch可以被优化}}
 	- 实际开发中 {{cloze synch比volatile用得多一点，volatile需要搭配automit类使用}}
 - 什么是CAS #card #Java并发
-  card-last-interval:: 23.33
-  card-repeats:: 5
-  card-ease-factor:: 1.8
-  card-next-schedule:: 2023-03-31T10:14:38.141Z
-  card-last-reviewed:: 2023-03-08T03:14:38.141Z
+  card-last-interval:: 30.37
+  card-repeats:: 6
+  card-ease-factor:: 1.66
+  card-next-schedule:: 2023-06-04T15:43:00.268Z
+  card-last-reviewed:: 2023-05-05T07:43:00.268Z
   card-last-score:: 3
 	- compare and swap 比较并交换
 	- 实现,是否加锁 {{cloze 内存位置v 预期原值A和新值B ，如果内存值=A 那么将内存值改为B}} {{cloze 不加锁，但会自旋一定次数}}
@@ -132,11 +132,11 @@
 		- 非公平 {{cloze AQS的头节点和新执行到CAS修改状态处的线程}}
 		- 公平 {{cloze AQS只允许头节点抢锁}}
 - AQS是什么，抢锁过程 #card #Java并发
-  card-last-interval:: 23.33
-  card-repeats:: 5
-  card-ease-factor:: 1.8
-  card-next-schedule:: 2023-03-31T10:17:59.932Z
-  card-last-reviewed:: 2023-03-08T03:17:59.932Z
+  card-last-interval:: 30.37
+  card-repeats:: 6
+  card-ease-factor:: 1.66
+  card-next-schedule:: 2023-06-04T15:47:20.037Z
+  card-last-reviewed:: 2023-05-05T07:47:20.037Z
   card-last-score:: 3
 	- AQS是一个用来构建锁和同步器的框架
 	- 队列 {{cloze 有一个CLH 的双向链表组成的队列}}
@@ -163,11 +163,11 @@
 		- 存储结构 {{cloze 数组+链表->红黑树}}
 		- 扩容 {{cloze 默认大小为 16 加载因子0.75 阈值=大小*因子}} {{cloze 扩容后大小为2^n次方，不需要rehash}}
 - synchronizeMap与ConcurrentHashMap的区别 #card #Java并发
-  card-last-interval:: 23.33
-  card-repeats:: 5
-  card-ease-factor:: 1.8
-  card-next-schedule:: 2023-03-31T10:09:22.626Z
-  card-last-reviewed:: 2023-03-08T03:09:22.626Z
+  card-last-interval:: 30.37
+  card-repeats:: 6
+  card-ease-factor:: 1.66
+  card-next-schedule:: 2023-06-04T15:40:34.417Z
+  card-last-reviewed:: 2023-05-05T07:40:34.417Z
   card-last-score:: 3
 	- 锁住数据的粒度
 		- {{cloze synchMap 一次锁住一整张表}}
@@ -232,20 +232,20 @@
 	- 当前线程是否阻塞 CD {{cloze 调用countDown方法后，当前线程不会阻塞}} CB {{cloze 调用 await方法后，会阻塞当前线程}}
 	- 复用 CD {{cloze 不能复用}} CB {{cloze 可以复用}}
 - final类 不可变对象 描述 #card #Java并发
-  card-last-interval:: 23.33
-  card-repeats:: 5
-  card-ease-factor:: 1.8
-  card-next-schedule:: 2023-03-31T10:17:13.906Z
-  card-last-reviewed:: 2023-03-08T03:17:13.906Z
+  card-last-interval:: 30.37
+  card-repeats:: 6
+  card-ease-factor:: 1.66
+  card-next-schedule:: 2023-06-04T15:46:06.703Z
+  card-last-reviewed:: 2023-05-05T07:46:06.703Z
   card-last-score:: 3
 	- 对象一旦被创建，它的属性值就不能改变 ，可以通过反射方式进行破坏
 	- 保证了内存的可见性，不需要额外的同步手段，提升代码执行效率
 - ThreadLocal原理 #card #Java并发
-  card-last-interval:: 23.33
-  card-repeats:: 5
-  card-ease-factor:: 1.8
-  card-next-schedule:: 2023-03-31T10:11:06.786Z
-  card-last-reviewed:: 2023-03-08T03:11:06.787Z
+  card-last-interval:: 30.37
+  card-repeats:: 6
+  card-ease-factor:: 1.66
+  card-next-schedule:: 2023-06-04T15:41:04.800Z
+  card-last-reviewed:: 2023-05-05T07:41:04.800Z
   card-last-score:: 3
 	- 每一个thread持有一个threadLocalMap {{cloze key是被修饰的threadLocal对象}} {{cloze value是对象值}}
 	- 使用场景

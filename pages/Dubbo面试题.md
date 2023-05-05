@@ -20,11 +20,11 @@
 	- 一致性hash
 	- 最小调用次数
 - Dubbo的失败策略 #card
-  card-last-interval:: 15.05
-  card-repeats:: 4
-  card-ease-factor:: 1.94
-  card-next-schedule:: 2023-04-05T02:57:53.420Z
-  card-last-reviewed:: 2023-03-21T01:57:53.420Z
+  card-last-interval:: 22.51
+  card-repeats:: 5
+  card-ease-factor:: 1.8
+  card-next-schedule:: 2023-05-27T19:48:51.425Z
+  card-last-reviewed:: 2023-05-05T07:48:51.425Z
   card-last-score:: 3
 	- 快速失败，直接返回错误
 	- 忽略失败

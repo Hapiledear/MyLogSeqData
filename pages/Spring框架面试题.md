@@ -107,11 +107,11 @@
 	- AOP 面向切面编程，核心是使用 {{cloze 代理模式}}，对目标方法执行前后进行处理
 	- 应用场景 {{cloze 日志记录}} {{cloze 接口签名校验}}
 - 为什么要用SpringBoot #card
-  card-last-interval:: 15.05
-  card-repeats:: 4
-  card-ease-factor:: 1.94
-  card-next-schedule:: 2023-04-05T02:56:48.509Z
-  card-last-reviewed:: 2023-03-21T01:56:48.509Z
+  card-last-interval:: 22.51
+  card-repeats:: 5
+  card-ease-factor:: 1.8
+  card-next-schedule:: 2023-05-27T19:48:18.515Z
+  card-last-reviewed:: 2023-05-05T07:48:18.515Z
   card-last-score:: 3
 	- {{cloze 独立运行spring项目}}
 	- {{cloze 内嵌servlet容器}}
@@ -123,11 +123,11 @@
 		- 通过类加载器，读取classpath下的 {{cloze spring.factories}} 配置文件 和 {{cloze application.yml}} 资源文件
 		- 创建 ApplicationContext，扫描指定包下的class文件，创建BeanFactory，开始自动装配
 - 如何自定义一个SpringBoot-start #card
-  card-last-interval:: 15.05
-  card-repeats:: 4
-  card-ease-factor:: 1.94
-  card-next-schedule:: 2023-04-05T02:57:44.580Z
-  card-last-reviewed:: 2023-03-21T01:57:44.580Z
+  card-last-interval:: 22.51
+  card-repeats:: 5
+  card-ease-factor:: 1.8
+  card-next-schedule:: 2023-05-27T19:48:48.028Z
+  card-last-reviewed:: 2023-05-05T07:48:48.028Z
   card-last-score:: 3
 	- 引入 `spring-boot-auto-config` 和 `spring-boot-configuration-processor` 包
 	- 定义并实现自己的Bean
