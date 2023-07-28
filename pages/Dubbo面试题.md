@@ -56,6 +56,12 @@
 	- 作为单纯的 {{cloze RPC}} 使用
 	- 微服务化 对应用进行 {{cloze 服务拆分}} 解决 {{cloze 服务依赖关系}} 和 {{cloze 服务扩容}} 问题
 - Dubbo如何实现服务治理 #card
+  card-last-interval:: 0.55
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-07-28T22:39:31.883Z
+  card-last-reviewed:: 2023-07-28T09:39:31.884Z
+  card-last-score:: 3
 	- {{cloze 自动生成服务间的调用链路}} 链路，需要借助其他框架如 {{cloze SkyWalking}}
 	- {{cloze 服务访问压力以及时长统计}} 时长
 	- {{cloze 服务可用性监控、失败告警监控}} 监控
@@ -80,6 +86,12 @@
 		- transport {{cloze 抽象 mina 和 netty 为统一接口}}
 		- serialize {{cloze 数据序列化}}
 - 说说常见的限流算法 #card
+  card-last-interval:: 0.55
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-07-28T22:38:23.471Z
+  card-last-reviewed:: 2023-07-28T09:38:23.472Z
+  card-last-score:: 3
 	- 固定窗口/计数器
 		- 计算一个周期T内的访问次数
 	- 滑动窗口
@@ -91,11 +103,18 @@
 	- 令牌桶
 		- 程序以r（r=时间周期/限流值）的速度向令牌桶中增加令牌，直到令牌桶满
 		- 请求到达时向令牌桶请求令牌，如获取到令牌则通过请求，否则触发限流策略
+		- 支持突发流量
 - Dubbo中用到了哪些设计模式 #card
-	- Filter {{cloze 责任链模式}}
-	- RegisteryService {{cloze 观察者模式}}
-	- xxxWrapper {{cloze 修饰器模式}}
-	- xxxFactory {{cloze 工厂模式}}
+  card-last-interval:: 0.55
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-07-28T22:40:25.098Z
+  card-last-reviewed:: 2023-07-28T09:40:25.098Z
+  card-last-score:: 3
+	- Filter 责任链模式
+	- RegisteryService 观察者模式
+	- xxxWrapper 修饰器模式
+	- xxxFactory 工厂模式
 	- 适配器模式
 	- 代理模式
 - Dubbo的服务暴露流程 #card
@@ -111,6 +130,12 @@
 	- 通过 {{cloze DubboProtocol}} 的实现类，把包装后的 {{cloze invoker}} 转换成 {{cloze exporter}} 对象。随后启动服务器端的server来监听端口，等待服务调用的到来
 	- 通过 {{cloze RegistryProtocol}} 对象，保存URL地址和 {{cloze invoker}} 之间的映射关系，同时把这层映射关系注册到服务中心
 - Dubbo的服务引用流程 #card
+  card-last-interval:: 0.55
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-07-28T22:39:13.602Z
+  card-last-reviewed:: 2023-07-28T09:39:13.602Z
+  card-last-score:: 3
 	- 注册中心拉取配置 -> 开启client -> 创建invoker -> 创建代理服务
 	- Dubbo客户端根据config文件里的信息从 {{cloze 注册中心}} 里订阅服务，并 {{cloze 缓存到本地}} ，后续的服务相关信息的会动态更新到本地。
 	- 根据provider的地址和接口连接到 {{cloze 服务端server}} ，开启 {{cloze 客户端client}} ，再 {{cloze 创建invoker}} 。
