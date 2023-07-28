@@ -48,8 +48,8 @@
 - Dubbo的主要应用场景 #card
 	- 作为单纯的 {{cloze RPC}} 使用
 	- 微服务化 对应用进行 {{cloze 服务拆分}} 解决 {{cloze 服务依赖关系}} 和 {{cloze 服务扩容}} 问题
-- Dubbo如何时效服务治理 #card
-	- {{cloze 自动生成服务间的调用链路}} 链路
+- Dubbo如何实现服务治理 #card
+	- {{cloze 自动生成服务间的调用链路}} 链路，需要借助其他框架
 	- {{cloze 服务访问压力以及时长统计}} 时长
 	- {{cloze 服务可用性监控、失败告警监控}} 监控
 - Dubbo的工作原理及分层 #card
@@ -92,5 +92,15 @@
 	- 通过 {{cloze DubboProtocol}} 的实现类，把包装后的 {{cloze invoker}} 转换成 {{cloze exporter}} 对象。随后启动服务器端的server来监听端口，等待服务调用的到来
 	- 通过 {{cloze RegistryProtocol}} 对象，保存URL地址和 {{cloze invoker}} 之间的映射关系，同时把这层映射关系注册到服务中心
 - Dubbo的服务引用流程 #card
-	- 注册中心拉取配置 -> 开启client -> 创建in
+	- 注册中心拉取配置 -> 开启client -> 创建invoker -> 创建代理服务
+	- Dubbo客户端根据config文件里的信息从 {{cloze 注册中心}} 里订阅服务，并 {{cloze 缓存到本地}} ，后续的服务相关信息的会动态更新到本地。
+	- 根据provider的地址和接口连接到 {{cloze 服务端server}} ，开启 {{cloze 客户端client}} ，再 {{cloze 创建invoker}} 。
+	- 用 {{cloze invoker}} 为服务接口生成代理对象，这个代理对象是用来远程调用。
+- 设计一个RPC框架要考虑什么 #card
+	- {{cloze 注册中心}} 让消费者知道有哪些服务，提供者知道自己提供了什么服务
+	- {{cloze 负载均衡}} 一个接口多台实例，client该调用哪一个
+	- {{cloze 容错机制}} 发生异常后该如何处理
+	- {{cloze 通信协议 和 序列化协议}} p-c之间如何交互，参数怎么传递
+	- {{cloze 监控、配置、日志}} 附加功能
+	-
 -
