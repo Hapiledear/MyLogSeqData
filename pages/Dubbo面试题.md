@@ -85,5 +85,12 @@
 	- xxxFactory {{cloze 工厂模式}}
 	- 适配器模式
 	- 代理模式
--
+- Dubbo的服务暴露流程 #card
+	- serviceConfig -> invoker -> expoder -> server -> 注册中心
+	- 解析 {{cloze dubbo标签}} ,通过触发ContextRefreshEvent事件的回调方法开始暴露服务的动作
+	- 使用 {{cloze 代理模式}} ，把服务暴露接口封装成 {{cloze invoker}} 对象，在该对象里包含需要执行的方法名、参数和对应的URL地址。
+	- 通过 {{cloze DubboProtocol}} 的实现类，把包装后的 {{cloze invoker}} 转换成 {{cloze exporter}} 对象。随后启动服务器端的server来监听端口，等待服务调用的到来
+	- 通过 {{cloze RegistryProtocol}} 对象，保存URL地址和 {{cloze invoker}} 之间的映射关系，同时把这层映射关系注册到服务中心
+- Dubbo的服务引用流程 #card
+	- 注册中心拉取配置 -> 开启client -> 创建in
 -
