@@ -52,4 +52,18 @@
 	- {{cloze 自动生成服务间的调用链路}} 链路
 	- {{cloze 服务访问压力以及时长统计}} 时长
 	- {{cloze 服务可用性监控、失败告警监控}} 监控
+- Dubbo的工作原理及分层 #card
+	- Biz
+		- service {{cloze 实现业务代码}}
+	- RPC
+		- config {{cloze Dubbo相关配置}}
+		- proxy {{cloze 透明生成客户端的stub和服务端的skeleton}} {{cloze 调用的是接口，没有实现类。所以得生成代理}}
+		- registery {{cloze 服务注册与发现}}
+		- cluster层 {{cloze 提供路由及负载均衡}}
+	- monitor {{cloze 对调用次数和时长进行监控}}
+	- protocol {{cloze 封装RPC调用}}
+	- exchange {{cloze 封装请求响应模式，同步转异步}}
+	- transport {{cloze 抽象 mina 和 netty 为统一接口}}
+	- serialize {{cloze 数据序列化}}
+-
 -
