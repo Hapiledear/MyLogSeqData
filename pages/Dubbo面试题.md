@@ -43,4 +43,6 @@
 - Dubbo的主要应用场景 #card
 	- 作为单纯的 {{cloze RPC}} 使用
 	- 微服务化 对应用进行 {{cloze 服务拆分}} 解决 {{cloze 服务依赖关系}} 和 {{cloze 服务扩容}} 问题
+- Dubbo如何时效服务治理 #card
+	- {{cloze 自动生成}}
 -
