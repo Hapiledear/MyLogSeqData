@@ -47,6 +47,12 @@
 	- RPC自带负载均衡和服务上下线，而传统的HTTP需要修改Nginx
 	- 但是Dubbo自身并没有 熔断器、网关、服务跟踪等其他微服务必要组件
 - Dubbo的主要应用场景 #card
+  card-last-interval:: 0.55
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-07-28T22:35:11.076Z
+  card-last-reviewed:: 2023-07-28T09:35:11.077Z
+  card-last-score:: 3
 	- 作为单纯的 {{cloze RPC}} 使用
 	- 微服务化 对应用进行 {{cloze 服务拆分}} 解决 {{cloze 服务依赖关系}} 和 {{cloze 服务扩容}} 问题
 - Dubbo如何实现服务治理 #card
@@ -54,6 +60,12 @@
 	- {{cloze 服务访问压力以及时长统计}} 时长
 	- {{cloze 服务可用性监控、失败告警监控}} 监控
 - Dubbo的工作原理及分层 #card
+  card-last-interval:: 0.55
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-07-28T22:29:07.619Z
+  card-last-reviewed:: 2023-07-28T09:29:07.620Z
+  card-last-score:: 3
 	- Biz 业务逻辑 自己来提供 {{cloze 接口和实现还有一些配置信息}}
 		- service {{cloze 实现业务代码}}
 		- config {{cloze Dubbo相关配置}}
@@ -87,6 +99,12 @@
 	- 适配器模式
 	- 代理模式
 - Dubbo的服务暴露流程 #card
+  card-last-interval:: 0.55
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-07-28T22:32:16.728Z
+  card-last-reviewed:: 2023-07-28T09:32:16.728Z
+  card-last-score:: 3
 	- serviceConfig -> invoker -> expoder -> server -> 注册中心
 	- 解析 {{cloze dubbo标签}} ,通过触发ContextRefreshEvent事件的回调方法开始暴露服务的动作
 	- 使用 {{cloze 代理模式}} ，把服务暴露接口封装成 {{cloze invoker}} 对象，在该对象里包含需要执行的方法名、参数和对应的URL地址。
@@ -98,6 +116,12 @@
 	- 根据provider的地址和接口连接到 {{cloze 服务端server}} ，开启 {{cloze 客户端client}} ，再 {{cloze 创建invoker}} 。
 	- 用 {{cloze invoker}} 为服务接口生成代理对象，这个代理对象是用来远程调用。
 - 设计一个RPC框架要考虑什么 #card
+  card-last-interval:: -1
+  card-repeats:: 1
+  card-ease-factor:: 2.5
+  card-next-schedule:: 2023-07-28T16:00:00.000Z
+  card-last-reviewed:: 2023-07-28T09:29:35.896Z
+  card-last-score:: 1
 	- {{cloze 注册中心}} 让消费者知道有哪些服务，提供者知道自己提供了什么服务
 	- {{cloze 负载均衡}} 一个接口多台实例，client该调用哪一个
 	- {{cloze 容错机制}} 发生异常后该如何处理
