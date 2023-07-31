@@ -3,6 +3,8 @@
 		- Remembered:   0 (0%)
 		- Forgotten :   0 (0%)
 - 如无特殊说明，题中出现的存储引擎均为 [[InnoDb]]
+- [[分布式事务]]
+-
 - SQL查询过程 #card
   card-last-interval:: 27.13
   card-repeats:: 7
