@@ -48,30 +48,30 @@
 	- RPC框架通常自带负载均衡和服务上下线，而传统的HTTP需要修改Nginx
 	- 但是Dubbo自身并没有 熔断器、网关、服务跟踪等其他微服务必要组件
 - Dubbo的主要应用场景 #card
-  card-last-interval:: 0.55
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-07-28T22:35:11.076Z
-  card-last-reviewed:: 2023-07-28T09:35:11.077Z
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-08-04T03:35:17.681Z
+  card-last-reviewed:: 2023-07-31T03:35:17.681Z
   card-last-score:: 3
 	- 作为单纯的 {{cloze RPC}} 使用
 	- 微服务化 对应用进行 {{cloze 服务拆分}} 解决 {{cloze 服务依赖关系}} 和 {{cloze 服务扩容}} 问题
 - Dubbo如何实现服务治理 #card
-  card-last-interval:: 0.55
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-07-28T22:39:31.883Z
-  card-last-reviewed:: 2023-07-28T09:39:31.884Z
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-08-04T03:37:33.544Z
+  card-last-reviewed:: 2023-07-31T03:37:33.544Z
   card-last-score:: 3
 	- {{cloze 自动生成服务间的调用链路}} 链路，需要借助其他框架如 {{cloze SkyWalking}}
 	- {{cloze 服务访问压力以及时长统计}} 时长
 	- {{cloze 服务可用性监控、失败告警监控}} 监控
 - Dubbo的工作原理及分层 #card
-  card-last-interval:: 0.55
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-07-28T22:29:07.619Z
-  card-last-reviewed:: 2023-07-28T09:29:07.620Z
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-08-04T03:34:16.855Z
+  card-last-reviewed:: 2023-07-31T03:34:16.856Z
   card-last-score:: 3
 	- Biz 业务逻辑 自己来提供 {{cloze 接口和实现还有一些配置信息}}
 		- service {{cloze 实现业务代码}}
@@ -87,11 +87,11 @@
 		- transport {{cloze 抽象 mina 和 netty 为统一接口}}
 		- serialize {{cloze 数据序列化}}
 - 说说常见的限流算法 #card
-  card-last-interval:: 0.55
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-07-28T22:38:23.471Z
-  card-last-reviewed:: 2023-07-28T09:38:23.472Z
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-08-04T03:35:30.834Z
+  card-last-reviewed:: 2023-07-31T03:35:30.834Z
   card-last-score:: 3
 	- 固定窗口/计数器
 		- 计算一个周期T内的访问次数
@@ -106,11 +106,11 @@
 		- 请求到达时向令牌桶请求令牌，如获取到令牌则通过请求，否则触发限流策略
 		- 支持突发流量
 - Dubbo中用到了哪些设计模式 #card
-  card-last-interval:: 0.55
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-07-28T22:40:25.098Z
-  card-last-reviewed:: 2023-07-28T09:40:25.098Z
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-08-04T03:37:47.693Z
+  card-last-reviewed:: 2023-07-31T03:37:47.693Z
   card-last-score:: 3
 	- Filter 责任链模式
 	- RegisteryService 观察者模式
@@ -119,11 +119,11 @@
 	- 适配器模式
 	- 代理模式
 - Dubbo的服务暴露流程 #card
-  card-last-interval:: 0.55
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-07-28T22:32:16.728Z
-  card-last-reviewed:: 2023-07-28T09:32:16.728Z
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-08-04T03:35:05.889Z
+  card-last-reviewed:: 2023-07-31T03:35:05.889Z
   card-last-score:: 3
 	- serviceConfig -> invoker -> expoder -> server -> 注册中心
 	- 解析 {{cloze dubbo标签}} ,通过触发ContextRefreshEvent事件的回调方法开始暴露服务的动作
@@ -131,23 +131,23 @@
 	- 通过 {{cloze DubboProtocol}} 的实现类，把包装后的 {{cloze invoker}} 转换成 {{cloze exporter}} 对象。随后启动服务器端的server来监听端口，等待服务调用的到来
 	- 通过 {{cloze RegistryProtocol}} 对象，保存URL地址和 {{cloze invoker}} 之间的映射关系，同时把这层映射关系注册到服务中心
 - Dubbo的服务引用流程 #card
-  card-last-interval:: 0.55
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-07-28T22:39:13.602Z
-  card-last-reviewed:: 2023-07-28T09:39:13.602Z
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-08-04T03:35:50.243Z
+  card-last-reviewed:: 2023-07-31T03:35:50.243Z
   card-last-score:: 3
 	- 注册中心拉取配置 -> 开启client -> 创建invoker -> 创建代理服务
 	- Dubbo客户端根据config文件里的信息从 {{cloze 注册中心}} 里订阅服务，并 {{cloze 缓存到本地}} ，后续的服务相关信息的会动态更新到本地。
 	- 根据provider的地址和接口连接到 {{cloze 服务端server}} ，开启 {{cloze 客户端client}} ，再 {{cloze 创建invoker}} 。
 	- 用 {{cloze invoker}} 为服务接口生成代理对象，这个代理对象是用来远程调用。
 - 设计一个RPC框架要考虑什么 #card
-  card-last-interval:: -1
-  card-repeats:: 1
-  card-ease-factor:: 2.5
-  card-next-schedule:: 2023-07-28T16:00:00.000Z
-  card-last-reviewed:: 2023-07-28T09:29:35.896Z
-  card-last-score:: 1
+  card-last-interval:: 0.55
+  card-repeats:: 2
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-07-31T16:33:21.012Z
+  card-last-reviewed:: 2023-07-31T03:33:21.013Z
+  card-last-score:: 3
 	- {{cloze 注册中心}} 让消费者知道有哪些服务，提供者知道自己提供了什么服务
 	- {{cloze 负载均衡}} 一个接口多台实例，client该调用哪一个
 	- {{cloze 容错机制}} 发生异常后该如何处理
