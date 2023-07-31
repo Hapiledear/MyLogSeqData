@@ -1,11 +1,11 @@
 - {{cards [[JVM面试题]] }}
 - [[Java 元空间]] 会产生内存溢出吗？ #card
   card-last-score:: 3
-  card-repeats:: 5
-  card-next-schedule:: 2023-05-09T09:37:14.729Z
-  card-last-interval:: 21.01
-  card-ease-factor:: 1.8
-  card-last-reviewed:: 2023-04-18T09:37:14.730Z
+  card-repeats:: 6
+  card-next-schedule:: 2023-08-30T10:08:34.249Z
+  card-last-interval:: 30.37
+  card-ease-factor:: 1.66
+  card-last-reviewed:: 2023-07-31T02:08:34.249Z
 	- 元空间的由来。 {{cloze 从java8+开始，用 元空间 替代了 永久代/方法区}}
 	- 元空间的内存 {{cloze 并不使用虚拟机的内存，而是直接使用机器内存}}
 	- 出现OOM的原因 {{cloze 加载到内存中的class文件数量太多or体积太大}}
@@ -212,11 +212,11 @@
 		- 年龄 = 相同年龄对象大小之和 > S 区的一半
 	- 老年代满了则触发 Full GC
 - JVM中的垃圾回收器有哪些,及其工作原理 #card
-  card-last-interval:: 8.1
-  card-repeats:: 6
-  card-ease-factor:: 1.8
-  card-next-schedule:: 2023-05-13T09:50:37.795Z
-  card-last-reviewed:: 2023-05-05T07:50:37.795Z
+  card-last-interval:: 50.42
+  card-repeats:: 7
+  card-ease-factor:: 1.66
+  card-next-schedule:: 2023-09-19T12:12:05.313Z
+  card-last-reviewed:: 2023-07-31T02:12:05.313Z
   card-last-score:: 3
 	- Serial
 		- 串行收集
@@ -259,11 +259,11 @@
 		- 类及其所有对象都被回收
 		- 常量池中的常量无任何引用
 - ## 如何排查JVM问题 #card
-  card-last-interval:: 5.2
-  card-repeats:: 3
+  card-last-interval:: 6.5
+  card-repeats:: 4
   card-ease-factor:: 1.3
-  card-next-schedule:: 2023-05-10T11:51:53.983Z
-  card-last-reviewed:: 2023-05-05T07:51:53.983Z
+  card-next-schedule:: 2023-08-06T14:09:23.420Z
+  card-last-reviewed:: 2023-07-31T02:09:23.421Z
   card-last-score:: 3
 	- 使用 {{cloze `jmap`}} 查看各区域的使用情况
 	- 使用 {{cloze `jstack`}} 查看线程的运行情况，关注阻塞的线程、是否出现了死锁

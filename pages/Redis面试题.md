@@ -97,11 +97,11 @@
 	- 使用事务 实现CAS
 		- {{cloze 事务具有watch机制,一旦被监测的key发生更改，本次提交就失效了}}
 - Redis为什么快？ #card
-  card-last-interval:: 21.01
-  card-repeats:: 5
-  card-ease-factor:: 1.8
-  card-next-schedule:: 2023-05-09T09:37:19.995Z
-  card-last-reviewed:: 2023-04-18T09:37:19.995Z
+  card-last-interval:: 30.37
+  card-repeats:: 6
+  card-ease-factor:: 1.66
+  card-next-schedule:: 2023-08-30T10:08:53.258Z
+  card-last-reviewed:: 2023-07-31T02:08:53.258Z
   card-last-score:: 3
 	- 基于内存操作
 	- 使用单线程， {{cloze 避免线程切换和竞争产生的消耗}}
@@ -154,11 +154,11 @@
 		- {{cloze 将过期的、不再使用的、重复的以及可优化的命令进行优化，重新生成AOF文件}}
 		- 流程 {{cloze fork一个子进程}} {{cloze 重写期间，主线程的写命令被保存在缓冲区中}}
 - RDB和AOF各自的优缺点 #card
-  card-last-interval:: 21.01
-  card-repeats:: 5
-  card-ease-factor:: 1.8
-  card-next-schedule:: 2023-05-09T09:30:27.978Z
-  card-last-reviewed:: 2023-04-18T09:30:27.978Z
+  card-last-interval:: 30.37
+  card-repeats:: 6
+  card-ease-factor:: 1.66
+  card-next-schedule:: 2023-08-30T10:04:08.514Z
+  card-last-reviewed:: 2023-07-31T02:04:08.514Z
   card-last-score:: 3
 	- RDB优点
 		- 生成的文件 {{cloze 只有一个紧凑的二进制文件，非常适合备份、全量复制场景}}

@@ -159,11 +159,11 @@
 		- 插入、更新、删除操作
 		- 如何解决幻读 {{cloze next-key Lock 行锁与间隙锁的组合}}
 - 什么是MVCC #card
-  card-last-interval:: 21.01
-  card-repeats:: 5
-  card-ease-factor:: 1.8
-  card-next-schedule:: 2023-05-09T09:30:45.841Z
-  card-last-reviewed:: 2023-04-18T09:30:45.841Z
+  card-last-interval:: 30.37
+  card-repeats:: 6
+  card-ease-factor:: 1.66
+  card-next-schedule:: 2023-08-30T10:05:03.643Z
+  card-last-reviewed:: 2023-07-31T02:05:03.644Z
   card-last-score:: 3
 	- 多版本并发控制
 	- 只工作在两种事物隔离级别下
@@ -362,11 +362,11 @@
 	- Master开启 `IO线程` 开始传输bin log
 	- Slave 启动线程  `SQL线程` ，实时监控 中继日志是否有更新，解析SQL语句，在S库中执行
 - 分库分表策略 及 数据分片规则 #card
-  card-last-interval:: 21.01
-  card-repeats:: 5
-  card-ease-factor:: 1.8
-  card-next-schedule:: 2023-05-09T09:34:47.332Z
-  card-last-reviewed:: 2023-04-18T09:34:47.332Z
+  card-last-interval:: 30.37
+  card-repeats:: 6
+  card-ease-factor:: 1.66
+  card-next-schedule:: 2023-08-30T10:05:28.391Z
+  card-last-reviewed:: 2023-07-31T02:05:28.391Z
   card-last-score:: 3
 	- 水平拆分
 		- {{cloze 将一张表中的数据，按照一定策略(Hash取模、range) ，拆分到多个库/表中}}
