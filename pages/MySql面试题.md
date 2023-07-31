@@ -67,11 +67,11 @@
   card-next-schedule:: 2023-08-27T06:24:42.757Z
   card-last-reviewed:: 2023-07-31T03:24:42.758Z
   card-last-score:: 3
+	- 一致性 是目标，其他三者是手段
+		- {{cloze 事物在执行前后其状态一致,A+B=100 无论A B怎么转账，最终都是100}}
+		- {{cloze Undo Log}}
 	- 原子性
 		- {{cloze 在事物中的一组操作，要么全部成功提交，要么全部失败回滚}}
-		- {{cloze Undo Log}}
-	- 一致性
-		- {{cloze 事物在执行前后其状态一致,A+B=100 无论A B怎么转账，最终都是100}}
 		- {{cloze Undo Log}}
 	- 持久性
 		- {{cloze 事物一旦提交，发生的改变就是永久的}}
