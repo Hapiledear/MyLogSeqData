@@ -45,11 +45,11 @@
 	- 上锁过程 {{cloze 在对象头中，记录锁的类型 和 指向栈中的锁记录指针}}
 	- 如果没有获取到锁，则会 {{cloze 让线程自旋等待，并不放弃CPU的执行时间}}
 - synchronized的锁升级机制 #card #Java并发
-  card-last-interval:: 30.37
-  card-repeats:: 6
-  card-ease-factor:: 1.66
-  card-next-schedule:: 2023-06-04T15:33:09.100Z
-  card-last-reviewed:: 2023-05-05T07:33:09.100Z
+  card-last-interval:: 27.13
+  card-repeats:: 7
+  card-ease-factor:: 1.52
+  card-next-schedule:: 2023-08-27T06:03:28.655Z
+  card-last-reviewed:: 2023-07-31T03:03:28.655Z
   card-last-score:: 3
 	- 锁消除 无锁
 		- {{cloze 在编译时明显检测到不会被其他线程访问到}}
@@ -66,14 +66,14 @@
 		- 协作机制
 			- 持有许可的线程可以 {{cloze 主动放弃许可进入阻塞}} {{cloze 发送信号，唤起阻塞线程}}
 - synchronized和volatie的区别  #card #Java并发
-  card-last-interval:: 30.37
-  card-repeats:: 6
-  card-ease-factor:: 1.66
-  card-next-schedule:: 2023-06-04T15:38:02.148Z
-  card-last-reviewed:: 2023-05-05T07:38:02.149Z
+  card-last-interval:: 27.13
+  card-repeats:: 7
+  card-ease-factor:: 1.52
+  card-next-schedule:: 2023-08-27T06:12:54.852Z
+  card-last-reviewed:: 2023-07-31T03:12:54.852Z
   card-last-score:: 3
 	- 修饰的地方 {{cloze volatile是变量修饰,synchronized可以修饰类、方法、变量}}
-	- 解决的问题 {{cloze volatile 保证的是有序性和可进行，不能保证原子性，synch 保证的是可见性(Happends-before)和原子性}}
+	- 解决的问题 {{cloze volatile 保证的是有序性和可见行，不能保证原子性，synch 保证的是可见性(Happends-before)和原子性}}
 	- 线程是否阻塞 {{cloze volatie不会造成阻塞 synch 可能造成阻塞}}
 	- 是否被编译优化 {{cloze volatile不会被编译优化，synch可以被优化}}
 	- 实际开发中 {{cloze synch比volatile用得多一点，volatile需要搭配automit类使用}}
@@ -88,11 +88,11 @@
 	- 实现,是否加锁 {{cloze 内存位置v 预期原值A和新值B ，如果内存值=A 那么将内存值改为B}} {{cloze 不加锁，但会自旋一定次数}}
 	- 实现 {{cloze atomic下的类大多是使用CAS操作来实现的}}
 - CAS会产生什么问题以及解决办法 #card #Java并发
-  card-last-interval:: 30.37
-  card-repeats:: 6
-  card-ease-factor:: 1.66
-  card-next-schedule:: 2023-06-04T15:37:17.220Z
-  card-last-reviewed:: 2023-05-05T07:37:17.220Z
+  card-last-interval:: 27.13
+  card-repeats:: 7
+  card-ease-factor:: 1.52
+  card-next-schedule:: 2023-08-27T06:11:55.809Z
+  card-last-reviewed:: 2023-07-31T03:11:55.809Z
   card-last-score:: 3
 	- ABA问题
 		- {{cloze 用链表的例子更直观}}
@@ -103,11 +103,11 @@
 	- 只能保证一个共享变量的原子操作
 		- {{cloze 将两个变量放入一个对象中}} {{cloze 上锁}}
 - Lock与synchronize的区别 #card #Java并发
-  card-last-interval:: 30.37
-  card-repeats:: 6
-  card-ease-factor:: 1.66
-  card-next-schedule:: 2023-06-04T15:35:54.521Z
-  card-last-reviewed:: 2023-05-05T07:35:54.521Z
+  card-last-interval:: 27.13
+  card-repeats:: 7
+  card-ease-factor:: 1.52
+  card-next-schedule:: 2023-08-27T06:08:42.429Z
+  card-last-reviewed:: 2023-07-31T03:08:42.430Z
   card-last-score:: 3
 	- 实现方式
 		- {{cloze Lock基于Java类实现，易于扩展，功能丰富}} {{cloze synch基于对象头实现，无法自定义}}
@@ -194,11 +194,11 @@
 		- {{cloze 在队列满时，存储元素的线程会等待队列可用}}
 	- 阻塞队列的经典应用场景是 {{cloze socket客户端的数据读取和解析}}
 - 什么是原子操作 #card #Java并发
-  card-last-interval:: 30.37
-  card-repeats:: 6
-  card-ease-factor:: 1.66
-  card-next-schedule:: 2023-06-04T15:37:29.105Z
-  card-last-reviewed:: 2023-05-05T07:37:29.105Z
+  card-last-interval:: 27.13
+  card-repeats:: 7
+  card-ease-factor:: 1.52
+  card-next-schedule:: 2023-08-27T06:12:07.975Z
+  card-last-reviewed:: 2023-07-31T03:12:07.975Z
   card-last-score:: 3
 	- 定义 {{cloze 一连串操作，要么都执行完，要么都不执行}}
 	- 如何保证原子性 {{cloze CAS指令}} {{cloze Lock和synchroize}}
@@ -252,11 +252,11 @@
 		- {{cloze 线程隔离}}
 		- {{cloze 跨函数传递数据}}
 - 线程池调度流程&各项参数 #card #Java并发
-  card-last-interval:: 30.37
-  card-repeats:: 6
-  card-ease-factor:: 1.66
-  card-next-schedule:: 2023-06-04T15:33:52.165Z
-  card-last-reviewed:: 2023-05-05T07:33:52.165Z
+  card-last-interval:: 27.13
+  card-repeats:: 7
+  card-ease-factor:: 1.52
+  card-next-schedule:: 2023-08-27T06:04:19.256Z
+  card-last-reviewed:: 2023-07-31T03:04:19.256Z
   card-last-score:: 3
 	- 任务优先占用 {{cloze 核心线程数}}
 	- 核心线程满 {{cloze 进入等待队列}}

@@ -11,11 +11,11 @@
 	- 限流&幂等&分布式锁
 	- 一级页面熔断降级 {{cloze 缓存数据，降级后直接取用}}
 - 缓存使用不当会带来哪些后果，解决办法 #card
-  card-last-interval:: 30.37
-  card-repeats:: 6
-  card-ease-factor:: 1.66
-  card-next-schedule:: 2023-06-04T15:35:28.575Z
-  card-last-reviewed:: 2023-05-05T07:35:28.575Z
+  card-last-interval:: 27.13
+  card-repeats:: 7
+  card-ease-factor:: 1.52
+  card-next-schedule:: 2023-08-27T06:08:14.646Z
+  card-last-reviewed:: 2023-07-31T03:08:14.647Z
   card-last-score:: 3
 	- 缓存与数据库的双写不一致
 		- 读的时候 {{cloze 先读缓存，再读数据库，最后把读取的数据放入缓存}}

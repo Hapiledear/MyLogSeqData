@@ -48,11 +48,11 @@
 		- {{cloze 基于NIO的 DirectByteBuffer 而产生的堆外内存}} NIO
 		- {{cloze 通过DirectByteBuffer对象的虚引用实现堆外内存的释放}} 如何回收
 - 堆内存的组成 #card
-  card-last-interval:: 30.37
-  card-repeats:: 6
-  card-ease-factor:: 1.66
-  card-next-schedule:: 2023-06-04T15:36:14.856Z
-  card-last-reviewed:: 2023-05-05T07:36:14.857Z
+  card-last-interval:: 27.13
+  card-repeats:: 7
+  card-ease-factor:: 1.52
+  card-next-schedule:: 2023-08-27T06:11:31.017Z
+  card-last-reviewed:: 2023-07-31T03:11:31.017Z
   card-last-score:: 3
 	- {{cloze 1/3的年轻代 1/2的老年代}} 2代
 	- {{cloze  年轻代又分 eden区 s1和s2区 比例为 8:1:1}} 3区
@@ -67,11 +67,11 @@
 	- {{cloze DirectByteBuffer 所申请的直接内存}} NIO
 	- {{cloze 方法区的具体实现 元空间}}
 - ## 为什么 字符串常量池 #常量池 被移动到了堆中？ #card
-  card-last-interval:: 30.37
-  card-repeats:: 6
-  card-ease-factor:: 1.66
-  card-next-schedule:: 2023-06-04T15:36:05.792Z
-  card-last-reviewed:: 2023-05-05T07:36:05.792Z
+  card-last-interval:: 27.13
+  card-repeats:: 7
+  card-ease-factor:: 1.52
+  card-next-schedule:: 2023-08-27T06:11:15.509Z
+  card-last-reviewed:: 2023-07-31T03:11:15.510Z
   card-last-score:: 3
 	- [[Java 永久代]]在 Full GC/Major GC  时才会触发，条件苛刻
 	- 开发中会有大量字符串被创建，回收效率低导致永久代内存不足
@@ -228,11 +228,11 @@
 		- 将堆内存分块，每个块都看作Eden s1 s2 Huge old
 		- 只针对新生代的Young GC 和 新生代&老年代的Mix GC
 - 4种引用及应用场景 #card
-  card-last-interval:: 30.37
-  card-repeats:: 6
-  card-ease-factor:: 1.66
-  card-next-schedule:: 2023-06-04T15:34:53.378Z
-  card-last-reviewed:: 2023-05-05T07:34:53.379Z
+  card-last-interval:: 27.13
+  card-repeats:: 7
+  card-ease-factor:: 1.52
+  card-next-schedule:: 2023-08-27T06:05:00.954Z
+  card-last-reviewed:: 2023-07-31T03:05:00.954Z
   card-last-score:: 3
 	- 强引用
 		- new关键字触发
@@ -249,11 +249,11 @@
 		- 每次GC时回收
 		- 利用回收时的通知机制来管理堆外内存
 - 永久代会发生垃圾回收吗 #card
-  card-last-interval:: 30.37
-  card-repeats:: 6
-  card-ease-factor:: 1.66
-  card-next-schedule:: 2023-06-04T15:37:24.632Z
-  card-last-reviewed:: 2023-05-05T07:37:24.632Z
+  card-last-interval:: 27.13
+  card-repeats:: 7
+  card-ease-factor:: 1.52
+  card-next-schedule:: 2023-08-27T06:12:02.376Z
+  card-last-reviewed:: 2023-07-31T03:12:02.377Z
   card-last-score:: 3
 	- 会，但是回收的条件比较苛刻
 		- 类及其所有对象都被回收
@@ -285,11 +285,11 @@
 	- {{cloze -xss1m}} 设置单个线程栈大小
 	- {{cloze -xx:maxMetaspaceSize=2g}} 设置元空间的最大值
 - 对象一定都是在堆上分配吗？ 逃逸分析 #card
-  card-last-interval:: 30.37
-  card-repeats:: 6
-  card-ease-factor:: 1.66
-  card-next-schedule:: 2023-06-04T15:37:38.198Z
-  card-last-reviewed:: 2023-05-05T07:37:38.198Z
+  card-last-interval:: 27.13
+  card-repeats:: 7
+  card-ease-factor:: 1.52
+  card-next-schedule:: 2023-08-27T06:12:23.207Z
+  card-last-reviewed:: 2023-07-31T03:12:23.207Z
   card-last-score:: 3
 	- 如果对象不会逃逸出方法外部，则会在栈上分配
 	- 如果符合标量替换条件(不逃逸&不会被本线程外的线程访问)，则会将对象分解成若干个方法内从成员变量
