@@ -123,11 +123,11 @@
 		- 通过类加载器，读取classpath下的 {{cloze spring.factories}} 配置文件 和 {{cloze application.yml}} 资源文件
 		- 创建 ApplicationContext，扫描指定包下的class文件，创建BeanFactory，开始自动装配
 - 如何自定义一个SpringBoot-start #card
-  card-last-interval:: 22.51
-  card-repeats:: 5
-  card-ease-factor:: 1.8
-  card-next-schedule:: 2023-05-27T19:48:48.028Z
-  card-last-reviewed:: 2023-05-05T07:48:48.028Z
+  card-last-interval:: 30.37
+  card-repeats:: 6
+  card-ease-factor:: 1.66
+  card-next-schedule:: 2023-08-30T10:33:38.504Z
+  card-last-reviewed:: 2023-07-31T02:33:38.505Z
   card-last-score:: 3
 	- 引入 `spring-boot-auto-config` 和 `spring-boot-configuration-processor` 包
 	- 定义并实现自己的Bean

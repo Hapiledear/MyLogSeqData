@@ -175,11 +175,11 @@
 	- 解析 {{cloze 将常量池中的符号引用替换成直接引用}}
 	- 初始化 {{cloze 对静态变量和代码块执行初始化工作}}
 - 类加载器分类和双亲委派模型 #card
-  card-last-interval:: 30.37
-  card-repeats:: 6
-  card-ease-factor:: 1.66
-  card-next-schedule:: 2023-06-04T15:31:16.570Z
-  card-last-reviewed:: 2023-05-05T07:31:16.571Z
+  card-last-interval:: 27.13
+  card-repeats:: 7
+  card-ease-factor:: 1.52
+  card-next-schedule:: 2023-08-27T05:42:29.478Z
+  card-last-reviewed:: 2023-07-31T02:42:29.478Z
   card-last-score:: 3
 	- 启动类加载器
 	- 扩展类加载器
@@ -324,11 +324,11 @@
 		- 空循环，或者空自旋 {{cloze 使用Thread.sleep或者加锁，让线程适当的阻塞}}
 		- 在循环的代码逻辑中，创建大量的新对象 {{cloze 减少对象的创建数量 or 使用对象池}}
 - JVM的内存分配为什么是1:1:8 #card
-  card-last-interval:: 22.51
-  card-repeats:: 5
-  card-ease-factor:: 1.8
-  card-next-schedule:: 2023-05-27T19:49:17.629Z
-  card-last-reviewed:: 2023-05-05T07:49:17.629Z
+  card-last-interval:: 30.37
+  card-repeats:: 6
+  card-ease-factor:: 1.66
+  card-next-schedule:: 2023-08-30T10:34:43.087Z
+  card-last-reviewed:: 2023-07-31T02:34:43.087Z
   card-last-score:: 3
 	- 为什么要有Eden和servivor区
 		- {{cloze 减少被送入老年代的对象，进而减少Full GC次数}}

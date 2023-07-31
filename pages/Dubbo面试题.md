@@ -1,11 +1,11 @@
 - {{cards Dubbo面试题}}
-- Dubbo服务请求流程 #card
+- Dubbo服务注册和请求流程 #card
   card-last-score:: 3
-  card-repeats:: 5
-  card-next-schedule:: 2023-05-27T19:49:50.745Z
-  card-last-interval:: 22.51
-  card-ease-factor:: 1.8
-  card-last-reviewed:: 2023-05-05T07:49:50.746Z
+  card-repeats:: 6
+  card-next-schedule:: 2023-08-30T10:38:32.792Z
+  card-last-interval:: 30.37
+  card-ease-factor:: 1.66
+  card-last-reviewed:: 2023-07-31T02:38:32.792Z
 	- Provider暴露接口，写入注册中心
 	- Provider-注册中心 ： 注册中心返回ip列表给provider，如果列表有更新，由注册中心主动推送给provider
 	- Consumer向注册中心订阅自己需要的信息，包括 provider、config、routers，并拉取一份本地保存
@@ -13,11 +13,11 @@
 	- Consumer使用轮询策略，直接与Provider的机器进行通信
 	- Provider与Consumer 在内存中累计调用次数和耗时，定时上报给监控中心
 - Dubbo的轮询策略 #card
-  card-last-interval:: 22.51
-  card-repeats:: 5
-  card-ease-factor:: 1.8
-  card-next-schedule:: 2023-05-27T19:49:47.587Z
-  card-last-reviewed:: 2023-05-05T07:49:47.588Z
+  card-last-interval:: 30.37
+  card-repeats:: 6
+  card-ease-factor:: 1.66
+  card-next-schedule:: 2023-08-30T10:37:38.766Z
+  card-last-reviewed:: 2023-07-31T02:37:38.766Z
   card-last-score:: 3
 	- 随机
 	- 轮询和加权轮询
@@ -25,11 +25,11 @@
 	- 最小调用次数
 - Dubbo的失败策略 #card
   card-last-score:: 3
-  card-repeats:: 5
-  card-next-schedule:: 2023-05-27T19:48:51.425Z
-  card-last-interval:: 22.51
-  card-ease-factor:: 1.8
-  card-last-reviewed:: 2023-05-05T07:48:51.425Z
+  card-repeats:: 6
+  card-next-schedule:: 2023-08-30T10:34:27.558Z
+  card-last-interval:: 30.37
+  card-ease-factor:: 1.66
+  card-last-reviewed:: 2023-07-31T02:34:27.559Z
 	- 自动重试其它服务器(默认)
 	- 立即报错，只发起一次调用
 	- 出现异常时，直接忽略
@@ -37,15 +37,15 @@
 	- 并行-调用多个服务器，只要一个成功即返回
 	- 广播-逐个调用所有提供者，任意一个报错则报错
 - 为什么采用Dubbo\\RPC 而不是HTTP #card
-  card-last-interval:: 22.51
-  card-repeats:: 5
-  card-ease-factor:: 1.8
-  card-next-schedule:: 2023-05-27T19:49:39.659Z
-  card-last-reviewed:: 2023-05-05T07:49:39.659Z
+  card-last-interval:: 30.37
+  card-repeats:: 6
+  card-ease-factor:: 1.66
+  card-next-schedule:: 2023-08-30T10:36:41.785Z
+  card-last-reviewed:: 2023-07-31T02:36:41.785Z
   card-last-score:: 3
-	- RPC 是基于TCP的自定义协议，请求报文的体积更小
+	- RPC 是属于TCP层的协议，相比于HTTP的应用层协议，请求报文的体积更小
 	- RPC可自主决定使用哪种序列化方式，进一步压缩报文体积，减少序列化\\反序列化的消耗
-	- RPC自带负载均衡和服务上下线，而传统的HTTP需要修改Nginx
+	- RPC框架通常自带负载均衡和服务上下线，而传统的HTTP需要修改Nginx
 	- 但是Dubbo自身并没有 熔断器、网关、服务跟踪等其他微服务必要组件
 - Dubbo的主要应用场景 #card
   card-last-interval:: 0.55

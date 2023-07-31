@@ -1,10 +1,10 @@
 - {{cards [[Redis面试题]]}}
 - 项目中缓存是如何使用的，为什么要用 #card
-  card-last-interval:: 30.37
-  card-repeats:: 6
-  card-ease-factor:: 1.66
-  card-next-schedule:: 2023-06-04T15:31:07.051Z
-  card-last-reviewed:: 2023-05-05T07:31:07.051Z
+  card-last-interval:: 27.13
+  card-repeats:: 7
+  card-ease-factor:: 1.52
+  card-next-schedule:: 2023-08-27T05:42:20.985Z
+  card-last-reviewed:: 2023-07-31T02:42:20.985Z
   card-last-score:: 3
 	- 提高接口性能 {{cloze 缓存查询结果}} 用得最多的是 {{cloze 用户信息查询}} 接口
 	- 降低数据库压力 {{cloze 热点数据缓存}}
