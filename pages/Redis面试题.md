@@ -172,11 +172,11 @@
 	- AOF的缺点
 		- 生成的文件 {{cloze 比RDB大}} {{cloze 恢复速度慢}}
 - Redis的主从复制过程 #card
-  card-last-interval:: 21.01
-  card-repeats:: 5
-  card-ease-factor:: 1.8
-  card-next-schedule:: 2023-05-09T09:20:02.771Z
-  card-last-reviewed:: 2023-04-18T09:20:02.771Z
+  card-last-interval:: 30.37
+  card-repeats:: 6
+  card-ease-factor:: 1.66
+  card-next-schedule:: 2023-08-30T09:43:55.321Z
+  card-last-reviewed:: 2023-07-31T01:43:55.321Z
   card-last-score:: 3
 	- 从服务器首次连接 {{cloze 全量复制}} {{cloze rdb or aof文件}}
 	- 复制后数据先 {{cloze 保存到本地磁盘}} 后 {{cloze 从磁盘读取到内存}}

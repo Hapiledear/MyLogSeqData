@@ -28,11 +28,11 @@
 	- 记录 bin log
 	- 事务提交 ，等待被工作线程刷入磁盘
 - 查询语句的各部分执行顺序 9 #card
-  card-last-interval:: 21.01
-  card-repeats:: 5
-  card-ease-factor:: 1.8
-  card-next-schedule:: 2023-05-09T09:20:10.346Z
-  card-last-reviewed:: 2023-04-18T09:20:10.346Z
+  card-last-interval:: 30.37
+  card-repeats:: 6
+  card-ease-factor:: 1.66
+  card-next-schedule:: 2023-08-30T09:46:32.818Z
+  card-last-reviewed:: 2023-07-31T01:46:32.818Z
   card-last-score:: 3
 	- {{cloze from -> join t2 on xxx  -> where yyy -> group by aaa -> having -> bbb -> select aaa,bbb,ccc -> distinct aaa ->order by bbb -> limit m,n}}
 - 存储引擎InnoDb和MyISAM的区别 #card
@@ -177,11 +177,11 @@
 		- 可重复读的实现
 			- {{cloze 只在第一次执行查询语句时生成 Read View}}
 - MySql中的锁有哪些 #card
-  card-last-interval:: 21.01
-  card-repeats:: 5
-  card-ease-factor:: 1.8
-  card-next-schedule:: 2023-05-09T09:22:46.961Z
-  card-last-reviewed:: 2023-04-18T09:22:46.961Z
+  card-last-interval:: 30.37
+  card-repeats:: 6
+  card-ease-factor:: 1.66
+  card-next-schedule:: 2023-08-30T09:49:02.038Z
+  card-last-reviewed:: 2023-07-31T01:49:02.039Z
   card-last-score:: 3
 	- 表锁
 		- 意向锁
