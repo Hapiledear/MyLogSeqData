@@ -1,10 +1,10 @@
 - {{cards [[MQ面试题]] }}
 - 项目中是如何使用MQ的？5  #card
-  card-last-interval:: 22.51
-  card-repeats:: 5
-  card-ease-factor:: 1.8
-  card-next-schedule:: 2023-05-27T18:43:36.009Z
-  card-last-reviewed:: 2023-05-05T06:43:36.010Z
+  card-last-interval:: 30.37
+  card-repeats:: 6
+  card-ease-factor:: 1.66
+  card-next-schedule:: 2023-08-30T10:14:18.968Z
+  card-last-reviewed:: 2023-07-31T02:14:18.968Z
   card-last-score:: 3
 	- {{cloze 异步处理}} 注销用户
 	- {{cloze 应用解耦}} 用户成长值加分
@@ -12,11 +12,11 @@
 	- {{cloze 日志处理}} op_log
 	- {{cloze 消息通讯}} 数仓数据写入mq,业务读取
 - 消息队列有什么优缺点 #card
-  card-last-interval:: 22.51
-  card-repeats:: 5
-  card-ease-factor:: 1.8
-  card-next-schedule:: 2023-05-27T19:07:35.889Z
-  card-last-reviewed:: 2023-05-05T07:07:35.889Z
+  card-last-interval:: 30.37
+  card-repeats:: 6
+  card-ease-factor:: 1.66
+  card-next-schedule:: 2023-08-30T10:16:14.497Z
+  card-last-reviewed:: 2023-07-31T02:16:14.497Z
   card-last-score:: 3
 	- 优点3 {{cloze 解耦、异步、削峰}}
 	- 缺点3
@@ -42,20 +42,20 @@
 	- 建立TCP连接后，基于信道channel的方式传输数据
 	- channel是建立在TCP连接上的虚拟连接，没有数量限制。达到复用TCP连接的目的
 - Rabbit MQ  如何保证不重复消费? 幂等性  #card
-  card-last-interval:: 22.51
-  card-repeats:: 5
-  card-ease-factor:: 1.8
-  card-next-schedule:: 2023-05-27T19:09:01.619Z
-  card-last-reviewed:: 2023-05-05T07:09:01.620Z
+  card-last-interval:: 30.37
+  card-repeats:: 6
+  card-ease-factor:: 1.66
+  card-next-schedule:: 2023-08-30T10:21:26.265Z
+  card-last-reviewed:: 2023-07-31T02:21:26.265Z
   card-last-score:: 3
 	- 缓存 {{cloze 使用缓存记录唯一ID，设置一个过期时间}}
 	- 数据库 {{cloze 使用一张表记录已消费的数据，发生主键冲突则证明已消费}}
 - Rabbit MQ  如何保证消息的不丢失？ #card
-  card-last-interval:: 22.51
-  card-repeats:: 5
-  card-ease-factor:: 1.8
-  card-next-schedule:: 2023-05-27T18:44:04.537Z
-  card-last-reviewed:: 2023-05-05T06:44:04.537Z
+  card-last-interval:: 30.37
+  card-repeats:: 6
+  card-ease-factor:: 1.66
+  card-next-schedule:: 2023-08-30T10:15:30.193Z
+  card-last-reviewed:: 2023-07-31T02:15:30.193Z
   card-last-score:: 3
 	- 发送方确认
 		- {{cloze 消息会生成一个唯一ID}} id
@@ -67,11 +67,11 @@
 	- 消费方确认
 		- 手动确认机制 {{cloze 自己在代码里处理完业务逻辑之后，手动确认}}
 - Rabbit MQ 如何保证高可用 #card
-  card-last-interval:: 22.51
-  card-repeats:: 5
-  card-ease-factor:: 1.8
-  card-next-schedule:: 2023-05-27T18:43:45.695Z
-  card-last-reviewed:: 2023-05-05T06:43:45.696Z
+  card-last-interval:: 30.37
+  card-repeats:: 6
+  card-ease-factor:: 1.66
+  card-next-schedule:: 2023-08-30T10:14:48.027Z
+  card-last-reviewed:: 2023-07-31T02:14:48.028Z
   card-last-score:: 3
 	- 镜像集群模式
 		- {{cloze 每个mq节点都有一个一模一样的queue}}
