@@ -78,11 +78,11 @@
 	- 是否被编译优化 {{cloze volatile不会被编译优化，synch可以被优化}}
 	- 实际开发中 {{cloze synch比volatile用得多一点，volatile需要搭配automit类使用}}
 - 什么是CAS #card #Java并发
-  card-last-interval:: 30.37
-  card-repeats:: 6
-  card-ease-factor:: 1.66
-  card-next-schedule:: 2023-06-04T15:43:00.268Z
-  card-last-reviewed:: 2023-05-05T07:43:00.268Z
+  card-last-interval:: 27.13
+  card-repeats:: 7
+  card-ease-factor:: 1.52
+  card-next-schedule:: 2023-08-27T06:25:31.651Z
+  card-last-reviewed:: 2023-07-31T03:25:31.651Z
   card-last-score:: 3
 	- compare and swap 比较并交换
 	- 实现,是否加锁 {{cloze 内存位置v 预期原值A和新值B ，如果内存值=A 那么将内存值改为B}} {{cloze 不加锁，但会自旋一定次数}}
@@ -132,11 +132,11 @@
 		- 非公平 {{cloze AQS的头节点和新执行到CAS修改状态处的线程}}
 		- 公平 {{cloze AQS只允许头节点抢锁}}
 - AQS是什么，抢锁过程 #card #Java并发
-  card-last-interval:: 30.37
-  card-repeats:: 6
-  card-ease-factor:: 1.66
-  card-next-schedule:: 2023-06-04T15:47:20.037Z
-  card-last-reviewed:: 2023-05-05T07:47:20.037Z
+  card-last-interval:: 27.13
+  card-repeats:: 7
+  card-ease-factor:: 1.52
+  card-next-schedule:: 2023-08-27T06:30:38.347Z
+  card-last-reviewed:: 2023-07-31T03:30:38.347Z
   card-last-score:: 3
 	- AQS是一个用来构建锁和同步器的框架
 	- 队列 {{cloze 有一个CLH 的双向链表组成的队列}}
@@ -173,14 +173,14 @@
 		- {{cloze synchMap 一次锁住一整张表}}
 		- {{cloze ConcurMap一次只锁一个分段}}
 - CopyOnWriteArrayList是什么，实践场景 #card #Java并发
-  card-last-interval:: 52.13
-  card-repeats:: 6
-  card-ease-factor:: 1.9
-  card-next-schedule:: 2023-06-26T10:51:30.575Z
-  card-last-reviewed:: 2023-05-05T07:51:30.575Z
+  card-last-interval:: 67.55
+  card-repeats:: 7
+  card-ease-factor:: 1.76
+  card-next-schedule:: 2023-10-06T16:32:26.618Z
+  card-last-reviewed:: 2023-07-31T03:32:26.618Z
   card-last-score:: 3
 	- 字如其名 {{cloze 它的写入操作将copy出一份副本 ，再在这个副本上进行更改}}
-	- 缺点 {{cloze copy数字代价高昂，消耗内存}}
+	- 缺点 {{cloze copy数组代价高昂，消耗内存}}
 	- 适用场景 {{cloze 读多写少}}
 - 阻塞队列BlockingQueue的实现原理 #card #Java并发
   card-last-interval:: 30.37
@@ -214,11 +214,11 @@
 	- 属性 {{cloze AtomicxxxFiledUpdater}}
 	- 带版本号的 {{cloze AtomicMarkableReference}} {{cloze AtomicStampedReferece}}
 - atomic的原理  #card #Java并发
-  card-last-interval:: 33.96
-  card-repeats:: 5
-  card-ease-factor:: 2.04
-  card-next-schedule:: 2023-06-08T06:30:45.114Z
-  card-last-reviewed:: 2023-05-05T07:30:45.114Z
+  card-last-interval:: 52.13
+  card-repeats:: 6
+  card-ease-factor:: 1.9
+  card-next-schedule:: 2023-09-21T06:30:42.725Z
+  card-last-reviewed:: 2023-07-31T03:30:42.725Z
   card-last-score:: 3
 	- {{cloze CAS+volatile方式保证原子性}} 避免synch的高开销
 - CountdownLatch和CycleBarrar的区别 #card #Java并发
@@ -232,11 +232,11 @@
 	- 当前线程是否阻塞 CD {{cloze 调用countDown方法后，当前线程不会阻塞}} CB {{cloze 调用 await方法后，会阻塞当前线程}}
 	- 复用 CD {{cloze 不能复用}} CB {{cloze 可以复用}}
 - final类 不可变对象 描述 #card #Java并发
-  card-last-interval:: 30.37
-  card-repeats:: 6
-  card-ease-factor:: 1.66
-  card-next-schedule:: 2023-06-04T15:46:06.703Z
-  card-last-reviewed:: 2023-05-05T07:46:06.703Z
+  card-last-interval:: 27.13
+  card-repeats:: 7
+  card-ease-factor:: 1.52
+  card-next-schedule:: 2023-08-27T06:29:15.020Z
+  card-last-reviewed:: 2023-07-31T03:29:15.020Z
   card-last-score:: 3
 	- 对象一旦被创建，它的属性值就不能改变 ，可以通过反射方式进行破坏
 	- 保证了内存的可见性，不需要额外的同步手段，提升代码执行效率
@@ -265,11 +265,11 @@
 	- 如何创建线程 {{cloze 通过线程工厂 ThreadFactory}}
 	- 何时缩容到核心线程数 {{cloze 线程最大空闲时长}}
 - 线程池调优策略  #card #Java并发
-  card-last-interval:: 52.13
-  card-repeats:: 6
-  card-ease-factor:: 1.9
-  card-next-schedule:: 2023-06-26T10:51:44.311Z
-  card-last-reviewed:: 2023-05-05T07:51:44.312Z
+  card-last-interval:: 67.55
+  card-repeats:: 7
+  card-ease-factor:: 1.76
+  card-next-schedule:: 2023-10-06T16:33:01.480Z
+  card-last-reviewed:: 2023-07-31T03:33:01.480Z
   card-last-score:: 3
 	- 通用规则2条
 		- {{cloze 最大线程数=核心线程数 优先创建线程而不是入队等待}}

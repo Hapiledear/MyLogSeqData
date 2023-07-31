@@ -22,11 +22,11 @@
 	- 执行引擎 {{cloze 执行字节码指令。分为 即时编译执行和解释执行。此外，**垃圾收集器** 也在其中}}
 	- 本地接口 {{cloze 调用本地方法}}
 - 说一下JVM内存模型 #card
-  card-last-interval:: 30.37
-  card-repeats:: 6
-  card-ease-factor:: 1.66
-  card-next-schedule:: 2023-06-04T15:45:56.391Z
-  card-last-reviewed:: 2023-05-05T07:45:56.391Z
+  card-last-interval:: 27.13
+  card-repeats:: 7
+  card-ease-factor:: 1.52
+  card-next-schedule:: 2023-08-27T06:29:08.299Z
+  card-last-reviewed:: 2023-07-31T03:29:08.299Z
   card-last-score:: 3
 	- 画一下JVM内存模型图，并描述每个模块的定义，作用，以及可能会存在的问题
 	- 虚拟机栈
@@ -58,11 +58,11 @@
 	- {{cloze  年轻代又分 eden区 s1和s2区 比例为 8:1:1}} 3区
 	- {{cloze 通常 年轻代采用的GC算法是 复制算法，老年代采用的是标记-整理算法 }} GC算法
 - 非堆内存有哪些 #card
-  card-last-interval:: 52.13
-  card-repeats:: 6
-  card-ease-factor:: 1.9
-  card-next-schedule:: 2023-06-26T10:50:41.593Z
-  card-last-reviewed:: 2023-05-05T07:50:41.593Z
+  card-last-interval:: 67.55
+  card-repeats:: 7
+  card-ease-factor:: 1.76
+  card-next-schedule:: 2023-10-06T16:30:54.773Z
+  card-last-reviewed:: 2023-07-31T03:30:54.773Z
   card-last-score:: 3
 	- {{cloze DirectByteBuffer 所申请的直接内存}} NIO
 	- {{cloze 方法区的具体实现 元空间}}
@@ -119,11 +119,11 @@
 		- {{cloze 存放在[[Java 堆内存]]}}
 -
 - ## [[Java 堆内存]] 与[[Java 虚拟机栈]] 的区别 #card
-  card-last-interval:: 30.37
-  card-repeats:: 6
-  card-ease-factor:: 1.66
-  card-next-schedule:: 2023-06-04T15:42:06.016Z
-  card-last-reviewed:: 2023-05-05T07:42:06.017Z
+  card-last-interval:: 27.13
+  card-repeats:: 7
+  card-ease-factor:: 1.52
+  card-next-schedule:: 2023-08-27T06:24:05.779Z
+  card-last-reviewed:: 2023-07-31T03:24:05.779Z
   card-last-score:: 3
 	- 物理地址
 		- 堆的物理地址分配是不连续的。所以GC时有各种算法
@@ -138,11 +138,11 @@
 		- 堆对于整个应用程序都是共享的、可见的
 		- 栈是线程私有的
 - 对象创建过程 #card
-  card-last-interval:: 52.13
-  card-repeats:: 6
-  card-ease-factor:: 1.9
-  card-next-schedule:: 2023-06-26T10:50:56.836Z
-  card-last-reviewed:: 2023-05-05T07:50:56.836Z
+  card-last-interval:: 67.55
+  card-repeats:: 7
+  card-ease-factor:: 1.76
+  card-next-schedule:: 2023-10-06T16:31:21.444Z
+  card-last-reviewed:: 2023-07-31T03:31:21.444Z
   card-last-score:: 3
 	- 类加载
 	- 分配内存
@@ -152,22 +152,22 @@
 	- 初始化
 	- <init>方法
 - 触发类加载的时机 4 #card
-  card-last-interval:: 30.37
-  card-repeats:: 6
-  card-ease-factor:: 1.66
-  card-next-schedule:: 2023-06-04T15:41:51.889Z
-  card-last-reviewed:: 2023-05-05T07:41:51.889Z
+  card-last-interval:: 27.13
+  card-repeats:: 7
+  card-ease-factor:: 1.52
+  card-next-schedule:: 2023-08-27T06:23:43.778Z
+  card-last-reviewed:: 2023-07-31T03:23:43.778Z
   card-last-score:: 3
 	- new关键字
 	- Class or Constructor的newInstance方法
 	- clone方法
 	- 反序列化
 - 类加载过程 #card
-  card-last-interval:: 52.13
-  card-repeats:: 6
-  card-ease-factor:: 1.9
-  card-next-schedule:: 2023-06-26T10:50:48.055Z
-  card-last-reviewed:: 2023-05-05T07:50:48.055Z
+  card-last-interval:: 67.55
+  card-repeats:: 7
+  card-ease-factor:: 1.76
+  card-next-schedule:: 2023-10-06T16:31:09.256Z
+  card-last-reviewed:: 2023-07-31T03:31:09.256Z
   card-last-score:: 3
 	- 加载 {{cloze 导入class文件}}
 	- 验证 {{cloze 检测class文件的正确性}}
@@ -187,11 +187,11 @@
 	- 自定义类加载器
 	- 双亲委派： {{cloze 先将其委派给父类，如果父类不能加载，再自己来}}
 - 对象如何访问 #card
-  card-last-interval:: 52.13
-  card-repeats:: 6
-  card-ease-factor:: 1.9
-  card-next-schedule:: 2023-06-26T10:51:38.471Z
-  card-last-reviewed:: 2023-05-05T07:51:38.472Z
+  card-last-interval:: 67.55
+  card-repeats:: 7
+  card-ease-factor:: 1.76
+  card-next-schedule:: 2023-10-06T16:32:37.783Z
+  card-last-reviewed:: 2023-07-31T03:32:37.783Z
   card-last-score:: 3
 	- 句柄
 		- {{cloze 栈中对象的引用 ->堆中句柄池中的句柄 -> 堆中的实例 和 方法区的类型信息}} 栈-> 堆->堆和方法区
@@ -200,11 +200,11 @@
 		- {{cloze 栈中的对象引用 -> 堆中的对象实例 -> 方法区中对应的类型信息}} 栈->堆->方法区
 		- {{cloze 节省了一次指针定位的时间}} 好处
 - 对象分配策略 #card
-  card-last-interval:: 52.13
-  card-repeats:: 6
-  card-ease-factor:: 1.9
-  card-next-schedule:: 2023-06-26T10:51:16.353Z
-  card-last-reviewed:: 2023-05-05T07:51:16.353Z
+  card-last-interval:: 67.55
+  card-repeats:: 7
+  card-ease-factor:: 1.76
+  card-next-schedule:: 2023-10-06T16:31:33.925Z
+  card-last-reviewed:: 2023-07-31T03:31:33.926Z
   card-last-score:: 3
 	- 新对象分配在eden区，大对象直接进入老年代
 	- 经历过一次Minor GC ,复制到surviro区，年龄+1
