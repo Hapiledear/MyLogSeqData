@@ -218,7 +218,7 @@
   card-last-reviewed:: 2023-07-31T01:57:22.570Z
   card-last-score:: 3
 	- 自增型ID {{cloze 符合主键索引的顺序排布，插入快速，产生碎片较少}}
-	- UUID {{cloze 全局唯一，跨系统存取方便}}
+	- UUID {{cloze 全局唯一，跨系统存取方便}} {{cloze 较为分散，不会产生数据倾斜}}
 - B+树与B树的对比 #card
   card-last-interval:: 30.37
   card-repeats:: 6
