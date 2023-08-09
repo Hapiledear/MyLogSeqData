@@ -20,11 +20,12 @@
 			- if n > minProposalID then minProposalID = n
 	- 批准阶段 Accept
 		- 提案节点**收到了超过半数决策节点的应答**后,会发生两种情况
-			- 所有响应的决策节点此前都没有批准过该值，构造 (n,v) 再次广播给全部决策节点
+			- **所有**响应的决策节点此前都没有批准过该值，构造 (n,v) 再次广播给全部决策节点
 			- **至少一个节点**的应答中包含有值，从应答列表中选出**提案ID最大的那个的值**，构成(n,maxAcceptValue)再次广播给全部的决策节点。
 		- 决策节点在收到Accept提案包后，也会发生两种情况
 			- n >= minProposalID ,表明此时没有比n新的提案参与竞争，此accept可以被接受。将更新(maxAcceptedID,maxAcceptValue) 以及 minProposalID。然后返回 n。
 			- 反之，n < minProposalID，表明此时有更新的提案参与竞争。决策节点将不会接受此次提案。然后返回 minProposalID。
-		- 提案节点判断每个决策节点的接受情况，
-		- 至少一个节点返回的result > n, 需要重新生成提案ID(将会比minProposalID 大)，再次
+		- 提案节点**收到了超过半数决策节点的应答**，判断接受情况
+			- **所有**返回值result <=n, 提案通过。形成决议，共记录节点学习
+			- **至少一个**节点返回的result > n, 需要重新生成提案ID(将会比minProposalID 大)，再次执行此过程。
 -
