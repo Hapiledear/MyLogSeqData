@@ -116,11 +116,11 @@
 		- 请求到达时向令牌桶请求令牌，如获取到令牌则通过请求，否则触发限流策略
 		- 支持突发流量
 - Dubbo中用到了哪些设计模式 #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-08-04T03:37:47.693Z
-  card-last-reviewed:: 2023-07-31T03:37:47.693Z
+  card-last-interval:: 8.04
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-08-24T08:55:14.132Z
+  card-last-reviewed:: 2023-08-16T08:55:14.132Z
   card-last-score:: 3
 	- Filter 责任链模式
 	- RegisteryService 观察者模式
@@ -152,11 +152,11 @@
 	- 根据provider的地址和接口连接到 {{cloze 服务端server}} ，开启 {{cloze 客户端client}} ，再 {{cloze 创建invoker}} 。
 	- 用 {{cloze invoker}} 为服务接口生成代理对象，这个代理对象是用来远程调用。
 - 设计一个RPC框架要考虑什么 #card
-  card-last-interval:: 8.88
-  card-repeats:: 3
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-08-09T22:53:41.790Z
-  card-last-reviewed:: 2023-08-01T01:53:41.824Z
+  card-last-interval:: 9.49
+  card-repeats:: 4
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-08-25T19:56:14.786Z
+  card-last-reviewed:: 2023-08-16T08:56:14.786Z
   card-last-score:: 3
 	- {{cloze 注册中心}} 让消费者知道有哪些服务，提供者知道自己提供了什么服务
 	- {{cloze 负载均衡}} 一个接口多台实例，client该调用哪一个

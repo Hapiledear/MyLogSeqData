@@ -1,10 +1,10 @@
 - {{cards [[Java 并发面试题]]}}
 - 并发中的三大问题是如何产生的，都是如何解决的? #card #Java并发 /cloze
-  card-last-interval:: 14.51
-  card-repeats:: 6
-  card-ease-factor:: 1.38
-  card-next-schedule:: 2023-08-14T14:13:11.449Z
-  card-last-reviewed:: 2023-07-31T02:13:11.449Z
+  card-last-interval:: 13.73
+  card-repeats:: 7
+  card-ease-factor:: 1.3
+  card-next-schedule:: 2023-08-30T01:56:42.643Z
+  card-last-reviewed:: 2023-08-16T08:56:42.643Z
   card-last-score:: 3
 	- 原子性
 		- {{cloze `i++` 一行代码被编译为机器指令时可能是多步操作}}
@@ -25,11 +25,11 @@
 	- 解决了两大问题 {{cloze 保证变量对所有线程的可见性和禁止指令重排}} 通常搭配atomic类来实现 {{cloze 原子性}}
 	- 实践 单例模式中 {{cloze volatile修饰instance. 保证其写操作发生在读之前}}
 - volatile能将非原子操作变成原子操作吗 #card #Java并发
-  card-last-interval:: 14.51
-  card-repeats:: 6
-  card-ease-factor:: 1.38
-  card-next-schedule:: 2023-08-14T14:13:17.668Z
-  card-last-reviewed:: 2023-07-31T02:13:17.669Z
+  card-last-interval:: 13.73
+  card-repeats:: 7
+  card-ease-factor:: 1.3
+  card-next-schedule:: 2023-08-30T01:56:45.878Z
+  card-last-reviewed:: 2023-08-16T08:56:45.878Z
   card-last-score:: 3
 	- 在32位的机器上，long和double分为了两部分 高位和低位。因此建议用volatile修饰
 	- 但更建议JVM实现时将这种操作视为原子性的
