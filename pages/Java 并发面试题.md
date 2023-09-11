@@ -16,11 +16,11 @@
 		- {{cloze CUP 的物理缓存结构,JMM内存模型也有缓存}}
 		- {{cloze CUP层级的MESI协议，JMM的八种操作规范}}
 - volatile关键字的原理及其实战 #card #Java并发
-  card-last-interval:: 27.13
-  card-repeats:: 7
-  card-ease-factor:: 1.52
-  card-next-schedule:: 2023-08-27T06:13:11.694Z
-  card-last-reviewed:: 2023-07-31T03:13:11.695Z
+  card-last-interval:: 27.63
+  card-repeats:: 8
+  card-ease-factor:: 1.38
+  card-next-schedule:: 2023-10-08T17:39:43.452Z
+  card-last-reviewed:: 2023-09-11T02:39:43.452Z
   card-last-score:: 3
 	- 解决了两大问题 {{cloze 保证变量对所有线程的可见性和禁止指令重排}} 通常搭配atomic类来实现 {{cloze 原子性}}
 	- 实践 单例模式中 {{cloze volatile修饰instance. 保证其写操作发生在读之前}}
@@ -66,11 +66,11 @@
 		- 协作机制
 			- 持有许可的线程可以 {{cloze 主动放弃许可进入阻塞}} {{cloze 发送信号，唤起阻塞线程}}
 - synchronized和volatie的区别  #card #Java并发
-  card-last-interval:: 27.13
-  card-repeats:: 7
-  card-ease-factor:: 1.52
-  card-next-schedule:: 2023-08-27T06:12:54.852Z
-  card-last-reviewed:: 2023-07-31T03:12:54.852Z
+  card-last-interval:: 27.63
+  card-repeats:: 8
+  card-ease-factor:: 1.38
+  card-next-schedule:: 2023-10-08T17:39:24.813Z
+  card-last-reviewed:: 2023-09-11T02:39:24.814Z
   card-last-score:: 3
 	- 修饰的地方 {{cloze volatile是变量修饰,synchronized可以修饰类、方法、变量}}
 	- 解决的问题 {{cloze volatile 保证的是有序性和可见行，不能保证原子性，synch 保证的是可见性(Happends-before)和原子性}}
@@ -151,11 +151,11 @@
 		- 独占方式获取和释放资源 {{cloze tryAcquire/tryRelease}}
 		- 共享方式 {{cloze tryAquireShared/treReleaseShared}}
 - ConcurrentHashMap的原理 #card #Java并发
-  card-last-interval:: 27.13
-  card-repeats:: 7
-  card-ease-factor:: 1.52
-  card-next-schedule:: 2023-08-27T06:13:26.618Z
-  card-last-reviewed:: 2023-07-31T03:13:26.618Z
+  card-last-interval:: 27.63
+  card-repeats:: 8
+  card-ease-factor:: 1.38
+  card-next-schedule:: 2023-10-08T17:39:50.913Z
+  card-last-reviewed:: 2023-09-11T02:39:50.913Z
   card-last-score:: 3
 	- 1.8- {{cloze 将map分段为segment，对每一段分别加锁}}
 	- 1.8+ {{cloze 弃用了分段，而是改用了CAS操作}}

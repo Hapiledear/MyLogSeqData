@@ -285,11 +285,11 @@
 	- {{cloze -xss1m}} 设置单个线程栈大小
 	- {{cloze -xx:maxMetaspaceSize=2g}} 设置元空间的最大值
 - 对象一定都是在堆上分配吗？ 逃逸分析 #card
-  card-last-interval:: 27.13
-  card-repeats:: 7
-  card-ease-factor:: 1.52
-  card-next-schedule:: 2023-08-27T06:12:23.207Z
-  card-last-reviewed:: 2023-07-31T03:12:23.207Z
+  card-last-interval:: 27.63
+  card-repeats:: 8
+  card-ease-factor:: 1.38
+  card-next-schedule:: 2023-10-08T17:33:24.837Z
+  card-last-reviewed:: 2023-09-11T02:33:24.837Z
   card-last-score:: 3
 	- 如果对象不会逃逸出方法外部，则会在栈上分配
 	- 如果符合标量替换条件(不逃逸&不会被本线程外的线程访问)，则会将对象分解成若干个方法内从成员变量
