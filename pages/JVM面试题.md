@@ -175,11 +175,11 @@
 	- 解析 {{cloze 将常量池中的符号引用替换成直接引用}}
 	- 初始化 {{cloze 对静态变量和代码块执行初始化工作}}
 - 类加载器分类和双亲委派模型 #card
-  card-last-interval:: 27.13
-  card-repeats:: 7
-  card-ease-factor:: 1.52
-  card-next-schedule:: 2023-08-27T05:42:29.478Z
-  card-last-reviewed:: 2023-07-31T02:42:29.478Z
+  card-last-interval:: 27.63
+  card-repeats:: 8
+  card-ease-factor:: 1.38
+  card-next-schedule:: 2023-10-08T17:18:59.282Z
+  card-last-reviewed:: 2023-09-11T02:18:59.282Z
   card-last-score:: 3
 	- 启动类加载器
 	- 扩展类加载器
@@ -259,11 +259,11 @@
 		- 类及其所有对象都被回收
 		- 常量池中的常量无任何引用
 - ## 如何排查JVM问题 #card
-  card-last-interval:: 8.13
-  card-repeats:: 5
+  card-last-interval:: 10.16
+  card-repeats:: 6
   card-ease-factor:: 1.3
-  card-next-schedule:: 2023-08-24T11:55:25.655Z
-  card-last-reviewed:: 2023-08-16T08:55:25.655Z
+  card-next-schedule:: 2023-09-21T05:15:53.276Z
+  card-last-reviewed:: 2023-09-11T02:15:53.276Z
   card-last-score:: 3
 	- 使用 {{cloze `jmap`}} 查看各区域的使用情况
 	- 使用 {{cloze `jstack`}} 查看线程的运行情况，关注阻塞的线程、是否出现了死锁

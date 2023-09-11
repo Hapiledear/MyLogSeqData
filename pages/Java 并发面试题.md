@@ -118,11 +118,11 @@
 	- 锁的使用范围
 		- {{cloze Lock可以在不同范围、不同的顺序获取和释放锁}} {{cloze synch只能在进临界区获取和释放}}
 - 可重入锁的实现原理  #card #Java并发
-  card-last-interval:: 27.13
-  card-repeats:: 7
-  card-ease-factor:: 1.52
-  card-next-schedule:: 2023-08-27T05:51:55.332Z
-  card-last-reviewed:: 2023-07-31T02:51:55.333Z
+  card-last-interval:: 27.63
+  card-repeats:: 8
+  card-ease-factor:: 1.38
+  card-next-schedule:: 2023-10-08T17:20:36.694Z
+  card-last-reviewed:: 2023-09-11T02:20:36.695Z
   card-last-score:: 3
 	- 重入性
 		- {{cloze 已获得锁的线程可以再次获取}}

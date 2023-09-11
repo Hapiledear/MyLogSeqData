@@ -67,11 +67,11 @@
 	- 作为单纯的 {{cloze RPC}} 使用
 	- 微服务化 对应用进行 {{cloze 服务拆分}} 解决 {{cloze 服务依赖关系}} 和 {{cloze 服务扩容}} 问题
 - Dubbo如何实现服务治理 #card
-  card-last-interval:: 8.04
-  card-repeats:: 3
-  card-ease-factor:: 2.08
-  card-next-schedule:: 2023-08-24T08:54:56.042Z
-  card-last-reviewed:: 2023-08-16T08:54:56.043Z
+  card-last-interval:: 15.05
+  card-repeats:: 4
+  card-ease-factor:: 1.94
+  card-next-schedule:: 2023-09-26T03:15:06.849Z
+  card-last-reviewed:: 2023-09-11T02:15:06.849Z
   card-last-score:: 3
 	- {{cloze 自动生成服务间的调用链路}} 链路，需要借助其他框架如 {{cloze SkyWalking}}
 	- {{cloze 服务访问压力以及时长统计}} 时长
@@ -97,11 +97,11 @@
 		- transport {{cloze 抽象 mina 和 netty 为统一接口}}
 		- serialize {{cloze 数据序列化}}
 - 说说常见的限流算法 #card
-  card-last-interval:: 8.04
-  card-repeats:: 3
-  card-ease-factor:: 2.08
-  card-next-schedule:: 2023-08-24T08:53:39.930Z
-  card-last-reviewed:: 2023-08-16T08:53:39.930Z
+  card-last-interval:: 15.05
+  card-repeats:: 4
+  card-ease-factor:: 1.94
+  card-next-schedule:: 2023-09-26T03:13:41.637Z
+  card-last-reviewed:: 2023-09-11T02:13:41.637Z
   card-last-score:: 3
 	- 固定窗口/计数器
 		- 计算一个周期T内的访问次数
@@ -116,11 +116,11 @@
 		- 请求到达时向令牌桶请求令牌，如获取到令牌则通过请求，否则触发限流策略
 		- 支持突发流量
 - Dubbo中用到了哪些设计模式 #card
-  card-last-interval:: 8.04
-  card-repeats:: 3
-  card-ease-factor:: 2.08
-  card-next-schedule:: 2023-08-24T08:55:14.132Z
-  card-last-reviewed:: 2023-08-16T08:55:14.132Z
+  card-last-interval:: 15.05
+  card-repeats:: 4
+  card-ease-factor:: 1.94
+  card-next-schedule:: 2023-09-26T03:15:18.765Z
+  card-last-reviewed:: 2023-09-11T02:15:18.765Z
   card-last-score:: 3
 	- Filter 责任链模式
 	- RegisteryService 观察者模式
@@ -141,22 +141,22 @@
 	- 通过 {{cloze DubboProtocol}} 的实现类，把包装后的 {{cloze invoker}} 转换成 {{cloze exporter}} 对象。随后启动服务器端的server来监听端口，等待服务调用的到来
 	- 通过 {{cloze RegistryProtocol}} 对象，保存URL地址和 {{cloze invoker}} 之间的映射关系，同时把这层映射关系注册到服务中心
 - Dubbo的服务引用流程 #card
-  card-last-interval:: 8.04
-  card-repeats:: 3
-  card-ease-factor:: 2.08
-  card-next-schedule:: 2023-08-24T08:54:25.982Z
-  card-last-reviewed:: 2023-08-16T08:54:25.982Z
+  card-last-interval:: 15.05
+  card-repeats:: 4
+  card-ease-factor:: 1.94
+  card-next-schedule:: 2023-09-26T03:14:48.653Z
+  card-last-reviewed:: 2023-09-11T02:14:48.653Z
   card-last-score:: 3
 	- 注册中心拉取配置 -> 开启client -> 创建invoker -> 创建代理服务
 	- Dubbo客户端根据config文件里的信息从 {{cloze 注册中心}} 里订阅服务，并 {{cloze 缓存到本地}} ，后续的服务相关信息的会动态更新到本地。
 	- 根据provider的地址和接口连接到 {{cloze 服务端server}} ，开启 {{cloze 客户端client}} ，再 {{cloze 创建invoker}} 。
 	- 用 {{cloze invoker}} 为服务接口生成代理对象，这个代理对象是用来远程调用。
 - 设计一个RPC框架要考虑什么 #card
-  card-last-interval:: 9.49
-  card-repeats:: 4
-  card-ease-factor:: 2.08
-  card-next-schedule:: 2023-08-25T19:56:14.786Z
-  card-last-reviewed:: 2023-08-16T08:56:14.786Z
+  card-last-interval:: 29.21
+  card-repeats:: 5
+  card-ease-factor:: 1.94
+  card-next-schedule:: 2023-10-10T07:16:19.798Z
+  card-last-reviewed:: 2023-09-11T02:16:19.798Z
   card-last-score:: 3
 	- {{cloze 注册中心}} 让消费者知道有哪些服务，提供者知道自己提供了什么服务
 	- {{cloze 负载均衡}} 一个接口多台实例，client该调用哪一个
