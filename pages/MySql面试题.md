@@ -6,11 +6,11 @@
 - [[分布式事务]]
 -
 - SQL查询过程 #card
-  card-last-interval:: 27.13
-  card-repeats:: 7
-  card-ease-factor:: 1.52
-  card-next-schedule:: 2023-08-27T06:25:54.375Z
-  card-last-reviewed:: 2023-07-31T03:25:54.375Z
+  card-last-interval:: 27.63
+  card-repeats:: 8
+  card-ease-factor:: 1.38
+  card-next-schedule:: 2023-10-08T18:03:13.588Z
+  card-last-reviewed:: 2023-09-11T03:03:13.588Z
   card-last-score:: 3
 	- 建立连接 {{cloze 连接器}}
 	- 执行计划の缓存 {{cloze 查询缓存}}
@@ -97,11 +97,11 @@
 		- 存储的是 {{cloze 最新版本的数据}}
 		- 持久性的体现 {{cloze 如果系统崩溃，可以用它来进行恢复}}
 - 描述一下事物产生的三个问题 #card
-  card-last-interval:: 27.13
-  card-repeats:: 7
-  card-ease-factor:: 1.52
-  card-next-schedule:: 2023-08-27T06:27:22.087Z
-  card-last-reviewed:: 2023-07-31T03:27:22.087Z
+  card-last-interval:: 27.63
+  card-repeats:: 8
+  card-ease-factor:: 1.38
+  card-next-schedule:: 2023-10-08T18:07:38.419Z
+  card-last-reviewed:: 2023-09-11T03:07:38.420Z
   card-last-score:: 3
 	- 脏读
 		- {{cloze 事物A读取到了事物B 未提交的数据}}
@@ -110,11 +110,11 @@
 	- 幻读
 		- 范围查询 {{cloze 事物A在进行范围查询时，两次读取的**记录数**不一致}}
 - 事物的4种隔离级别 #card
-  card-last-interval:: 27.13
-  card-repeats:: 7
-  card-ease-factor:: 1.52
-  card-next-schedule:: 2023-08-27T06:29:30.905Z
-  card-last-reviewed:: 2023-07-31T03:29:30.906Z
+  card-last-interval:: 27.63
+  card-repeats:: 8
+  card-ease-factor:: 1.38
+  card-next-schedule:: 2023-10-08T18:12:54.164Z
+  card-last-reviewed:: 2023-09-11T03:12:54.165Z
   card-last-score:: 3
 	- 读未提交
 		- {{cloze 允许读取到还没有提交的数据}}
@@ -126,11 +126,11 @@
 	- 串行化
 		- {{cloze 所有事物被串行执行}}
 - 什么是幻读？如何防止？ #card
-  card-last-interval:: 27.13
-  card-repeats:: 7
-  card-ease-factor:: 1.52
-  card-next-schedule:: 2023-08-27T06:26:58.043Z
-  card-last-reviewed:: 2023-07-31T03:26:58.044Z
+  card-last-interval:: 27.63
+  card-repeats:: 8
+  card-ease-factor:: 1.38
+  card-next-schedule:: 2023-10-08T18:07:27.957Z
+  card-last-reviewed:: 2023-09-11T03:07:27.957Z
   card-last-score:: 3
 	- 范围查询 {{cloze 事物A的两次查询之间，被事物B插入or删除了记录，产生结果集的不一致}}
 	- 防止方式
@@ -147,11 +147,11 @@
 				- {{cloze 只与 非唯一索引列 有关}}
 		- MVCC + Read View 的组合方式 解决 快照读下的幻读
 - 读取数据的两种方式 #card
-  card-last-interval:: 27.13
-  card-repeats:: 7
-  card-ease-factor:: 1.52
-  card-next-schedule:: 2023-08-27T06:27:13.611Z
-  card-last-reviewed:: 2023-07-31T03:27:13.611Z
+  card-last-interval:: 27.63
+  card-repeats:: 8
+  card-ease-factor:: 1.38
+  card-next-schedule:: 2023-10-08T18:07:34.200Z
+  card-last-reviewed:: 2023-09-11T03:07:34.200Z
   card-last-score:: 3
 	- mvcc {{cloze 快照读}}
 		- 简单的select操作

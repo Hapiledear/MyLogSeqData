@@ -232,11 +232,11 @@
 	- 当前线程是否阻塞 CD {{cloze 调用countDown方法后，当前线程不会阻塞}} CB {{cloze 调用 await方法后，会阻塞当前线程}}
 	- 复用 CD {{cloze 不能复用}} CB {{cloze 可以复用}}
 - final类 不可变对象 描述 #card #Java并发
-  card-last-interval:: 27.13
-  card-repeats:: 7
-  card-ease-factor:: 1.52
-  card-next-schedule:: 2023-08-27T06:29:15.020Z
-  card-last-reviewed:: 2023-07-31T03:29:15.020Z
+  card-last-interval:: 27.63
+  card-repeats:: 8
+  card-ease-factor:: 1.38
+  card-next-schedule:: 2023-10-08T18:11:58.182Z
+  card-last-reviewed:: 2023-09-11T03:11:58.183Z
   card-last-score:: 3
 	- 对象一旦被创建，它的属性值就不能改变 ，可以通过反射方式进行破坏
 	- 保证了内存的可见性，不需要额外的同步手段，提升代码执行效率
