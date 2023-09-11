@@ -1,20 +1,20 @@
 - {{cards [[HBase面试题]] }}
 - 项目中有哪些场景下使用了HBase #card
-  card-last-interval:: 30.37
-  card-repeats:: 6
-  card-ease-factor:: 1.66
-  card-next-schedule:: 2023-08-30T10:25:07.933Z
-  card-last-reviewed:: 2023-07-31T02:25:07.933Z
+  card-last-interval:: 27.13
+  card-repeats:: 7
+  card-ease-factor:: 1.52
+  card-next-schedule:: 2023-10-08T06:35:57.466Z
+  card-last-reviewed:: 2023-09-11T03:35:57.466Z
   card-last-score:: 3
 	- 日志记录
 	- 超过亿级的表数据
 	- 帖子和评论 -- 无固定且需要扩展的列
 - 项目中的rowkey是如何设计的 #card
-  card-last-interval:: 30.37
-  card-repeats:: 6
-  card-ease-factor:: 1.66
-  card-next-schedule:: 2023-08-30T10:29:00.645Z
-  card-last-reviewed:: 2023-07-31T02:29:00.645Z
+  card-last-interval:: 27.13
+  card-repeats:: 7
+  card-ease-factor:: 1.52
+  card-next-schedule:: 2023-10-08T06:37:31.710Z
+  card-last-reviewed:: 2023-09-11T03:37:31.710Z
   card-last-score:: 3
 	- userId倒序取模
 	- userId + Long.Max - currentTimeStamp 便于scan查询，最近的记录在前

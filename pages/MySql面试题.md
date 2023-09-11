@@ -18,11 +18,11 @@
 	- SQL优化 {{cloze 优化器}} 生成 执行计划
 	- 委托给存储引擎 {{cloze 执行器}}
 - SQL update过程 #card
-  card-last-interval:: 30.37
-  card-repeats:: 6
-  card-ease-factor:: 1.66
-  card-next-schedule:: 2023-08-30T10:30:34.306Z
-  card-last-reviewed:: 2023-07-31T02:30:34.306Z
+  card-last-interval:: 27.13
+  card-repeats:: 7
+  card-ease-factor:: 1.52
+  card-next-schedule:: 2023-10-08T06:38:16.111Z
+  card-last-reviewed:: 2023-09-11T03:38:16.111Z
   card-last-score:: 3
 	- 查询出原数据
 	- 将修改的数据刷入内存 Buffer pool
@@ -220,11 +220,11 @@
 	- 自增型ID {{cloze 符合主键索引的顺序排布，插入快速，产生碎片较少}}
 	- UUID {{cloze 全局唯一，跨系统存取方便}} {{cloze 较为分散，不会产生数据倾斜}}
 - B+树与B树的对比 #card
-  card-last-interval:: 30.37
-  card-repeats:: 6
-  card-ease-factor:: 1.66
-  card-next-schedule:: 2023-08-30T10:28:51.264Z
-  card-last-reviewed:: 2023-07-31T02:28:51.264Z
+  card-last-interval:: 27.13
+  card-repeats:: 7
+  card-ease-factor:: 1.52
+  card-next-schedule:: 2023-10-08T06:37:23.928Z
+  card-last-reviewed:: 2023-09-11T03:37:23.928Z
   card-last-score:: 3
 	- 数据记录 {{cloze 都存放在叶子节点中}} {{cloze 非叶节点只存储键值信息}}
 	- {{cloze 所有叶子节点之间都有一个链指针}}
@@ -342,11 +342,11 @@
 		- {{cloze 是否命中索引}}
 		- 降低SQL语句的复杂度
 - bin log 和 redo log的区别 #card
-  card-last-interval:: 30.37
-  card-repeats:: 6
-  card-ease-factor:: 1.66
-  card-next-schedule:: 2023-08-30T10:23:18.971Z
-  card-last-reviewed:: 2023-07-31T02:23:18.972Z
+  card-last-interval:: 27.13
+  card-repeats:: 7
+  card-ease-factor:: 1.52
+  card-next-schedule:: 2023-10-08T06:34:43.009Z
+  card-last-reviewed:: 2023-09-11T03:34:43.009Z
   card-last-score:: 3
 	- bin log
 		- 是MySql层的日志系统 ，记录的是 {{cloze SQL语句的原始逻辑}}
@@ -378,11 +378,11 @@
 		- 连接数不够，产生 资源报警
 		- 慢查询增多，占用了大量的IO和网络带宽
 - 分库分表会带来哪些问题，如何解决 #card
-  card-last-interval:: 30.37
-  card-repeats:: 6
-  card-ease-factor:: 1.66
-  card-next-schedule:: 2023-08-30T10:26:07.009Z
-  card-last-reviewed:: 2023-07-31T02:26:07.009Z
+  card-last-interval:: 27.13
+  card-repeats:: 7
+  card-ease-factor:: 1.52
+  card-next-schedule:: 2023-10-08T06:36:20.018Z
+  card-last-reviewed:: 2023-09-11T03:36:20.018Z
   card-last-score:: 3
 	- 分布式事务问题
 		- {{cloze 使用相关中间件}}
