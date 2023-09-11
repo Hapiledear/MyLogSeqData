@@ -1,11 +1,11 @@
 - {{cards [[JVM面试题]] }}
 - [[Java 元空间]] 会产生内存溢出吗？ #card
   card-last-score:: 3
-  card-repeats:: 6
-  card-next-schedule:: 2023-08-30T10:08:34.249Z
-  card-last-interval:: 30.37
-  card-ease-factor:: 1.66
-  card-last-reviewed:: 2023-07-31T02:08:34.249Z
+  card-repeats:: 7
+  card-next-schedule:: 2023-10-08T06:28:13.253Z
+  card-last-interval:: 27.13
+  card-ease-factor:: 1.52
+  card-last-reviewed:: 2023-09-11T03:28:13.253Z
 	- 元空间的由来。 {{cloze 从java8+开始，用 元空间 替代了 永久代/方法区}}
 	- 元空间的内存 {{cloze 并不使用虚拟机的内存，而是直接使用机器内存}}
 	- 出现OOM的原因 {{cloze 加载到内存中的class文件数量太多or体积太大}}
