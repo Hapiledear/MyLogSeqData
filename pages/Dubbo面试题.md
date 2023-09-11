@@ -58,11 +58,11 @@
 	- RPC框架通常自带负载均衡和服务上下线，而传统的HTTP需要修改Nginx
 	- 但是Dubbo自身并没有 熔断器、网关、服务跟踪等其他微服务必要组件
 - Dubbo的主要应用场景 #card
-  card-last-interval:: 8.04
-  card-repeats:: 3
-  card-ease-factor:: 2.08
-  card-next-schedule:: 2023-08-24T08:53:06.851Z
-  card-last-reviewed:: 2023-08-16T08:53:06.851Z
+  card-last-interval:: 15.05
+  card-repeats:: 4
+  card-ease-factor:: 1.94
+  card-next-schedule:: 2023-09-26T03:12:20.858Z
+  card-last-reviewed:: 2023-09-11T02:12:20.858Z
   card-last-score:: 3
 	- 作为单纯的 {{cloze RPC}} 使用
 	- 微服务化 对应用进行 {{cloze 服务拆分}} 解决 {{cloze 服务依赖关系}} 和 {{cloze 服务扩容}} 问题
@@ -77,12 +77,12 @@
 	- {{cloze 服务访问压力以及时长统计}} 时长
 	- {{cloze 服务可用性监控、失败告警监控}} 监控
 - Dubbo的工作原理及分层 #card
-  card-last-interval:: 8.04
-  card-repeats:: 3
+  card-last-interval:: -1
+  card-repeats:: 1
   card-ease-factor:: 2.08
-  card-next-schedule:: 2023-08-24T08:51:20.646Z
-  card-last-reviewed:: 2023-08-16T08:51:20.647Z
-  card-last-score:: 3
+  card-next-schedule:: 2023-09-11T16:00:00.000Z
+  card-last-reviewed:: 2023-09-11T02:10:25.263Z
+  card-last-score:: 1
 	- Biz 业务逻辑 自己来提供 {{cloze 接口和实现还有一些配置信息}}
 		- service {{cloze 实现业务代码}}
 		- config {{cloze Dubbo相关配置}}
@@ -129,11 +129,11 @@
 	- 适配器模式
 	- 代理模式
 - Dubbo的服务暴露流程 #card
-  card-last-interval:: 8.04
-  card-repeats:: 3
-  card-ease-factor:: 2.08
-  card-next-schedule:: 2023-08-24T08:52:31.426Z
-  card-last-reviewed:: 2023-08-16T08:52:31.426Z
+  card-last-interval:: 15.05
+  card-repeats:: 4
+  card-ease-factor:: 1.94
+  card-next-schedule:: 2023-09-26T03:11:45.491Z
+  card-last-reviewed:: 2023-09-11T02:11:45.492Z
   card-last-score:: 3
 	- serviceConfig -> invoker -> expoder -> server -> 注册中心
 	- 解析 {{cloze dubbo标签}} ,通过触发ContextRefreshEvent事件的回调方法开始暴露服务的动作
