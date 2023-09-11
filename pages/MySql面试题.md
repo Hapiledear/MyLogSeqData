@@ -38,11 +38,11 @@
   card-last-score:: 3
 	- {{cloze from -> join t2 on xxx  -> where yyy -> group by aaa -> having -> bbb -> select aaa,bbb,ccc -> distinct aaa ->order by bbb -> limit m,n}}
 - 存储引擎InnoDb和MyISAM的区别 #card
-  card-last-interval:: 27.13
-  card-repeats:: 7
-  card-ease-factor:: 1.52
-  card-next-schedule:: 2023-08-27T06:25:06.682Z
-  card-last-reviewed:: 2023-07-31T03:25:06.682Z
+  card-last-interval:: 27.63
+  card-repeats:: 8
+  card-ease-factor:: 1.38
+  card-next-schedule:: 2023-10-08T18:02:37.191Z
+  card-last-reviewed:: 2023-09-11T03:02:37.192Z
   card-last-score:: 3
 	- 事务支持
 		- {{cloze 不支持}} M
@@ -63,11 +63,11 @@
 		- {{cloze 直接取出该值}}
 		- {{cloze 只能遍历}}
 - 事物的四大特性，分别是如何解决的 #card
-  card-last-interval:: 27.13
-  card-repeats:: 7
-  card-ease-factor:: 1.52
-  card-next-schedule:: 2023-08-27T06:24:42.757Z
-  card-last-reviewed:: 2023-07-31T03:24:42.758Z
+  card-last-interval:: 27.63
+  card-repeats:: 8
+  card-ease-factor:: 1.38
+  card-next-schedule:: 2023-10-08T18:02:29.169Z
+  card-last-reviewed:: 2023-09-11T03:02:29.169Z
   card-last-score:: 3
 	- 一致性 是目标，其他三者是手段
 		- {{cloze 事物在执行前后其状态一致,A+B=100 无论A B怎么转账，最终都是100}}

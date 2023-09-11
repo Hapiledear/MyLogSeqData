@@ -12,11 +12,11 @@
 	- 解决办法 {{cloze 增加元空间的大小 `-XX:MaxMetaspaceSize=512m`}}
 - 说一下 JVM 的主要组成部分及其作用 #card
   card-last-score:: 3
-  card-repeats:: 7
-  card-next-schedule:: 2023-08-27T06:13:34.718Z
-  card-last-interval:: 27.13
-  card-ease-factor:: 1.52
-  card-last-reviewed:: 2023-07-31T03:13:34.718Z
+  card-repeats:: 8
+  card-next-schedule:: 2023-10-08T17:55:51.914Z
+  card-last-interval:: 27.63
+  card-ease-factor:: 1.38
+  card-last-reviewed:: 2023-09-11T02:55:51.915Z
 	- 类加载系统 {{cloze 根据给定的全限定类名，使用双亲委派模型，由类加载器加载class文件到 方法区}}
 	- 运行时数据区 JVM内存模型 {{cloze 分为线程公有的堆、方法区，和线程私有的 虚拟机栈、本地方法栈、程序计数器}}
 	- 执行引擎 {{cloze 执行字节码指令。分为 即时编译执行和解释执行。此外，**垃圾收集器** 也在其中}}
@@ -119,11 +119,11 @@
 		- {{cloze 存放在[[Java 堆内存]]}}
 -
 - ## [[Java 堆内存]] 与[[Java 虚拟机栈]] 的区别 #card
-  card-last-interval:: 27.13
-  card-repeats:: 7
-  card-ease-factor:: 1.52
-  card-next-schedule:: 2023-08-27T06:24:05.779Z
-  card-last-reviewed:: 2023-07-31T03:24:05.779Z
+  card-last-interval:: 27.63
+  card-repeats:: 8
+  card-ease-factor:: 1.38
+  card-next-schedule:: 2023-10-08T18:00:47.967Z
+  card-last-reviewed:: 2023-09-11T03:00:47.967Z
   card-last-score:: 3
 	- 物理地址
 		- 堆的物理地址分配是不连续的。所以GC时有各种算法
@@ -152,11 +152,11 @@
 	- 初始化
 	- <init>方法
 - 触发类加载的时机 4 #card
-  card-last-interval:: 27.13
-  card-repeats:: 7
-  card-ease-factor:: 1.52
-  card-next-schedule:: 2023-08-27T06:23:43.778Z
-  card-last-reviewed:: 2023-07-31T03:23:43.778Z
+  card-last-interval:: 27.63
+  card-repeats:: 8
+  card-ease-factor:: 1.38
+  card-next-schedule:: 2023-10-08T18:00:24.502Z
+  card-last-reviewed:: 2023-09-11T03:00:24.503Z
   card-last-score:: 3
 	- new关键字
 	- Class or Constructor的newInstance方法
@@ -270,11 +270,11 @@
 	- 使用 {{cloze `jstat`}} 查看GC情况，特别注意Full GC
 	- 使用 {{cloze `visualvm`}} 分析大内存占用，如 短时间内产生的大量小对象，长期的大对象以及长期得不到回收的对象
 - JVM参数 调优经验 #card
-  card-last-interval:: 27.13
-  card-repeats:: 7
-  card-ease-factor:: 1.52
-  card-next-schedule:: 2023-08-27T06:19:22.099Z
-  card-last-reviewed:: 2023-07-31T03:19:22.100Z
+  card-last-interval:: 27.63
+  card-repeats:: 8
+  card-ease-factor:: 1.38
+  card-next-schedule:: 2023-10-08T17:56:51.675Z
+  card-last-reviewed:: 2023-09-11T02:56:51.675Z
   card-last-score:: 3
 	- {{cloze -Xms -Xmx }} 初始堆内存，最大堆内存
 	- {{cloze -Xmn -XX: SuvivorRation -XX:NewRation}} 新生代大小 e,s1,s2的比例 新生代:老年代
@@ -294,11 +294,11 @@
 	- 如果对象不会逃逸出方法外部，则会在栈上分配
 	- 如果符合标量替换条件(不逃逸&不会被本线程外的线程访问)，则会将对象分解成若干个方法内从成员变量
 - HotSpot JVM 为什么叫这个名字 #card
-  card-last-interval:: 27.13
-  card-repeats:: 7
-  card-ease-factor:: 1.52
-  card-next-schedule:: 2023-08-27T06:13:45.060Z
-  card-last-reviewed:: 2023-07-31T03:13:45.060Z
+  card-last-interval:: 27.63
+  card-repeats:: 8
+  card-ease-factor:: 1.38
+  card-next-schedule:: 2023-10-08T17:56:25.599Z
+  card-last-reviewed:: 2023-09-11T02:56:25.599Z
   card-last-score:: 3
 	- 即时编译功能
 		- 寻找热点代码，将热点代码编译成机器码并缓存起来

@@ -35,11 +35,11 @@
 		- 问题描述 {{cloze 某一热点key突然过期，导致所有请求打到数据库上}}
 		- 解决方案 {{cloze 热点key过期时间加长，永不过期}} {{cloze 实时监控热点数据，实时调整过期时间}} 代码层面 {{cloze 使用synch 或 ReentryLock 加锁更新，这样后续的请求就又会走缓存}}
 - 在日常项目中用到了哪些Redis数据类型,底层结构是什么样的 #card
-  card-last-interval:: 27.13
-  card-repeats:: 7
-  card-ease-factor:: 1.52
-  card-next-schedule:: 2023-08-27T06:21:46.884Z
-  card-last-reviewed:: 2023-07-31T03:21:46.884Z
+  card-last-interval:: 27.63
+  card-repeats:: 8
+  card-ease-factor:: 1.38
+  card-next-schedule:: 2023-10-08T17:59:43.758Z
+  card-last-reviewed:: 2023-09-11T02:59:43.758Z
   card-last-score:: 3
 	- string
 		- {{cloze 普通的kv存储，常用}}
@@ -129,11 +129,11 @@
 	- {{cloze setnx来争抢锁，再用expire加上过期时间}}
 	- 高可用分布式锁 {{cloze RedLock}} 但可能导致性能下降，建议使用 {{cloze zk实现分布式锁}}
 - 如何把固定前缀开通的key全部找出来 #card
-  card-last-interval:: 27.13
-  card-repeats:: 7
-  card-ease-factor:: 1.52
-  card-next-schedule:: 2023-08-27T06:24:10.179Z
-  card-last-reviewed:: 2023-07-31T03:24:10.180Z
+  card-last-interval:: 27.63
+  card-repeats:: 8
+  card-ease-factor:: 1.38
+  card-next-schedule:: 2023-10-08T18:01:06.660Z
+  card-last-reviewed:: 2023-09-11T03:01:06.660Z
   card-last-score:: 3
 	- {{cloze scan命令可以提取指定模式的key列表}}
 - Redis的持久化机制 #card
@@ -205,11 +205,11 @@
 		- 机器的增减 {{cloze master的增减只是移动部分槽位}}
 		- 好处 {{cloze 无论在数据量大 or 小时，数据分配都很均匀}}
 - 节点宕机时的主备切换 #card
-  card-last-interval:: 27.13
-  card-repeats:: 7
-  card-ease-factor:: 1.52
-  card-next-schedule:: 2023-08-27T06:22:17.768Z
-  card-last-reviewed:: 2023-07-31T03:22:17.768Z
+  card-last-interval:: 27.63
+  card-repeats:: 8
+  card-ease-factor:: 1.38
+  card-next-schedule:: 2023-10-08T18:00:16.581Z
+  card-last-reviewed:: 2023-09-11T03:00:16.581Z
   card-last-score:: 3
 	- 判断节点宕机
 		- 主观宕机 {{cloze 某一节点发现另一节点一段时间内无心跳返回了}}
