@@ -77,12 +77,12 @@
 	- {{cloze 服务访问压力以及时长统计}} 时长
 	- {{cloze 服务可用性监控、失败告警监控}} 监控
 - Dubbo的工作原理及分层 #card
-  card-last-interval:: -1
-  card-repeats:: 1
-  card-ease-factor:: 2.08
-  card-next-schedule:: 2023-09-11T16:00:00.000Z
-  card-last-reviewed:: 2023-09-11T02:10:25.263Z
-  card-last-score:: 1
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 1.94
+  card-next-schedule:: 2023-09-16T01:55:18.943Z
+  card-last-reviewed:: 2023-09-12T01:55:18.944Z
+  card-last-score:: 3
 	- Biz 业务逻辑 自己来提供 {{cloze 接口和实现还有一些配置信息}}
 		- service {{cloze 实现业务代码}}
 		- config {{cloze Dubbo相关配置}}
@@ -165,9 +165,15 @@
 	- {{cloze 监控、配置、日志}} 附加功能
 	-
 - 断路器Hystrix是如何工作的 #card
+  card-last-interval:: 0.28
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-09-12T07:52:15.679Z
+  card-last-reviewed:: 2023-09-12T01:52:15.679Z
+  card-last-score:: 3
 	- 两个判断条件 同时满足，开启断路
 		- {{cloze 一段时间内，请求数量达到阈值}}
-		- {{cloze 一段时间内 请求故障率达到阈值}}
+		- {{cloze 一段时间内  请求故障率达到阈值}}
 	- 自动恢复
 		- {{cloze 断路期间会放行一两个请求，根据结果决定是否恢复}}
 -
