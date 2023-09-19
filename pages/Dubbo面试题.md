@@ -77,11 +77,11 @@
 	- {{cloze 服务访问压力以及时长统计}} 时长
 	- {{cloze 服务可用性监控、失败告警监控}} 监控
 - Dubbo的工作原理及分层 #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 1.94
-  card-next-schedule:: 2023-09-16T01:55:18.943Z
-  card-last-reviewed:: 2023-09-12T01:55:18.944Z
+  card-last-interval:: 6.95
+  card-repeats:: 3
+  card-ease-factor:: 1.8
+  card-next-schedule:: 2023-09-26T00:19:26.367Z
+  card-last-reviewed:: 2023-09-19T02:19:26.367Z
   card-last-score:: 3
 	- Biz 业务逻辑 自己来提供 {{cloze 接口和实现还有一些配置信息}}
 		- service {{cloze 实现业务代码}}
