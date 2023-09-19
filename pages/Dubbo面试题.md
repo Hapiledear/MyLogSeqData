@@ -165,11 +165,11 @@
 	- {{cloze 监控、配置、日志}} 附加功能
 	-
 - 断路器Hystrix是如何工作的 #card
-  card-last-interval:: 0.28
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-09-12T07:52:15.679Z
-  card-last-reviewed:: 2023-09-12T01:52:15.679Z
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-09-23T02:08:11.425Z
+  card-last-reviewed:: 2023-09-19T02:08:11.426Z
   card-last-score:: 3
 	- 两个判断条件 同时满足，开启断路
 		- {{cloze 一段时间内，请求数量达到阈值}}
