@@ -242,11 +242,11 @@
 	- 引入 {{cloze 消息队列 使用广播模式}}
 	- 本地缓存的过期时间 {{cloze 设置相对短一些}}
 - Redis数据如何预热 #card
-  card-last-interval:: 52.13
-  card-repeats:: 6
-  card-ease-factor:: 1.9
-  card-next-schedule:: 2023-09-21T06:30:48.975Z
-  card-last-reviewed:: 2023-07-31T03:30:48.975Z
+  card-last-interval:: 67.55
+  card-repeats:: 7
+  card-ease-factor:: 1.76
+  card-next-schedule:: 2023-12-02T14:35:11.396Z
+  card-last-reviewed:: 2023-09-26T01:35:11.396Z
   card-last-score:: 3
 	- 暴露内网接口，手动操作
 	- 数据量不大时，项目启动时自动加载

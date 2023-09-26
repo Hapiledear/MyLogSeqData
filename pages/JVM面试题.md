@@ -212,11 +212,11 @@
 		- 年龄 = 相同年龄对象大小之和 > S 区的一半
 	- 老年代满了则触发 Full GC
 - JVM中的垃圾回收器有哪些,及其工作原理 #card
-  card-last-interval:: 50.42
-  card-repeats:: 7
-  card-ease-factor:: 1.66
-  card-next-schedule:: 2023-09-19T12:12:05.313Z
-  card-last-reviewed:: 2023-07-31T02:12:05.313Z
+  card-last-interval:: 8.41
+  card-repeats:: 8
+  card-ease-factor:: 1.52
+  card-next-schedule:: 2023-10-04T10:31:09.224Z
+  card-last-reviewed:: 2023-09-26T01:31:09.224Z
   card-last-score:: 3
 	- Serial
 		- 串行收集
@@ -259,11 +259,11 @@
 		- 类及其所有对象都被回收
 		- 常量池中的常量无任何引用
 - ## 如何排查JVM问题 #card
-  card-last-interval:: 10.16
-  card-repeats:: 6
+  card-last-interval:: 12.7
+  card-repeats:: 7
   card-ease-factor:: 1.3
-  card-next-schedule:: 2023-09-21T05:15:53.276Z
-  card-last-reviewed:: 2023-09-11T02:15:53.276Z
+  card-next-schedule:: 2023-10-08T17:31:17.638Z
+  card-last-reviewed:: 2023-09-26T01:31:17.638Z
   card-last-score:: 3
 	- 使用 {{cloze `jmap`}} 查看各区域的使用情况
 	- 使用 {{cloze `jstack`}} 查看线程的运行情况，关注阻塞的线程、是否出现了死锁

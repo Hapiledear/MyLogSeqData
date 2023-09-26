@@ -214,11 +214,11 @@
 	- 属性 {{cloze AtomicxxxFiledUpdater}}
 	- 带版本号的 {{cloze AtomicMarkableReference}} {{cloze AtomicStampedReferece}}
 - atomic的原理  #card #Java并发
-  card-last-interval:: 52.13
-  card-repeats:: 6
-  card-ease-factor:: 1.9
-  card-next-schedule:: 2023-09-21T06:30:42.725Z
-  card-last-reviewed:: 2023-07-31T03:30:42.725Z
+  card-last-interval:: 67.55
+  card-repeats:: 7
+  card-ease-factor:: 1.76
+  card-next-schedule:: 2023-12-02T14:34:58.410Z
+  card-last-reviewed:: 2023-09-26T01:34:58.410Z
   card-last-score:: 3
 	- {{cloze CAS+volatile方式保证原子性}} 避免synch的高开销
 - CountdownLatch和CycleBarrar的区别 #card #Java并发
