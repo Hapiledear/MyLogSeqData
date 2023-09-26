@@ -128,6 +128,7 @@
   card-last-score:: 3
 	- {{cloze setnx来争抢锁，再用expire加上过期时间}}
 	- 高可用分布式锁 {{cloze RedLock}} 但可能导致性能下降，建议使用 {{cloze zk实现分布式锁}}
+	- 分布式锁需要考虑的三大问题 {{cloze 可重入}} {{cloze 唯一标识}} {{cloze 过期续期}}
 - 如何把固定前缀开通的key全部找出来 #card
   card-last-interval:: 27.63
   card-repeats:: 8
