@@ -309,11 +309,11 @@
 		- 循环优化-无关代码外提、循环展开(次数减少，重复相同逻辑x次)
 		-
 - Java程序 CPU突然飙升 该如何处理？#card
-  card-last-interval:: 27.13
-  card-repeats:: 7
-  card-ease-factor:: 1.52
-  card-next-schedule:: 2023-10-08T06:39:10.130Z
-  card-last-reviewed:: 2023-09-11T03:39:10.130Z
+  card-last-interval:: 27.63
+  card-repeats:: 8
+  card-ease-factor:: 1.38
+  card-next-schedule:: 2023-11-05T23:05:06.114Z
+  card-last-reviewed:: 2023-10-09T08:05:06.114Z
   card-last-score:: 3
 	- 问题定位
 		- {{cloze top 命令}} 查看CPU占用情况，找到进程id
@@ -324,11 +324,11 @@
 		- 空循环，或者空自旋 {{cloze 使用Thread.sleep或者加锁，让线程适当的阻塞}}
 		- 在循环的代码逻辑中，创建大量的新对象 {{cloze 减少对象的创建数量 or 使用对象池}}
 - JVM的内存分配为什么是1:1:8 #card
-  card-last-interval:: 27.13
-  card-repeats:: 7
-  card-ease-factor:: 1.52
-  card-next-schedule:: 2023-10-08T06:40:42.740Z
-  card-last-reviewed:: 2023-09-11T03:40:42.740Z
+  card-last-interval:: 27.63
+  card-repeats:: 8
+  card-ease-factor:: 1.38
+  card-next-schedule:: 2023-11-05T23:07:38.840Z
+  card-last-reviewed:: 2023-10-09T08:07:38.840Z
   card-last-score:: 3
 	- 为什么要有Eden和servivor区
 		- {{cloze 减少被送入老年代的对象，进而减少Full GC次数}}
