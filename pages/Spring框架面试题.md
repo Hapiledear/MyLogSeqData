@@ -117,7 +117,7 @@
 	- {{cloze 内嵌servlet容器}}
 	- {{cloze 简化maven配置，使用 starter 扩展}}
 	- {{cloze 引入相关 starter后，自动装配相关bean}}
-- SpringBoot启动流程
+- SpringBoot启动流程 #card
 	- 运行main方法，SpringBootApplication
 	- 初始化阶段
 		- 通过类加载器，读取classpath下的 {{cloze spring.factories}} 配置文件 和 {{cloze application.yml}} 资源文件
@@ -133,3 +133,10 @@
 	- 定义并实现自己的Bean
 	- 编写一个`Configuration类`，告知何时加载自己的Bean
 	- 将这个类写入 `spring.factories` 便于启动时自行装载
+- Spring中的嵌套事务如何实现 #card
+	- 对于支持嵌套事务的数据库，直接嵌套
+	- MySQL不支持嵌套事务，而是采用 {{cloze 保存点}}的机制
+- Spring 注解失效的场景 #card
+	- 没有获取到代理对象
+	- 跨线程调用没有传递必要参数，如在事务中开启多线程会使得事务失效
+-
