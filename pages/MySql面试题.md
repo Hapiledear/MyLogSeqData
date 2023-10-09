@@ -422,6 +422,12 @@
 	- 合并插入：一条语句插入多条数据
 	- 顺序插入：数据按主键ID排序好
 - 用户订单表(uid,aid,create_time) 要想让查询强制走uid索引，可以怎么做？ #card
+  card-last-interval:: 0.26
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2023-10-09T12:50:23.271Z
+  card-last-reviewed:: 2023-10-09T06:50:23.271Z
+  card-last-score:: 3
 	- {{cloze force index}} 关键字
 	- 强制类型转化 将 {{cloze create_time 转为int型}}
 -
