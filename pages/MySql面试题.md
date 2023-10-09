@@ -323,11 +323,11 @@
 		- Using index 使用了覆盖索引
 		- Using where 该索引还用来执行查找操作
 - 工作中你是如何优化慢查询的 #card
-  card-last-interval:: 27.63
-  card-repeats:: 8
-  card-ease-factor:: 1.38
-  card-next-schedule:: 2023-10-08T17:28:30.273Z
-  card-last-reviewed:: 2023-09-11T02:28:30.273Z
+  card-last-interval:: 18.59
+  card-repeats:: 9
+  card-ease-factor:: 1.3
+  card-next-schedule:: 2023-10-27T22:54:13.844Z
+  card-last-reviewed:: 2023-10-09T08:54:13.844Z
   card-last-score:: 3
 	- 添加合适的索引
 		- {{cloze 频繁查询的条件 和 排序字段 建立索引}}
