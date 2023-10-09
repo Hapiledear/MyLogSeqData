@@ -58,11 +58,11 @@
 	- {{cloze  年轻代又分 eden区 s1和s2区 比例为 8:1:1}} 3区
 	- {{cloze 通常 年轻代采用的GC算法是 复制算法，老年代采用的是标记-整理算法 }} GC算法
 - 非堆内存有哪些 #card
-  card-last-interval:: 67.55
-  card-repeats:: 7
-  card-ease-factor:: 1.76
-  card-next-schedule:: 2023-10-06T16:30:54.773Z
-  card-last-reviewed:: 2023-07-31T03:30:54.773Z
+  card-last-interval:: 72.3
+  card-repeats:: 8
+  card-ease-factor:: 1.62
+  card-next-schedule:: 2023-12-20T14:21:44.024Z
+  card-last-reviewed:: 2023-10-09T07:21:44.025Z
   card-last-score:: 3
 	- {{cloze DirectByteBuffer 所申请的直接内存}} NIO
 	- {{cloze 方法区的具体实现 元空间}}
@@ -163,11 +163,11 @@
 	- clone方法
 	- 反序列化
 - 类加载过程 #card
-  card-last-interval:: 67.55
-  card-repeats:: 7
-  card-ease-factor:: 1.76
-  card-next-schedule:: 2023-10-06T16:31:09.256Z
-  card-last-reviewed:: 2023-07-31T03:31:09.256Z
+  card-last-interval:: 72.3
+  card-repeats:: 8
+  card-ease-factor:: 1.62
+  card-next-schedule:: 2023-12-20T14:22:21.699Z
+  card-last-reviewed:: 2023-10-09T07:22:21.699Z
   card-last-score:: 3
 	- 加载 {{cloze 导入class文件}}
 	- 验证 {{cloze 检测class文件的正确性}}
@@ -212,11 +212,11 @@
 		- 年龄 = 相同年龄对象大小之和 > S 区的一半
 	- 老年代满了则触发 Full GC
 - JVM中的垃圾回收器有哪些,及其工作原理 #card
-  card-last-interval:: 8.41
-  card-repeats:: 8
-  card-ease-factor:: 1.52
-  card-next-schedule:: 2023-10-04T10:31:09.224Z
-  card-last-reviewed:: 2023-09-26T01:31:09.224Z
+  card-last-interval:: 38.13
+  card-repeats:: 9
+  card-ease-factor:: 1.38
+  card-next-schedule:: 2023-11-16T10:21:20.200Z
+  card-last-reviewed:: 2023-10-09T07:21:20.200Z
   card-last-score:: 3
 	- Serial
 		- 串行收集
