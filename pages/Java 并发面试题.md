@@ -173,11 +173,11 @@
 		- {{cloze synchMap 一次锁住一整张表}}
 		- {{cloze ConcurMap一次只锁一个分段}}
 - CopyOnWriteArrayList是什么，实践场景 #card #Java并发
-  card-last-interval:: 67.55
-  card-repeats:: 7
-  card-ease-factor:: 1.76
-  card-next-schedule:: 2023-10-06T16:32:26.618Z
-  card-last-reviewed:: 2023-07-31T03:32:26.618Z
+  card-last-interval:: 72.3
+  card-repeats:: 8
+  card-ease-factor:: 1.62
+  card-next-schedule:: 2023-12-20T14:25:55.758Z
+  card-last-reviewed:: 2023-10-09T07:25:55.758Z
   card-last-score:: 3
 	- 字如其名 {{cloze 它的写入操作将copy出一份副本 ，再在这个副本上进行更改}}
 	- 缺点 {{cloze copy数组代价高昂，消耗内存}}
@@ -265,11 +265,11 @@
 	- 如何创建线程 {{cloze 通过线程工厂 ThreadFactory}}
 	- 何时缩容到核心线程数 {{cloze 线程最大空闲时长}}
 - 线程池调优策略  #card #Java并发
-  card-last-interval:: 67.55
-  card-repeats:: 7
-  card-ease-factor:: 1.76
-  card-next-schedule:: 2023-10-06T16:33:01.480Z
-  card-last-reviewed:: 2023-07-31T03:33:01.480Z
+  card-last-interval:: 72.3
+  card-repeats:: 8
+  card-ease-factor:: 1.62
+  card-next-schedule:: 2023-12-20T14:30:35.768Z
+  card-last-reviewed:: 2023-10-09T07:30:35.768Z
   card-last-score:: 3
 	- 通用规则2条
 		- {{cloze 最大线程数=核心线程数 优先创建线程而不是入队等待}}

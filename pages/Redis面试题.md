@@ -183,11 +183,11 @@
 	- 复制后数据先 {{cloze 保存到本地磁盘}} 后 {{cloze 从磁盘读取到内存}}
 	- 重新连接 {{cloze 部分数据复制}} {{cloze offset偏移量 repl-backlog-buffer 复制积压缓冲区}}
 - Redis的集群模式的好处 #card
-  card-last-interval:: 27.13
-  card-repeats:: 7
-  card-ease-factor:: 1.52
-  card-next-schedule:: 2023-10-08T06:13:43.175Z
-  card-last-reviewed:: 2023-09-11T03:13:43.175Z
+  card-last-interval:: 27.63
+  card-repeats:: 8
+  card-ease-factor:: 1.38
+  card-next-schedule:: 2023-11-05T22:33:39.265Z
+  card-last-reviewed:: 2023-10-09T07:33:39.265Z
   card-last-score:: 3
 	- 数据分片 {{cloze 自动将数据分片，每个master上放一部分}}
 	- 主从复制和自动故障转移 {{cloze 部分master不可用时，还是可以继续工作}}

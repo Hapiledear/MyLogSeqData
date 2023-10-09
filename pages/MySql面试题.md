@@ -255,11 +255,11 @@
 		- {{cloze 除聚簇索引以外的索引}}
 		- 回表 {{cloze 第一次定位到聚簇索引，第二次通过聚簇索引定位到查找记录}}
 - 索引优化策略 #card
-  card-last-interval:: 27.13
-  card-repeats:: 7
-  card-ease-factor:: 1.52
-  card-next-schedule:: 2023-10-08T06:14:13.515Z
-  card-last-reviewed:: 2023-09-11T03:14:13.515Z
+  card-last-interval:: 27.63
+  card-repeats:: 8
+  card-ease-factor:: 1.38
+  card-next-schedule:: 2023-11-05T22:33:45.809Z
+  card-last-reviewed:: 2023-10-09T07:33:45.809Z
   card-last-score:: 3
 	- 索引覆盖 {{cloze select字段 存在索引中}}
 	- 最左匹配原则 {{cloze 利用最左匹配，减少索引的建立}}
@@ -284,11 +284,11 @@
 	- 非主键的`order by ` 但需要具体情况具体验证
 	- 表数据较少时，走全表扫描比走索引效率更高 (内置优化策略)
 - 索引下推 #card
-  card-last-interval:: 27.13
-  card-repeats:: 7
-  card-ease-factor:: 1.52
-  card-next-schedule:: 2023-10-08T06:14:18.887Z
-  card-last-reviewed:: 2023-09-11T03:14:18.887Z
+  card-last-interval:: 27.63
+  card-repeats:: 8
+  card-ease-factor:: 1.38
+  card-next-schedule:: 2023-11-05T22:34:04.639Z
+  card-last-reviewed:: 2023-10-09T07:34:04.639Z
   card-last-score:: 3
 	- 不存在索引下推时 {{cloze 先根据索引查记录，再根据where条件过滤}}
 	- 使用索引下推后 {{cloze 先根据 where条件过滤记录，再进行索引查询}}

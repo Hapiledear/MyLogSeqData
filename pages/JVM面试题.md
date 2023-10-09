@@ -138,11 +138,11 @@
 		- 堆对于整个应用程序都是共享的、可见的
 		- 栈是线程私有的
 - 对象创建过程 #card
-  card-last-interval:: 67.55
-  card-repeats:: 7
-  card-ease-factor:: 1.76
-  card-next-schedule:: 2023-10-06T16:31:21.444Z
-  card-last-reviewed:: 2023-07-31T03:31:21.444Z
+  card-last-interval:: 72.3
+  card-repeats:: 8
+  card-ease-factor:: 1.62
+  card-next-schedule:: 2023-12-20T14:25:13.988Z
+  card-last-reviewed:: 2023-10-09T07:25:13.989Z
   card-last-score:: 3
 	- 类加载
 	- 分配内存
@@ -187,11 +187,11 @@
 	- 自定义类加载器
 	- 双亲委派： {{cloze 先将其委派给父类，如果父类不能加载，再自己来}}
 - 对象如何访问 #card
-  card-last-interval:: 67.55
-  card-repeats:: 7
-  card-ease-factor:: 1.76
-  card-next-schedule:: 2023-10-06T16:32:37.783Z
-  card-last-reviewed:: 2023-07-31T03:32:37.783Z
+  card-last-interval:: 72.3
+  card-repeats:: 8
+  card-ease-factor:: 1.62
+  card-next-schedule:: 2023-12-20T14:25:58.368Z
+  card-last-reviewed:: 2023-10-09T07:25:58.368Z
   card-last-score:: 3
 	- 句柄
 		- {{cloze 栈中对象的引用 ->堆中句柄池中的句柄 -> 堆中的实例 和 方法区的类型信息}} 栈-> 堆->堆和方法区
@@ -200,11 +200,11 @@
 		- {{cloze 栈中的对象引用 -> 堆中的对象实例 -> 方法区中对应的类型信息}} 栈->堆->方法区
 		- {{cloze 节省了一次指针定位的时间}} 好处
 - 对象分配策略 #card
-  card-last-interval:: 67.55
-  card-repeats:: 7
-  card-ease-factor:: 1.76
-  card-next-schedule:: 2023-10-06T16:31:33.925Z
-  card-last-reviewed:: 2023-07-31T03:31:33.926Z
+  card-last-interval:: 72.3
+  card-repeats:: 8
+  card-ease-factor:: 1.62
+  card-next-schedule:: 2023-12-20T14:25:43.506Z
+  card-last-reviewed:: 2023-10-09T07:25:43.506Z
   card-last-score:: 3
 	- 新对象分配在eden区，大对象直接进入老年代
 	- 经历过一次Minor GC ,复制到surviro区，年龄+1
