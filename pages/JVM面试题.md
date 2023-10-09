@@ -22,11 +22,11 @@
 	- 执行引擎 {{cloze 执行字节码指令。分为 即时编译执行和解释执行。此外，**垃圾收集器** 也在其中}}
 	- 本地接口 {{cloze 调用本地方法}}
 - 说一下JVM内存模型 #card
-  card-last-interval:: 27.63
-  card-repeats:: 8
-  card-ease-factor:: 1.38
-  card-next-schedule:: 2023-10-08T18:11:23.771Z
-  card-last-reviewed:: 2023-09-11T03:11:23.771Z
+  card-last-interval:: 17.97
+  card-repeats:: 9
+  card-ease-factor:: 1.3
+  card-next-schedule:: 2023-10-27T08:10:25.745Z
+  card-last-reviewed:: 2023-10-09T09:10:25.745Z
   card-last-score:: 3
 	- 画一下JVM内存模型图，并描述每个模块的定义，作用，以及可能会存在的问题
 	- 虚拟机栈
@@ -119,11 +119,11 @@
 		- {{cloze 存放在[[Java 堆内存]]}}
 -
 - ## [[Java 堆内存]] 与[[Java 虚拟机栈]] 的区别 #card
-  card-last-interval:: 27.63
-  card-repeats:: 8
-  card-ease-factor:: 1.38
-  card-next-schedule:: 2023-10-08T18:00:47.967Z
-  card-last-reviewed:: 2023-09-11T03:00:47.967Z
+  card-last-interval:: 17.97
+  card-repeats:: 9
+  card-ease-factor:: 1.3
+  card-next-schedule:: 2023-10-27T08:04:20.544Z
+  card-last-reviewed:: 2023-10-09T09:04:20.544Z
   card-last-score:: 3
 	- 物理地址
 		- 堆的物理地址分配是不连续的。所以GC时有各种算法
@@ -152,11 +152,11 @@
 	- 初始化
 	- <init>方法
 - 触发类加载的时机 4 #card
-  card-last-interval:: 27.63
-  card-repeats:: 8
-  card-ease-factor:: 1.38
-  card-next-schedule:: 2023-10-08T18:00:24.502Z
-  card-last-reviewed:: 2023-09-11T03:00:24.503Z
+  card-last-interval:: 17.97
+  card-repeats:: 9
+  card-ease-factor:: 1.3
+  card-next-schedule:: 2023-10-27T08:03:57.598Z
+  card-last-reviewed:: 2023-10-09T09:03:57.598Z
   card-last-score:: 3
 	- new关键字
 	- Class or Constructor的newInstance方法

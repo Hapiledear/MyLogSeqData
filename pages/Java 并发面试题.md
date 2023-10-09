@@ -78,11 +78,11 @@
 	- 是否被编译优化 {{cloze volatile不会被编译优化，synch可以被优化}}
 	- 实际开发中 {{cloze synch比volatile用得多一点，volatile需要搭配automit类使用}}
 - 什么是CAS #card #Java并发
-  card-last-interval:: 27.63
-  card-repeats:: 8
-  card-ease-factor:: 1.38
-  card-next-schedule:: 2023-10-08T18:02:46.905Z
-  card-last-reviewed:: 2023-09-11T03:02:46.905Z
+  card-last-interval:: 17.97
+  card-repeats:: 9
+  card-ease-factor:: 1.3
+  card-next-schedule:: 2023-10-27T08:04:53.629Z
+  card-last-reviewed:: 2023-10-09T09:04:53.629Z
   card-last-score:: 3
 	- compare and swap 比较并交换
 	- 实现,是否加锁 {{cloze 内存位置v 预期原值A和新值B ，如果内存值=A 那么将内存值改为B}} {{cloze 不加锁，但会自旋一定次数}}
@@ -132,11 +132,11 @@
 		- 非公平 {{cloze AQS的头节点和新执行到CAS修改状态处的线程}}
 		- 公平 {{cloze AQS只允许头节点抢锁}}
 - AQS是什么，抢锁过程 #card #Java并发
-  card-last-interval:: 27.63
-  card-repeats:: 8
-  card-ease-factor:: 1.38
-  card-next-schedule:: 2023-10-08T18:13:30.154Z
-  card-last-reviewed:: 2023-09-11T03:13:30.155Z
+  card-last-interval:: 17.97
+  card-repeats:: 9
+  card-ease-factor:: 1.3
+  card-next-schedule:: 2023-10-27T08:10:45.946Z
+  card-last-reviewed:: 2023-10-09T09:10:45.947Z
   card-last-score:: 3
 	- AQS是一个用来构建锁和同步器的框架
 	- 队列 {{cloze 有一个CLH 的双向链表组成的队列}}
@@ -232,11 +232,11 @@
 	- 当前线程是否阻塞 CD {{cloze 调用countDown方法后，当前线程不会阻塞}} CB {{cloze 调用 await方法后，会阻塞当前线程}}
 	- 复用 CD {{cloze 不能复用}} CB {{cloze 可以复用}}
 - final类 不可变对象 描述 #card #Java并发
-  card-last-interval:: 27.63
-  card-repeats:: 8
-  card-ease-factor:: 1.38
-  card-next-schedule:: 2023-10-08T18:11:58.182Z
-  card-last-reviewed:: 2023-09-11T03:11:58.183Z
+  card-last-interval:: 17.97
+  card-repeats:: 9
+  card-ease-factor:: 1.3
+  card-next-schedule:: 2023-10-27T08:10:29.008Z
+  card-last-reviewed:: 2023-10-09T09:10:29.008Z
   card-last-score:: 3
 	- 对象一旦被创建，它的属性值就不能改变 ，可以通过反射方式进行破坏
 	- 保证了内存的可见性，不需要额外的同步手段，提升代码执行效率
