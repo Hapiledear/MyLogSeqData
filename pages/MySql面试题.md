@@ -30,11 +30,11 @@
 	- 记录 bin log
 	- 事务提交 ，等待被工作线程刷入磁盘
 - 查询语句的各部分执行顺序 9 #card
-  card-last-interval:: 27.13
-  card-repeats:: 7
-  card-ease-factor:: 1.52
-  card-next-schedule:: 2023-10-08T06:16:19.474Z
-  card-last-reviewed:: 2023-09-11T03:16:19.475Z
+  card-last-interval:: 27.63
+  card-repeats:: 8
+  card-ease-factor:: 1.38
+  card-next-schedule:: 2023-11-05T22:37:57.724Z
+  card-last-reviewed:: 2023-10-09T07:37:57.725Z
   card-last-score:: 3
 	- {{cloze from -> join t2 on xxx  -> where yyy -> group by aaa -> having -> bbb -> select aaa,bbb,ccc -> distinct aaa ->order by bbb -> limit m,n}}
 - 存储引擎InnoDb和MyISAM的区别 #card
@@ -84,11 +84,11 @@
 			- 4种隔离级别 {{cloze 读未提交}} {{cloze 读已提交}} {{cloze 可重复读读}} {{cloze 串行化}}
 		- {{cloze 锁机制 和 MVVC机制}}
 - Undo Log 和Redo Log #card
-  card-last-interval:: 27.13
-  card-repeats:: 7
-  card-ease-factor:: 1.52
-  card-next-schedule:: 2023-10-08T06:21:13.899Z
-  card-last-reviewed:: 2023-09-11T03:21:13.899Z
+  card-last-interval:: 27.63
+  card-repeats:: 8
+  card-ease-factor:: 1.38
+  card-next-schedule:: 2023-11-05T22:40:20.102Z
+  card-last-reviewed:: 2023-10-09T07:40:20.102Z
   card-last-score:: 3
 	- Undo Log
 		- 存储的是 {{cloze 旧数据的版本链集合}}
@@ -179,11 +179,11 @@
 		- 可重复读的实现
 			- {{cloze 只在第一次执行查询语句时生成 Read View}}
 - MySql中的锁有哪些 #card
-  card-last-interval:: 27.13
-  card-repeats:: 7
-  card-ease-factor:: 1.52
-  card-next-schedule:: 2023-10-08T06:18:26.807Z
-  card-last-reviewed:: 2023-09-11T03:18:26.807Z
+  card-last-interval:: 27.63
+  card-repeats:: 8
+  card-ease-factor:: 1.38
+  card-next-schedule:: 2023-11-05T22:39:06.261Z
+  card-last-reviewed:: 2023-10-09T07:39:06.261Z
   card-last-score:: 3
 	- 表锁
 		- 意向锁
@@ -211,11 +211,11 @@
 		- 作用 {{cloze 在RR事务级别下，解决并发插入问题}}
 		- 原理 {{cloze 区间相同但插入记录本身不同的情况下 互不排斥}}
 - 主键的选择，使用自增ID 还是 UUID #card
-  card-last-interval:: 27.13
-  card-repeats:: 7
-  card-ease-factor:: 1.52
-  card-next-schedule:: 2023-10-08T06:24:24.325Z
-  card-last-reviewed:: 2023-09-11T03:24:24.325Z
+  card-last-interval:: 27.63
+  card-repeats:: 8
+  card-ease-factor:: 1.38
+  card-next-schedule:: 2023-11-05T22:42:23.882Z
+  card-last-reviewed:: 2023-10-09T07:42:23.882Z
   card-last-score:: 3
 	- 自增型ID {{cloze 符合主键索引的顺序排布，插入快速，产生碎片较少}}
 	- UUID {{cloze 全局唯一，跨系统存取方便}} {{cloze 较为分散，不会产生数据倾斜}}
@@ -242,11 +242,11 @@
 		- {{cloze 需要占用物理空间}}
 		- {{cloze 每次增改数据，都需要动态维护索引，导致增改时间变长}}
 - 聚集索引和非聚集索引 #card
-  card-last-interval:: 27.13
-  card-repeats:: 7
-  card-ease-factor:: 1.52
-  card-next-schedule:: 2023-10-08T06:19:49.984Z
-  card-last-reviewed:: 2023-09-11T03:19:49.984Z
+  card-last-interval:: 27.63
+  card-repeats:: 8
+  card-ease-factor:: 1.38
+  card-next-schedule:: 2023-11-05T22:40:00.067Z
+  card-last-reviewed:: 2023-10-09T07:40:00.067Z
   card-last-score:: 3
 	- 聚簇索引
 		- {{cloze b+树的叶子节点中存放了表中一行的全部数据}}
@@ -264,11 +264,11 @@
 	- 索引覆盖 {{cloze select字段 存在索引中}}
 	- 最左匹配原则 {{cloze 利用最左匹配，减少索引的建立}}
 - 索引失效的13种场景 #card
-  card-last-interval:: 27.13
-  card-repeats:: 7
-  card-ease-factor:: 1.52
-  card-next-schedule:: 2023-10-08T06:22:00.091Z
-  card-last-reviewed:: 2023-09-11T03:22:00.091Z
+  card-last-interval:: 27.63
+  card-repeats:: 8
+  card-ease-factor:: 1.38
+  card-next-schedule:: 2023-11-05T22:40:50.571Z
+  card-last-reviewed:: 2023-10-09T07:40:50.605Z
   card-last-score:: 3
 	- 联合索引不满足最左匹配原则
 	- 使用了 `select * ` 肯定不会走 覆盖索引
@@ -293,11 +293,11 @@
 	- 不存在索引下推时 {{cloze 先根据索引查记录，再根据where条件过滤}}
 	- 使用索引下推后 {{cloze 先根据 where条件过滤记录，再进行索引查询}}
 - MRR优化 #card
-  card-last-interval:: 27.13
-  card-repeats:: 7
-  card-ease-factor:: 1.52
-  card-next-schedule:: 2023-10-08T06:23:08.141Z
-  card-last-reviewed:: 2023-09-11T03:23:08.141Z
+  card-last-interval:: 27.63
+  card-repeats:: 8
+  card-ease-factor:: 1.38
+  card-next-schedule:: 2023-11-05T22:41:52.032Z
+  card-last-reviewed:: 2023-10-09T07:41:52.033Z
   card-last-score:: 3
 	- 当使用二级索引进行范围查询时，从随机读变为顺序读 {{cloze 通过对索引值排序，把无序回表IO变成有序回表IO}}
 - Explain 查询计划 #card
@@ -353,11 +353,11 @@
 	- redo log
 		- 是存储引擎 InnoDb的日志 ，记录的是 {{cloze 某个数据做了什么修改}}
 - MySql的主从复制 3线程 #card
-  card-last-interval:: 27.13
-  card-repeats:: 7
-  card-ease-factor:: 1.52
-  card-next-schedule:: 2023-10-08T06:25:58.326Z
-  card-last-reviewed:: 2023-09-11T03:25:58.326Z
+  card-last-interval:: 27.63
+  card-repeats:: 8
+  card-ease-factor:: 1.38
+  card-next-schedule:: 2023-11-05T22:44:44.740Z
+  card-last-reviewed:: 2023-10-09T07:44:44.740Z
   card-last-score:: 3
 	- Master开启 bin log ,对数据的更新操作会按顺序写入 bin log
 	- Slave连接Master后，Slave的一个`IO线程` 请求 bin log dump
@@ -399,11 +399,11 @@
 			- {{cloze 所有的旧代码，都对新库进行增删改}}
 			- {{cloze 不断从老库抽数据，往新库写。边写边比对数据是不是最新的}}
 - 业务中影响MySQL性能的场景 #card
-  card-last-interval:: 27.13
-  card-repeats:: 7
-  card-ease-factor:: 1.52
-  card-next-schedule:: 2023-10-08T06:14:36.326Z
-  card-last-reviewed:: 2023-09-11T03:14:36.326Z
+  card-last-interval:: 27.63
+  card-repeats:: 8
+  card-ease-factor:: 1.38
+  card-next-schedule:: 2023-11-05T22:35:05.246Z
+  card-last-reviewed:: 2023-10-09T07:35:05.246Z
   card-last-score:: 3
 	- 大规模数据导出功能
 		- {{cloze 建议`limit m,n` 替换成id的范围查询}}
@@ -412,12 +412,12 @@
 	- 各种看板和统计报表
 		- {{cloze 数据工厂，离线计算。 直接接入ES}}
 - 大批量数据的插入 #card
-  card-last-interval:: 27.13
-  card-repeats:: 7
+  card-last-interval:: -1
+  card-repeats:: 1
   card-ease-factor:: 1.52
-  card-next-schedule:: 2023-10-08T06:25:29.023Z
-  card-last-reviewed:: 2023-09-11T03:25:29.024Z
-  card-last-score:: 3
+  card-next-schedule:: 2023-10-09T16:00:00.000Z
+  card-last-reviewed:: 2023-10-09T07:43:57.431Z
+  card-last-score:: 1
 	- 开启事务
 	- 合并插入：一条语句插入多条数据
 	- 顺序插入：数据按主键ID排序好

@@ -108,11 +108,11 @@
 	- 基于 {{cloze IO多路复用模型}} IO模型 {{cloze 让单个线程高效处理多个连接请求}}
 	- {{cloze C语言实现，更加优化的基础数据结构}} 语言、底层数据结构
 - Redis是单线程的吗？ #card
-  card-last-interval:: 27.13
-  card-repeats:: 7
-  card-ease-factor:: 1.52
-  card-next-schedule:: 2023-10-08T06:25:24.548Z
-  card-last-reviewed:: 2023-09-11T03:25:24.548Z
+  card-last-interval:: 27.63
+  card-repeats:: 8
+  card-ease-factor:: 1.38
+  card-next-schedule:: 2023-11-05T22:43:55.523Z
+  card-last-reviewed:: 2023-10-09T07:43:55.523Z
   card-last-score:: 3
 	- 只有 {{cloze 网络请求模块}} 和 {{cloze 数据操作模块}} 是单线程的 其他的如 持久化模块、集群模块是多线程的
 	- 多线程的好处 {{cloze 使用多线程可以提升 IO利用率和CPU利用率}}
@@ -173,11 +173,11 @@
 	- AOF的缺点
 		- 生成的文件 {{cloze 比RDB大}} {{cloze 恢复速度慢}}
 - Redis的主从复制过程 #card
-  card-last-interval:: 27.13
-  card-repeats:: 7
-  card-ease-factor:: 1.52
-  card-next-schedule:: 2023-10-08T06:15:55.225Z
-  card-last-reviewed:: 2023-09-11T03:15:55.225Z
+  card-last-interval:: 27.63
+  card-repeats:: 8
+  card-ease-factor:: 1.38
+  card-next-schedule:: 2023-11-05T22:37:29.362Z
+  card-last-reviewed:: 2023-10-09T07:37:29.362Z
   card-last-score:: 3
 	- 从服务器首次连接 {{cloze 全量复制}} {{cloze rdb or aof文件}}
 	- 复制后数据先 {{cloze 保存到本地磁盘}} 后 {{cloze 从磁盘读取到内存}}
