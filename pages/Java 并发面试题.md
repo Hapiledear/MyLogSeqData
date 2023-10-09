@@ -183,11 +183,11 @@
 	- 缺点 {{cloze copy数组代价高昂，消耗内存}}
 	- 适用场景 {{cloze 读多写少}}
 - 阻塞队列BlockingQueue的实现原理 #card #Java并发
-  card-last-interval:: 27.13
-  card-repeats:: 7
-  card-ease-factor:: 1.52
-  card-next-schedule:: 2023-10-08T06:28:01.321Z
-  card-last-reviewed:: 2023-09-11T03:28:01.321Z
+  card-last-interval:: 27.63
+  card-repeats:: 8
+  card-ease-factor:: 1.38
+  card-next-schedule:: 2023-11-05T22:48:03.346Z
+  card-last-reviewed:: 2023-10-09T07:48:03.346Z
   card-last-score:: 3
 	- 拯救了生产者-消费者模型的控制逻辑
 		- {{cloze 在队列为空时，获取元素的线程会等待队列变为非空}}
