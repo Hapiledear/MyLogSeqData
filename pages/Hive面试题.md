@@ -17,8 +17,10 @@
 			- 将distinct数据量大的列放在前面
 		- order by
 			- 尽量不使用Order by,使用时加上limit
-			-
+			- 如果需要按照多个字段order by，可以将排序操作放在ADS层数据，使用Spark排序，获取rn（序号），这样就可以使用presto只根据rn1个字段排序
 		- distinct
+			- 消耗资源较大。可考虑用近似聚合approx_distinct()代替。
 		- union
+			- 如没有去重需求，使用union all代替union。
 	-
 -
