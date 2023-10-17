@@ -412,21 +412,21 @@
 	- 各种看板和统计报表
 		- {{cloze 数据工厂，离线计算。 直接接入ES}}
 - 大批量数据的插入 #card
-  card-last-interval:: -1
-  card-repeats:: 1
-  card-ease-factor:: 1.52
-  card-next-schedule:: 2023-10-09T16:00:00.000Z
-  card-last-reviewed:: 2023-10-09T07:43:57.431Z
-  card-last-score:: 1
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 1.38
+  card-next-schedule:: 2023-10-21T07:19:40.049Z
+  card-last-reviewed:: 2023-10-17T07:19:40.049Z
+  card-last-score:: 3
 	- 开启事务
 	- 合并插入：一条语句插入多条数据
 	- 顺序插入：数据按主键ID排序好
 - 用户订单表(uid,aid,create_time) 要想让查询强制走uid索引，可以怎么做？ #card
-  card-last-interval:: 0.26
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-10-09T12:50:23.271Z
-  card-last-reviewed:: 2023-10-09T06:50:23.271Z
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-10-21T07:18:16.093Z
+  card-last-reviewed:: 2023-10-17T07:18:16.094Z
   card-last-score:: 3
 	- {{cloze force index}} 关键字
 	- 强制类型转化 将 {{cloze create_time 转为int型}}
