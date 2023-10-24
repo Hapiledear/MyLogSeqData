@@ -153,11 +153,11 @@
 	- 根据provider的地址和接口连接到 {{cloze 服务端server}} ，开启 {{cloze 客户端client}} ，再 {{cloze 创建invoker}} 。
 	- 用 {{cloze invoker}} 为服务接口生成代理对象，这个代理对象是用来远程调用。
 - 设计一个RPC框架要考虑什么 #card
-  card-last-interval:: 2.95
-  card-repeats:: 6
-  card-ease-factor:: 1.8
-  card-next-schedule:: 2023-10-20T05:20:14.633Z
-  card-last-reviewed:: 2023-10-17T07:20:14.633Z
+  card-last-interval:: 50.42
+  card-repeats:: 7
+  card-ease-factor:: 1.66
+  card-next-schedule:: 2023-12-13T11:48:23.433Z
+  card-last-reviewed:: 2023-10-24T01:48:23.433Z
   card-last-score:: 3
 	- {{cloze 注册中心}} 让消费者知道有哪些服务，提供者知道自己提供了什么服务
 	- {{cloze 负载均衡}} 一个接口多台实例，client该调用哪一个

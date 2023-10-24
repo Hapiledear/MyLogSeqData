@@ -1,9 +1,9 @@
 - 常见的SQL调优方法 #card
-  card-last-interval:: 0.26
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2023-10-17T13:13:59.856Z
-  card-last-reviewed:: 2023-10-17T07:13:59.857Z
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2023-10-28T01:47:51.972Z
+  card-last-reviewed:: 2023-10-24T01:47:51.972Z
   card-last-score:: 3
 	- Map端优化（无shuffle）
 		- 分区剪裁-- 过滤条件中使用分区匹配

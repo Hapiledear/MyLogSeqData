@@ -149,11 +149,11 @@
 	- 对于支持嵌套事务的数据库，直接嵌套
 	- MySQL不支持嵌套事务，而是采用 {{cloze 保存点}}的机制
 - Spring 注解失效的场景 #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-10-21T07:17:59.771Z
-  card-last-reviewed:: 2023-10-17T07:17:59.772Z
+  card-last-interval:: 7.49
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-10-31T12:49:16.437Z
+  card-last-reviewed:: 2023-10-24T01:49:16.438Z
   card-last-score:: 3
 	- 没有获取到代理对象
 	- 跨线程调用没有传递必要参数，如在事务中开启多线程会使得事务失效
