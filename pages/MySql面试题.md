@@ -412,11 +412,11 @@
 	- 各种看板和统计报表
 		- {{cloze 数据工厂，离线计算。 直接接入ES}}
 - 大批量数据的插入 #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 1.38
-  card-next-schedule:: 2023-10-21T07:19:40.049Z
-  card-last-reviewed:: 2023-10-17T07:19:40.049Z
+  card-last-interval:: 5.2
+  card-repeats:: 3
+  card-ease-factor:: 1.3
+  card-next-schedule:: 2023-10-29T05:57:02.547Z
+  card-last-reviewed:: 2023-10-24T01:57:02.548Z
   card-last-score:: 3
 	- 开启事务
 	- 合并插入：一条语句插入多条数据

@@ -118,11 +118,11 @@
 	- {{cloze 简化maven配置，使用 starter 扩展}}
 	- {{cloze 引入相关 starter后，自动装配相关bean}}
 - SpringBoot启动流程 #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-10-21T07:18:56.377Z
-  card-last-reviewed:: 2023-10-17T07:18:56.377Z
+  card-last-interval:: 7.49
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-10-31T12:51:38.046Z
+  card-last-reviewed:: 2023-10-24T01:51:38.046Z
   card-last-score:: 3
 	- 运行main方法，SpringBootApplication
 	- 初始化阶段
@@ -140,11 +140,11 @@
 	- 编写一个`Configuration类`，告知何时加载自己的Bean
 	- 将这个类写入 `spring.factories` 便于启动时自行装载
 - Spring中的嵌套事务如何实现 #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2023-10-21T07:19:00.501Z
-  card-last-reviewed:: 2023-10-17T07:19:00.502Z
+  card-last-interval:: 7.49
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2023-10-31T12:53:37.358Z
+  card-last-reviewed:: 2023-10-24T01:53:37.359Z
   card-last-score:: 3
 	- 对于支持嵌套事务的数据库，直接嵌套
 	- MySQL不支持嵌套事务，而是采用 {{cloze 保存点}}的机制
