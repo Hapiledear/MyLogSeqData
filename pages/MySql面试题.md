@@ -372,8 +372,12 @@
 	- order by a limit 10 分页的最后一页 查询结果为6条  且 where中没有使用a
 		- 如果 SQL 使用的 limit 限制大于剩余的总条数，并且使用的索引条件不能很好的利用上有序的特性，那么 MYSQL 很可能会进行全表扫描
 		- 方案，分页查询的数据已经不满一页的情况下，最好手动设置 limit 参数
-	- join 表过多
-		-
+	- 复杂查询 join 表过多
+		- 方案一，适当冗余字段 or 加工宽表
+		- 方案二，数据灌入ES
+		- 方案三，单表读取数据，程序进行处理
+	- 大表分页count时变慢
+		- 方案，分离count和 selectList.如使用ES作为count来源
 - bin log 和 redo log的区别 #card
   card-last-interval:: 27.63
   card-repeats:: 8
