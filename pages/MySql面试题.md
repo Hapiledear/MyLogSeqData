@@ -20,12 +20,13 @@
 		- 识别表名和列名，检查语法
 	- SQL优化 {{cloze 优化器}} 生成 执行计划
 		- 分析查询数，选择最优的执行计划
-		- 对 索引的选择 和 join的优化
-	- SQL执行器
+		- 对 **索引**的选择 和 **join**的优化(join算法、驱动表)
+	- SQL执行 {{cloze 执行器}}
 		- 根据执行计划，向存储引擎发送数据请求
-		- 对于引擎返回的记录，做 筛选(包括回表)、分组、排序
-	- 委托给存储引擎 {{cloze 执行器}}
-	-
+		- 对于引擎返回的记录，做 筛选、分组、排序
+	- 委托给存储引擎
+		- 进行实际的索引扫描
+		- 将记录所在的数据页放入缓冲池 (磁盘->内存 )
 - SQL update过程 #card
   card-last-interval:: 27.63
   card-repeats:: 8
@@ -46,6 +47,9 @@
   card-last-reviewed:: 2023-10-09T07:37:57.725Z
   card-last-score:: 3
 	- {{cloze from -> join t2 on xxx  -> where yyy -> group by aaa -> having -> bbb -> select aaa,bbb,ccc -> distinct aaa ->order by bbb -> limit m,n}}
+- MySQL的join过程 #card
+	- 确定驱动表 - 在SQL优化阶段
+-
 - 存储引擎InnoDb和MyISAM的区别 #card
   card-last-interval:: 17.97
   card-repeats:: 9
