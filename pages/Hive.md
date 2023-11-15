@@ -21,12 +21,10 @@
 - Join 优化 #查询优化
   id:: 621b3b25-831d-4e0d-b49c-19ab01044211
 	- Map Join 适用于 小表 join 大表 或 小表 join 小表
-	  collapsed:: true
 		- 将小的那份完整的数据给每个MapTask的内存都放一份
 		- 这样底层不需要经过shuffle,仅需占用存放小数据文件的内存空间
 		- ![image.png](../assets/image_1645952080865_0.png)
 	- Reduce Join 适用于 大表 Join 大表
-	  collapsed:: true
 		- 利用Shuffle阶段的分组对数据按join字段进行合并。
 		- ![image.png](../assets/image_1645952240358_0.png)
 	- 自动判断，满足Map Join则执行,不满足则Reduce Join
