@@ -48,7 +48,9 @@
   card-last-score:: 3
 	- {{cloze from -> join t2 on xxx  -> where yyy -> group by aaa -> having -> bbb -> select aaa,bbb,ccc -> distinct aaa ->order by bbb -> limit m,n}}
 - MySQL的join过程 #card
-	- 确定驱动表 - 在SQL优化阶段
+	- 确定驱动表 - 在SQL优化阶段,优化器根据 {{cloze 查询条件}} 预估 每张表的数据量大小。选择 {{cloze 最小}} 的作为驱动表
+	- 加载驱动表的数据到内存
+	- 执行join算法 - 在SQL执行阶段，如果有可以利用的索引也会利用，达到join的同时进行数据过滤
 -
 - 存储引擎InnoDb和MyISAM的区别 #card
   card-last-interval:: 17.97
