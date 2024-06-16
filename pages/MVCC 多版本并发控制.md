@@ -11,4 +11,5 @@
 	- 写入时，T2需要等到T1的状态变为committed再执行W(A)，因为存在未提交的新版本
 		- ![image.png](../assets/image_1718527786455_0.png){:height 156, :width 276}
 	- 这个执行调度并不是serializable的，因为T2并没有在T1提交更新的基础上进行操作，因此只依靠MVCC是不能达到调度的串行化的
--
+- 并发控制协议 Concurrency Control Protocol
+	- 只使用MVCC无法做到的隔离级别，因此会和如下的其他一些协议结合在一起
