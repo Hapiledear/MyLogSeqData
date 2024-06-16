@@ -35,10 +35,26 @@
 			- 无需遍历整个链表
 	- 时间线方式 time-travel storage
 		- ![image.png](../assets/image_1718529789134_0.png){:height 251, :width 353}
-		- 将老版本直接copy到time-travel表，新版本写入主表，新版本指向老版本
+		- 将老版本的整个tuple直接copy到time-travel表，新版本写入主表，新版本指向老版本
 	- 增量存储方式 delta storage
 		- ![image.png](../assets/image_1718529885126_0.png){:height 238, :width 359}
 		- 在 time-travel Table的基础上，只存储修改部分的数据，而不是整个tuple
-	-
+		- 节省存储空间，但在读取的时候需要组装数据，所以更慢。
 - 垃圾回收 Garbage Collection
+	- 数据库不可能无限地存储各个数据的历史版本，存不下那么多的数据，因此DBMS需要把那些已经没有用了，作废了的历史版本删除。
+	- 可回收记录的两个宗旨
+		- 任何active状态的事务都看不到某个历史版本
+		- 某个事务创建了某个历史版本，但这个事务后来回滚了
+	- 实现垃圾回收要解决的两个问题
+		- 如何发现无用的历史版本？
+		- 什么时候去删除无用的历史版本？
+	- 两种思路
+		- 行记录级别 Tuple-Level
+			- 扫描并清理每一个tuple中的历史版本
+			- 两种实现方式
+				-
+			- 后台清理 background vacuuming
+				- vacuum线程每隔一段时间就扫描历史表（或同类的其他表），然后结合当前active的事务的时间戳去分析表中哪一个版本是无用的
+			- 合作清理 cooperative cleaning
+		- 事务级别 Transaction-Level
 - 索引管理 Index Management
