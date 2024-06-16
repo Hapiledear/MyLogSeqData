@@ -21,6 +21,24 @@
 - 版本存储 Version Storage
 	- 使用tuple对象的指针建立起一个版本链表
 		- 对于正在执行中的事务Ti,可以很方便的找到想要的版本
-		- tuple如果有索引
+		- tuple如果有索引，那么索引最后指向的是版本链表的头节点
+	- 三种实现方式
+		-
+	- ---
+	- 追加方式 Append-Only Storage
+		- ![image.png](../assets/image_1718529535145_0.png){:height 165, :width 463}
+		- oldest-to-newest(O2N) 写入时开销小,读取时开销大
+			- 新版本记录放在链表末尾
+			- 必须先遍历完整个链表
+		- newest-to-oldest(N2O) 读取时开销小，写入时开销大
+			- 更新索引指针，指向新版本
+			- 无需遍历整个链表
+	- 时间线方式 time-travel storage
+		- ![image.png](../assets/image_1718529789134_0.png){:height 251, :width 353}
+		- 将老版本直接copy到time-travel表，新版本写入主表，新版本指向老版本
+	- 增量存储方式 delta storage
+		- ![image.png](../assets/image_1718529885126_0.png){:height 238, :width 359}
+		- 在 time-travel Table的基础上，只存储修改部分的数据，而不是整个tuple
+	-
 - 垃圾回收 Garbage Collection
 - 索引管理 Index Management
