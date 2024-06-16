@@ -50,11 +50,27 @@
 		- 什么时候去删除无用的历史版本？
 	- 两种思路
 		- 行记录级别 Tuple-Level
+		  collapsed:: true
 			- 扫描并清理每一个tuple中的历史版本
 			- 两种实现方式
-				-
+			  collapsed:: true
+				- ((666eb100-fc30-4748-b607-1254b992ad78))
+				- ((666eb112-7d35-44b1-8a76-cb8e52260535))
 			- 后台清理 background vacuuming
+			  id:: 666eb100-fc30-4748-b607-1254b992ad78
 				- vacuum线程每隔一段时间就扫描历史表（或同类的其他表），然后结合当前active的事务的时间戳去分析表中哪一个版本是无用的
+				- 可以维护一个dirty block bitmap，去跟踪自从上次垃圾回收至今表里有哪些页被事务修改过，因此下一次垃圾回收的时候，只需要扫描自从上次GC以来被修改过的页面
 			- 合作清理 cooperative cleaning
+			  id:: 666eb112-7d35-44b1-8a76-cb8e52260535
+				- 工作线程在执行事务操作时顺带扫描并清理过期的版本。
+				- 但如果某条记录一直没有被事务扫描到，则永远无法被清理。
 		- 事务级别 Transaction-Level
+			- 事务维护一个读集合和写集合，分别存储其读到的记录和创建的记录，当事务结束后，再从两个集合中找出对于运行中事务不再可见的记录，将他们删除掉。
 - 索引管理 Index Management
+	- 主键索引Primary key 的指针会指向版本链表的头部，而且是通过物理地址（在哪个页的哪个slot）来定位的。
+	- 辅助索引secondary indexes 的处理则有两个流派
+		- ![image.png](../assets/image_1718531070889_0.png)
+		-
+	- 逻辑指针 logical pointer
+		-
+	- 物理指针 physical pointer
