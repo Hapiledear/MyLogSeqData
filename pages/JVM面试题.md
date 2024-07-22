@@ -1,11 +1,11 @@
 - {{cards [[JVM面试题]] }}
 - [[Java 元空间]] 会产生内存溢出吗？ #card
-  card-last-score:: 3
-  card-repeats:: 8
-  card-next-schedule:: 2023-11-05T22:48:21.276Z
-  card-last-interval:: 27.63
+  card-last-score:: 1
+  card-repeats:: 1
+  card-next-schedule:: 2024-07-22T16:00:00.000Z
+  card-last-interval:: -1
   card-ease-factor:: 1.38
-  card-last-reviewed:: 2023-10-09T07:48:21.276Z
+  card-last-reviewed:: 2024-07-22T09:03:19.729Z
 	- 元空间的由来。 {{cloze 从java8+开始，用 元空间 替代了 永久代/方法区}}
 	- 元空间的内存 {{cloze 并不使用虚拟机的内存，而是直接使用机器内存}}
 	- 出现OOM的原因 {{cloze 加载到内存中的class文件数量太多or体积太大}}
@@ -58,12 +58,12 @@
 	- {{cloze  年轻代又分 eden区 s1和s2区 比例为 8:1:1}} 3区
 	- {{cloze 通常 年轻代采用的GC算法是 复制算法，老年代采用的是标记-整理算法 }} GC算法
 - 非堆内存有哪些 #card
-  card-last-interval:: 72.3
-  card-repeats:: 8
+  card-last-interval:: -1
+  card-repeats:: 1
   card-ease-factor:: 1.62
-  card-next-schedule:: 2023-12-20T14:21:44.024Z
-  card-last-reviewed:: 2023-10-09T07:21:44.025Z
-  card-last-score:: 3
+  card-next-schedule:: 2024-07-22T16:00:00.000Z
+  card-last-reviewed:: 2024-07-22T09:25:19.496Z
+  card-last-score:: 1
 	- {{cloze DirectByteBuffer 所申请的直接内存}} NIO
 	- {{cloze 方法区的具体实现 元空间}}
 - ## 为什么 字符串常量池 #常量池 被移动到了堆中？ #card
@@ -138,12 +138,12 @@
 		- 堆对于整个应用程序都是共享的、可见的
 		- 栈是线程私有的
 - 对象创建过程 #card
-  card-last-interval:: 72.3
-  card-repeats:: 8
+  card-last-interval:: -1
+  card-repeats:: 1
   card-ease-factor:: 1.62
-  card-next-schedule:: 2023-12-20T14:25:13.988Z
-  card-last-reviewed:: 2023-10-09T07:25:13.989Z
-  card-last-score:: 3
+  card-next-schedule:: 2024-07-22T16:00:00.000Z
+  card-last-reviewed:: 2024-07-22T09:25:40.094Z
+  card-last-score:: 1
 	- 类加载
 	- 分配内存
 		- 两种方式 {{cloze 指针碰撞，空闲列表}}
@@ -163,12 +163,12 @@
 	- clone方法
 	- 反序列化
 - 类加载过程 #card
-  card-last-interval:: 72.3
-  card-repeats:: 8
+  card-last-interval:: -1
+  card-repeats:: 1
   card-ease-factor:: 1.62
-  card-next-schedule:: 2023-12-20T14:22:21.699Z
-  card-last-reviewed:: 2023-10-09T07:22:21.699Z
-  card-last-score:: 3
+  card-next-schedule:: 2024-07-22T16:00:00.000Z
+  card-last-reviewed:: 2024-07-22T09:25:34.542Z
+  card-last-score:: 1
 	- 加载 {{cloze 导入class文件}}
 	- 验证 {{cloze 检测class文件的正确性}}
 	- 准备 {{cloze 给静态变量分配内存空间}}
@@ -187,12 +187,12 @@
 	- 自定义类加载器
 	- 双亲委派： {{cloze 先将其委派给父类，如果父类不能加载，再自己来}}
 - 对象如何访问 #card
-  card-last-interval:: 72.3
-  card-repeats:: 8
+  card-last-interval:: -1
+  card-repeats:: 1
   card-ease-factor:: 1.62
-  card-next-schedule:: 2023-12-20T14:25:58.368Z
-  card-last-reviewed:: 2023-10-09T07:25:58.368Z
-  card-last-score:: 3
+  card-next-schedule:: 2024-07-22T16:00:00.000Z
+  card-last-reviewed:: 2024-07-22T09:25:49.661Z
+  card-last-score:: 1
 	- 句柄
 		- {{cloze 栈中对象的引用 ->堆中句柄池中的句柄 -> 堆中的实例 和 方法区的类型信息}} 栈-> 堆->堆和方法区
 		- {{cloze 由于GC频繁导致对象的地址变更，这样做可以不用修改引用}} 为什么这么做
@@ -200,24 +200,24 @@
 		- {{cloze 栈中的对象引用 -> 堆中的对象实例 -> 方法区中对应的类型信息}} 栈->堆->方法区
 		- {{cloze 节省了一次指针定位的时间}} 好处
 - 对象分配策略 #card
-  card-last-interval:: 72.3
-  card-repeats:: 8
+  card-last-interval:: -1
+  card-repeats:: 1
   card-ease-factor:: 1.62
-  card-next-schedule:: 2023-12-20T14:25:43.506Z
-  card-last-reviewed:: 2023-10-09T07:25:43.506Z
-  card-last-score:: 3
+  card-next-schedule:: 2024-07-22T16:00:00.000Z
+  card-last-reviewed:: 2024-07-22T09:25:44.110Z
+  card-last-score:: 1
 	- 新对象分配在eden区，大对象直接进入老年代
 	- 经历过一次Minor GC ,复制到surviro区，年龄+1
 	- 经历了多次Minor GC 且年龄超过一定限制，复制到老年代
 		- 年龄 = 相同年龄对象大小之和 > S 区的一半
 	- 老年代满了则触发 Full GC
 - JVM中的垃圾回收器有哪些,及其工作原理 #card
-  card-last-interval:: 38.13
-  card-repeats:: 9
+  card-last-interval:: -1
+  card-repeats:: 1
   card-ease-factor:: 1.38
-  card-next-schedule:: 2023-11-16T10:21:20.200Z
-  card-last-reviewed:: 2023-10-09T07:21:20.200Z
-  card-last-score:: 3
+  card-next-schedule:: 2024-07-22T16:00:00.000Z
+  card-last-reviewed:: 2024-07-22T09:24:31.621Z
+  card-last-score:: 1
 	- Serial
 		- 串行收集
 	- Parral
@@ -309,12 +309,12 @@
 		- 循环优化-无关代码外提、循环展开(次数减少，重复相同逻辑x次)
 		-
 - Java程序 CPU突然飙升 该如何处理？#card
-  card-last-interval:: 27.63
-  card-repeats:: 8
+  card-last-interval:: -1
+  card-repeats:: 1
   card-ease-factor:: 1.38
-  card-next-schedule:: 2023-11-05T23:05:06.114Z
-  card-last-reviewed:: 2023-10-09T08:05:06.114Z
-  card-last-score:: 3
+  card-next-schedule:: 2024-07-22T16:00:00.000Z
+  card-last-reviewed:: 2024-07-22T09:16:29.657Z
+  card-last-score:: 1
 	- 问题定位
 		- {{cloze top 命令}} 查看CPU占用情况，找到进程id
 		- {{cloze top -Hp}} 查看进程中的线程，找到占用最高的线程ID
@@ -324,12 +324,12 @@
 		- 空循环，或者空自旋 {{cloze 使用Thread.sleep或者加锁，让线程适当的阻塞}}
 		- 在循环的代码逻辑中，创建大量的新对象 {{cloze 减少对象的创建数量 or 使用对象池}}
 - JVM的内存分配为什么是1:1:8 #card
-  card-last-interval:: 27.63
-  card-repeats:: 8
+  card-last-interval:: -1
+  card-repeats:: 1
   card-ease-factor:: 1.38
-  card-next-schedule:: 2023-11-05T23:07:38.840Z
-  card-last-reviewed:: 2023-10-09T08:07:38.840Z
-  card-last-score:: 3
+  card-next-schedule:: 2024-07-22T16:00:00.000Z
+  card-last-reviewed:: 2024-07-22T09:17:53.561Z
+  card-last-score:: 1
 	- 为什么要有Eden和servivor区
 		- {{cloze 减少被送入老年代的对象，进而减少Full GC次数}}
 	- 为什么要有2个servivor区
