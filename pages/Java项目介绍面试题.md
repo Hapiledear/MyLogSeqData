@@ -9,12 +9,12 @@
 	- 接入层 {{cloze LVS Linux虚拟服务器}} + {{cloze Nginx}}
 	- 服务层 {{cloze Spring 网关}} + {{cloze 本地缓存}} + {{cloze Redis集群}} + {{cloze 数据库 兜底}}
 - 从高并发的角度介绍项目 10 #card
-  card-last-interval:: 18.59
-  card-repeats:: 9
+  card-last-interval:: -1
+  card-repeats:: 1
   card-ease-factor:: 1.3
-  card-next-schedule:: 2023-10-27T22:52:33.573Z
-  card-last-reviewed:: 2023-10-09T08:52:33.573Z
-  card-last-score:: 3
+  card-next-schedule:: 2024-07-22T16:00:00.000Z
+  card-last-reviewed:: 2024-07-22T08:09:20.411Z
+  card-last-score:: 1
 	- 拆分为微服务
 		- {{cloze 方便重要业务的水平扩展，如基础模块，用户模块}}
 	- 分库分表

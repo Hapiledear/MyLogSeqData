@@ -24,12 +24,12 @@
 		- {{cloze 系统复杂度提高}} 幂等性、可靠性
 		- {{cloze 一致性问题}}  BCD三个系统都消费同一条MQ BD成功而C失败
 - Rabbit MQ 如何保证消息的顺序性? #card
-  card-last-interval:: 27.63
-  card-repeats:: 8
+  card-last-interval:: -1
+  card-repeats:: 1
   card-ease-factor:: 1.38
-  card-next-schedule:: 2023-11-05T22:36:20.793Z
-  card-last-reviewed:: 2023-10-09T07:36:20.793Z
-  card-last-score:: 3
+  card-next-schedule:: 2024-07-22T16:00:00.000Z
+  card-last-reviewed:: 2024-07-22T08:35:15.224Z
+  card-last-score:: 1
 	- 拆分多个queue,每个queue对应一个consumer。
 	- {{cloze 发送时，根据key ID路由，保证同一个ID的消息发到同一个queue}}
 - Rabbit MQ 消息基于什么传输? #card
@@ -78,12 +78,12 @@
 		- {{cloze 数据发送时，会自动同步到所有机器上}}
 		- 缺点 {{cloze 同步开销大，占用网络带宽}}
 - 消息队列满了怎么处理？几百万消息积压几个小时。 #card
-  card-last-interval:: 27.63
-  card-repeats:: 8
+  card-last-interval:: -1
+  card-repeats:: 1
   card-ease-factor:: 1.38
-  card-next-schedule:: 2023-11-05T22:36:08.369Z
-  card-last-reviewed:: 2023-10-09T07:36:08.370Z
-  card-last-score:: 3
+  card-next-schedule:: 2024-07-22T16:00:00.000Z
+  card-last-reviewed:: 2024-07-22T08:34:43.367Z
+  card-last-score:: 1
 	- 消费者. {{cloze 快速定位问题，修复consumer}} {{cloze 停止线上的consumer消费}}
 	- 机器扩容 {{cloze 上线一个分发consumer，分发到新建立的topic，partition是原来的10倍}} {{cloze 消费consumer上线，也是原来的10倍}}
 	- 历史数据补回 {{cloze 找寻冗余字段 或 日志信息，尽可能的补回那些因本次事故过期\未正常处理的数据}}

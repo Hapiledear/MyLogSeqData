@@ -47,12 +47,12 @@
 		- 有状态指的是有数据的存储功能
 	- 或者是该数据字段使用 {{cloze ThreadLocal}} 修饰
 - Spring Bean的生命周期，描述一下 4阶段-2扩展点 #card
-  card-last-interval:: 20.02
-  card-repeats:: 7
+  card-last-interval:: -1
+  card-repeats:: 1
   card-ease-factor:: 1.38
-  card-next-schedule:: 2023-10-29T07:15:50.789Z
-  card-last-reviewed:: 2023-10-09T07:15:50.789Z
-  card-last-score:: 3
+  card-next-schedule:: 2024-07-22T16:00:00.000Z
+  card-last-reviewed:: 2024-07-22T08:21:31.177Z
+  card-last-score:: 1
 	- 实例化
 	- 属性填充
 	- 初始化
@@ -118,12 +118,12 @@
 	- {{cloze 简化maven配置，使用 starter 扩展}}
 	- {{cloze 引入相关 starter后，自动装配相关bean}}
 - SpringBoot启动流程 #card
-  card-last-interval:: 7.49
-  card-repeats:: 3
+  card-last-interval:: -1
+  card-repeats:: 1
   card-ease-factor:: 2.08
-  card-next-schedule:: 2023-10-31T12:51:38.046Z
-  card-last-reviewed:: 2023-10-24T01:51:38.046Z
-  card-last-score:: 3
+  card-next-schedule:: 2024-07-22T16:00:00.000Z
+  card-last-reviewed:: 2024-07-22T08:29:25.586Z
+  card-last-score:: 1
 	- 运行main方法，SpringBootApplication
 	- 初始化阶段
 		- 通过类加载器，读取classpath下的 {{cloze spring.factories}} 配置文件 和 {{cloze application.yml}} 资源文件
@@ -140,21 +140,21 @@
 	- 编写一个`Configuration类`，告知何时加载自己的Bean
 	- 将这个类写入 `spring.factories` 便于启动时自行装载
 - Spring中的嵌套事务如何实现 #card
-  card-last-interval:: 7.49
-  card-repeats:: 3
+  card-last-interval:: -1
+  card-repeats:: 1
   card-ease-factor:: 2.08
-  card-next-schedule:: 2023-10-31T12:53:37.358Z
-  card-last-reviewed:: 2023-10-24T01:53:37.359Z
-  card-last-score:: 3
+  card-next-schedule:: 2024-07-22T16:00:00.000Z
+  card-last-reviewed:: 2024-07-22T08:29:32.962Z
+  card-last-score:: 1
 	- 对于支持嵌套事务的数据库，直接嵌套
 	- MySQL不支持嵌套事务，而是采用 {{cloze 保存点}}的机制
 - Spring 注解失效的场景 #card
-  card-last-interval:: 7.49
-  card-repeats:: 3
+  card-last-interval:: -1
+  card-repeats:: 1
   card-ease-factor:: 2.08
-  card-next-schedule:: 2023-10-31T12:49:16.437Z
-  card-last-reviewed:: 2023-10-24T01:49:16.438Z
-  card-last-score:: 3
+  card-next-schedule:: 2024-07-22T16:00:00.000Z
+  card-last-reviewed:: 2024-07-22T08:28:48.450Z
+  card-last-score:: 1
 	- 没有获取到代理对象
 	- 跨线程调用没有传递必要参数，如在事务中开启多线程会使得事务失效
 -

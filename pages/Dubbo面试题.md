@@ -59,21 +59,21 @@
 	- RPC框架通常自带负载均衡和服务上下线，而传统的HTTP需要修改Nginx
 	- 但是Dubbo自身并没有 熔断器、网关、服务跟踪等其他微服务必要组件
 - Dubbo的主要应用场景 #card
-  card-last-interval:: 21.04
-  card-repeats:: 5
+  card-last-interval:: -1
+  card-repeats:: 1
   card-ease-factor:: 1.8
-  card-next-schedule:: 2023-10-30T06:56:06.726Z
-  card-last-reviewed:: 2023-10-09T06:56:06.726Z
-  card-last-score:: 3
+  card-next-schedule:: 2024-07-22T16:00:00.000Z
+  card-last-reviewed:: 2024-07-22T08:24:33.794Z
+  card-last-score:: 1
 	- 作为单纯的 {{cloze RPC}} 使用
 	- 微服务化 对应用进行 {{cloze 服务拆分}} 解决 {{cloze 服务依赖关系}} 和 {{cloze 服务扩容}} 问题
 - Dubbo如何实现服务治理 #card
-  card-last-interval:: 21.04
-  card-repeats:: 5
+  card-last-interval:: -1
+  card-repeats:: 1
   card-ease-factor:: 1.8
-  card-next-schedule:: 2023-10-30T06:57:59.540Z
-  card-last-reviewed:: 2023-10-09T06:57:59.540Z
-  card-last-score:: 3
+  card-next-schedule:: 2024-07-22T16:00:00.000Z
+  card-last-reviewed:: 2024-07-22T08:25:40.527Z
+  card-last-score:: 1
 	- {{cloze 自动生成服务间的调用链路}} 链路，需要借助其他框架如 {{cloze SkyWalking}}
 	- {{cloze 服务访问压力以及时长统计}} 时长
 	- {{cloze 服务可用性监控、失败告警监控}} 监控
@@ -98,12 +98,12 @@
 		- transport {{cloze 抽象 mina 和 netty 为统一接口}}
 		- serialize {{cloze 数据序列化}}
 - 说说常见的限流算法 #card
-  card-last-interval:: 21.04
-  card-repeats:: 5
+  card-last-interval:: -1
+  card-repeats:: 1
   card-ease-factor:: 1.8
-  card-next-schedule:: 2023-10-30T06:56:37.449Z
-  card-last-reviewed:: 2023-10-09T06:56:37.449Z
-  card-last-score:: 3
+  card-next-schedule:: 2024-07-22T16:00:00.000Z
+  card-last-reviewed:: 2024-07-22T08:25:01.646Z
+  card-last-score:: 1
 	- 固定窗口/计数器
 		- 计算一个周期T内的访问次数
 	- 滑动窗口
@@ -117,12 +117,12 @@
 		- 请求到达时向令牌桶请求令牌，如获取到令牌则通过请求，否则触发限流策略
 		- 支持突发流量
 - Dubbo中用到了哪些设计模式 #card
-  card-last-interval:: 21.04
-  card-repeats:: 5
+  card-last-interval:: -1
+  card-repeats:: 1
   card-ease-factor:: 1.8
-  card-next-schedule:: 2023-10-30T06:58:08.146Z
-  card-last-reviewed:: 2023-10-09T06:58:08.146Z
-  card-last-score:: 3
+  card-next-schedule:: 2024-07-22T16:00:00.000Z
+  card-last-reviewed:: 2024-07-22T08:25:45.663Z
+  card-last-score:: 1
 	- Filter 责任链模式
 	- RegisteryService 观察者模式
 	- xxxWrapper 修饰器模式
@@ -130,24 +130,25 @@
 	- 适配器模式
 	- 代理模式
 - Dubbo的服务暴露流程 #card
-  card-last-interval:: 21.04
-  card-repeats:: 5
+  card-last-interval:: -1
+  card-repeats:: 1
   card-ease-factor:: 1.8
-  card-next-schedule:: 2023-10-30T06:55:35.784Z
-  card-last-reviewed:: 2023-10-09T06:55:35.784Z
-  card-last-score:: 3
+  card-next-schedule:: 2024-07-22T16:00:00.000Z
+  card-last-reviewed:: 2024-07-22T08:24:17.782Z
+  card-last-score:: 1
 	- serviceConfig -> invoker -> expoder -> server -> 注册中心
+	- 服务初始化、服务调用监听和服务注册
 	- 解析 {{cloze dubbo标签}} ,通过触发ContextRefreshEvent事件的回调方法开始暴露服务的动作
 	- 使用 {{cloze 代理模式}} ，把服务暴露接口封装成 {{cloze invoker}} 对象，在该对象里包含需要执行的方法名、参数和对应的URL地址。
 	- 通过 {{cloze DubboProtocol}} 的实现类，把包装后的 {{cloze invoker}} 转换成 {{cloze exporter}} 对象。随后启动服务器端的server来监听端口，等待服务调用的到来
 	- 通过 {{cloze RegistryProtocol}} 对象，保存URL地址和 {{cloze invoker}} 之间的映射关系，同时把这层映射关系注册到服务中心
 - Dubbo的服务引用流程 #card
-  card-last-interval:: 21.04
-  card-repeats:: 5
+  card-last-interval:: -1
+  card-repeats:: 1
   card-ease-factor:: 1.8
-  card-next-schedule:: 2023-10-30T06:57:33.173Z
-  card-last-reviewed:: 2023-10-09T06:57:33.173Z
-  card-last-score:: 3
+  card-next-schedule:: 2024-07-22T16:00:00.000Z
+  card-last-reviewed:: 2024-07-22T08:25:15.791Z
+  card-last-score:: 1
 	- 注册中心拉取配置 -> 开启client -> 创建invoker -> 创建代理服务
 	- Dubbo客户端根据config文件里的信息从 {{cloze 注册中心}} 里订阅服务，并 {{cloze 缓存到本地}} ，后续的服务相关信息的会动态更新到本地。
 	- 根据provider的地址和接口连接到 {{cloze 服务端server}} ，开启 {{cloze 客户端client}} ，再 {{cloze 创建invoker}} 。
@@ -166,12 +167,12 @@
 	- {{cloze 监控、配置、日志}} 附加功能
 	-
 - 断路器Hystrix是如何工作的 #card
-  card-last-interval:: 15.05
-  card-repeats:: 4
+  card-last-interval:: -1
+  card-repeats:: 1
   card-ease-factor:: 1.94
-  card-next-schedule:: 2023-10-24T08:16:22.327Z
-  card-last-reviewed:: 2023-10-09T07:16:22.327Z
-  card-last-score:: 3
+  card-next-schedule:: 2024-07-22T16:00:00.000Z
+  card-last-reviewed:: 2024-07-22T07:34:18.713Z
+  card-last-score:: 1
 	- 两个判断条件 同时满足，开启断路
 		- {{cloze 一段时间内，请求数量达到阈值}}
 		- {{cloze 一段时间内  请求故障率达到阈值}}
