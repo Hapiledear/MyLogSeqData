@@ -1,20 +1,20 @@
 - {{cards [[Java项目介绍面试题]] }}
 - 介绍一下项目的架构，请求如何进入我们项目的 #card
-  card-last-interval:: -1
-  card-repeats:: 1
-  card-ease-factor:: 1.38
-  card-next-schedule:: 2024-07-22T16:00:00.000Z
-  card-last-reviewed:: 2024-07-22T09:11:49.078Z
-  card-last-score:: 1
+  card-last-interval:: 0.41
+  card-repeats:: 2
+  card-ease-factor:: 1.3
+  card-next-schedule:: 2024-07-23T17:55:03.050Z
+  card-last-reviewed:: 2024-07-23T08:55:03.051Z
+  card-last-score:: 3
 	- 接入层 {{cloze LVS Linux虚拟服务器}} + {{cloze Nginx}}
 	- 服务层 {{cloze Spring 网关}} + {{cloze 本地缓存}} + {{cloze Redis集群}} + {{cloze 数据库 兜底}}
 - 从高并发的角度介绍项目 10 #card
-  card-last-interval:: -1
-  card-repeats:: 1
+  card-last-interval:: 2.49
+  card-repeats:: 2
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-22T16:00:00.000Z
-  card-last-reviewed:: 2024-07-22T08:09:20.411Z
-  card-last-score:: 1
+  card-next-schedule:: 2024-07-25T17:48:08.866Z
+  card-last-reviewed:: 2024-07-23T06:48:08.866Z
+  card-last-score:: 3
 	- 拆分为微服务
 		- {{cloze 方便重要业务的水平扩展，如基础模块，用户模块}}
 	- 分库分表
@@ -37,12 +37,12 @@
 		- {{cloze ES + HBase}}
 - 抽奖模块设计要略 #card
   id:: 63d86c04-4b9e-4b39-adb5-66cc686129ff
-  card-last-interval:: -1
-  card-repeats:: 1
-  card-ease-factor:: 1.38
-  card-next-schedule:: 2024-07-22T16:00:00.000Z
-  card-last-reviewed:: 2024-07-22T09:20:52.275Z
-  card-last-score:: 1
+  card-last-interval:: 1.56
+  card-repeats:: 2
+  card-ease-factor:: 1.3
+  card-next-schedule:: 2024-07-24T20:53:23.070Z
+  card-last-reviewed:: 2024-07-23T07:53:23.070Z
+  card-last-score:: 3
 	- 步骤拆分
 		- 抽奖准入->产生奖品->扣减库存 -> 记录日志
 	- 用户的抽奖次数扣减，高并发下如何保证不超扣

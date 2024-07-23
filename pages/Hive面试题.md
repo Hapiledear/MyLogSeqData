@@ -2,8 +2,8 @@
   card-last-interval:: -1
   card-repeats:: 1
   card-ease-factor:: 2.22
-  card-next-schedule:: 2024-07-22T16:00:00.000Z
-  card-last-reviewed:: 2024-07-22T08:19:47.104Z
+  card-next-schedule:: 2024-07-23T16:00:00.000Z
+  card-last-reviewed:: 2024-07-23T08:58:23.558Z
   card-last-score:: 1
 	- Map端优化（无shuffle）
 		- 分区剪裁-- 过滤条件中使用分区匹配
