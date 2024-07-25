@@ -37,11 +37,11 @@
 		- {{cloze ES + HBase}}
 - 抽奖模块设计要略 #card
   id:: 63d86c04-4b9e-4b39-adb5-66cc686129ff
-  card-last-interval:: 0.04
-  card-repeats:: 3
+  card-last-interval:: 0.03
+  card-repeats:: 4
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-25T09:21:44.066Z
-  card-last-reviewed:: 2024-07-25T09:21:44.066Z
+  card-next-schedule:: 2024-07-25T12:48:34.355Z
+  card-last-reviewed:: 2024-07-25T12:48:34.355Z
   card-last-score:: 3
 	- 步骤拆分
 		- 抽奖准入->产生奖品->扣减库存 -> 记录日志

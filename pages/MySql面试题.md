@@ -514,4 +514,14 @@
 		- 分解 {{cloze 大事务}} ，减少事务持续时间
 		- {{cloze 分库分表}} -减少每次操作锁定的范围
 		- {{cloze 读写分离}} -将读操作分散到从库上，以减轻主库的负载和锁定压力
--
+- MySql的CAS操作是如何生效的？ #card
+  card-last-interval:: 0.14
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2024-07-25T15:56:31.390Z
+  card-last-reviewed:: 2024-07-25T12:56:31.390Z
+  card-last-score:: 3
+	- 在更新时，会对找到的记录上行锁，因此本质是还是同步机制的更新。不能算cas
+	- 但在调用方看来，是实现了比较并交换这一原子性操作的。
+	- 考虑如下操作：事务A将version更新到了10，此时事务b前来更新version。但最后事务A回滚了，事务b能否正常提交？提交后的version又是多少？
+		- 由于事务A并未提交，且锁住了这一行记录，事务b此时会被挂起。
