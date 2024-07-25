@@ -1,30 +1,30 @@
 - {{cards [[HBase面试题]] }}
 - 项目中有哪些场景下使用了HBase #card
-  card-last-interval:: 1.51
-  card-repeats:: 2
+  card-last-interval:: 0.05
+  card-repeats:: 3
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-24T20:15:56.314Z
-  card-last-reviewed:: 2024-07-23T08:15:56.315Z
+  card-next-schedule:: 2024-07-25T10:20:25.129Z
+  card-last-reviewed:: 2024-07-25T09:20:25.129Z
   card-last-score:: 3
 	- 日志记录
 	- 超过亿级的表数据
 	- 帖子和评论 -- 无固定且需要扩展的列
 - 项目中的rowkey是如何设计的 #card
-  card-last-interval:: 1.01
-  card-repeats:: 2
+  card-last-interval:: 0.06
+  card-repeats:: 3
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-24T08:24:59.463Z
-  card-last-reviewed:: 2024-07-23T08:24:59.464Z
+  card-next-schedule:: 2024-07-25T10:18:04.936Z
+  card-last-reviewed:: 2024-07-25T09:18:04.936Z
   card-last-score:: 3
 	- userId倒序取模
 	- userId + Long.Max - currentTimeStamp 便于scan查询，最近的记录在前
 - 简述HBase的读和写流程 #card
-  card-last-interval:: 0.49
-  card-repeats:: 2
+  card-last-interval:: -1
+  card-repeats:: 1
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-23T19:46:14.486Z
-  card-last-reviewed:: 2024-07-23T08:46:14.487Z
-  card-last-score:: 3
+  card-next-schedule:: 2024-07-25T16:00:00.000Z
+  card-last-reviewed:: 2024-07-25T08:37:05.397Z
+  card-last-score:: 1
 	- 读流程
 		- {{cloze zk}} 获取 {{cloze Meta信息和RegionServer}}
 		- 连接 {{cloze RegionServer}} {{cloze BlockCache}} -> {{cloze MemStore}} -> {{cloze StoreFile}} 中查询

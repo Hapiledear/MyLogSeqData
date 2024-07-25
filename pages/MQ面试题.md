@@ -12,11 +12,11 @@
 	- {{cloze 日志处理}} op_log
 	- {{cloze 消息通讯}} 数仓数据写入mq,业务读取
 - 消息队列有什么优缺点 #card
-  card-last-interval:: 0.72
-  card-repeats:: 2
+  card-last-interval:: 0.1
+  card-repeats:: 3
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-24T01:39:40.508Z
-  card-last-reviewed:: 2024-07-23T08:39:40.508Z
+  card-next-schedule:: 2024-07-25T11:10:19.788Z
+  card-last-reviewed:: 2024-07-25T09:10:19.789Z
   card-last-score:: 3
 	- 优点3 {{cloze 解耦、异步、削峰}}
 	- 缺点3
@@ -24,38 +24,38 @@
 		- {{cloze 系统复杂度提高}} 幂等性、可靠性
 		- {{cloze 一致性问题}}  BCD三个系统都消费同一条MQ BD成功而C失败
 - Rabbit MQ 如何保证消息的顺序性? #card
-  card-last-interval:: 1.26
-  card-repeats:: 2
+  card-last-interval:: 0.06
+  card-repeats:: 3
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-24T14:21:34.134Z
-  card-last-reviewed:: 2024-07-23T08:21:34.134Z
+  card-next-schedule:: 2024-07-25T10:19:26.585Z
+  card-last-reviewed:: 2024-07-25T09:19:26.585Z
   card-last-score:: 3
 	- 拆分多个queue,每个queue对应一个consumer。
 	- {{cloze 发送时，根据key ID路由，保证同一个ID的消息发到同一个queue}}
 - Rabbit MQ 消息基于什么传输? #card
-  card-last-interval:: 0.87
-  card-repeats:: 2
+  card-last-interval:: 0.08
+  card-repeats:: 3
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-24T04:29:28.472Z
-  card-last-reviewed:: 2024-07-23T08:29:28.473Z
+  card-next-schedule:: 2024-07-25T10:15:36.207Z
+  card-last-reviewed:: 2024-07-25T09:15:36.207Z
   card-last-score:: 3
 	- 建立TCP连接后，基于信道channel的方式传输数据
 	- channel是建立在TCP连接上的虚拟连接，没有数量限制。达到复用TCP连接的目的
 - Rabbit MQ  如何保证不重复消费? 幂等性  #card
-  card-last-interval:: 0.81
-  card-repeats:: 2
+  card-last-interval:: 0.08
+  card-repeats:: 3
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-24T03:31:36.929Z
-  card-last-reviewed:: 2024-07-23T08:31:36.929Z
+  card-next-schedule:: 2024-07-25T10:15:07.598Z
+  card-last-reviewed:: 2024-07-25T09:15:07.599Z
   card-last-score:: 3
 	- 缓存 {{cloze 使用缓存记录唯一ID，设置一个过期时间}}
 	- 数据库 {{cloze 使用一张表记录已消费的数据，发生主键冲突则证明已消费}}
 - Rabbit MQ  如何保证消息的不丢失？ #card
-  card-last-interval:: 0.84
-  card-repeats:: 2
+  card-last-interval:: 0.07
+  card-repeats:: 3
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-24T04:30:02.345Z
-  card-last-reviewed:: 2024-07-23T08:30:02.345Z
+  card-next-schedule:: 2024-07-25T10:16:11.607Z
+  card-last-reviewed:: 2024-07-25T09:16:11.607Z
   card-last-score:: 3
 	- 发送方确认
 		- {{cloze 消息会生成一个唯一ID}} id

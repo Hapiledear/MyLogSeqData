@@ -13,12 +13,12 @@
 	- Consumer使用轮询策略，直接与Provider的机器进行通信
 	- Provider与Consumer 在内存中累计调用次数和耗时，定时上报给监控中心
 - Dubbo的轮询策略 #card
-  card-last-interval:: -1
-  card-repeats:: 1
-  card-ease-factor:: 1.38
-  card-next-schedule:: 2024-07-23T16:00:00.000Z
-  card-last-reviewed:: 2024-07-23T08:52:32.523Z
-  card-last-score:: 1
+  card-last-interval:: 0.3
+  card-repeats:: 2
+  card-ease-factor:: 1.3
+  card-next-schedule:: 2024-07-25T15:07:16.234Z
+  card-last-reviewed:: 2024-07-25T08:07:16.235Z
+  card-last-score:: 3
 	- 随机
 	- 轮询和加权轮询
 	- 一致性hash
@@ -130,12 +130,12 @@
 	- 适配器模式
 	- 代理模式
 - Dubbo的服务暴露流程 #card
-  card-last-interval:: -1
-  card-repeats:: 1
-  card-ease-factor:: 1.8
-  card-next-schedule:: 2024-07-23T16:00:00.000Z
-  card-last-reviewed:: 2024-07-23T08:54:15.216Z
-  card-last-score:: 1
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 1.66
+  card-next-schedule:: 2024-07-29T08:10:01.578Z
+  card-last-reviewed:: 2024-07-25T08:10:01.579Z
+  card-last-score:: 3
 	- serviceConfig -> invoker -> expoder -> server -> 注册中心
 	- 服务初始化、服务调用监听和服务注册
 	- 解析 {{cloze dubbo标签}} ,通过触发ContextRefreshEvent事件的回调方法开始暴露服务的动作
@@ -167,12 +167,12 @@
 	- {{cloze 监控、配置、日志}} 附加功能
 	-
 - 断路器Hystrix是如何工作的 #card
-  card-last-interval:: -1
-  card-repeats:: 1
-  card-ease-factor:: 1.94
-  card-next-schedule:: 2024-07-23T16:00:00.000Z
-  card-last-reviewed:: 2024-07-23T08:51:46.933Z
-  card-last-score:: 1
+  card-last-interval:: 2.6
+  card-repeats:: 2
+  card-ease-factor:: 1.8
+  card-next-schedule:: 2024-07-27T22:06:53.180Z
+  card-last-reviewed:: 2024-07-25T08:06:53.181Z
+  card-last-score:: 3
 	- 两个判断条件 同时满足，开启断路
 		- {{cloze 一段时间内，请求数量达到阈值}}
 		- {{cloze 一段时间内  请求故障率达到阈值}}

@@ -1,10 +1,10 @@
 - {{cards [[Java项目介绍面试题]] }}
 - 介绍一下项目的架构，请求如何进入我们项目的 #card
-  card-last-interval:: 0.41
-  card-repeats:: 2
+  card-last-interval:: 0.25
+  card-repeats:: 3
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-23T17:55:03.050Z
-  card-last-reviewed:: 2024-07-23T08:55:03.051Z
+  card-next-schedule:: 2024-07-25T14:22:19.363Z
+  card-last-reviewed:: 2024-07-25T08:22:19.363Z
   card-last-score:: 3
 	- 接入层 {{cloze LVS Linux虚拟服务器}} + {{cloze Nginx}}
 	- 服务层 {{cloze Spring 网关}} + {{cloze 本地缓存}} + {{cloze Redis集群}} + {{cloze 数据库 兜底}}
@@ -37,11 +37,11 @@
 		- {{cloze ES + HBase}}
 - 抽奖模块设计要略 #card
   id:: 63d86c04-4b9e-4b39-adb5-66cc686129ff
-  card-last-interval:: 1.56
-  card-repeats:: 2
+  card-last-interval:: 0.04
+  card-repeats:: 3
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-24T20:53:23.070Z
-  card-last-reviewed:: 2024-07-23T07:53:23.070Z
+  card-next-schedule:: 2024-07-25T09:21:44.066Z
+  card-last-reviewed:: 2024-07-25T09:21:44.066Z
   card-last-score:: 3
 	- 步骤拆分
 		- 抽奖准入->产生奖品->扣减库存 -> 记录日志
