@@ -88,11 +88,11 @@
 	- 实现,是否加锁 {{cloze 内存位置v 预期原值A和新值B ，如果内存值=A 那么将内存值改为B}} {{cloze 不加锁，但会自旋一定次数}}
 	- 实现 {{cloze atomic下的类大多是使用CAS操作来实现的}}
 - CAS会产生什么问题以及解决办法 #card #Java并发
-  card-last-interval:: 0.05
-  card-repeats:: 3
+  card-last-interval:: 0.01
+  card-repeats:: 4
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-25T10:20:29.001Z
-  card-last-reviewed:: 2024-07-25T09:20:29.002Z
+  card-next-schedule:: 2024-07-25T13:06:28.042Z
+  card-last-reviewed:: 2024-07-25T13:06:28.043Z
   card-last-score:: 3
 	- ABA问题
 		- {{cloze 用链表的例子更直观}}
@@ -132,11 +132,11 @@
 		- 非公平 {{cloze AQS的头节点和新执行到CAS修改状态处的线程}}
 		- 公平 {{cloze AQS只允许头节点抢锁}}
 - AQS是什么，抢锁过程 #card #Java并发
-  card-last-interval:: 0.04
-  card-repeats:: 3
+  card-last-interval:: 0.03
+  card-repeats:: 4
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-25T09:22:40.122Z
-  card-last-reviewed:: 2024-07-25T09:22:40.122Z
+  card-next-schedule:: 2024-07-25T13:00:01.362Z
+  card-last-reviewed:: 2024-07-25T13:00:01.363Z
   card-last-score:: 3
 	- AQS是一个用来构建锁和同步器的框架
 	- 队列 {{cloze 有一个CLH 的双向链表组成的队列}}
@@ -163,11 +163,11 @@
 		- 存储结构 {{cloze 数组+链表->红黑树}}
 		- 扩容 {{cloze 默认大小为 16 加载因子0.75 阈值=大小*因子}} {{cloze 扩容后大小为2^n次方，不需要rehash}}
 - synchronizeMap与ConcurrentHashMap的区别 #card #Java并发
-  card-last-interval:: 2.16
-  card-repeats:: 2
+  card-last-interval:: 0.04
+  card-repeats:: 3
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-25T10:26:34.154Z
-  card-last-reviewed:: 2024-07-23T07:26:34.154Z
+  card-next-schedule:: 2024-07-25T13:06:38.842Z
+  card-last-reviewed:: 2024-07-25T13:06:38.842Z
   card-last-score:: 3
 	- 锁住数据的粒度
 		- {{cloze synchMap 一次锁住一整张表}}
@@ -183,11 +183,11 @@
 	- 缺点 {{cloze copy数组代价高昂，消耗内存}}
 	- 适用场景 {{cloze 读多写少}}
 - 阻塞队列BlockingQueue的实现原理 #card #Java并发
-  card-last-interval:: 0.09
-  card-repeats:: 3
+  card-last-interval:: 0.01
+  card-repeats:: 4
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-25T11:13:28.878Z
-  card-last-reviewed:: 2024-07-25T09:13:28.878Z
+  card-next-schedule:: 2024-07-25T13:07:38.931Z
+  card-last-reviewed:: 2024-07-25T13:07:38.931Z
   card-last-score:: 3
 	- 拯救了#生产者-消费者 模型的控制逻辑
 		- {{cloze 在队列为空时，获取元素的线程会等待队列变为非空}}

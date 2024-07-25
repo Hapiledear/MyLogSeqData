@@ -12,11 +12,11 @@
 	- 解决办法 {{cloze 增加元空间的大小 `-XX:MaxMetaspaceSize=512m`}}
 - 说一下 JVM 的主要组成部分及其作用 #card
   card-last-score:: 3
-  card-repeats:: 3
-  card-next-schedule:: 2024-07-25T10:18:33.696Z
-  card-last-interval:: 0.06
+  card-repeats:: 4
+  card-next-schedule:: 2024-07-25T13:05:14.339Z
+  card-last-interval:: 0.01
   card-ease-factor:: 1.3
-  card-last-reviewed:: 2024-07-25T09:18:33.735Z
+  card-last-reviewed:: 2024-07-25T13:05:14.339Z
 	- 类加载系统 {{cloze 根据给定的全限定类名，使用双亲委派模型，由类加载器加载class文件到 方法区}}
 	- 运行时数据区 JVM内存模型 {{cloze 分为线程公有的堆、方法区，和线程私有的 虚拟机栈、本地方法栈、程序计数器}}
 	- 执行引擎 {{cloze 执行字节码指令。分为 即时编译执行和解释执行。此外，**垃圾收集器** 也在其中}}
@@ -48,11 +48,11 @@
 		- {{cloze 基于NIO的 DirectByteBuffer 而产生的堆外内存}} NIO
 		- {{cloze 通过DirectByteBuffer对象的虚引用实现堆外内存的释放}} 如何回收
 - 堆内存的组成 #card
-  card-last-interval:: 0.08
-  card-repeats:: 3
+  card-last-interval:: 0.02
+  card-repeats:: 4
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-25T10:15:53.415Z
-  card-last-reviewed:: 2024-07-25T09:15:53.415Z
+  card-next-schedule:: 2024-07-25T13:04:08.580Z
+  card-last-reviewed:: 2024-07-25T13:04:08.580Z
   card-last-score:: 3
 	- {{cloze 1/3的年轻代 1/2的老年代}} 2代
 	- {{cloze  年轻代又分 eden区 s1和s2区 比例为 8:1:1}} 3区
@@ -67,11 +67,11 @@
 	- {{cloze DirectByteBuffer 所申请的直接内存}} NIO
 	- {{cloze 方法区的具体实现 元空间}}
 - ## 为什么 字符串常量池 #常量池 被移动到了堆中？ #card
-  card-last-interval:: 0.09
-  card-repeats:: 3
+  card-last-interval:: 0.01
+  card-repeats:: 4
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-25T11:14:06.990Z
-  card-last-reviewed:: 2024-07-25T09:14:06.990Z
+  card-next-schedule:: 2024-07-25T13:08:27.066Z
+  card-last-reviewed:: 2024-07-25T13:08:27.066Z
   card-last-score:: 3
 	- [[Java 永久代]]在 Full GC/Major GC  时才会触发，条件苛刻
 	- 开发中会有大量字符串被创建，回收效率低导致永久代内存不足
@@ -249,11 +249,11 @@
 		- 每次GC时回收
 		- 利用回收时的通知机制来管理堆外内存
 - 永久代会发生垃圾回收吗 #card
-  card-last-interval:: 0.1
-  card-repeats:: 3
+  card-last-interval:: 0.01
+  card-repeats:: 4
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-25T11:10:26.044Z
-  card-last-reviewed:: 2024-07-25T09:10:26.045Z
+  card-next-schedule:: 2024-07-25T13:07:16.604Z
+  card-last-reviewed:: 2024-07-25T13:07:16.604Z
   card-last-score:: 3
 	- 会，但是回收的条件比较苛刻
 		- 类及其所有对象都被回收
@@ -294,11 +294,11 @@
 	- 如果对象不会逃逸出方法外部，则会在栈上分配
 	- 如果符合标量替换条件(不逃逸&不会被本线程外的线程访问)，则会将对象分解成若干个方法内从成员变量
 - HotSpot JVM 为什么叫这个名字 #card
-  card-last-interval:: 0.04
-  card-repeats:: 3
+  card-last-interval:: 0.02
+  card-repeats:: 4
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-25T09:23:38.963Z
-  card-last-reviewed:: 2024-07-25T09:23:38.963Z
+  card-next-schedule:: 2024-07-25T13:02:06.922Z
+  card-last-reviewed:: 2024-07-25T13:02:06.922Z
   card-last-score:: 3
 	- 即时编译功能
 		- 寻找热点代码，将热点代码编译成机器码并缓存起来

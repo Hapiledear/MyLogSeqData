@@ -21,11 +21,11 @@
 	- {{cloze 原本由代码控制对象的生命周期，交由spring框架管理}}
 	- 实现 {{cloze 工厂模式+反射机制}}
 - BeanFactory 和 ApplicationContext的区别 #card
-  card-last-interval:: 0.12
-  card-repeats:: 3
+  card-last-interval:: 0.01
+  card-repeats:: 4
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-25T11:08:31.163Z
-  card-last-reviewed:: 2024-07-25T09:08:31.163Z
+  card-next-schedule:: 2024-07-25T13:06:50.002Z
+  card-last-reviewed:: 2024-07-25T13:06:50.002Z
   card-last-score:: 3
 	- BF 可以理解为 “低级容器”，只是简单的 k-v结构
 	- 依赖关系 {{cloze ApplicationContext是BeanFactory的子接口,扩展了BeanFactory的功能}}
@@ -98,11 +98,11 @@
 		- {{cloze 保证不管什么时候获取到的都是同一对象}}
 		- spring有 普通对象 和 代理对象,在未执行完 BeanPostProcessor时不知道使用哪一个
 - 什么是Spring 的AOP,项目中是如何使用的 #card
-  card-last-interval:: 0.11
-  card-repeats:: 3
+  card-last-interval:: 0.01
+  card-repeats:: 4
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-25T11:09:20.452Z
-  card-last-reviewed:: 2024-07-25T09:09:20.452Z
+  card-next-schedule:: 2024-07-25T13:06:58.466Z
+  card-last-reviewed:: 2024-07-25T13:06:58.466Z
   card-last-score:: 3
 	- AOP 面向切面编程，核心是使用 {{cloze 代理模式}}，对目标方法执行前后进行处理
 	- 应用场景 {{cloze 日志记录}} {{cloze 接口签名校验}}
@@ -129,12 +129,12 @@
 		- 通过类加载器，读取classpath下的 {{cloze spring.factories}} 配置文件 和 {{cloze application.yml}} 资源文件
 		- 创建 ApplicationContext，扫描指定包下的class文件，创建BeanFactory，开始自动装配
 - 如何自定义一个SpringBoot-start #card
-  card-last-interval:: 0.08
-  card-repeats:: 3
+  card-last-interval:: -1
+  card-repeats:: 1
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-25T10:15:30.510Z
-  card-last-reviewed:: 2024-07-25T09:15:30.511Z
-  card-last-score:: 3
+  card-next-schedule:: 2024-07-25T16:00:00.000Z
+  card-last-reviewed:: 2024-07-25T13:04:02.032Z
+  card-last-score:: 1
 	- 引入 `spring-boot-auto-config` 和 `spring-boot-configuration-processor` 包
 	- 定义并实现自己的Bean
 	- 编写一个`Configuration类`，告知何时加载自己的Bean
