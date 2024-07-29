@@ -1,21 +1,21 @@
 - {{cards [[Redis面试题]]}}
 - 项目中缓存是如何使用的，为什么要用 #card
-  card-last-interval:: 0.05
-  card-repeats:: 3
+  card-last-interval:: 0.01
+  card-repeats:: 4
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-25T10:19:57.489Z
-  card-last-reviewed:: 2024-07-25T09:19:57.489Z
+  card-next-schedule:: 2024-07-29T06:35:52.303Z
+  card-last-reviewed:: 2024-07-29T06:35:52.303Z
   card-last-score:: 3
 	- 提高接口性能 {{cloze 缓存查询结果}} 用得最多的是 {{cloze 用户信息查询}} 接口
 	- 降低数据库压力 {{cloze 热点数据缓存}}
 	- 限流&幂等&分布式锁
 	- 一级页面熔断降级 {{cloze 缓存数据，降级后直接取用}}
 - 缓存使用不当会带来哪些后果，解决办法 #card
-  card-last-interval:: 2.32
-  card-repeats:: 2
+  card-last-interval:: 0.04
+  card-repeats:: 3
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-25T14:06:29.571Z
-  card-last-reviewed:: 2024-07-23T07:06:29.572Z
+  card-next-schedule:: 2024-07-29T07:23:59.135Z
+  card-last-reviewed:: 2024-07-29T07:23:59.135Z
   card-last-score:: 3
 	- 缓存与数据库的双写不一致
 		- 读的时候 {{cloze 先读缓存，再读数据库，最后把读取的数据放入缓存}}
@@ -35,11 +35,11 @@
 		- 问题描述 {{cloze 某一热点key突然过期，导致所有请求打到数据库上}}
 		- 解决方案 {{cloze 热点key过期时间加长，永不过期}} {{cloze 实时监控热点数据，实时调整过期时间}} 代码层面 {{cloze 使用synch 或 ReentryLock 加锁更新，这样后续的请求就又会走缓存}}
 - 在日常项目中用到了哪些Redis数据类型,底层结构是什么样的 #card
-  card-last-interval:: 2.67
-  card-repeats:: 2
+  card-last-interval:: 0.03
+  card-repeats:: 3
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-25T22:41:23.354Z
-  card-last-reviewed:: 2024-07-23T06:41:23.354Z
+  card-next-schedule:: 2024-07-29T08:27:08.167Z
+  card-last-reviewed:: 2024-07-29T08:27:08.167Z
   card-last-score:: 3
 	- string
 		- {{cloze 普通的kv存储，常用}}
@@ -56,11 +56,11 @@
 		- {{cloze 自定义score排序，比如排行榜机制}}
 		- {{cloze 跳跃表，节点按分值大小排序，再按对象大小排序}}
 - Redis的过期策略有哪些?数据明明过期了，怎么还占用着内存 #card
-  card-last-interval:: 0.04
-  card-repeats:: 3
+  card-last-interval:: 0.02
+  card-repeats:: 5
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-25T09:23:00.554Z
-  card-last-reviewed:: 2024-07-25T09:23:00.554Z
+  card-next-schedule:: 2024-07-29T09:06:23.262Z
+  card-last-reviewed:: 2024-07-29T09:06:23.263Z
   card-last-score:: 3
 	- 定期删除
 		- {{cloze 每隔一段时间，删除过期key}} {{cloze 采用随机抽取策略}}
@@ -75,11 +75,11 @@
 		- {{cloze volatile-random}} 有过期时间的key中 随机移除
 		- {{cloze volatile-ttl}} 有过期时间的key中 移除最早过期时间的key
 - 了解Redis的事务机制吗？ #card
-  card-last-interval:: 0.3
-  card-repeats:: 2
+  card-last-interval:: 0.03
+  card-repeats:: 3
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-25T15:14:18.957Z
-  card-last-reviewed:: 2024-07-25T08:14:18.957Z
+  card-next-schedule:: 2024-07-29T07:48:25.398Z
+  card-last-reviewed:: 2024-07-29T07:48:25.398Z
   card-last-score:: 3
 	- 事务以 {{cloze MUTLI}}命令开始
 	- 客户端接收一系列操作，放入队列中
@@ -88,31 +88,31 @@
 	- 执行时不会被其他客户端发送来的命令请求打断
 	- 不支持回滚，要么都执行，要么都不执行
 - 如何处理多个客户端并发写一个key? #card
-  card-last-interval:: 4
-  card-repeats:: 2
+  card-last-interval:: 0.02
+  card-repeats:: 3
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-27T06:03:10.622Z
-  card-last-reviewed:: 2024-07-23T06:03:10.624Z
+  card-next-schedule:: 2024-07-29T08:39:51.229Z
+  card-last-reviewed:: 2024-07-29T08:39:51.229Z
   card-last-score:: 3
 	- 使用事务 实现CAS
 		- {{cloze 事务具有watch机制,一旦被监测的key发生更改，本次提交就失效了}}
 - Redis为什么快？ #card
-  card-last-interval:: 0.24
-  card-repeats:: 3
+  card-last-interval:: 0
+  card-repeats:: 4
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-25T13:23:36.868Z
-  card-last-reviewed:: 2024-07-25T08:23:36.868Z
+  card-next-schedule:: 2024-07-29T07:16:28.338Z
+  card-last-reviewed:: 2024-07-29T07:16:28.379Z
   card-last-score:: 3
 	- 基于内存操作
 	- 使用单线程， {{cloze 避免线程切换和竞争产生的消耗}}
 	- 基于 {{cloze IO多路复用模型}} IO模型 {{cloze 让单个线程高效处理多个连接请求}}
 	- {{cloze C语言实现，更加优化的基础数据结构}} 语言、底层数据结构
 - Redis是单线程的吗？ #card
-  card-last-interval:: 0.1
-  card-repeats:: 3
+  card-last-interval:: 0.01
+  card-repeats:: 4
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-25T11:11:17.581Z
-  card-last-reviewed:: 2024-07-25T09:11:17.581Z
+  card-next-schedule:: 2024-07-29T06:49:17.231Z
+  card-last-reviewed:: 2024-07-29T06:49:17.231Z
   card-last-score:: 3
 	- 只有 {{cloze 网络请求模块}} 和 {{cloze 数据操作模块}} 是单线程的 其他的如 持久化模块、集群模块是多线程的
 	- 多线程的好处 {{cloze 使用多线程可以提升 IO利用率和CPU利用率}}
@@ -120,29 +120,29 @@
 		- 多线程切换会带来开销，且代码复杂性上升。最终选择了IO多路复用
 	- 在6.0+，针对 {{cloze 网络请求}}改成了多线程
 - Redis的分布式锁如何实现 #card
-  card-last-interval:: 0.04
-  card-repeats:: 3
+  card-last-interval:: 0.02
+  card-repeats:: 4
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-25T09:24:48.819Z
-  card-last-reviewed:: 2024-07-25T09:24:48.819Z
+  card-next-schedule:: 2024-07-29T06:24:00.906Z
+  card-last-reviewed:: 2024-07-29T06:24:00.906Z
   card-last-score:: 3
 	- {{cloze setnx来争抢锁，再用expire加上过期时间}}
 	- 高可用分布式锁 {{cloze RedLock}} 但可能导致性能下降，建议使用 {{cloze zk实现分布式锁}}
 	- 分布式锁需要考虑的三大问题 {{cloze 确认该锁是当前线程持有}} {{cloze 程序异常之后释放}} {{cloze 过期续期}}
 - 如何把固定前缀开通的key全部找出来 #card
-  card-last-interval:: 0.13
-  card-repeats:: 3
+  card-last-interval:: 0
+  card-repeats:: 4
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-25T12:07:49.803Z
-  card-last-reviewed:: 2024-07-25T09:07:49.803Z
+  card-next-schedule:: 2024-07-29T06:51:48.036Z
+  card-last-reviewed:: 2024-07-29T06:51:48.036Z
   card-last-score:: 3
 	- {{cloze scan命令可以提取指定模式的key列表}}
 - Redis的持久化机制 #card
-  card-last-interval:: 3.86
-  card-repeats:: 2
+  card-last-interval:: 0.03
+  card-repeats:: 3
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-27T02:21:28.007Z
-  card-last-reviewed:: 2024-07-23T06:21:28.008Z
+  card-next-schedule:: 2024-07-29T08:35:59.618Z
+  card-last-reviewed:: 2024-07-29T08:35:59.619Z
   card-last-score:: 3
 	- bgsave 全量持久化
 		- 过程 {{cloze 生成子进程和当前内存快照，子进程进行持久化}}
@@ -155,11 +155,11 @@
 		- {{cloze 将过期的、不再使用的、重复的以及可优化的命令进行优化，重新生成AOF文件}}
 		- 流程 {{cloze fork一个子进程}} {{cloze 重写期间，主线程的写命令被保存在缓冲区中}}
 - RDB和AOF各自的优缺点 #card
-  card-last-interval:: 0.04
-  card-repeats:: 3
+  card-last-interval:: 0.02
+  card-repeats:: 5
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-25T09:22:23.946Z
-  card-last-reviewed:: 2024-07-25T09:22:23.946Z
+  card-next-schedule:: 2024-07-29T09:03:02.709Z
+  card-last-reviewed:: 2024-07-29T09:03:02.710Z
   card-last-score:: 3
 	- RDB优点
 		- 生成的文件 {{cloze 只有一个紧凑的二进制文件，非常适合备份、全量复制场景}}
@@ -173,31 +173,31 @@
 	- AOF的缺点
 		- 生成的文件 {{cloze 比RDB大}} {{cloze 恢复速度慢}}
 - Redis的主从复制过程 #card
-  card-last-interval:: 0.07
-  card-repeats:: 3
+  card-last-interval:: 0.01
+  card-repeats:: 4
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-25T10:17:59.913Z
-  card-last-reviewed:: 2024-07-25T09:17:59.913Z
+  card-next-schedule:: 2024-07-29T06:30:54.285Z
+  card-last-reviewed:: 2024-07-29T06:30:54.285Z
   card-last-score:: 3
 	- 从服务器首次连接 {{cloze 全量复制}} {{cloze rdb or aof文件}}
 	- 复制后数据先 {{cloze 保存到本地磁盘}} 后 {{cloze 从磁盘读取到内存}}
 	- 重新连接 {{cloze 部分数据复制}} {{cloze offset偏移量 repl-backlog-buffer 复制积压缓冲区}}
 - Redis的集群模式的好处 #card
-  card-last-interval:: 0.04
-  card-repeats:: 3
+  card-last-interval:: 0.02
+  card-repeats:: 4
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-25T09:24:55.699Z
-  card-last-reviewed:: 2024-07-25T09:24:55.700Z
+  card-next-schedule:: 2024-07-29T06:24:39.212Z
+  card-last-reviewed:: 2024-07-29T06:24:39.212Z
   card-last-score:: 3
 	- 数据分片 {{cloze 自动将数据分片，每个master上放一部分}}
 	- 主从复制和自动故障转移 {{cloze 部分master不可用时，还是可以继续工作}}
 	- 2个端口 {{cloze 6379 16379}}
 - 数据如何分散在机器上 #card
-  card-last-interval:: 0.23
-  card-repeats:: 3
+  card-last-interval:: 0
+  card-repeats:: 4
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-25T13:23:48.091Z
-  card-last-reviewed:: 2024-07-25T08:23:48.092Z
+  card-next-schedule:: 2024-07-29T07:21:42.459Z
+  card-last-reviewed:: 2024-07-29T07:21:42.460Z
   card-last-score:: 3
 	- {{cloze 一致性Hash算法}}
 		- 哈希环，顺时针，虚拟节点
@@ -206,11 +206,11 @@
 		- 机器的增减 {{cloze master的增减只是移动部分槽位}}
 		- 好处 {{cloze 无论在数据量大 or 小时，数据分配都很均匀}}
 - 节点宕机时的主备切换 #card
-  card-last-interval:: 0.04
-  card-repeats:: 3
+  card-last-interval:: 0.02
+  card-repeats:: 4
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-25T09:23:43.128Z
-  card-last-reviewed:: 2024-07-25T09:23:43.129Z
+  card-next-schedule:: 2024-07-29T06:22:27.815Z
+  card-last-reviewed:: 2024-07-29T06:22:27.815Z
   card-last-score:: 3
 	- 判断节点宕机
 		- 主观宕机 {{cloze 某一节点发现另一节点一段时间内无心跳返回了}}
@@ -221,43 +221,43 @@
 	- 从节点选举
 		- {{cloze 投票选举，超过半数者升级}}
 - Redis优化策略 #card
-  card-last-interval:: 3.72
-  card-repeats:: 2
+  card-last-interval:: 0.03
+  card-repeats:: 3
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-26T23:30:07.180Z
-  card-last-reviewed:: 2024-07-23T06:30:07.180Z
+  card-next-schedule:: 2024-07-29T08:33:55.801Z
+  card-last-reviewed:: 2024-07-29T08:33:55.802Z
   card-last-score:: 3
 	- 在见名知意的情况下，使用短key
 	- 不要存过大的数据,存之前先把数据压缩
 	- 设置key的合理有效期,选择合适的回收策略
 	- 使用连接池，减少不必要的连接
 - 如何解决本地缓存与分布式缓存的数据不一致 #card
-  card-last-interval:: 0.37
-  card-repeats:: 2
+  card-last-interval:: 0.03
+  card-repeats:: 3
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-25T15:53:52.822Z
-  card-last-reviewed:: 2024-07-25T07:53:52.822Z
+  card-next-schedule:: 2024-07-29T07:49:54.110Z
+  card-last-reviewed:: 2024-07-29T07:49:54.110Z
   card-last-score:: 3
 	- Redis自身有 {{cloze 订阅/分发}} 机制
 	- 引入 {{cloze 消息队列 使用广播模式}}
 	- 本地缓存的过期时间 {{cloze 设置相对短一些}}
 - Redis数据如何预热 #card
-  card-last-interval:: 3.11
-  card-repeats:: 2
-  card-ease-factor:: 1.62
-  card-next-schedule:: 2024-07-26T10:46:47.391Z
-  card-last-reviewed:: 2024-07-23T08:46:47.391Z
+  card-last-interval:: 5.92
+  card-repeats:: 3
+  card-ease-factor:: 1.48
+  card-next-schedule:: 2024-08-04T06:28:48.016Z
+  card-last-reviewed:: 2024-07-29T08:28:48.016Z
   card-last-score:: 3
 	- 暴露内网接口，手动操作
 	- 数据量不大时，项目启动时自动加载
 	- 定时任务刷新加载
 - 热key处理 #card
-  card-last-interval:: -1
-  card-repeats:: 1
-  card-ease-factor:: 1.38
-  card-next-schedule:: 2024-07-25T16:00:00.000Z
-  card-last-reviewed:: 2024-07-25T08:09:01.929Z
-  card-last-score:: 1
+  card-last-interval:: 0.25
+  card-repeats:: 2
+  card-ease-factor:: 1.3
+  card-next-schedule:: 2024-07-29T13:55:05.480Z
+  card-last-reviewed:: 2024-07-29T07:55:05.481Z
+  card-last-score:: 3
 	- 监测
 		- 客户端 {{cloze 设置全局字典 key和调用次数}}
 		- 数据仓库 {{cloze 客户端发送mq,数据仓库实时统计}}
@@ -266,11 +266,11 @@
 		- 打散 {{cloze 把热key打散到不同的服务器上，降低压力}}
 		- 二级缓存 {{cloze 加入本地的内存缓存}}
 - 大key处理 #card
-  card-last-interval:: 2.49
-  card-repeats:: 2
+  card-last-interval:: 0.03
+  card-repeats:: 3
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-25T17:50:48.610Z
-  card-last-reviewed:: 2024-07-23T06:50:48.610Z
+  card-next-schedule:: 2024-07-29T08:24:11.975Z
+  card-last-reviewed:: 2024-07-29T08:24:11.975Z
   card-last-score:: 3
 	- 大key造成的问题
 		- 进行IO操作时 {{cloze 占用带宽和CPU}}
@@ -284,11 +284,11 @@
 		- 压缩 {{cloze 压缩算法进行压缩}}
 		- 拆分 {{cloze 按长度截取拆分，使用multiget读取}}
 - Redis的SDS与C语言的字符串比较 #card
-  card-last-interval:: 2.67
-  card-repeats:: 2
+  card-last-interval:: 0.03
+  card-repeats:: 3
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-25T22:42:16.373Z
-  card-last-reviewed:: 2024-07-23T06:42:16.373Z
+  card-next-schedule:: 2024-07-29T08:27:28.471Z
+  card-last-reviewed:: 2024-07-29T08:27:28.471Z
   card-last-score:: 3
 	- c语言字符串的缺点
 		- {{cloze 获取字符串长度 需要O(n)}}
@@ -299,11 +299,11 @@
 		- {{cloze 自动扩展空间，扩容时成倍分配，缩容时先留着并不正式归还}}
 		- {{cloze 二进制安全，写入什么就读取什么，不做任何限制}}
 - Redis的字典，渐进式Rehash过程 #card
-  card-last-interval:: 0.06
-  card-repeats:: 3
+  card-last-interval:: 0.01
+  card-repeats:: 4
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-25T10:18:14.552Z
-  card-last-reviewed:: 2024-07-25T09:18:14.552Z
+  card-next-schedule:: 2024-07-29T06:33:08.370Z
+  card-last-reviewed:: 2024-07-29T06:33:08.370Z
   card-last-score:: 3
 	- 两个table, 采用 {{cloze 数组+链表的链地址法}} 解决哈希冲突 哈希算法为 {{cloze hashcode & sizemask}} sizemask = realsize - 1
 	- 扩容时
@@ -311,11 +311,11 @@
 		- {{cloze 此时有数据插入，则直接加入t1表}}
 		- {{cloze 扩容因子为 used / size = 1 时}}
 - Redis的跳跃表skipList是如何实现的 #card
-  card-last-interval:: 0.11
-  card-repeats:: 3
+  card-last-interval:: 0.01
+  card-repeats:: 4
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-25T11:10:07.252Z
-  card-last-reviewed:: 2024-07-25T09:10:07.252Z
+  card-next-schedule:: 2024-07-29T06:47:17.825Z
+  card-last-reviewed:: 2024-07-29T06:47:17.826Z
   card-last-score:: 3
 	- 层级
 		- 插入时按几率分配层级
@@ -325,11 +325,11 @@
 		- 遍历每一层的节点，直到遇见NULL 或 >目标值
 		- 向下一层，继续遍历该层
 - Redis的压缩列表zipList和quickList #card
-  card-last-interval:: 3.21
-  card-repeats:: 2
+  card-last-interval:: 0.03
+  card-repeats:: 3
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-26T11:36:49.033Z
-  card-last-reviewed:: 2024-07-23T06:36:49.033Z
+  card-next-schedule:: 2024-07-29T08:30:11.281Z
+  card-last-reviewed:: 2024-07-29T08:30:11.282Z
   card-last-score:: 3
 	- 压缩体现在哪里?
 		- 普通的数组结构， {{cloze 每一个单元的长度由最大字符串长度决定的}}

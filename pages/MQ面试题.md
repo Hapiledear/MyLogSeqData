@@ -1,10 +1,10 @@
 - {{cards [[MQ面试题]] }}
 - 项目中是如何使用MQ的？5  #card
-  card-last-interval:: 4
-  card-repeats:: 2
+  card-last-interval:: 0.02
+  card-repeats:: 3
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-27T06:21:01.279Z
-  card-last-reviewed:: 2024-07-23T06:21:01.279Z
+  card-next-schedule:: 2024-07-29T08:54:22.546Z
+  card-last-reviewed:: 2024-07-29T08:54:22.547Z
   card-last-score:: 3
 	- {{cloze 异步处理}} 注销用户
 	- {{cloze 应用解耦}} 用户成长值加分
@@ -12,11 +12,11 @@
 	- {{cloze 日志处理}} op_log
 	- {{cloze 消息通讯}} 数仓数据写入mq,业务读取
 - 消息队列有什么优缺点 #card
-  card-last-interval:: 0.1
-  card-repeats:: 3
+  card-last-interval:: 0.01
+  card-repeats:: 4
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-25T11:10:19.788Z
-  card-last-reviewed:: 2024-07-25T09:10:19.789Z
+  card-next-schedule:: 2024-07-29T06:47:45.313Z
+  card-last-reviewed:: 2024-07-29T06:47:45.313Z
   card-last-score:: 3
 	- 优点3 {{cloze 解耦、异步、削峰}}
 	- 缺点3
@@ -24,38 +24,38 @@
 		- {{cloze 系统复杂度提高}} 幂等性、可靠性
 		- {{cloze 一致性问题}}  BCD三个系统都消费同一条MQ BD成功而C失败
 - Rabbit MQ 如何保证消息的顺序性? #card
-  card-last-interval:: 0.06
-  card-repeats:: 3
+  card-last-interval:: 0.01
+  card-repeats:: 4
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-25T10:19:26.585Z
-  card-last-reviewed:: 2024-07-25T09:19:26.585Z
+  card-next-schedule:: 2024-07-29T06:35:02.600Z
+  card-last-reviewed:: 2024-07-29T06:35:02.600Z
   card-last-score:: 3
 	- 拆分多个queue,每个queue对应一个consumer。
 	- {{cloze 发送时，根据key ID路由，保证同一个ID的消息发到同一个queue}}
 - Rabbit MQ 消息基于什么传输? #card
-  card-last-interval:: 0.08
-  card-repeats:: 3
+  card-last-interval:: 0.02
+  card-repeats:: 4
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-25T10:15:36.207Z
-  card-last-reviewed:: 2024-07-25T09:15:36.207Z
+  card-next-schedule:: 2024-07-29T06:26:53.538Z
+  card-last-reviewed:: 2024-07-29T06:26:53.538Z
   card-last-score:: 3
 	- 建立TCP连接后，基于信道channel的方式传输数据
 	- channel是建立在TCP连接上的虚拟连接，没有数量限制。达到复用TCP连接的目的
 - Rabbit MQ  如何保证不重复消费? 幂等性  #card
-  card-last-interval:: 0.08
-  card-repeats:: 3
+  card-last-interval:: 0.02
+  card-repeats:: 4
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-25T10:15:07.598Z
-  card-last-reviewed:: 2024-07-25T09:15:07.599Z
+  card-next-schedule:: 2024-07-29T06:25:52.875Z
+  card-last-reviewed:: 2024-07-29T06:25:52.875Z
   card-last-score:: 3
 	- 缓存 {{cloze 使用缓存记录唯一ID，设置一个过期时间}}
 	- 数据库 {{cloze 使用一张表记录已消费的数据，发生主键冲突则证明已消费}}
 - Rabbit MQ  如何保证消息的不丢失？ #card
-  card-last-interval:: 0.07
-  card-repeats:: 3
+  card-last-interval:: 0.02
+  card-repeats:: 4
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-25T10:16:11.607Z
-  card-last-reviewed:: 2024-07-25T09:16:11.607Z
+  card-next-schedule:: 2024-07-29T06:27:39.353Z
+  card-last-reviewed:: 2024-07-29T06:27:39.353Z
   card-last-score:: 3
 	- 发送方确认
 		- {{cloze 消息会生成一个唯一ID}} id
@@ -67,22 +67,22 @@
 	- 消费方确认
 		- 手动确认机制 {{cloze 自己在代码里处理完业务逻辑之后，手动确认}}
 - Rabbit MQ 如何保证高可用 #card
-  card-last-interval:: 4
-  card-repeats:: 2
+  card-last-interval:: 0.02
+  card-repeats:: 3
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-27T06:02:11.348Z
-  card-last-reviewed:: 2024-07-23T06:02:11.348Z
+  card-next-schedule:: 2024-07-29T08:39:02.580Z
+  card-last-reviewed:: 2024-07-29T08:39:02.580Z
   card-last-score:: 3
 	- 镜像集群模式
 		- {{cloze 每个mq节点都有一个一模一样的queue}}
 		- {{cloze 数据发送时，会自动同步到所有机器上}}
 		- 缺点 {{cloze 同步开销大，占用网络带宽}}
 - 消息队列满了怎么处理？几百万消息积压几个小时。 #card
-  card-last-interval:: 3.21
-  card-repeats:: 2
+  card-last-interval:: 0.03
+  card-repeats:: 3
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-26T11:35:15.606Z
-  card-last-reviewed:: 2024-07-23T06:35:15.607Z
+  card-next-schedule:: 2024-07-29T08:29:39.631Z
+  card-last-reviewed:: 2024-07-29T08:29:39.632Z
   card-last-score:: 3
 	- 消费者. {{cloze 快速定位问题，修复consumer}} {{cloze 停止线上的consumer消费}}
 	- 机器扩容 {{cloze 上线一个分发consumer，分发到新建立的topic，partition是原来的10倍}} {{cloze 消费consumer上线，也是原来的10倍}}
