@@ -31,11 +31,11 @@
 		- 进行实际的索引扫描
 		- 将记录所在的数据页放入缓冲池 (磁盘->内存 )
 - SQL update过程 #card
-  card-last-interval:: 0
-  card-repeats:: 4
+  card-last-interval:: 0.03
+  card-repeats:: 5
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-29T07:01:59.488Z
-  card-last-reviewed:: 2024-07-29T07:01:59.529Z
+  card-next-schedule:: 2024-07-31T02:47:26.357Z
+  card-last-reviewed:: 2024-07-31T02:47:26.357Z
   card-last-score:: 3
 	- 查询出原数据
 	- 将修改的数据刷入内存 Buffer pool
@@ -317,11 +317,11 @@
 	- 表数据较少时，走全表扫描比走索引效率更高 (内置优化策略)
 - 索引下推 #card
   card-last-score:: 3
-  card-repeats:: 3
-  card-next-schedule:: 2024-07-29T06:53:42.297Z
-  card-last-interval:: 0.04
+  card-repeats:: 4
+  card-next-schedule:: 2024-07-31T02:44:31.307Z
+  card-last-interval:: 0.03
   card-ease-factor:: 1.3
-  card-last-reviewed:: 2024-07-29T06:53:42.297Z
+  card-last-reviewed:: 2024-07-31T02:44:31.308Z
 	- Mysql5.6-之前，没有充分利用非聚簇索引
 		- 假设有索引(name,age)和查询条件 name like 张% and age = 10
 	- 不存在索引下推时 {{cloze 先根据非聚簇索引查记录，再根据where条件过滤}}
@@ -330,10 +330,10 @@
 		- 充分利用了name,age 字段，减少了回表次数
 - MRR优化 #card
   card-last-interval:: 0.02
-  card-repeats:: 5
+  card-repeats:: 6
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-30T07:16:35.210Z
-  card-last-reviewed:: 2024-07-30T07:16:35.210Z
+  card-next-schedule:: 2024-07-31T03:26:25.899Z
+  card-last-reviewed:: 2024-07-31T03:26:25.900Z
   card-last-score:: 3
 	- 当使用二级索引进行范围查询时，从随机读变为顺序读 {{cloze 通过对索引值排序，把无序回表IO变成有序回表IO}}
 - Explain 查询计划 #card
@@ -473,11 +473,11 @@
 	- 各种看板和统计报表
 		- {{cloze 数据工厂，离线计算。 直接接入ES}}
 - 大批量数据的插入 #card
-  card-last-interval:: 0.02
-  card-repeats:: 5
+  card-last-interval:: 0.03
+  card-repeats:: 6
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-30T07:11:32.648Z
-  card-last-reviewed:: 2024-07-30T07:11:32.648Z
+  card-next-schedule:: 2024-07-31T03:07:13.434Z
+  card-last-reviewed:: 2024-07-31T03:07:13.434Z
   card-last-score:: 3
 	- 开启事务
 	- 合并插入：一条语句插入多条数据

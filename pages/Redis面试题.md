@@ -1,10 +1,10 @@
 - {{cards [[Redis面试题]]}}
 - 项目中缓存是如何使用的，为什么要用 #card
-  card-last-interval:: 0.02
-  card-repeats:: 5
+  card-last-interval:: 0.03
+  card-repeats:: 6
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-30T07:14:35.080Z
-  card-last-reviewed:: 2024-07-30T07:14:35.081Z
+  card-next-schedule:: 2024-07-31T03:15:56.120Z
+  card-last-reviewed:: 2024-07-31T03:15:56.120Z
   card-last-score:: 3
 	- 提高接口性能 {{cloze 缓存查询结果}} 用得最多的是 {{cloze 用户信息查询}} 接口
 	- 降低数据库压力 {{cloze 热点数据缓存}}
@@ -120,21 +120,21 @@
 		- 多线程切换会带来开销，且代码复杂性上升。最终选择了IO多路复用
 	- 在6.0+，针对 {{cloze 网络请求}}改成了多线程
 - Redis的分布式锁如何实现 #card
-  card-last-interval:: 0.03
-  card-repeats:: 5
+  card-last-interval:: 0.04
+  card-repeats:: 6
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-30T06:39:06.982Z
-  card-last-reviewed:: 2024-07-30T06:39:06.982Z
+  card-next-schedule:: 2024-07-31T02:49:31.647Z
+  card-last-reviewed:: 2024-07-31T02:49:31.648Z
   card-last-score:: 3
 	- {{cloze setnx来争抢锁，再用expire加上过期时间}}
 	- 高可用分布式锁 {{cloze RedLock}} 但可能导致性能下降，建议使用 {{cloze zk实现分布式锁}}
 	- 分布式锁需要考虑的三大问题 {{cloze 确认该锁是当前线程持有}} {{cloze 程序异常之后释放}} {{cloze 过期续期}}
 - 如何把固定前缀开通的key全部找出来 #card
-  card-last-interval:: 0
-  card-repeats:: 4
+  card-last-interval:: 0.04
+  card-repeats:: 5
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-29T06:51:48.036Z
-  card-last-reviewed:: 2024-07-29T06:51:48.036Z
+  card-next-schedule:: 2024-07-31T02:36:42.503Z
+  card-last-reviewed:: 2024-07-31T02:36:42.504Z
   card-last-score:: 3
 	- {{cloze scan命令可以提取指定模式的key列表}}
 - Redis的持久化机制 #card
@@ -173,21 +173,21 @@
 	- AOF的缺点
 		- 生成的文件 {{cloze 比RDB大}} {{cloze 恢复速度慢}}
 - Redis的主从复制过程 #card
-  card-last-interval:: 0.02
-  card-repeats:: 5
+  card-last-interval:: 0.03
+  card-repeats:: 6
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-30T07:12:04.985Z
-  card-last-reviewed:: 2024-07-30T07:12:04.985Z
+  card-next-schedule:: 2024-07-31T03:08:09.493Z
+  card-last-reviewed:: 2024-07-31T03:08:09.494Z
   card-last-score:: 3
 	- 从服务器首次连接 {{cloze 全量复制}} {{cloze rdb or aof文件}}
 	- 复制后数据先 {{cloze 保存到本地磁盘}} 后 {{cloze 从磁盘读取到内存}}
 	- 重新连接 {{cloze 部分数据复制}} {{cloze offset偏移量 repl-backlog-buffer 复制积压缓冲区}}
 - Redis的集群模式的好处 #card
-  card-last-interval:: 0.03
-  card-repeats:: 5
+  card-last-interval:: 0.04
+  card-repeats:: 6
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-30T06:39:28.925Z
-  card-last-reviewed:: 2024-07-30T06:39:28.926Z
+  card-next-schedule:: 2024-07-31T03:01:06.008Z
+  card-last-reviewed:: 2024-07-31T03:01:06.009Z
   card-last-score:: 3
 	- 数据分片 {{cloze 自动将数据分片，每个master上放一部分}}
 	- 主从复制和自动故障转移 {{cloze 部分master不可用时，还是可以继续工作}}
@@ -299,11 +299,11 @@
 		- {{cloze 自动扩展空间，扩容时成倍分配，缩容时先留着并不正式归还}}
 		- {{cloze 二进制安全，写入什么就读取什么，不做任何限制}}
 - Redis的字典，渐进式Rehash过程 #card
-  card-last-interval:: 0.02
-  card-repeats:: 5
+  card-last-interval:: 0.03
+  card-repeats:: 6
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-30T07:13:12.560Z
-  card-last-reviewed:: 2024-07-30T07:13:12.560Z
+  card-next-schedule:: 2024-07-31T03:14:51.805Z
+  card-last-reviewed:: 2024-07-31T03:14:51.806Z
   card-last-score:: 3
 	- 两个table, 采用 {{cloze 数组+链表的链地址法}} 解决哈希冲突 哈希算法为 {{cloze hashcode & sizemask}} sizemask = realsize - 1
 	- 扩容时

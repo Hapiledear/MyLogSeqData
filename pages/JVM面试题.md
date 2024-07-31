@@ -49,10 +49,10 @@
 		- {{cloze 通过DirectByteBuffer对象的虚引用实现堆外内存的释放}} 如何回收
 - 堆内存的组成 #card
   card-last-interval:: 0.03
-  card-repeats:: 5
+  card-repeats:: 6
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-30T07:10:27.879Z
-  card-last-reviewed:: 2024-07-30T07:10:27.880Z
+  card-next-schedule:: 2024-07-31T03:05:07.529Z
+  card-last-reviewed:: 2024-07-31T03:05:07.529Z
   card-last-score:: 3
 	- {{cloze 1/3的年轻代 1/2的老年代}} 2代
 	- {{cloze  年轻代又分 eden区 s1和s2区 比例为 8:1:1}} 3区
@@ -77,11 +77,11 @@
 	- 开发中会有大量字符串被创建，回收效率低导致永久代内存不足
 	- 放在堆中，可以及时回收内存
 - ## 几种变量存放在哪里？ #card
-  card-last-interval:: 0
-  card-repeats:: 4
+  card-last-interval:: 0.04
+  card-repeats:: 5
   card-ease-factor:: 1.3
-  card-last-reviewed:: 2024-07-29T06:52:16.852Z
-  card-next-schedule:: 2024-07-29T06:52:16.852Z
+  card-last-reviewed:: 2024-07-31T02:37:01.783Z
+  card-next-schedule:: 2024-07-31T02:37:01.782Z
   card-last-score:: 3
 	- ``` java
 	  	  public class StaticObjTest {
@@ -285,11 +285,11 @@
 	- {{cloze -xss1m}} 设置单个线程栈大小
 	- {{cloze -xx:maxMetaspaceSize=2g}} 设置元空间的最大值
 - 对象一定都是在堆上分配吗？ 逃逸分析 #card
-  card-last-interval:: 0.04
-  card-repeats:: 3
+  card-last-interval:: 0.03
+  card-repeats:: 4
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-29T06:52:40.739Z
-  card-last-reviewed:: 2024-07-29T06:52:40.739Z
+  card-next-schedule:: 2024-07-31T02:44:11.841Z
+  card-last-reviewed:: 2024-07-31T02:44:11.842Z
   card-last-score:: 3
 	- 如果对象不会逃逸出方法外部，则会在栈上分配
 	- 如果符合标量替换条件(不逃逸&不会被本线程外的线程访问)，则会将对象分解成若干个方法内从成员变量

@@ -24,43 +24,44 @@
 		- {{cloze 系统复杂度提高}} 幂等性、可靠性
 		- {{cloze 一致性问题}}  BCD三个系统都消费同一条MQ BD成功而C失败
 - Rabbit MQ 如何保证消息的顺序性? #card
-  card-last-interval:: 0.02
-  card-repeats:: 5
+  card-last-interval:: 0.03
+  card-repeats:: 6
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-30T07:13:35.888Z
-  card-last-reviewed:: 2024-07-30T07:13:35.888Z
+  card-next-schedule:: 2024-07-31T03:15:14.181Z
+  card-last-reviewed:: 2024-07-31T03:15:14.182Z
   card-last-score:: 3
 	- 拆分多个queue,每个queue对应一个consumer。
 	- {{cloze 发送时，根据key ID路由，保证同一个ID的消息发到同一个queue}}
 - Rabbit MQ 消息基于什么传输? #card
   card-last-interval:: 0.03
-  card-repeats:: 5
+  card-repeats:: 6
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-30T07:10:05.951Z
-  card-last-reviewed:: 2024-07-30T07:10:05.951Z
+  card-next-schedule:: 2024-07-31T03:01:25.727Z
+  card-last-reviewed:: 2024-07-31T03:01:25.727Z
   card-last-score:: 3
 	- 建立TCP连接后，基于信道channel的方式传输数据
 	- channel是建立在TCP连接上的虚拟连接，没有数量限制。达到复用TCP连接的目的
 - Rabbit MQ  如何保证不重复消费? 幂等性  #card
-  card-last-interval:: 0.03
-  card-repeats:: 5
+  card-last-interval:: 0.04
+  card-repeats:: 6
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-30T06:39:37.758Z
-  card-last-reviewed:: 2024-07-30T06:39:37.758Z
+  card-next-schedule:: 2024-07-31T03:01:23.864Z
+  card-last-reviewed:: 2024-07-31T03:01:23.864Z
   card-last-score:: 3
 	- 缓存 {{cloze 使用缓存记录唯一ID，设置一个过期时间}}
 	- 数据库 {{cloze 使用一张表记录已消费的数据，发生主键冲突则证明已消费}}
 - Rabbit MQ  如何保证消息的不丢失？ #card
-  card-last-interval:: 0.02
-  card-repeats:: 5
+  card-last-interval:: 0.03
+  card-repeats:: 6
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-30T07:11:03.840Z
-  card-last-reviewed:: 2024-07-30T07:11:03.840Z
+  card-next-schedule:: 2024-07-31T03:06:11.674Z
+  card-last-reviewed:: 2024-07-31T03:06:11.674Z
   card-last-score:: 3
 	- 发送方确认
 		- {{cloze 消息会生成一个唯一ID}} id
 		- {{cloze 当消息被队列接收且持久化后，返回这个唯一ID 给生产者}} 成功
 		- {{cloze 如果发生错误没有接收到，返回nack消息}} 失败
+			- 可对失败的消息进行重试
 		- 整个过程都是异步的
 	- 消息队列持久化
 		- 队列自身有持久化功能，但会影响性能。

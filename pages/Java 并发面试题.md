@@ -45,11 +45,11 @@
 	- 上锁过程 {{cloze 在对象头中，记录锁的类型 和 指向栈中的锁记录指针}}
 	- 如果没有获取到锁，则会 {{cloze 让线程自旋等待，并不放弃CPU的执行时间}}
 - synchronized的锁升级机制 #card #Java并发
-  card-last-interval:: 0
-  card-repeats:: 4
+  card-last-interval:: 0.03
+  card-repeats:: 5
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-29T06:54:51.552Z
-  card-last-reviewed:: 2024-07-29T06:54:51.552Z
+  card-next-schedule:: 2024-07-31T02:46:31.323Z
+  card-last-reviewed:: 2024-07-31T02:46:31.324Z
   card-last-score:: 3
 	- 锁消除 无锁
 		- {{cloze 在编译时明显检测到不会被其他线程访问到}}
@@ -89,10 +89,10 @@
 	- 实现 {{cloze atomic下的类大多是使用CAS操作来实现的}}
 - CAS会产生什么问题以及解决办法 #card #Java并发
   card-last-interval:: 0.02
-  card-repeats:: 5
+  card-repeats:: 6
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-30T07:16:30.457Z
-  card-last-reviewed:: 2024-07-30T07:16:30.458Z
+  card-next-schedule:: 2024-07-31T03:23:13.449Z
+  card-last-reviewed:: 2024-07-31T03:23:13.449Z
   card-last-score:: 3
 	- ABA问题
 		- {{cloze 用链表的例子更直观}}
@@ -251,6 +251,7 @@
 	- 使用场景
 		- {{cloze 线程隔离}}
 		- {{cloze 跨函数传递数据}}
+	- 使用时需要注意 {{cloze 变量回收}}  特别是在线程池的场景下
 - 线程池调度流程&各项参数 #card #Java并发
   card-last-interval:: 0.02
   card-repeats:: 4
@@ -292,4 +293,16 @@
 		- 假设一个Cache Line中有数据a\b\c ，同时假设线程都是在不同core上运行的，线程1修改a 而线程2修改b.
 		- 当一个Core修改其缓存中的值时，其他Core不能再使用旧值。该内存位置将在所有缓存中失效，然后重新从内存里加载最新数据。
 	- 通过增加填充，让a和b两个变量分布到不同的Cache Line
--
+- Java中有哪些并发工具 #card
+	- 创建线程池和任务调度的 {{cloze Executor}}
+	- 同步辅助类 {{cloze CountdowmLatch、CycleBarrier 等}}
+	- 并发集合 {{cloze ConcurrentHashMap 等}}
+	- 原子变量 {{cloze AutomicXXX}}
+	- 锁机制 {{cloze Lock 和 synchronized }}
+	- 条件变量 {{cloze condition}}
+	- 异步任务和编排框架 {{cloze Fluter 和 CompletableFuture}}
+	- Fork/Join框架
+	- 同步队列
+- Lock与synchronized的性能差异体现在哪 #card
+	- `Lock` 允许更细粒度的锁定
+	- `Lock` 可以更灵活地控制线程的阻塞和唤醒
