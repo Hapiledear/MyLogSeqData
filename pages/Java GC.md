@@ -9,6 +9,7 @@
 		- 从GC Roots开始向下搜索，搜索的路径称为**引用链**。 当一个对象到GC Roots没有任何引用链路时，证明此对象不可达。
 		- 至少会经过两次标记过程，才面临回收
 - ## JVM内存分代
+  collapsed:: true
 	- ![image.png](../assets/image_1673427295443_0.png)
 	- 分代的目的是为了 **提高对象内存分配和垃圾回收的效率**
 	- 新生代 
@@ -29,6 +30,7 @@
 		- 当空间不够时，触发 ((63bd458f-4ddf-4a39-ba1d-4b7d2b7baeae))
 	- [[Java 永久代]] 不属于 [[Java 堆内存]]
 - ## GC类型
+  collapsed:: true
 	- Minor GC  
 	  id:: 63be6b6a-8bc6-477a-830f-13fcb1a8a633
 		- ((63be6a31-b5b0-4ffb-8c95-72fc10fc453a))
@@ -50,6 +52,7 @@
 		- Survivor的存在意义，就是减少被送到老年代的对象，进而减少Full GC的发生。
 		- 设置两个Survivor区最大的好处就是解决了碎片化。标记复制算法保证了存活对象占用连续的内存空间。
 - ## 垃圾收集算法
+  collapsed:: true
 	- 标记-清除算法
 	  id:: 63be9cd0-ca1e-4a29-9cb8-bcf222c44fbf
 		- ![image.png](../assets/image_1673436681708_0.png)
@@ -94,5 +97,7 @@
 		- 并发清除
 			- 清除不可达对象，和用户线程一起工作，不需要暂停
 	- ### [[G1 Garbage First]]
-		-
+		- 只是在标记阶段进行了并发
+	- [[ZGC]]
+	- [[Shenandoah]]
 -
