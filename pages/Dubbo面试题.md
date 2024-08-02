@@ -1,11 +1,11 @@
 - {{cards Dubbo面试题}}
 - Dubbo服务注册和请求流程 #card
   card-last-score:: 3
-  card-repeats:: 4
-  card-next-schedule:: 2024-07-30T07:48:58.540Z
+  card-repeats:: 5
+  card-next-schedule:: 2024-08-01T03:25:43.103Z
   card-last-interval:: 0.01
   card-ease-factor:: 1.3
-  card-last-reviewed:: 2024-07-30T07:48:58.540Z
+  card-last-reviewed:: 2024-08-01T03:25:43.103Z
 	- Provider暴露接口，写入注册中心
 	- Provider-注册中心 ： 注册中心返回ip列表给provider，如果列表有更新，由注册中心主动推送给provider
 	- Consumer向注册中心订阅自己需要的信息，包括 provider、config、routers，并拉取一份本地保存
@@ -13,11 +13,11 @@
 	- Consumer使用轮询策略，直接与Provider的机器进行通信
 	- Provider与Consumer 在内存中累计调用次数和耗时，定时上报给监控中心
 - Dubbo的轮询策略 #card
-  card-last-interval:: 0.03
-  card-repeats:: 4
+  card-last-interval:: 0.04
+  card-repeats:: 5
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-30T07:21:58.043Z
-  card-last-reviewed:: 2024-07-30T07:21:58.043Z
+  card-next-schedule:: 2024-08-01T02:50:20.156Z
+  card-last-reviewed:: 2024-08-01T02:50:20.156Z
   card-last-score:: 3
 	- 随机
 	- 轮询和加权轮询
@@ -25,11 +25,11 @@
 	- 最小调用次数
 - Dubbo的失败策略 #card
   card-last-score:: 3
-  card-repeats:: 4
-  card-next-schedule:: 2024-07-30T07:37:08.664Z
+  card-repeats:: 5
+  card-next-schedule:: 2024-08-01T03:03:12.445Z
   card-last-interval:: 0.02
   card-ease-factor:: 1.3
-  card-last-reviewed:: 2024-07-30T07:37:08.664Z
+  card-last-reviewed:: 2024-08-01T03:03:12.445Z
 	- 故障转移：自动重试其它服务器(默认)
 		- 保证了服务的 {{cloze 高可用}}
 		- 需要设置合理的 {{cloze 请求有效时间}} 及 {{cloze 重试次数}} 。需要服务具有 {{cloze 幂等性}}
@@ -47,11 +47,11 @@
 		- 消耗额外资源 且 失败概率高
 	- 并不提供 沉默失败 策略：即 服务熔断
 - 为什么采用Dubbo\\RPC 而不是HTTP #card
-  card-last-interval:: 0.02
-  card-repeats:: 4
+  card-last-interval:: 0.03
+  card-repeats:: 5
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-30T07:35:10.199Z
-  card-last-reviewed:: 2024-07-30T07:35:10.199Z
+  card-next-schedule:: 2024-08-01T02:57:43.001Z
+  card-last-reviewed:: 2024-08-01T02:57:43.002Z
   card-last-score:: 3
 	- RPC 是属于TCP层的协议，相比于HTTP的应用层协议，请求报文的体积更小
 		- 四层协议分别是：链路层、网络层(IP)、传输层(TCP)、应用层(HTTP)
@@ -78,12 +78,12 @@
 	- {{cloze 服务访问压力以及时长统计}} 时长
 	- {{cloze 服务可用性监控、失败告警监控}} 监控
 - Dubbo的工作原理及分层 #card
-  card-last-interval:: 0.01
-  card-repeats:: 4
+  card-last-interval:: -1
+  card-repeats:: 1
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-30T07:49:15.118Z
-  card-last-reviewed:: 2024-07-30T07:49:15.118Z
-  card-last-score:: 3
+  card-next-schedule:: 2024-08-01T16:00:00.000Z
+  card-last-reviewed:: 2024-08-01T03:25:51.146Z
+  card-last-score:: 1
 	- Biz 业务逻辑 自己来提供 {{cloze 接口和实现还有一些配置信息}}
 		- service {{cloze 实现业务代码}}
 		- config {{cloze Dubbo相关配置}}

@@ -1,11 +1,11 @@
 - {{cards [[Java 并发面试题]]}}
 - 并发中的三大问题是如何产生的，都是如何解决的? #card #Java并发
   card-last-score:: 3
-  card-repeats:: 4
-  card-next-schedule:: 2024-07-30T07:44:41.364Z
-  card-last-interval:: 0.01
+  card-repeats:: 5
+  card-next-schedule:: 2024-08-01T03:16:34.627Z
+  card-last-interval:: 0.02
   card-ease-factor:: 1.3
-  card-last-reviewed:: 2024-07-30T07:44:41.404Z
+  card-last-reviewed:: 2024-08-01T03:16:34.682Z
 	- 原子性
 		- {{cloze `i++` 一行代码被编译为机器指令时可能是多步操作}}
 		- {{cloze CAS , synchroize，显示锁}}
@@ -17,39 +17,39 @@
 		- {{cloze CUP层级的MESI协议，JMM的八种操作规范}}
 - volatile关键字的原理及其实战 #card #Java并发
   card-last-interval:: 0.01
-  card-repeats:: 4
+  card-repeats:: 5
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-30T08:02:58.824Z
-  card-last-reviewed:: 2024-07-30T08:02:58.824Z
+  card-next-schedule:: 2024-08-01T07:05:22.607Z
+  card-last-reviewed:: 2024-08-01T07:05:22.608Z
   card-last-score:: 3
 	- 解决了两大问题 {{cloze 保证变量对所有线程的可见性和禁止指令重排}} 通常搭配atomic类来实现 {{cloze 原子性}}
 	- 实践 单例模式中 {{cloze volatile修饰instance. 保证其写操作发生在读之前}}
 - volatile能将非原子操作变成原子操作吗 #card #Java并发
   card-last-interval:: 0
-  card-repeats:: 5
+  card-repeats:: 6
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-30T08:05:07.897Z
-  card-last-reviewed:: 2024-07-30T08:05:07.897Z
+  card-next-schedule:: 2024-08-01T07:08:20.693Z
+  card-last-reviewed:: 2024-08-01T07:08:20.693Z
   card-last-score:: 3
 	- 在32位的机器上，long和double分为了两部分 高位和低位。因此建议用volatile修饰
 	- 但更建议JVM实现时将这种操作视为原子性的
 - synchronized (简称 同步)的原理 #card #Java并发
-  card-last-interval:: 0.02
-  card-repeats:: 4
+  card-last-interval:: 0.03
+  card-repeats:: 5
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-30T07:36:10.559Z
-  card-last-reviewed:: 2024-07-30T07:36:10.560Z
+  card-next-schedule:: 2024-08-01T02:58:37.058Z
+  card-last-reviewed:: 2024-08-01T02:58:37.058Z
   card-last-score:: 3
 	- 通过 {{cloze `monitorEnter` 和`monitorExit`}} 指令，进行加锁和释放锁。是可重入的
 	- {{cloze 遵循happends-before规则，被synch修饰的对象的写在读之前，读一定是从直接内存中读取}} ，保证可见性
 	- 上锁过程 {{cloze 在对象头中，记录锁的类型 和 指向栈中的锁记录指针}}
 	- 如果没有获取到锁，则会 {{cloze 让线程自旋等待，并不放弃CPU的执行时间}}
 - synchronized的锁升级机制 #card #Java并发
-  card-last-interval:: 0.03
-  card-repeats:: 5
+  card-last-interval:: 0
+  card-repeats:: 6
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-31T02:46:31.323Z
-  card-last-reviewed:: 2024-07-31T02:46:31.324Z
+  card-next-schedule:: 2024-08-01T07:59:39.202Z
+  card-last-reviewed:: 2024-08-01T07:59:39.202Z
   card-last-score:: 3
 	- 锁消除 无锁
 		- {{cloze 在编译时明显检测到不会被其他线程访问到}}
@@ -67,10 +67,10 @@
 			- 持有许可的线程可以 {{cloze 主动放弃许可进入阻塞}} {{cloze 发送信号，唤起阻塞线程}}
 - synchronized和volatie的区别  #card #Java并发
   card-last-interval:: 0.01
-  card-repeats:: 4
+  card-repeats:: 5
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-30T08:02:56.336Z
-  card-last-reviewed:: 2024-07-30T08:02:56.337Z
+  card-next-schedule:: 2024-08-01T07:04:24.174Z
+  card-last-reviewed:: 2024-08-01T07:04:24.228Z
   card-last-score:: 3
 	- 修饰的地方 {{cloze volatile是变量修饰,synchronized可以修饰类、方法、变量}}
 	- 解决的问题 {{cloze volatile 保证的是有序性和可见行，不能保证原子性，synch 保证的是可见性(Happends-before)和原子性}}
@@ -78,21 +78,21 @@
 	- 是否被编译优化 {{cloze volatile不会被编译优化，synch可以被优化}}
 	- 实际开发中 {{cloze synch比volatile用得多一点，volatile需要搭配automit类使用}}
 - 什么是CAS #card #Java并发
-  card-last-interval:: 0
-  card-repeats:: 5
+  card-last-interval:: 0.01
+  card-repeats:: 6
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-30T07:54:17.548Z
-  card-last-reviewed:: 2024-07-30T07:54:17.548Z
+  card-next-schedule:: 2024-08-01T06:43:40.443Z
+  card-last-reviewed:: 2024-08-01T06:43:40.443Z
   card-last-score:: 3
 	- compare and swap 比较并交换
 	- 实现,是否加锁 {{cloze 内存位置v 预期原值A和新值B ，如果内存值=A 那么将内存值改为B}} {{cloze 不加锁，但会自旋一定次数}}
 	- 实现 {{cloze atomic下的类大多是使用CAS操作来实现的}}
 - CAS会产生什么问题以及解决办法 #card #Java并发
-  card-last-interval:: 0.02
-  card-repeats:: 6
+  card-last-interval:: 0
+  card-repeats:: 7
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-31T03:23:13.449Z
-  card-last-reviewed:: 2024-07-31T03:23:13.449Z
+  card-next-schedule:: 2024-08-01T08:07:34.706Z
+  card-last-reviewed:: 2024-08-01T08:07:34.707Z
   card-last-score:: 3
 	- ABA问题
 		- {{cloze 用链表的例子更直观}}
@@ -103,11 +103,11 @@
 	- 只能保证一个共享变量的原子操作
 		- {{cloze 将两个变量放入一个对象中}} {{cloze 上锁}}
 - Lock与synchronize的区别 #card #Java并发
-  card-last-interval:: 0.04
-  card-repeats:: 3
+  card-last-interval:: 0.03
+  card-repeats:: 4
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-30T08:25:26.449Z
-  card-last-reviewed:: 2024-07-30T08:25:26.450Z
+  card-next-schedule:: 2024-08-01T07:26:45.933Z
+  card-last-reviewed:: 2024-08-01T07:26:45.934Z
   card-last-score:: 3
 	- 实现方式
 		- {{cloze Lock基于Java类实现，易于扩展，功能丰富}} {{cloze synch基于对象头实现，无法自定义}}
@@ -119,10 +119,10 @@
 		- {{cloze Lock可以在不同范围、不同的顺序获取和释放锁}} {{cloze synch只能在进临界区获取和释放}}
 - 可重入锁的实现原理  #card #Java并发
   card-last-interval:: 0.03
-  card-repeats:: 4
+  card-repeats:: 5
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-30T07:23:09.835Z
-  card-last-reviewed:: 2024-07-30T07:23:09.835Z
+  card-next-schedule:: 2024-08-01T02:51:14.446Z
+  card-last-reviewed:: 2024-08-01T02:51:14.446Z
   card-last-score:: 3
 	- 重入性
 		- {{cloze 已获得锁的线程可以再次获取}}
@@ -133,10 +133,10 @@
 		- 公平 {{cloze AQS只允许头节点抢锁}}
 - AQS是什么，抢锁过程 #card #Java并发
   card-last-interval:: 0
-  card-repeats:: 6
+  card-repeats:: 7
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-30T08:12:20.124Z
-  card-last-reviewed:: 2024-07-30T08:12:20.124Z
+  card-next-schedule:: 2024-08-01T07:14:33.587Z
+  card-last-reviewed:: 2024-08-01T07:14:33.587Z
   card-last-score:: 3
 	- AQS是一个用来构建锁和同步器的框架
 	- 队列 {{cloze 有一个CLH 的双向链表组成的队列}}
@@ -151,11 +151,11 @@
 		- 独占方式获取和释放资源 {{cloze tryAcquire/tryRelease}}
 		- 共享方式 {{cloze tryAquireShared/treReleaseShared}}
 - ConcurrentHashMap的原理 #card #Java并发
-  card-last-interval:: 0.01
-  card-repeats:: 5
+  card-last-interval:: 0.03
+  card-repeats:: 6
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-30T07:22:36.667Z
-  card-last-reviewed:: 2024-07-30T07:22:36.667Z
+  card-next-schedule:: 2024-08-01T02:51:00.812Z
+  card-last-reviewed:: 2024-08-01T02:51:00.812Z
   card-last-score:: 3
 	- 1.8- {{cloze 将map分段为segment，对每一段分别加锁}}
 	- 1.8+ {{cloze 弃用了分段，而是改用了CAS操作}}
@@ -163,11 +163,11 @@
 		- 存储结构 {{cloze 数组+链表->红黑树}}
 		- 扩容 {{cloze 默认大小为 16 加载因子0.75 阈值=大小*因子}} {{cloze 扩容后大小为2^n次方，不需要rehash}}
 - synchronizeMap与ConcurrentHashMap的区别 #card #Java并发
-  card-last-interval:: 0.03
-  card-repeats:: 4
+  card-last-interval:: 0
+  card-repeats:: 6
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-30T07:17:06.650Z
-  card-last-reviewed:: 2024-07-30T07:17:06.650Z
+  card-next-schedule:: 2024-08-01T08:08:00.219Z
+  card-last-reviewed:: 2024-08-01T08:08:00.219Z
   card-last-score:: 3
 	- 锁住数据的粒度
 		- {{cloze synchMap 一次锁住一整张表}}
@@ -183,31 +183,31 @@
 	- 缺点 {{cloze copy数组代价高昂，消耗内存}}
 	- 适用场景 {{cloze 读多写少}}
 - 阻塞队列BlockingQueue的实现原理 #card #Java并发
-  card-last-interval:: 0
-  card-repeats:: 5
+  card-last-interval:: 0.01
+  card-repeats:: 6
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-30T07:53:36.629Z
-  card-last-reviewed:: 2024-07-30T07:53:36.670Z
+  card-next-schedule:: 2024-08-01T06:37:33.580Z
+  card-last-reviewed:: 2024-08-01T06:37:33.580Z
   card-last-score:: 3
 	- 拯救了#生产者-消费者 模型的控制逻辑
 		- {{cloze 在队列为空时，获取元素的线程会等待队列变为非空}}
 		- {{cloze 在队列满时，存储元素的线程会等待队列可用}}
 	- 阻塞队列的经典应用场景是 {{cloze socket客户端的数据读取和解析}}
 - 什么是原子操作 #card #Java并发
-  card-last-interval:: 0.01
-  card-repeats:: 4
+  card-last-interval:: 0.02
+  card-repeats:: 5
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-30T07:43:12.594Z
-  card-last-reviewed:: 2024-07-30T07:43:12.594Z
+  card-next-schedule:: 2024-08-01T03:15:37.971Z
+  card-last-reviewed:: 2024-08-01T03:15:37.971Z
   card-last-score:: 3
 	- 定义 {{cloze 一连串操作，要么都执行完，要么都不执行}}
 	- 如何保证原子性 {{cloze CAS指令}} {{cloze Lock和synchroize}}
 - java中有哪些原子类  #card #Java并发
   card-last-interval:: 0
-  card-repeats:: 5
+  card-repeats:: 6
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-30T08:05:18.033Z
-  card-last-reviewed:: 2024-07-30T08:05:18.033Z
+  card-next-schedule:: 2024-08-01T07:08:46.870Z
+  card-last-reviewed:: 2024-08-01T07:08:46.870Z
   card-last-score:: 3
 	- 基本类型 {{cloze AtomicBoolean}} {{cloze AtomicInteger}} {{cloze AtomicReference}}
 	- 数组 {{cloze AtomicXXXArray}}
@@ -222,30 +222,30 @@
   card-last-score:: 3
 	- {{cloze CAS+volatile方式保证原子性}} 避免synch的高开销
 - CountdownLatch和CycleBarrar的区别 #card #Java并发
-  card-last-interval:: 0.04
-  card-repeats:: 3
+  card-last-interval:: 0.03
+  card-repeats:: 4
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-30T08:23:45.927Z
-  card-last-reviewed:: 2024-07-30T08:23:45.968Z
+  card-next-schedule:: 2024-08-01T07:22:13.825Z
+  card-last-reviewed:: 2024-08-01T07:22:13.826Z
   card-last-score:: 3
 	- 线程等待和执行方式 CD {{cloze 某个线程A等待若干线程执行完后才执行}} CB {{cloze 一组线程在某个状态等待，然后再同时执行}}
 	- 当前线程是否阻塞 CD {{cloze 调用countDown方法后，因为是计数器减1，当前线程不会阻塞}} CB {{cloze 调用 await方法后，会阻塞当前线程}}
 	- 复用 CD {{cloze 不能复用}} CB {{cloze 可以复用}}
 - final类 不可变对象 描述 #card #Java并发
-  card-last-interval:: 0.01
-  card-repeats:: 4
+  card-last-interval:: -1
+  card-repeats:: 1
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-30T08:01:51.144Z
-  card-last-reviewed:: 2024-07-30T08:01:51.144Z
-  card-last-score:: 3
+  card-next-schedule:: 2024-08-01T16:00:00.000Z
+  card-last-reviewed:: 2024-08-01T07:03:22.438Z
+  card-last-score:: 1
 	- 对象一旦被创建，它的属性值就不能改变 ，可以通过反射方式进行破坏
 	- 保证了内存的可见性，不需要额外的同步手段，提升代码执行效率
 - ThreadLocal原理 #card #Java并发
-  card-last-interval:: 0
-  card-repeats:: 5
+  card-last-interval:: 0.01
+  card-repeats:: 6
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-30T07:54:31.389Z
-  card-last-reviewed:: 2024-07-30T07:54:31.389Z
+  card-next-schedule:: 2024-08-01T06:51:17.149Z
+  card-last-reviewed:: 2024-08-01T06:51:17.150Z
   card-last-score:: 3
 	- 每一个thread持有一个threadLocalMap {{cloze key是被修饰的threadLocal对象}} {{cloze value是对象值}}
 	- 使用场景
@@ -254,10 +254,10 @@
 	- 使用时需要注意 {{cloze 变量回收}}  特别是在线程池的场景下
 - 线程池调度流程&各项参数 #card #Java并发
   card-last-interval:: 0.02
-  card-repeats:: 4
+  card-repeats:: 5
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-30T07:42:21.913Z
-  card-last-reviewed:: 2024-07-30T07:42:21.914Z
+  card-next-schedule:: 2024-08-01T03:13:04.313Z
+  card-last-reviewed:: 2024-08-01T03:13:04.366Z
   card-last-score:: 3
 	- 任务优先占用 {{cloze 核心线程数}}
 	- 核心线程满 {{cloze 进入等待队列}}
@@ -294,6 +294,12 @@
 		- 当一个Core修改其缓存中的值时，其他Core不能再使用旧值。该内存位置将在所有缓存中失效，然后重新从内存里加载最新数据。
 	- 通过增加填充，让a和b两个变量分布到不同的Cache Line
 - Java中有哪些并发工具 #card
+  card-last-interval:: 0.14
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2024-08-01T05:30:37.263Z
+  card-last-reviewed:: 2024-08-01T02:30:37.264Z
+  card-last-score:: 3
 	- 创建线程池和任务调度的 {{cloze Executor}}
 	- 同步辅助类 {{cloze CountdowmLatch、CycleBarrier 等}}
 	- 并发集合 {{cloze ConcurrentHashMap 等}}
@@ -304,5 +310,11 @@
 	- Fork/Join框架
 	- 同步队列
 - Lock与synchronized的性能差异体现在哪 #card
+  card-last-interval:: 0.14
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2024-08-01T05:23:21.995Z
+  card-last-reviewed:: 2024-08-01T02:23:21.995Z
+  card-last-score:: 3
 	- `Lock` 允许更细粒度的锁定
 	- `Lock` 可以更灵活地控制线程的阻塞和唤醒
