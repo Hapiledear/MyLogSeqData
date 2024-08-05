@@ -13,11 +13,11 @@
 	- Consumer使用轮询策略，直接与Provider的机器进行通信
 	- Provider与Consumer 在内存中累计调用次数和耗时，定时上报给监控中心
 - Dubbo的轮询策略 #card
-  card-last-interval:: 0.04
-  card-repeats:: 5
+  card-last-interval:: 0.05
+  card-repeats:: 6
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-01T02:50:20.156Z
-  card-last-reviewed:: 2024-08-01T02:50:20.156Z
+  card-next-schedule:: 2024-08-05T08:48:25.210Z
+  card-last-reviewed:: 2024-08-05T07:48:25.211Z
   card-last-score:: 3
 	- 随机
 	- 轮询和加权轮询
@@ -25,11 +25,11 @@
 	- 最小调用次数
 - Dubbo的失败策略 #card
   card-last-score:: 3
-  card-repeats:: 5
-  card-next-schedule:: 2024-08-01T03:03:12.445Z
-  card-last-interval:: 0.02
+  card-repeats:: 6
+  card-next-schedule:: 2024-08-05T08:40:57.489Z
+  card-last-interval:: 0.03
   card-ease-factor:: 1.3
-  card-last-reviewed:: 2024-08-01T03:03:12.445Z
+  card-last-reviewed:: 2024-08-05T08:40:57.490Z
 	- 故障转移：自动重试其它服务器(默认)
 		- 保证了服务的 {{cloze 高可用}}
 		- 需要设置合理的 {{cloze 请求有效时间}} 及 {{cloze 重试次数}} 。需要服务具有 {{cloze 幂等性}}
@@ -47,11 +47,11 @@
 		- 消耗额外资源 且 失败概率高
 	- 并不提供 沉默失败 策略：即 服务熔断
 - 为什么采用Dubbo\\RPC 而不是HTTP #card
-  card-last-interval:: 0.03
-  card-repeats:: 5
+  card-last-interval:: 0.04
+  card-repeats:: 6
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-01T02:57:43.001Z
-  card-last-reviewed:: 2024-08-01T02:57:43.002Z
+  card-next-schedule:: 2024-08-05T08:38:30.019Z
+  card-last-reviewed:: 2024-08-05T08:38:30.019Z
   card-last-score:: 3
 	- RPC 是属于TCP层的协议，相比于HTTP的应用层协议，请求报文的体积更小
 		- 四层协议分别是：链路层、网络层(IP)、传输层(TCP)、应用层(HTTP)

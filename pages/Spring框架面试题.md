@@ -36,11 +36,11 @@
 		- {{cloze 手动注册}} BF
 		- {{cloze 自动注册}} AC
 - Spring中的Bean是线程安全的吗？如何处理线程并发问题 #card
-  card-last-interval:: 0.01
-  card-repeats:: 5
+  card-last-interval:: 0.02
+  card-repeats:: 6
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-01T03:22:04.807Z
-  card-last-reviewed:: 2024-08-01T03:22:04.807Z
+  card-next-schedule:: 2024-08-05T08:56:08.126Z
+  card-last-reviewed:: 2024-08-05T08:56:08.127Z
   card-last-score:: 3
 	- 默认Bean的作用域 {{cloze singleton}}不是线程安全的
 	- 如果是有状态的Bean，可以使用更高一级的 {{cloze prototype}}
@@ -74,11 +74,11 @@
 	- BF {{cloze 是框架用来管理和装配普通bean的容器}}
 	- FB {{cloze 是用以生产对象和装饰对象的工厂接口}}
 - 如何解决Bean注入时的循环依赖问题  #card
-  card-last-interval:: 0.01
-  card-repeats:: 5
+  card-last-interval:: 0.02
+  card-repeats:: 6
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-01T03:22:41.646Z
-  card-last-reviewed:: 2024-08-01T03:22:41.646Z
+  card-next-schedule:: 2024-08-05T08:56:15.622Z
+  card-last-reviewed:: 2024-08-05T08:56:15.623Z
   card-last-score:: 3
 	- 循环依赖能自动解决的前提条件
 		- {{cloze 不是全属性构造器}}

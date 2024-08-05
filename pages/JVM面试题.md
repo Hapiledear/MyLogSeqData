@@ -1,11 +1,11 @@
 - {{cards [[JVM面试题]] }}
 - [[Java 元空间]] 会产生内存溢出吗？ #card
   card-last-score:: 3
-  card-repeats:: 5
-  card-next-schedule:: 2024-08-01T03:13:46.913Z
+  card-repeats:: 6
+  card-next-schedule:: 2024-08-05T08:50:16.322Z
   card-last-interval:: 0.02
   card-ease-factor:: 1.3
-  card-last-reviewed:: 2024-08-01T03:13:46.914Z
+  card-last-reviewed:: 2024-08-05T08:50:16.322Z
 	- 元空间的由来。 {{cloze 从java8+开始，用 元空间 替代了 永久代/方法区}}
 	- 元空间的内存 {{cloze 并不使用虚拟机的内存，而是直接使用机器内存}}
 	- 出现OOM的原因 {{cloze 加载到内存中的class文件数量太多or体积太大}}
@@ -22,11 +22,11 @@
 	- 执行引擎 {{cloze 执行字节码指令。分为 即时编译执行和解释执行。此外，**垃圾收集器** 也在其中}}
 	- 本地接口 {{cloze 调用本地方法}}
 - 说一下JVM内存模型 #card
-  card-last-interval:: 0.03
-  card-repeats:: 5
+  card-last-interval:: 0.04
+  card-repeats:: 6
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-01T02:52:32.694Z
-  card-last-reviewed:: 2024-08-01T02:52:32.694Z
+  card-next-schedule:: 2024-08-05T08:32:13.662Z
+  card-last-reviewed:: 2024-08-05T08:32:13.663Z
   card-last-score:: 3
 	- 画一下JVM内存模型图，并描述每个模块的定义，作用，以及可能会存在的问题
 	- 虚拟机栈
@@ -212,11 +212,11 @@
 		- 年龄 = 相同年龄对象大小之和 > S 区的一半
 	- 老年代满了则触发 Full GC
 - JVM中的垃圾回收器有哪些,及其工作原理 #card
-  card-last-interval:: 0.01
-  card-repeats:: 5
+  card-last-interval:: 0.02
+  card-repeats:: 6
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-01T03:20:20.733Z
-  card-last-reviewed:: 2024-08-01T03:20:20.733Z
+  card-next-schedule:: 2024-08-05T08:55:45.550Z
+  card-last-reviewed:: 2024-08-05T08:55:45.551Z
   card-last-score:: 3
 	- Serial
 		- 串行收集
@@ -228,11 +228,11 @@
 		- 将堆内存分块，每个块都看作Eden s1 s2 Huge old
 		- 只针对新生代的Young GC 和 新生代&老年代的Mix GC
 - 4种引用及应用场景 #card
-  card-last-interval:: 0.02
-  card-repeats:: 5
+  card-last-interval:: 0.03
+  card-repeats:: 6
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-01T03:08:32.407Z
-  card-last-reviewed:: 2024-08-01T03:08:32.408Z
+  card-next-schedule:: 2024-08-05T08:41:52.611Z
+  card-last-reviewed:: 2024-08-05T08:41:52.611Z
   card-last-score:: 3
 	- 强引用
 		- new关键字触发

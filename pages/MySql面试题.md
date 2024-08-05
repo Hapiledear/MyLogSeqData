@@ -253,19 +253,20 @@
 	- ((66544683-504d-4344-a4e9-d0abfdb0bd53))
 - B+树与B树的对比 #card
   card-last-interval:: 0.01
-  card-repeats:: 5
+  card-repeats:: 6
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-01T03:23:51.856Z
-  card-last-reviewed:: 2024-08-01T03:23:51.856Z
+  card-next-schedule:: 2024-08-05T08:59:48.616Z
+  card-last-reviewed:: 2024-08-05T08:59:48.617Z
   card-last-score:: 3
 	- 数据记录 {{cloze 都存放在叶子节点中}} {{cloze 非叶节点只存储键值信息}}
 	- {{cloze 所有叶子节点之间都有一个链指针}}
+	- B树可以在所有节点中存储数据
 - 索引的优缺点 #card
   card-last-interval:: 0.02
-  card-repeats:: 5
+  card-repeats:: 6
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-01T03:13:19.249Z
-  card-last-reviewed:: 2024-08-01T03:13:19.250Z
+  card-next-schedule:: 2024-08-05T08:49:52.986Z
+  card-last-reviewed:: 2024-08-05T08:49:52.986Z
   card-last-score:: 3
 	- 优点
 		- {{cloze 提高数据检索效率，降低IO}}
@@ -275,10 +276,10 @@
 		- {{cloze 每次增改数据，都需要动态维护索引，导致增改时间变长}}
 - 聚集索引和非聚集索引 #card
   card-last-interval:: 0.01
-  card-repeats:: 5
+  card-repeats:: 6
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-01T03:23:25.863Z
-  card-last-reviewed:: 2024-08-01T03:23:25.915Z
+  card-next-schedule:: 2024-08-05T08:56:37.199Z
+  card-last-reviewed:: 2024-08-05T08:56:37.199Z
   card-last-score:: 3
 	- 聚簇索引
 		- {{cloze b+树的叶子节点中存放了表中一行的全部数据}}
@@ -296,11 +297,11 @@
 	- 索引覆盖 {{cloze select字段 存在索引中}}
 	- 最左匹配原则 {{cloze 利用最左匹配，减少索引的建立}}
 - 索引失效的13种场景 #card
-  card-last-interval:: 0.02
-  card-repeats:: 5
+  card-last-interval:: 0.03
+  card-repeats:: 6
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-01T03:11:10.545Z
-  card-last-reviewed:: 2024-08-01T03:11:10.545Z
+  card-next-schedule:: 2024-08-05T08:44:23.293Z
+  card-last-reviewed:: 2024-08-05T08:44:23.294Z
   card-last-score:: 3
 	- 联合索引不满足最左匹配原则
 	- 使用了 `select * ` 肯定不会走 覆盖索引
@@ -339,11 +340,11 @@
   card-last-score:: 3
 	- 当使用二级索引进行范围查询时，从随机读变为顺序读 {{cloze 通过对索引值排序，把无序回表IO变成有序回表IO}}
 - Explain 查询计划 #card
-  card-last-interval:: 0.03
-  card-repeats:: 5
+  card-last-interval:: 0.04
+  card-repeats:: 6
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-01T02:55:29.600Z
-  card-last-reviewed:: 2024-08-01T02:55:29.600Z
+  card-next-schedule:: 2024-08-05T08:36:16.224Z
+  card-last-reviewed:: 2024-08-05T08:36:16.224Z
   card-last-score:: 3
 	- id 执行顺序
 		- {{cloze id不同，值越大越先执行}}
@@ -361,11 +362,11 @@
 		- Using index 使用了覆盖索引
 		- Using where 该索引还用来执行查找操作
 - 工作中你是如何优化慢查询的 #card
-  card-last-interval:: 0.03
-  card-repeats:: 5
+  card-last-interval:: 0.04
+  card-repeats:: 6
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-01T02:53:49.048Z
-  card-last-reviewed:: 2024-08-01T02:53:49.048Z
+  card-next-schedule:: 2024-08-05T08:32:47.371Z
+  card-last-reviewed:: 2024-08-05T08:32:47.372Z
   card-last-score:: 3
 	- 添加合适的索引
 		- {{cloze 频繁查询的条件 和 排序字段 建立索引}}
@@ -428,10 +429,10 @@
 	- Slave 启动线程  `SQL线程` ，实时监控 中继日志是否有更新，解析SQL语句，在S库中执行
 - 分库分表策略 及 数据分片规则 #card
   card-last-interval:: 0.02
-  card-repeats:: 5
+  card-repeats:: 6
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-01T03:17:42.403Z
-  card-last-reviewed:: 2024-08-01T03:17:42.456Z
+  card-next-schedule:: 2024-08-05T08:53:02.404Z
+  card-last-reviewed:: 2024-08-05T08:53:02.404Z
   card-last-score:: 3
 	- 水平拆分
 		- {{cloze 将一张表中的数据，按照一定策略(Hash取模、range) ，拆分到多个库/表中}}
