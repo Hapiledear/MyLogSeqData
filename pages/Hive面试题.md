@@ -1,10 +1,10 @@
 - 常见的SQL调优方法 #card
-  card-last-interval:: -1
-  card-repeats:: 1
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2024-07-25T16:00:00.000Z
-  card-last-reviewed:: 2024-07-25T08:12:03.005Z
-  card-last-score:: 1
+  card-last-interval:: 3
+  card-repeats:: 2
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2024-08-02T08:36:55.026Z
+  card-last-reviewed:: 2024-07-30T08:36:55.026Z
+  card-last-score:: 3
 	- Map端优化（无shuffle）
 		- 分区剪裁-- 过滤条件中使用分区匹配
 			- 分区过滤能显著降低查询的数据量，不然会扫描全表数据。

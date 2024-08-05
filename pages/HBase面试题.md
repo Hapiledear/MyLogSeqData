@@ -16,15 +16,15 @@
   card-next-schedule:: 2024-07-25T13:04:43.346Z
   card-last-reviewed:: 2024-07-25T13:04:43.346Z
   card-last-score:: 3
-	- userId倒序取模
+	- 倒序取模，使得频繁更改的地方在最后
 	- userId + Long.Max - currentTimeStamp 便于scan查询，最近的记录在前
 - 简述HBase的读和写流程 #card
-  card-last-interval:: -1
-  card-repeats:: 1
+  card-last-interval:: 0.03
+  card-repeats:: 4
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-25T16:00:00.000Z
-  card-last-reviewed:: 2024-07-25T08:37:05.397Z
-  card-last-score:: 1
+  card-next-schedule:: 2024-08-01T07:21:34.622Z
+  card-last-reviewed:: 2024-08-01T07:21:34.622Z
+  card-last-score:: 3
 	- 读流程
 		- {{cloze zk}} 获取 {{cloze Meta信息和RegionServer}}
 		- 连接 {{cloze RegionServer}} {{cloze BlockCache}} -> {{cloze MemStore}} -> {{cloze StoreFile}} 中查询

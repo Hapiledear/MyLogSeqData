@@ -9,6 +9,7 @@
 		- 从GC Roots开始向下搜索，搜索的路径称为**引用链**。 当一个对象到GC Roots没有任何引用链路时，证明此对象不可达。
 		- 至少会经过两次标记过程，才面临回收
 - ## JVM内存分代
+  collapsed:: true
 	- ![image.png](../assets/image_1673427295443_0.png)
 	- 分代的目的是为了 **提高对象内存分配和垃圾回收的效率**
 	- 新生代 
@@ -29,6 +30,7 @@
 		- 当空间不够时，触发 ((63bd458f-4ddf-4a39-ba1d-4b7d2b7baeae))
 	- [[Java 永久代]] 不属于 [[Java 堆内存]]
 - ## GC类型
+  collapsed:: true
 	- Minor GC  
 	  id:: 63be6b6a-8bc6-477a-830f-13fcb1a8a633
 		- ((63be6a31-b5b0-4ffb-8c95-72fc10fc453a))
@@ -50,6 +52,7 @@
 		- Survivor的存在意义，就是减少被送到老年代的对象，进而减少Full GC的发生。
 		- 设置两个Survivor区最大的好处就是解决了碎片化。标记复制算法保证了存活对象占用连续的内存空间。
 - ## 垃圾收集算法
+  collapsed:: true
 	- 标记-清除算法
 	  id:: 63be9cd0-ca1e-4a29-9cb8-bcf222c44fbf
 		- ![image.png](../assets/image_1673436681708_0.png)
@@ -93,36 +96,8 @@
 			- 修正产生变动的对象标记，stop the world
 		- 并发清除
 			- 清除不可达对象，和用户线程一起工作，不需要暂停
-	- ### G1 Garbage First
-		- 基于 ((63be9cd8-0bf5-43f4-85b4-58fd0fbdeed2))
-		- ((63be78c1-12d7-4a42-a1fe-d3fd630c63bf)) 和 ((63be78c7-2334-4ee7-9399-7bc275ed6c9d)) 并行收集
-		- ![image.png](../assets/image_1673437789554_0.png)
-		- 将堆内存划分为大小固定的几个独立区域，可自由命名。
-			- Eden区&Survivor区
-				- 仍会 stop the world ，将存活对象copy到Old或Survivor空间
-			- Old区
-				- 从一个区域复制到另一个区域
-			- Humongous区
-				- 一个对象占用的空间超过分区容量50%以上，且生命周期短的对象
-				- 如果一个H区装不下，那么会寻找连续空间
-		- 两种回收模式 Young GC & Mix GC
-			- G1 Young GC 完全年轻代回收
-				- ![image.png](../assets/image_1673438609684_0.png)
-				- 只选择年轻代区域（Eden/Survivor）进入回收集合
-				- 回收过程
-					- 根扫描
-					- 更新RS
-					- 处理RS
-					- 对象拷贝
-					- 处理引用队列
-			- G1 Mix GC 混合回收
-				- ![image.png](../assets/image_1673438688097_0.png)
-				- 会选择所有年轻代区域（Eden/Survivor）和部分老年代区域
-				- 回收过程
-					- 初始标记
-					- 根区域扫描
-					- 并发标记
-					- 最终标记
-					- 清除垃圾
-					- 拷贝存活对象
+	- ### [[G1 Garbage First]]
+		- 只是在标记阶段进行了并发
+	- [[ZGC]]
+	- [[Shenandoah]]
 -
