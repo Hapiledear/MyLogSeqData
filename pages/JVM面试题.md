@@ -12,11 +12,11 @@
 	- 解决办法 {{cloze 增加元空间的大小 `-XX:MaxMetaspaceSize=512m`}}
 - 说一下 JVM 的主要组成部分及其作用 #card
   card-last-score:: 3
-  card-repeats:: 4
-  card-next-schedule:: 2024-07-25T13:05:14.339Z
-  card-last-interval:: 0.01
+  card-repeats:: 5
+  card-next-schedule:: 2024-08-06T12:41:24.656Z
+  card-last-interval:: 0.03
   card-ease-factor:: 1.3
-  card-last-reviewed:: 2024-07-25T13:05:14.339Z
+  card-last-reviewed:: 2024-08-06T12:41:24.657Z
 	- 类加载系统 {{cloze 根据给定的全限定类名，使用双亲委派模型，由类加载器加载class文件到 方法区}}
 	- 运行时数据区 JVM内存模型 {{cloze 分为线程公有的堆、方法区，和线程私有的 虚拟机栈、本地方法栈、程序计数器}}
 	- 执行引擎 {{cloze 执行字节码指令。分为 即时编译执行和解释执行。此外，**垃圾收集器** 也在其中}}
