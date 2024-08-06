@@ -67,11 +67,11 @@
 	- {{cloze DirectByteBuffer 所申请的直接内存}} NIO
 	- {{cloze 方法区的具体实现 元空间}}
 - ## 为什么 字符串常量池 #常量池 被移动到了堆中？ #card
-  card-last-interval:: 0.01
-  card-repeats:: 4
+  card-last-interval:: 0.02
+  card-repeats:: 5
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-25T13:08:27.066Z
-  card-last-reviewed:: 2024-07-25T13:08:27.066Z
+  card-next-schedule:: 2024-08-06T13:31:08.187Z
+  card-last-reviewed:: 2024-08-06T13:31:08.187Z
   card-last-score:: 3
 	- [[Java 永久代]]在 Full GC/Major GC  时才会触发，条件苛刻
 	- 开发中会有大量字符串被创建，回收效率低导致永久代内存不足
@@ -79,11 +79,11 @@
 	- 字符串常量首先在堆中创建，然后尝试复制到元空间的字符串常量池中
 		- 通过 `new String()` 这样的方式创建字符串，除非明确调用了 `intern()` 方法，否则不会自动放入字符串常量池
 - ## 几种变量存放在哪里？ #card
-  card-last-interval:: 0
-  card-repeats:: 4
+  card-last-interval:: 0.02
+  card-repeats:: 5
   card-ease-factor:: 1.3
-  card-last-reviewed:: 2024-07-25T13:10:27.170Z
-  card-next-schedule:: 2024-07-25T13:10:27.170Z
+  card-last-reviewed:: 2024-08-06T13:31:34.021Z
+  card-next-schedule:: 2024-08-06T13:31:34.021Z
   card-last-score:: 3
 	- ``` java
 	  	  public class StaticObjTest {
@@ -287,11 +287,11 @@
 	- {{cloze -xss1m}} 设置单个线程栈大小
 	- {{cloze -xx:maxMetaspaceSize=2g}} 设置元空间的最大值
 - 对象一定都是在堆上分配吗？ 逃逸分析 #card
-  card-last-interval:: 0.04
-  card-repeats:: 3
+  card-last-interval:: 0.03
+  card-repeats:: 4
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-25T13:10:41.243Z
-  card-last-reviewed:: 2024-07-25T13:10:41.243Z
+  card-next-schedule:: 2024-08-06T13:31:39.565Z
+  card-last-reviewed:: 2024-08-06T13:31:39.565Z
   card-last-score:: 3
 	- 如果对象不会逃逸出方法外部，则会在栈上分配
 	- 如果符合标量替换条件(不逃逸&不会被本线程外的线程访问)，则会将对象分解成若干个方法内从成员变量

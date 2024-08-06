@@ -1,11 +1,11 @@
 - {{cards Dubbo面试题}}
 - Dubbo服务注册和请求流程 #card
   card-last-score:: 3
-  card-repeats:: 5
-  card-next-schedule:: 2024-08-01T03:25:43.103Z
-  card-last-interval:: 0.01
+  card-repeats:: 6
+  card-next-schedule:: 2024-08-06T13:33:23.166Z
+  card-last-interval:: 0.02
   card-ease-factor:: 1.3
-  card-last-reviewed:: 2024-08-01T03:25:43.103Z
+  card-last-reviewed:: 2024-08-06T13:33:23.166Z
 	- Provider暴露接口，写入注册中心
 	- Provider-注册中心 ： 注册中心返回ip列表给provider，如果列表有更新，由注册中心主动推送给provider
 	- Consumer向注册中心订阅自己需要的信息，包括 provider、config、routers，并拉取一份本地保存

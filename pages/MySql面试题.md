@@ -6,11 +6,11 @@
 - [[分布式事务]]
 -
 - SQL查询过程 #card
-  card-last-interval:: 0.01
-  card-repeats:: 6
+  card-last-interval:: 0.02
+  card-repeats:: 7
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-01T06:53:07.682Z
-  card-last-reviewed:: 2024-08-01T06:53:07.683Z
+  card-next-schedule:: 2024-08-06T13:38:05.741Z
+  card-last-reviewed:: 2024-08-06T13:38:05.741Z
   card-last-score:: 3
 	- 建立连接 {{cloze 连接器}}
 		- 负责对用户名&密码进行校验，连接的维护
@@ -89,11 +89,11 @@
 		- {{cloze 直接取出该值}}
 		- {{cloze 只能遍历}}
 - 事物的四大特性，分别是如何解决的 #card
-  card-last-interval:: 0.01
-  card-repeats:: 6
+  card-last-interval:: 0.03
+  card-repeats:: 7
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-01T06:40:50.931Z
-  card-last-reviewed:: 2024-08-01T06:40:50.931Z
+  card-next-schedule:: 2024-08-06T13:37:09.853Z
+  card-last-reviewed:: 2024-08-06T13:37:09.853Z
   card-last-score:: 3
 	- 一致性 是目标，其他三者是手段
 		- {{cloze 事物在执行前后其状态一致,A+B=100 无论A B怎么转账，最终都是100}}
@@ -110,11 +110,11 @@
 			- 4种隔离级别 {{cloze 读未提交}} {{cloze 读已提交}} {{cloze 可重复读读}} {{cloze 串行化}}
 		- {{cloze 锁机制 和 MVVC机制}}
 - Undo Log 和Redo Log #card
-  card-last-interval:: 0.01
-  card-repeats:: 6
+  card-last-interval:: 0.02
+  card-repeats:: 7
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-01T06:57:00.396Z
-  card-last-reviewed:: 2024-08-01T06:57:00.396Z
+  card-next-schedule:: 2024-08-06T13:38:23.549Z
+  card-last-reviewed:: 2024-08-06T13:38:23.550Z
   card-last-score:: 3
 	- Undo Log
 		- 存储的是 {{cloze 旧数据的版本链集合}}
@@ -191,11 +191,11 @@
 		- 插入、更新、删除操作
 		- 如何解决幻读 {{cloze next-key Lock 行锁与间隙锁的组合}}
 - 什么是MVCC #card
-  card-last-interval:: 0.05
-  card-repeats:: 6
+  card-last-interval:: 0.03
+  card-repeats:: 7
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-01T03:43:02.160Z
-  card-last-reviewed:: 2024-08-01T02:43:02.160Z
+  card-next-schedule:: 2024-08-06T13:33:52.885Z
+  card-last-reviewed:: 2024-08-06T13:33:52.885Z
   card-last-score:: 3
 	- 多版本并发控制
 	- 只工作在两种事物隔离级别下
@@ -209,11 +209,11 @@
 		- 可重复读的实现
 			- {{cloze 只在第一次执行查询语句时生成 Read View}}
 - MySql中的锁有哪些 #card
-  card-last-interval:: 0.01
-  card-repeats:: 5
+  card-last-interval:: 0.03
+  card-repeats:: 6
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-01T03:24:59.192Z
-  card-last-reviewed:: 2024-08-01T03:24:59.192Z
+  card-next-schedule:: 2024-08-06T13:33:04.813Z
+  card-last-reviewed:: 2024-08-06T13:33:04.813Z
   card-last-score:: 3
 	- 表锁
 		- 意向锁

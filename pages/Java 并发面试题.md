@@ -45,11 +45,11 @@
 	- 上锁过程 {{cloze 在对象头中，记录锁的类型 和 指向栈中的锁记录指针}}
 	- 如果没有获取到锁，则会 {{cloze 让线程自旋等待，并不放弃CPU的执行时间}}
 - synchronized的锁升级机制 #card #Java并发
-  card-last-interval:: 0
-  card-repeats:: 4
+  card-last-interval:: 0.02
+  card-repeats:: 5
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-25T13:12:29.939Z
-  card-last-reviewed:: 2024-07-25T13:12:29.939Z
+  card-next-schedule:: 2024-08-06T13:32:58.812Z
+  card-last-reviewed:: 2024-08-06T13:32:58.813Z
   card-last-score:: 3
 	- 锁消除 无锁
 		- {{cloze 在编译时明显检测到不会被其他线程访问到}}
@@ -78,11 +78,11 @@
 	- 是否被编译优化 {{cloze volatile不会被编译优化，synch可以被优化}}
 	- 实际开发中 {{cloze synch比volatile用得多一点，volatile需要搭配automit类使用}}
 - 什么是CAS #card #Java并发
-  card-last-interval:: 0.01
-  card-repeats:: 4
+  card-last-interval:: 0.02
+  card-repeats:: 5
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-25T13:08:57.434Z
-  card-last-reviewed:: 2024-07-25T13:08:57.434Z
+  card-next-schedule:: 2024-08-06T13:31:14.020Z
+  card-last-reviewed:: 2024-08-06T13:31:14.021Z
   card-last-score:: 3
 	- compare and swap 比较并交换
 	- 实现,是否加锁 {{cloze 内存位置v 预期原值A和新值B ，如果内存值=A 那么将内存值改为B}} {{cloze 不加锁，但会自旋一定次数}}
@@ -243,12 +243,13 @@
 	- 对象一旦被创建，它的属性值就不能改变 ，可以通过反射方式进行破坏
 	- 保证了内存的可见性，不需要额外的同步手段，提升代码执行效率
 - ThreadLocal原理 #card #Java并发
-  card-repeats:: 6
+  card-repeats:: 7
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-01T06:51:17.149Z
-  card-last-reviewed:: 2024-08-01T06:51:17.150Z
+  card-next-schedule:: 2024-08-06T13:37:57.254Z
+  card-last-reviewed:: 2024-08-06T13:37:57.254Z
   card-last-score:: 3
-	- 每一个thread持有一个threadLocalMap {{cloze key是被修饰的threadLocal对象}} {{cloze value是对象值}}
+  card-last-interval:: 0.02
+	- 每一个thread持有一个threadLocalMap {{cloze Entity是弱引用}} {{cloze key是被修饰的threadLocal对象}} {{cloze value是对象值}}
 	- 使用场景
 		- {{cloze 线程隔离}}
 		- {{cloze 跨函数传递数据}}
@@ -295,11 +296,11 @@
 		- 当一个Core修改其缓存中的值时，其他Core不能再使用旧值。该内存位置将在所有缓存中失效，然后重新从内存里加载最新数据。
 	- 通过增加填充，让a和b两个变量分布到不同的Cache Line
 - Java中有哪些并发工具 #card
-  card-last-interval:: 0.14
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2024-08-01T05:30:37.263Z
-  card-last-reviewed:: 2024-08-01T02:30:37.264Z
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2024-08-10T13:34:48.373Z
+  card-last-reviewed:: 2024-08-06T13:34:48.374Z
   card-last-score:: 3
 	- 创建线程池和任务调度的 {{cloze Executor}}
 	- 同步辅助类 {{cloze CountdowmLatch、CycleBarrier 等}}
@@ -311,11 +312,11 @@
 	- Fork/Join框架
 	- 同步队列
 - Lock与synchronized的性能差异体现在哪 #card
-  card-last-interval:: 0.14
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2024-08-01T05:23:21.995Z
-  card-last-reviewed:: 2024-08-01T02:23:21.995Z
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2024-08-10T13:34:34.189Z
+  card-last-reviewed:: 2024-08-06T13:34:34.190Z
   card-last-score:: 3
 	- `Lock` 允许更细粒度的锁定
 	- `Lock` 可以更灵活地控制线程的阻塞和唤醒

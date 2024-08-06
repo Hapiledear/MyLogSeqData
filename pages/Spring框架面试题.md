@@ -47,11 +47,11 @@
 		- 有状态指的是有数据的存储功能
 	- 或者是该数据字段使用 {{cloze ThreadLocal}} 修饰
 - Spring Bean的生命周期，描述一下 4阶段-2扩展点 #card
-  card-last-interval:: 0.01
-  card-repeats:: 5
+  card-last-interval:: 0.02
+  card-repeats:: 6
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-01T03:25:37.662Z
-  card-last-reviewed:: 2024-08-01T03:25:37.663Z
+  card-next-schedule:: 2024-08-06T13:33:13.900Z
+  card-last-reviewed:: 2024-08-06T13:33:13.901Z
   card-last-score:: 3
 	- 实例化
 	- 属性填充
@@ -65,11 +65,11 @@
 		- DisposableBean接口的destory方法
 		- destory-method方法
 - BeanFactory 和 FactoryBean的区别 #card
-  card-last-interval:: 0.01
-  card-repeats:: 6
+  card-last-interval:: 0.03
+  card-repeats:: 7
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-01T06:40:02.561Z
-  card-last-reviewed:: 2024-08-01T06:40:02.613Z
+  card-next-schedule:: 2024-08-06T13:36:45.613Z
+  card-last-reviewed:: 2024-08-06T13:36:45.613Z
   card-last-score:: 3
 	- BF {{cloze 是框架用来管理和装配普通bean的容器}}
 	- FB {{cloze 是用以生产对象和装饰对象的工厂接口}}
@@ -107,11 +107,11 @@
 	- AOP 面向切面编程，核心是使用 {{cloze 代理模式}}，对目标方法执行前后进行处理
 	- 应用场景 {{cloze 日志记录}} {{cloze 接口签名校验}}
 - 为什么要用SpringBoot #card
-  card-last-interval:: 0.01
-  card-repeats:: 6
+  card-last-interval:: 0.03
+  card-repeats:: 7
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-01T06:42:09.710Z
-  card-last-reviewed:: 2024-08-01T06:42:09.711Z
+  card-next-schedule:: 2024-08-06T13:37:22.261Z
+  card-last-reviewed:: 2024-08-06T13:37:22.261Z
   card-last-score:: 3
 	- {{cloze 独立运行spring项目}}
 	- {{cloze 内嵌servlet容器}}
