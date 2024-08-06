@@ -241,11 +241,11 @@
 		- 作用 {{cloze 在RR事务级别下，解决并发插入问题}}
 		- 原理 {{cloze 区间相同但插入记录本身不同的情况下 互不排斥}}
 - 主键的选择，使用自增ID 还是 UUID #card
-  card-last-interval:: 0
-  card-repeats:: 7
+  card-last-interval:: 0.01
+  card-repeats:: 8
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-01T07:16:10.502Z
-  card-last-reviewed:: 2024-08-01T07:16:10.556Z
+  card-next-schedule:: 2024-08-06T13:45:52.254Z
+  card-last-reviewed:: 2024-08-06T13:45:52.254Z
   card-last-score:: 3
 	- 自增型ID {{cloze 符合主键索引的顺序排布，插入快速，产生碎片较少}}
 	- UUID {{cloze 全局唯一，跨系统存取方便}} {{cloze 较为分散，不会产生数据倾斜}}
@@ -442,11 +442,11 @@
 		- 连接数不够，产生 资源报警
 		- 慢查询增多，占用了大量的IO和网络带宽
 - 分库分表会带来哪些问题，如何解决 #card
-  card-last-interval:: 0.01
-  card-repeats:: 5
+  card-last-interval:: 0.02
+  card-repeats:: 6
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-01T07:03:13.252Z
-  card-last-reviewed:: 2024-08-01T07:03:13.306Z
+  card-next-schedule:: 2024-08-06T13:43:24.501Z
+  card-last-reviewed:: 2024-08-06T13:43:24.502Z
   card-last-score:: 3
 	- 分布式事务问题
 		- {{cloze 使用相关中间件}}
@@ -463,11 +463,11 @@
 			- {{cloze 所有的旧代码，都对新库进行增删改}}
 			- {{cloze 不断从老库抽数据，往新库写。边写边比对数据是不是最新的}}
 - 业务中影响MySQL性能的场景 #card
-  card-last-interval:: 0
-  card-repeats:: 7
+  card-last-interval:: 0.01
+  card-repeats:: 8
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-01T07:10:28.850Z
-  card-last-reviewed:: 2024-08-01T07:10:28.850Z
+  card-next-schedule:: 2024-08-06T13:45:41.158Z
+  card-last-reviewed:: 2024-08-06T13:45:41.158Z
   card-last-score:: 3
 	- 大规模数据导出功能
 		- {{cloze 建议`limit m,n` 替换成id的范围查询}}

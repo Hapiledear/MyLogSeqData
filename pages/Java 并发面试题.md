@@ -16,20 +16,20 @@
 		- {{cloze CUP 的物理缓存结构,JMM内存模型也有缓存}}
 		- {{cloze CUP层级的MESI协议，JMM的八种操作规范}}
 - volatile关键字的原理及其实战 #card #Java并发
-  card-last-interval:: 0.01
-  card-repeats:: 5
+  card-last-interval:: 0.02
+  card-repeats:: 6
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-01T07:05:22.607Z
-  card-last-reviewed:: 2024-08-01T07:05:22.608Z
+  card-next-schedule:: 2024-08-06T13:44:17.550Z
+  card-last-reviewed:: 2024-08-06T13:44:17.550Z
   card-last-score:: 3
 	- 解决了两大问题 {{cloze 保证变量对所有线程的可见性和禁止指令重排}} 通常搭配atomic类来实现 {{cloze 原子性}}
 	- 实践 单例模式中 {{cloze volatile修饰instance. 保证其写操作发生在读之前}}
 - volatile能将非原子操作变成原子操作吗 #card #Java并发
-  card-last-interval:: 0
-  card-repeats:: 6
+  card-last-interval:: 0.02
+  card-repeats:: 7
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-01T07:08:20.693Z
-  card-last-reviewed:: 2024-08-01T07:08:20.693Z
+  card-next-schedule:: 2024-08-06T13:45:16.070Z
+  card-last-reviewed:: 2024-08-06T13:45:16.070Z
   card-last-score:: 3
 	- 在32位的机器上，long和double分为了两部分 高位和低位。因此建议用volatile修饰
 	- 但更建议JVM实现时将这种操作视为原子性的
@@ -66,11 +66,11 @@
 		- 协作机制
 			- 持有许可的线程可以 {{cloze 主动放弃许可进入阻塞}} {{cloze 发送信号，唤起阻塞线程}}
 - synchronized和volatie的区别  #card #Java并发
-  card-last-interval:: 0.01
-  card-repeats:: 5
+  card-last-interval:: 0.02
+  card-repeats:: 6
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-01T07:04:24.174Z
-  card-last-reviewed:: 2024-08-01T07:04:24.228Z
+  card-next-schedule:: 2024-08-06T13:44:14.814Z
+  card-last-reviewed:: 2024-08-06T13:44:14.814Z
   card-last-score:: 3
 	- 修饰的地方 {{cloze volatile是变量修饰,synchronized可以修饰类、方法、变量}}
 	- 解决的问题 {{cloze volatile 保证的是有序性和可见行，不能保证原子性，synch 保证的是可见性(Happends-before)和原子性}}
@@ -205,11 +205,11 @@
 	- 定义 {{cloze 一连串操作，要么都执行完，要么都不执行}}
 	- 如何保证原子性 {{cloze CAS指令}} {{cloze Lock和synchroize}}
 - java中有哪些原子类  #card #Java并发
-  card-last-interval:: 0
-  card-repeats:: 6
+  card-last-interval:: 0.01
+  card-repeats:: 7
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-01T07:08:46.870Z
-  card-last-reviewed:: 2024-08-01T07:08:46.870Z
+  card-next-schedule:: 2024-08-06T13:45:18.997Z
+  card-last-reviewed:: 2024-08-06T13:45:18.997Z
   card-last-score:: 3
 	- 基本类型 {{cloze AtomicBoolean}} {{cloze AtomicInteger}} {{cloze AtomicReference}}
 	- 数组 {{cloze AtomicXXXArray}}

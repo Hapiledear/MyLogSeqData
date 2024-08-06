@@ -177,11 +177,11 @@
 	- 解析 {{cloze 将常量池中的符号引用替换成直接引用}}
 	- 初始化 {{cloze 对静态变量和代码块执行初始化工作}}
 - 类加载器分类和双亲委派模型 #card
-  card-last-interval:: 0.01
-  card-repeats:: 6
+  card-last-interval:: 0.02
+  card-repeats:: 7
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-01T06:57:30.348Z
-  card-last-reviewed:: 2024-08-01T06:57:30.348Z
+  card-next-schedule:: 2024-08-06T13:41:33.061Z
+  card-last-reviewed:: 2024-08-06T13:41:33.061Z
   card-last-score:: 3
 	- 启动类加载器
 	- 扩展类加载器
@@ -261,11 +261,11 @@
 		- 类及其所有对象都被回收
 		- 常量池中的常量无任何引用
 - ## 如何排查JVM问题 #card
-  card-last-interval:: 0.01
-  card-repeats:: 5
+  card-last-interval:: 0.02
+  card-repeats:: 6
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-01T07:07:18.548Z
-  card-last-reviewed:: 2024-08-01T07:07:18.548Z
+  card-next-schedule:: 2024-08-06T13:44:37.966Z
+  card-last-reviewed:: 2024-08-06T13:44:37.967Z
   card-last-score:: 3
 	- 使用 {{cloze `jmap`}} 查看各区域的使用情况
 	- 使用 {{cloze `jstack`}} 查看线程的运行情况，关注阻塞的线程、是否出现了死锁
@@ -311,11 +311,11 @@
 		- 循环优化-无关代码外提、循环展开(次数减少，重复相同逻辑x次)
 		-
 - Java程序 CPU突然飙升 该如何处理？#card
-  card-last-interval:: 0
-  card-repeats:: 6
+  card-last-interval:: 0.01
+  card-repeats:: 7
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-01T07:09:34.880Z
-  card-last-reviewed:: 2024-08-01T07:09:34.880Z
+  card-next-schedule:: 2024-08-06T13:45:27.190Z
+  card-last-reviewed:: 2024-08-06T13:45:27.190Z
   card-last-score:: 3
 	- 问题定位
 		- {{cloze top 命令}} 查看CPU占用情况，找到进程id
@@ -327,11 +327,11 @@
 		- 在循环的代码逻辑中，创建大量的新对象 {{cloze 减少对象的创建数量 or 使用对象池}}
 - JVM的**年轻代**内存分配为什么是1:1:8 #card
   card-last-score:: 3
-  card-repeats:: 5
-  card-next-schedule:: 2024-08-01T07:08:09.053Z
-  card-last-interval:: 0.01
+  card-repeats:: 6
+  card-next-schedule:: 2024-08-06T13:45:12.173Z
+  card-last-interval:: 0.02
   card-ease-factor:: 1.3
-  card-last-reviewed:: 2024-08-01T07:08:09.053Z
+  card-last-reviewed:: 2024-08-06T13:45:12.174Z
 	- 为什么要有Eden和servivor区
 		- {{cloze 减少被送入老年代的对象，进而减少Full GC次数}}
 	- 为什么要有2个servivor区

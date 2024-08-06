@@ -1,10 +1,10 @@
 - {{cards [[Spring框架面试题]] }}
 - Spring中用了哪些设计模式? #card
-  card-last-interval:: 0.01
-  card-repeats:: 6
+  card-last-interval:: 0.02
+  card-repeats:: 7
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-01T06:59:26.862Z
-  card-last-reviewed:: 2024-08-01T06:59:26.863Z
+  card-next-schedule:: 2024-08-06T13:42:31.653Z
+  card-last-reviewed:: 2024-08-06T13:42:31.654Z
   card-last-score:: 3
 	- BeanFactory {{cloze 工厂模式}}
 	- Bean {{cloze 单例模式}}
@@ -12,11 +12,11 @@
 	- RestTemplate {{cloze 模板方法}}
 	- ApplicationListener {{cloze 观察者模式}}
 - 什么是Spring的IOC(控制反转) #card
-  card-last-interval:: 0
-  card-repeats:: 6
+  card-last-interval:: 0.01
+  card-repeats:: 7
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-01T07:09:07.791Z
-  card-last-reviewed:: 2024-08-01T07:09:07.791Z
+  card-next-schedule:: 2024-08-06T13:45:22.326Z
+  card-last-reviewed:: 2024-08-06T13:45:22.326Z
   card-last-score:: 3
 	- {{cloze 原本由代码控制对象的生命周期，交由spring框架管理}}
 	- 实现 {{cloze 工厂模式+反射机制}}
