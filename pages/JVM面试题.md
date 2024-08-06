@@ -76,6 +76,8 @@
 	- [[Java 永久代]]在 Full GC/Major GC  时才会触发，条件苛刻
 	- 开发中会有大量字符串被创建，回收效率低导致永久代内存不足
 	- 放在堆中，可以及时回收内存
+	- 字符串常量首先在堆中创建，然后尝试复制到元空间的字符串常量池中
+		- 通过 `new String()` 这样的方式创建字符串，除非明确调用了 `intern()` 方法，否则不会自动放入字符串常量池
 - ## 几种变量存放在哪里？ #card
   card-last-interval:: 0
   card-repeats:: 4
@@ -249,12 +251,12 @@
 		- 每次GC时回收
 		- 利用回收时的通知机制来管理堆外内存
 - 永久代会发生垃圾回收吗 #card
-  card-last-interval:: 0.01
-  card-repeats:: 4
+  card-last-interval:: -1
+  card-repeats:: 1
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-25T13:07:16.604Z
-  card-last-reviewed:: 2024-07-25T13:07:16.604Z
-  card-last-score:: 3
+  card-next-schedule:: 2024-08-06T16:00:00.000Z
+  card-last-reviewed:: 2024-08-06T13:19:46.877Z
+  card-last-score:: 1
 	- 会，但是回收的条件比较苛刻
 		- 类及其所有对象都被回收
 		- 常量池中的常量无任何引用
