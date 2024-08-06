@@ -1,12 +1,24 @@
 - {{cards Java 源码面试题}}
 - ArrayList
 	- ArrayList的扩容机制/流程是怎么样的 #card
+	  card-last-interval:: 0.14
+	  card-repeats:: 1
+	  card-ease-factor:: 2.36
+	  card-next-schedule:: 2024-08-06T15:28:57.072Z
+	  card-last-reviewed:: 2024-08-06T12:28:57.072Z
+	  card-last-score:: 3
 		- 初始容量,默认为 {{cloze 10}}
 		- 触发时机，没有负载因子。 {{cloze 数组放不下}} 时立即触发
 		- 扩容大小，新数组是原数组的 {{cloze 1.5倍}} `oldCapacity + (oldCapacity >> 1)`
 		- 数据操作，新数组申请完成后，copy旧数组到新数组，位置不变
 - HashMap
 	- HashMap的扩容机制/流程是怎样的 #card
+	  card-last-interval:: 0.14
+	  card-repeats:: 1
+	  card-ease-factor:: 2.36
+	  card-next-schedule:: 2024-08-06T15:30:21.801Z
+	  card-last-reviewed:: 2024-08-06T12:30:21.801Z
+	  card-last-score:: 3
 		- 初始容量，默认为 {{cloze 16}}
 		- 触发时机, 元素 {{cloze 数量达到当前容量与负载因子(默认0.75)的}} 乘积时.
 		- 扩容大小，新容量为 {{cloze 旧容量的两倍}} oldCap << 1
@@ -15,6 +27,12 @@
 			- 链表节点和红黑树节点，`e.hash & oldCap` 根据 {{cloze 第n+1位的0 or 1 }} 分成两个链表/树，一个在旧位置idx, 另一个在新位置 {{cloze idx+oldCap}}
 				- 假设 oldCap = 2^n
 	- HashMap的key/value能否为null #card
+	  card-last-interval:: 0.14
+	  card-repeats:: 1
+	  card-ease-factor:: 2.36
+	  card-next-schedule:: 2024-08-06T15:32:13.553Z
+	  card-last-reviewed:: 2024-08-06T12:32:13.553Z
+	  card-last-score:: 3
 		- key可以为null ,计算的hashCode = 0
 		- value可以为null
 - PriorityQueue
@@ -34,11 +52,23 @@
 			- 如果小于等于，则 {{cloze 交换两个的位置}}
 - [ThreadLocal](https://javaguide.cn/java/concurrent/threadlocal.html#threadlocalmap-get-%E8%AF%A6%E8%A7%A3)
 	- ThreadLocal如何防止内存溢出 #card
-		- Map中的key是 {{cloze 弱引用WeekReference}} , GC后回收。
+	  card-last-interval:: 0.14
+	  card-repeats:: 1
+	  card-ease-factor:: 2.36
+	  card-next-schedule:: 2024-08-06T15:32:03.705Z
+	  card-last-reviewed:: 2024-08-06T12:32:03.705Z
+	  card-last-score:: 3
+		- Map中的key是 {{cloze 弱引用WeekReference}} , GC后回收。key == null,表示过期状态
 		- 手动调用remove方法，尤其是在与线程池配合使用时。
 			- 将当前位置的 entry == null ，标记为可回收
 			- 触发 ((66b1e39e-a9c7-4771-b6e0-d700bdd3808c))
 	- ThreadLocalMap的哈希算法与哈希冲突 #card
+	  card-last-interval:: 0.14
+	  card-repeats:: 1
+	  card-ease-factor:: 2.36
+	  card-next-schedule:: 2024-08-06T15:32:20.193Z
+	  card-last-reviewed:: 2024-08-06T12:32:20.193Z
+	  card-last-score:: 3
 		- ThreadLocal 有自己的hashCode算法
 			- {{cloze 斐波那契数}} 的递增，只是初始值不是1,而是 `0x61c88647`
 		- {{cloze threadHashCode & cap }} = 在桶中的位置，分别均匀
@@ -78,6 +108,12 @@
 			- 假设 len = 2^k ,遍历 {{cloze k次}}
 			- 每次遍历，都找到最近一个 {{cloze Entity == null}} 的位置，作为 探测式清理的起始位置。
 	- ThreadLocalMap的扩容 #card
+	  card-last-interval:: 0.14
+	  card-repeats:: 1
+	  card-ease-factor:: 2.36
+	  card-next-schedule:: 2024-08-06T15:30:49.313Z
+	  card-last-reviewed:: 2024-08-06T12:30:49.313Z
+	  card-last-score:: 3
 		- 初始大小是 {{cloze 16}}
 		- 首先进行一次 {{cloze 全表清理}}
 		- {{cloze size > 1/2 * len}} 触发扩容，扩容为原来的 {{cloze 2倍}}

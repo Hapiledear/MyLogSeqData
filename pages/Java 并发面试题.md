@@ -132,11 +132,11 @@
 		- 非公平 {{cloze AQS的头节点和新执行到CAS修改状态处的线程}}
 		- 公平 {{cloze AQS只允许头节点抢锁}}
 - AQS是什么，抢锁过程 #card #Java并发
-  card-last-interval:: 0.03
-  card-repeats:: 4
+  card-last-interval:: 0.04
+  card-repeats:: 5
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-25T13:00:01.362Z
-  card-last-reviewed:: 2024-07-25T13:00:01.363Z
+  card-next-schedule:: 2024-08-06T12:33:28.307Z
+  card-last-reviewed:: 2024-08-06T12:33:28.307Z
   card-last-score:: 3
 	- AQS是一个用来构建锁和同步器的框架
 	- 队列 {{cloze 有一个CLH 的双向链表组成的队列}}

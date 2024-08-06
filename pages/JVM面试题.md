@@ -48,13 +48,13 @@
 		- {{cloze 基于NIO的 DirectByteBuffer 而产生的堆外内存}} NIO
 		- {{cloze 通过DirectByteBuffer对象的虚引用实现堆外内存的释放}} 如何回收
 - 堆内存的组成 #card
-  card-last-interval:: 0.02
-  card-repeats:: 4
+  card-last-interval:: 0.04
+  card-repeats:: 5
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-25T13:04:08.580Z
-  card-last-reviewed:: 2024-07-25T13:04:08.580Z
+  card-next-schedule:: 2024-08-06T12:34:39.256Z
+  card-last-reviewed:: 2024-08-06T12:34:39.256Z
   card-last-score:: 3
-	- {{cloze 1/3的年轻代 1/2的老年代}} 2代
+	- {{cloze 1/3的年轻代 2/3的老年代}} 2代
 	- {{cloze  年轻代又分 eden区 s1和s2区 比例为 8:1:1}} 3区
 	- {{cloze 通常 年轻代采用的GC算法是 复制算法，老年代采用的是标记-整理算法 }} GC算法
 - 非堆内存有哪些 #card
@@ -294,11 +294,11 @@
 	- 如果对象不会逃逸出方法外部，则会在栈上分配
 	- 如果符合标量替换条件(不逃逸&不会被本线程外的线程访问)，则会将对象分解成若干个方法内从成员变量
 - HotSpot JVM 为什么叫这个名字 #card
-  card-last-interval:: 0.02
-  card-repeats:: 4
+  card-last-interval:: 0.04
+  card-repeats:: 5
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-07-25T13:02:06.922Z
-  card-last-reviewed:: 2024-07-25T13:02:06.922Z
+  card-next-schedule:: 2024-08-06T12:33:48.866Z
+  card-last-reviewed:: 2024-08-06T12:33:48.866Z
   card-last-score:: 3
 	- 即时编译功能
 		- 寻找热点代码，将热点代码编译成机器码并缓存起来
