@@ -157,4 +157,16 @@
   card-last-score:: 3
 	- 没有获取到代理对象
 	- 跨线程调用没有传递必要参数，如在事务中开启多线程会使得事务失效
--
+- Spring MVC中，过滤器和拦截器的区别 #card
+	- 实现方式
+		- 过滤器是基于java的Filter接口
+		- 拦截器是基于spring框架的 HandlerInterceptor接口
+	- 执行时机
+		- 过滤器是在进入Servlet容器之后，Controller之前。更倾向于处理与HTTP请求和响应
+		- 拦截器是在到达Controller之后、处理Controller的具体逻辑之前，对Controller进行前置和后置处理。
+	- 拦截目标
+		- 过滤器，可拦截所有请求，包括静态资源
+		- 拦截器，更精细的控制拦截，只拦截特定Controller的请求
+	- 执行流程
+		- 过滤器，按照定义顺序执行
+		- 拦截器，在代码中控制自由控制是否调用后续拦截器
