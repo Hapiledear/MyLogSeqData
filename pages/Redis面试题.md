@@ -56,11 +56,11 @@
 		- {{cloze 自定义score排序，比如排行榜机制}}
 		- {{cloze 跳跃表，节点按分值大小排序，再按对象大小排序}}
 - Redis的过期策略有哪些?数据明明过期了，怎么还占用着内存 #card
-  card-last-interval:: 0
-  card-repeats:: 7
+  card-last-interval:: 0.01
+  card-repeats:: 8
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-01T07:16:52.920Z
-  card-last-reviewed:: 2024-08-01T07:16:52.920Z
+  card-next-schedule:: 2024-08-06T13:56:07.542Z
+  card-last-reviewed:: 2024-08-06T13:56:07.542Z
   card-last-score:: 3
 	- 定期删除
 		- {{cloze 每隔一段时间，删除过期key}} {{cloze 采用随机抽取策略}}
