@@ -21,6 +21,12 @@
 	- 存储元素使用的是数组，扩容机制同ArrayList
 		- 使用`Object[]` 表示二叉树, 获取parent节点 `parent = (k - 1) >>> 1`
 	- 优先队列的元素插入/删除机制 #card
+	  card-last-interval:: 0.14
+	  card-repeats:: 1
+	  card-ease-factor:: 2.36
+	  card-next-schedule:: 2024-08-06T15:27:37.201Z
+	  card-last-reviewed:: 2024-08-06T12:27:37.201Z
+	  card-last-score:: 3
 		- 将元素key插入到末尾 i=size
 		- 进行上浮操作
 			- 获取parent节点 {{cloze `parent = (k - 1) >>> 1`}}
@@ -39,6 +45,12 @@
 		- 冲突解决办法
 			- {{cloze 线性探测}} 同时触发 {{cloze 过期元素清理}} ,详见 添加元素的过程
 	- ThreadLocal添加元素的过程 #card
+	  card-last-interval:: 0.14
+	  card-repeats:: 1
+	  card-ease-factor:: 2.36
+	  card-next-schedule:: 2024-08-06T15:27:02.937Z
+	  card-last-reviewed:: 2024-08-06T12:27:02.937Z
+	  card-last-score:: 3
 		- 通过hash计算槽位后，此时分4种情况
 			- 槽位Entity为空 {{cloze 直接放入}}
 			- 槽位Entity不为空且 {{cloze key值一致}} 更新
@@ -48,6 +60,12 @@
 				- 向后过程中，遇到 {{cloze 过期key}} && 遇到 {{cloze k==key}} 交换 {{cloze 过期key和k的位置}} ，触发 {{cloze 过期回收}}
 		- Entity为空，说明被回收了， key为null 说明为过期key，被垃圾回收器回收了
 	- ThreadLocal的过期回收过程 #card
+	  card-last-interval:: 0.14
+	  card-repeats:: 1
+	  card-ease-factor:: 2.36
+	  card-next-schedule:: 2024-08-06T15:22:13.897Z
+	  card-last-reviewed:: 2024-08-06T12:22:13.898Z
+	  card-last-score:: 3
 		- 探测式清理 `expungeStaleEntry( i )`
 		  id:: 66b1e39e-a9c7-4771-b6e0-d700bdd3808c
 			- 从位置i向后遍历槽位

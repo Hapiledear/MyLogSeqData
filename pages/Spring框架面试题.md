@@ -158,6 +158,12 @@
 	- 没有获取到代理对象
 	- 跨线程调用没有传递必要参数，如在事务中开启多线程会使得事务失效
 - Spring MVC中，过滤器和拦截器的区别 #card
+  card-last-interval:: 0.14
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2024-08-06T15:28:26.918Z
+  card-last-reviewed:: 2024-08-06T12:28:26.918Z
+  card-last-score:: 3
 	- 实现方式
 		- 过滤器是基于java的Filter接口
 		- 拦截器是基于spring框架的 HandlerInterceptor接口
