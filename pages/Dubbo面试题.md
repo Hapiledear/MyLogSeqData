@@ -48,10 +48,10 @@
 	- 并不提供 沉默失败 策略：即 服务熔断
 - 为什么采用Dubbo\\RPC 而不是HTTP #card
   card-last-interval:: 0.04
-  card-repeats:: 6
+  card-repeats:: 7
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-05T08:38:30.019Z
-  card-last-reviewed:: 2024-08-05T08:38:30.019Z
+  card-next-schedule:: 2024-08-07T09:25:47.704Z
+  card-last-reviewed:: 2024-08-07T09:25:47.705Z
   card-last-score:: 3
 	- RPC 是属于TCP层的协议，相比于HTTP的应用层协议，请求报文的体积更小
 		- 四层协议分别是：链路层、网络层(IP)、传输层(TCP)、应用层(HTTP)

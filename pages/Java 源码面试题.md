@@ -122,9 +122,36 @@
 		- {{cloze size > 1/2 * len}} 触发扩容，扩容为原来的 {{cloze 2倍}}
 		- idx  = {{cloze  ThreadHashCode & (newLen -1)}}
 - CompletableFuture
+	- CompletableFuture的实现和提供的功能 #card
+	  card-last-interval:: 0.14
+	  card-repeats:: 1
+	  card-ease-factor:: 2.36
+	  card-next-schedule:: 2024-08-07T12:10:34.376Z
+	  card-last-reviewed:: 2024-08-07T09:10:34.377Z
+	  card-last-score:: 3
+		- 实现了两个接口 {{cloze `Future`}} 和 {{cloze `CompletionStage`}}
+		- 多种任务之间的编排功能
+			- 0依赖创建 `supplyAsync( )` 和 `runAsync( )`
+			- 1元依赖 `cf1.thenApply( )` `thenCompose` `thenAccept`
+			- 2元依赖 `thenCombine`
+			- 多元依赖 `allOf`或`anyOf`
+		- 异常处理 `handle( )` 和 `exceptionally( )`
+	- CompletableFuture的原理 #card
+	  card-last-interval:: 0.14
+	  card-repeats:: 1
+	  card-ease-factor:: 2.36
+	  card-next-schedule:: 2024-08-07T12:10:19.777Z
+	  card-last-reviewed:: 2024-08-07T09:10:19.778Z
+	  card-last-score:: 3
+		- 类似于 观察者模式
+			- {{cloze result}} 用于存储当前CF的结果
+			- {{cloze stack (Completion)}} 表示当前CF完成后需要触发的依赖动作
+		- {{cloze 入栈之前会判断 CF是否执行完成}} 避免入栈之前就已经完成&已经发出通知。
+		- {{cloze 入栈之后会判断CF是否执行完成。}} 非原子性的入栈和通知操作，避免错过通知。
+		- 唤醒后续操作时(出栈),会 {{cloze CAS操作一个状态值}} 。 防止 多次唤醒
 	-
 - AQS
-- 线程池
+- [线程池](https://www.throwx.cn/2020/08/23/java-concurrency-thread-pool-executor/)
 	- 任务调度
 	- 线程回收
 - 分布式锁Redisson

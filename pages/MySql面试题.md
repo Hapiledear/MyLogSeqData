@@ -341,10 +341,10 @@
 	- 当使用二级索引进行范围查询时，从随机读变为顺序读 {{cloze 通过对索引值排序，把无序回表IO变成有序回表IO}}
 - Explain 查询计划 #card
   card-last-interval:: 0.04
-  card-repeats:: 6
+  card-repeats:: 7
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-05T08:36:16.224Z
-  card-last-reviewed:: 2024-08-05T08:36:16.224Z
+  card-next-schedule:: 2024-08-07T09:20:50.235Z
+  card-last-reviewed:: 2024-08-07T09:20:50.236Z
   card-last-score:: 3
 	- id 执行顺序
 		- {{cloze id不同，值越大越先执行}}
@@ -362,11 +362,11 @@
 		- Using index 使用了覆盖索引
 		- Using where 该索引还用来执行查找操作
 - 工作中你是如何优化慢查询的 #card
-  card-last-interval:: 0.04
-  card-repeats:: 6
+  card-last-interval:: 0.05
+  card-repeats:: 7
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-05T08:32:47.371Z
-  card-last-reviewed:: 2024-08-05T08:32:47.372Z
+  card-next-schedule:: 2024-08-07T10:18:19.117Z
+  card-last-reviewed:: 2024-08-07T09:18:19.117Z
   card-last-score:: 3
 	- 添加合适的索引
 		- {{cloze 频繁查询的条件 和 排序字段 建立索引}}
