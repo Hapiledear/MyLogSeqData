@@ -1,11 +1,14 @@
 - {{cards Java 源码面试题}}
+	- Summary: 9 items, 9 review counts [[2024年08月07日]]
+		- Remembered:   9 (100%)
+		- Forgotten :   0 (0%)
 - ArrayList
 	- ArrayList的扩容机制/流程是怎么样的 #card
-	  card-last-interval:: 0.14
-	  card-repeats:: 1
-	  card-ease-factor:: 2.36
-	  card-next-schedule:: 2024-08-06T15:28:57.072Z
-	  card-last-reviewed:: 2024-08-06T12:28:57.072Z
+	  card-last-interval:: 4
+	  card-repeats:: 2
+	  card-ease-factor:: 2.22
+	  card-next-schedule:: 2024-08-11T01:30:08.812Z
+	  card-last-reviewed:: 2024-08-07T01:30:08.812Z
 	  card-last-score:: 3
 		- 初始容量,默认为 {{cloze 10}}
 		- 触发时机，没有负载因子。 {{cloze 数组放不下}} 时立即触发
@@ -13,11 +16,11 @@
 		- 数据操作，新数组申请完成后，copy旧数组到新数组，位置不变
 - HashMap
 	- HashMap的扩容机制/流程是怎样的 #card
-	  card-last-interval:: 0.14
-	  card-repeats:: 1
-	  card-ease-factor:: 2.36
-	  card-next-schedule:: 2024-08-06T15:30:21.801Z
-	  card-last-reviewed:: 2024-08-06T12:30:21.801Z
+	  card-last-interval:: 4
+	  card-repeats:: 2
+	  card-ease-factor:: 2.22
+	  card-next-schedule:: 2024-08-11T01:30:26.437Z
+	  card-last-reviewed:: 2024-08-07T01:30:26.437Z
 	  card-last-score:: 3
 		- 初始容量，默认为 {{cloze 16}}
 		- 触发时机, 元素 {{cloze 数量达到当前容量与负载因子(默认0.75)的}} 乘积时.
@@ -27,11 +30,11 @@
 			- 链表节点和红黑树节点，`e.hash & oldCap` 根据 {{cloze 第n+1位的0 or 1 }} 分成两个链表/树，一个在旧位置idx, 另一个在新位置 {{cloze idx+oldCap}}
 				- 假设 oldCap = 2^n
 	- HashMap的key/value能否为null #card
-	  card-last-interval:: 0.14
-	  card-repeats:: 1
-	  card-ease-factor:: 2.36
-	  card-next-schedule:: 2024-08-06T15:32:13.553Z
-	  card-last-reviewed:: 2024-08-06T12:32:13.553Z
+	  card-last-interval:: 4
+	  card-repeats:: 2
+	  card-ease-factor:: 2.22
+	  card-next-schedule:: 2024-08-11T01:31:13.332Z
+	  card-last-reviewed:: 2024-08-07T01:31:13.333Z
 	  card-last-score:: 3
 		- key可以为null ,计算的hashCode = 0
 		- value可以为null
@@ -39,11 +42,11 @@
 	- 存储元素使用的是数组，扩容机制同ArrayList
 		- 使用`Object[]` 表示二叉树, 获取parent节点 `parent = (k - 1) >>> 1`
 	- 优先队列的元素插入/删除机制 #card
-	  card-last-interval:: 0.14
-	  card-repeats:: 1
-	  card-ease-factor:: 2.36
-	  card-next-schedule:: 2024-08-06T15:27:37.201Z
-	  card-last-reviewed:: 2024-08-06T12:27:37.201Z
+	  card-last-interval:: 4
+	  card-repeats:: 2
+	  card-ease-factor:: 2.22
+	  card-next-schedule:: 2024-08-11T01:30:01.444Z
+	  card-last-reviewed:: 2024-08-07T01:30:01.444Z
 	  card-last-score:: 3
 		- 将元素key插入到末尾 i=size
 		- 进行上浮操作
@@ -52,22 +55,22 @@
 			- 如果小于等于，则 {{cloze 交换两个的位置}}
 - [ThreadLocal](https://javaguide.cn/java/concurrent/threadlocal.html#threadlocalmap-get-%E8%AF%A6%E8%A7%A3)
 	- ThreadLocal如何防止内存溢出 #card
-	  card-last-interval:: 0.14
-	  card-repeats:: 1
-	  card-ease-factor:: 2.36
-	  card-next-schedule:: 2024-08-06T15:32:03.705Z
-	  card-last-reviewed:: 2024-08-06T12:32:03.705Z
+	  card-last-interval:: 4
+	  card-repeats:: 2
+	  card-ease-factor:: 2.22
+	  card-next-schedule:: 2024-08-11T01:31:10.636Z
+	  card-last-reviewed:: 2024-08-07T01:31:10.636Z
 	  card-last-score:: 3
 		- Map中的key是 {{cloze 弱引用WeekReference}} , GC后回收。key == null,表示过期状态
 		- 手动调用remove方法，尤其是在与线程池配合使用时。
 			- 将当前位置的 entry == null ，标记为可回收
 			- 触发 ((66b1e39e-a9c7-4771-b6e0-d700bdd3808c))
 	- ThreadLocalMap的哈希算法与哈希冲突 #card
-	  card-last-interval:: 0.14
-	  card-repeats:: 1
-	  card-ease-factor:: 2.36
-	  card-next-schedule:: 2024-08-06T15:32:20.193Z
-	  card-last-reviewed:: 2024-08-06T12:32:20.193Z
+	  card-last-interval:: 4
+	  card-repeats:: 2
+	  card-ease-factor:: 2.22
+	  card-next-schedule:: 2024-08-11T01:31:21.396Z
+	  card-last-reviewed:: 2024-08-07T01:31:21.396Z
 	  card-last-score:: 3
 		- ThreadLocal 有自己的hashCode算法
 			- {{cloze 斐波那契数}} 的递增，只是初始值不是1,而是 `0x61c88647`
@@ -75,11 +78,11 @@
 		- 冲突解决办法
 			- {{cloze 线性探测}} 同时触发 {{cloze 过期元素清理}} ,详见 添加元素的过程
 	- ThreadLocal添加元素的过程 #card
-	  card-last-interval:: 0.14
-	  card-repeats:: 1
-	  card-ease-factor:: 2.36
-	  card-next-schedule:: 2024-08-06T15:27:02.937Z
-	  card-last-reviewed:: 2024-08-06T12:27:02.937Z
+	  card-last-interval:: 4
+	  card-repeats:: 2
+	  card-ease-factor:: 2.22
+	  card-next-schedule:: 2024-08-11T01:29:53.004Z
+	  card-last-reviewed:: 2024-08-07T01:29:53.004Z
 	  card-last-score:: 3
 		- 通过hash计算槽位后，此时分4种情况
 			- 槽位Entity为空 {{cloze 直接放入}}
@@ -90,11 +93,11 @@
 				- 向后过程中，遇到 {{cloze 过期key}} && 遇到 {{cloze k==key}} 交换 {{cloze 过期key和k的位置}} ，触发 {{cloze 过期回收}}
 		- Entity为空，说明被回收了， key为null 说明为过期key，被垃圾回收器回收了
 	- ThreadLocal的过期回收过程 #card
-	  card-last-interval:: 0.14
-	  card-repeats:: 1
-	  card-ease-factor:: 2.36
-	  card-next-schedule:: 2024-08-06T15:22:13.897Z
-	  card-last-reviewed:: 2024-08-06T12:22:13.898Z
+	  card-last-interval:: 4
+	  card-repeats:: 2
+	  card-ease-factor:: 2.22
+	  card-next-schedule:: 2024-08-11T01:29:48.420Z
+	  card-last-reviewed:: 2024-08-07T01:29:48.420Z
 	  card-last-score:: 3
 		- 探测式清理 `expungeStaleEntry( i )`
 		  id:: 66b1e39e-a9c7-4771-b6e0-d700bdd3808c
@@ -108,11 +111,11 @@
 			- 假设 len = 2^k ,遍历 {{cloze k次}}
 			- 每次遍历，都找到最近一个 {{cloze Entity == null}} 的位置，作为 探测式清理的起始位置。
 	- ThreadLocalMap的扩容 #card
-	  card-last-interval:: 0.14
-	  card-repeats:: 1
-	  card-ease-factor:: 2.36
-	  card-next-schedule:: 2024-08-06T15:30:49.313Z
-	  card-last-reviewed:: 2024-08-06T12:30:49.313Z
+	  card-last-interval:: 4
+	  card-repeats:: 2
+	  card-ease-factor:: 2.22
+	  card-next-schedule:: 2024-08-11T01:31:05.396Z
+	  card-last-reviewed:: 2024-08-07T01:31:05.397Z
 	  card-last-score:: 3
 		- 初始大小是 {{cloze 16}}
 		- 首先进行一次 {{cloze 全表清理}}
@@ -124,4 +127,5 @@
 - 线程池
 	- 任务调度
 	- 线程回收
+- 分布式锁Redisson
 -

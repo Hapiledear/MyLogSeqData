@@ -19,11 +19,11 @@
 	- 倒序取模，使得频繁更改的地方在最后
 	- userId + Long.Max - currentTimeStamp 便于scan查询，最近的记录在前
 - 简述HBase的读和写流程 #card
-  card-last-interval:: 0.03
-  card-repeats:: 4
+  card-last-interval:: 0.04
+  card-repeats:: 5
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-01T07:21:34.622Z
-  card-last-reviewed:: 2024-08-01T07:21:34.622Z
+  card-next-schedule:: 2024-08-07T01:21:29.522Z
+  card-last-reviewed:: 2024-08-07T01:21:29.522Z
   card-last-score:: 3
 	- 读流程
 		- {{cloze zk}} 获取 {{cloze Meta信息和RegionServer}}

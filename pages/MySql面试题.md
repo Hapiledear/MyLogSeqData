@@ -31,11 +31,11 @@
 		- 进行实际的索引扫描
 		- 将记录所在的数据页放入缓冲池 (磁盘->内存 )
 - SQL update过程 #card
-  card-last-interval:: 0
-  card-repeats:: 6
+  card-last-interval:: 0.05
+  card-repeats:: 7
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-01T08:00:27.609Z
-  card-last-reviewed:: 2024-08-01T08:00:27.609Z
+  card-next-schedule:: 2024-08-07T02:36:34.896Z
+  card-last-reviewed:: 2024-08-07T01:36:34.948Z
   card-last-score:: 3
 	- 查询出原数据
 	- 将修改的数据刷入内存 Buffer pool
@@ -51,11 +51,11 @@
   card-last-score:: 5
 	- {{cloze from -> join t2 on xxx  -> where yyy -> group by aaa -> having -> bbb -> select aaa,bbb,ccc -> distinct aaa ->order by bbb -> limit m,n}}
 - MySQL的join过程 #card
-  card-last-interval:: 8.88
-  card-repeats:: 3
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2024-08-03T04:53:02.566Z
-  card-last-reviewed:: 2024-07-25T07:53:02.566Z
+  card-last-interval:: 1.57
+  card-repeats:: 4
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2024-08-08T15:22:35.298Z
+  card-last-reviewed:: 2024-08-07T02:22:35.299Z
   card-last-score:: 3
 	- 确定驱动表 - 在SQL优化阶段,优化器根据 {{cloze 查询条件}} 预估 每张表的数据量大小。选择 {{cloze 最小}} 的作为驱动表
 	- 加载驱动表的数据到内存
@@ -64,11 +64,11 @@
 	- 从 MySQL 8.0.20 版本开始使用 {{cloze Hash Join}} 废弃 {{cloze 恰套循环join}}
 -
 - 存储引擎InnoDb和MyISAM的区别 #card
-  card-last-interval:: 0
-  card-repeats:: 7
+  card-last-interval:: 0.05
+  card-repeats:: 8
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-01T07:41:03.292Z
-  card-last-reviewed:: 2024-08-01T07:41:03.292Z
+  card-next-schedule:: 2024-08-07T02:28:20.443Z
+  card-last-reviewed:: 2024-08-07T01:28:20.443Z
   card-last-score:: 3
 	- 事务支持
 		- {{cloze 不支持}} M
@@ -127,11 +127,11 @@
 		- 关键词 活跃事物表、脏页表
 		- ((669e05fa-6ec5-4ce7-8d72-ec8fa277ff80))
 - 描述一下事物产生的三个问题 #card
-  card-last-interval:: 0
-  card-repeats:: 7
+  card-last-interval:: 0.07
+  card-repeats:: 8
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-01T07:18:45.701Z
-  card-last-reviewed:: 2024-08-01T07:18:45.701Z
+  card-next-schedule:: 2024-08-07T02:21:10.681Z
+  card-last-reviewed:: 2024-08-07T01:21:10.681Z
   card-last-score:: 3
 	- 脏读
 		- {{cloze 事物A读取到了事物B 未提交的数据}}
@@ -156,11 +156,11 @@
 	- 串行化
 		- {{cloze 所有事物被串行执行}}
 - 什么是幻读？如何防止？ #card
-  card-last-interval:: 0
-  card-repeats:: 7
+  card-last-interval:: 0.05
+  card-repeats:: 8
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-01T07:40:32.627Z
-  card-last-reviewed:: 2024-08-01T07:40:32.681Z
+  card-next-schedule:: 2024-08-07T02:28:11.668Z
+  card-last-reviewed:: 2024-08-07T01:28:11.668Z
   card-last-score:: 3
 	- 范围查询 {{cloze 事物A的两次查询之间，被事物B插入or删除了记录，产生结果集的不一致}}
 	- 防止方式
@@ -288,11 +288,11 @@
 		- {{cloze 除聚簇索引以外的索引}}
 		- 回表 {{cloze 第一次定位到聚簇索引，第二次通过聚簇索引定位到查找记录}}
 - 索引优化策略 #card
-  card-last-interval:: 0
-  card-repeats:: 7
+  card-last-interval:: 0.02
+  card-repeats:: 8
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-01T08:08:15.347Z
-  card-last-reviewed:: 2024-08-01T08:08:15.347Z
+  card-next-schedule:: 2024-08-07T02:04:01.898Z
+  card-last-reviewed:: 2024-08-07T02:04:01.898Z
   card-last-score:: 3
 	- 索引覆盖 {{cloze select字段 存在索引中}}
 	- 最左匹配原则 {{cloze 利用最左匹配，减少索引的建立}}
@@ -320,11 +320,11 @@
 	- 表数据较少时，走全表扫描比走索引效率更高 (内置优化策略)
 - 索引下推 #card
   card-last-score:: 3
-  card-repeats:: 5
-  card-next-schedule:: 2024-08-01T07:58:07.157Z
-  card-last-interval:: 0
+  card-repeats:: 6
+  card-next-schedule:: 2024-08-07T01:28:33.563Z
+  card-last-interval:: 0.04
   card-ease-factor:: 1.3
-  card-last-reviewed:: 2024-08-01T07:58:07.158Z
+  card-last-reviewed:: 2024-08-07T01:28:33.563Z
 	- Mysql5.6-之前，没有充分利用非聚簇索引
 		- 假设有索引(name,age)和查询条件 name like 张% and age = 10
 	- 不存在索引下推时 {{cloze 先根据非聚簇索引查记录，再根据where条件过滤}}
@@ -332,11 +332,11 @@
 	- 使用索引下推后 {{cloze 先根据 where条件过滤记录，再进行非聚簇索引查询}}
 		- 充分利用了name,age 字段，减少了回表次数
 - MRR优化 #card
-  card-last-interval:: 0
-  card-repeats:: 7
+  card-last-interval:: 0.03
+  card-repeats:: 8
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-01T08:07:52.299Z
-  card-last-reviewed:: 2024-08-01T08:07:52.299Z
+  card-next-schedule:: 2024-08-07T01:58:26.737Z
+  card-last-reviewed:: 2024-08-07T01:58:26.738Z
   card-last-score:: 3
 	- 当使用二级索引进行范围查询时，从随机读变为顺序读 {{cloze 通过对索引值排序，把无序回表IO变成有序回表IO}}
 - Explain 查询计划 #card
@@ -381,11 +381,11 @@
 		- {{cloze 是否命中索引}}
 		- 降低SQL语句的复杂度
 - 慢查询的案例和解决建议 #card
-  card-last-interval:: 8.88
-  card-repeats:: 3
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2024-08-03T04:53:32.168Z
-  card-last-reviewed:: 2024-07-25T07:53:32.168Z
+  card-last-interval:: 1.57
+  card-repeats:: 4
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2024-08-08T15:22:43.195Z
+  card-last-reviewed:: 2024-08-07T02:22:43.195Z
   card-last-score:: 3
 	- 查询结果数据量大 & 根据非索引字段进行了排序(order by)
 		- 方案一，利用索引进行排序
@@ -406,11 +406,11 @@
 	- 大表分页count时变慢
 		- 方案，分离count和 selectList.如使用ES作为count来源
 - bin log 和 redo log的区别 #card
-  card-last-interval:: 0
-  card-repeats:: 7
+  card-last-interval:: 0.07
+  card-repeats:: 8
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-01T07:18:41.700Z
-  card-last-reviewed:: 2024-08-01T07:18:41.752Z
+  card-next-schedule:: 2024-08-07T02:20:28.674Z
+  card-last-reviewed:: 2024-08-07T01:20:28.675Z
   card-last-score:: 3
 	- bin log
 		- 是MySql层的日志系统 ，记录的是 {{cloze SQL语句的原始逻辑}}
@@ -418,10 +418,10 @@
 		- 是存储引擎 InnoDb的日志 ，记录的是 {{cloze 某个数据做了什么修改}}
 - MySql的主从复制 3线程 #card
   card-last-interval:: 0.03
-  card-repeats:: 3
+  card-repeats:: 4
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-01T07:54:27.177Z
-  card-last-reviewed:: 2024-08-01T07:54:27.177Z
+  card-next-schedule:: 2024-08-07T01:28:23.275Z
+  card-last-reviewed:: 2024-08-07T01:28:23.275Z
   card-last-score:: 3
 	- Master开启 bin log ,对数据的更新操作会按顺序写入 bin log
 	- Slave连接Master后，Slave的一个`IO线程` 请求 bin log dump
@@ -476,31 +476,31 @@
 	- 各种看板和统计报表
 		- {{cloze 数据工厂，离线计算。 直接接入ES}}
 - 大批量数据的插入 #card
-  card-last-interval:: 0
-  card-repeats:: 7
+  card-last-interval:: 0.03
+  card-repeats:: 8
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-01T08:03:31.733Z
-  card-last-reviewed:: 2024-08-01T08:03:31.733Z
+  card-next-schedule:: 2024-08-07T01:42:43.692Z
+  card-last-reviewed:: 2024-08-07T01:42:43.693Z
   card-last-score:: 3
 	- 开启事务
 	- 合并插入：一条语句插入多条数据
 	- 顺序插入：数据按主键ID排序好
 - 用户订单表(uid,aid,create_time) 要想让查询强制走uid索引，可以怎么做？ #card
-  card-last-interval:: 3.66
-  card-repeats:: 3
-  card-ease-factor:: 1.8
-  card-next-schedule:: 2024-08-01T23:54:36.577Z
-  card-last-reviewed:: 2024-07-29T08:54:36.578Z
+  card-last-interval:: 11.02
+  card-repeats:: 4
+  card-ease-factor:: 1.66
+  card-next-schedule:: 2024-08-18T02:13:57.710Z
+  card-last-reviewed:: 2024-08-07T02:13:57.711Z
   card-last-score:: 3
 	- {{cloze force index}} 关键字
 	- 强制类型转化 将 {{cloze create_time 转为int型}}
 - 什么情况下，MySQL会锁住整个表? 如何减少或避免此类情况？#card
-  card-last-score:: 3
-  card-repeats:: 2
-  card-next-schedule:: 2024-08-02T08:03:33.947Z
-  card-last-interval:: 4
+  card-last-score:: 1
+  card-repeats:: 1
+  card-next-schedule:: 2024-08-07T16:00:00.000Z
+  card-last-interval:: -1
   card-ease-factor:: 2.22
-  card-last-reviewed:: 2024-07-29T08:03:33.947Z
+  card-last-reviewed:: 2024-08-07T02:18:28.382Z
 	- 注意，锁住整个表A != 对表A施加表锁
 	- 表结构层面
 		- 对 {{cloze 表结构}}进行修改

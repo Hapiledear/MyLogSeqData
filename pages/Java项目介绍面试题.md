@@ -1,10 +1,10 @@
 - {{cards [[Java项目介绍面试题]] }}
 - 介绍一下项目的架构，请求如何进入我们项目的 #card
-  card-last-interval:: 0
-  card-repeats:: 7
+  card-last-interval:: 0.02
+  card-repeats:: 8
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-01T08:08:17.275Z
-  card-last-reviewed:: 2024-08-01T08:08:17.275Z
+  card-next-schedule:: 2024-08-07T02:04:05.890Z
+  card-last-reviewed:: 2024-08-07T02:04:05.890Z
   card-last-score:: 3
 	- 接入层 {{cloze LVS Linux虚拟服务器}} + {{cloze Nginx}}
 	- 服务层 {{cloze Spring 网关}} + {{cloze 本地缓存}} + {{cloze Redis集群}} + {{cloze 数据库 兜底}}
