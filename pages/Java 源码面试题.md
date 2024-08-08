@@ -150,7 +150,7 @@
 		- {{cloze 入栈之后会判断CF是否执行完成。}} 非原子性的入栈和通知操作，避免错过通知。
 		- 唤醒后续操作时(出栈),会 {{cloze CAS操作一个状态值}} 。 防止 多次唤醒
 	-
-- AQS
+- [[AQS 抽象同步器]]
 - [线程池](https://www.throwx.cn/2020/08/23/java-concurrency-thread-pool-executor/)
 	- 任务调度
 	- 线程回收

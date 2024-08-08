@@ -9,12 +9,12 @@
 	- 接入层 {{cloze LVS Linux虚拟服务器}} + {{cloze Nginx}}
 	- 服务层 {{cloze Spring 网关}} + {{cloze 本地缓存}} + {{cloze Redis集群}} + {{cloze 数据库 兜底}}
 - 从高并发的角度介绍项目 10 #card
-  card-last-interval:: -1
-  card-repeats:: 1
+  card-last-interval:: 0.23
+  card-repeats:: 2
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-05T16:00:00.000Z
-  card-last-reviewed:: 2024-08-05T08:40:38.420Z
-  card-last-score:: 1
+  card-next-schedule:: 2024-08-08T14:01:46.724Z
+  card-last-reviewed:: 2024-08-08T09:01:46.724Z
+  card-last-score:: 3
 	- 拆分为微服务
 		- {{cloze 方便重要业务的水平扩展，如基础模块，用户模块}}
 	- 分库分表
@@ -57,4 +57,21 @@
 		- 过程中一旦发生异常，走保底奖品(虚拟、不限量)
 		- 大盘监控，奖品库每15分钟播报一次
 		- 每日对账
+- 任务和积分模块设计要略 #card
+  card-last-interval:: 0.14
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2024-08-08T11:27:39.799Z
+  card-last-reviewed:: 2024-08-08T08:27:39.799Z
+  card-last-score:: 3
+	- ![image.png](../assets/image_1723097644191_0.png)
+	- 用户行为收集
+		- 异步发送MQ，MQ消息落盘保存
+	- 分行为周期累积
+		- 按用户ID、行为类型、不同周期 进行累积
+	- 触发任务进度判断
+		- 根据一条或多条周期记录 & 周期内未发放奖励
+	- 发放奖品
+		- 异步发送MQ，MQ消息落盘
+	- 写入用户积分日志 + 更新用户积分
 -

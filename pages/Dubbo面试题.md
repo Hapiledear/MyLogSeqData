@@ -13,11 +13,11 @@
 	- Consumer使用轮询策略，直接与Provider的机器进行通信
 	- Provider与Consumer 在内存中累计调用次数和耗时，定时上报给监控中心
 - Dubbo的轮询策略 #card
-  card-last-interval:: 0.05
-  card-repeats:: 6
+  card-last-interval:: 0.04
+  card-repeats:: 7
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-05T08:48:25.210Z
-  card-last-reviewed:: 2024-08-05T07:48:25.211Z
+  card-next-schedule:: 2024-08-08T08:46:38.927Z
+  card-last-reviewed:: 2024-08-08T08:46:38.927Z
   card-last-score:: 3
 	- 随机
 	- 轮询和加权轮询
@@ -25,11 +25,11 @@
 	- 最小调用次数
 - Dubbo的失败策略 #card
   card-last-score:: 3
-  card-repeats:: 6
-  card-next-schedule:: 2024-08-05T08:40:57.489Z
-  card-last-interval:: 0.03
+  card-repeats:: 7
+  card-next-schedule:: 2024-08-08T08:30:43.298Z
+  card-last-interval:: 0.04
   card-ease-factor:: 1.3
-  card-last-reviewed:: 2024-08-05T08:40:57.490Z
+  card-last-reviewed:: 2024-08-08T08:30:43.298Z
 	- 故障转移：自动重试其它服务器(默认)
 		- 保证了服务的 {{cloze 高可用}}
 		- 需要设置合理的 {{cloze 请求有效时间}} 及 {{cloze 重试次数}} 。需要服务具有 {{cloze 幂等性}}

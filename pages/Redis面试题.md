@@ -35,17 +35,18 @@
 		- 问题描述 {{cloze 某一热点key突然过期，导致所有请求打到数据库上}}
 		- 解决方案 {{cloze 热点key过期时间加长，永不过期}} {{cloze 实时监控热点数据，实时调整过期时间}} 代码层面 {{cloze 使用synch 或 ReentryLock 加锁更新，这样后续的请求就又会走缓存}}
 - 在日常项目中用到了哪些Redis数据类型,底层结构是什么样的 #card
-  card-last-interval:: 0.03
-  card-repeats:: 6
+  card-last-interval:: 0.04
+  card-repeats:: 7
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-05T08:47:09.528Z
-  card-last-reviewed:: 2024-08-05T08:47:09.529Z
+  card-next-schedule:: 2024-08-08T08:39:05.249Z
+  card-last-reviewed:: 2024-08-08T08:39:05.250Z
   card-last-score:: 3
 	- string
 		- {{cloze 普通的kv存储，常用}}
 		- 底层结构是 {{cloze 动态字符串SDS}}
 	- set
 		- {{cloze 集合的交并差操作，比如  你可能认识的人，共同的朋友}}
+		- `Smembers setKey` 获取全部元素
 	- hash
 		- {{cloze 层级为1的对象}}
 		- {{cloze hash表，采用数组+链表 扩容时采用渐进式rehash}}
@@ -55,6 +56,7 @@
 	- zset
 		- {{cloze 自定义score排序，比如排行榜机制}}
 		- {{cloze 跳跃表，节点按分值大小排序，再按对象大小排序}}
+		- `zrange 0 -1` 获取全部元素
 - Redis的过期策略有哪些?数据明明过期了，怎么还占用着内存 #card
   card-last-interval:: 0.01
   card-repeats:: 8
@@ -75,11 +77,11 @@
 		- {{cloze volatile-random}} 有过期时间的key中 随机移除
 		- {{cloze volatile-ttl}} 有过期时间的key中 移除最早过期时间的key
 - 了解Redis的事务机制吗？ #card
-  card-last-interval:: 0.05
-  card-repeats:: 6
+  card-last-interval:: 0.03
+  card-repeats:: 7
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-05T08:49:18.243Z
-  card-last-reviewed:: 2024-08-05T07:49:18.243Z
+  card-next-schedule:: 2024-08-08T08:46:50.271Z
+  card-last-reviewed:: 2024-08-08T08:46:50.271Z
   card-last-score:: 3
 	- 事务以 {{cloze MUTLI}}命令开始
 	- 客户端接收一系列操作，放入队列中
@@ -88,11 +90,11 @@
 	- 执行时不会被其他客户端发送来的命令请求打断
 	- 不支持回滚，要么都执行，要么都不执行
 - 如何处理多个客户端并发写一个key? #card
-  card-last-interval:: 0.01
-  card-repeats:: 6
+  card-last-interval:: 0.02
+  card-repeats:: 7
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-05T09:00:25.111Z
-  card-last-reviewed:: 2024-08-05T09:00:25.112Z
+  card-next-schedule:: 2024-08-08T08:59:58.475Z
+  card-last-reviewed:: 2024-08-08T08:59:58.475Z
   card-last-score:: 3
 	- 使用事务 实现CAS
 		- {{cloze 事务具有watch机制,一旦被监测的key发生更改，本次提交就失效了}}
@@ -139,10 +141,10 @@
 	- {{cloze scan命令可以提取指定模式的key列表}}
 - Redis的持久化机制 #card
   card-last-interval:: 0.02
-  card-repeats:: 6
+  card-repeats:: 7
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-05T08:55:09.382Z
-  card-last-reviewed:: 2024-08-05T08:55:09.382Z
+  card-next-schedule:: 2024-08-08T08:55:26.832Z
+  card-last-reviewed:: 2024-08-08T08:55:26.832Z
   card-last-score:: 3
 	- bgsave 全量持久化
 		- 过程 {{cloze 生成子进程和当前内存快照，子进程进行持久化}}
@@ -222,10 +224,10 @@
 		- {{cloze 投票选举，超过半数者升级}}
 - Redis优化策略 #card
   card-last-interval:: 0.02
-  card-repeats:: 6
+  card-repeats:: 7
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-05T08:54:49.226Z
-  card-last-reviewed:: 2024-08-05T08:54:49.227Z
+  card-next-schedule:: 2024-08-08T08:54:31.494Z
+  card-last-reviewed:: 2024-08-08T08:54:31.494Z
   card-last-score:: 3
 	- 在见名知意的情况下，使用短key
 	- 不要存过大的数据,存之前先把数据压缩
@@ -266,11 +268,11 @@
 		- 打散 {{cloze 把热key打散到不同的服务器上，降低压力}}
 		- 二级缓存 {{cloze 加入本地的内存缓存}}
 - 大key处理 #card
-  card-last-interval:: 0.03
-  card-repeats:: 6
+  card-last-interval:: 0.04
+  card-repeats:: 7
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-05T08:41:26.067Z
-  card-last-reviewed:: 2024-08-05T08:41:26.067Z
+  card-next-schedule:: 2024-08-08T08:33:44.785Z
+  card-last-reviewed:: 2024-08-08T08:33:44.785Z
   card-last-score:: 3
 	- 大key造成的问题
 		- 进行IO操作时 {{cloze 占用带宽和CPU}}
@@ -284,11 +286,11 @@
 		- 压缩 {{cloze 压缩算法进行压缩}}
 		- 拆分 {{cloze 按长度截取拆分，使用multiget读取}}
 - Redis的SDS与C语言的字符串比较 #card
-  card-last-interval:: 0.03
-  card-repeats:: 6
+  card-last-interval:: 0.04
+  card-repeats:: 7
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-05T08:48:09.016Z
-  card-last-reviewed:: 2024-08-05T08:48:09.016Z
+  card-next-schedule:: 2024-08-08T08:45:31.975Z
+  card-last-reviewed:: 2024-08-08T08:45:31.975Z
   card-last-score:: 3
 	- c语言字符串的缺点
 		- {{cloze 获取字符串长度 需要O(n)}}
@@ -325,11 +327,11 @@
 		- 遍历每一层的节点，直到遇见NULL 或 >目标值
 		- 向下一层，继续遍历该层
 - Redis的压缩列表zipList和quickList #card
-  card-last-interval:: 0.02
-  card-repeats:: 6
+  card-last-interval:: 0.03
+  card-repeats:: 7
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-05T08:51:08.707Z
-  card-last-reviewed:: 2024-08-05T08:51:08.707Z
+  card-next-schedule:: 2024-08-08T08:49:47.074Z
+  card-last-reviewed:: 2024-08-08T08:49:47.074Z
   card-last-score:: 3
 	- 压缩体现在哪里?
 		- 普通的数组结构， {{cloze 每一个单元的长度由最大字符串长度决定的}}

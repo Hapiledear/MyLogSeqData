@@ -209,11 +209,11 @@
 		- 可重复读的实现
 			- {{cloze 只在第一次执行查询语句时生成 Read View}}
 - MySql中的锁有哪些 #card
-  card-last-interval:: 0.03
-  card-repeats:: 6
+  card-last-interval:: 0.01
+  card-repeats:: 7
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-06T13:33:04.813Z
-  card-last-reviewed:: 2024-08-06T13:33:04.813Z
+  card-next-schedule:: 2024-08-08T09:20:40.388Z
+  card-last-reviewed:: 2024-08-08T09:20:40.388Z
   card-last-score:: 3
 	- 表锁
 		- 意向锁
@@ -252,21 +252,21 @@
 	- 雪花算法 {{cloze 按照一定规则填充Long的64位: 时间（毫秒级）+集群ID+机器ID+序列号}}
 	- ((66544683-504d-4344-a4e9-d0abfdb0bd53))
 - B+树与B树的对比 #card
-  card-last-interval:: 0.01
-  card-repeats:: 6
+  card-last-interval:: 0.02
+  card-repeats:: 7
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-05T08:59:48.616Z
-  card-last-reviewed:: 2024-08-05T08:59:48.617Z
+  card-next-schedule:: 2024-08-08T08:59:41.538Z
+  card-last-reviewed:: 2024-08-08T08:59:41.539Z
   card-last-score:: 3
 	- 数据记录 {{cloze 都存放在叶子节点中}} {{cloze 非叶节点只存储键值信息}}
 	- {{cloze 所有叶子节点之间都有一个链指针}}
 	- B树可以在所有节点中存储数据
 - 索引的优缺点 #card
-  card-last-interval:: 0.02
-  card-repeats:: 6
+  card-last-interval:: 0.03
+  card-repeats:: 7
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-05T08:49:52.986Z
-  card-last-reviewed:: 2024-08-05T08:49:52.986Z
+  card-next-schedule:: 2024-08-08T08:48:40.153Z
+  card-last-reviewed:: 2024-08-08T08:48:40.153Z
   card-last-score:: 3
 	- 优点
 		- {{cloze 提高数据检索效率，降低IO}}
@@ -275,11 +275,11 @@
 		- {{cloze 需要占用物理空间}}
 		- {{cloze 每次增改数据，都需要动态维护索引，导致增改时间变长}}
 - 聚集索引和非聚集索引 #card
-  card-last-interval:: 0.01
-  card-repeats:: 6
+  card-last-interval:: 0.02
+  card-repeats:: 7
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-05T08:56:37.199Z
-  card-last-reviewed:: 2024-08-05T08:56:37.199Z
+  card-next-schedule:: 2024-08-08T08:58:04.163Z
+  card-last-reviewed:: 2024-08-08T08:58:04.163Z
   card-last-score:: 3
 	- 聚簇索引
 		- {{cloze b+树的叶子节点中存放了表中一行的全部数据}}
@@ -297,11 +297,11 @@
 	- 索引覆盖 {{cloze select字段 存在索引中}}
 	- 最左匹配原则 {{cloze 利用最左匹配，减少索引的建立}}
 - 索引失效的13种场景 #card
-  card-last-interval:: 0.03
-  card-repeats:: 6
+  card-last-interval:: 0.04
+  card-repeats:: 7
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-05T08:44:23.293Z
-  card-last-reviewed:: 2024-08-05T08:44:23.294Z
+  card-next-schedule:: 2024-08-08T08:35:06.121Z
+  card-last-reviewed:: 2024-08-08T08:35:06.122Z
   card-last-score:: 3
 	- 联合索引不满足最左匹配原则
 	- 使用了 `select * ` 肯定不会走 覆盖索引
@@ -428,11 +428,11 @@
 	- Master开启 `IO线程` 开始传输bin log
 	- Slave 启动线程  `SQL线程` ，实时监控 中继日志是否有更新，解析SQL语句，在S库中执行
 - 分库分表策略 及 数据分片规则 #card
-  card-last-interval:: 0.02
-  card-repeats:: 6
+  card-last-interval:: 0.03
+  card-repeats:: 7
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-05T08:53:02.404Z
-  card-last-reviewed:: 2024-08-05T08:53:02.404Z
+  card-next-schedule:: 2024-08-08T08:50:31.187Z
+  card-last-reviewed:: 2024-08-08T08:50:31.188Z
   card-last-score:: 3
 	- 水平拆分
 		- {{cloze 将一张表中的数据，按照一定策略(Hash取模、range) ，拆分到多个库/表中}}

@@ -1,12 +1,12 @@
 - 是[[Java CLH锁]]的一个变种
 - AQS中的核心变量
-	- 状态标志位 state
+	- 状态标志位 *state*
 	  id:: 63a3d2e8-2cb5-4e3c-9089-94547ab24970
 		- `private volatile int state;` 使用volatile保证可见性
 		- 使用CAS操作修改其值，保证 原子性
 		- 0-未锁定 1-锁定 >1 - 重入锁定
 	- 队列节点 Node
-		- 节点状态值 waitStatus
+		- 节点状态值 *waitStatus*
 		  id:: 63a90e4f-5fc9-484a-8419-d4becbeb3522
 			- 0 初始状态
 			- 1 Cancelled 取消状态

@@ -37,21 +37,21 @@
 		- {{cloze 自动注册}} AC
 - Spring中的Bean是线程安全的吗？如何处理线程并发问题 #card
   card-last-interval:: 0.02
-  card-repeats:: 6
+  card-repeats:: 7
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-05T08:56:08.126Z
-  card-last-reviewed:: 2024-08-05T08:56:08.127Z
+  card-next-schedule:: 2024-08-08T08:57:37.793Z
+  card-last-reviewed:: 2024-08-08T08:57:37.793Z
   card-last-score:: 3
 	- 默认Bean的作用域 {{cloze singleton}}不是线程安全的
 	- 如果是有状态的Bean，可以使用更高一级的 {{cloze prototype}}
 		- 有状态指的是有数据的存储功能
 	- 或者是该数据字段使用 {{cloze ThreadLocal}} 修饰
 - Spring Bean的生命周期，描述一下 4阶段-2扩展点 #card
-  card-last-interval:: 0.02
-  card-repeats:: 6
+  card-last-interval:: 0.01
+  card-repeats:: 7
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-06T13:33:13.900Z
-  card-last-reviewed:: 2024-08-06T13:33:13.901Z
+  card-next-schedule:: 2024-08-08T09:25:28.103Z
+  card-last-reviewed:: 2024-08-08T09:25:28.142Z
   card-last-score:: 3
 	- 实例化
 	- 属性填充
@@ -75,10 +75,10 @@
 	- FB {{cloze 是用以生产对象和装饰对象的工厂接口}}
 - 如何解决Bean注入时的循环依赖问题  #card
   card-last-interval:: 0.02
-  card-repeats:: 6
+  card-repeats:: 7
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-05T08:56:15.622Z
-  card-last-reviewed:: 2024-08-05T08:56:15.623Z
+  card-next-schedule:: 2024-08-08T08:57:50.482Z
+  card-last-reviewed:: 2024-08-08T08:57:50.482Z
   card-last-score:: 3
 	- 循环依赖能自动解决的前提条件
 		- {{cloze 不是全属性构造器}}
@@ -176,3 +176,19 @@
 	- 执行流程
 		- 过滤器，按照定义顺序执行
 		- 拦截器，在代码中控制自由控制是否调用后续拦截器
+- Spring 事务的传播机制 #card
+  card-last-interval:: 0.14
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2024-08-08T11:24:07.176Z
+  card-last-reviewed:: 2024-08-08T08:24:07.177Z
+  card-last-score:: 3
+	- 基于对现有事务的态度分类
+		- `REQUIRED` 当前*保证有*
+		- `REQUIRES_NEW` 当前*要求新建*
+		- `SUPPORTS` 当前*可以有*
+		- `NOT_SUPPORTED` 当前*不支持*，以非事物方式运行
+		- `NEVER` 当前和上下文*都不支持*，否则抛错
+		- `NESTED` 当前开启*嵌套*事务
+		- `MANDATORY` *上下文必须有*，否则抛错
+-
