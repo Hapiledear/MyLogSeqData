@@ -1,10 +1,10 @@
 - {{cards [[MQ面试题]] }}
 - 项目中是如何使用MQ的？5  #card
-  card-last-interval:: 0.02
-  card-repeats:: 6
+  card-last-interval:: 0.04
+  card-repeats:: 7
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-06T13:35:48.709Z
-  card-last-reviewed:: 2024-08-06T13:35:48.709Z
+  card-next-schedule:: 2024-08-09T01:50:47.199Z
+  card-last-reviewed:: 2024-08-09T01:50:47.200Z
   card-last-score:: 3
 	- {{cloze 异步处理}} 注销用户
 	- {{cloze 应用解耦}} 用户成长值加分

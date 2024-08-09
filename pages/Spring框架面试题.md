@@ -1,10 +1,10 @@
 - {{cards [[Spring框架面试题]] }}
 - Spring中用了哪些设计模式? #card
-  card-last-interval:: 0.02
-  card-repeats:: 7
+  card-last-interval:: 0.03
+  card-repeats:: 8
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-06T13:42:31.653Z
-  card-last-reviewed:: 2024-08-06T13:42:31.654Z
+  card-next-schedule:: 2024-08-09T02:12:26.454Z
+  card-last-reviewed:: 2024-08-09T02:12:26.455Z
   card-last-score:: 3
 	- BeanFactory {{cloze 工厂模式}}
 	- Bean {{cloze 单例模式}}
@@ -12,11 +12,11 @@
 	- RestTemplate {{cloze 模板方法}}
 	- ApplicationListener {{cloze 观察者模式}}
 - 什么是Spring的IOC(控制反转) #card
-  card-last-interval:: 0.01
-  card-repeats:: 7
+  card-last-interval:: 0.02
+  card-repeats:: 8
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-06T13:45:22.326Z
-  card-last-reviewed:: 2024-08-06T13:45:22.326Z
+  card-next-schedule:: 2024-08-09T02:29:53.560Z
+  card-last-reviewed:: 2024-08-09T02:29:53.560Z
   card-last-score:: 3
 	- {{cloze 原本由代码控制对象的生命周期，交由spring框架管理}}
 	- 实现 {{cloze 工厂模式+反射机制}}
@@ -65,11 +65,11 @@
 		- DisposableBean接口的destory方法
 		- destory-method方法
 - BeanFactory 和 FactoryBean的区别 #card
-  card-last-interval:: 0.03
-  card-repeats:: 7
+  card-last-interval:: 0.04
+  card-repeats:: 8
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-06T13:36:45.613Z
-  card-last-reviewed:: 2024-08-06T13:36:45.613Z
+  card-next-schedule:: 2024-08-09T01:52:06.408Z
+  card-last-reviewed:: 2024-08-09T01:52:06.409Z
   card-last-score:: 3
 	- BF {{cloze 是框架用来管理和装配普通bean的容器}}
 	- FB {{cloze 是用以生产对象和装饰对象的工厂接口}}
@@ -107,11 +107,11 @@
 	- AOP 面向切面编程，核心是使用 {{cloze 代理模式}}，对目标方法执行前后进行处理
 	- 应用场景 {{cloze 日志记录}} {{cloze 接口签名校验}}
 - 为什么要用SpringBoot #card
-  card-last-interval:: 0.03
-  card-repeats:: 7
+  card-last-interval:: 0.04
+  card-repeats:: 8
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-06T13:37:22.261Z
-  card-last-reviewed:: 2024-08-06T13:37:22.261Z
+  card-next-schedule:: 2024-08-09T01:52:40.352Z
+  card-last-reviewed:: 2024-08-09T01:52:40.353Z
   card-last-score:: 3
 	- {{cloze 独立运行spring项目}}
 	- {{cloze 内嵌servlet容器}}
@@ -158,11 +158,11 @@
 	- 没有获取到代理对象
 	- 跨线程调用没有传递必要参数，如在事务中开启多线程会使得事务失效
 - Spring MVC中，过滤器和拦截器的区别 #card
-  card-last-interval:: 0.14
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2024-08-06T15:28:26.918Z
-  card-last-reviewed:: 2024-08-06T12:28:26.918Z
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2024-08-13T02:31:37.603Z
+  card-last-reviewed:: 2024-08-09T02:31:37.604Z
   card-last-score:: 3
 	- 实现方式
 		- 过滤器是基于java的Filter接口

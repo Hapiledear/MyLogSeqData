@@ -6,11 +6,11 @@
 - [[分布式事务]]
 -
 - SQL查询过程 #card
-  card-last-interval:: 0.02
-  card-repeats:: 7
+  card-last-interval:: 0.03
+  card-repeats:: 8
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-06T13:38:05.741Z
-  card-last-reviewed:: 2024-08-06T13:38:05.741Z
+  card-next-schedule:: 2024-08-09T02:02:41.237Z
+  card-last-reviewed:: 2024-08-09T02:02:41.237Z
   card-last-score:: 3
 	- 建立连接 {{cloze 连接器}}
 		- 负责对用户名&密码进行校验，连接的维护
@@ -89,11 +89,11 @@
 		- {{cloze 直接取出该值}}
 		- {{cloze 只能遍历}}
 - 事物的四大特性，分别是如何解决的 #card
-  card-last-interval:: 0.03
-  card-repeats:: 7
+  card-last-interval:: 0.04
+  card-repeats:: 8
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-06T13:37:09.853Z
-  card-last-reviewed:: 2024-08-06T13:37:09.853Z
+  card-next-schedule:: 2024-08-09T01:52:25.066Z
+  card-last-reviewed:: 2024-08-09T01:52:25.066Z
   card-last-score:: 3
 	- 一致性 是目标，其他三者是手段
 		- {{cloze 事物在执行前后其状态一致,A+B=100 无论A B怎么转账，最终都是100}}
@@ -110,11 +110,11 @@
 			- 4种隔离级别 {{cloze 读未提交}} {{cloze 读已提交}} {{cloze 可重复读读}} {{cloze 串行化}}
 		- {{cloze 锁机制 和 MVVC机制}}
 - Undo Log 和Redo Log #card
-  card-last-interval:: 0.02
-  card-repeats:: 7
+  card-last-interval:: 0.03
+  card-repeats:: 8
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-06T13:38:23.549Z
-  card-last-reviewed:: 2024-08-06T13:38:23.550Z
+  card-next-schedule:: 2024-08-09T02:03:30.310Z
+  card-last-reviewed:: 2024-08-09T02:03:30.311Z
   card-last-score:: 3
 	- Undo Log
 		- 存储的是 {{cloze 旧数据的版本链集合}}
@@ -191,11 +191,11 @@
 		- 插入、更新、删除操作
 		- 如何解决幻读 {{cloze next-key Lock 行锁与间隙锁的组合}}
 - 什么是MVCC #card
-  card-last-interval:: 0.03
-  card-repeats:: 7
+  card-last-interval:: 0.04
+  card-repeats:: 8
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-06T13:33:52.885Z
-  card-last-reviewed:: 2024-08-06T13:33:52.885Z
+  card-next-schedule:: 2024-08-09T01:49:30.183Z
+  card-last-reviewed:: 2024-08-09T01:49:30.184Z
   card-last-score:: 3
 	- 多版本并发控制
 	- 只工作在两种事物隔离级别下
@@ -241,11 +241,11 @@
 		- 作用 {{cloze 在RR事务级别下，解决并发插入问题}}
 		- 原理 {{cloze 区间相同但插入记录本身不同的情况下 互不排斥}}
 - 主键的选择，使用自增ID 还是 UUID #card
-  card-last-interval:: 0.01
-  card-repeats:: 8
+  card-last-interval:: 0.02
+  card-repeats:: 9
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-06T13:45:52.254Z
-  card-last-reviewed:: 2024-08-06T13:45:52.254Z
+  card-next-schedule:: 2024-08-09T02:31:17.081Z
+  card-last-reviewed:: 2024-08-09T02:31:17.082Z
   card-last-score:: 3
 	- 自增型ID {{cloze 符合主键索引的顺序排布，插入快速，产生碎片较少}}
 	- UUID {{cloze 全局唯一，跨系统存取方便}} {{cloze 较为分散，不会产生数据倾斜}}
@@ -442,11 +442,11 @@
 		- 连接数不够，产生 资源报警
 		- 慢查询增多，占用了大量的IO和网络带宽
 - 分库分表会带来哪些问题，如何解决 #card
-  card-last-interval:: 0.02
-  card-repeats:: 6
+  card-last-interval:: 0.04
+  card-repeats:: 7
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-06T13:43:24.501Z
-  card-last-reviewed:: 2024-08-06T13:43:24.502Z
+  card-next-schedule:: 2024-08-09T02:16:24.008Z
+  card-last-reviewed:: 2024-08-09T02:16:24.008Z
   card-last-score:: 3
 	- 分布式事务问题
 		- {{cloze 使用相关中间件}}
@@ -463,11 +463,11 @@
 			- {{cloze 所有的旧代码，都对新库进行增删改}}
 			- {{cloze 不断从老库抽数据，往新库写。边写边比对数据是不是最新的}}
 - 业务中影响MySQL性能的场景 #card
-  card-last-interval:: 0.01
-  card-repeats:: 8
+  card-last-interval:: 0.02
+  card-repeats:: 9
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-06T13:45:41.158Z
-  card-last-reviewed:: 2024-08-06T13:45:41.158Z
+  card-next-schedule:: 2024-08-09T02:30:39.682Z
+  card-last-reviewed:: 2024-08-09T02:30:39.682Z
   card-last-score:: 3
 	- 大规模数据导出功能
 		- {{cloze 建议`limit m,n` 替换成id的范围查询}}

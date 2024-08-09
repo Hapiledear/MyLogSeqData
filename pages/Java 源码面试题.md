@@ -152,7 +152,25 @@
 	-
 - [[AQS 抽象同步器]]
 - [线程池](https://www.throwx.cn/2020/08/23/java-concurrency-thread-pool-executor/)
-	- 任务调度
-	- 线程回收
+	- 线程池的状态以及作用 #card
+		- `Running` 工作状态 -- {{cloze 接受并处理}} 任务
+		- `Shutdown` 准备关闭 -- 不再 {{cloze 接受新任务}} ，但 {{cloze 完成已有任务}}
+		- `Stop` 停止 -- {{cloze 尝试中断正在执行的}} 任务
+		- `Tidying` 清理 -- 进行 {{cloze 资源回收或其他钩子方法}}
+		- `Terminated` 已终止 -- 线程池 {{cloze 已经停止并且不能重新启动}}
+	- 线程的状态 #card
+		- `new` 新建 -- 线程对象被创建后，但尚未启动
+		- `runnable` 可运行 -- 调用了`start()`方法后
+		- `running` 正在执行 -- 获得CPU时间片并开始执行`run()`方法
+		- `terminated` 终止
+			- 线程的`run()`方法执行完成 -- 成功执行
+			- 或者线程因为异常退出了`run()`方法 -- 异常退出
+			- 或者线程被中断并抛出了`InterruptedException` -- 被中断
+				- 中断，类似于*强制关机*按钮。任务超时/主动取消 时使用。
+		- `waiting` 等待
+			- 主动出让CPU，等待被其他线程唤醒
+		- `blocked` 阻塞
+			- 尝试获取系统层级/JVM层级的某项共享资源不成功后，由系统/JVM将其唤醒
+			- `Lock.lock()` 方法，转移到的是`waiting` 等待状态，因为Lock底层是AQS, 被放入了队列，需要被释放锁的线程唤醒。
 - 分布式锁Redisson
 -

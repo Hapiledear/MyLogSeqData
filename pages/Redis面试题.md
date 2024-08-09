@@ -11,11 +11,11 @@
 	- 限流&幂等&分布式锁
 	- 一级页面熔断降级 {{cloze 缓存数据，降级后直接取用}}
 - 缓存使用不当会带来哪些后果，解决办法 #card
-  card-last-interval:: 0.02
-  card-repeats:: 6
+  card-last-interval:: 0.04
+  card-repeats:: 7
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-06T13:43:21.166Z
-  card-last-reviewed:: 2024-08-06T13:43:21.166Z
+  card-next-schedule:: 2024-08-09T02:13:51.322Z
+  card-last-reviewed:: 2024-08-09T02:13:51.323Z
   card-last-score:: 3
 	- 缓存与数据库的双写不一致
 		- 读的时候 {{cloze 先读缓存，再读数据库，最后把读取的数据放入缓存}}
@@ -58,11 +58,11 @@
 		- {{cloze 跳跃表，节点按分值大小排序，再按对象大小排序}}
 		- `zrange 0 -1` 获取全部元素
 - Redis的过期策略有哪些?数据明明过期了，怎么还占用着内存 #card
-  card-last-interval:: 0.01
-  card-repeats:: 8
+  card-last-interval:: 0.02
+  card-repeats:: 9
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-06T13:56:07.542Z
-  card-last-reviewed:: 2024-08-06T13:56:07.542Z
+  card-next-schedule:: 2024-08-09T02:31:32.194Z
+  card-last-reviewed:: 2024-08-09T02:31:32.194Z
   card-last-score:: 3
 	- 定期删除
 		- {{cloze 每隔一段时间，删除过期key}} {{cloze 采用随机抽取策略}}
@@ -99,11 +99,11 @@
 	- 使用事务 实现CAS
 		- {{cloze 事务具有watch机制,一旦被监测的key发生更改，本次提交就失效了}}
 - Redis为什么快？ #card
-  card-last-interval:: 0.02
-  card-repeats:: 7
+  card-last-interval:: 0.03
+  card-repeats:: 8
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-06T13:38:48.246Z
-  card-last-reviewed:: 2024-08-06T13:38:48.246Z
+  card-next-schedule:: 2024-08-09T02:08:40.314Z
+  card-last-reviewed:: 2024-08-09T02:08:40.314Z
   card-last-score:: 3
 	- 基于内存操作
 	- 使用单线程， {{cloze 避免线程切换和竞争产生的消耗}}
@@ -157,11 +157,11 @@
 		- {{cloze 将过期的、不再使用的、重复的以及可优化的命令进行优化，重新生成AOF文件}}
 		- 流程 {{cloze fork一个子进程}} {{cloze 重写期间，主线程的写命令被保存在缓冲区中}}
 - RDB和AOF各自的优缺点 #card
-  card-last-interval:: 0.01
-  card-repeats:: 8
+  card-last-interval:: 0.02
+  card-repeats:: 9
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-06T13:45:45.381Z
-  card-last-reviewed:: 2024-08-06T13:45:45.381Z
+  card-next-schedule:: 2024-08-09T02:30:47.745Z
+  card-last-reviewed:: 2024-08-09T02:30:47.746Z
   card-last-score:: 3
 	- RDB优点
 		- 生成的文件 {{cloze 只有一个紧凑的二进制文件，非常适合备份、全量复制场景}}
@@ -195,11 +195,11 @@
 	- 主从复制和自动故障转移 {{cloze 部分master不可用时，还是可以继续工作}}
 	- 2个端口 {{cloze 6379 16379}}
 - 数据如何分散在机器上 #card
-  card-last-interval:: 0.02
-  card-repeats:: 7
+  card-last-interval:: 0.03
+  card-repeats:: 8
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-06T13:42:20.678Z
-  card-last-reviewed:: 2024-08-06T13:42:20.678Z
+  card-next-schedule:: 2024-08-09T02:12:22.627Z
+  card-last-reviewed:: 2024-08-09T02:12:22.627Z
   card-last-score:: 3
 	- {{cloze 一致性Hash算法}}
 		- 哈希环，顺时针，虚拟节点
