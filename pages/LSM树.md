@@ -1,4 +1,4 @@
-- ![](https://img2022.cnblogs.com/blog/984423/202203/984423-20220318132054637-38138034.png)
+- ![](https://img2022.cnblogs.com/blog/984423/202203/984423-20220318132054637-38138034.png){:height 552, :width 778}
 - 日志结构合并树(Log-Structured Merge-Tree)。其实它并不属于一个具体的数据结构，它更多是一种数据结构的设计思想。
 	- 保存在后台合并的一系列**SSTabel**
 - 内存部分：memtable_table 类红黑树结构
@@ -18,4 +18,5 @@
 	- ![image.png](../assets/image_1721897775714_0.png)
 	- ![image.png](../assets/image_1721897790638_0.png)
 	- ![image.png](../assets/image_1721898290065_0.png)
+-
 -
