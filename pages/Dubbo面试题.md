@@ -13,11 +13,11 @@
 	- Consumer使用轮询策略，直接与Provider的机器进行通信
 	- Provider与Consumer 在内存中累计调用次数和耗时，定时上报给监控中心
 - Dubbo的轮询策略 #card
-  card-last-interval:: 0.01
-  card-repeats:: 8
+  card-last-interval:: 0
+  card-repeats:: 9
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-12T07:32:22.293Z
-  card-last-reviewed:: 2024-08-12T07:32:22.293Z
+  card-next-schedule:: 2024-08-13T09:06:36.844Z
+  card-last-reviewed:: 2024-08-13T09:06:36.844Z
   card-last-score:: 3
 	- 随机
 	- 轮询和加权轮询
@@ -25,11 +25,11 @@
 	- 最小调用次数
 - Dubbo的失败策略 #card
   card-last-score:: 3
-  card-repeats:: 8
-  card-next-schedule:: 2024-08-12T07:29:48.257Z
-  card-last-interval:: 0.01
+  card-repeats:: 9
+  card-next-schedule:: 2024-08-13T09:04:29.875Z
+  card-last-interval:: 0
   card-ease-factor:: 1.3
-  card-last-reviewed:: 2024-08-12T07:29:48.258Z
+  card-last-reviewed:: 2024-08-13T09:04:29.875Z
 	- 故障转移：自动重试其它服务器(默认)
 		- 保证了服务的 {{cloze 高可用}}
 		- 需要设置合理的 {{cloze 请求有效时间}} 及 {{cloze 重试次数}} 。需要服务具有 {{cloze 幂等性}}
@@ -47,11 +47,11 @@
 		- 消耗额外资源 且 失败概率高
 	- 并不提供 沉默失败 策略：即 服务熔断
 - 为什么采用Dubbo\\RPC 而不是HTTP #card
-  card-last-interval:: 0.02
-  card-repeats:: 8
+  card-last-interval:: 0
+  card-repeats:: 9
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-12T07:24:52.741Z
-  card-last-reviewed:: 2024-08-12T07:24:52.742Z
+  card-next-schedule:: 2024-08-13T09:04:12.867Z
+  card-last-reviewed:: 2024-08-13T09:04:12.867Z
   card-last-score:: 3
 	- RPC 是属于TCP层的协议，相比于HTTP的应用层协议，请求报文的处理更快
 		- 四层协议分别是：链路层、网络层(IP)、传输层(TCP)、应用层(HTTP)
@@ -78,11 +78,11 @@
 	- {{cloze 服务访问压力以及时长统计}} 时长
 	- {{cloze 服务可用性监控、失败告警监控}} 监控
 - Dubbo的工作原理及分层 #card
-  card-last-interval:: 0.03
-  card-repeats:: 3
+  card-last-interval:: 0.02
+  card-repeats:: 4
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-12T07:23:15.089Z
-  card-last-reviewed:: 2024-08-12T07:23:15.089Z
+  card-next-schedule:: 2024-08-13T09:02:04.281Z
+  card-last-reviewed:: 2024-08-13T09:02:04.281Z
   card-last-score:: 3
 	- Biz 业务逻辑 自己来提供 {{cloze 接口和实现还有一些配置信息}}
 		- service {{cloze 实现业务代码}}
@@ -154,11 +154,11 @@
 	- 根据provider的地址和接口连接到 {{cloze 服务端server}} ，开启 {{cloze 客户端client}} ，再 {{cloze 创建invoker}} 。
 	- 用 {{cloze invoker}} 为服务接口生成代理对象，这个代理对象是用来远程调用。
 - 设计一个RPC框架要考虑什么 #card
-  card-last-interval:: 0.02
-  card-repeats:: 5
+  card-last-interval:: 0.01
+  card-repeats:: 6
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-12T07:17:52.142Z
-  card-last-reviewed:: 2024-08-12T07:17:52.142Z
+  card-next-schedule:: 2024-08-13T08:19:43.695Z
+  card-last-reviewed:: 2024-08-13T08:19:43.695Z
   card-last-score:: 3
 	- {{cloze 注册中心}} 让消费者知道有哪些服务，提供者知道自己提供了什么服务
 	- {{cloze 负载均衡}} 一个接口多台实例，client该调用哪一个
