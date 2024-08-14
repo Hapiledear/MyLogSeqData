@@ -59,10 +59,10 @@
 	- {{cloze 通常 年轻代采用的GC算法是 复制算法，老年代采用的是标记-整理算法 }} GC算法
 - 非堆内存有哪些 #card
   card-last-interval:: 0.01
-  card-repeats:: 6
+  card-repeats:: 7
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-13T08:17:53.526Z
-  card-last-reviewed:: 2024-08-13T08:17:53.526Z
+  card-next-schedule:: 2024-08-14T01:32:53.652Z
+  card-last-reviewed:: 2024-08-14T01:32:53.652Z
   card-last-score:: 3
 	- {{cloze DirectByteBuffer 所申请的直接内存}} NIO
 	- {{cloze 方法区的具体实现 元空间}}
@@ -121,11 +121,11 @@
 		- {{cloze 存放在[[Java 堆内存]]}}
 -
 - ## [[Java 堆内存]] 与[[Java 虚拟机栈]] 的区别 #card
-  card-last-interval:: 0.02
-  card-repeats:: 6
+  card-last-interval:: 0.01
+  card-repeats:: 7
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-13T07:47:41.620Z
-  card-last-reviewed:: 2024-08-13T07:47:41.621Z
+  card-next-schedule:: 2024-08-14T01:22:34.163Z
+  card-last-reviewed:: 2024-08-14T01:22:34.164Z
   card-last-score:: 3
 	- 物理地址
 		- 堆的物理地址分配是不连续的。所以GC时有各种算法
@@ -154,22 +154,22 @@
 	- 初始化
 	- <init>方法
 - 触发类加载的时机 4 #card
-  card-last-interval:: -1
-  card-repeats:: 1
+  card-last-interval:: 0.22
+  card-repeats:: 2
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-12T16:00:00.000Z
-  card-last-reviewed:: 2024-08-12T07:04:20.368Z
-  card-last-score:: 1
+  card-next-schedule:: 2024-08-14T06:22:11.555Z
+  card-last-reviewed:: 2024-08-14T01:22:11.556Z
+  card-last-score:: 3
 	- new关键字
 	- Class or Constructor的newInstance方法
 	- clone方法
 	- 反序列化
 - 类加载过程 #card
-  card-last-interval:: 0.02
-  card-repeats:: 6
+  card-last-interval:: 0.01
+  card-repeats:: 7
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-13T08:14:30.942Z
-  card-last-reviewed:: 2024-08-13T08:14:30.942Z
+  card-next-schedule:: 2024-08-14T01:32:15.940Z
+  card-last-reviewed:: 2024-08-14T01:32:15.940Z
   card-last-score:: 3
 	- 加载 {{cloze 导入class文件}}
 	- 验证 {{cloze 检测class文件的正确性}}
@@ -178,10 +178,10 @@
 	- 初始化 {{cloze 对静态变量和代码块执行初始化工作}}
 - 类加载器分类和双亲委派模型 #card
   card-last-interval:: 0
-  card-repeats:: 9
+  card-repeats:: 10
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-12T08:07:19.241Z
-  card-last-reviewed:: 2024-08-12T08:07:19.242Z
+  card-next-schedule:: 2024-08-14T01:03:33.819Z
+  card-last-reviewed:: 2024-08-14T01:03:33.819Z
   card-last-score:: 3
 	- 启动类加载器
 	- 扩展类加载器
@@ -203,10 +203,10 @@
 		- {{cloze 节省了一次指针定位的时间}} 好处
 - 对象分配策略 #card
   card-last-interval:: 0.01
-  card-repeats:: 6
+  card-repeats:: 7
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-13T08:15:21.389Z
-  card-last-reviewed:: 2024-08-13T08:15:21.389Z
+  card-next-schedule:: 2024-08-14T01:32:18.260Z
+  card-last-reviewed:: 2024-08-14T01:32:18.260Z
   card-last-score:: 3
 	- 新对象分配在eden区，大对象直接进入老年代
 	- 经历过一次Minor GC ,复制到surviro区，年龄+1
@@ -251,21 +251,21 @@
 		- 每次GC时回收
 		- 利用回收时的通知机制来管理堆外内存
 - 永久代会发生垃圾回收吗 #card
-  card-last-interval:: 0.24
-  card-repeats:: 2
+  card-last-interval:: 0.03
+  card-repeats:: 3
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-12T11:42:10.898Z
-  card-last-reviewed:: 2024-08-12T06:42:10.898Z
+  card-next-schedule:: 2024-08-14T01:21:35.963Z
+  card-last-reviewed:: 2024-08-14T01:21:35.963Z
   card-last-score:: 3
 	- 会，但是回收的条件比较苛刻
 		- 类及其所有对象都被回收
 		- 常量池中的常量无任何引用
 - ## 如何排查JVM问题 #card
   card-last-interval:: 0
-  card-repeats:: 8
+  card-repeats:: 9
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-12T08:10:14.308Z
-  card-last-reviewed:: 2024-08-12T08:10:14.308Z
+  card-next-schedule:: 2024-08-14T01:07:50.950Z
+  card-last-reviewed:: 2024-08-14T01:07:50.950Z
   card-last-score:: 3
 	- 使用 {{cloze `jmap`}} 查看各区域的使用情况
 	- 使用 {{cloze `jstack`}} 查看线程的运行情况，关注阻塞的线程、是否出现了死锁
@@ -312,10 +312,10 @@
 		-
 - Java程序 CPU突然飙升 该如何处理？#card
   card-last-interval:: 0
-  card-repeats:: 9
+  card-repeats:: 10
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-12T08:11:12.379Z
-  card-last-reviewed:: 2024-08-12T08:11:12.380Z
+  card-next-schedule:: 2024-08-14T01:12:10.667Z
+  card-last-reviewed:: 2024-08-14T01:12:10.668Z
   card-last-score:: 3
 	- 问题定位
 		- {{cloze top 命令}} 查看CPU占用情况，找到进程id
@@ -327,11 +327,11 @@
 		- 在循环的代码逻辑中，创建大量的新对象 {{cloze 减少对象的创建数量 or 使用对象池}}
 - JVM的**年轻代**内存分配为什么是1:1:8 #card
   card-last-score:: 3
-  card-repeats:: 8
-  card-next-schedule:: 2024-08-12T08:10:50.451Z
+  card-repeats:: 9
+  card-next-schedule:: 2024-08-14T01:08:23.359Z
   card-last-interval:: 0
   card-ease-factor:: 1.3
-  card-last-reviewed:: 2024-08-12T08:10:50.493Z
+  card-last-reviewed:: 2024-08-14T01:08:23.359Z
 	- 为什么要有Eden和servivor区
 		- {{cloze 减少被送入老年代的对象，进而减少Full GC次数}}
 	- 为什么要有2个servivor区
