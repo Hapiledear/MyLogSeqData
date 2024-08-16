@@ -185,6 +185,12 @@
 			- 尝试获取系统层级/JVM层级的某项共享资源不成功后，由系统/JVM将其唤醒
 			- `Lock.lock()` 方法，转移到的是`waiting` 等待状态，因为Lock底层是AQS, 被放入了队列，需要被释放锁的线程唤醒。
 	- 线程池如何优雅的关闭 #card
+	  card-last-interval:: 0.14
+	  card-repeats:: 1
+	  card-ease-factor:: 2.36
+	  card-next-schedule:: 2024-08-16T04:09:23.353Z
+	  card-last-reviewed:: 2024-08-16T01:09:23.353Z
+	  card-last-score:: 3
 		- 调用`shutdown()`
 		- 如果是长时间任务，考虑在任务中实现 {{cloze 保存点，保存此刻的执行状态}} ，下次启动后接着执行。
 - 分布式锁Redisson

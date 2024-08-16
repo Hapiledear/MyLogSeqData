@@ -75,6 +75,12 @@
 		- 异步发送MQ，MQ消息落盘
 	- 写入用户积分日志 + 更新用户积分
 - 线上系统异常的可能原因及其处理方案 #card
+  card-last-interval:: 0.14
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2024-08-16T04:09:19.994Z
+  card-last-reviewed:: 2024-08-16T01:09:19.994Z
+  card-last-score:: 3
 	- 新上线功能故障-- 回滚版本
 	- 第三方服务故障-- 熔断降级
 	- 接口突然变慢 -- 限流并做查询优化
@@ -84,3 +90,6 @@
 		- 发现问题并解决
 		- 测试
 		- 上线
+- 面试之前，熟练背诵下面四问及其衍生知识点 #card
+	- https://excalidraw.com/#json=O5F9e6p5q5hSquL5TDjFa,-9Si8E8olDgHOAZl38PGcg
+	- ![image.png](../assets/image_1723791408787_0.png)

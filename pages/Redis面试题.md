@@ -133,10 +133,10 @@
 	- 分布式锁需要考虑的三大问题 {{cloze 确认该锁是当前线程持有}} {{cloze 程序异常之后释放}} {{cloze 过期续期}}
 - 如何把固定前缀开通的key全部找出来 #card
   card-last-interval:: 0
-  card-repeats:: 9
+  card-repeats:: 10
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-13T08:18:02.030Z
-  card-last-reviewed:: 2024-08-13T08:18:02.030Z
+  card-next-schedule:: 2024-08-16T01:09:55.316Z
+  card-last-reviewed:: 2024-08-16T01:09:55.317Z
   card-last-score:: 3
 	- {{cloze scan命令可以提取指定模式的key列表}}
 - Redis的持久化机制 #card

@@ -337,6 +337,12 @@
 	- 为什么要有2个servivor区
 		- {{cloze 更贴合复制算法，解决碎片化问题}}
 - 监控JVM时，会关注哪些指标 #card
+  card-last-interval:: 0.14
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2024-08-16T04:09:52.621Z
+  card-last-reviewed:: 2024-08-16T01:09:52.621Z
+  card-last-score:: 3
 	- {{cloze 堆内存}} 使用情况
 		- 总量、使用量、大对象占比等
 	- {{cloze GC}} 情况
@@ -346,4 +352,23 @@
 	- {{cloze CPU}} 、 {{cloze 磁盘IO}} 和 {{cloze 网络流量}}
 	- {{cloze 类加载}} 的数量和大小
 	- {{cloze 日志}} 中的错误信息
--
+- JVM频繁GC，你会怎么办 #card
+	- 导出和分析日志
+		- 使用 {{cloze `-Xloggc`}} 命令，找到GC日志的地址
+		- 导入GC分析工具,有Java自带的 {{cloze VisualVM}} 和各种开源的如 {{cloze gceasy}}
+	- 关注核心指标
+		- {{cloze 堆内存}} 大小的变化趋势
+		- GC {{cloze 停顿}} 时间
+		- 在GC {{cloze 前后各区域大小}} 变化
+		- {{cloze 对象的}} 一些统计信息
+	- 现象和相应的策略
+		- 频繁Youn GC
+			- 调整 {{cloze 堆的大小 `--Xms:2g Xmx:2g`}} 和 {{cloze 新生代的大小`-Xmn:521m`}}
+			- GC后内存得不到大量释放，可能是代码有 {{cloze 内存泄露}}
+		- 频繁Full GC
+			- 调整 {{cloze 触发老年代回收}} 的阈值
+			- 调整 {{cloze 进入老年代最小的GC}} 年龄
+			- {{cloze 大对象进入老年代}} 的标准
+		- 通用策略
+			- 调整 {{cloze 内存区域大小比率}}
+			- 设置符合预期的 {{cloze 停顿时间}}
