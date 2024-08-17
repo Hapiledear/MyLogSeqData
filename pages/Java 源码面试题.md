@@ -153,11 +153,11 @@
 - [[AQS 抽象同步器]]
 - [线程池](https://www.throwx.cn/2020/08/23/java-concurrency-thread-pool-executor/)
 	- 线程池的状态以及作用 #card
-	  card-last-interval:: 0.14
-	  card-repeats:: 1
-	  card-ease-factor:: 2.36
-	  card-next-schedule:: 2024-08-12T09:39:38.778Z
-	  card-last-reviewed:: 2024-08-12T06:39:38.778Z
+	  card-last-interval:: 4
+	  card-repeats:: 2
+	  card-ease-factor:: 2.22
+	  card-next-schedule:: 2024-08-18T01:20:19.707Z
+	  card-last-reviewed:: 2024-08-14T01:20:19.707Z
 	  card-last-score:: 3
 		- `Running` 工作状态 -- {{cloze 接受并处理}} 任务
 		- `Shutdown` 准备关闭 -- 不再 {{cloze 接受新任务}} ，但 {{cloze 完成已有任务}}
@@ -165,11 +165,11 @@
 		- `Tidying` 清理 -- 进行 {{cloze 资源回收或其他钩子方法}}
 		- `Terminated` 已终止 -- 线程池 {{cloze 已经停止并且不能重新启动}}
 	- 线程的状态 #card
-	  card-last-interval:: 0.14
-	  card-repeats:: 1
-	  card-ease-factor:: 2.36
-	  card-next-schedule:: 2024-08-12T09:37:45.943Z
-	  card-last-reviewed:: 2024-08-12T06:37:45.944Z
+	  card-last-interval:: 4
+	  card-repeats:: 2
+	  card-ease-factor:: 2.22
+	  card-next-schedule:: 2024-08-18T01:18:49.422Z
+	  card-last-reviewed:: 2024-08-14T01:18:49.422Z
 	  card-last-score:: 3
 		- `new` 新建 -- 线程对象被创建后，但尚未启动
 		- `runnable` 可运行 -- 调用了`start()`方法后
@@ -184,5 +184,14 @@
 		- `blocked` 阻塞
 			- 尝试获取系统层级/JVM层级的某项共享资源不成功后，由系统/JVM将其唤醒
 			- `Lock.lock()` 方法，转移到的是`waiting` 等待状态，因为Lock底层是AQS, 被放入了队列，需要被释放锁的线程唤醒。
+	- 线程池如何优雅的关闭 #card
+	  card-last-interval:: 0.14
+	  card-repeats:: 1
+	  card-ease-factor:: 2.36
+	  card-next-schedule:: 2024-08-16T04:09:23.353Z
+	  card-last-reviewed:: 2024-08-16T01:09:23.353Z
+	  card-last-score:: 3
+		- 调用`shutdown()`
+		- 如果是长时间任务，考虑在任务中实现 {{cloze 保存点，保存此刻的执行状态}} ，下次启动后接着执行。
 - 分布式锁Redisson
 -

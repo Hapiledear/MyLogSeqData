@@ -1,0 +1,17 @@
+- 生产者 Producer
+	- ![image.png](../assets/image_1723625663546_0.png)
+	- 消息投送流程
+		- 主线程
+			- (key,value,topic) -> 消息构建message -> 拦截增强 -> 序列化 -> 分区
+		- 消息缓冲区
+			- 按照分区，将message聚合成producerBatch 消息批次
+		- 发送线程
+			- 从缓冲区取出一个批次 -> 构建Request -> selector投送的同时，放入InFlightRequests -> 分区转node -> http通信 -> 接收返回Response -> 匹配 Request 确保`exactly once`
+- Kafka服务
+- 消费者 Consumer
+	- 消费组与消费者
+	-
+- 什么情况下消息会丢失？
+- 如何做到exactly once?
+- Kafka的幂等和事物机制
+- [[Kafka面试题]]
