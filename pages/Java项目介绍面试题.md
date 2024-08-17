@@ -1,7 +1,7 @@
 - {{cards [[Java项目介绍面试题]] }}
 - 面试之前，熟练背诵下面四问及其衍生知识点 #card
-	- https://excalidraw.com/#json=O5F9e6p5q5hSquL5TDjFa,-9Si8E8olDgHOAZl38PGcg
-	- ![image.png](../assets/image_1723791408787_0.png)
+	- https://excalidraw.com/#json=BNqrK8oJpcRVW7qj897_C,L9ud88XKWicdCIN4fw-C_w
+	- ![image.png](../assets/image_1723895900584_0.png)
 - 介绍一下项目的架构，请求如何进入我们项目的 #card
   card-last-interval:: 0
   card-repeats:: 11
