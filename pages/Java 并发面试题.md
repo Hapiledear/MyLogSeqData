@@ -17,10 +17,10 @@
 		- {{cloze CUP层级的MESI协议，JMM的八种操作规范}}
 - volatile关键字的原理及其实战 #card #Java并发
   card-last-interval:: 0
-  card-repeats:: 9
+  card-repeats:: 10
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-14T01:07:47.398Z
-  card-last-reviewed:: 2024-08-14T01:07:47.400Z
+  card-next-schedule:: 2024-08-19T09:05:21.323Z
+  card-last-reviewed:: 2024-08-19T09:05:21.323Z
   card-last-score:: 3
 	- 解决了两大问题 {{cloze 保证变量对所有线程的可见性和禁止指令重排}} 通常搭配atomic类来实现 {{cloze 原子性}}
 	- 实践 单例模式中 {{cloze volatile修饰instance. 保证其写操作发生在读之前}}
@@ -260,10 +260,10 @@
 	- 使用时需要注意 {{cloze 变量回收}}  特别是在线程池的场景下
 - 线程池调度流程&各项参数 #card #Java并发
   card-last-interval:: 0
-  card-repeats:: 9
+  card-repeats:: 10
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-13T09:10:53.496Z
-  card-last-reviewed:: 2024-08-13T09:10:53.496Z
+  card-next-schedule:: 2024-08-19T09:14:06.942Z
+  card-last-reviewed:: 2024-08-19T09:14:06.943Z
   card-last-score:: 3
 	- 任务优先占用 {{cloze 核心线程数}}
 	- 核心线程满 {{cloze 进入等待队列}}

@@ -58,11 +58,11 @@
 		- 大盘监控，奖品库每15分钟播报一次
 		- 每日对账
 - 任务和积分模块设计要略 #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2024-08-16T07:59:33.436Z
-  card-last-reviewed:: 2024-08-12T07:59:33.436Z
+  card-last-interval:: 5.61
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2024-08-24T23:25:45.363Z
+  card-last-reviewed:: 2024-08-19T09:25:45.414Z
   card-last-score:: 3
 	- ![image.png](../assets/image_1723097644191_0.png)
 	- 用户行为收集

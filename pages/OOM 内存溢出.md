@@ -2,6 +2,12 @@
 - 导致该异常的原因通常是 当前内存大小无法满足程序需求而又无法继续申请内存扩张了
 - 堆内存溢出 #card
   id:: 66c2b37c-4e6f-47dc-a816-6830524773f1
+  card-last-interval:: 0.14
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2024-08-19T12:13:10.260Z
+  card-last-reviewed:: 2024-08-19T09:13:10.261Z
+  card-last-score:: 3
 	- 查看 heap dump文件
 		- 启动配置时的 {{cloze  `-XX:HeapDumpOnOutOfMemoryError`}}
 		- 命令手动触发 {{cloze  `jmap -dump`}}

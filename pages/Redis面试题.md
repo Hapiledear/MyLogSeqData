@@ -1,10 +1,10 @@
 - {{cards [[Redis面试题]]}}
 - 项目中缓存是如何使用的，为什么要用 #card
   card-last-interval:: 0
-  card-repeats:: 11
+  card-repeats:: 12
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-14T01:30:09.636Z
-  card-last-reviewed:: 2024-08-14T01:30:09.636Z
+  card-next-schedule:: 2024-08-19T09:18:04.425Z
+  card-last-reviewed:: 2024-08-19T09:18:04.425Z
   card-last-score:: 3
 	- 提高接口性能 {{cloze 缓存查询结果}} 用得最多的是 {{cloze 用户信息查询}} 接口
 	- 降低数据库压力 {{cloze 热点数据缓存}}
@@ -164,10 +164,10 @@
 		- 流程 {{cloze fork一个子进程}} {{cloze 重写期间，主线程的写命令被保存在缓冲区中}}
 - RDB和AOF各自的优缺点 #card
   card-last-interval:: 0
-  card-repeats:: 11
+  card-repeats:: 12
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-14T01:13:03.241Z
-  card-last-reviewed:: 2024-08-14T01:13:03.241Z
+  card-next-schedule:: 2024-08-19T09:04:09.081Z
+  card-last-reviewed:: 2024-08-19T09:04:09.082Z
   card-last-score:: 3
 	- RDB优点
 		- 生成的文件 {{cloze 只有一个紧凑的二进制文件，非常适合备份、全量复制场景}}
@@ -202,10 +202,10 @@
 	- 2个端口 {{cloze 6379 16379}}
 - 数据如何分散在机器上 #card
   card-last-interval:: 0
-  card-repeats:: 10
+  card-repeats:: 11
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-14T01:03:46.315Z
-  card-last-reviewed:: 2024-08-14T01:03:46.315Z
+  card-next-schedule:: 2024-08-19T09:25:26.733Z
+  card-last-reviewed:: 2024-08-19T09:25:26.734Z
   card-last-score:: 3
 	- {{cloze 一致性Hash算法}}
 		- 哈希环，顺时针，虚拟节点
@@ -213,12 +213,16 @@
 		- 槽位分配 {{cloze 整个集群有固定的 2^14=16384 个槽位，每个master分配了固定槽位范围}}
 		- 机器的增减 {{cloze master的增减只是移动部分槽位}}
 		- 好处 {{cloze 无论在数据量大 or 小时，数据分配都很均匀}}
+	- 为什么哈希槽是 2^14 而非 2^16=65535
+		- 发送心跳数据包会扩大一倍
+		- 集群节点数不太可能扩展到1000个，够用
+		- 节点中，槽信息存储在bitmap中，$$slot / N$$ 压缩比会更低
 - 节点宕机时的主备切换 #card
   card-last-interval:: 0
-  card-repeats:: 11
+  card-repeats:: 12
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-14T01:32:21.092Z
-  card-last-reviewed:: 2024-08-14T01:32:21.092Z
+  card-next-schedule:: 2024-08-19T09:03:00.365Z
+  card-last-reviewed:: 2024-08-19T09:03:00.366Z
   card-last-score:: 3
 	- 判断节点宕机
 		- 主观宕机 {{cloze 某一节点发现另一节点一段时间内无心跳返回了}}

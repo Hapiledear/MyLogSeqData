@@ -42,11 +42,11 @@
 	- 存储元素使用的是数组，扩容机制同ArrayList
 		- 使用`Object[]` 表示二叉树, 获取parent节点 `parent = (k - 1) >>> 1`
 	- 优先队列的元素插入/删除机制 #card
-	  card-last-interval:: 5.82
-	  card-repeats:: 3
-	  card-ease-factor:: 2.08
-	  card-next-schedule:: 2024-08-18T03:18:21.817Z
-	  card-last-reviewed:: 2024-08-12T08:18:21.818Z
+	  card-last-interval:: 15.05
+	  card-repeats:: 4
+	  card-ease-factor:: 1.94
+	  card-next-schedule:: 2024-09-03T10:11:07.106Z
+	  card-last-reviewed:: 2024-08-19T09:11:07.106Z
 	  card-last-score:: 3
 		- 将元素key插入到末尾 i=size
 		- 进行上浮操作
@@ -67,11 +67,11 @@
 			- 将当前位置的 entry == null ，标记为可回收
 			- 触发 ((66b1e39e-a9c7-4771-b6e0-d700bdd3808c))
 	- ThreadLocalMap的哈希算法与哈希冲突 #card
-	  card-last-interval:: 5.82
-	  card-repeats:: 3
-	  card-ease-factor:: 2.08
-	  card-next-schedule:: 2024-08-18T03:19:19.153Z
-	  card-last-reviewed:: 2024-08-12T08:19:19.153Z
+	  card-last-interval:: 15.05
+	  card-repeats:: 4
+	  card-ease-factor:: 1.94
+	  card-next-schedule:: 2024-09-03T10:17:58.159Z
+	  card-last-reviewed:: 2024-08-19T09:17:58.159Z
 	  card-last-score:: 3
 		- ThreadLocal 有自己的hashCode算法
 			- {{cloze 斐波那契数}} 的递增，只是初始值不是1,而是 `0x61c88647`

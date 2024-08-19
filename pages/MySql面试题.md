@@ -374,10 +374,10 @@
 		- Using where 该索引还用来执行查找操作
 - 工作中你是如何优化慢查询的 #card
   card-last-interval:: 0
-  card-repeats:: 9
+  card-repeats:: 10
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-13T09:04:20.898Z
-  card-last-reviewed:: 2024-08-13T09:04:20.898Z
+  card-next-schedule:: 2024-08-19T09:25:31.093Z
+  card-last-reviewed:: 2024-08-19T09:25:31.093Z
   card-last-score:: 3
 	- 添加合适的索引
 		- {{cloze 频繁查询的条件 和 排序字段 建立索引}}
@@ -473,21 +473,21 @@
 	- 合并插入：一条语句插入多条数据
 	- 顺序插入：数据按主键ID排序好
 - 用户订单表(uid,aid,create_time) 要想让查询强制走uid索引，可以怎么做？ #card
-  card-last-interval:: 11.02
-  card-repeats:: 4
-  card-ease-factor:: 1.66
-  card-next-schedule:: 2024-08-18T02:13:57.710Z
-  card-last-reviewed:: 2024-08-07T02:13:57.711Z
+  card-last-interval:: 7.33
+  card-repeats:: 5
+  card-ease-factor:: 1.52
+  card-next-schedule:: 2024-08-26T16:05:07.843Z
+  card-last-reviewed:: 2024-08-19T09:05:07.843Z
   card-last-score:: 3
 	- {{cloze force index}} 关键字
 	- 强制类型转化 将 {{cloze create_time 转为int型}}
 - 什么情况下，MySQL会锁住整个表? 如何减少或避免此类情况？#card
   card-last-score:: 3
-  card-repeats:: 2
-  card-next-schedule:: 2024-08-15T07:28:25.495Z
-  card-last-interval:: 3
-  card-ease-factor:: 2.08
-  card-last-reviewed:: 2024-08-12T07:28:25.496Z
+  card-repeats:: 3
+  card-next-schedule:: 2024-08-27T03:12:36.509Z
+  card-last-interval:: 7.76
+  card-ease-factor:: 1.94
+  card-last-reviewed:: 2024-08-19T09:12:36.510Z
   id:: 669f0d56-9b74-4b45-a032-989c4137ad4c
 	- 注意，锁住整个表A != 对表A施加表锁
 	- 表结构层面

@@ -203,11 +203,11 @@
 		- {{cloze 栈中的对象引用 -> 堆中的对象实例 -> 方法区中对应的类型信息}} 栈->堆->方法区
 		- {{cloze 节省了一次指针定位的时间}} 好处
 - 对象分配策略 #card
-  card-last-interval:: 0.01
-  card-repeats:: 7
+  card-last-interval:: 0
+  card-repeats:: 8
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-14T01:32:18.260Z
-  card-last-reviewed:: 2024-08-14T01:32:18.260Z
+  card-next-schedule:: 2024-08-19T09:04:05.644Z
+  card-last-reviewed:: 2024-08-19T09:04:05.644Z
   card-last-score:: 3
 	- 新对象分配在eden区，大对象直接进入老年代
 	- 经历过一次Minor GC ,复制到surviro区，年龄+1
@@ -383,6 +383,12 @@
 	- 使用第三方内存分析工具 如Jprofile
 - 如何修复内存泄露 #card
   id:: 66c2e7b0-6752-45f9-89fa-11fe7162bbf7
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2024-08-23T09:25:49.480Z
+  card-last-reviewed:: 2024-08-19T09:25:49.481Z
+  card-last-score:: 3
 	- 审查并优化 {{cloze 代码}}
 	- 使用 {{cloze 软引用、弱引用、虚引用}}
 	- 及时清除 {{cloze 集合或缓存中的}} 对象
