@@ -54,6 +54,7 @@
 			- 不断比较它的父节点，直到 {{cloze key.compare(es[parent]) >0}} 或 到达顶端
 			- 如果小于等于，则 {{cloze 交换两个的位置}}
 - [ThreadLocal](https://javaguide.cn/java/concurrent/threadlocal.html#threadlocalmap-get-%E8%AF%A6%E8%A7%A3)
+  id:: 66b195b5-0b07-4b75-91af-088d7e445523
 	- ThreadLocal如何防止内存溢出 #card
 	  card-last-interval:: 5.82
 	  card-repeats:: 3

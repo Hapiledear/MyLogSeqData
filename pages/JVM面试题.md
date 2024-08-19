@@ -357,7 +357,6 @@
 	- {{cloze 日志}} 中的错误信息
 - JVM频繁GC，你会怎么办 #card
   id:: 66bdbe38-595c-4b97-acf6-d42aa64126fc
-  collapsed:: true
 	- 导出和分析日志
 		- 使用 {{cloze `-Xloggc`}} 命令，找到GC日志的地址
 		- 导入GC分析工具,有Java自带的 {{cloze VisualVM}} 和各种开源的如 {{cloze gceasy}}
