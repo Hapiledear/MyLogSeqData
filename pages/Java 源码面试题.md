@@ -15,6 +15,7 @@
 		- 扩容大小，新数组是原数组的 {{cloze 1.5倍}} `oldCapacity + (oldCapacity >> 1)`
 		- 数据操作，新数组申请完成后，copy旧数组到新数组，位置不变
 - HashMap
+  id:: 66b20b36-7c48-424a-9b27-a2c18f1e2a9a
 	- HashMap的扩容机制/流程是怎样的 #card
 	  card-last-interval:: 5.82
 	  card-repeats:: 3
