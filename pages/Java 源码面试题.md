@@ -152,6 +152,8 @@
 	-
 - [[AQS 抽象同步器]]
 - [线程池](https://www.throwx.cn/2020/08/23/java-concurrency-thread-pool-executor/)
+  id:: 66b1bef3-8dcd-4de9-bf66-9e8e321e1f1c
+	- https://tech.meituan.com/2020/04/02/java-pooling-pratice-in-meituan.html
 	- 线程池的状态以及作用 #card
 	  card-last-interval:: 4
 	  card-repeats:: 2
@@ -193,5 +195,21 @@
 	  card-last-score:: 3
 		- 调用`shutdown()`
 		- 如果是长时间任务，考虑在任务中实现 {{cloze 保存点，保存此刻的执行状态}} ，下次启动后接着执行。
+	- 线程池支持哪些队列 #card
+		- 有界队列/无界队列 `LinkedBlockQueue` 最大值为 `Integer.MAX_VALUE`
+		- 双端队列 `LinkedBlockDeque`
+		- 优先队列 `PriorityBlockingQueue`
+		- 延迟队列 `DelayQueue`
+		- 同步移交队列 `SynchronousQueue`
+			- 种队列没有内部容量，任务提交者必须等待另一个线程接收并开始执行任务
+	- 线程池支持哪些拒绝策略 #card
+		- 拒绝并抛出异常 `RejectedExecutionException`
+		- 丢弃且不会抛出异常
+		- 提交任务的线程执行此任务
+		- 丢弃队列中最旧的任务，然后尝试提交
+	- 线程池的监控和动态修改手段 #card
+		- **Dynamic TP** 监控告警
+		- **Hippo** 动态修改线程池参数
+	-
 - 分布式锁Redisson
 -

@@ -5,6 +5,14 @@
 - 如无特殊说明，题中出现的存储引擎均为 [[InnoDb]]
 - [[分布式事务]]
 -
+- 数据库死锁的触发条件 和 解决方案 #card
+  id:: 66c2b8a3-dbe4-432d-92d9-e1b138d9ee50
+	- 两个或以上的事务，各自持有对方想要的资源，且都不会主动释放。
+	- 解决方案
+		- 查看 {{cloze 数据库监控}} ，手动kill事务
+		- 将 {{cloze 大事务}} 拆分为 {{cloze 小事务}}
+		- 合理使用 {{cloze 索引}} 和 {{cloze 隔离级别}}
+		- 改用 {{cloze 乐观锁}} 和 {{cloze 排队机制}}
 - SQL查询过程 #card
   card-last-interval:: 0
   card-repeats:: 10
@@ -196,6 +204,7 @@
   card-next-schedule:: 2024-08-14T00:55:34.915Z
   card-last-reviewed:: 2024-08-14T00:55:34.916Z
   card-last-score:: 3
+  id:: 66544682-3ef3-48a1-8016-f7c29dd8c85d
 	- 多版本并发控制
 	- 只工作在两种事物隔离级别下
 		- {{cloze 读已提交}} {{cloze 可重复读}}
@@ -214,6 +223,7 @@
   card-next-schedule:: 2024-08-13T09:19:54.540Z
   card-last-reviewed:: 2024-08-13T09:19:54.540Z
   card-last-score:: 3
+  id:: 66544682-bdee-4d8c-bf84-15f2624311e0
 	- 表锁
 		- 意向锁
 			- 作用 {{cloze 让表锁和行锁的共存更高效，大概的记录一下表中是否存在 行锁}}
@@ -302,6 +312,7 @@
   card-next-schedule:: 2024-08-13T09:05:12.100Z
   card-last-reviewed:: 2024-08-13T09:05:12.101Z
   card-last-score:: 3
+  id:: 66544682-8b5a-4888-9bd0-2104beb329f7
 	- 联合索引不满足最左匹配原则
 	- 使用了 `select * ` 肯定不会走 覆盖索引
 	- 索引列 参与了运算
@@ -345,6 +356,7 @@
   card-next-schedule:: 2024-08-13T09:03:34.994Z
   card-last-reviewed:: 2024-08-13T09:03:34.994Z
   card-last-score:: 3
+  id:: 66544682-c74c-4d87-b12d-00a4d0f39d87
 	- id 执行顺序
 		- {{cloze id不同，值越大越先执行}}
 		- {{cloze id相同，从上到下的顺序}}
@@ -379,31 +391,6 @@
 		- {{cloze 是否加载了不必要的字段}}
 		- {{cloze 是否命中索引}}
 		- 降低SQL语句的复杂度
-- 慢查询的案例和解决建议 #card
-  card-last-interval:: 29.21
-  card-repeats:: 5
-  card-ease-factor:: 1.94
-  card-next-schedule:: 2024-09-10T13:01:25.661Z
-  card-last-reviewed:: 2024-08-12T08:01:25.661Z
-  card-last-score:: 3
-	- 查询结果数据量大 & 根据非索引字段进行了排序(order by)
-		- 方案一，利用索引进行排序
-		- 方案二，一次性或分页读取到程序内存进行排序
-	- Join 的右表 使用了子查询
-		- 子查询会执行一次，将结果加载入内存，再进行join
-		- 方案一，避免使用子查询，改为left join
-	- order by a 与 where b=2 and c>3 ，经优化器后使用的索引是a而非b,c
-		- 生产环境数据倾斜，导致优化预估失效
-		- 方案，force_index 强制指定索引 or 利用索引失效原则 or 修改排序方式
-	- order by a limit 10 分页的最后一页 查询结果为6条  且 where中没有使用a
-		- 如果 SQL 使用的 limit 限制大于剩余的总条数，并且使用的索引条件不能很好的利用上有序的特性，那么 MYSQL 很可能会进行全表扫描
-		- 方案，分页查询的数据已经不满一页的情况下，最好手动设置 limit 参数
-	- 复杂查询 join 表过多
-		- 方案一，适当冗余字段 or 加工宽表
-		- 方案二，数据灌入ES
-		- 方案三，单表读取数据，程序进行处理
-	- 大表分页count时变慢
-		- 方案，分离count和 selectList.如使用ES作为count来源
 - bin log 和 redo log的区别 #card
   card-last-interval:: 0
   card-repeats:: 11
@@ -447,6 +434,7 @@
   card-next-schedule:: 2024-08-14T01:06:07.925Z
   card-last-reviewed:: 2024-08-14T01:06:07.925Z
   card-last-score:: 3
+  id:: 66544682-0e06-4a44-b423-789a8907f544
 	- 分布式事务问题
 		- {{cloze 使用相关中间件}}
 	- 跨节点join问题
@@ -500,6 +488,7 @@
   card-last-interval:: 3
   card-ease-factor:: 2.08
   card-last-reviewed:: 2024-08-12T07:28:25.496Z
+  id:: 669f0d56-9b74-4b45-a032-989c4137ad4c
 	- 注意，锁住整个表A != 对表A施加表锁
 	- 表结构层面
 		- 对 {{cloze 表结构}}进行修改
@@ -525,6 +514,7 @@
   card-next-schedule:: 2024-08-18T01:19:57.747Z
   card-last-reviewed:: 2024-08-14T01:19:57.747Z
   card-last-score:: 3
+  id:: 669f1220-37aa-4091-a51e-76a66e191b29
 	- {{cloze 主库负载过高}} ，产生的SQL数量超过从库*一个sql线程*所能承受的范围
 	- {{cloze 从库负载过高}} ，大量查询产生了锁等待
 	- {{cloze 网络延迟}}

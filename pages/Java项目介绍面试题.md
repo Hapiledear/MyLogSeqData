@@ -1,7 +1,4 @@
 - {{cards [[Java项目介绍面试题]] }}
-- 面试之前，熟练背诵下面四问及其衍生知识点 #card
-	- https://excalidraw.com/#json=BNqrK8oJpcRVW7qj897_C,L9ud88XKWicdCIN4fw-C_w
-	- ![image.png](../assets/image_1723895900584_0.png)
 - 介绍一下项目的架构，请求如何进入我们项目的 #card
   card-last-interval:: 0
   card-repeats:: 11
@@ -93,3 +90,12 @@
 		- 发现问题并解决
 		- 测试
 		- 上线
+- 提升接口QPS的策略 #card
+  id:: 66c2e98d-7825-4f7b-8e37-2ae2f7605cdc
+	- 优化数据库，包括 优化索引 和 表结构
+	- 使用缓存
+	- 异步处理，使用线程池 和 消息队列
+	- 线程池调优、JVM参数调优
+	- 服务拆分、读写分离
+	- 避免大事务
+	- 快速重试

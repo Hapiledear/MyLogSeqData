@@ -28,6 +28,7 @@
   card-next-schedule:: 2024-08-13T08:59:01.762Z
   card-last-reviewed:: 2024-08-13T08:59:01.762Z
   card-last-score:: 3
+  id:: 66544681-7486-43a2-832f-a98d2314a5a4
 	- 画一下JVM内存模型图，并描述每个模块的定义，作用，以及可能会存在的问题
 	- 虚拟机栈
 		- {{cloze 是线程私有的。每个方法被执行时，都在栈中同步创建一个栈帧}} 私有公有?何时创建
@@ -317,6 +318,7 @@
   card-next-schedule:: 2024-08-14T01:12:10.667Z
   card-last-reviewed:: 2024-08-14T01:12:10.668Z
   card-last-score:: 3
+  id:: 66b2c808-ec8f-41cc-85b4-9e91f056ce7c
 	- 问题定位
 		- {{cloze top 命令}} 查看CPU占用情况，找到进程id
 		- {{cloze top -Hp}} 查看进程中的线程，找到占用最高的线程ID
@@ -343,6 +345,7 @@
   card-next-schedule:: 2024-08-16T04:09:52.621Z
   card-last-reviewed:: 2024-08-16T01:09:52.621Z
   card-last-score:: 3
+  id:: 66544681-b7e8-492b-b50b-84d4270751e8
 	- {{cloze 堆内存}} 使用情况
 		- 总量、使用量、大对象占比等
 	- {{cloze GC}} 情况
@@ -353,6 +356,8 @@
 	- {{cloze 类加载}} 的数量和大小
 	- {{cloze 日志}} 中的错误信息
 - JVM频繁GC，你会怎么办 #card
+  id:: 66bdbe38-595c-4b97-acf6-d42aa64126fc
+  collapsed:: true
 	- 导出和分析日志
 		- 使用 {{cloze `-Xloggc`}} 命令，找到GC日志的地址
 		- 导入GC分析工具,有Java自带的 {{cloze VisualVM}} 和各种开源的如 {{cloze gceasy}}
@@ -372,3 +377,14 @@
 		- 通用策略
 			- 调整 {{cloze 内存区域大小比率}}
 			- 设置符合预期的 {{cloze 停顿时间}}
+- 如何判断出现了内存泄露 #card
+  id:: 66544682-4d24-4646-8ba6-527ef3a72f1d
+	- 堆内存使用量 {{cloze 持续增长}} ，即使在 {{cloze 垃圾回收}} 后也未显著下降
+	- 使用性能分析工具Virtual VM，找出 {{cloze 长时间存活且未被回收的对象}}
+	- 使用第三方内存分析工具 如Jprofile
+- 如何修复内存泄露 #card
+  id:: 66c2e7b0-6752-45f9-89fa-11fe7162bbf7
+	- 审查并优化 {{cloze 代码}}
+	- 使用 {{cloze 软引用、弱引用、虚引用}}
+	- 及时清除 {{cloze 集合或缓存中的}} 对象
+	-

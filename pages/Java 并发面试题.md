@@ -51,6 +51,7 @@
   card-next-schedule:: 2024-08-13T09:19:50.191Z
   card-last-reviewed:: 2024-08-13T09:19:50.191Z
   card-last-score:: 3
+  id:: 66544682-54b6-40a8-b0be-a8595a5d199b
 	- 锁消除 无锁
 		- {{cloze 在编译时明显检测到不会被其他线程访问到}}
 	- 偏向锁
@@ -109,6 +110,7 @@
   card-next-schedule:: 2024-08-14T01:15:48.018Z
   card-last-reviewed:: 2024-08-14T01:15:48.019Z
   card-last-score:: 3
+  id:: 66544682-588e-464b-9362-54ece80391ca
 	- 实现方式
 		- {{cloze Lock基于Java类实现，易于扩展，功能丰富}} {{cloze synch基于对象头实现，无法自定义}}
 	- 公平性
@@ -138,6 +140,7 @@
   card-next-schedule:: 2024-08-13T09:16:08.498Z
   card-last-reviewed:: 2024-08-13T09:16:08.499Z
   card-last-score:: 3
+  id:: 66544682-9c55-4747-8b61-7a3bca8924d9
 	- AQS是一个用来构建锁和同步器的框架
 	- 队列 {{cloze 有一个CLH 的虚拟双向链表组成的队列}}
 	- 状态 {{cloze 每个节点有一个int state 标识同步状态，使用CAS操作进行修改,=n表示未锁定}}
@@ -249,6 +252,7 @@
   card-last-reviewed:: 2024-08-14T01:01:38.228Z
   card-last-score:: 3
   card-last-interval:: 0
+  id:: 66544682-eada-4142-9f0c-5c9f52264ca6
 	- 每一个thread持有一个threadLocalMap {{cloze Entity是弱引用}} {{cloze key是被修饰的threadLocal对象}} {{cloze value是对象值}}
 	- 使用场景
 		- {{cloze 线程隔离}}

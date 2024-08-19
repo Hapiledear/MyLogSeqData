@@ -17,6 +17,7 @@
   card-next-schedule:: 2024-08-14T01:05:05.316Z
   card-last-reviewed:: 2024-08-14T01:05:05.316Z
   card-last-score:: 3
+  id:: 66544683-eccc-4a35-a207-6405a40f7b49
 	- 缓存与数据库的双写不一致
 		- 读的时候 {{cloze 先读缓存，再读数据库，最后把读取的数据放入缓存}}
 		- 写的时候 {{cloze 先更新数据库，再删除缓存}}
@@ -41,6 +42,7 @@
   card-next-schedule:: 2024-08-13T09:06:19.269Z
   card-last-reviewed:: 2024-08-13T09:06:19.269Z
   card-last-score:: 3
+  id:: 66544683-54e6-404a-b2a4-a1b75a3296cc
 	- string
 		- {{cloze 普通的kv存储，常用}}
 		- 底层结构是 {{cloze 动态字符串SDS}}
@@ -64,6 +66,7 @@
   card-next-schedule:: 2024-08-14T01:13:56.497Z
   card-last-reviewed:: 2024-08-14T01:13:56.497Z
   card-last-score:: 3
+  id:: 66544683-cc32-4b28-9fbb-dd51a00cf780
 	- 定期删除
 		- {{cloze 每隔一段时间，删除过期key}} {{cloze 采用随机抽取策略}}
 		- 为什么单个key不能到期删除? {{cloze 需要用监视器来负责监视key，虽然内存及时释放，但占用了宝贵的CPU资源}}
@@ -116,6 +119,7 @@
   card-next-schedule:: 2024-08-14T01:31:14.869Z
   card-last-reviewed:: 2024-08-14T01:31:14.869Z
   card-last-score:: 3
+  id:: 66544683-d1df-4dae-8535-c0706bccdc63
 	- 只有 {{cloze 网络请求模块}} 和 {{cloze 数据操作模块}} 是单线程的 其他的如 持久化模块、集群模块是多线程的
 	- 多线程的好处 {{cloze 使用多线程可以提升 IO利用率和CPU利用率}}
 		- Redis无需提升CPU利用率，基础操作都是基于内存的
@@ -128,6 +132,7 @@
   card-next-schedule:: 2024-08-14T01:24:10.355Z
   card-last-reviewed:: 2024-08-14T01:24:10.356Z
   card-last-score:: 3
+  id:: 66544683-3ee1-4592-aef0-872d932adf0d
 	- {{cloze setnx来争抢锁，再用expire加上过期时间}}
 	- 高可用分布式锁 {{cloze Redisson}} 但可能导致性能下降，建议使用 {{cloze zk实现分布式锁}}
 	- 分布式锁需要考虑的三大问题 {{cloze 确认该锁是当前线程持有}} {{cloze 程序异常之后释放}} {{cloze 过期续期}}
@@ -146,6 +151,7 @@
   card-next-schedule:: 2024-08-13T09:14:13.545Z
   card-last-reviewed:: 2024-08-13T09:14:13.546Z
   card-last-score:: 3
+  id:: 66544683-689f-49c0-b896-a44dfc456883
 	- bgsave 全量持久化
 		- 过程 {{cloze 生成子进程和当前内存快照，子进程进行持久化}}
 		- 缺点 {{cloze 非子进程的方式耗时较长，会导致停止服务}} {{cloze 如果不停机，可能丢失最后一部分数据}}
@@ -341,4 +347,11 @@
 	- 多个ziplist进行双向链接，构成了quickList
 	- zipList如何实现的内存连续性？
 		- 插入\删除时会重新计算内存长度，重新申请内存，极大概率会造成连锁更新。
--
+- 如何使用Redis实现限流 #card
+  id:: 66544683-599a-453a-86db-0981a27e96a2
+	- 固定时间窗口
+		- 使用 {{cloze k,v + 过期时间}} ，每次请求到来，将 {{cloze 计数器+1}}
+	- 滑动时间窗口
+		- 使用 {{cloze list}} ，每次请求到来，将 {{cloze 新请求放入末尾}} 、同时 {{cloze 删除队头的过期请求}} ，最后 {{cloze 统计list大小}}
+	- Redission框架-开箱即用
+	- Lua脚本-保证原子性
