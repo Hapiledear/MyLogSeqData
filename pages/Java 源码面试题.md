@@ -125,11 +125,11 @@
 		- idx  = {{cloze  ThreadHashCode & (newLen -1)}}
 - CompletableFuture
 	- CompletableFuture的实现和提供的功能 #card
-	  card-last-interval:: 5.82
-	  card-repeats:: 3
-	  card-ease-factor:: 2.08
-	  card-next-schedule:: 2024-08-28T20:44:15.771Z
-	  card-last-reviewed:: 2024-08-23T01:44:15.771Z
+	  card-last-interval:: 15.05
+	  card-repeats:: 4
+	  card-ease-factor:: 1.94
+	  card-next-schedule:: 2024-09-07T02:49:18.523Z
+	  card-last-reviewed:: 2024-08-23T01:49:18.523Z
 	  card-last-score:: 3
 		- 实现了两个接口 {{cloze `Future`}} 和 {{cloze `CompletionStage`}}
 		- 多种任务之间的编排功能

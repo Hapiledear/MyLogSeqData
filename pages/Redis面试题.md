@@ -94,10 +94,10 @@
 	- 不支持回滚，要么都执行，要么都不执行
 - 如何处理多个客户端并发写一个key? #card
   card-last-interval:: 0
-  card-repeats:: 9
+  card-repeats:: 10
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-13T09:16:03.426Z
-  card-last-reviewed:: 2024-08-13T09:16:03.426Z
+  card-next-schedule:: 2024-08-23T01:49:23.331Z
+  card-last-reviewed:: 2024-08-23T01:49:23.331Z
   card-last-score:: 3
 	- 使用事务 实现CAS
 		- {{cloze 事务具有watch机制,一旦被监测的key发生更改，本次提交就失效了}}
