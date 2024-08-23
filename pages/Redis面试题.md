@@ -83,6 +83,7 @@
 		- {{cloze volatile-lru}} 有过期时间的key中 lru
 		- {{cloze volatile-random}} 有过期时间的key中 随机移除
 		- {{cloze volatile-ttl}} 有过期时间的key中 移除最早过期时间的key
+		- {{cloze volatile-lfu}} 有过期时间的key中 移除最少访问的key
 - 了解Redis的事务机制吗？ #card
   card-last-interval:: 0
   card-repeats:: 9
