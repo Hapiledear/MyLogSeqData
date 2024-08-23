@@ -191,10 +191,10 @@
 	- 双亲委派： {{cloze 先将其委派给父类，如果父类不能加载，再自己来}}
 - 对象如何访问 #card
   card-last-interval:: 0.01
-  card-repeats:: 6
+  card-repeats:: 7
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-13T08:18:26.710Z
-  card-last-reviewed:: 2024-08-13T08:18:26.762Z
+  card-next-schedule:: 2024-08-23T02:20:17.171Z
+  card-last-reviewed:: 2024-08-23T02:20:17.171Z
   card-last-score:: 3
 	- 句柄
 		- {{cloze 栈中对象的引用 ->堆中句柄池中的句柄 -> 堆中的实例 和 方法区的类型信息}} 栈-> 堆->堆和方法区
@@ -387,6 +387,12 @@
 			- 调整 {{cloze 回收线程的数量}}
 - 如何判断出现了内存泄露 #card
   id:: 66544682-4d24-4646-8ba6-527ef3a72f1d
+  card-last-interval:: 0.14
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2024-08-23T05:18:01.075Z
+  card-last-reviewed:: 2024-08-23T02:18:01.076Z
+  card-last-score:: 3
 	- 堆内存使用量 {{cloze 持续增长}} ，即使在 {{cloze 垃圾回收}} 后也未显著下降
 	- 使用性能分析工具Virtual VM，找出 {{cloze 长时间存活且未被回收的对象}}
 	- 使用第三方内存分析工具 如Jprofile

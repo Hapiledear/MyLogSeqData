@@ -92,6 +92,12 @@
 		- 上线
 - 提升接口QPS的策略 #card
   id:: 66c2e98d-7825-4f7b-8e37-2ae2f7605cdc
+  card-last-interval:: 0.14
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2024-08-23T05:20:10.523Z
+  card-last-reviewed:: 2024-08-23T02:20:10.523Z
+  card-last-score:: 3
 	- 优化数据库，包括 优化索引 和 表结构
 	- 使用缓存
 	- 异步处理，使用线程池 和 消息队列

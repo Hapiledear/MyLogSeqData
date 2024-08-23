@@ -353,6 +353,12 @@
 		- 插入\删除时会重新计算内存长度，重新申请内存，极大概率会造成连锁更新。
 - 如何使用Redis实现限流 #card
   id:: 66544683-599a-453a-86db-0981a27e96a2
+  card-last-interval:: 0.14
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2024-08-23T05:20:12.610Z
+  card-last-reviewed:: 2024-08-23T02:20:12.610Z
+  card-last-score:: 3
 	- 固定时间窗口
 		- 使用 {{cloze k,v + 过期时间}} ，每次请求到来，将 {{cloze 计数器+1}}
 	- 滑动时间窗口
