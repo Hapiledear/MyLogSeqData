@@ -231,8 +231,8 @@
 		- **Dynamic TP** 监控告警
 		- **Hippo** 动态修改线程池参数
 	-
-- 分布式锁Redisson
-	- 加锁
+- 分布式锁Redisson #card
+	- 加锁&释放锁
 		- `hincryby key field value`   使用HashMap，field=uuid:thread_id
 		- 使用Lua脚本保证原子性
 		- 没有获取到时
@@ -243,5 +243,5 @@
 		- key中包含唯一标识
 		- value是重入次数
 	- 锁续期
-	- 释放锁
-		-
+		- watchdog机制，每10秒执行一次
+		- 基于时间轮的定时调度
