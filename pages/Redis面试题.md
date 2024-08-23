@@ -3,6 +3,7 @@
 	- 大Key问题
 	- 备份进程占用内存
 	- 过期内存没有得到及时回收
+	- 缓冲区占用过多
 - 项目中缓存是如何使用的，为什么要用 #card
   card-last-interval:: 0
   card-repeats:: 12
@@ -237,17 +238,21 @@
 		- {{cloze 如果从节点与主节点断开时间过长，则没有资格参与选举}}
 	- 从节点选举
 		- {{cloze 投票选举，超过半数者升级}}
-- Redis优化策略 #card
-  card-last-interval:: 0
-  card-repeats:: 9
-  card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-13T09:13:36.862Z
-  card-last-reviewed:: 2024-08-13T09:13:36.863Z
+- Redis的内存优化策略 #card
   card-last-score:: 3
-	- 在见名知意的情况下，使用短key
-	- 不要存过大的数据,存之前先把数据压缩
-	- 设置key的合理有效期,选择合适的回收策略
-	- 使用连接池，减少不必要的连接
+  card-repeats:: 9
+  card-next-schedule:: 2024-08-13T09:13:36.862Z
+  card-last-interval:: 0
+  card-ease-factor:: 1.3
+  card-last-reviewed:: 2024-08-13T09:13:36.863Z
+	- 合理设置 {{cloze 最大内存}} `maxmemory`
+	- 合适的 {{cloze 内存回收}} 策略
+	- {{cloze 压缩}} key和value，避免大key
+	- 共享 {{cloze 对象池}}
+	- 合理的内存 {{cloze 碎片}} 管理
+	- 合理配置 {{cloze 持久化}} 策略
+	- 关闭 {{cloze THP}} (大页内存分配)
+	- 合理设置 {{cloze 缓冲区}} 大小
 - 如何解决本地缓存与分布式缓存的数据不一致 #card
   card-last-interval:: 0
   card-repeats:: 9
