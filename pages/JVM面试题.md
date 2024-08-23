@@ -142,10 +142,10 @@
 		- 栈是线程私有的
 - 对象创建过程 #card
   card-last-interval:: 0.01
-  card-repeats:: 6
+  card-repeats:: 7
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-13T08:19:14.351Z
-  card-last-reviewed:: 2024-08-13T08:19:14.351Z
+  card-next-schedule:: 2024-08-23T06:01:48.325Z
+  card-last-reviewed:: 2024-08-23T06:01:48.325Z
   card-last-score:: 3
 	- 类加载
 	- 分配内存
