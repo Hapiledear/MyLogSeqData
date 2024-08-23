@@ -46,10 +46,10 @@
 	- 如果没有获取到锁，则会 {{cloze 让线程自旋等待，并不放弃CPU的执行时间}}
 - synchronized的锁升级机制 #card #Java并发
   card-last-interval:: 0
-  card-repeats:: 8
+  card-repeats:: 9
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-13T09:19:50.191Z
-  card-last-reviewed:: 2024-08-13T09:19:50.191Z
+  card-next-schedule:: 2024-08-23T01:37:59.098Z
+  card-last-reviewed:: 2024-08-23T01:37:59.098Z
   card-last-score:: 3
   id:: 66544682-54b6-40a8-b0be-a8595a5d199b
 	- 锁消除 无锁
@@ -228,10 +228,10 @@
 	- {{cloze CAS+volatile方式保证原子性}} 避免synch的高开销
 - CountdownLatch和CycleBarrar的区别 #card #Java并发
   card-last-interval:: 0
-  card-repeats:: 8
+  card-repeats:: 9
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-14T01:15:42.962Z
-  card-last-reviewed:: 2024-08-14T01:15:42.963Z
+  card-next-schedule:: 2024-08-23T01:35:51.394Z
+  card-last-reviewed:: 2024-08-23T01:35:51.394Z
   card-last-score:: 3
 	- 线程等待和执行方式 CD {{cloze 某个线程A等待若干线程执行完后才执行}} CB {{cloze 一组线程在某个状态等待，然后再同时执行}}
 	- 当前线程是否阻塞 CD {{cloze 调用countDown方法后，因为是计数器减1，当前线程不会阻塞}} CB {{cloze 调用 await方法后，会阻塞当前线程}}

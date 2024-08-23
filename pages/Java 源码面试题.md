@@ -125,11 +125,11 @@
 		- idx  = {{cloze  ThreadHashCode & (newLen -1)}}
 - CompletableFuture
 	- CompletableFuture的实现和提供的功能 #card
-	  card-last-interval:: 4
-	  card-repeats:: 2
-	  card-ease-factor:: 2.22
-	  card-next-schedule:: 2024-08-16T07:27:30.271Z
-	  card-last-reviewed:: 2024-08-12T07:27:30.271Z
+	  card-last-interval:: 5.82
+	  card-repeats:: 3
+	  card-ease-factor:: 2.08
+	  card-next-schedule:: 2024-08-28T20:44:15.771Z
+	  card-last-reviewed:: 2024-08-23T01:44:15.771Z
 	  card-last-score:: 3
 		- 实现了两个接口 {{cloze `Future`}} 和 {{cloze `CompletionStage`}}
 		- 多种任务之间的编排功能
@@ -169,11 +169,11 @@
 		- `Tidying` 清理 -- 进行 {{cloze 资源回收或其他钩子方法}}
 		- `Terminated` 已终止 -- 线程池 {{cloze 已经停止并且不能重新启动}}
 	- 线程的状态 #card
-	  card-last-interval:: 4
-	  card-repeats:: 2
-	  card-ease-factor:: 2.22
-	  card-next-schedule:: 2024-08-18T01:18:49.422Z
-	  card-last-reviewed:: 2024-08-14T01:18:49.422Z
+	  card-last-interval:: 5.82
+	  card-repeats:: 3
+	  card-ease-factor:: 2.08
+	  card-next-schedule:: 2024-08-28T20:36:34.699Z
+	  card-last-reviewed:: 2024-08-23T01:36:34.699Z
 	  card-last-score:: 3
 		- `new` 新建 -- 线程对象被创建后，但尚未启动
 		- `runnable` 可运行 -- 调用了`start()`方法后

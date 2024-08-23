@@ -313,10 +313,10 @@
 		-
 - Java程序 CPU突然飙升 该如何处理？#card
   card-last-interval:: 0
-  card-repeats:: 10
+  card-repeats:: 11
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-14T01:12:10.667Z
-  card-last-reviewed:: 2024-08-14T01:12:10.668Z
+  card-next-schedule:: 2024-08-23T01:43:08.450Z
+  card-last-reviewed:: 2024-08-23T01:43:08.450Z
   card-last-score:: 3
   id:: 66b2c808-ec8f-41cc-85b4-9e91f056ce7c
 	- 问题定位
