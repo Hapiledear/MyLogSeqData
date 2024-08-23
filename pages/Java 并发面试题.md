@@ -200,10 +200,10 @@
 	- 阻塞队列的经典应用场景是 {{cloze socket客户端的数据读取和解析}}
 - 什么是原子操作 #card #Java并发
   card-last-interval:: 0
-  card-repeats:: 9
+  card-repeats:: 10
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-13T09:12:58.041Z
-  card-last-reviewed:: 2024-08-13T09:12:58.041Z
+  card-next-schedule:: 2024-08-23T01:11:08.042Z
+  card-last-reviewed:: 2024-08-23T01:11:08.042Z
   card-last-score:: 3
 	- 定义 {{cloze 一连串操作，要么都执行完，要么都不执行}}
 	- 如何保证原子性 {{cloze CAS指令}} {{cloze Lock和synchroize}}
@@ -272,11 +272,11 @@
 	- 如何创建线程 {{cloze 通过线程工厂 ThreadFactory}}
 	- 何时缩容到核心线程数 {{cloze 线程最大空闲时长}}
 - 线程池调优策略  #card #Java并发
-  card-last-interval:: 0.01
-  card-repeats:: 7
+  card-last-interval:: 0
+  card-repeats:: 8
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-14T01:32:23.844Z
-  card-last-reviewed:: 2024-08-14T01:32:23.844Z
+  card-next-schedule:: 2024-08-23T01:11:04.378Z
+  card-last-reviewed:: 2024-08-23T01:11:04.378Z
   card-last-score:: 3
 	- 通用规则2条
 		- {{cloze 最大线程数=核心线程数 优先创建线程而不是入队等待}}

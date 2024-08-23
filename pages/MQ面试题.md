@@ -43,10 +43,10 @@
 	- channel是建立在TCP连接上的虚拟连接，没有数量限制。达到复用TCP连接的目的
 - Rabbit MQ  如何保证不重复消费? 幂等性  #card
   card-last-interval:: 0
-  card-repeats:: 11
+  card-repeats:: 12
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-14T01:27:21.732Z
-  card-last-reviewed:: 2024-08-14T01:27:21.732Z
+  card-next-schedule:: 2024-08-23T01:15:13.227Z
+  card-last-reviewed:: 2024-08-23T01:15:13.227Z
   card-last-score:: 3
 	- 缓存 {{cloze 使用缓存记录唯一ID，设置一个过期时间}}
 	- 数据库 {{cloze 使用一张表记录已消费的数据，发生主键冲突则证明已消费}}
