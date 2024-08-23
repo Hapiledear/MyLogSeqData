@@ -233,8 +233,15 @@
 	-
 - 分布式锁Redisson
 	- 加锁
-		- key=
-		-
+		- `hincryby key field value`   使用HashMap，field=uuid:thread_id
+		- 使用Lua脚本保证原子性
+		- 没有获取到时
+			- 订阅锁释放的通知
+			- 不断的重试，询问通知
 	- 锁重入
+		- 加锁脚本是CAS操作
+		- key中包含唯一标识
+		- value是重入次数
 	- 锁续期
 	- 释放锁
+		-
