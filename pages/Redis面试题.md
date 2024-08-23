@@ -1,4 +1,8 @@
 - {{cards [[Redis面试题]]}}
+- Redis集群中，有一台机器内存占用大，可能的原因和解决方案 #card
+	- 大Key问题
+	- 备份进程占用内存
+	- 过期内存没有得到及时回收
 - 项目中缓存是如何使用的，为什么要用 #card
   card-last-interval:: 0
   card-repeats:: 12

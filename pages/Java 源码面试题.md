@@ -232,6 +232,7 @@
 		- **Hippo** 动态修改线程池参数
 	-
 - 分布式锁Redisson #card
+  id:: 66b9f4a6-7e94-4124-8048-1b4a483420ed
 	- 加锁&释放锁
 		- `hincryby key field value`   使用HashMap，field=uuid:thread_id
 		- 使用Lua脚本保证原子性
