@@ -61,10 +61,10 @@
 		- `zrange 0 -1` 获取全部元素
 - Redis的过期策略有哪些?数据明明过期了，怎么还占用着内存 #card
   card-last-interval:: 0
-  card-repeats:: 11
+  card-repeats:: 12
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-14T01:13:56.497Z
-  card-last-reviewed:: 2024-08-14T01:13:56.497Z
+  card-next-schedule:: 2024-08-23T01:29:30.771Z
+  card-last-reviewed:: 2024-08-23T01:29:30.771Z
   card-last-score:: 3
   id:: 66544683-cc32-4b28-9fbb-dd51a00cf780
 	- 定期删除

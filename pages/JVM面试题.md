@@ -122,11 +122,11 @@
 		- {{cloze 存放在[[Java 堆内存]]}}
 -
 - ## [[Java 堆内存]] 与[[Java 虚拟机栈]] 的区别 #card
-  card-last-interval:: 0.01
-  card-repeats:: 7
+  card-last-interval:: 0
+  card-repeats:: 8
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-14T01:22:34.163Z
-  card-last-reviewed:: 2024-08-14T01:22:34.164Z
+  card-next-schedule:: 2024-08-23T01:30:51.146Z
+  card-last-reviewed:: 2024-08-23T01:30:51.147Z
   card-last-score:: 3
 	- 物理地址
 		- 堆的物理地址分配是不连续的。所以GC时有各种算法

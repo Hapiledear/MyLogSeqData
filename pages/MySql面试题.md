@@ -470,10 +470,10 @@
 		- {{cloze 数据工厂，离线计算。 直接接入ES}}
 - 大批量数据的插入 #card
   card-last-interval:: 0
-  card-repeats:: 11
+  card-repeats:: 12
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-14T01:28:30.452Z
-  card-last-reviewed:: 2024-08-14T01:28:30.452Z
+  card-next-schedule:: 2024-08-23T01:26:49.882Z
+  card-last-reviewed:: 2024-08-23T01:26:49.883Z
   card-last-score:: 3
 	- 开启事务
 	- 合并插入：一条语句插入多条数据
