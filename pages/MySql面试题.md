@@ -7,6 +7,12 @@
 -
 - 数据库死锁的触发条件 和 解决方案 #card
   id:: 66c2b8a3-dbe4-432d-92d9-e1b138d9ee50
+  card-last-interval:: 0.14
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2024-08-23T04:17:14.731Z
+  card-last-reviewed:: 2024-08-23T01:17:14.731Z
+  card-last-score:: 3
 	- 两个或以上的事务，各自持有对方想要的资源，且都不会主动释放。
 	- 解决方案
 		- 查看 {{cloze 数据库监控}} ，手动kill事务

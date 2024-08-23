@@ -177,11 +177,11 @@
 		- 过滤器，按照定义顺序执行
 		- 拦截器，在代码中控制自由控制是否调用后续拦截器
 - Spring 事务的传播机制 #card
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2024-08-16T07:59:14.300Z
-  card-last-reviewed:: 2024-08-12T07:59:14.300Z
+  card-last-interval:: 5.82
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2024-08-28T20:17:52.442Z
+  card-last-reviewed:: 2024-08-23T01:17:52.442Z
   card-last-score:: 3
 	- 基于对现有事务的态度分类
 		- `REQUIRED` 当前*保证有*
