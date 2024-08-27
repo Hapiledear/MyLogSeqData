@@ -30,5 +30,18 @@
 	- Merge Threshold -- 节点合并的阈值
 	- Variable-Length Keys -- 可变长度的Key
 		- 如果拿字符串当作索引的Key，那么很有可能它是变长的
-		-
-	-
+		- 存储Key的指针
+		  logseq.order-list-type:: number
+		- Node节点页可变长度
+		  logseq.order-list-type:: number
+		- 前导0填充
+		  logseq.order-list-type:: number
+		- Key Map 中间槽
+		  logseq.order-list-type:: number
+			- 点里面有数组形式排布的slot，slot中存储指向对应KV的指针
+			  logseq.order-list-type:: number
+- B+树的存储优化方案
+	- 前缀压缩
+	- 去重
+	- 按批插入
+-
