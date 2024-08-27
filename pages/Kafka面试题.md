@@ -1,10 +1,13 @@
+- {{cards [[Kafka面试题]]}}
 - Kafka分区的好处 #card
 	- 并行处理
 	- 负载均衡
 	- 多副本容错
 	- partition内部消息保证顺序
 - Kafka中，消费者的分区方案都有哪些 #card
-	-
+	- Range Assignor: 根据 {{cloze 分区范围}} 进行分配，简单但可能导致不均衡
+	- Round Robin Assignor 通过 {{cloze 轮询方式}} 分配分区，实现均衡负载
+	- Sticky Assignor: 尝试保持分区分配的 {{cloze 稳定性}} ，同时考虑负载均衡
 - Kafka的消息顺序性是如何保证的，如果需要全局顺序性应该如何处理？#card
 	- 生产端 -- 分区键 和 唯一ID
 	- Broken端 -- 幂等，单分区内的顺序性
