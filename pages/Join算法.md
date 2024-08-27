@@ -29,8 +29,12 @@
 		- $$cost=M+(m*C)$$ C为index上查找每个tuple的均值
 - Sort Merge Join
 	- 阶段一：Sort
-		- 以join key为基准，对两张表数据进行排序，可以用外排。
+		- 以join key为基准，对两张表数据进行排序，可以用外排序。
 	- 阶段二：Merge
 		- 使用两个指针指向排序好的两张表，然后进行匹配。
-		-
+		- 根据join类型的不同，inner table的指针可能需要回退。
+	- ![image.png](../assets/image_1724740205277_0.png)
+	- $$Sort R Cost=2M*(1+\left \lceil log_{B-1}\left \lceil M/B \right \rceil  \right \rceil )$$
+	- $$Sort S Cost=2N(1+\left \lceil log_{B-1}\left \lceil N/B \right \rceil  \right \rceil )$$
+	-
 - Hash Join
