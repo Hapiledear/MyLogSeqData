@@ -33,7 +33,7 @@
 - Sort Merge Join
   id:: 66cd6e2b-0485-4559-8bc3-c0eb4a40ebe7
 	- 阶段一：Sort
-		- 以join key为基准，对两张表数据进行排序，可以用外排序。
+		- 以join key为基准，对两张表数据进行排序，可以用 ((66cd7b1e-0d77-4145-a82a-92577767c2b9))。
 	- 阶段二：Merge
 		- 使用两个指针指向排序好的两张表，然后进行匹配。
 		- 根据join类型的不同，inner table的指针可能需要回退。
