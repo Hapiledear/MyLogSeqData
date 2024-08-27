@@ -12,6 +12,7 @@
 	- 主要是计算磁盘的IO开销。
 	- 假设R表的大小为M页，m条数据; S表大小为N页，n条数据。
 - Nested Loop Join 嵌套循环join
+  id:: 66cd6e0e-e915-48c9-a5d0-58c9a8bcfc7a
 	- ![image.png](../assets/image_1724739289356_0.png){:height 241, :width 326}
 	- $$ cost =M+(m*N)$$
 	- 优化一、基于页的嵌套循环join Block Nested Loop Join
@@ -34,7 +35,26 @@
 		- 使用两个指针指向排序好的两张表，然后进行匹配。
 		- 根据join类型的不同，inner table的指针可能需要回退。
 	- ![image.png](../assets/image_1724740205277_0.png)
-	- $$Sort R Cost=2M*(1+\left \lceil log_{B-1}\left \lceil M/B \right \rceil  \right \rceil )$$
-	- $$Sort S Cost=2N(1+\left \lceil log_{B-1}\left \lceil N/B \right \rceil  \right \rceil )$$
-	-
+	- $$\begin{align}
+	  SortRCost & = 2M*(1+\left \lceil log_{B-1}\left \lceil M/B \right \rceil  \right \rceil )
+	  \newline
+	  SortSCost & = 2N(1+\left \lceil log_{B-1}\left \lceil N/B \right \rceil  \right \rceil )
+	  \newline
+	  Merge Cost & = (M+N)
+	  \end{align}$$
+	- 在最糟糕的情况下,join的两列所有自动值都相等，指针回溯，退化成原始的 ((66cd6e0e-e915-48c9-a5d0-58c9a8bcfc7a))
 - Hash Join
+	- 阶段一：Build 索引构建
+		- 扫描outer table中的数据，使用`h1(joinKey)`，构建Hash Table
+	- 阶段二：Probe 点查询
+		- 对inner table中的每条数据，以join key为参数，使用`h1(joinKey)`,定位Hash Table进行查询。如果找到能够匹配的KV，就可以完成join操作
+	- ![image.png](../assets/image_1724740911861_0.png)
+	- Hash Table存储细节
+		- Key=join条件中的字段
+		- Value=全量数据full tuple or tuple ID
+	- 优化一：布隆过滤器
+		- 构建Hash Table的同时，构建一个Bloom Filter。用于过滤无效查询(库中没有相应值)
+	- 优化二：Grace Hash Join
+		- 当内存容量不足以存下整张HashTable时，只能将部分数据驱逐到磁盘
+		- build阶段：对2章表使用`h1(joinKey)` 分别构建两张HashTable
+		- Probe阶段：将tuple所在的两个Hash桶的数据
