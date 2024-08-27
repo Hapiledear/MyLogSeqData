@@ -1,4 +1,6 @@
 - 在查询计划中，通常把小表(所占页数较少的)放在左侧，称为*驱动表*。
+- 通常情况下，  ((66cd6e32-e80d-4c79-bd22-a49fcc056ae3))是首选; 数据倾斜大、join结果希望有顺序，则 
+   ((66cd6e2b-0485-4559-8bc3-c0eb4a40ebe7)) 最优。
 - Join算子的输出
 	- R表中的记录r与S表中的记录s，满足匹配条件，r&s组成一条新记录，返回给上级算子。
 	- 影响输出的三个因素
@@ -29,6 +31,7 @@
 		- ![image.png](../assets/image_1724739862669_0.png)
 		- $$cost=M+(m*C)$$ C为index上查找每个tuple的均值
 - Sort Merge Join
+  id:: 66cd6e2b-0485-4559-8bc3-c0eb4a40ebe7
 	- 阶段一：Sort
 		- 以join key为基准，对两张表数据进行排序，可以用外排序。
 	- 阶段二：Merge
@@ -44,6 +47,7 @@
 	  \end{align}$$
 	- 在最糟糕的情况下,join的两列所有自动值都相等，指针回溯，退化成原始的 ((66cd6e0e-e915-48c9-a5d0-58c9a8bcfc7a))
 - Hash Join
+  id:: 66cd6e32-e80d-4c79-bd22-a49fcc056ae3
 	- 阶段一：Build 索引构建
 		- 扫描outer table中的数据，使用`h1(joinKey)`，构建Hash Table
 	- 阶段二：Probe 点查询
@@ -57,4 +61,10 @@
 	- 优化二：Grace Hash Join
 		- 当内存容量不足以存下整张HashTable时，只能将部分数据驱逐到磁盘
 		- build阶段：对2章表使用`h1(joinKey)` 分别构建两张HashTable
-		- Probe阶段：将tuple所在的两个Hash桶的数据
+		- Probe阶段：将tuple所在的两个Hash桶的数据载入内存，做 ((66cd6e0e-e915-48c9-a5d0-58c9a8bcfc7a))
+		- ![image.png](../assets/image_1724741246654_0.png)
+		- 如果分桶后还是放不进内存，则使用`h2(joinKey)`对桶再次分区。可以递归执行这个过程，直到切成足够大小的块。
+		- buffer充足的情况下：$$cost=3(M+N)$$
+		- 如果DBMS知道outer table的大小，就可以为它构建静态的Hash table，否则就必须构建可扩容的table或外溢到磁盘
+			- outer table是**动态**的情况：`A join B join C` ,此时A join B 生成的中间结果就是动态大小的。
+-
