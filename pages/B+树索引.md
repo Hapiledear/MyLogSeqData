@@ -3,7 +3,32 @@
 	- 有M个子节点，每个子节点都有差不多的深度；
 	- 包含[M/2 -1,M-1]个KV， `M/2 -1 <= keys.size() <= M-1`
 	- 每个非叶子节点有k个key，k+1个非空指针指向child
-- B+树如果设计得合理，可以使得一个节点的leaf node 的数据大小正好就是一页
+- B+树如果设计得合理，可以使得
 - Leaf Node 的结构
 	- Level-- 处在树中的层级
-	- Slots --
+	- Slots -- 空闲槽的数量
+	- Prev、Next 指针
+	- Sorted keys [ ]
+	- Values[] 既可以存 Record ID 也可以存整个Tuple数据
+- B+树的插入 --页分裂
+	- 找到正确的Leaf Node
+	- 将数据翻入Leaf Node 并符合排序
+		- if LeadNode有空间 return
+		- else 将LeafNode中的keys拆分到 LeafNode 和 LeafNode2
+			- 从中间的key平分，middle key被分到 LeafNode2
+			- 插入新生成的指向LeafNode2的指针到父节点和middle key
+- B+树的删除 -- 页合并
+	- 从root节点开始，找到包含entry的LeafNode
+	- 移除entry
+		- if LeafNode.size() > M/2 -1 return
+		- else: 合并周边节点
+			- 试着向兄弟节点“借”entry
+			- 如果不行，合并LeafNode和兄弟节点
+			- 如果合并发生，必须删除父节点中，与合并有关(LeafNode or 兄弟节点 )的keys
+- B+树的具体实现策略
+	- Node Size -- 一个节点的leaf node 的数据大小正好就是一页
+	- Merge Threshold -- 节点合并的阈值
+	- Variable-Length Keys -- 可变长度的Key
+		- 如果拿字符串当作索引的Key，那么很有可能它是变长的
+		-
+	-
