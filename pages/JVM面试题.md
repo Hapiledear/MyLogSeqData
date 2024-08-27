@@ -357,6 +357,7 @@
 	- {{cloze CPU}} 、 {{cloze 磁盘IO}} 和 {{cloze 网络流量}}
 	- {{cloze 类加载}} 的数量和大小
 	- {{cloze 日志}} 中的错误信息
+	- 监控工具 {{cloze VisualVM}} {{cloze JConsole}}
 - JVM频繁GC，你会怎么办 #card
   id:: 66bdbe38-595c-4b97-acf6-d42aa64126fc
   card-last-interval:: 0.14
