@@ -1,6 +1,12 @@
 - {{cards [[Redis面试题]]}}
 - Redis集群中，有一台机器内存占用大，可能的原因和解决方案 #card
   id:: 66c82ec9-e47c-448a-8834-1526f1dca444
+  card-last-interval:: 0.14
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2024-09-02T05:56:25.173Z
+  card-last-reviewed:: 2024-09-02T02:56:25.173Z
+  card-last-score:: 3
 	- 大Key问题
 	- 备份进程占用内存
 	- 过期内存没有得到及时回收
@@ -348,6 +354,12 @@
 		- 遍历每一层的节点，直到遇见NULL 或 >目标值
 		- 向下一层，继续遍历该层
 - Redis的跳表有哪些优缺点，相比于平衡树 #card
+  card-last-interval:: 0.14
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2024-09-02T05:55:43.834Z
+  card-last-reviewed:: 2024-09-02T02:55:43.835Z
+  card-last-score:: 3
 	- 实现简单。查询和插入的效率高
 	- 依赖于随机数，不稳定。极端情况下会退化成o(n)
 	- 需要额外的层级和指针，更大的内存开销
