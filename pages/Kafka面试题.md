@@ -1,5 +1,11 @@
 - {{cards [[Kafka面试题]]}}
 - Kafka分区的好处 #card
+  card-last-interval:: 0.14
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2024-09-02T05:59:41.285Z
+  card-last-reviewed:: 2024-09-02T02:59:41.285Z
+  card-last-score:: 3
 	- 并行处理
 	- 负载均衡
 	- 多副本容错
@@ -34,6 +40,12 @@
 	- 消费端 -- 手动提交偏移量 、 业务幂等处理
 	- Broken端 -- 幂等+事物机制
 - Kafka的性能优化策略 #card
+  card-last-interval:: 0.14
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2024-09-02T06:00:59.125Z
+  card-last-reviewed:: 2024-09-02T03:00:59.125Z
+  card-last-score:: 3
 	- 调整分区数
 	- 优化生产端配置 `batch.size` 和 `linger.ms`
 		- 如果我们为这个分区积累的字节数少于这个数目，我们将在`linger.ms`上“逗留”一段时间，等待更多的记录出现

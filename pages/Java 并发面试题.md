@@ -121,10 +121,10 @@
 		- {{cloze Lock可以在不同范围、不同的顺序获取和释放锁}} {{cloze synch只能在进临界区获取和释放}}
 - 可重入锁的实现原理  #card #Java并发
   card-last-interval:: 0
-  card-repeats:: 9
+  card-repeats:: 10
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-13T08:28:02.530Z
-  card-last-reviewed:: 2024-08-13T08:28:02.530Z
+  card-next-schedule:: 2024-09-02T03:07:27.101Z
+  card-last-reviewed:: 2024-09-02T03:07:27.101Z
   card-last-score:: 3
 	- 重入性
 		- {{cloze 已获得锁的线程可以再次获取}}
@@ -179,10 +179,10 @@
 		- {{cloze ConcurMap一次只锁一个分段}}
 - CopyOnWriteArrayList是什么，实践场景 #card #Java并发
   card-last-interval:: 0.01
-  card-repeats:: 6
+  card-repeats:: 7
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-13T08:19:18.015Z
-  card-last-reviewed:: 2024-08-13T08:19:18.015Z
+  card-next-schedule:: 2024-09-02T03:01:03.245Z
+  card-last-reviewed:: 2024-09-02T03:01:03.245Z
   card-last-score:: 3
 	- 字如其名 {{cloze 它的写入操作将copy出一份副本 ，再在这个副本上进行更改}}
 	- 缺点 {{cloze copy数组代价高昂，消耗内存}}

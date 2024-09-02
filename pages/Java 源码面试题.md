@@ -233,6 +233,12 @@
 	-
 - 分布式锁Redisson #card
   id:: 66b9f4a6-7e94-4124-8048-1b4a483420ed
+  card-last-interval:: 0.14
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2024-09-02T05:59:14.485Z
+  card-last-reviewed:: 2024-09-02T02:59:14.485Z
+  card-last-score:: 3
 	- 加锁&释放锁
 		- `hincryby key field value`   使用HashMap，field=uuid:thread_id
 		- 使用Lua脚本保证原子性
