@@ -23,10 +23,10 @@
 	- 本地接口 {{cloze 调用本地方法}}
 - 说一下JVM内存模型 #card
   card-last-interval:: 0
-  card-repeats:: 9
+  card-repeats:: 10
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-13T08:59:01.762Z
-  card-last-reviewed:: 2024-08-13T08:59:01.762Z
+  card-next-schedule:: 2024-09-02T03:12:13.733Z
+  card-last-reviewed:: 2024-09-02T03:12:13.734Z
   card-last-score:: 3
   id:: 66544681-7486-43a2-832f-a98d2314a5a4
 	- 画一下JVM内存模型图，并描述每个模块的定义，作用，以及可能会存在的问题
@@ -232,10 +232,10 @@
 		- 只针对新生代的Young GC 和 新生代&老年代的Mix GC
 - 4种引用及应用场景 #card
   card-last-interval:: 0
-  card-repeats:: 9
+  card-repeats:: 10
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-13T09:04:56.803Z
-  card-last-reviewed:: 2024-08-13T09:04:56.804Z
+  card-next-schedule:: 2024-09-02T03:13:44.318Z
+  card-last-reviewed:: 2024-09-02T03:13:44.318Z
   card-last-score:: 3
 	- 强引用
 		- new关键字触发
@@ -274,10 +274,10 @@
 	- 使用 {{cloze `visualvm`}} 分析大内存占用，如 短时间内产生的大量小对象，长期的大对象以及长期得不到回收的对象
 - JVM参数 调优经验 #card
   card-last-interval:: 0.02
-  card-repeats:: 4
+  card-repeats:: 5
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-13T09:01:54.566Z
-  card-last-reviewed:: 2024-08-13T09:01:54.566Z
+  card-next-schedule:: 2024-09-02T03:12:40.445Z
+  card-last-reviewed:: 2024-09-02T03:12:40.445Z
   card-last-score:: 3
 	- {{cloze -Xms -Xmx }} 初始堆内存，最大堆内存
 	- {{cloze -Xmn -XX: SuvivorRation -XX:NewRation}} 新生代大小 e,s1,s2的比例 新生代:老年代

@@ -238,10 +238,10 @@
 	- 复用 CD {{cloze 不能复用}} CB {{cloze 可以复用}}
 - final类 不可变对象 描述 #card #Java并发
   card-last-interval:: 0.02
-  card-repeats:: 4
+  card-repeats:: 5
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-13T09:02:35.393Z
-  card-last-reviewed:: 2024-08-13T09:02:35.393Z
+  card-next-schedule:: 2024-09-02T03:13:10.357Z
+  card-last-reviewed:: 2024-09-02T03:13:10.357Z
   card-last-score:: 3
 	- 对象一旦被创建，它的属性值就不能改变 ，可以通过反射方式进行破坏
 	- 保证了内存的可见性，不需要额外的同步手段，提升代码执行效率

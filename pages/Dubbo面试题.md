@@ -25,11 +25,11 @@
 	- 最小调用次数
 - Dubbo的失败策略 #card
   card-last-score:: 3
-  card-repeats:: 9
-  card-next-schedule:: 2024-08-13T09:04:29.875Z
+  card-repeats:: 10
+  card-next-schedule:: 2024-09-02T03:13:32.189Z
   card-last-interval:: 0
   card-ease-factor:: 1.3
-  card-last-reviewed:: 2024-08-13T09:04:29.875Z
+  card-last-reviewed:: 2024-09-02T03:13:32.190Z
 	- 故障转移：自动重试其它服务器(默认)
 		- 保证了服务的 {{cloze 高可用}}
 		- 需要设置合理的 {{cloze 请求有效时间}} 及 {{cloze 重试次数}} 。需要服务具有 {{cloze 幂等性}}
@@ -47,12 +47,12 @@
 		- 消耗额外资源 且 失败概率高
 	- 并不提供 沉默失败 策略：即 服务熔断
 - 为什么采用Dubbo\\RPC 而不是HTTP #card
-  card-last-interval:: 0
-  card-repeats:: 9
+  card-last-interval:: -1
+  card-repeats:: 1
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-13T09:04:12.867Z
-  card-last-reviewed:: 2024-08-13T09:04:12.867Z
-  card-last-score:: 3
+  card-next-schedule:: 2024-09-02T16:00:00.000Z
+  card-last-reviewed:: 2024-09-02T03:13:15.478Z
+  card-last-score:: 1
 	- RPC 是属于TCP层的协议，相比于HTTP的应用层协议，请求报文的处理更快
 		- 四层协议分别是：链路层、网络层(IP)、传输层(TCP)、应用层(HTTP)
 	- RPC可自主决定使用哪种序列化方式，进一步压缩报文体积，减少序列化\\反序列化的消耗
@@ -79,10 +79,10 @@
 	- {{cloze 服务可用性监控、失败告警监控}} 监控
 - Dubbo的工作原理及分层 #card
   card-last-interval:: 0.02
-  card-repeats:: 4
+  card-repeats:: 5
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-13T09:02:04.281Z
-  card-last-reviewed:: 2024-08-13T09:02:04.281Z
+  card-next-schedule:: 2024-09-02T03:13:06.876Z
+  card-last-reviewed:: 2024-09-02T03:13:06.877Z
   card-last-score:: 3
 	- Biz 业务逻辑 自己来提供 {{cloze 接口和实现还有一些配置信息}}
 		- service {{cloze 实现业务代码}}

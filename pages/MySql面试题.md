@@ -46,10 +46,10 @@
 		- 将记录所在的数据页放入缓冲池 (磁盘->内存 )
 - SQL update过程 #card
   card-last-interval:: 0
-  card-repeats:: 9
+  card-repeats:: 10
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-13T08:41:06.026Z
-  card-last-reviewed:: 2024-08-13T08:41:06.027Z
+  card-next-schedule:: 2024-09-02T03:08:13.917Z
+  card-last-reviewed:: 2024-09-02T03:08:13.917Z
   card-last-score:: 3
 	- 查询出原数据，并**上锁**
 	- 将修改的数据刷入内存 Buffer pool
@@ -357,10 +357,10 @@
 	- 当使用二级索引进行范围查询时，从随机读变为顺序读 {{cloze 通过对索引值排序，把无序回表IO变成有序回表IO}}
 - Explain 查询计划 #card
   card-last-interval:: 0
-  card-repeats:: 9
+  card-repeats:: 10
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-13T09:03:34.994Z
-  card-last-reviewed:: 2024-08-13T09:03:34.994Z
+  card-next-schedule:: 2024-09-02T03:13:13.094Z
+  card-last-reviewed:: 2024-09-02T03:13:13.095Z
   card-last-score:: 3
   id:: 66544682-c74c-4d87-b12d-00a4d0f39d87
 	- id 执行顺序

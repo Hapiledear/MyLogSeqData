@@ -262,10 +262,10 @@
 	- 合理设置 {{cloze 缓冲区}} 大小
 - 如何解决本地缓存与分布式缓存的数据不一致 #card
   card-last-interval:: 0
-  card-repeats:: 9
+  card-repeats:: 10
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-13T08:57:52.364Z
-  card-last-reviewed:: 2024-08-13T08:57:52.365Z
+  card-next-schedule:: 2024-09-02T03:10:12.997Z
+  card-last-reviewed:: 2024-09-02T03:10:12.998Z
   card-last-score:: 3
 	- Redis自身有 {{cloze 订阅/分发}} 机制
 	- 引入 {{cloze 消息队列 使用广播模式}}
@@ -296,10 +296,10 @@
 		- 二级缓存 {{cloze 加入本地的内存缓存}}
 - 大key处理 #card
   card-last-interval:: 0
-  card-repeats:: 9
+  card-repeats:: 10
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-13T09:04:37.610Z
-  card-last-reviewed:: 2024-08-13T09:04:37.611Z
+  card-next-schedule:: 2024-09-02T03:13:40.669Z
+  card-last-reviewed:: 2024-09-02T03:13:40.669Z
   card-last-score:: 3
 	- 大key造成的问题
 		- 进行IO操作时 {{cloze 占用带宽和CPU}}
