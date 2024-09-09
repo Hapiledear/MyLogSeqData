@@ -342,7 +342,8 @@
   card-ease-factor:: 1.3
   card-last-reviewed:: 2024-08-14T01:23:15.444Z
 	- Mysql5.6-之前，没有充分利用非聚簇索引
-		- 假设有索引(name,age)和查询条件 name like 张% and age = 10
+		- 假设有索引(name,age)和查询条件 `name like 张% and age = 10`
+		- 多个列同时进行*范围查找*时，只有对*索引最左边的*那个列进行范围查找才用到B+树索引，也就是只有name用到索引。
 	- 不存在索引下推时 {{cloze 先根据非聚簇索引查记录，再根据where条件过滤}}
 		- 只会利用索引中的name字段
 	- 使用索引下推后 {{cloze 先根据 where条件过滤记录，再进行非聚簇索引查询}}
