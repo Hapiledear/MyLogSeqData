@@ -1,4 +1,7 @@
 - {{cards [[Spring框架面试题]] }}
+	- Summary: 15 items, 15 review counts [[2025年03月24日]]
+		- Remembered:   15 (100%)
+		- Forgotten :   0 (0%)
 - Spring中用了哪些设计模式? #card
   card-last-interval:: 0
   card-repeats:: 11
@@ -177,11 +180,11 @@
 		- 过滤器，按照定义顺序执行
 		- 拦截器，在代码中控制自由控制是否调用后续拦截器
 - Spring 事务的传播机制 #card
-  card-last-interval:: 15.05
-  card-repeats:: 4
-  card-ease-factor:: 1.94
-  card-next-schedule:: 2024-09-07T02:43:17.579Z
-  card-last-reviewed:: 2024-08-23T01:43:17.579Z
+  card-last-interval:: 13.21
+  card-repeats:: 5
+  card-ease-factor:: 1.8
+  card-next-schedule:: 2025-04-06T05:42:58.768Z
+  card-last-reviewed:: 2025-03-24T00:42:58.768Z
   card-last-score:: 3
 	- 基于对现有事务的态度分类
 		- `REQUIRED` 当前*保证有*
