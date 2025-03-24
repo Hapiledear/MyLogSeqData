@@ -1,10 +1,10 @@
 - {{cards [[Spring框架面试题]] }}
 - Spring中用了哪些设计模式? #card
   card-last-interval:: 0
-  card-repeats:: 10
+  card-repeats:: 11
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-14T01:04:20.931Z
-  card-last-reviewed:: 2024-08-14T01:04:20.931Z
+  card-next-schedule:: 2025-03-24T00:34:56.968Z
+  card-last-reviewed:: 2025-03-24T00:34:56.968Z
   card-last-score:: 3
 	- BeanFactory {{cloze 工厂模式}}
 	- Bean {{cloze 单例模式}}
@@ -13,19 +13,19 @@
 	- ApplicationListener {{cloze 观察者模式}}
 - 什么是Spring的IOC(控制反转) #card
   card-last-interval:: 0
-  card-repeats:: 10
+  card-repeats:: 11
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-14T01:08:53.823Z
-  card-last-reviewed:: 2024-08-14T01:08:53.823Z
+  card-next-schedule:: 2025-03-24T00:35:57.232Z
+  card-last-reviewed:: 2025-03-24T00:35:57.233Z
   card-last-score:: 3
 	- {{cloze 原本由代码控制对象的生命周期，交由spring框架管理}}
 	- 实现 {{cloze 工厂模式+反射机制}}
 - BeanFactory 和 ApplicationContext的区别 #card
   card-last-interval:: 0
-  card-repeats:: 11
+  card-repeats:: 12
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-14T01:30:22.452Z
-  card-last-reviewed:: 2024-08-14T01:30:22.452Z
+  card-next-schedule:: 2025-03-24T00:36:15.609Z
+  card-last-reviewed:: 2025-03-24T00:36:15.609Z
   card-last-score:: 3
 	- BF 可以理解为 “低级容器”，只是简单的 k-v结构
 	- 依赖关系 {{cloze ApplicationContext是BeanFactory的子接口,扩展了BeanFactory的功能}}
@@ -48,10 +48,10 @@
 	- 或者是该数据字段使用 {{cloze ThreadLocal}} 修饰
 - Spring Bean的生命周期，描述一下 4阶段-2扩展点 #card
   card-last-interval:: 0
-  card-repeats:: 9
+  card-repeats:: 10
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-13T09:22:55.622Z
-  card-last-reviewed:: 2024-08-13T09:22:55.622Z
+  card-next-schedule:: 2025-03-24T00:33:28.144Z
+  card-last-reviewed:: 2025-03-24T00:33:28.145Z
   card-last-score:: 3
 	- 实例化
 	- 属性填充
@@ -66,19 +66,19 @@
 		- destory-method方法
 - BeanFactory 和 FactoryBean的区别 #card
   card-last-interval:: 0
-  card-repeats:: 10
+  card-repeats:: 11
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-14T00:59:27.315Z
-  card-last-reviewed:: 2024-08-14T00:59:27.316Z
+  card-next-schedule:: 2025-03-24T00:33:51.375Z
+  card-last-reviewed:: 2025-03-24T00:33:51.376Z
   card-last-score:: 3
 	- BF {{cloze 是框架用来管理和装配普通bean的容器}}
 	- FB {{cloze 是用以生产对象和装饰对象的工厂接口}}
 - 如何解决Bean注入时的循环依赖问题  #card
   card-last-interval:: 0
-  card-repeats:: 9
+  card-repeats:: 10
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-13T09:15:49.058Z
-  card-last-reviewed:: 2024-08-13T09:15:49.058Z
+  card-next-schedule:: 2025-03-24T00:30:03.746Z
+  card-last-reviewed:: 2025-03-24T00:30:03.746Z
   card-last-score:: 3
 	- 循环依赖能自动解决的前提条件
 		- {{cloze 不是全属性构造器}}
@@ -99,70 +99,70 @@
 		- spring有 普通对象 和 代理对象,在未执行完 BeanPostProcessor时不知道使用哪一个
 - 什么是Spring 的AOP,项目中是如何使用的 #card
   card-last-interval:: 0
-  card-repeats:: 12
+  card-repeats:: 13
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-23T01:09:57.379Z
-  card-last-reviewed:: 2024-08-23T01:09:57.379Z
+  card-next-schedule:: 2025-03-24T00:39:23.057Z
+  card-last-reviewed:: 2025-03-24T00:39:23.057Z
   card-last-score:: 3
 	- AOP 面向切面编程，核心是使用 {{cloze 代理模式}}，对目标方法执行前后进行处理
 	- 应用场景 {{cloze 日志记录}} {{cloze 接口签名校验}}
 - 为什么要用SpringBoot #card
   card-last-interval:: 0
-  card-repeats:: 10
+  card-repeats:: 11
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-14T00:59:36.619Z
-  card-last-reviewed:: 2024-08-14T00:59:36.619Z
+  card-next-schedule:: 2025-03-24T00:34:29.465Z
+  card-last-reviewed:: 2025-03-24T00:34:29.466Z
   card-last-score:: 3
 	- {{cloze 独立运行spring项目}}
 	- {{cloze 内嵌servlet容器}}
 	- {{cloze 简化maven配置，使用 starter 扩展}}
 	- {{cloze 引入相关 starter后，自动装配相关bean}}
 - SpringBoot启动流程 #card
-  card-last-interval:: 11.02
-  card-repeats:: 4
-  card-ease-factor:: 1.66
-  card-next-schedule:: 2024-08-18T02:17:25.175Z
-  card-last-reviewed:: 2024-08-07T02:17:25.216Z
+  card-last-interval:: 7.33
+  card-repeats:: 5
+  card-ease-factor:: 1.52
+  card-next-schedule:: 2025-03-31T07:38:06.017Z
+  card-last-reviewed:: 2025-03-24T00:38:06.017Z
   card-last-score:: 3
 	- 运行main方法，SpringBootApplication
 	- 初始化阶段
 		- 通过类加载器，读取classpath下的 {{cloze spring.factories}} 配置文件 和 {{cloze application.yml}} 资源文件
 		- 创建 ApplicationContext，扫描指定包下的class文件，创建BeanFactory，开始自动装配
 - 如何自定义一个SpringBoot-start #card
-  card-last-interval:: 0.02
-  card-repeats:: 6
+  card-last-interval:: 0.01
+  card-repeats:: 7
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-14T01:31:22.684Z
-  card-last-reviewed:: 2024-08-14T01:31:22.684Z
+  card-next-schedule:: 2025-03-24T00:36:58.649Z
+  card-last-reviewed:: 2025-03-24T00:36:58.694Z
   card-last-score:: 3
 	- 引入 `spring-boot-auto-config` 和 `spring-boot-configuration-processor` 包
 	- 定义并实现自己的Bean
 	- 编写一个`Configuration类`，告知何时加载自己的Bean
 	- 将这个类写入 `spring.factories` 便于启动时自行装载
 - Spring中的嵌套事务如何实现 #card
-  card-last-interval:: 11.02
-  card-repeats:: 4
-  card-ease-factor:: 1.66
-  card-next-schedule:: 2024-08-18T02:16:16.127Z
-  card-last-reviewed:: 2024-08-07T02:16:16.127Z
+  card-last-interval:: 7.33
+  card-repeats:: 5
+  card-ease-factor:: 1.52
+  card-next-schedule:: 2025-03-31T07:37:19.817Z
+  card-last-reviewed:: 2025-03-24T00:37:19.817Z
   card-last-score:: 3
 	- 对于支持嵌套事务的数据库，直接嵌套
 	- MySQL不支持嵌套事务，而是采用 {{cloze 保存点}}的机制
 - Spring 注解失效的场景 #card
-  card-last-interval:: 11.02
-  card-repeats:: 4
-  card-ease-factor:: 1.66
-  card-next-schedule:: 2024-08-18T02:16:32.720Z
-  card-last-reviewed:: 2024-08-07T02:16:32.720Z
+  card-last-interval:: 7.33
+  card-repeats:: 5
+  card-ease-factor:: 1.52
+  card-next-schedule:: 2025-03-31T07:37:42.425Z
+  card-last-reviewed:: 2025-03-24T00:37:42.425Z
   card-last-score:: 3
 	- 没有获取到代理对象
 	- 跨线程调用没有传递必要参数，如在事务中开启多线程会使得事务失效
 - Spring MVC中，过滤器和拦截器的区别 #card
-  card-last-interval:: 5.82
-  card-repeats:: 3
-  card-ease-factor:: 2.08
-  card-next-schedule:: 2024-08-19T20:22:23.075Z
-  card-last-reviewed:: 2024-08-14T01:22:23.075Z
+  card-last-interval:: 15.05
+  card-repeats:: 4
+  card-ease-factor:: 1.94
+  card-next-schedule:: 2025-04-08T01:39:16.497Z
+  card-last-reviewed:: 2025-03-24T00:39:16.497Z
   card-last-score:: 3
 	- 实现方式
 		- 过滤器是基于java的Filter接口
