@@ -1,4 +1,7 @@
 - {{cards Java 源码面试题}}
+	- Summary: 18 items, 18 review counts [[2025年03月24日]]
+		- Remembered:   18 (100%)
+		- Forgotten :   0 (0%)
 	- Summary: 9 items, 9 review counts [[2024年08月07日]]
 		- Remembered:   9 (100%)
 		- Forgotten :   0 (0%)
@@ -43,11 +46,11 @@
 	- 存储元素使用的是数组，扩容机制同ArrayList
 		- 使用`Object[]` 表示二叉树, 获取parent节点 `parent = (k - 1) >>> 1`
 	- 优先队列的元素插入/删除机制 #card
-	  card-last-interval:: 15.05
-	  card-repeats:: 4
-	  card-ease-factor:: 1.94
-	  card-next-schedule:: 2024-09-03T10:11:07.106Z
-	  card-last-reviewed:: 2024-08-19T09:11:07.106Z
+	  card-last-interval:: 13.21
+	  card-repeats:: 5
+	  card-ease-factor:: 1.8
+	  card-next-schedule:: 2025-04-06T12:20:56.246Z
+	  card-last-reviewed:: 2025-03-24T07:20:56.246Z
 	  card-last-score:: 3
 		- 将元素key插入到末尾 i=size
 		- 进行上浮操作
@@ -68,11 +71,11 @@
 			- 将当前位置的 entry == null ，标记为可回收
 			- 触发 ((66b1e39e-a9c7-4771-b6e0-d700bdd3808c))
 	- ThreadLocalMap的哈希算法与哈希冲突 #card
-	  card-last-interval:: 15.05
-	  card-repeats:: 4
-	  card-ease-factor:: 1.94
-	  card-next-schedule:: 2024-09-03T10:17:58.159Z
-	  card-last-reviewed:: 2024-08-19T09:17:58.159Z
+	  card-last-interval:: 13.21
+	  card-repeats:: 5
+	  card-ease-factor:: 1.8
+	  card-next-schedule:: 2025-04-06T12:21:11.782Z
+	  card-last-reviewed:: 2025-03-24T07:21:11.782Z
 	  card-last-score:: 3
 		- ThreadLocal 有自己的hashCode算法
 			- {{cloze 斐波那契数}} 的递增，只是初始值不是1,而是 `0x61c88647`
@@ -125,11 +128,11 @@
 		- idx  = {{cloze  ThreadHashCode & (newLen -1)}}
 - CompletableFuture
 	- CompletableFuture的实现和提供的功能 #card
-	  card-last-interval:: 15.05
-	  card-repeats:: 4
-	  card-ease-factor:: 1.94
-	  card-next-schedule:: 2024-09-07T02:49:18.523Z
-	  card-last-reviewed:: 2024-08-23T01:49:18.523Z
+	  card-last-interval:: 13.21
+	  card-repeats:: 5
+	  card-ease-factor:: 1.8
+	  card-next-schedule:: 2025-04-06T12:21:16.741Z
+	  card-last-reviewed:: 2025-03-24T07:21:16.742Z
 	  card-last-score:: 3
 		- 实现了两个接口 {{cloze `Future`}} 和 {{cloze `CompletionStage`}}
 		- 多种任务之间的编排功能
@@ -169,11 +172,11 @@
 		- `Tidying` 清理 -- 进行 {{cloze 资源回收或其他钩子方法}}
 		- `Terminated` 已终止 -- 线程池 {{cloze 已经停止并且不能重新启动}}
 	- 线程的状态 #card
-	  card-last-interval:: 5.82
-	  card-repeats:: 3
-	  card-ease-factor:: 2.08
-	  card-next-schedule:: 2024-08-28T20:36:34.699Z
-	  card-last-reviewed:: 2024-08-23T01:36:34.699Z
+	  card-last-interval:: 15.05
+	  card-repeats:: 4
+	  card-ease-factor:: 1.94
+	  card-next-schedule:: 2025-04-08T08:20:47.966Z
+	  card-last-reviewed:: 2025-03-24T07:20:47.967Z
 	  card-last-score:: 3
 		- `new` 新建 -- 线程对象被创建后，但尚未启动
 		- `runnable` 可运行 -- 调用了`start()`方法后
@@ -198,11 +201,11 @@
 		- 调用`shutdown()`
 		- 如果是长时间任务，考虑在任务中实现 {{cloze 保存点，保存此刻的执行状态}} ，下次启动后接着执行。
 	- 线程池支持哪些队列 #card
-	  card-last-interval:: 0.14
-	  card-repeats:: 1
-	  card-ease-factor:: 2.36
-	  card-next-schedule:: 2024-08-23T05:14:44.843Z
-	  card-last-reviewed:: 2024-08-23T02:14:44.882Z
+	  card-last-interval:: 4
+	  card-repeats:: 2
+	  card-ease-factor:: 2.22
+	  card-next-schedule:: 2025-03-28T07:19:48.702Z
+	  card-last-reviewed:: 2025-03-24T07:19:48.702Z
 	  card-last-score:: 3
 		- 有界队列/无界队列 `LinkedBlockQueue` 最大值为 `Integer.MAX_VALUE`
 		- 双端队列 `LinkedBlockDeque`
@@ -211,11 +214,11 @@
 		- 同步移交队列 `SynchronousQueue`
 			- 种队列没有内部容量，任务提交者必须等待另一个线程接收并开始执行任务
 	- 线程池支持哪些拒绝策略 #card
-	  card-last-interval:: 0.14
-	  card-repeats:: 1
-	  card-ease-factor:: 2.36
-	  card-next-schedule:: 2024-08-23T05:15:23.443Z
-	  card-last-reviewed:: 2024-08-23T02:15:23.443Z
+	  card-last-interval:: 4
+	  card-repeats:: 2
+	  card-ease-factor:: 2.22
+	  card-next-schedule:: 2025-03-28T07:20:05.631Z
+	  card-last-reviewed:: 2025-03-24T07:20:05.631Z
 	  card-last-score:: 3
 		- 拒绝并抛出异常 `RejectedExecutionException`
 		- 丢弃且不会抛出异常
