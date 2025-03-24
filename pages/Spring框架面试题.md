@@ -37,10 +37,10 @@
 		- {{cloze 自动注册}} AC
 - Spring中的Bean是线程安全的吗？如何处理线程并发问题 #card
   card-last-interval:: 0
-  card-repeats:: 9
+  card-repeats:: 10
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-13T09:15:46.034Z
-  card-last-reviewed:: 2024-08-13T09:15:46.035Z
+  card-next-schedule:: 2025-03-24T00:29:35.222Z
+  card-last-reviewed:: 2025-03-24T00:29:35.222Z
   card-last-score:: 3
 	- 默认Bean的作用域 {{cloze singleton}}不是线程安全的
 	- 如果是有状态的Bean，可以使用更高一级的 {{cloze prototype}}
