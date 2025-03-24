@@ -4,11 +4,11 @@
 		- Forgotten :   0 (0%)
 - ArrayList
 	- ArrayList的扩容机制/流程是怎么样的 #card
-	  card-last-interval:: 5.82
-	  card-repeats:: 3
-	  card-ease-factor:: 2.08
-	  card-next-schedule:: 2024-08-18T03:18:26.897Z
-	  card-last-reviewed:: 2024-08-12T08:18:26.897Z
+	  card-last-interval:: 15.05
+	  card-repeats:: 4
+	  card-ease-factor:: 1.94
+	  card-next-schedule:: 2025-04-08T07:57:45.041Z
+	  card-last-reviewed:: 2025-03-24T06:57:45.041Z
 	  card-last-score:: 3
 		- 初始容量,默认为 {{cloze 10}}
 		- 触发时机，没有负载因子。 {{cloze 数组放不下}} 时立即触发
@@ -17,11 +17,11 @@
 - HashMap
   id:: 66b20b36-7c48-424a-9b27-a2c18f1e2a9a
 	- HashMap的扩容机制/流程是怎样的 #card
-	  card-last-interval:: 5.82
-	  card-repeats:: 3
-	  card-ease-factor:: 2.08
-	  card-next-schedule:: 2024-08-18T03:18:41.384Z
-	  card-last-reviewed:: 2024-08-12T08:18:41.384Z
+	  card-last-interval:: 15.05
+	  card-repeats:: 4
+	  card-ease-factor:: 1.94
+	  card-next-schedule:: 2025-04-08T07:58:23.562Z
+	  card-last-reviewed:: 2025-03-24T06:58:23.562Z
 	  card-last-score:: 3
 		- 初始容量，默认为 {{cloze 16}}
 		- 触发时机, 元素 {{cloze 数量达到当前容量与负载因子(默认0.75)的}} 乘积时.
@@ -31,11 +31,11 @@
 			- 链表节点和红黑树节点，`e.hash & oldCap` 根据 {{cloze 第n+1位的0 or 1 }} 分成两个链表/树，一个在旧位置idx, 另一个在新位置 {{cloze idx+oldCap}}
 				- 假设 oldCap = 2^n
 	- HashMap的key/value能否为null #card
-	  card-last-interval:: 5.82
-	  card-repeats:: 3
-	  card-ease-factor:: 2.08
-	  card-next-schedule:: 2024-08-18T03:19:07.865Z
-	  card-last-reviewed:: 2024-08-12T08:19:07.865Z
+	  card-last-interval:: 15.05
+	  card-repeats:: 4
+	  card-ease-factor:: 1.94
+	  card-next-schedule:: 2025-04-08T07:59:01.445Z
+	  card-last-reviewed:: 2025-03-24T06:59:01.445Z
 	  card-last-score:: 3
 		- key可以为null ,计算的hashCode = 0
 		- value可以为null
@@ -57,11 +57,11 @@
 - [ThreadLocal](https://javaguide.cn/java/concurrent/threadlocal.html#threadlocalmap-get-%E8%AF%A6%E8%A7%A3)
   id:: 66b195b5-0b07-4b75-91af-088d7e445523
 	- ThreadLocal如何防止内存溢出 #card
-	  card-last-interval:: 5.82
-	  card-repeats:: 3
-	  card-ease-factor:: 2.08
-	  card-next-schedule:: 2024-08-18T03:19:04.497Z
-	  card-last-reviewed:: 2024-08-12T08:19:04.497Z
+	  card-last-interval:: 15.05
+	  card-repeats:: 4
+	  card-ease-factor:: 1.94
+	  card-next-schedule:: 2025-04-08T07:58:44.137Z
+	  card-last-reviewed:: 2025-03-24T06:58:44.138Z
 	  card-last-score:: 3
 		- Map中的key是 {{cloze 弱引用WeekReference}} , GC后回收。key == null,表示过期状态
 		- 手动调用remove方法，尤其是在与线程池配合使用时。
@@ -80,11 +80,11 @@
 		- 冲突解决办法
 			- {{cloze 线性探测}} 同时触发 {{cloze 过期元素清理}} ,详见 添加元素的过程
 	- ThreadLocal添加元素的过程 #card
-	  card-last-interval:: 5.82
-	  card-repeats:: 3
-	  card-ease-factor:: 2.08
-	  card-next-schedule:: 2024-08-18T03:17:45.474Z
-	  card-last-reviewed:: 2024-08-12T08:17:45.474Z
+	  card-last-interval:: 15.05
+	  card-repeats:: 4
+	  card-ease-factor:: 1.94
+	  card-next-schedule:: 2025-04-08T07:57:33.367Z
+	  card-last-reviewed:: 2025-03-24T06:57:33.367Z
 	  card-last-score:: 3
 		- 通过hash计算槽位后，此时分4种情况
 			- 槽位Entity为空 {{cloze 直接放入}}
@@ -95,11 +95,11 @@
 				- 向后过程中，遇到 {{cloze 过期key}} && 遇到 {{cloze k==key}} 交换 {{cloze 过期key和k的位置}} ，触发 {{cloze 过期回收}}
 		- Entity为空，说明被回收了， key为null 说明为过期key，被垃圾回收器回收了
 	- ThreadLocal的过期回收过程 #card
-	  card-last-interval:: 5.82
-	  card-repeats:: 3
-	  card-ease-factor:: 2.08
-	  card-next-schedule:: 2024-08-18T03:17:09.178Z
-	  card-last-reviewed:: 2024-08-12T08:17:09.178Z
+	  card-last-interval:: 15.05
+	  card-repeats:: 4
+	  card-ease-factor:: 1.94
+	  card-next-schedule:: 2025-04-08T07:56:02.390Z
+	  card-last-reviewed:: 2025-03-24T06:56:02.390Z
 	  card-last-score:: 3
 		- 探测式清理 `expungeStaleEntry( i )`
 		  id:: 66b1e39e-a9c7-4771-b6e0-d700bdd3808c
@@ -113,11 +113,11 @@
 			- 假设 len = 2^k ,遍历 {{cloze k次}}
 			- 每次遍历，都找到最近一个 {{cloze Entity == null}} 的位置，作为 探测式清理的起始位置。
 	- ThreadLocalMap的扩容 #card
-	  card-last-interval:: 5.82
-	  card-repeats:: 3
-	  card-ease-factor:: 2.08
-	  card-next-schedule:: 2024-08-18T03:18:59.010Z
-	  card-last-reviewed:: 2024-08-12T08:18:59.010Z
+	  card-last-interval:: 15.05
+	  card-repeats:: 4
+	  card-ease-factor:: 1.94
+	  card-next-schedule:: 2025-04-08T07:58:34.753Z
+	  card-last-reviewed:: 2025-03-24T06:58:34.753Z
 	  card-last-score:: 3
 		- 初始大小是 {{cloze 16}}
 		- 首先进行一次 {{cloze 全表清理}}
@@ -140,11 +140,11 @@
 		- 异常处理 `handle( )` 和 `exceptionally( )`
 	- CompletableFuture的源码 #card
 	  card-last-score:: 3
-	  card-repeats:: 2
-	  card-next-schedule:: 2024-08-16T07:26:58.694Z
-	  card-last-interval:: 4
-	  card-ease-factor:: 2.22
-	  card-last-reviewed:: 2024-08-12T07:26:58.694Z
+	  card-repeats:: 3
+	  card-next-schedule:: 2025-03-30T01:55:31.173Z
+	  card-last-interval:: 5.82
+	  card-ease-factor:: 2.08
+	  card-last-reviewed:: 2025-03-24T06:55:31.173Z
 		- 类似于 观察者模式
 			- {{cloze result}} 用于存储当前CF的结果
 			- {{cloze stack (Completion)}} 表示当前CF完成后需要触发的依赖动作
@@ -157,11 +157,11 @@
   id:: 66b1bef3-8dcd-4de9-bf66-9e8e321e1f1c
 	- https://tech.meituan.com/2020/04/02/java-pooling-pratice-in-meituan.html
 	- 线程池的状态以及作用 #card
-	  card-last-interval:: 4
-	  card-repeats:: 2
-	  card-ease-factor:: 2.22
-	  card-next-schedule:: 2024-08-18T01:20:19.707Z
-	  card-last-reviewed:: 2024-08-14T01:20:19.707Z
+	  card-last-interval:: 5.82
+	  card-repeats:: 3
+	  card-ease-factor:: 2.08
+	  card-next-schedule:: 2025-03-30T01:55:54.973Z
+	  card-last-reviewed:: 2025-03-24T06:55:54.974Z
 	  card-last-score:: 3
 		- `Running` 工作状态 -- {{cloze 接受并处理}} 任务
 		- `Shutdown` 准备关闭 -- 不再 {{cloze 接受新任务}} ，但 {{cloze 完成已有任务}}
@@ -189,11 +189,11 @@
 			- 尝试获取系统层级/JVM层级的某项共享资源不成功后，由系统/JVM将其唤醒
 			- `Lock.lock()` 方法，转移到的是`waiting` 等待状态，因为Lock底层是AQS, 被放入了队列，需要被释放锁的线程唤醒。
 	- 线程池如何优雅的关闭 #card
-	  card-last-interval:: 0.14
-	  card-repeats:: 1
-	  card-ease-factor:: 2.36
-	  card-next-schedule:: 2024-08-16T04:09:23.353Z
-	  card-last-reviewed:: 2024-08-16T01:09:23.353Z
+	  card-last-interval:: 4
+	  card-repeats:: 2
+	  card-ease-factor:: 2.22
+	  card-next-schedule:: 2025-03-28T06:55:22.055Z
+	  card-last-reviewed:: 2025-03-24T06:55:22.055Z
 	  card-last-score:: 3
 		- 调用`shutdown()`
 		- 如果是长时间任务，考虑在任务中实现 {{cloze 保存点，保存此刻的执行状态}} ，下次启动后接着执行。
@@ -222,17 +222,23 @@
 		- 提交任务的线程执行此任务
 		- 丢弃队列中最旧的任务，然后尝试提交
 	- 线程池的监控和动态修改手段 #card
-	  card-last-interval:: 0.14
-	  card-repeats:: 1
-	  card-ease-factor:: 2.36
-	  card-next-schedule:: 2024-08-23T05:08:04.019Z
-	  card-last-reviewed:: 2024-08-23T02:08:04.019Z
+	  card-last-interval:: 4
+	  card-repeats:: 2
+	  card-ease-factor:: 2.22
+	  card-next-schedule:: 2025-03-28T06:59:04.882Z
+	  card-last-reviewed:: 2025-03-24T06:59:04.882Z
 	  card-last-score:: 3
 		- **Dynamic TP** 监控告警
 		- **Hippo** 动态修改线程池参数
 	-
 - 分布式锁Redisson #card
   id:: 66b9f4a6-7e94-4124-8048-1b4a483420ed
+  card-last-interval:: 0.14
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2025-03-24T09:55:16.143Z
+  card-last-reviewed:: 2025-03-24T06:55:16.144Z
+  card-last-score:: 3
 	- 加锁&释放锁
 		- `hincryby key field value`   使用HashMap，field=uuid:thread_id
 		- 使用Lua脚本保证原子性
