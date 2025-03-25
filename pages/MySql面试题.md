@@ -1,4 +1,7 @@
 - {{cards [[MySql面试题]] }}
+	- Summary: 34 items, 34 review counts [[2025年03月25日]]
+		- Remembered:   28 (82%)
+		- Forgotten :   6 (17%)
 	- Summary: 1 items, 1 review counts [[2023年01月21日]]
 		- Remembered:   0 (0%)
 		- Forgotten :   0 (0%)
@@ -7,11 +10,11 @@
 -
 - 数据库死锁的触发条件 和 解决方案 #card
   id:: 66c2b8a3-dbe4-432d-92d9-e1b138d9ee50
-  card-last-interval:: 0.14
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2024-08-23T04:17:14.731Z
-  card-last-reviewed:: 2024-08-23T01:17:14.731Z
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2025-03-29T10:50:17.707Z
+  card-last-reviewed:: 2025-03-25T10:50:17.707Z
   card-last-score:: 3
 	- 两个或以上的事务，各自持有对方想要的资源，且都不会主动释放。
 	- 解决方案
@@ -20,12 +23,12 @@
 		- 合理使用 {{cloze 索引}} 和 {{cloze 隔离级别}}
 		- 改用 {{cloze 乐观锁}} 和 {{cloze 排队机制}}
 - SQL查询过程 #card
-  card-last-interval:: 0
-  card-repeats:: 11
-  card-ease-factor:: 1.3
-  card-next-schedule:: 2025-03-25T10:45:19.940Z
-  card-last-reviewed:: 2025-03-25T10:45:19.940Z
-  card-last-score:: 3
+  card-last-interval:: 115.7
+  card-repeats:: 12
+  card-ease-factor:: 1.4
+  card-next-schedule:: 2025-07-19T02:58:41.357Z
+  card-last-reviewed:: 2025-03-25T10:58:41.358Z
+  card-last-score:: 5
 	- 建立连接 {{cloze 连接器}}
 		- 负责对用户名&密码进行校验，连接的维护
 	- 执行计划の缓存 {{cloze 查询缓存}}
@@ -46,10 +49,10 @@
 		- 将记录所在的数据页放入缓冲池 (磁盘->内存 )
 - SQL update过程 #card
   card-last-interval:: 0
-  card-repeats:: 10
+  card-repeats:: 11
   card-ease-factor:: 1.3
-  card-next-schedule:: 2025-03-25T10:37:28.879Z
-  card-last-reviewed:: 2025-03-25T10:37:28.879Z
+  card-next-schedule:: 2025-03-25T10:57:44.460Z
+  card-last-reviewed:: 2025-03-25T10:57:44.460Z
   card-last-score:: 3
 	- 查询出原数据，并**上锁**
 	- 将修改的数据刷入内存 Buffer pool
@@ -57,19 +60,19 @@
 	- 记录 bin log
 	- 事务提交 ，等待被工作线程刷入磁盘
 - 查询语句的各部分执行顺序 9 #card
-  card-last-interval:: 62.21
-  card-repeats:: 9
-  card-ease-factor:: 1.48
-  card-next-schedule:: 2024-09-22T13:35:41.274Z
-  card-last-reviewed:: 2024-07-22T08:35:41.274Z
-  card-last-score:: 5
+  card-last-interval:: 41.58
+  card-repeats:: 10
+  card-ease-factor:: 1.34
+  card-next-schedule:: 2025-05-05T23:52:32.081Z
+  card-last-reviewed:: 2025-03-25T10:52:32.081Z
+  card-last-score:: 3
 	- {{cloze from -> join t2 on xxx  -> where yyy -> group by aaa -> having -> bbb -> select aaa,bbb,ccc -> distinct aaa ->order by bbb -> limit m,n}}
 - MySQL的join过程 #card
-  card-last-interval:: 29.21
-  card-repeats:: 5
-  card-ease-factor:: 1.94
-  card-next-schedule:: 2024-09-10T13:01:14.997Z
-  card-last-reviewed:: 2024-08-12T08:01:14.997Z
+  card-last-interval:: 0.66
+  card-repeats:: 6
+  card-ease-factor:: 1.8
+  card-next-schedule:: 2025-03-26T01:52:18.550Z
+  card-last-reviewed:: 2025-03-25T10:52:18.550Z
   card-last-score:: 3
 	- 确定驱动表 - 在SQL优化阶段,优化器根据 {{cloze 查询条件}} 预估 每张表的数据量大小。选择 {{cloze 最小}} 的作为驱动表
 	- 加载驱动表的数据到内存
@@ -102,12 +105,12 @@
 		- {{cloze 直接取出该值}}
 		- {{cloze 只能遍历}}
 - 事物的四大特性，分别是如何解决的 #card
-  card-last-interval:: 0
-  card-repeats:: 11
-  card-ease-factor:: 1.3
-  card-next-schedule:: 2025-03-25T10:44:54.540Z
-  card-last-reviewed:: 2025-03-25T10:44:54.540Z
-  card-last-score:: 3
+  card-last-interval:: 115.7
+  card-repeats:: 12
+  card-ease-factor:: 1.4
+  card-next-schedule:: 2025-07-19T02:58:29.104Z
+  card-last-reviewed:: 2025-03-25T10:58:29.104Z
+  card-last-score:: 5
 	- 一致性 是目标，其他三者是手段
 		- {{cloze 事物在执行前后其状态一致,A+B=100 无论A B怎么转账，最终都是100}}
 		- {{cloze Undo Log}}
@@ -123,12 +126,12 @@
 			- 4种隔离级别 {{cloze 读未提交}} {{cloze 读已提交}} {{cloze 可重复读读}} {{cloze 串行化}}
 		- {{cloze 锁机制 和 MVVC机制}}
 - Undo Log 和Redo Log #card
-  card-last-interval:: 0
-  card-repeats:: 11
-  card-ease-factor:: 1.3
-  card-next-schedule:: 2025-03-25T10:47:01.546Z
-  card-last-reviewed:: 2025-03-25T10:47:01.546Z
-  card-last-score:: 3
+  card-last-interval:: 115.7
+  card-repeats:: 12
+  card-ease-factor:: 1.4
+  card-next-schedule:: 2025-07-19T02:58:51.958Z
+  card-last-reviewed:: 2025-03-25T10:58:51.959Z
+  card-last-score:: 5
 	- Undo Log
 		- 存储的是 {{cloze 旧数据的版本链集合}}
 		- 原子性的体现 {{cloze 如果出错，可以用它来回滚数据}}
@@ -153,12 +156,12 @@
 	- 幻读
 		- 范围查询 {{cloze 事物A在进行范围查询时，两次读取的**记录数**不一致}}
 - 事物的4种隔离级别 #card
-  card-last-interval:: 59.03
-  card-repeats:: 10
-  card-ease-factor:: 1.4
-  card-next-schedule:: 2024-09-19T08:02:47.898Z
-  card-last-reviewed:: 2024-07-22T08:02:47.898Z
-  card-last-score:: 5
+  card-last-interval:: 0
+  card-repeats:: 11
+  card-ease-factor:: 1.3
+  card-next-schedule:: 2025-03-25T10:52:29.087Z
+  card-last-reviewed:: 2025-03-25T10:52:29.087Z
+  card-last-score:: 3
 	- 读未提交
 		- {{cloze 允许读取到还没有提交的数据}}
 	- 读已提交
@@ -190,12 +193,12 @@
 				- {{cloze 只与 非唯一索引列 有关}}
 		- MVCC + Read View 的组合方式 解决 快照读下的幻读
 - 读取数据的两种方式 #card
-  card-last-interval:: 59.03
-  card-repeats:: 10
-  card-ease-factor:: 1.4
-  card-next-schedule:: 2024-09-19T07:57:12.729Z
-  card-last-reviewed:: 2024-07-22T07:57:12.730Z
-  card-last-score:: 5
+  card-last-interval:: 0
+  card-repeats:: 11
+  card-ease-factor:: 1.3
+  card-next-schedule:: 2025-03-25T10:52:27.038Z
+  card-last-reviewed:: 2025-03-25T10:52:27.039Z
+  card-last-score:: 3
 	- mvcc {{cloze 快照读}}
 		- 简单的select操作
 		- 如何解决幻读 {{cloze MVCC + Read View}}
@@ -204,12 +207,12 @@
 		- 插入、更新、删除操作
 		- 如何解决幻读 {{cloze next-key Lock 行锁与间隙锁的组合}}
 - 什么是MVCC #card
-  card-last-interval:: 0
-  card-repeats:: 11
-  card-ease-factor:: 1.3
-  card-next-schedule:: 2025-03-25T10:44:49.518Z
-  card-last-reviewed:: 2025-03-25T10:44:49.518Z
-  card-last-score:: 3
+  card-last-interval:: 115.7
+  card-repeats:: 12
+  card-ease-factor:: 1.4
+  card-next-schedule:: 2025-07-19T02:58:25.028Z
+  card-last-reviewed:: 2025-03-25T10:58:25.028Z
+  card-last-score:: 5
   id:: 66544682-3ef3-48a1-8016-f7c29dd8c85d
 	- 多版本并发控制
 	- 只工作在两种事物隔离级别下
@@ -223,12 +226,12 @@
 		- 可重复读的实现
 			- {{cloze 只在第一次执行查询语句时生成 Read View}}
 - MySql中的锁有哪些 #card
-  card-last-interval:: 0
-  card-repeats:: 10
-  card-ease-factor:: 1.3
-  card-next-schedule:: 2025-03-25T10:43:17.712Z
-  card-last-reviewed:: 2025-03-25T10:43:17.712Z
-  card-last-score:: 3
+  card-last-interval:: 82.64
+  card-repeats:: 11
+  card-ease-factor:: 1.4
+  card-next-schedule:: 2025-06-16T01:58:21.308Z
+  card-last-reviewed:: 2025-03-25T10:58:21.308Z
+  card-last-score:: 5
   id:: 66544682-bdee-4d8c-bf84-15f2624311e0
 	- 表锁
 		- 意向锁
@@ -257,31 +260,31 @@
 		- 原理 {{cloze 区间相同但插入记录本身不同的情况下 互不排斥}}
 - 主键的选择，使用自增ID 还是 UUID #card
   card-last-interval:: 0
-  card-repeats:: 12
+  card-repeats:: 13
   card-ease-factor:: 1.3
-  card-next-schedule:: 2025-03-25T10:48:09.935Z
-  card-last-reviewed:: 2025-03-25T10:48:09.935Z
+  card-next-schedule:: 2025-03-25T10:59:01.400Z
+  card-last-reviewed:: 2025-03-25T10:59:01.400Z
   card-last-score:: 3
 	- 自增型ID {{cloze 符合主键索引的顺序排布，插入快速，产生碎片较少}}
 	- UUID {{cloze 全局唯一，跨系统存取方便}} {{cloze 较为分散，不会产生数据倾斜}}
 	- 雪花算法 {{cloze 按照一定规则填充Long的64位: 时间（毫秒级）+集群ID+机器ID+序列号}}
 	- ((66544683-504d-4344-a4e9-d0abfdb0bd53))
 - B+树与B树的对比 #card
-  card-last-interval:: 0
-  card-repeats:: 10
-  card-ease-factor:: 1.3
-  card-next-schedule:: 2025-03-25T10:42:25.186Z
-  card-last-reviewed:: 2025-03-25T10:42:25.186Z
-  card-last-score:: 3
+  card-last-interval:: 82.64
+  card-repeats:: 11
+  card-ease-factor:: 1.4
+  card-next-schedule:: 2025-06-16T01:58:10.334Z
+  card-last-reviewed:: 2025-03-25T10:58:10.334Z
+  card-last-score:: 5
 	- 数据记录 {{cloze 都存放在叶子节点中}} {{cloze 非叶节点只存储键值信息}}
 	- {{cloze 所有叶子节点之间都有一个链指针}}
 	- B树可以在所有节点中存储数据
 - 索引的优缺点 #card
   card-last-interval:: 0
-  card-repeats:: 10
+  card-repeats:: 11
   card-ease-factor:: 1.3
-  card-next-schedule:: 2025-03-25T10:41:12.002Z
-  card-last-reviewed:: 2025-03-25T10:41:12.002Z
+  card-next-schedule:: 2025-03-25T10:57:59.260Z
+  card-last-reviewed:: 2025-03-25T10:57:59.261Z
   card-last-score:: 3
 	- 优点
 		- {{cloze 提高数据检索效率，降低IO}}
@@ -290,12 +293,12 @@
 		- {{cloze 需要占用物理空间}}
 		- {{cloze 每次增改数据，都需要动态维护索引，导致增改时间变长}}
 - 聚集索引和非聚集索引 #card
-  card-last-interval:: 0
-  card-repeats:: 10
-  card-ease-factor:: 1.3
-  card-next-schedule:: 2025-03-25T10:41:52.969Z
-  card-last-reviewed:: 2025-03-25T10:41:52.969Z
-  card-last-score:: 3
+  card-last-interval:: 82.64
+  card-repeats:: 11
+  card-ease-factor:: 1.4
+  card-next-schedule:: 2025-06-16T01:58:06.004Z
+  card-last-reviewed:: 2025-03-25T10:58:06.004Z
+  card-last-score:: 5
 	- 聚簇索引
 		- {{cloze b+树的叶子节点中存放了表中一行的全部数据}}
 		- {{cloze 查询时，只需扫描一次B+树，就能找到记录}}
@@ -312,12 +315,12 @@
 	- 索引覆盖 {{cloze select字段 存在索引中}}
 	- 最左匹配原则 {{cloze 利用最左匹配，减少索引的建立}}
 - 索引失效的13种场景 #card
-  card-last-interval:: 0
-  card-repeats:: 10
-  card-ease-factor:: 1.3
-  card-next-schedule:: 2025-03-25T10:41:05.423Z
-  card-last-reviewed:: 2025-03-25T10:41:05.423Z
-  card-last-score:: 3
+  card-last-interval:: 82.64
+  card-repeats:: 11
+  card-ease-factor:: 1.4
+  card-next-schedule:: 2025-06-16T01:57:54.742Z
+  card-last-reviewed:: 2025-03-25T10:57:54.743Z
+  card-last-score:: 5
   id:: 66544682-8b5a-4888-9bd0-2104beb329f7
 	- 联合索引不满足最左匹配原则
 	- 使用了 `select * ` 肯定不会走 覆盖索引
@@ -379,12 +382,12 @@
 		- Using index 使用了覆盖索引
 		- Using where 该索引还用来执行查找操作
 - 工作中你是如何优化慢查询的 #card
-  card-last-interval:: 0
-  card-repeats:: 10
+  card-last-interval:: -1
+  card-repeats:: 1
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-19T09:25:31.093Z
-  card-last-reviewed:: 2024-08-19T09:25:31.093Z
-  card-last-score:: 3
+  card-next-schedule:: 2025-03-25T16:00:00.000Z
+  card-last-reviewed:: 2025-03-25T10:49:39.076Z
+  card-last-score:: 1
 	- 添加合适的索引
 		- {{cloze 频繁查询的条件 和 排序字段 建立索引}}
 		- {{cloze 考虑建立组合索引的顺序}}
@@ -420,12 +423,12 @@
 	- Master开启 `IO线程` 开始传输bin log
 	- Slave 启动线程  `SQL线程` ，实时监控 中继日志是否有更新，解析SQL语句，在S库中执行
 - 分库分表策略 及 数据分片规则 #card
-  card-last-interval:: 0
-  card-repeats:: 10
-  card-ease-factor:: 1.3
-  card-next-schedule:: 2025-03-25T10:41:46.446Z
-  card-last-reviewed:: 2025-03-25T10:41:46.447Z
-  card-last-score:: 3
+  card-last-interval:: 82.64
+  card-repeats:: 11
+  card-ease-factor:: 1.4
+  card-next-schedule:: 2025-06-16T01:58:03.224Z
+  card-last-reviewed:: 2025-03-25T10:58:03.224Z
+  card-last-score:: 5
 	- 水平拆分
 		- {{cloze 将一张表中的数据，按照一定策略(Hash取模、range) ，拆分到多个库/表中}}
 	- 垂直拆分
@@ -470,30 +473,30 @@
 		- {{cloze 数据工厂，离线计算。 直接接入ES}}
 - 大批量数据的插入 #card
   card-last-interval:: 0
-  card-repeats:: 12
+  card-repeats:: 13
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-23T01:26:49.882Z
-  card-last-reviewed:: 2024-08-23T01:26:49.883Z
+  card-next-schedule:: 2025-03-25T10:49:43.613Z
+  card-last-reviewed:: 2025-03-25T10:49:43.613Z
   card-last-score:: 3
 	- 开启事务
 	- 合并插入：一条语句插入多条数据
 	- 顺序插入：数据按主键ID排序好
 - 用户订单表(uid,aid,create_time) 要想让查询强制走uid索引，可以怎么做？ #card
-  card-last-interval:: 7.33
-  card-repeats:: 5
-  card-ease-factor:: 1.52
-  card-next-schedule:: 2024-08-26T16:05:07.843Z
-  card-last-reviewed:: 2024-08-19T09:05:07.843Z
+  card-last-interval:: 14.51
+  card-repeats:: 6
+  card-ease-factor:: 1.38
+  card-next-schedule:: 2025-04-08T22:50:21.106Z
+  card-last-reviewed:: 2025-03-25T10:50:21.107Z
   card-last-score:: 3
 	- {{cloze force index}} 关键字
 	- 强制类型转化 将 {{cloze create_time 转为int型}}
 - 什么情况下，MySQL会锁住整个表? 如何减少或避免此类情况？#card
-  card-last-score:: 3
-  card-repeats:: 3
-  card-next-schedule:: 2024-08-27T03:12:36.509Z
-  card-last-interval:: 7.76
+  card-last-score:: 1
+  card-repeats:: 1
+  card-next-schedule:: 2025-03-25T16:00:00.000Z
+  card-last-interval:: -1
   card-ease-factor:: 1.94
-  card-last-reviewed:: 2024-08-19T09:12:36.510Z
+  card-last-reviewed:: 2025-03-25T10:51:04.753Z
   id:: 669f0d56-9b74-4b45-a032-989c4137ad4c
 	- 注意，锁住整个表A != 对表A施加表锁
 	- 表结构层面
