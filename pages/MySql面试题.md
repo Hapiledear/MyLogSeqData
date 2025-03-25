@@ -1,4 +1,7 @@
 - {{cards [[MySql面试题]] }}
+	- Summary: 23 items, 23 review counts [[2025年03月25日]]
+		- Remembered:   23 (100%)
+		- Forgotten :   0 (0%)
 	- Summary: 34 items, 34 review counts [[2025年03月25日]]
 		- Remembered:   28 (82%)
 		- Forgotten :   6 (17%)
@@ -81,10 +84,10 @@
 	- 从 MySQL 8.0.20 版本开始使用 {{cloze Hash Join}} 废弃 {{cloze 恰套循环join}}
 - 存储引擎InnoDb和MyISAM的区别 #card
   card-last-interval:: 0
-  card-repeats:: 12
+  card-repeats:: 13
   card-ease-factor:: 1.3
-  card-next-schedule:: 2025-03-25T10:48:44.692Z
-  card-last-reviewed:: 2025-03-25T10:48:44.692Z
+  card-next-schedule:: 2025-03-25T11:00:22.528Z
+  card-last-reviewed:: 2025-03-25T11:00:22.528Z
   card-last-score:: 3
 	- 事务支持
 		- {{cloze 不支持}} M
@@ -143,12 +146,12 @@
 		- 关键词 活跃事物表、脏页表
 		- ((669e05fa-6ec5-4ce7-8d72-ec8fa277ff80))
 - 描述一下事物产生的三个问题 #card
-  card-last-interval:: 0
-  card-repeats:: 12
-  card-ease-factor:: 1.3
-  card-next-schedule:: 2025-03-25T10:48:28.776Z
-  card-last-reviewed:: 2025-03-25T10:48:28.776Z
-  card-last-score:: 3
+  card-last-interval:: 161.98
+  card-repeats:: 13
+  card-ease-factor:: 1.4
+  card-next-schedule:: 2025-09-03T10:00:10.344Z
+  card-last-reviewed:: 2025-03-25T11:00:10.345Z
+  card-last-score:: 5
 	- 脏读
 		- {{cloze 事物A读取到了事物B 未提交的数据}}
 	- 不可重复读
@@ -156,12 +159,12 @@
 	- 幻读
 		- 范围查询 {{cloze 事物A在进行范围查询时，两次读取的**记录数**不一致}}
 - 事物的4种隔离级别 #card
-  card-last-interval:: 0
-  card-repeats:: 11
-  card-ease-factor:: 1.3
-  card-next-schedule:: 2025-03-25T10:52:29.087Z
-  card-last-reviewed:: 2025-03-25T10:52:29.087Z
-  card-last-score:: 3
+  card-last-interval:: 115.7
+  card-repeats:: 12
+  card-ease-factor:: 1.4
+  card-next-schedule:: 2025-07-19T03:00:36.761Z
+  card-last-reviewed:: 2025-03-25T11:00:36.761Z
+  card-last-score:: 5
 	- 读未提交
 		- {{cloze 允许读取到还没有提交的数据}}
 	- 读已提交
@@ -172,12 +175,12 @@
 	- 串行化
 		- {{cloze 所有事物被串行执行}}
 - 什么是幻读？如何防止？ #card
-  card-last-interval:: 0
-  card-repeats:: 12
-  card-ease-factor:: 1.3
-  card-next-schedule:: 2025-03-25T10:48:35.058Z
-  card-last-reviewed:: 2025-03-25T10:48:35.058Z
-  card-last-score:: 3
+  card-last-interval:: 161.98
+  card-repeats:: 13
+  card-ease-factor:: 1.4
+  card-next-schedule:: 2025-09-03T10:00:14.347Z
+  card-last-reviewed:: 2025-03-25T11:00:14.347Z
+  card-last-score:: 5
 	- 范围查询 {{cloze 事物A的两次查询之间，被事物B插入or删除了记录，产生结果集的不一致}}
 	- 防止方式
 		- {{cloze 间隙锁}} + {{cloze 行锁}} 的组合方式 解决 读最新数据下的幻读
@@ -193,12 +196,12 @@
 				- {{cloze 只与 非唯一索引列 有关}}
 		- MVCC + Read View 的组合方式 解决 快照读下的幻读
 - 读取数据的两种方式 #card
-  card-last-interval:: 0
-  card-repeats:: 11
-  card-ease-factor:: 1.3
-  card-next-schedule:: 2025-03-25T10:52:27.038Z
-  card-last-reviewed:: 2025-03-25T10:52:27.039Z
-  card-last-score:: 3
+  card-last-interval:: 115.7
+  card-repeats:: 12
+  card-ease-factor:: 1.4
+  card-next-schedule:: 2025-07-19T03:00:33.690Z
+  card-last-reviewed:: 2025-03-25T11:00:33.690Z
+  card-last-score:: 5
 	- mvcc {{cloze 快照读}}
 		- 简单的select操作
 		- 如何解决幻读 {{cloze MVCC + Read View}}
@@ -306,12 +309,12 @@
 		- {{cloze 除聚簇索引以外的索引}}
 		- 回表 {{cloze 第一次定位到聚簇索引，第二次通过聚簇索引定位到查找记录}}
 - 索引优化策略 #card
-  card-last-interval:: 0
-  card-repeats:: 12
-  card-ease-factor:: 1.3
-  card-next-schedule:: 2025-03-25T10:48:23.045Z
-  card-last-reviewed:: 2025-03-25T10:48:23.046Z
-  card-last-score:: 3
+  card-last-interval:: 161.98
+  card-repeats:: 13
+  card-ease-factor:: 1.4
+  card-next-schedule:: 2025-09-03T10:00:05.414Z
+  card-last-reviewed:: 2025-03-25T11:00:05.414Z
+  card-last-score:: 5
 	- 索引覆盖 {{cloze select字段 存在索引中}}
 	- 最左匹配原则 {{cloze 利用最左匹配，减少索引的建立}}
 - 索引失效的13种场景 #card
@@ -338,12 +341,12 @@
 	- 非主键的`order by ` 但需要具体情况具体验证
 	- 表数据较少时，走全表扫描比走索引效率更高 (内置优化策略)
 - 索引下推 #card
-  card-last-score:: 3
-  card-repeats:: 10
-  card-next-schedule:: 2025-03-25T10:48:16.912Z
-  card-last-interval:: 0
-  card-ease-factor:: 1.3
-  card-last-reviewed:: 2025-03-25T10:48:16.912Z
+  card-last-score:: 5
+  card-repeats:: 11
+  card-next-schedule:: 2025-06-16T01:59:59.703Z
+  card-last-interval:: 82.64
+  card-ease-factor:: 1.4
+  card-last-reviewed:: 2025-03-25T10:59:59.703Z
 	- Mysql5.6-之前，没有充分利用非聚簇索引
 		- 假设有索引(name,age)和查询条件 name like 张% and age = 10
 	- 不存在索引下推时 {{cloze 先根据非聚簇索引查记录，再根据where条件过滤}}
@@ -351,12 +354,12 @@
 	- 使用索引下推后 {{cloze 先根据 where条件过滤记录，再进行非聚簇索引查询}}
 		- 充分利用了name,age 字段，减少了回表次数
 - MRR优化 #card
-  card-last-interval:: 0
-  card-repeats:: 12
-  card-ease-factor:: 1.3
-  card-next-schedule:: 2025-03-25T10:48:18.738Z
-  card-last-reviewed:: 2025-03-25T10:48:18.738Z
-  card-last-score:: 3
+  card-last-interval:: 161.98
+  card-repeats:: 13
+  card-ease-factor:: 1.4
+  card-next-schedule:: 2025-09-03T10:00:01.563Z
+  card-last-reviewed:: 2025-03-25T11:00:01.563Z
+  card-last-score:: 5
 	- 当使用二级索引进行范围查询时，从随机读变为顺序读 {{cloze 通过对索引值排序，把无序回表IO变成有序回表IO}}
 - Explain 查询计划 #card
   card-last-interval:: -1
@@ -401,23 +404,23 @@
 		- {{cloze 是否命中索引}}
 		- 降低SQL语句的复杂度
 - bin log 和 redo log的区别 #card
-  card-last-interval:: 0
-  card-repeats:: 12
-  card-ease-factor:: 1.3
-  card-next-schedule:: 2025-03-25T10:48:25.745Z
-  card-last-reviewed:: 2025-03-25T10:48:25.745Z
-  card-last-score:: 3
+  card-last-interval:: 161.98
+  card-repeats:: 13
+  card-ease-factor:: 1.4
+  card-next-schedule:: 2025-09-03T10:00:07.835Z
+  card-last-reviewed:: 2025-03-25T11:00:07.835Z
+  card-last-score:: 5
 	- bin log
 		- 是MySql层的日志系统 ，记录的是 {{cloze SQL语句的原始逻辑}}
 	- redo log
 		- 是存储引擎 InnoDb的日志 ，记录的是 {{cloze 某个数据做了什么修改}}
 - MySql的主从复制 3线程 #card
-  card-last-interval:: 0
-  card-repeats:: 8
-  card-ease-factor:: 1.3
-  card-next-schedule:: 2025-03-25T10:48:13.079Z
-  card-last-reviewed:: 2025-03-25T10:48:13.079Z
-  card-last-score:: 3
+  card-last-interval:: 42.17
+  card-repeats:: 9
+  card-ease-factor:: 1.4
+  card-next-schedule:: 2025-05-06T14:59:56.686Z
+  card-last-reviewed:: 2025-03-25T10:59:56.686Z
+  card-last-score:: 5
 	- Master开启 bin log ,对数据的更新操作会按顺序写入 bin log
 	- Slave连接Master后，Slave的一个`IO线程` 请求 bin log dump
 	- Master开启 `IO线程` 开始传输bin log
@@ -472,12 +475,12 @@
 	- 各种看板和统计报表
 		- {{cloze 数据工厂，离线计算。 直接接入ES}}
 - 大批量数据的插入 #card
-  card-last-interval:: 0
-  card-repeats:: 13
-  card-ease-factor:: 1.3
-  card-next-schedule:: 2025-03-25T10:49:43.613Z
-  card-last-reviewed:: 2025-03-25T10:49:43.613Z
-  card-last-score:: 3
+  card-last-interval:: 226.78
+  card-repeats:: 14
+  card-ease-factor:: 1.4
+  card-next-schedule:: 2025-11-07T05:00:24.500Z
+  card-last-reviewed:: 2025-03-25T11:00:24.500Z
+  card-last-score:: 5
 	- 开启事务
 	- 合并插入：一条语句插入多条数据
 	- 顺序插入：数据按主键ID排序好

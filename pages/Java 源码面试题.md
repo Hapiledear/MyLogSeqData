@@ -1,4 +1,7 @@
 - {{cards Java 源码面试题}}
+	- Summary: 1 items, 1 review counts [[2025年03月25日]]
+		- Remembered:   0 (0%)
+		- Forgotten :   1 (100%)
 	- Summary: 18 items, 18 review counts [[2025年03月24日]]
 		- Remembered:   18 (100%)
 		- Forgotten :   0 (0%)
@@ -236,12 +239,12 @@
 	-
 - 分布式锁Redisson #card
   id:: 66b9f4a6-7e94-4124-8048-1b4a483420ed
-  card-last-interval:: 0.14
+  card-last-interval:: -1
   card-repeats:: 1
   card-ease-factor:: 2.36
-  card-next-schedule:: 2025-03-24T09:55:16.143Z
-  card-last-reviewed:: 2025-03-24T06:55:16.144Z
-  card-last-score:: 3
+  card-next-schedule:: 2025-03-25T16:00:00.000Z
+  card-last-reviewed:: 2025-03-25T11:06:25.586Z
+  card-last-score:: 1
 	- 加锁&释放锁
 		- `hincryby key field value`   使用HashMap，field=uuid:thread_id
 		- 使用Lua脚本保证原子性
