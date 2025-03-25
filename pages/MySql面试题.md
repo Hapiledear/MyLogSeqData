@@ -103,10 +103,10 @@
 		- {{cloze 只能遍历}}
 - 事物的四大特性，分别是如何解决的 #card
   card-last-interval:: 0
-  card-repeats:: 10
+  card-repeats:: 11
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-14T00:59:33.459Z
-  card-last-reviewed:: 2024-08-14T00:59:33.460Z
+  card-next-schedule:: 2025-03-25T00:30:05.838Z
+  card-last-reviewed:: 2025-03-25T00:30:05.838Z
   card-last-score:: 3
 	- 一致性 是目标，其他三者是手段
 		- {{cloze 事物在执行前后其状态一致,A+B=100 无论A B怎么转账，最终都是100}}
@@ -205,10 +205,10 @@
 		- 如何解决幻读 {{cloze next-key Lock 行锁与间隙锁的组合}}
 - 什么是MVCC #card
   card-last-interval:: 0
-  card-repeats:: 10
+  card-repeats:: 11
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-14T00:55:34.915Z
-  card-last-reviewed:: 2024-08-14T00:55:34.916Z
+  card-next-schedule:: 2025-03-25T00:28:55.591Z
+  card-last-reviewed:: 2025-03-25T00:28:55.591Z
   card-last-score:: 3
   id:: 66544682-3ef3-48a1-8016-f7c29dd8c85d
 	- 多版本并发控制
@@ -224,10 +224,10 @@
 			- {{cloze 只在第一次执行查询语句时生成 Read View}}
 - MySql中的锁有哪些 #card
   card-last-interval:: 0
-  card-repeats:: 9
+  card-repeats:: 10
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-13T09:19:54.540Z
-  card-last-reviewed:: 2024-08-13T09:19:54.540Z
+  card-next-schedule:: 2025-03-25T00:27:16.670Z
+  card-last-reviewed:: 2025-03-25T00:27:16.670Z
   card-last-score:: 3
   id:: 66544682-bdee-4d8c-bf84-15f2624311e0
 	- 表锁
@@ -268,20 +268,20 @@
 	- ((66544683-504d-4344-a4e9-d0abfdb0bd53))
 - B+树与B树的对比 #card
   card-last-interval:: 0
-  card-repeats:: 9
+  card-repeats:: 10
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-13T09:16:00.986Z
-  card-last-reviewed:: 2024-08-13T09:16:00.986Z
+  card-next-schedule:: 2025-03-25T00:27:00.639Z
+  card-last-reviewed:: 2025-03-25T00:27:00.639Z
   card-last-score:: 3
 	- 数据记录 {{cloze 都存放在叶子节点中}} {{cloze 非叶节点只存储键值信息}}
 	- {{cloze 所有叶子节点之间都有一个链指针}}
 	- B树可以在所有节点中存储数据
 - 索引的优缺点 #card
   card-last-interval:: 0
-  card-repeats:: 9
+  card-repeats:: 10
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-13T09:12:10.350Z
-  card-last-reviewed:: 2024-08-13T09:12:10.351Z
+  card-next-schedule:: 2025-03-25T00:24:39.854Z
+  card-last-reviewed:: 2025-03-25T00:24:39.854Z
   card-last-score:: 3
 	- 优点
 		- {{cloze 提高数据检索效率，降低IO}}
@@ -291,10 +291,10 @@
 		- {{cloze 每次增改数据，都需要动态维护索引，导致增改时间变长}}
 - 聚集索引和非聚集索引 #card
   card-last-interval:: 0
-  card-repeats:: 9
+  card-repeats:: 10
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-13T09:15:57.258Z
-  card-last-reviewed:: 2024-08-13T09:15:57.258Z
+  card-next-schedule:: 2025-03-25T00:26:29.727Z
+  card-last-reviewed:: 2025-03-25T00:26:29.728Z
   card-last-score:: 3
 	- 聚簇索引
 		- {{cloze b+树的叶子节点中存放了表中一行的全部数据}}
@@ -313,10 +313,10 @@
 	- 最左匹配原则 {{cloze 利用最左匹配，减少索引的建立}}
 - 索引失效的13种场景 #card
   card-last-interval:: 0
-  card-repeats:: 9
+  card-repeats:: 10
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-13T09:05:12.100Z
-  card-last-reviewed:: 2024-08-13T09:05:12.101Z
+  card-next-schedule:: 2025-03-25T00:23:29.044Z
+  card-last-reviewed:: 2025-03-25T00:23:29.044Z
   card-last-score:: 3
   id:: 66544682-8b5a-4888-9bd0-2104beb329f7
 	- 联合索引不满足最左匹配原则
@@ -422,10 +422,10 @@
 	- Slave 启动线程  `SQL线程` ，实时监控 中继日志是否有更新，解析SQL语句，在S库中执行
 - 分库分表策略 及 数据分片规则 #card
   card-last-interval:: 0
-  card-repeats:: 9
+  card-repeats:: 10
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-13T09:13:33.345Z
-  card-last-reviewed:: 2024-08-13T09:13:33.345Z
+  card-next-schedule:: 2025-03-25T00:25:06.918Z
+  card-last-reviewed:: 2025-03-25T00:25:06.918Z
   card-last-score:: 3
 	- 水平拆分
 		- {{cloze 将一张表中的数据，按照一定策略(Hash取模、range) ，拆分到多个库/表中}}
@@ -527,11 +527,11 @@
 	- {{cloze 网络延迟}}
 	- {{cloze 机器性能不足}}
 - MySQL脏页的刷新时机 #card
-  card-last-interval:: 0.14
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2024-08-13T11:53:37.608Z
-  card-last-reviewed:: 2024-08-13T08:53:37.608Z
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2025-03-29T00:28:12.399Z
+  card-last-reviewed:: 2025-03-25T00:28:12.439Z
   card-last-score:: 3
 	- 定时刷新
 	- 缓存空间不足
