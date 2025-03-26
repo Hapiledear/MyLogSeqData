@@ -1,22 +1,22 @@
 - {{cards [[JVM面试题]] }}
 - [[Java 元空间]] 会产生内存溢出吗？ #card
-  card-last-score:: 3
-  card-repeats:: 9
-  card-next-schedule:: 2024-08-13T09:12:22.968Z
-  card-last-interval:: 0
+  card-last-score:: 1
+  card-repeats:: 1
+  card-next-schedule:: 2025-03-26T16:00:00.000Z
+  card-last-interval:: -1
   card-ease-factor:: 1.3
-  card-last-reviewed:: 2024-08-13T09:12:22.969Z
+  card-last-reviewed:: 2025-03-26T00:26:51.678Z
 	- 元空间的由来。 {{cloze 从java8+开始，用 元空间 替代了 永久代/方法区}}
 	- 元空间的内存 {{cloze 并不使用虚拟机的内存，而是直接使用机器内存}}
 	- 出现OOM的原因 {{cloze 加载到内存中的class文件数量太多or体积太大}}
 	- 解决办法 {{cloze 增加元空间的大小 `-XX:MaxMetaspaceSize=512m`}}
 - 说一下 JVM 的主要组成部分及其作用 #card
   card-last-score:: 3
-  card-repeats:: 8
-  card-next-schedule:: 2024-08-13T09:17:18.059Z
+  card-repeats:: 9
+  card-next-schedule:: 2025-03-26T00:30:21.027Z
   card-last-interval:: 0
   card-ease-factor:: 1.3
-  card-last-reviewed:: 2024-08-13T09:17:18.059Z
+  card-last-reviewed:: 2025-03-26T00:30:21.027Z
 	- 类加载系统 {{cloze 根据给定的全限定类名，使用双亲委派模型，由类加载器加载class文件到 方法区}}
 	- 运行时数据区 JVM内存模型 {{cloze 分为线程公有的堆、方法区，和线程私有的 虚拟机栈、本地方法栈、程序计数器}}
 	- 执行引擎 {{cloze 执行字节码指令。分为 即时编译执行和解释执行。此外，**垃圾收集器** 也在其中}}
@@ -50,10 +50,10 @@
 		- {{cloze 通过DirectByteBuffer对象的虚引用实现堆外内存的释放}} 如何回收
 - 堆内存的组成 #card
   card-last-interval:: 0
-  card-repeats:: 8
+  card-repeats:: 9
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-13T09:17:09.395Z
-  card-last-reviewed:: 2024-08-13T09:17:09.395Z
+  card-next-schedule:: 2025-03-26T00:29:47.778Z
+  card-last-reviewed:: 2025-03-26T00:29:47.779Z
   card-last-score:: 3
 	- {{cloze 1/3的年轻代 2/3的老年代}} 2代
 	- {{cloze  年轻代又分 eden区 s1和s2区 比例为 8:1:1}} 3区
@@ -69,10 +69,10 @@
 	- {{cloze 方法区的具体实现 元空间}}
 - ## 为什么 字符串常量池 #常量池 被移动到了堆中？ #card
   card-last-interval:: 0
-  card-repeats:: 8
+  card-repeats:: 9
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-13T09:18:23.083Z
-  card-last-reviewed:: 2024-08-13T09:18:23.084Z
+  card-next-schedule:: 2025-03-26T00:30:42.802Z
+  card-last-reviewed:: 2025-03-26T00:30:42.803Z
   card-last-score:: 3
 	- [[Java 永久代]]在 Full GC/Major GC  时才会触发，条件苛刻
 	- 开发中会有大量字符串被创建，回收效率低导致永久代内存不足
@@ -81,10 +81,10 @@
 		- 通过 `new String()` 这样的方式创建字符串，除非明确调用了 `intern()` 方法，否则不会自动放入字符串常量池
 - ## 几种变量存放在哪里？ #card
   card-last-interval:: 0
-  card-repeats:: 8
+  card-repeats:: 9
   card-ease-factor:: 1.3
-  card-last-reviewed:: 2024-08-13T09:18:34.811Z
-  card-next-schedule:: 2024-08-13T09:18:34.811Z
+  card-last-reviewed:: 2025-03-26T00:30:51.658Z
+  card-next-schedule:: 2025-03-26T00:30:51.658Z
   card-last-score:: 3
 	- ``` java
 	  	  public class StaticObjTest {
@@ -179,10 +179,10 @@
 	- 初始化 {{cloze 对静态变量和代码块执行初始化工作}}
 - 类加载器分类和双亲委派模型 #card
   card-last-interval:: 0
-  card-repeats:: 10
+  card-repeats:: 11
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-14T01:03:33.819Z
-  card-last-reviewed:: 2024-08-14T01:03:33.819Z
+  card-next-schedule:: 2025-03-26T00:31:16.707Z
+  card-last-reviewed:: 2025-03-26T00:31:16.708Z
   card-last-score:: 3
 	- 启动类加载器
 	- 扩展类加载器
@@ -216,10 +216,10 @@
 	- 老年代满了则触发 Full GC
 - JVM中的垃圾回收器有哪些,及其工作原理 #card
   card-last-interval:: 0
-  card-repeats:: 9
+  card-repeats:: 10
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-13T09:14:41.683Z
-  card-last-reviewed:: 2024-08-13T09:14:41.683Z
+  card-next-schedule:: 2025-03-26T00:28:43.601Z
+  card-last-reviewed:: 2025-03-26T00:28:43.602Z
   card-last-score:: 3
 	- Serial
 		- 串行收集
@@ -288,21 +288,21 @@
 	- {{cloze -xss1m}} 设置单个线程栈大小
 	- {{cloze -xx:maxMetaspaceSize=2g}} 设置元空间的最大值
 - 对象一定都是在堆上分配吗？ 逃逸分析 #card
-  card-last-interval:: 0.01
-  card-repeats:: 7
+  card-last-interval:: 0
+  card-repeats:: 8
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-13T09:18:37.843Z
-  card-last-reviewed:: 2024-08-13T09:18:37.844Z
+  card-next-schedule:: 2025-03-26T00:31:04.498Z
+  card-last-reviewed:: 2025-03-26T00:31:04.498Z
   card-last-score:: 3
 	- 如果对象不会逃逸出方法外部，则会在栈上分配
 	- 如果符合标量替换条件(不逃逸&不会被本线程外的线程访问)，则会将对象分解成若干个方法内从成员变量
 - HotSpot JVM 为什么叫这个名字 #card
-  card-last-interval:: 0
-  card-repeats:: 8
+  card-last-interval:: -1
+  card-repeats:: 1
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-13T09:16:11.178Z
-  card-last-reviewed:: 2024-08-13T09:16:11.178Z
-  card-last-score:: 3
+  card-next-schedule:: 2025-03-26T16:00:00.000Z
+  card-last-reviewed:: 2025-03-26T00:29:36.338Z
+  card-last-score:: 1
 	- 即时编译功能
 		- 寻找热点代码，将热点代码编译成机器码并缓存起来
 	- 即时编译器中所作的优化
