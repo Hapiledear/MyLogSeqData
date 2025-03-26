@@ -1,4 +1,7 @@
 - {{cards [[JVM面试题]] }}
+	- Summary: 27 items, 27 review counts [[2025年03月26日]]
+		- Remembered:   21 (77%)
+		- Forgotten :   6 (22%)
 - [[Java 元空间]] 会产生内存溢出吗？ #card
   card-last-score:: 1
   card-repeats:: 1
@@ -23,10 +26,10 @@
 	- 本地接口 {{cloze 调用本地方法}}
 - 说一下JVM内存模型 #card
   card-last-interval:: 0
-  card-repeats:: 10
+  card-repeats:: 11
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-09-02T03:12:13.733Z
-  card-last-reviewed:: 2024-09-02T03:12:13.734Z
+  card-next-schedule:: 2025-03-26T00:56:57.653Z
+  card-last-reviewed:: 2025-03-26T00:56:57.653Z
   card-last-score:: 3
   id:: 66544681-7486-43a2-832f-a98d2314a5a4
 	- 画一下JVM内存模型图，并描述每个模块的定义，作用，以及可能会存在的问题
@@ -141,11 +144,11 @@
 		- 堆对于整个应用程序都是共享的、可见的
 		- 栈是线程私有的
 - 对象创建过程 #card
-  card-last-interval:: 0.01
-  card-repeats:: 7
+  card-last-interval:: 0
+  card-repeats:: 8
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-23T06:01:48.325Z
-  card-last-reviewed:: 2024-08-23T06:01:48.325Z
+  card-next-schedule:: 2025-03-26T00:55:36.764Z
+  card-last-reviewed:: 2025-03-26T00:55:36.764Z
   card-last-score:: 3
 	- 类加载
 	- 分配内存
@@ -232,10 +235,10 @@
 		- 只针对新生代的Young GC 和 新生代&老年代的Mix GC
 - 4种引用及应用场景 #card
   card-last-interval:: 0
-  card-repeats:: 10
+  card-repeats:: 11
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-09-02T03:13:44.318Z
-  card-last-reviewed:: 2024-09-02T03:13:44.318Z
+  card-next-schedule:: 2025-03-26T00:59:23.908Z
+  card-last-reviewed:: 2025-03-26T00:59:23.909Z
   card-last-score:: 3
 	- 强引用
 		- new关键字触发
@@ -274,10 +277,10 @@
 	- 使用 {{cloze `visualvm`}} 分析大内存占用，如 短时间内产生的大量小对象，长期的大对象以及长期得不到回收的对象
 - JVM参数 调优经验 #card
   card-last-interval:: 0.02
-  card-repeats:: 5
+  card-repeats:: 6
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-09-02T03:12:40.445Z
-  card-last-reviewed:: 2024-09-02T03:12:40.445Z
+  card-next-schedule:: 2025-03-26T00:59:10.932Z
+  card-last-reviewed:: 2025-03-26T00:59:10.933Z
   card-last-score:: 3
 	- {{cloze -Xms -Xmx }} 初始堆内存，最大堆内存
 	- {{cloze -Xmn -XX: SuvivorRation -XX:NewRation}} 新生代大小 e,s1,s2的比例 新生代:老年代
@@ -360,12 +363,12 @@
 	- 监控工具 {{cloze VisualVM}} {{cloze JConsole}}
 - JVM频繁GC，你会怎么办 #card
   id:: 66bdbe38-595c-4b97-acf6-d42aa64126fc
-  card-last-interval:: 0.14
+  card-last-interval:: -1
   card-repeats:: 1
   card-ease-factor:: 2.36
-  card-next-schedule:: 2024-08-23T05:04:13.254Z
-  card-last-reviewed:: 2024-08-23T02:04:13.255Z
-  card-last-score:: 3
+  card-next-schedule:: 2025-03-26T16:00:00.000Z
+  card-last-reviewed:: 2025-03-26T00:53:56.284Z
+  card-last-score:: 1
 	- 导出和分析日志
 		- 使用 {{cloze `-Xloggc`}} 命令，找到GC日志的地址
 		- 导入GC分析工具,有Java自带的 {{cloze VisualVM}} 和各种开源的如 {{cloze gceasy}}
@@ -388,22 +391,22 @@
 			- 调整 {{cloze 回收线程的数量}}
 - 如何判断出现了内存泄露 #card
   id:: 66544682-4d24-4646-8ba6-527ef3a72f1d
-  card-last-interval:: 0.14
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2024-08-23T05:18:01.075Z
-  card-last-reviewed:: 2024-08-23T02:18:01.076Z
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2025-03-30T00:54:31.876Z
+  card-last-reviewed:: 2025-03-26T00:54:31.916Z
   card-last-score:: 3
 	- 堆内存使用量 {{cloze 持续增长}} ，即使在 {{cloze 垃圾回收}} 后也未显著下降
 	- 使用性能分析工具Virtual VM，找出 {{cloze 长时间存活且未被回收的对象}}
 	- 使用第三方内存分析工具 如Jprofile
 - 如何修复内存泄露 #card
   id:: 66c2e7b0-6752-45f9-89fa-11fe7162bbf7
-  card-last-interval:: 4
-  card-repeats:: 2
-  card-ease-factor:: 2.22
-  card-next-schedule:: 2024-08-23T09:25:49.480Z
-  card-last-reviewed:: 2024-08-19T09:25:49.481Z
+  card-last-interval:: 5.82
+  card-repeats:: 3
+  card-ease-factor:: 2.08
+  card-next-schedule:: 2025-03-31T19:55:52.661Z
+  card-last-reviewed:: 2025-03-26T00:55:52.662Z
   card-last-score:: 3
 	- 审查并优化 {{cloze 代码}}
 	- 使用 {{cloze 软引用、弱引用、虚引用}}
