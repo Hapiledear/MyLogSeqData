@@ -4,11 +4,11 @@
 		- Forgotten :   0 (0%)
 - ArrayList
 	- ArrayList的扩容机制/流程是怎么样的 #card
-	  card-last-interval:: 5.82
-	  card-repeats:: 3
-	  card-ease-factor:: 2.08
-	  card-next-schedule:: 2024-08-18T03:18:26.897Z
-	  card-last-reviewed:: 2024-08-12T08:18:26.897Z
+	  card-last-interval:: 15.05
+	  card-repeats:: 4
+	  card-ease-factor:: 1.94
+	  card-next-schedule:: 2025-04-10T02:21:42.111Z
+	  card-last-reviewed:: 2025-03-26T01:21:42.149Z
 	  card-last-score:: 3
 		- 初始容量,默认为 {{cloze 10}}
 		- 触发时机，没有负载因子。 {{cloze 数组放不下}} 时立即触发
@@ -80,12 +80,12 @@
 		- 冲突解决办法
 			- {{cloze 线性探测}} 同时触发 {{cloze 过期元素清理}} ,详见 添加元素的过程
 	- ThreadLocal添加元素的过程 #card
-	  card-last-interval:: 5.82
-	  card-repeats:: 3
+	  card-last-interval:: -1
+	  card-repeats:: 1
 	  card-ease-factor:: 2.08
-	  card-next-schedule:: 2024-08-18T03:17:45.474Z
-	  card-last-reviewed:: 2024-08-12T08:17:45.474Z
-	  card-last-score:: 3
+	  card-next-schedule:: 2025-03-26T16:00:00.000Z
+	  card-last-reviewed:: 2025-03-26T01:21:25.712Z
+	  card-last-score:: 1
 		- 通过hash计算槽位后，此时分4种情况
 			- 槽位Entity为空 {{cloze 直接放入}}
 			- 槽位Entity不为空且 {{cloze key值一致}} 更新
@@ -95,12 +95,12 @@
 				- 向后过程中，遇到 {{cloze 过期key}} && 遇到 {{cloze k==key}} 交换 {{cloze 过期key和k的位置}} ，触发 {{cloze 过期回收}}
 		- Entity为空，说明被回收了， key为null 说明为过期key，被垃圾回收器回收了
 	- ThreadLocal的过期回收过程 #card
-	  card-last-interval:: 5.82
-	  card-repeats:: 3
+	  card-last-interval:: -1
+	  card-repeats:: 1
 	  card-ease-factor:: 2.08
-	  card-next-schedule:: 2024-08-18T03:17:09.178Z
-	  card-last-reviewed:: 2024-08-12T08:17:09.178Z
-	  card-last-score:: 3
+	  card-next-schedule:: 2025-03-26T16:00:00.000Z
+	  card-last-reviewed:: 2025-03-26T01:21:19.551Z
+	  card-last-score:: 1
 		- 探测式清理 `expungeStaleEntry( i )`
 		  id:: 66b1e39e-a9c7-4771-b6e0-d700bdd3808c
 			- 从位置i向后遍历槽位
@@ -139,12 +139,12 @@
 			- 多元依赖 `allOf`或`anyOf`
 		- 异常处理 `handle( )` 和 `exceptionally( )`
 	- CompletableFuture的源码 #card
-	  card-last-score:: 3
-	  card-repeats:: 2
-	  card-next-schedule:: 2024-08-16T07:26:58.694Z
-	  card-last-interval:: 4
+	  card-last-score:: 1
+	  card-repeats:: 1
+	  card-next-schedule:: 2025-03-26T16:00:00.000Z
+	  card-last-interval:: -1
 	  card-ease-factor:: 2.22
-	  card-last-reviewed:: 2024-08-12T07:26:58.694Z
+	  card-last-reviewed:: 2025-03-26T01:19:44.790Z
 		- 类似于 观察者模式
 			- {{cloze result}} 用于存储当前CF的结果
 			- {{cloze stack (Completion)}} 表示当前CF完成后需要触发的依赖动作
@@ -157,12 +157,12 @@
   id:: 66b1bef3-8dcd-4de9-bf66-9e8e321e1f1c
 	- https://tech.meituan.com/2020/04/02/java-pooling-pratice-in-meituan.html
 	- 线程池的状态以及作用 #card
-	  card-last-interval:: 4
-	  card-repeats:: 2
+	  card-last-interval:: -1
+	  card-repeats:: 1
 	  card-ease-factor:: 2.22
-	  card-next-schedule:: 2024-08-18T01:20:19.707Z
-	  card-last-reviewed:: 2024-08-14T01:20:19.707Z
-	  card-last-score:: 3
+	  card-next-schedule:: 2025-03-26T16:00:00.000Z
+	  card-last-reviewed:: 2025-03-26T01:20:19.759Z
+	  card-last-score:: 1
 		- `Running` 工作状态 -- {{cloze 接受并处理}} 任务
 		- `Shutdown` 准备关闭 -- 不再 {{cloze 接受新任务}} ，但 {{cloze 完成已有任务}}
 		- `Stop` 停止 -- {{cloze 尝试中断正在执行的}} 任务
@@ -189,11 +189,11 @@
 			- 尝试获取系统层级/JVM层级的某项共享资源不成功后，由系统/JVM将其唤醒
 			- `Lock.lock()` 方法，转移到的是`waiting` 等待状态，因为Lock底层是AQS, 被放入了队列，需要被释放锁的线程唤醒。
 	- 线程池如何优雅的关闭 #card
-	  card-last-interval:: 0.14
-	  card-repeats:: 1
-	  card-ease-factor:: 2.36
-	  card-next-schedule:: 2024-08-16T04:09:23.353Z
-	  card-last-reviewed:: 2024-08-16T01:09:23.353Z
+	  card-last-interval:: 4
+	  card-repeats:: 2
+	  card-ease-factor:: 2.22
+	  card-next-schedule:: 2025-03-30T01:19:32.821Z
+	  card-last-reviewed:: 2025-03-26T01:19:32.858Z
 	  card-last-score:: 3
 		- 调用`shutdown()`
 		- 如果是长时间任务，考虑在任务中实现 {{cloze 保存点，保存此刻的执行状态}} ，下次启动后接着执行。
