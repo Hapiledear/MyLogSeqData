@@ -1,5 +1,5 @@
 - [生产者 Producer](https://excalidraw.com/#json=qKm_c7SjBe1IUen_HxVsg,CMYjMm-Jb2hYFVe2xOTqsw)
-	- ![image.png](../assets/image_1723625663546_0.png)
+	- ![image.png](../assets/image_1723625663546_0.png){:height 399, :width 748}
 	- 消息投送流程
 		- 主线程
 			- (key,value,topic) -> 消息构建message -> 拦截增强 -> 序列化 -> 分区
