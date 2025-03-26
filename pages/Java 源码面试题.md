@@ -1,4 +1,7 @@
 - {{cards Java 源码面试题}}
+	- Summary: 1 items, 1 review counts [[2025年03月26日]]
+		- Remembered:   0 (0%)
+		- Forgotten :   1 (100%)
 	- Summary: 1 items, 1 review counts [[2025年03月25日]]
 		- Remembered:   0 (0%)
 		- Forgotten :   1 (100%)
@@ -49,12 +52,12 @@
 	- 存储元素使用的是数组，扩容机制同ArrayList
 		- 使用`Object[]` 表示二叉树, 获取parent节点 `parent = (k - 1) >>> 1`
 	- 优先队列的元素插入/删除机制 #card
-	  card-last-interval:: 13.21
-	  card-repeats:: 5
-	  card-ease-factor:: 1.8
-	  card-next-schedule:: 2025-04-06T12:20:56.246Z
-	  card-last-reviewed:: 2025-03-24T07:20:56.246Z
-	  card-last-score:: 3
+	  card-last-interval:: -1
+	  card-repeats:: 0
+	  card-ease-factor:: 2.5
+	  card-next-schedule:: nil
+	  card-last-reviewed:: nil
+	  card-last-score:: nil
 		- 将元素key插入到末尾 i=size
 		- 进行上浮操作
 			- 获取parent节点 {{cloze `parent = (k - 1) >>> 1`}}
@@ -242,8 +245,8 @@
   card-last-interval:: -1
   card-repeats:: 1
   card-ease-factor:: 2.36
-  card-next-schedule:: 2025-03-25T16:00:00.000Z
-  card-last-reviewed:: 2025-03-25T11:06:25.586Z
+  card-next-schedule:: 2025-03-26T16:00:00.000Z
+  card-last-reviewed:: 2025-03-26T06:32:21.971Z
   card-last-score:: 1
 	- 加锁&释放锁
 		- `hincryby key field value`   使用HashMap，field=uuid:thread_id
