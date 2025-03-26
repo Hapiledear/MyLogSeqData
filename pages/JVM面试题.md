@@ -273,7 +273,7 @@
   card-last-score:: 1
 	- 使用 {{cloze `jmap`}} 查看各区域的使用情况
 	- 使用 {{cloze `jstack`}} 查看线程的运行情况，关注阻塞的线程、是否出现了死锁
-	- 使用 {{cloze `jstat`}} 查看GC情况，特别注意Full GC
+	- 使用 {{cloze `jstat`}} jstatic-统计GC信息，特别注意Full GC
 	- 使用 {{cloze `visualvm`}} 分析大内存占用，如 短时间内产生的大量小对象，长期的大对象以及长期得不到回收的对象
 - JVM参数 调优经验 #card
   card-last-interval:: 0.02

@@ -252,8 +252,8 @@
   card-last-interval:: 0
   card-ease-factor:: 1.3
   card-last-reviewed:: 2024-08-13T09:13:36.863Z
-	- 合理设置 {{cloze 最大内存}} `maxmemory`
-	- 合适的 {{cloze 内存回收}} 策略
+	- 合理的设置 {{cloze 最大内存}} `maxmemory`
+	- 合适的 {{cloze 内存淘汰}} 策略
 	- {{cloze 压缩}} key和value，避免大key
 	- 共享 {{cloze 对象池}}
 	- 合理的内存 {{cloze 碎片}} 管理
