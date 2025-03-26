@@ -59,11 +59,11 @@
 	- {{cloze  年轻代又分 eden区 s1和s2区 比例为 8:1:1}} 3区
 	- {{cloze 通常 年轻代采用的GC算法是 复制算法，老年代采用的是标记-整理算法 }} GC算法
 - 非堆内存有哪些 #card
-  card-last-interval:: 0.01
-  card-repeats:: 7
+  card-last-interval:: 0
+  card-repeats:: 8
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-14T01:32:53.652Z
-  card-last-reviewed:: 2024-08-14T01:32:53.652Z
+  card-next-schedule:: 2025-03-26T00:36:56.658Z
+  card-last-reviewed:: 2025-03-26T00:36:56.659Z
   card-last-score:: 3
 	- {{cloze DirectByteBuffer 所申请的直接内存}} NIO
 	- {{cloze 方法区的具体实现 元空间}}
@@ -155,22 +155,22 @@
 	- 初始化
 	- <init>方法
 - 触发类加载的时机 4 #card
-  card-last-interval:: 0.22
-  card-repeats:: 2
+  card-last-interval:: 0.03
+  card-repeats:: 3
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-14T06:22:11.555Z
-  card-last-reviewed:: 2024-08-14T01:22:11.556Z
+  card-next-schedule:: 2025-03-26T00:37:11.434Z
+  card-last-reviewed:: 2025-03-26T00:37:11.435Z
   card-last-score:: 3
 	- new关键字
 	- Class or Constructor的newInstance方法
 	- clone方法
 	- 反序列化
 - 类加载过程 #card
-  card-last-interval:: 0.01
-  card-repeats:: 7
+  card-last-interval:: 0
+  card-repeats:: 8
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-14T01:32:15.940Z
-  card-last-reviewed:: 2024-08-14T01:32:15.940Z
+  card-next-schedule:: 2025-03-26T00:36:41.234Z
+  card-last-reviewed:: 2025-03-26T00:36:41.234Z
   card-last-score:: 3
 	- 加载 {{cloze 导入class文件}}
 	- 验证 {{cloze 检测class文件的正确性}}
@@ -252,22 +252,22 @@
 		- 每次GC时回收
 		- 利用回收时的通知机制来管理堆外内存
 - 永久代会发生垃圾回收吗 #card
-  card-last-interval:: 0.03
-  card-repeats:: 3
+  card-last-interval:: 0.02
+  card-repeats:: 4
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-14T01:21:35.963Z
-  card-last-reviewed:: 2024-08-14T01:21:35.963Z
+  card-next-schedule:: 2025-03-26T00:34:46.690Z
+  card-last-reviewed:: 2025-03-26T00:34:46.728Z
   card-last-score:: 3
 	- 会，但是回收的条件比较苛刻
 		- 类及其所有对象都被回收
 		- 常量池中的常量无任何引用
 - ## 如何排查JVM问题 #card
-  card-last-interval:: 0
-  card-repeats:: 9
+  card-last-interval:: -1
+  card-repeats:: 1
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-14T01:07:50.950Z
-  card-last-reviewed:: 2024-08-14T01:07:50.950Z
-  card-last-score:: 3
+  card-next-schedule:: 2025-03-26T16:00:00.000Z
+  card-last-reviewed:: 2025-03-26T00:34:13.993Z
+  card-last-score:: 1
 	- 使用 {{cloze `jmap`}} 查看各区域的使用情况
 	- 使用 {{cloze `jstack`}} 查看线程的运行情况，关注阻塞的线程、是否出现了死锁
 	- 使用 {{cloze `jstat`}} 查看GC情况，特别注意Full GC
@@ -331,11 +331,11 @@
 		- 日志打印过多
 - JVM的**年轻代**内存分配为什么是1:1:8 #card
   card-last-score:: 3
-  card-repeats:: 9
-  card-next-schedule:: 2024-08-14T01:08:23.359Z
+  card-repeats:: 10
+  card-next-schedule:: 2025-03-26T00:34:38.402Z
   card-last-interval:: 0
   card-ease-factor:: 1.3
-  card-last-reviewed:: 2024-08-14T01:08:23.359Z
+  card-last-reviewed:: 2025-03-26T00:34:38.402Z
 	- 为什么要有Eden和servivor区
 		- {{cloze 减少被送入老年代的对象，进而减少Full GC次数}}
 	- 为什么要有2个servivor区
