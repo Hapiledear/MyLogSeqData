@@ -1,4 +1,7 @@
 - {{cards Java 源码面试题}}
+	- Summary: 18 items, 18 review counts [[2025年03月26日]]
+		- Remembered:   14 (77%)
+		- Forgotten :   4 (22%)
 	- Summary: 9 items, 9 review counts [[2024年08月07日]]
 		- Remembered:   9 (100%)
 		- Forgotten :   0 (0%)
@@ -17,11 +20,11 @@
 - HashMap
   id:: 66b20b36-7c48-424a-9b27-a2c18f1e2a9a
 	- HashMap的扩容机制/流程是怎样的 #card
-	  card-last-interval:: 5.82
-	  card-repeats:: 3
-	  card-ease-factor:: 2.08
-	  card-next-schedule:: 2024-08-18T03:18:41.384Z
-	  card-last-reviewed:: 2024-08-12T08:18:41.384Z
+	  card-last-interval:: 15.05
+	  card-repeats:: 4
+	  card-ease-factor:: 1.94
+	  card-next-schedule:: 2025-04-10T02:24:12.830Z
+	  card-last-reviewed:: 2025-03-26T01:24:12.831Z
 	  card-last-score:: 3
 		- 初始容量，默认为 {{cloze 16}}
 		- 触发时机, 元素 {{cloze 数量达到当前容量与负载因子(默认0.75)的}} 乘积时.
@@ -31,11 +34,11 @@
 			- 链表节点和红黑树节点，`e.hash & oldCap` 根据 {{cloze 第n+1位的0 or 1 }} 分成两个链表/树，一个在旧位置idx, 另一个在新位置 {{cloze idx+oldCap}}
 				- 假设 oldCap = 2^n
 	- HashMap的key/value能否为null #card
-	  card-last-interval:: 5.82
-	  card-repeats:: 3
-	  card-ease-factor:: 2.08
-	  card-next-schedule:: 2024-08-18T03:19:07.865Z
-	  card-last-reviewed:: 2024-08-12T08:19:07.865Z
+	  card-last-interval:: 15.05
+	  card-repeats:: 4
+	  card-ease-factor:: 1.94
+	  card-next-schedule:: 2025-04-10T02:25:04.767Z
+	  card-last-reviewed:: 2025-03-26T01:25:04.767Z
 	  card-last-score:: 3
 		- key可以为null ,计算的hashCode = 0
 		- value可以为null
@@ -43,11 +46,11 @@
 	- 存储元素使用的是数组，扩容机制同ArrayList
 		- 使用`Object[]` 表示二叉树, 获取parent节点 `parent = (k - 1) >>> 1`
 	- 优先队列的元素插入/删除机制 #card
-	  card-last-interval:: 15.05
-	  card-repeats:: 4
-	  card-ease-factor:: 1.94
-	  card-next-schedule:: 2024-09-03T10:11:07.106Z
-	  card-last-reviewed:: 2024-08-19T09:11:07.106Z
+	  card-last-interval:: 13.21
+	  card-repeats:: 5
+	  card-ease-factor:: 1.8
+	  card-next-schedule:: 2025-04-08T06:27:25.080Z
+	  card-last-reviewed:: 2025-03-26T01:27:25.080Z
 	  card-last-score:: 3
 		- 将元素key插入到末尾 i=size
 		- 进行上浮操作
@@ -57,22 +60,22 @@
 - [ThreadLocal](https://javaguide.cn/java/concurrent/threadlocal.html#threadlocalmap-get-%E8%AF%A6%E8%A7%A3)
   id:: 66b195b5-0b07-4b75-91af-088d7e445523
 	- ThreadLocal如何防止内存溢出 #card
-	  card-last-interval:: 5.82
-	  card-repeats:: 3
-	  card-ease-factor:: 2.08
-	  card-next-schedule:: 2024-08-18T03:19:04.497Z
-	  card-last-reviewed:: 2024-08-12T08:19:04.497Z
+	  card-last-interval:: 15.05
+	  card-repeats:: 4
+	  card-ease-factor:: 1.94
+	  card-next-schedule:: 2025-04-10T02:24:57.518Z
+	  card-last-reviewed:: 2025-03-26T01:24:57.518Z
 	  card-last-score:: 3
 		- Map中的key是 {{cloze 弱引用WeekReference}} , GC后回收。key == null,表示过期状态
 		- 手动调用remove方法，尤其是在与线程池配合使用时。
 			- 将当前位置的 entry == null ，标记为可回收
 			- 触发 ((66b1e39e-a9c7-4771-b6e0-d700bdd3808c))
 	- ThreadLocalMap的哈希算法与哈希冲突 #card
-	  card-last-interval:: 15.05
-	  card-repeats:: 4
-	  card-ease-factor:: 1.94
-	  card-next-schedule:: 2024-09-03T10:17:58.159Z
-	  card-last-reviewed:: 2024-08-19T09:17:58.159Z
+	  card-last-interval:: 13.21
+	  card-repeats:: 5
+	  card-ease-factor:: 1.8
+	  card-next-schedule:: 2025-04-08T06:27:53.879Z
+	  card-last-reviewed:: 2025-03-26T01:27:53.879Z
 	  card-last-score:: 3
 		- ThreadLocal 有自己的hashCode算法
 			- {{cloze 斐波那契数}} 的递增，只是初始值不是1,而是 `0x61c88647`
@@ -113,11 +116,11 @@
 			- 假设 len = 2^k ,遍历 {{cloze k次}}
 			- 每次遍历，都找到最近一个 {{cloze Entity == null}} 的位置，作为 探测式清理的起始位置。
 	- ThreadLocalMap的扩容 #card
-	  card-last-interval:: 5.82
-	  card-repeats:: 3
-	  card-ease-factor:: 2.08
-	  card-next-schedule:: 2024-08-18T03:18:59.010Z
-	  card-last-reviewed:: 2024-08-12T08:18:59.010Z
+	  card-last-interval:: 15.05
+	  card-repeats:: 4
+	  card-ease-factor:: 1.94
+	  card-next-schedule:: 2025-04-10T02:24:36.343Z
+	  card-last-reviewed:: 2025-03-26T01:24:36.343Z
 	  card-last-score:: 3
 		- 初始大小是 {{cloze 16}}
 		- 首先进行一次 {{cloze 全表清理}}
@@ -125,11 +128,11 @@
 		- idx  = {{cloze  ThreadHashCode & (newLen -1)}}
 - CompletableFuture
 	- CompletableFuture的实现和提供的功能 #card
-	  card-last-interval:: 15.05
-	  card-repeats:: 4
-	  card-ease-factor:: 1.94
-	  card-next-schedule:: 2024-09-07T02:49:18.523Z
-	  card-last-reviewed:: 2024-08-23T01:49:18.523Z
+	  card-last-interval:: 13.21
+	  card-repeats:: 5
+	  card-ease-factor:: 1.8
+	  card-next-schedule:: 2025-04-08T06:28:01.166Z
+	  card-last-reviewed:: 2025-03-26T01:28:01.167Z
 	  card-last-score:: 3
 		- 实现了两个接口 {{cloze `Future`}} 和 {{cloze `CompletionStage`}}
 		- 多种任务之间的编排功能
@@ -169,11 +172,11 @@
 		- `Tidying` 清理 -- 进行 {{cloze 资源回收或其他钩子方法}}
 		- `Terminated` 已终止 -- 线程池 {{cloze 已经停止并且不能重新启动}}
 	- 线程的状态 #card
-	  card-last-interval:: 5.82
-	  card-repeats:: 3
-	  card-ease-factor:: 2.08
-	  card-next-schedule:: 2024-08-28T20:36:34.699Z
-	  card-last-reviewed:: 2024-08-23T01:36:34.699Z
+	  card-last-interval:: 15.05
+	  card-repeats:: 4
+	  card-ease-factor:: 1.94
+	  card-next-schedule:: 2025-04-10T02:26:18.913Z
+	  card-last-reviewed:: 2025-03-26T01:26:18.913Z
 	  card-last-score:: 3
 		- `new` 新建 -- 线程对象被创建后，但尚未启动
 		- `runnable` 可运行 -- 调用了`start()`方法后
@@ -198,11 +201,11 @@
 		- 调用`shutdown()`
 		- 如果是长时间任务，考虑在任务中实现 {{cloze 保存点，保存此刻的执行状态}} ，下次启动后接着执行。
 	- 线程池支持哪些队列 #card
-	  card-last-interval:: 0.14
-	  card-repeats:: 1
-	  card-ease-factor:: 2.36
-	  card-next-schedule:: 2024-08-23T05:14:44.843Z
-	  card-last-reviewed:: 2024-08-23T02:14:44.882Z
+	  card-last-interval:: 4
+	  card-repeats:: 2
+	  card-ease-factor:: 2.22
+	  card-next-schedule:: 2025-03-30T01:25:38.358Z
+	  card-last-reviewed:: 2025-03-26T01:25:38.358Z
 	  card-last-score:: 3
 		- 有界队列/无界队列 `LinkedBlockQueue` 最大值为 `Integer.MAX_VALUE`
 		- 双端队列 `LinkedBlockDeque`
@@ -211,33 +214,33 @@
 		- 同步移交队列 `SynchronousQueue`
 			- 种队列没有内部容量，任务提交者必须等待另一个线程接收并开始执行任务
 	- 线程池支持哪些拒绝策略 #card
-	  card-last-interval:: 0.14
-	  card-repeats:: 1
-	  card-ease-factor:: 2.36
-	  card-next-schedule:: 2024-08-23T05:15:23.443Z
-	  card-last-reviewed:: 2024-08-23T02:15:23.443Z
+	  card-last-interval:: 4
+	  card-repeats:: 2
+	  card-ease-factor:: 2.22
+	  card-next-schedule:: 2025-03-30T01:25:53.999Z
+	  card-last-reviewed:: 2025-03-26T01:25:54.000Z
 	  card-last-score:: 3
 		- 拒绝并抛出异常 `RejectedExecutionException`
 		- 丢弃且不会抛出异常
 		- 提交任务的线程执行此任务
 		- 丢弃队列中最旧的任务，然后尝试提交
 	- 线程池的监控和动态修改手段 #card
-	  card-last-interval:: 0.14
-	  card-repeats:: 1
-	  card-ease-factor:: 2.36
-	  card-next-schedule:: 2024-08-23T05:08:04.019Z
-	  card-last-reviewed:: 2024-08-23T02:08:04.019Z
-	  card-last-score:: 3
+	  card-last-interval:: 4
+	  card-repeats:: 2
+	  card-ease-factor:: 2.46
+	  card-next-schedule:: 2025-03-30T01:25:10.504Z
+	  card-last-reviewed:: 2025-03-26T01:25:10.504Z
+	  card-last-score:: 5
 		- **Dynamic TP** 监控告警
 		- **Hippo** 动态修改线程池参数
 	-
 - 分布式锁Redisson #card
   id:: 66b9f4a6-7e94-4124-8048-1b4a483420ed
-  card-last-interval:: 0.14
-  card-repeats:: 1
-  card-ease-factor:: 2.36
-  card-next-schedule:: 2024-09-02T05:59:14.485Z
-  card-last-reviewed:: 2024-09-02T02:59:14.485Z
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 2.22
+  card-next-schedule:: 2025-03-30T01:26:58.559Z
+  card-last-reviewed:: 2025-03-26T01:26:58.559Z
   card-last-score:: 3
 	- 加锁&释放锁
 		- `hincryby key field value`   使用HashMap，field=uuid:thread_id
