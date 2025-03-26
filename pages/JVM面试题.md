@@ -123,10 +123,10 @@
 -
 - ## [[Java 堆内存]] 与[[Java 虚拟机栈]] 的区别 #card
   card-last-interval:: 0
-  card-repeats:: 8
+  card-repeats:: 9
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-23T01:30:51.146Z
-  card-last-reviewed:: 2024-08-23T01:30:51.147Z
+  card-next-schedule:: 2025-03-26T00:48:33.804Z
+  card-last-reviewed:: 2025-03-26T00:48:33.804Z
   card-last-score:: 3
 	- 物理地址
 		- 堆的物理地址分配是不连续的。所以GC时有各种算法
@@ -190,11 +190,11 @@
 	- 自定义类加载器
 	- 双亲委派： {{cloze 先将其委派给父类，如果父类不能加载，再自己来}}
 - 对象如何访问 #card
-  card-last-interval:: 0.01
-  card-repeats:: 7
+  card-last-interval:: 0
+  card-repeats:: 8
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-23T02:20:17.171Z
-  card-last-reviewed:: 2024-08-23T02:20:17.171Z
+  card-next-schedule:: 2025-03-26T00:49:46.028Z
+  card-last-reviewed:: 2025-03-26T00:49:46.028Z
   card-last-score:: 3
 	- 句柄
 		- {{cloze 栈中对象的引用 ->堆中句柄池中的句柄 -> 堆中的实例 和 方法区的类型信息}} 栈-> 堆->堆和方法区
@@ -204,10 +204,10 @@
 		- {{cloze 节省了一次指针定位的时间}} 好处
 - 对象分配策略 #card
   card-last-interval:: 0
-  card-repeats:: 8
+  card-repeats:: 9
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-19T09:04:05.644Z
-  card-last-reviewed:: 2024-08-19T09:04:05.644Z
+  card-next-schedule:: 2025-03-26T00:47:31.972Z
+  card-last-reviewed:: 2025-03-26T00:47:31.972Z
   card-last-score:: 3
 	- 新对象分配在eden区，大对象直接进入老年代
 	- 经历过一次Minor GC ,复制到surviro区，年龄+1
@@ -312,12 +312,12 @@
 		- 循环优化-无关代码外提、循环展开(次数减少，重复相同逻辑x次)
 		-
 - Java程序 CPU突然飙升 该如何处理？#card
-  card-last-interval:: 0
-  card-repeats:: 11
+  card-last-interval:: -1
+  card-repeats:: 1
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-23T01:43:08.450Z
-  card-last-reviewed:: 2024-08-23T01:43:08.450Z
-  card-last-score:: 3
+  card-next-schedule:: 2025-03-26T16:00:00.000Z
+  card-last-reviewed:: 2025-03-26T00:49:32.282Z
+  card-last-score:: 1
   id:: 66b2c808-ec8f-41cc-85b4-9e91f056ce7c
 	- 问题定位
 		- {{cloze top 命令}} 查看CPU占用情况，找到进程id
@@ -341,12 +341,12 @@
 	- 为什么要有2个servivor区
 		- {{cloze 更贴合复制算法，解决碎片化问题}}
 - 监控JVM时，会关注哪些指标 #card
-  card-last-interval:: 0.14
+  card-last-interval:: -1
   card-repeats:: 1
   card-ease-factor:: 2.36
-  card-next-schedule:: 2024-08-16T04:09:52.621Z
-  card-last-reviewed:: 2024-08-16T01:09:52.621Z
-  card-last-score:: 3
+  card-next-schedule:: 2025-03-26T16:00:00.000Z
+  card-last-reviewed:: 2025-03-26T00:42:35.343Z
+  card-last-score:: 1
   id:: 66544681-b7e8-492b-b50b-84d4270751e8
 	- {{cloze 堆内存}} 使用情况
 		- 总量、使用量、大对象占比等
