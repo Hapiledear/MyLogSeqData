@@ -239,7 +239,8 @@
 	  card-last-score:: 3
 		- **Dynamic TP** 监控告警
 		- **Hippo** 动态修改线程池参数
-	-
+	- 线程池中的线程回收过程 #card
+		-
 - 分布式锁Redisson #card
   id:: 66b9f4a6-7e94-4124-8048-1b4a483420ed
   card-last-interval:: -1
