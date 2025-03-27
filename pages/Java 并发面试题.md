@@ -83,10 +83,10 @@
 	- 实际开发中 {{cloze synch比volatile用得多一点，volatile需要搭配automit类使用}}
 - 什么是CAS #card #Java并发
   card-last-interval:: 0
-  card-repeats:: 8
+  card-repeats:: 9
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-13T09:18:30.003Z
-  card-last-reviewed:: 2024-08-13T09:18:30.004Z
+  card-next-schedule:: 2025-03-27T05:58:22.768Z
+  card-last-reviewed:: 2025-03-27T05:58:22.768Z
   card-last-score:: 3
 	- compare and swap 比较并交换
 	- 实现,是否加锁 {{cloze 内存位置v 预期原值A和新值B ，如果内存值=A 那么将内存值改为B}} {{cloze 不加锁，但会自旋一定次数}}
@@ -192,10 +192,10 @@
 	- 适用场景 {{cloze 读多写少}}
 - 阻塞队列BlockingQueue的实现原理 #card #Java并发
   card-last-interval:: 0
-  card-repeats:: 8
+  card-repeats:: 9
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-13T09:18:13.827Z
-  card-last-reviewed:: 2024-08-13T09:18:13.828Z
+  card-next-schedule:: 2025-03-27T05:58:13.037Z
+  card-last-reviewed:: 2025-03-27T05:58:13.037Z
   card-last-score:: 3
 	- 拯救了#生产者-消费者 模型的控制逻辑
 		- {{cloze 在队列为空时，获取元素的线程会等待队列变为非空}}
