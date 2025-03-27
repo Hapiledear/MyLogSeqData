@@ -57,15 +57,12 @@
 	- 偏向锁
 		- 2个条件 {{cloze 无竞争情况下}} {{cloze 对象头的threadId空间可用}}
 		- 如何设置 {{cloze CAS操作,记录线程Id: threadId=this}}
-			- | Mark Word (64 bits)                  | State  |
-			  |--------------------------------------|--------|
-			  | unused:25 | threadId:31 | epoch:2 | 1 | 01 | Biased
+			- ![image.png](../assets/image_1743040608840_0.png)
 		- 竞争加剧 {{cloze 膨胀为轻量级锁}}
+		- 调用`hashCode()`会**立即撤销**偏向锁,因为偏向锁占用存储hashCode的位置
 	- 轻量级锁
 		- 栈和锁对象的结构 {{cloze 栈中增加 LockRecord 指向锁对象}} {{cloze 对象头的一部分保存 LockRecord指针}}
-			- | Mark Word (64 bits)                  | State        |
-			  |--------------------------------------|--------------|
-			  | pointer_to_lock_record:62          | 00           | Lightweight
+			- ![image.png](../assets/image_1743040618870_0.png)
 		- CAS 自适应自旋 {{cloze 根据上次获得锁的时间与结果自动调整 次数和等待时长}} {{cloze 进行空转，并未放弃时间片}}
 	- 重量级锁 监视器(Monitor)机制
 		- 同步功能
