@@ -12,6 +12,12 @@
 - [[分布式事务]]
 -
 - for update关键字的原理 #card
+  card-last-interval:: 0.11
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2025-03-27T07:48:00.016Z
+  card-last-reviewed:: 2025-03-27T05:48:00.053Z
+  card-last-score:: 3
 	- **InnoDB 行锁**通过 {{cloze 索引}} 实现
 	- ```
 	  -- 精确锁定单行 
