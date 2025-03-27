@@ -11,6 +11,22 @@
 - 如无特殊说明，题中出现的存储引擎均为 [[InnoDb]]
 - [[分布式事务]]
 -
+- for update关键字的原理 #card
+	- **InnoDB 行锁**通过 {{cloze 索引}} 实现
+	- ```
+	  -- 精确锁定单行 
+	  SELECT * FROM users WHERE id = 10 FOR UPDATE;
+	  ```
+	- ```
+	  -- 全表扫描导致表锁
+	  SELECT * FROM users WHERE name = 'Alice' FOR UPDATE;
+	  ```
+	- ```
+	  -- 锁定区间内的行和间隙[间隙锁]
+	  -- 第一个不满足条件的记录上[临键锁]
+	  SELECT * FROM accounts 
+	  WHERE balance BETWEEN 1000 AND 5000 FOR UPDATE;
+	  ```
 - 数据库死锁的触发条件 和 解决方案 #card
   id:: 66c2b8a3-dbe4-432d-92d9-e1b138d9ee50
   card-last-interval:: 4

@@ -240,7 +240,10 @@
 		- **Dynamic TP** 监控告警
 		- **Hippo** 动态修改线程池参数
 	- 线程池中的线程回收过程 #card
-		-
+		- 中断空闲Worker线程
+		- 从HashSet`workers`中移除引用
+		- 递减`workerCount`计数
+		- 尝试终止线程池（若满足条件）
 - 分布式锁Redisson #card
   id:: 66b9f4a6-7e94-4124-8048-1b4a483420ed
   card-last-interval:: -1
