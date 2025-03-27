@@ -49,10 +49,10 @@
 		- 解决方案 {{cloze 热点key过期时间加长，永不过期}} {{cloze 实时监控热点数据，实时调整过期时间}} 代码层面 {{cloze 使用synch 或 ReentryLock 加锁更新，这样后续的请求就又会走缓存}}
 - 在日常项目中用到了哪些Redis数据类型,底层结构是什么样的 #card
   card-last-interval:: 0
-  card-repeats:: 9
+  card-repeats:: 10
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-13T09:06:19.269Z
-  card-last-reviewed:: 2024-08-13T09:06:19.269Z
+  card-next-schedule:: 2025-03-27T05:48:53.021Z
+  card-last-reviewed:: 2025-03-27T05:48:53.022Z
   card-last-score:: 3
   id:: 66544683-54e6-404a-b2a4-a1b75a3296cc
 	- string
@@ -94,10 +94,10 @@
 		- {{cloze volatile-lfu}} 有过期时间的key中 移除最少访问的key
 - 了解Redis的事务机制吗？ #card
   card-last-interval:: 0
-  card-repeats:: 9
+  card-repeats:: 10
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-13T09:06:51.108Z
-  card-last-reviewed:: 2024-08-13T09:06:51.108Z
+  card-next-schedule:: 2025-03-27T05:55:01.516Z
+  card-last-reviewed:: 2025-03-27T05:55:01.516Z
   card-last-score:: 3
 	- 事务以 {{cloze MUTLI}}命令开始
 	- 客户端接收一系列操作，放入队列中
@@ -159,10 +159,10 @@
 	- {{cloze scan命令可以提取指定模式的key列表}}
 - Redis的持久化机制 #card
   card-last-interval:: 0
-  card-repeats:: 9
+  card-repeats:: 10
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-13T09:14:13.545Z
-  card-last-reviewed:: 2024-08-13T09:14:13.546Z
+  card-next-schedule:: 2025-03-27T05:57:27.596Z
+  card-last-reviewed:: 2025-03-27T05:57:27.596Z
   card-last-score:: 3
   id:: 66544683-689f-49c0-b896-a44dfc456883
 	- bgsave 全量持久化
@@ -247,11 +247,11 @@
 		- {{cloze 投票选举，超过半数者升级}}
 - Redis的内存优化策略 #card
   card-last-score:: 3
-  card-repeats:: 9
-  card-next-schedule:: 2024-08-13T09:13:36.862Z
+  card-repeats:: 10
+  card-next-schedule:: 2025-03-27T05:57:23.861Z
   card-last-interval:: 0
   card-ease-factor:: 1.3
-  card-last-reviewed:: 2024-08-13T09:13:36.863Z
+  card-last-reviewed:: 2025-03-27T05:57:23.861Z
 	- 合理的设置 {{cloze 最大内存}} `maxmemory`
 	- 合适的 {{cloze 内存淘汰}} 策略
 	- {{cloze 压缩}} key和value，避免大key
@@ -314,10 +314,10 @@
 		- 拆分 {{cloze 按长度截取拆分，使用multiget读取}}
 - Redis的SDS与C语言的字符串比较 #card
   card-last-interval:: 0
-  card-repeats:: 9
+  card-repeats:: 10
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-13T09:06:34.396Z
-  card-last-reviewed:: 2024-08-13T09:06:34.396Z
+  card-next-schedule:: 2025-03-27T05:54:20.667Z
+  card-last-reviewed:: 2025-03-27T05:54:20.667Z
   card-last-score:: 3
 	- c语言字符串的缺点
 		- {{cloze 获取字符串长度 需要O(n)}}
@@ -365,10 +365,10 @@
 	- 需要额外的层级和指针，更大的内存开销
 - Redis的压缩列表zipList和quickList #card
   card-last-interval:: 0
-  card-repeats:: 9
+  card-repeats:: 10
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-13T09:12:40.033Z
-  card-last-reviewed:: 2024-08-13T09:12:40.033Z
+  card-next-schedule:: 2025-03-27T05:57:01.304Z
+  card-last-reviewed:: 2025-03-27T05:57:01.304Z
   card-last-score:: 3
 	- 压缩体现在哪里?
 		- 普通的数组结构， {{cloze 每一个单元的长度由最大字符串长度决定的}}

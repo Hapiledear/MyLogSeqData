@@ -1,11 +1,11 @@
 - {{cards [[HBase面试题]] }}
 - 项目中有哪些场景下使用了HBase #card
-  card-last-interval:: 0
-  card-repeats:: 8
+  card-last-interval:: -1
+  card-repeats:: 1
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-13T09:17:30.427Z
-  card-last-reviewed:: 2024-08-13T09:17:30.427Z
-  card-last-score:: 3
+  card-next-schedule:: 2025-03-27T16:00:00.000Z
+  card-last-reviewed:: 2025-03-27T05:57:49.469Z
+  card-last-score:: 1
 	- 日志记录
 	- 超过亿级的表数据
 	- 帖子和评论 -- 无固定且需要扩展的列

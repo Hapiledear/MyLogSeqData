@@ -1,11 +1,11 @@
 - {{cards [[Java 并发面试题]]}}
 - 并发中的三大问题是如何产生的，都是如何解决的? #card #Java并发
   card-last-score:: 3
-  card-repeats:: 9
-  card-next-schedule:: 2024-08-13T09:13:02.225Z
+  card-repeats:: 10
+  card-next-schedule:: 2025-03-27T05:57:11.844Z
   card-last-interval:: 0
   card-ease-factor:: 1.3
-  card-last-reviewed:: 2024-08-13T09:13:02.225Z
+  card-last-reviewed:: 2025-03-27T05:57:11.844Z
 	- 原子性
 		- {{cloze `i++` 一行代码被编译为机器指令时可能是多步操作}}
 		- {{cloze CAS , synchroize，显示锁}}
@@ -93,10 +93,10 @@
 	- 实现 {{cloze atomic下的类大多是使用CAS操作来实现的}}
 - CAS会产生什么问题以及解决办法 #card #Java并发
   card-last-interval:: 0
-  card-repeats:: 8
+  card-repeats:: 9
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-13T09:18:07.836Z
-  card-last-reviewed:: 2024-08-13T09:18:07.836Z
+  card-next-schedule:: 2025-03-27T05:57:59.055Z
+  card-last-reviewed:: 2025-03-27T05:57:59.055Z
   card-last-score:: 3
 	- ABA问题
 		- {{cloze 用链表的例子更直观}}
@@ -138,10 +138,10 @@
 		- 公平 {{cloze AQS只允许头节点抢锁}}
 - AQS是什么，抢锁过程 #card #Java并发
   card-last-interval:: 0
-  card-repeats:: 8
+  card-repeats:: 9
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-13T09:16:08.498Z
-  card-last-reviewed:: 2024-08-13T09:16:08.499Z
+  card-next-schedule:: 2025-03-27T05:57:46.445Z
+  card-last-reviewed:: 2025-03-27T05:57:46.446Z
   card-last-score:: 3
   id:: 66544682-9c55-4747-8b61-7a3bca8924d9
 	- AQS是一个用来构建锁和同步器的框架
@@ -171,11 +171,11 @@
 			- 单节点 {{cloze hash & newCap-1 }}
 			- 链表与红黑树 {{cloze hash & oldCap}} (oldCap=2^n,本质是看第n+1位是0 or 1)，确定是留在原位置idx 还是 移动到新位置 {{cloze idx+oldCap}}
 - synchronizeMap与ConcurrentHashMap的区别 #card #Java并发
-  card-last-interval:: 0.01
-  card-repeats:: 7
+  card-last-interval:: 0
+  card-repeats:: 8
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-13T09:18:11.891Z
-  card-last-reviewed:: 2024-08-13T09:18:11.892Z
+  card-next-schedule:: 2025-03-27T05:58:04.261Z
+  card-last-reviewed:: 2025-03-27T05:58:04.261Z
   card-last-score:: 3
 	- 锁住数据的粒度
 		- {{cloze synchMap 一次锁住一整张表}}

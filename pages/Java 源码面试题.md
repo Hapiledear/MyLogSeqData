@@ -240,6 +240,12 @@
 		- **Dynamic TP** 监控告警
 		- **Hippo** 动态修改线程池参数
 	- 线程池中的线程回收过程 #card
+	  card-last-interval:: 0.11
+	  card-repeats:: 1
+	  card-ease-factor:: 2.36
+	  card-next-schedule:: 2025-03-27T07:48:23.906Z
+	  card-last-reviewed:: 2025-03-27T05:48:23.907Z
+	  card-last-score:: 3
 		- 中断空闲Worker线程
 		- 从HashSet`workers`中移除引用
 		- 递减`workerCount`计数

@@ -14,10 +14,10 @@
 	- Provider与Consumer 在内存中累计调用次数和耗时，定时上报给监控中心
 - Dubbo的轮询策略 #card
   card-last-interval:: 0
-  card-repeats:: 9
+  card-repeats:: 10
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-13T09:06:36.844Z
-  card-last-reviewed:: 2024-08-13T09:06:36.844Z
+  card-next-schedule:: 2025-03-27T05:54:37.468Z
+  card-last-reviewed:: 2025-03-27T05:54:37.468Z
   card-last-score:: 3
 	- 随机
 	- 轮询和加权轮询

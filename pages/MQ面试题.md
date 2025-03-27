@@ -69,10 +69,10 @@
 		- 手动确认机制 {{cloze 自己在代码里处理完业务逻辑之后，手动确认}}
 - Rabbit MQ 如何保证高可用 #card
   card-last-interval:: 0
-  card-repeats:: 9
+  card-repeats:: 10
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-13T09:15:51.922Z
-  card-last-reviewed:: 2024-08-13T09:15:51.922Z
+  card-next-schedule:: 2025-03-27T05:57:32.590Z
+  card-last-reviewed:: 2025-03-27T05:57:32.591Z
   card-last-score:: 3
 	- 镜像集群模式
 		- {{cloze 每个mq节点都有一个一模一样的queue}}
@@ -80,10 +80,10 @@
 		- 缺点 {{cloze 同步开销大，占用网络带宽}}
 - 消息队列满了怎么处理？几百万消息积压几个小时。 #card
   card-last-interval:: 0
-  card-repeats:: 9
+  card-repeats:: 10
   card-ease-factor:: 1.3
-  card-next-schedule:: 2024-08-13T09:12:36.145Z
-  card-last-reviewed:: 2024-08-13T09:12:36.145Z
+  card-next-schedule:: 2025-03-27T05:55:29.632Z
+  card-last-reviewed:: 2025-03-27T05:55:29.632Z
   card-last-score:: 3
 	- 消费者. {{cloze 快速定位问题，修复consumer}} {{cloze 停止线上的consumer消费}}
 	- 机器扩容 {{cloze 上线一个分发consumer，分发到新建立的topic，partition是原来的10倍}} {{cloze 消费consumer上线，也是原来的10倍}}
