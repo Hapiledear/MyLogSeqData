@@ -35,14 +35,9 @@
 			- 每个生产者有唯一PID
 			- 每条消息有唯一 序列号 Sequence Number
 			- Broker拒绝重复序列号的消息
-	- 可监控指标
-		- out-of-order-records 乱序消息数
-		- record-retry-rate 消息重试率
-- Kafka如何保证消息消费时的顺序性 #card
-	- 分区[Partition]独占消费模式
-		- 每一个分区对应一个消费者
-		- 消息严格按照存储顺序被读取
-	-
+	- 多分区下的顺序策略
+		- 设置合理的Key\自定义分区策略 确保相同key被发送到同一分区
+			- eg.对同一订单的a、b、c操作
 - Kafka分区的好处 #card
   card-last-interval:: 0.14
   card-repeats:: 1
