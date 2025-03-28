@@ -25,6 +25,14 @@
 		- Topic配置
 		- 消费者offset
 		- 控制器选举
+- Kafka如何保证消息投送时的顺序性 #card
+	- 单个分区[Partition]内的消息一定是顺序的
+		- 日志的有序性
+		- 按append方式写入
+		- 消费者按存储顺序读取
+	- 生产者重试-导致消息重复发送
+		- 启用 幂等性
+			-
 - Kafka分区的好处 #card
   card-last-interval:: 0.14
   card-repeats:: 1
