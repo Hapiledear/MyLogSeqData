@@ -4,7 +4,27 @@
 		- 将消息发送到指定 {{cloze topic}}
 		- 支持消息 {{cloze 分区路由}}
 		- 提供 {{cloze ACK确认}} 机制
-	-
+	- Broker Kafka集群机器单元
+		- 消息 {{cloze 持久化存储}}
+		- 处理 {{cloze 生产者/消费者}} 请求
+		- {{cloze 副本}} 管理和 {{cloze 故障}} 转移
+	- Consumer 消费者
+		- 从 {{cloze Topic}} 拉取消息
+		- 维护 {{cloze 消费偏移量(offset)}}
+		- 支持 {{cloze 消费者组(Consumer Group)}}
+	- Topic 主题
+		- 消息的逻辑分类单元
+		- Partition 分区
+			- 每个分区是 {{cloze 有序的}} 消息序列
+			- 分区可以分布在不同的Broker
+		- Replica 副本
+			- Leader {{cloze 读写}} - Follower {{cloze 同步数据}}
+	- Zookeeper
+		- 集群 {{cloze 元数据}} 管理
+		- Broker注册信息
+		- Topic配置
+		- 消费者offset
+		- 控制器选举
 - Kafka分区的好处 #card
   card-last-interval:: 0.14
   card-repeats:: 1
