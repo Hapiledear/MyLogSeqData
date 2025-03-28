@@ -38,6 +38,9 @@
 	- 多分区下的顺序策略
 		- 设置合理的Key\自定义分区策略 确保相同key被发送到同一分区
 			- eg.对同一订单的a、b、c操作
+	- 消费者Rebalance发生-可能导致原topic分配给另外的consumer
+		- eg. 消息3正在处理时,发起了重平衡. 消息3被重复消费了
+		-
 - Kafka分区的好处 #card
   card-last-interval:: 0.14
   card-repeats:: 1
