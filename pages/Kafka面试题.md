@@ -32,7 +32,17 @@
 		- 消费者按存储顺序读取
 	- 生产者重试-导致消息重复发送
 		- 启用 幂等性
-			-
+			- 每个生产者有唯一PID
+			- 每条消息有唯一 序列号 Sequence Number
+			- Broker拒绝重复序列号的消息
+	- 可监控指标
+		- out-of-order-records 乱序消息数
+		- record-retry-rate 消息重试率
+- Kafka如何保证消息消费时的顺序性 #card
+	- 分区[Partition]独占消费模式
+		- 每一个分区对应一个消费者
+		- 消息严格按照存储顺序被读取
+	-
 - Kafka分区的好处 #card
   card-last-interval:: 0.14
   card-repeats:: 1
