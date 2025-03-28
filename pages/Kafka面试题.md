@@ -1,4 +1,10 @@
 - {{cards [[Kafka面试题]]}}
+- 介绍一下Kafka #card
+	- Producer 生产者
+		- 将消息发送到指定 {{cloze topic}}
+		- 支持消息 {{cloze 分区路由}}
+		- 提供 {{cloze ACK确认}} 机制
+	-
 - Kafka分区的好处 #card
   card-last-interval:: 0.14
   card-repeats:: 1
