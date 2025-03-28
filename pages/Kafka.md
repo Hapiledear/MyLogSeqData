@@ -92,7 +92,17 @@
 			- sync_group -- 接收并下发  分区方案给所有消费者
 			- heartbeat -- 维持与消费者的心跳链接
 - [[Kafka面试题]]
--
+- 幂等性
+  id:: 67e666e3-8842-4534-b702-1ec4c80a4818
+	- 唯一性标识
+		- `PID` (Producer ID)：每个生产者唯一的身份标识
+		- `Sequence Number`：每条消息的单调递增序列号
+	- 生产者开启配置
+		- ENABLE_IDEMPOTENCE_CONFIG = true
+		- ACKS_CONFIG = all
+	- Broker进行检查
+		- 检查`(PID, Partition, Sequence)`组合,接受正常递增的消息,拒绝重复的序列号
+	-
 - 事务控制消息
   id:: 67e665d9-a1c0-47fe-9ed6-3126d0adecce
 	- 控制消息类型
