@@ -48,6 +48,10 @@
 		- 业务消息与 ((67e665d9-a1c0-47fe-9ed6-3126d0adecce)) 同存于日志
 		- 控制消息包含事务最终状态
 		- 消费者自动过滤未提交消息
+- Kafka如何保证消息不丢失 #card
+	- 消息丢失场景
+		-
+	- 完整的不丢失方案
 - Kafka分区的好处 #card
   card-last-interval:: 0.14
   card-repeats:: 1
