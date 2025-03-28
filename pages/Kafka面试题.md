@@ -25,7 +25,7 @@
 		- Topic配置
 		- 消费者offset
 		- 控制器选举
-- Kafka如何保证消息投送时的顺序性 #card
+- Kafka如何保证消息的顺序性 #card
 	- 单个分区[Partition]内的消息一定是顺序的
 		- 日志的有序性
 		- 按append方式写入
