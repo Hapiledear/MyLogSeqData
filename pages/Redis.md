@@ -1,4 +1,9 @@
 - 通信协议 RESP(Rediscover Serialization Protocol)
 	- 每个字符项以特定字符`+ - : $ * `开头表示类型,以`\r\n`作为行尾标记
+	- 协议数据类型及格式
+		- 简单字符串
+		- 错误信息
+		- 整数
+		- 数组
 	-
 - [[Redis面试题]]
