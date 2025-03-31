@@ -1,2 +1,4 @@
--
+- 通信协议 RESP(Rediscover Serialization Protocol)
+	- 每个字符项以特定字符`+ - : $ * `开头表示类型,以`\r\n`作为行尾标记
+	-
 - [[Redis面试题]]
