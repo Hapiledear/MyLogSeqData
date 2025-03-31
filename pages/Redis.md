@@ -55,6 +55,7 @@
 			      unsigned char bytes[sizeof(double)]; // 浮点数的字符串形式
 			  } redisDouble;
 			  ```
-		-
+- `DUMP`命令详解
+	- 通过复用**RDB持久化**层的序列化逻辑，实现了高效的对象序列化功能
 - [[Redis面试题]]
 -
