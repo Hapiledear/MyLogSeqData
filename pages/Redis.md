@@ -29,8 +29,32 @@
 			  bar\r\n
 			  ```
 	- 协议通信流程
+	  collapsed:: true
 		- 客户端总是以**数组**的形式发送命令
-			- eg
+			- eg `SET key value`
+			- ```
+			  *3\r\n
+			  $3\r\n
+			  SET\r\n
+			  $3\r\n
+			  key\r\n
+			  $5\r\n
+			  value\r\n
+			  ```
 		- 服务端根据命令返回不同类型
-	-
+			- 简单命令：`+OK\r\n`
+			- 错误：`-ERR...\r\n`
+			- 数据查询：`$...\r\n` 或 `*...\r\n`
+	- 对浮点数的支持
+		- 将浮点数转为**字符串**后使用 Bulk String 类型传输
+		- Redis 内部使用 IEEE 754 标准的二进制表示
+			- ```c
+			  // Redis 源码中的浮点数处理（redis.h）
+			  typedef union {
+			      double d; // 浮点数
+			      unsigned char bytes[sizeof(double)]; // 浮点数的字符串形式
+			  } redisDouble;
+			  ```
+		-
 - [[Redis面试题]]
+-
