@@ -67,7 +67,13 @@
 			- `acks=all` 所有副本确认
 			- 使用同步发送
 			- 开启幂等性
-		-
+		- Broker端
+			- 设置》=3的奇数副本数量
+			- 超过半数的副本同步成功
+			- 每秒刷盘一次,每1W条消息刷盘一次
+		- 消费者端
+			- 关闭自动提交
+			- try/catch 中提交
 - Kafka分区的好处 #card
   card-last-interval:: 0.14
   card-repeats:: 1
